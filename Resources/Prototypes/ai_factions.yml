@@ -101,6 +101,7 @@
   - Abductor # starlight
   - Pirate # starlight
   - CosmicCult # starlight
+  - AnimalFriend # MACRO
 
 - type: npcFaction
   id: SimpleNeutral
