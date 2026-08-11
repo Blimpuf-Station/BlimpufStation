@@ -274,3 +274,7 @@ AppearanceProtoSlimePerson: AppearanceNeoSlimePerson
 AppearanceProtoThaven: AppearanceNeoThaven
 AppearanceProtoVox: AppearanceNeoVox
 AppearanceProtoVulp: AppearanceNeoVulpkanin
+
+#2026-08-09 - Removed unused sawoff shotty since the riot gun rework
+WeaponShotgunRiotSawnEmpty: null
+WeaponShotgunRiotSawn: null
