@@ -38,7 +38,7 @@ namespace Content.Server.Administration.Commands
 
             if (luminance is < 0.2f or > 0.8f)
             {
-                shell.WriteError("The color is too close to black or white — pick a more contrasting shade.");
+                shell.WriteError("The color is too close to black or white ï¿½ pick a more contrasting shade.");
                 return;
             }
 
