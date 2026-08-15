@@ -603,6 +603,9 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
 
         EnsureDefaultMarkings(uid, humanoid);
 
+        var sexChanged = new SexChangedEvent(humanoid.Sex, profile.Sex); // Starlight
+        RaiseLocalEvent(uid, ref sexChanged); // Starlight
+
         humanoid.Gender = profile.Gender;
         humanoid.SecondaryGender = profile.SecondaryGender; // Blimpuf
         _identity.QueueIdentityUpdate(uid); // Blimpuf
