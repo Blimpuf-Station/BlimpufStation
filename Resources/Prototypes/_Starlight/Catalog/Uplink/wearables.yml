@@ -25,9 +25,9 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledInfiltration
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 5
+    Telecrystal: 30
   cost:
-    Telecrystal: 10
+    Telecrystal: 48
   categories:
     - UplinkWearables
 
@@ -38,9 +38,9 @@
   productEntity: ClothingBackpackSatchelSyndicate
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 5
   cost:
-    Telecrystal: 3
+    Telecrystal: 10
   categories:
     - UplinkWearables
 
@@ -78,8 +78,8 @@
   productEntity: ClothingOuterArmorBasic
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 2 #SL / Rebalanced pricing: Armor Vest 2, Web Vest 3, Elite Web vest 4
+    Telecrystal: 9 #SL / Rebalanced pricing: Armor Vest 2, Web Vest 3, Elite Web vest 4
   cost:
-    Telecrystal: 3 #SL / Rebalanced pricing: Armor Vest 3, Web Vest 4, Elite Web vest 5
+    Telecrystal: 13 #SL / Rebalanced pricing: Armor Vest 3, Web Vest 4, Elite Web vest 5
   categories:
     - UplinkWearables

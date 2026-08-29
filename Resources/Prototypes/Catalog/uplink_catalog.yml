@@ -117,7 +117,7 @@
   icon: { sprite: Clothing/Hands/Gloves/KnuckleDusters/syndicateknuckleduster.rsi, state: syndicateknuckleduster }
   productEntity: ClothingHandsKnuckleDustersSyndicate
   cost:
-    Telecrystal: 5
+    Telecrystal: 15
   categories:
   - UplinkWeaponry
 
@@ -748,9 +748,9 @@
   productEntity: Stimpack
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 5
+    Telecrystal: 4
   cost:
-    Telecrystal: 10
+    Telecrystal: 8
   categories:
   - UplinkChemicals
 
@@ -761,9 +761,9 @@
   productEntity: StimkitFilled
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 15
+    Telecrystal: 14
   cost:
-    Telecrystal: 25
+    Telecrystal: 24
   categories:
   - UplinkChemicals
 
@@ -1433,9 +1433,9 @@
   productEntity: ScramImplanter
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 20
+    Telecrystal: 15
   cost:
-    Telecrystal: 30 # it's a gamble that may kill you easily so 6 TC per 2 uses, second one more of a backup
+    Telecrystal: 25
   categories:
     - UplinkImplants
 
@@ -1508,7 +1508,7 @@
   icon: { sprite: /Textures/Actions/Implants/implants.rsi, state: explosive }
   productEntity: MacroBombImplanter
   cost:
-    Telecrystal: 65
+    Telecrystal: 60
   categories:
     - UplinkImplants
   conditions:
@@ -1646,9 +1646,9 @@
   icon: { sprite: /Textures/Clothing/Uniforms/Jumpsuit/rainbow.rsi, state: icon }
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 50
+    Telecrystal: 25
   cost:
-    Telecrystal: 100
+    Telecrystal: 50
   categories:
     - UplinkWearables
 # Starlight end
@@ -1863,9 +1863,9 @@
   productEntity: RubberStampSyndicate
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 5
+    Telecrystal: 4
   cost:
-    Telecrystal: 10
+    Telecrystal: 8
   categories:
   - UplinkPointless
 
@@ -1875,7 +1875,7 @@
   description: uplink-cat-ears-desc
   productEntity: ClothingHeadHatCatEars
   cost:
-    Telecrystal: 130
+    Telecrystal: 50
   categories:
   - UplinkPointless
 
@@ -1955,7 +1955,7 @@
   description: uplink-balloon-desc
   productEntity: BalloonSyn
   cost:
-    Telecrystal: 100
+    Telecrystal: 20
   categories:
   - UplinkPointless
 
@@ -2191,7 +2191,7 @@
   icon: { sprite:  Objects/Weapons/Melee/cane.rsi, state: cane}
   productEntity: CaneSheathFilled
   cost:
-    Telecrystal: 5
+    Telecrystal: 7
   categories:
   - UplinkJob
   conditions:

@@ -5,9 +5,9 @@
   productEntity: Pizzabomb
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 3
+    Telecrystal: 10
   cost:
-    Telecrystal: 4
+    Telecrystal: 18
   categories:
     - UplinkExplosives
 
@@ -18,9 +18,9 @@
   productEntity: ClothingNeckExplosiveCollar
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 8
+    Telecrystal: 28
   cost:
-    Telecrystal: 10
+    Telecrystal: 45
   categories:
     - UplinkExplosives
 

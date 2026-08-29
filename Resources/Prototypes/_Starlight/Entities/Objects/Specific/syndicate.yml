@@ -39,12 +39,12 @@
 # Uplinks
 - type: entity
   parent: BaseUplinkRadioPreset
-  id: BaseUplinkRadio40TCDAGD
-  suffix: 40 TC, DAGD
+  id: BaseUplinkRadio200TCDAGD
+  suffix: 200 TC, DAGD
   components:
   - type: Store
     balance:
-      Telecrystal: 40
+      Telecrystal: 200
   - type: Tag
     tags:
     - DAGDUplink

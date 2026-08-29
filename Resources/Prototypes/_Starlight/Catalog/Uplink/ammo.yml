@@ -9,7 +9,7 @@
     }
   productEntity: MagazineMagnum
   cost:
-    Telecrystal: 1
+    Telecrystal: 5
   categories:
     - UplinkAmmo
 
@@ -25,7 +25,7 @@
     }
   productEntity: MagazineMagnumRifleSP
   cost:
-    Telecrystal: 2
+    Telecrystal: 8
   categories:
     - UplinkAmmo
   conditions:
@@ -45,7 +45,7 @@
     }
   productEntity: MagazinePistolSubMachineGunUzi
   cost:
-    Telecrystal: 2
+    Telecrystal: 8
   categories:
     - UplinkAmmo
 
@@ -60,7 +60,7 @@
     }
   productEntity: MagazineShotgunBreach
   cost:
-    Telecrystal: 2
+    Telecrystal: 8
   categories:
     - UplinkAmmo
   conditions:
@@ -77,7 +77,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Grenade/grenade_cartridge.rsi, state: icon }
   productEntity: MagazineGrenadeFrag
   cost:
-    Telecrystal: 3
+    Telecrystal: 15
   categories:
   - UplinkAmmo
 
@@ -88,7 +88,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Grenade/grenade_cartridge.rsi, state: icon }
   productEntity: MagazineGrenadeBlast
   cost:
-    Telecrystal: 6
+    Telecrystal: 25
   categories:
   - UplinkAmmo
 
@@ -100,6 +100,6 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Boxes/shotgun.rsi, state: lethal }
   productEntity: BoxLethalshot
   cost:
-    Telecrystal: 3
+    Telecrystal: 25
   categories:
   - UplinkAmmo

@@ -413,7 +413,7 @@
   parent: [ClothingHandsButcherable, BaseSyndicateContraband]
   id: ClothingHandsGlovesNorthStar
   name: gloves of the north star
-  description: These gloves allow you to punch incredibly fast.
+  description: These gloves act like insulated gloves, and allow you to punch incredibly fast.
   components:
   - type: Sprite
     sprite: Clothing/Hands/Gloves/northstar.rsi
@@ -429,6 +429,7 @@
       collection: Punch
     animation: WeaponArcFist
     mustBeEquippedToUse: true
+  - type: Insulated # Blimpuf
   - type: Fiber
     fiberMaterial: fibers-leather
     fiberColor: fibers-blue
