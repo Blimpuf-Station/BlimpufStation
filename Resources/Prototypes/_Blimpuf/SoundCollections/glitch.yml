@@ -1,0 +1,6 @@
+- type: soundCollection
+  id: glitch
+  files:
+  - /Audio/_Blimpuf/Effects/glitch1.ogg
+  - /Audio/_Blimpuf/Effects/glitch2.ogg
+  - /Audio/_Blimpuf/Effects/glitch3.ogg
