@@ -3,9 +3,9 @@
 
 <GuideEntityEmbed Entity="ToyFigurineChemist" Caption="Chemist"/>
 
-1. Chemists report directly to the Chief Medical Officer.
+1. Your direct superior is the Chief Medical Officer.
 
-2. Chemists should prioritize all basic medicines before moving on to advanced medicines.
+2. Chemists are expected to synthesize the required chemicals to ensure that the medical bay has proper medication for patients.
 
 3. All medicines should be labeled as follows:
 - Chemical name.
@@ -13,12 +13,11 @@
 - Overdose limits.
 - Any interfering chemicals (i.e. Lacinerol & Bicardine react to form Razorium)
 
-4. Chemists should ensure that any illegal chemicals are kept in the ChemMaster 4000 or disposed of immediately after use.
+4. Chemists are to provide medication in various different forms, such as pills, patches, or fluids to be used in injections.
 
-5. Chemists may fill prescriptions signed and stamped by the CMO.
+5. Chemists are expected to provide medication to the Brigmedic after the initial set of chemicals produced for the Medical Department are completed. These must also be in the form of fluids, patches and pills.
 
 6. Non-illegal chemicals may be synthesized and prescribed by chemists at their discretion.
 
-7. Chemists may perform the duties of Medical Doctors during emergencies, but must follow the Medical Doctor SOP.
-- 1. One Chemist must always stay in the chemical lab.
+7. Chemists are responsible for safely storing contraband chemicals away from the station at large, with a log of the information written in the Chemical Contraband Form.
 </Document>

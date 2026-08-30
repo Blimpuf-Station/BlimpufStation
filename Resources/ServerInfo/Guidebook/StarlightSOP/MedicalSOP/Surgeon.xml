@@ -3,9 +3,9 @@
 
 <GuideEntityEmbed Entity="ToyFigurineMedicalDoctor" Caption="Surgeon"/>
 
-1. Surgeons report directly to the Chief Medical Officer.
+1. Your direct superior is the Chief Medical Officer.
 
-2. Patients must fill out and sign a [italic]surgery consent form[/italic] for any elective surgeries. This form must be stamped by the Chief Medical Officer.
+2. Surgeons are to perform surgeries in the surgical bay.
 
 3. Surgeons should wear masks, sterile gloves and scrubs when possible, while operating.
 
@@ -13,5 +13,9 @@
 
 5. Surgeons are permitted to harvest organs and limbs from deceased patients who have been considered unrecoverable.
 
-6. Live patients must be given a sedative during the duration of their surgery, unless they request otherwise. Any requests must be documented on their [italic]surgery consent form[/italic].
+6. Surgeons are expected to acquire medical consent forms for all non-emergency surgeries, to be stamped and approved by the Chief Medical Officer.
+
+7. Live patients must be given a sedative during the duration of their surgery, unless they request otherwise. Any requests must be documented on their [italic]surgery consent form[/italic].
+
+8. If the medical area is overwhelmed with incoming patients, Surgeons may assist and perform triage services to bring them back to health, however, the Medical Doctors have priority on treating patients.
 </Document>

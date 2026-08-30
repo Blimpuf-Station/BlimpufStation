@@ -3,13 +3,15 @@
 
 <GuideEntityEmbed Entity="ToyFigurineCargoTech" Caption="Cargo Technician"/>
 
-1. Cargo Technicians report directly to the Quartermaster.
+1. Your direct superior is the Quartermaster.
 
-2. Cargo Technicians are responsible for the handling of orders and retrieval from the ATS once an order is approved. Orders must not be delayed to being on station more than 10 minutes after approval. Delays longer than this, without sufficient cause, can be considered negligence or incompetence.
+2. Before any and all trips to the Automated Trade Station (ATS), Cargo Technicians must fill out the Cargo Shuttle Departure form, with their name and the current time.
 
-3. Crates that are part of an order should not be opened. Instead their label should be checked for questions about their contents and the requestor.
+3. Cargo Technicians should deliver all crates to departments within 15 minutes of the order being placed. If a crate containing security or other contraband needs delivery, a member of Security must act as an escort when possible.
 
-4. Secure crates should not be opened by force. An exception is made if ordered to do so by the head of the relevant department or captain during an emergency.
+4. Crates containing orders from other departments or crewmembers should never be opened by Cargo Technician, unless given express permission by the Quartermaster.
 
-5. Issues with policy or employment should be directed to the Quartermaster or the Head of Personnel. Any mention of "Cargonia" will be met with contract termination.
+5. All order deliveries must have their blue order slips signed by the recipient, then returned to the Quartermaster for filing.
+
+6. Station equipment, machinery, and other contents should not be sold unless mandated by Central Command’s Bounty Service.
 </Document>
