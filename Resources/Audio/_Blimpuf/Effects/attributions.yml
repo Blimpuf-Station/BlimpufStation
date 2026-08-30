@@ -1,9 +1,9 @@
 - files: ["fuze.ogg"]
   license: Custom
-  copyright: "Sound taken from Seidolon (Freesound) on Pixabay"
+  copyright: "Sound taken from Seidolon (Freesound) on Pixabay. Licensed under the Pixabay Content License: https://pixabay.com/service/license-summary/"
   source: https://pixabay.com/sound-effects/city-fuse-80913/
 
 - files: ["glitch1.ogg", "glitch2.ogg", "glitch3.ogg"]
   license: Custom
-  copyright: "Sound taken from Kave_msri on Pixabay"
+  copyright: "Sound taken from Kave_msri on Pixabay. Licensed under the Pixabay Content License: https://pixabay.com/service/license-summary/"
   source: https://pixabay.com/sound-effects/film-special-effects-digital-glitch-sfx-438248/
