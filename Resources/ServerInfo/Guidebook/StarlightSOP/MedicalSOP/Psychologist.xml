@@ -3,9 +3,9 @@
 
 <GuideEntityEmbed Entity="ToyFigurineMedicalDoctor" Caption="Psychologist"/>
 
-1. The Psychologist report directly to the Chief Medical Officer.
+1. Your direct superior is the Chief Medical Officer.
 
-2. The Psychologist is authorized to perform a full psychometric workup on any crew member who is willing.
+2. Any and all patient encounters must be properly recorded, documented, and filed.
 
 3. Examinations of unwilling crewmembers may only occur with written approval by the Chief Medical Officer and one the following: HoS, Magistrate, Captain.
 - 1. This also applies to any medication prescribed by the Psychologist.
@@ -17,4 +17,8 @@
 - 4. Lightening of sentences for prisoners who have shown good behavior and a change of moral character.
 
 5. The Psychologist may request to consult with a prisoner at any time to evaluate their mental state.
+
+6. Psychologists are to respect patient confidentiality, unless there is a stated or implied danger to Central Command or Nanotrasen Command staff.
+
+7. The Psychologist is responsible for printing and maintaining correct documentation for proposed psychological trials, treatments, or experiments, including obtaining stamps and signatures as needed.
 </Document>

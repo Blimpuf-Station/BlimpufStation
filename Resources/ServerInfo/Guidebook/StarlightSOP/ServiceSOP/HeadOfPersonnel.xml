@@ -3,9 +3,11 @@
 
 <GuideEntityEmbed Entity="ToyFigurineHeadOfPersonnel" Caption="Head of Personnel"/>
 
-1. The Head of Personnel should not grant access to a department unless they have a form stamped by the relevant head of department.
+1. The Head of Personnel should not grant access to a non-service department unless they have a form stamped by the relevant head of the department.
 
-2. The Head of Personnel should not do the work of other departments unless they are short staffed.
+2. The Head of Personnel is expected to conduct inspections of the service department to ensure they are fulfilling their SOP.
 
-3. The Head of Personnel may not hire any staff to a NanoTrasen Personnel position.
+3. The Head of Personnel may not hire any staff to a Central Command Personnel position.
+
+4. It is the responsibility of the HOP to promote staff to fill any holes in staffing, including filling in for their own departments needs.
 </Document>
