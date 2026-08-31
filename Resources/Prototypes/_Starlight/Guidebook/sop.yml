@@ -212,7 +212,6 @@
   children:
     - command-sop
     - security-sop-intro
-    - legal-sop-intro
     - engineering-sop-intro
     - cargo-sop-intro
     - science-sop-intro
@@ -350,13 +349,6 @@
   name: guide-entry-sl-security-sop-hostage-situations
   text: "/ServerInfo/Guidebook/StarlightSOP/SecuritySOP/SpecialSituations/HostageSituations.xml"
   priority: 2
-
-- type: guideEntry
-  id: legal-sop-intro
-  name: guide-entry-sl-legal-sop-intro
-  text: "/ServerInfo/Guidebook/StarlightSOP/LegalSOP/legal-sop-intro.xml"
-  priority: 3
-
 
 
 - type: guideEntry

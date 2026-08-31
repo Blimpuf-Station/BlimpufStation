@@ -86,8 +86,6 @@ guide-entry-sl-security-sop-hostage-situations = Hostage Situations
 
 guide-entry-rules-supernatural-entities = Supernatural Entities
 
-guide-entry-sl-legal-sop-intro = Legal
-
 guide-entry-sl-engineering-sop-intro = Engineering
 guide-entry-sl-engineering-sop-genproc-intro = General Procedures
 guide-entry-sl-engineering-sop-power-generation = Power Generation

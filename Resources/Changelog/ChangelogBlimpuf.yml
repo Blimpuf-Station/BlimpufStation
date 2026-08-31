@@ -1,0 +1,868 @@
+Entries:
+- author: DivineHobo # Beginning of Blimpuf Changelog
+  changes:
+  - message: Added commits from main starlight.
+    type: Add
+  - message: Manifold pipes not allowing vent crawling.
+    type: Fix
+  id: 801
+  time: '2026-05-16T19:52:16.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/8
+- author: DivineHoBo
+  changes:
+  - message: Added hair cut ability for slimes.
+    type: Add
+  - message: Fixed slime and geras zombification.
+    type: Fix
+  id: 1001
+  time: '2026-05-16T20:53:10.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/10
+- author: DivineHoBo
+  changes:
+  - message: Fixed zombified geras reverting to non zombified slime.
+    type: Fix
+  id: 1201
+  time: '2026-05-17T21:03:13.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/12
+- author: DivineHoBo
+  changes:
+  - message: Added Smile Abilties.
+    type: Add
+  id: 1101
+  time: '2026-05-17T21:04:02.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/11
+- author: DivineHoBo
+  changes:
+  - message: Added Starlight updates.
+    type: Add
+  id: 1301
+  time: '2026-05-17T23:42:26.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/13
+- author: DivineHoBo
+  changes:
+  - message: Added Ability icons.
+    type: Add
+  - message: Changed spit ability.
+    type: Tweak
+  id: 1401
+  time: '2026-05-18T00:14:20.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/14
+- author: DivineHoBo
+  changes:
+  - message: Removed Night shift station event.
+    type: Remove
+  - message: Removed BrightEye Antag.
+    type: Remove
+  id: 1501
+  time: '2026-05-19T00:12:18.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/15
+- author: DivineHoBo
+  changes:
+  - message: Changed slime hair cut ability icon.
+    type: Tweak
+  id: 1601
+  time: '2026-05-19T00:12:37.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/16
+- author: DivineHoBo
+  changes:
+  - message: Fixed geras internal storage.
+    type: Fix
+  id: 1701
+  time: '2026-05-19T10:53:28.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/17
+- author: DivineHoBo
+  changes:
+  - message: Added Starlight Updates.
+    type: Add
+  id: 1801
+  time: '2026-05-19T21:03:02.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/18
+- author: DivineHoBo
+  changes:
+  - message: Added Plastitanium Door.
+    type: Add
+  id: 1901
+  time: '2026-05-19T21:03:18.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/19
+- author: DivineHoBo
+  changes:
+  - message: Plastitanium Doors can no longer have it access change via a configurator.
+    type: Tweak
+  id: 2001
+  time: '2026-05-21T07:19:48.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/20
+- author: DivineHoBo
+  changes:
+  - message: Fixed secure vents construction Recipes.
+    type: Fix
+  id: 2201
+  time: '2026-05-22T04:52:00.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/22
+- author: ALooseGoose, ItsMaitake, Archangel_06
+  changes:
+  - message: Added in the beginning framework for Syndicate Research. To Be continued.
+    type: Add
+  - message: Nerfed the WT550 to make HoS' WT550r stand out more.
+    type: Tweak
+  - message: Removed Steal Objectives to replace them with Research Objectives.
+    type: Remove
+  id: 2301
+  time: '2026-05-28T15:14:45.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/23
+- author: Limerent-Sun
+  changes:
+  - message: Overlord lawboard in emag inventory of RoboTech.
+    type: Add
+  - message: Genie, Reporter, Overlord, Game Master, Artist, Nutimov, Jermov, 10 Commandments
+      boards from AI Lawboard crate.
+    type: Remove
+  - message: Jermov, Jenie board from tier 2 experimental research.
+    type: Remove
+  - message: Station AI default lawset changed to Crewsimov.
+    type: Tweak
+  id: 2401
+  time: '2026-06-01T20:52:32.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/24
+- author: Limerent-Sun
+  changes:
+  - message: Overwrote STARLIGHT logos and icons with Blimpuf Station logos and icons.
+    type: Tweak
+  - message: Replaced window manifest data with Blimpuf Station related branding.
+    type: Tweak
+  id: 2501
+  time: '2026-06-07T20:55:46.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/25
+- author: Limerent-Sun
+  changes:
+  - message: Removed avali, dwarf, IPC, lagomorph, felionoid from round start.
+    type: Remove
+  - message: Shadekin guidebook sprite no longer comically large.
+    type: Fix
+  - message: Reverted laspi name to slime person.
+    type: Tweak
+  - message: Reverted aielith name to elf.
+    type: Tweak
+  - message: Dwarves from random species selection.
+    type: Remove
+  id: 2601
+  time: '2026-06-10T03:21:55.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/26
+- author: ItsMaitake
+  changes:
+  - message: Added gilded and trimmed blue and black wizard robes and hats.
+    type: Add
+  id: 2701
+  time: '2026-06-16T04:14:49.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/27
+- author: LadyLiliana
+  changes:
+  - message: Vox now decay at half speed
+    type: Add
+  - message: made graves compatible with the new Vox decay speed
+    type: Tweak
+  id: 2801
+  time: '2026-06-18T17:05:07.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/28
+- author: ItsMaitake
+  changes:
+  - message: Vox footstep modifier that makes them walk silently.
+    type: Add
+  - message: Coo/Whistle/Yawn sounds to Vox.
+    type: Add
+  - message: A new slot for the Vox gas tanks on their back.
+    type: Add
+  - message: Custom Vox tank storage icons for each of the game HUD themes.
+    type: Add
+  id: 2901
+  time: '2026-06-19T03:28:11.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/29
+- author: ItsMaitake
+  changes:
+  - message: Vox Guidebook entries.
+    type: Fix
+  - message: Vox footstep volume increased.
+    type: Tweak
+  id: 3001
+  time: '2026-06-19T05:07:19.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/30
+- author: LadyLiliana
+  changes:
+  - message: The rot rate multiplier system to work universally.
+    type: Tweak
+  - message: Some issues with Vox rot rate multiplier.
+    type: Fix
+  id: 3101
+  time: '2026-06-19T18:37:20.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/31
+- author: Limerent-Sun
+  changes:
+  - message: Law department.
+    type: Remove
+  - message: Blueshield Officer is now Central Command Enforcer.
+    type: Tweak
+  - message: NanoTrasen Representative is now Central Command Representative.
+    type: Tweak
+  - message: CCR and Magi no longer part of Command department.
+    type: Tweak
+  - message: CCR, Magi, CCE, IAA, NCT job icon updates.
+    type: Tweak
+  id: 3201
+  time: '2026-06-22T06:59:55.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/32
+- author: Limerent-Sun
+  changes:
+  - message: Text-to-speech system.
+    type: Remove
+  id: 3301
+  time: '2026-06-27T00:55:53.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/33
+- author: 'Port: Moffstation'
+  changes:
+  - message: SOS cartridge.
+    type: Add
+  - message: Outgoing common radio from headsets.
+    type: Remove
+  id: 3401
+  time: '2026-06-27T00:56:16.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/34
+- author: Limerent-Sun
+  changes:
+  - message: Railroading system.
+    type: Remove
+  id: 3501
+  time: '2026-06-27T00:56:38.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/35
+- author: ItsMaitake
+  changes:
+  - message: Changed all of the pre-existing SEC colors to be blue, instead of red.
+    type: Tweak
+  id: 3701
+  time: '2026-06-27T13:55:42.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/37
+- author: ItsMaitake
+  changes:
+  - message: Beholder, Blind, Cone, Cross, Elf, Side, Peepers, Stalks, Striped, Tendrils,
+      and Tentacles head markings.
+    type: Add
+  - message: Tentacle and Tendril leg and arm markings.
+    type: Add
+  id: 3901
+  time: '2026-06-28T08:16:38.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/39
+- author: Limerent-Sun
+  changes:
+  - message: Added Starlight updates.
+    type: Add
+  id: 3801
+  time: '2026-06-28T19:20:14.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/38
+- author: ItsMaitake
+  changes:
+  - message: SEC posters made blue.
+    type: Tweak
+  id: 4001
+  time: '2026-06-29T01:56:19.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/40
+- author: Limerent-Sun
+  changes:
+  - message: Purple cargo slime plushie.
+    type: Add
+  - message: Devil antagonist.
+    type: Remove
+  - message: STARLIGHT server browser.
+    type: Remove
+  - message: Protogens renamed to Neocytes.
+    type: Tweak
+  - message: Hermes neocyte frame rebalanced.
+    type: Tweak
+  - message: CC Rep department comms.
+    type: Tweak
+  id: 4101
+  time: '2026-07-05T02:50:44.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/41
+- author: ItsMaitake
+  changes:
+  - message: Even more things are blue now.
+    type: Tweak
+  id: 4301
+  time: '2026-07-09T03:54:54.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/43
+- author: ItsMaitake
+  changes:
+  - message: Added Brass Walls and Reinforced Brass Walls.
+    type: Add
+  - message: Added Brass Windows and Reinforced Brass Windows.
+    type: Add
+  id: 4401
+  time: '2026-07-09T11:06:33.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/44
+- author: LadyLiliana & ItsMaitake
+  changes:
+  - message: Sec decals are blue now.
+    type: Tweak
+  - message: Sec furniture/decor is blue now.
+    type: Tweak
+  - message: Sec now shows as blue on maps.
+    type: Tweak
+  - message: IAA/Magi Offices are green now.
+    type: Tweak
+  - message: Protection Anchors from Maps.
+    type: Remove
+  id: 4501
+  time: '2026-07-09T21:50:12.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/45
+- author: ItsMaitake
+  changes:
+  - message: Changed the armory door remote, bola, secure briefings folder, and crisis
+      button to be blue.
+    type: Tweak
+  - message: Energy shotgun now properly references the blue sprites.
+    type: Tweak
+  - message: Brigmedic locker's open door is no longer blue, since the locker is black.
+    type: Tweak
+  id: 4601
+  time: '2026-07-11T02:32:56.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/46
+- author: LadyLiliana
+  changes:
+  - message: Sec Colours changed to Blue on Shuttles.
+    type: Tweak
+  - message: Sec Colours changed to Blue on Centcom.
+    type: Tweak
+  id: 4801
+  time: '2026-07-15T18:12:05.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/48
+- author: ItsMaitake
+  changes:
+  - message: Added romerol back to the strange pill chemical table.
+    type: Tweak
+  - message: CE's breaching hammer to the game, and put it in the CE's locker.
+    type: Add
+  - message: HOS's job icon is now different than the security officer icon.
+    type: Tweak
+  - message: Changed color of medsec hud to fit the bluesec theme.
+    type: Tweak
+  id: 4701
+  time: '2026-07-16T05:36:40.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/47
+- author: Limerent-Sun
+  changes:
+  - message: Added Blimpuf Discord role syncing and integration.
+    type: Add
+  id: 4901
+  time: '2026-07-17T01:36:18.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/49
+- author: ItsMaitake and ColeTheConqueror
+  changes:
+  - message: Secure vents to all secure areas across all 29 maps.
+    type: Add
+  - message: Secure vent animation.
+    type: Tweak
+  id: 5101
+  time: '2026-07-17T05:01:08.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/51
+- author: ItsMaitake
+  changes:
+  - message: Changed Central Command Enforcer's color palette to CC green and gold.
+    type: Tweak
+  id: 5201
+  time: '2026-07-17T07:50:33.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/52
+- author: ItsMaitake
+  changes:
+  - message: Ahelp/Bwoink sound is now friendlier.
+    type: Tweak
+  id: 5301
+  time: '2026-07-17T18:50:10.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/53
+- author: Limerent-Sun
+  changes:
+  - message: Disabled Shadekin from species selection.
+    type: Remove
+  id: 5001
+  time: '2026-07-17T20:22:30.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/50
+- author: ItsMaitake
+  changes:
+  - message: Fixed the secure vent's off texture reflecting that it is still secure.
+    type: Tweak
+  id: 5401
+  time: '2026-07-17T21:35:11.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/54
+- author: ItsMaitake, JiyuSoftware & Codebreak
+  changes:
+  - message: Sushi Station.
+    type: Add
+  - message: Naming convention for our maps.
+    type: Tweak
+  id: 5501
+  time: '2026-07-21T01:35:54.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/55
+- author: LadyLiliana
+  changes:
+  - message: Changed Centcom to use Secure Vents instead of regular vents.
+    type: Tweak
+  - message: Changed Secure Vents to not allow VentCritters.
+    type: Tweak
+  - message: Fixed Secure Vents not linking to AirAlarms.
+    type: Fix
+  id: 5701
+  time: '2026-07-21T01:36:06.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/57
+- author: ItsMaitake
+  changes:
+  - message: Secure vents added in secure areas previously unsecured.
+    type: Add
+  - message: Secure vents are now linked to the air alarms.
+    type: Add
+  id: 5801
+  time: '2026-07-27T23:39:58.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/58
+- author: LadyLiliana
+  changes:
+  - message: Added SecureVents to most Shuttles.
+    type: Add
+  - message: Changed SushiEvac to have BlueSec Paintjob.
+    type: Tweak
+  id: 5901
+  time: '2026-07-28T00:39:28.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/59
+- author: LadyLiliana
+  changes:
+  - message: Changed Scrubbers to not be able to get entered for ventcrawling.
+    type: Tweak
+  - message: Fixed Passive Vents acting like cut lines for ventcrawling.
+    type: Fix
+  id: 6001
+  time: '2026-07-28T00:39:41.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/60
+- author: ItsMaitake
+  changes:
+  - message: The USA bedsheet textures are no longer as patriotic.
+    type: Tweak
+  id: 6201
+  time: '2026-07-28T03:29:02.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/62
+- author: ItsMaitake
+  changes:
+  - message: Warden Energy Shotgun disabler sprite now fixed, and the shotgun rotation
+      is correct.
+    type: Tweak
+  id: 6301
+  time: '2026-07-28T07:08:25.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/63
+- author: ItsMaitake
+  changes:
+  - message: Changed the Liberation Station to be named the Amm-O-Mat, and changed
+      the texture to be more in line with BlueSec.
+    type: Tweak
+  id: 6401
+  time: '2026-07-28T08:58:18.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/64
+- author: ItsMaitake
+  changes:
+  - message: G-Oat Plants are now able to be mutated from Oat Plants.
+    type: Add
+  id: 6501
+  time: '2026-07-30T05:23:12.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/65
+- author: ItsMaitake
+  changes:
+  - message: Intercoms are now present on all of our maps.
+    type: Add
+  id: 6701
+  time: '2026-07-30T06:12:30.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/67
+- author: ItsMaitake
+  changes:
+  - message: Implant Extractor sprite.
+    type: Tweak
+  id: 6901
+  time: '2026-08-01T04:17:13.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/69
+- author: LadyLiliana
+  changes:
+  - message: Added DefaultComms for IntegralRadios.
+    type: Add
+  - message: Changed CommonComms to "#".
+    type: Tweak
+  - message: Changed DefaultComms to ";".
+    type: Tweak
+  - message: Changed Comms Colours.
+    type: Tweak
+  - message: Fixed Command&CommandAlt headsets having different EncryptionKeys.
+    type: Fix
+  - message: Fixed Telecom&Intercom "ALL Channels" variants not having corporate.
+    type: Fix
+  - message: Fixed Intercoms saying "Recieve only" despite being wrong.
+    type: Fix
+  - message: Fixed CommonComms Icons being inconsistent.
+    type: Fix
+  - message: Fixed IntregralRadios ignoring HeadsetTransmittable restrictions.
+    type: Fix
+  id: 6801
+  time: '2026-08-01T09:29:02.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/68
+- author: Limerent-Sun
+  changes:
+  - message: Allow import of non-Blimpuf species with Blimpuf equivalents.
+    type: Add
+  - message: Added Dipsomania trait.
+    type: Add
+  - message: Added species variant menu for Elves.
+    type: Add
+  - message: Removed Dwarf species.
+    type: Remove
+  - message: Cyclorite renamed to T'Nebri.
+    type: Tweak
+  id: 7001
+  time: '2026-08-01T20:57:04.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/70
+- author: ItsMaitake
+  changes:
+  - message: Chemical Contraband Form.
+    type: Add
+  - message: Cargo Shuttle Departure Form.
+    type: Add
+  - message: Coloration of headers for Secure Briefing Documents.
+    type: Tweak
+  id: 7201
+  time: '2026-08-03T23:10:38.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/72
+- author: ItsMaitake
+  changes:
+  - message: Cargo Shuttle Departure form acronym corrected.
+    type: Tweak
+  id: 7301
+  time: '2026-08-04T05:13:01.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/73
+- author: ItsMaitake
+  changes:
+  - message: CC Officials now spawn with CC Clipboards, not NT Clipboards.
+    type: Tweak
+  - message: CCR locker now features a golden CC emblem on its door, instead of a
+      golden N.
+    type: Tweak
+  id: 7401
+  time: '2026-08-04T08:22:24.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/74
+- author: LadyLiliana
+  changes:
+  - message: Unique Stamps for Magistrate, IAA and CSOP.
+    type: Add
+  - message: IAA Paperwork Headers.
+    type: Fix
+  - message: Several Stamps having the wrong colours.
+    type: Fix
+  id: 7501
+  time: '2026-08-04T18:59:23.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/75
+- author: ItsMaitake
+  changes:
+  - message: Changed the name of the "Liberation Station Circuitboard" to the "Amm-O-Mat
+      Circuitboard".
+    type: Tweak
+  - message: Mini Security Jetpacks are now blue.
+    type: Tweak
+  id: 7601
+  time: '2026-08-04T23:43:27.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/76
+- author: ItsMaitake
+  changes:
+  - message: 5 new Blimpuf lobby arts.
+    type: Add
+  - message: 4 Starlight specific lobby arts.
+    type: Remove
+  id: 7801
+  time: '2026-08-05T00:36:24.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/78
+- author: ItsMaitake
+  changes:
+  - message: Deltarune-themed Icecreams.
+    type: Remove
+  - message: Project Moon-referencing space courier and bunny gang outfits from the
+      Fashion Vend.
+    type: Remove
+  id: 7901
+  time: '2026-08-05T04:50:18.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/79
+- author: Limerent-Sun
+  changes:
+  - message: Slime chemical now inherits colours from the slime it comes from.
+    type: Add
+  id: 8001
+  time: '2026-08-06T00:04:08.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/80
+- author: ItsMaitake
+  changes:
+  - message: Vendor of Silence added to each map.
+    type: Add
+  - message: Kiki the Botanist Kobold, Stir Stir the Genpop Monkey, and Right Honorable
+      Flippers the Magistrate pet to their departments.
+    type: Add
+  - message: Department specific techfabs to each map.
+    type: Add
+  - message: Protolathes and autolathes from most departments (cargo kept their autolathe.
+    type: Remove
+  id: 8101
+  time: '2026-08-06T09:54:49.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/81
+- author: Limerent-Sun
+  changes:
+  - message: Bubblish sounds more like vanilla SS14 slimes.
+    type: Tweak
+  id: 8301
+  time: '2026-08-07T08:12:50.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/83
+- author: LadyLiliana
+  changes:
+  - message: Fixed DefaultChannelPrefix triggering when it shouldn't.
+    type: Fix
+  id: 8401
+  time: '2026-08-07T08:13:06.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/84
+- author: ItsMaitake
+  changes:
+  - message: The Cargo Whistle to Mail Technician loadouts, Cargo Techfabs, and the
+      Cargodrobe.
+    type: Add
+  id: 8801
+  time: '2026-08-07T21:48:50.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/88
+- author: ItsMaitake & IllegalXeno
+  changes:
+  - message: Space Courier outfit color.
+    type: Tweak
+  - message: Space Courier outfit is now a 75 hour unlock for Cargo Technicians.
+    type: Add
+  id: 8901
+  time: '2026-08-07T23:52:35.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/89
+- author: Lady Liliana
+  changes:
+  - message: Added the new Techfabs, Station Pets, etc. to maps that were missing
+      them.
+    type: Add
+  - message: Modified some CCR and Courtrooms for consistency between maps.
+    type: Tweak
+  - message: Fixed Beacons Clipping on some maps.
+    type: Fix
+  - message: Fixed CCR Sign&Beacon displaying the wrong Text.
+    type: Fix
+  id: 9001
+  time: '2026-08-08T19:38:46.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/90
+- author: ItsMaitake & Lady Liliana
+  changes:
+  - message: Techfabs have been added to CentComm.
+    type: Add
+  - message: CentComm Chef, Bartender, Janitor, and Service worker have been added
+      to CentComm End of Round spawns.
+    type: Add
+  - message: Pursuit shuttle is now blue, and has standard thrusters.
+    type: Tweak
+  id: 9401
+  time: '2026-08-09T17:26:55.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/94
+- author: LadyLiliana
+  changes:
+  - message: Added Welding Masks to CargoTechfab.
+    type: Add
+  - message: Added Techfabs and Communication Consoles to DEV map.
+    type: Add
+  - message: Changed RecipePacks to make sure any Techfab that can produce Tape Recorders
+      can also produce Cassette Tapes.
+    type: Tweak
+  id: 9501
+  time: '2026-08-09T19:55:40.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/95
+- author: ItsMaitake & Th1rd
+  changes:
+  - message: New Purrfus sprites, including a new yellow variant.
+    type: Add
+  - message: Tallborgs, Dinoborgs, and Nobleborgs from borg chassis selection.
+    type: Remove
+  id: 9801
+  time: '2026-08-11T07:42:46.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/98
+- author: ItsMaitake
+  changes:
+  - message: Player-specific plushies from other servers have been removed from the
+      game.
+    type: Remove
+  id: 9901
+  time: '2026-08-11T19:49:25.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/99
+- author: ItsMaitake
+  changes:
+  - message: In hand and worn sprites for the Cargo Technician plushie.
+    type: Add
+  id: 10101
+  time: '2026-08-11T21:00:59.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/101
+- author: wonderfulnewworld
+  changes:
+  - message: Split the plastitanium airlock into 4; normal, indestructible, central
+      command, and central command indestructible.
+    type: Tweak
+  id: 10201
+  time: '2026-08-12T02:28:22.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/102
+- author: LadyLiliana
+  changes:
+  - message: Fixed sprite layer Errors when placing construction ghosts.
+    type: Fix
+  - message: Fixed construction ghosts for the AI core being able to rotate when they
+      should not.
+    type: Fix
+  id: 10401
+  time: '2026-08-12T18:51:10.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/104
+- author: ItsMaitake
+  changes:
+  - message: Brass girders, reinforced brass girders, brass grilles, brass windoors,
+      and secure brass windoors have been added.
+    type: Add
+  - message: Construction recipes for all brass entities have been added.
+    type: Add
+  - message: A new material purchasable from cargo called Brassma, which is as strong
+      as Plasteel, used in the construction of reinforced brass walls.
+    type: Add
+  - message: A new material called Reinforced Clockwork Glass has been added, which
+      is crafted from Clockwork Glass and Brass Rods.
+    type: Add
+  - message: Clockwork glass now falls in line with other glass textures.
+    type: Tweak
+  id: 10301
+  time: '2026-08-14T01:11:35.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/103
+- author: ItsMaitake
+  changes:
+  - message: Entity Spawn Panel now has locked brass windoor and locked secure brass
+      windoor variants for each department.
+    type: Add
+  id: 10601
+  time: '2026-08-14T02:21:53.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/106
+- author: ItsMaitake
+  changes:
+  - message: Available jobs on station have been balanced around 90 player maximum
+      population.
+    type: Tweak
+  id: 10701
+  time: '2026-08-14T19:25:45.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/107
+- author: ItsMaitake
+  changes:
+  - message: Remaining SEC red guns are now blue.
+    type: Tweak
+  id: 10801
+  time: '2026-08-14T20:20:25.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/108
+- author: ItsMaitake
+  changes:
+  - message: Slime mobs, like reagent slimes and geras, now take the same amount of
+      heat damage as the playable slime species from water effects.
+    type: Tweak
+  - message: Smile, the science pet, takes reduced damage to water in comparison to
+      lesser slimes.
+    type: Tweak
+  - message: Slime characters no longer get built in beer goggles - they retain the
+      chemical goggles effect, though.
+    type: Tweak
+  id: 10901
+  time: '2026-08-15T02:59:45.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/109
+- author: ItsMaitake
+  changes:
+  - message: The NCT oufit is no longer green, it is white.
+    type: Tweak
+  id: 11001
+  time: '2026-08-15T07:56:48.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/110
+- author: ItsMaitake
+  changes:
+  - message: New XL drink container sprites for Magm-Ale, Mead, Beer, Orange Juice,
+      Lime Juice, Cream, and Red Bool.
+    type: Add
+  id: 11101
+  time: '2026-08-16T10:05:26.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/111
+- author: ItsMaitake
+  changes:
+  - message: Gold and silver jugs textures have been changed to show their relative
+      size differences.
+    type: Tweak
+  id: 11201
+  time: '2026-08-16T11:39:37.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/112
+- author: ItsMaitake
+  changes:
+  - message: Saltern and Barratry now have courtrooms, and Magistrates have a bedroom.
+    type: Tweak
+  id: 11401
+  time: '2026-08-17T00:28:27.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/114
+- author: Limerent-Sun
+  changes:
+  - message: Abilities can no longer be used in vents that would be blocked while
+      restrained.
+    type: Fix
+  id: 11801
+  time: '2026-08-18T22:34:51.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/118
+- author: Limerent-Sun
+  changes:
+  - message: Removed Greenshift alert document.
+    type: Remove
+  id: 11901
+  time: '2026-08-18T22:35:08.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/119
+- author: Limerent-Sun
+  changes:
+  - message: CCR, CCE, and Magi all now use a Central Command themed headset.
+    type: Tweak
+  id: 12001
+  time: '2026-08-18T23:43:55.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/120
+- author: LadyLiliana
+  changes:
+  - message: Added Lawyer Spawns to Barratry.
+    type: Add
+  - message: Fixed minor discrepancies on Saltern and Barratry.
+    type: Fix
+  - message: Changed wardens red carpet being now blue on Sushi.
+    type: Tweak
+  id: 12201
+  time: '2026-08-19T19:08:29.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/122
+- author: LadyLiliana
+  changes:
+  - message: Changed most fluid container sizes.
+    type: Tweak
+  - message: Changed silver beakers and jugs to have an increased transfer size.
+    type: Tweak
+  - message: Changed container sizes to be more consistent, such as all beverage jugs
+      being the same size.
+    type: Tweak
+  id: 12101
+  time: '2026-08-20T13:56:45.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/121
+- author: Limerent-Sun
+  changes:
+  - message: Captain's energy dome ability is now on their hardsuit instead of elite
+      cloak.
+    type: Tweak
+  id: 12501
+  time: '2026-08-21T20:47:20.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/125
+- author: ALooseGoose, ItsMaitake, Archangel_06, rainyrivulet, Davyei
+  changes:
+  - message: Added all the remaining Syndicate Research items required. Now ready
+      for playtesting!
+    type: Add
+  id: 12801
+  time: '2026-08-28T09:11:10.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/128
+Order: -1
+
