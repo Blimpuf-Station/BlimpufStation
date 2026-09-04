@@ -9,6 +9,7 @@ using Content.Shared.Stunnable;
 using Content.Shared.Timing;
 using Content.Shared.Whitelist;
 using Robust.Shared.Audio.Systems;
+using Content.Shared.Coordinates; // Blimpuf
 
 namespace Content.Server.Ninja.Systems;
 
@@ -59,6 +60,7 @@ public sealed partial class StunProviderSystem : SharedStunProviderSystem
         }
 
         _audio.PlayPvs(comp.Sound, target);
+        SpawnAttachedTo("NinjaDigitalGlitchEffect", target.ToCoordinates()); // Blimpuf
 
         _damageable.ChangeDamage(target, comp.StunDamage, origin: uid);
         _stun.TryAddParalyzeDuration(target, comp.StunTime);

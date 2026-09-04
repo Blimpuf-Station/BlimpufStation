@@ -25,7 +25,7 @@ public sealed partial class StunProviderComponent : Component
     /// Sound played when stunning someone.
     /// </summary>
     [DataField]
-    public SoundSpecifier Sound = new SoundCollectionSpecifier("sparks");
+    public SoundSpecifier Sound = new SoundCollectionSpecifier("glitch");
 
     /// <summary>
     /// Joules required in the battery to stun someone. Defaults to 10 uses on a small battery.
