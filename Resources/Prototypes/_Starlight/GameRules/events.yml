@@ -234,3 +234,33 @@
         max: 4
   - type: DynamicRuleCost
     cost: 125
+
+- type: entity
+  parent: BaseAntagGhostRoleRule
+  id: SamuraiSpawn
+  components:
+  - type: StationEvent
+    earliestStart: 50
+    weight: 2
+    minimumPlayers: 30
+    duration: null
+  - type: RuleGrids
+  - type: LoadMapRule
+    gridPath: /Maps/_Starlight/Shuttles/ShuttleEvent/samurai_shuttle.yml
+  - type: AntagObjectives
+    objectives:
+    - HonorObjective
+    - WisdomObjective
+    - PunishObjective
+  - type: AntagLoadProfileRule
+    applyCharacterProfile: true
+    speciesOverride: Human
+    speciesOverrideBlacklist:
+  - type: AntagSelection
+    agentName: samurai-round-end-agent-name
+    antags:
+      - !type:FixedAntagCount
+        proto: Samurai
+
+  - type: DynamicRuleCost
+    cost: 100

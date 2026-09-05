@@ -1114,3 +1114,58 @@
     - type: AntagImmune
     - type: NoObjectiveTarget
 
+#Samurai
+- type: entity
+  name: Samurai
+  suffix: Basic
+  id: RandomHumanoidSamuraiSpawnerBasic
+  components:
+    - type: Sprite
+      sprite: _Starlight/Markers/jobs.rsi
+      state: TSFOfficer
+    - type: RandomHumanoidSpawner
+      settings: SamuraiBasic
+
+- type: randomHumanoidSettings
+  id: SamuraiBasic
+  speciesBlacklist:
+    - Vox
+    - NeoArachnid # Can't let them spawn as ghost roles, at least, not until we can figure out how to force equip armor on them.
+    - NeoDiona
+    - NeoReptilian
+    - NeoResomi
+    - NeoVox
+    - NeoVulp
+    - NeoAvali
+    - NeoFelionoid
+    - NeoKin
+    - NeoThaven
+    - NeoCyclorite
+    - NeoDwarf
+    - NeoMoth
+    - NeoSlimePerson
+    - NeoLagomorph
+    - NeoElf
+    - Neocyte
+    - NeoHuman
+  parent: EventHumanoid
+  randomizeName: false
+  components:
+    - type: GhostRole
+      name: ghost-role-information-samurai-name
+      description: ghost-role-information-samurai-description
+      rules: ghost-role-information-antagonist-rules # Starlight
+      mindRoles:
+      - MindRoleSamurai
+      raffle:
+        settings: default
+    - type: Loadout
+      prototypes: [SamuraiGear]
+      roleLoadout: [RoleSurvivalWizardDuelist]
+    - type: RandomMetadata
+      nameSegments:
+        - NamesSamurai
+        - NamesSamuraiClan
+      nameFormat: name-format-standard
+    - type: Samurai
+    - type: SamuraiCodes

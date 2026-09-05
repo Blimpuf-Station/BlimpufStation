@@ -1,0 +1,52 @@
+- type: antag
+  id: SamuraiAntag
+  name: samurai-ghost-role-name
+  antagonist: true
+  objective: roles-antag-samurai-objective
+  requirements:
+  - !type:RoleTimeRequirement
+    role: JobBorg
+    time: 3h
+  playTimeTracker: AntagSamurai
+
+- type: antagSpecifier
+  parent: RestrictedAntag
+  id: Samurai
+  prefRoles: # Starlight
+    - GenericSiliconAntagonist # Starlight
+  spawnerPrototype: SpawnPointSamurai
+  pickPlayer: false
+  startingGear: SamuraiGear
+  roleLoadout:
+    - AntagWizardDuelist
+  components:
+    - type: Samurai
+    - type: SamuraiCodes
+    - type: RandomMetadata
+      nameSegments:
+        - NamesSamurai
+        - NamesSamuraiClan
+      nameFormat: name-format-standard
+    - type: ThermalVision # Starlight
+    - type: AutoImplant
+      implants:
+        - DeathAcidifierImplant
+  mindRoles:
+    - MindRoleSamurai
+  tags:
+    - Samurai
+    - CantBecomeRevolutionary
+  briefing:
+    text: samurai-role-greeting
+    color: red
+    sound: /Audio/Misc/ninja_greeting.ogg
+
+- type: startingGear
+  id: SamuraiGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitKimono
+    shoes: ClothingShoesWizard
+    id: SamuraiPDA
+    ears: ClothingHeadsetFreelance
+    belt: SamuraiElectrodachiSheathFilled
+    back: Katana
