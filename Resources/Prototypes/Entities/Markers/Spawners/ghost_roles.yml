@@ -22,7 +22,7 @@
   - type: GhostRole
     name: ghost-role-information-rat-king-name
     description: ghost-role-information-rat-king-description
-    rules: ghost-role-information-antagonist-rules
+    rules: ghost-role-information-freeagent-rules
     important: true # SL
     mindRoles:
     - MindRoleRatKing # Starlight-edit - GhostRoleSoloAntagonist -> RatKing
