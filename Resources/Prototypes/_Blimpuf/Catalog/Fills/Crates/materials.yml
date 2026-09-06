@@ -8,3 +8,48 @@
       containers:
         entity_storage:
           id: SheetBrassma
+
+- type: entity
+  parent: CrateGenericSteel
+  id: CrateMaterialAll
+  suffix: Admeme
+  name: materials crate
+  description: 30 sheets of various component materials.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: SheetSteel
+        - id: SheetPlastic
+        - id: SheetGlass
+        - id: SheetPlasma
+        - id: SheetBrass
+        - id: MaterialCloth
+        - id: MaterialDurathread
+        - id: IngotGold
+        - id: IngotSilver
+        - id: BluespaceCrystal
+
+- type: entity
+  parent: CrateGenericSteel
+  id: CrateMaterialAllBuilding
+  suffix: Admeme
+  name: building materials crate
+  description: 30 sheets of various building materials.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: SheetSteel
+        - id: SheetPlasteel
+        - id: SheetBrassma
+        - id: SheetRGlass
+        - id: SheetReinforcedClockworkGlass
+        - id: SheetPGlass
+        - id: SheetRPGlass
+        - id: SheetUGlass
+        - id: SheetRUGlass
+        - id: PartRodMetal
+        - id: PartRodBrass
