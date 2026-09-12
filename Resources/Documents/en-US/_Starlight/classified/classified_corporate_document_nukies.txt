@@ -7,7 +7,7 @@
 [head=1][color=#FFC000]────────────────────[/color][/head]
 [mono]
 [bold]Subject:[/bold] Nuclear Operatives
-[bold]Association:[/bold] Spinward Syndicate, Syndicate High Command, the Gorlex Marauders
+[bold]Association:[/bold] The Syndicate, Syndicate High Command, the Gorlex Marauders
 [bold]Objectives:[/bold] Nuclear annihilation
 
 Nuclear Operatives, colloquially known as 'Nukies', are a suicide strike force maintained by Syndicate High Command. They operate at the highest level of the Gorlex Marauders, under the direct command of Euukho Zek'huil.
