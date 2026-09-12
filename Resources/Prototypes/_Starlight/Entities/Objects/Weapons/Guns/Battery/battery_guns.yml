@@ -952,50 +952,15 @@
   - type: FiringPinHolder
     supportedPins: [ AdvancedLaser ]
   - type: SyndicateResearchTarget
-    researchProtoIds:
-      - displayName: fire bomb
-        validPrototypes:
-          - FireBomb
-      - displayName: turbo recharger machine board
-        validPrototypes:
-          - TurboItemRechargerCircuitboard
-      - displayName: atmos fire suit
-        validPrototypes:
-          - ClothingOuterSuitAtmosFire
-      - displayName: stun baton
-        validPrototypes:
-          - Stunbaton
-          - EnforcerStunbaton
-          - DoubleStunbaton
-          - PurpleStunbaton
-          - ClothingHandsKnuckleDustersStun
-      - displayName: disabler
-        validPrototypes:
-          - WeaponDisabler
-          - WeaponDisablerSMG
-      - displayName: large internals tank
-        validPrototypes:
-          - OxygenTank
-          - OxygenTankFilled
-          - NitrogenTank
-          - NitrogenTankFilled
-          - AirTank
-          - AirTankFilled
-          - NitrousOxideTank
-          - NitrousOxideTankFilled
-          - HealiumTankEmpty
-          - HealiumTankFilled
-          - ZXATankEmpty
-          - ZXATankFilled
-      - displayName: cautery
-        validPrototypes:
-          - Cautery
-          - CauteryCyber
-          - CauteryRipper
-          - CauteryAbductor
-      - displayName: torch
-        validPrototypes:
-          - Torch
+    syndicateResearchSpecifiers:
+      - SyndicateResearchSpecifierFireBomb
+      - SyndicateResearchSpecifierTurboItemRechargerCircuitboard
+      - SyndicateResearchSpecifierClothingOuterSuitAtmosFire
+      - SyndicateResearchSpecifierStunBaton
+      - SyndicateResearchSpecifierWeaponDisabler
+      - SyndicateResearchSpecifierTankInternals
+      - SyndicateResearchSpecifierCautery
+      - SyndicateResearchSpecifierTorch
     researchUnlockId: UplinkWeaponLaserIncinerator
     researchAnnouncementString: research-announcement-weapon-laser-incinerator
 

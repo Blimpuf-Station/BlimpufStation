@@ -2,7 +2,7 @@
   parent: [BaseHypospray, BaseSyndicateContraband]
   id: SyndiAdvancedGorlexHypo
   name: advanced gorlex hypospray
-  description: A sterile injector for rapid administration of drugs. Reverse-engineered from NanoTrasen's most updated designs, this state of the art medical device boasts less internal fluid storage, but a higher delivery yield per injection. # Blimpuf
+  description: A sterile injector for rapid administration of drugs. Reverse-engineered from NanoTrasen's most updated designs, this state of the art medical device boasts a higher delivery yield per injection. # Blimpuf
   components:
   - type: Sprite
     sprite: _Blimpuf/Objects/Specific/Medical/advancedgorlexhypospray.rsi

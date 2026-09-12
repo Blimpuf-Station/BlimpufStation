@@ -1,7 +1,6 @@
 using Content.Shared.GameTicking;
-using Robust.Shared.GameObjects;
 
-namespace Content.Server.SyndicateResearch;
+namespace Content.Server._Blimpuf.Traitor.Systems;
 
 public sealed partial class SyndicateResearchSystem : EntitySystem
 {
