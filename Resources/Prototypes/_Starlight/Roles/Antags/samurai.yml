@@ -1,0 +1,59 @@
+- type: antag
+  id: SamuraiAntag
+  name: roles-antag-samurai-name
+  antagonist: true
+  setPreference: true # Starlight - allow setting pref for ninja
+  objective: roles-antag-samurai-objective
+  roleLoadout: [ AntagSamurai ] # Starlight
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 24h
+  - !type:RoleTimeRequirement
+    role: JobSecurityOfficer # It's better than nothing.
+    time: 1h
+  - !type:RoleTimeRequirement # So they understand how to follow their codes and such
+    role: JobBorg
+    time: 3h
+  playTimeTracker: AntagSamurai
+
+- type: antagSpecifier
+  parent: RestrictedAntag
+  id: Samurai
+  prefRoles: # Starlight
+    - SamuraiAntag # Starlight
+  spawnerPrototype: SpawnPointSamurai
+  # pickPlayer: false
+  startingGear: SamuraiGear
+  roleLoadout:
+    - AntagSamurai
+  components:
+    - type: Samurai
+    - type: SamuraiCodes
+    - type: RandomMetadata
+      nameSegments:
+        - NamesSamurai
+        - NamesSamuraiClan
+      nameFormat: name-format-standard
+    - type: ThermalVision # Starlight
+    - type: AutoImplant
+      implants:
+        - DeathAcidifierImplant
+  mindRoles:
+    - MindRoleSamurai
+  tags:
+    - Samurai
+    - CantBecomeRevolutionary
+  briefing:
+    text: samurai-role-greeting
+    color: red
+    sound: /Audio/Misc/ninja_greeting.ogg
+
+- type: startingGear
+  id: SamuraiGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitKimono
+    shoes: ClothingShoesSamurai
+    id: SamuraiPDA
+    ears: ClothingHeadsetFreelance
+    belt: SamuraiElectrodachiSheathFilled
+    back: ClothingBackpackSatchelLeather
