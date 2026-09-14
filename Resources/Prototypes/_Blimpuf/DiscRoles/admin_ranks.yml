@@ -16,6 +16,7 @@
     - name: Game Admin
       roles:
         - 1500725068937040013 # Blimpuf Staff
+        - 1505338987295019204 # Blimpuf Loremaster
       flags: [ADMIN, BAN, DEBUG, FUN, SERVER, SPAWN, VAREDIT, LOGS, ROUND, QUERY, ADMINHELP, VIEWNOTES, EDITNOTES, ADMINCHAT, MODERATOR, ADMINWHO]
       oocColor: "#f1c40f"
 
