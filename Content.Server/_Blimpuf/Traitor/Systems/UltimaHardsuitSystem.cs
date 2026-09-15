@@ -68,7 +68,7 @@ public sealed class UltimaHardsuitSystem : EntitySystem
     {
         var user = args.Performer;
 
-        const float cost = 180f;
+        const float Cost = 180f;
 
         if (!_inventory.TryGetSlotEntity(user, "outerClothing", out var suitUid))
             return;
@@ -79,7 +79,7 @@ public sealed class UltimaHardsuitSystem : EntitySystem
         if (!HasComp<UltimaHardsuitComponent>(suit))
             return;
 
-        if (!TryComp<PowerCellSlotComponent>(suit, out var slot))
+        if (!HasComp<PowerCellSlotComponent>(suit))
             return;
 
         if (!_powerCell.HasBattery(suit))
@@ -88,7 +88,7 @@ public sealed class UltimaHardsuitSystem : EntitySystem
             return;
         }
 
-        if (!_powerCell.TryUseCharge(suit, cost))
+        if (!_powerCell.TryUseCharge(suit, Cost))
         {
             _popup.PopupEntity(Loc.GetString("ultima-hardsuit-insufficient-charge"), suit, user);
             return;
@@ -105,7 +105,7 @@ public sealed class UltimaHardsuitSystem : EntitySystem
     {
         var user = args.Performer;
 
-        const float cost = 180f;
+        const float Cost = 180f;
 
         if (!_inventory.TryGetSlotEntity(user, "outerClothing", out var suitUid))
             return;
@@ -116,7 +116,7 @@ public sealed class UltimaHardsuitSystem : EntitySystem
         if (!HasComp<UltimaHardsuitComponent>(suit))
             return;
 
-        if (!TryComp<PowerCellSlotComponent>(suit, out var slot))
+        if (!HasComp<PowerCellSlotComponent>(suit))
             return;
 
         if (!_powerCell.HasBattery(suit))
@@ -125,7 +125,7 @@ public sealed class UltimaHardsuitSystem : EntitySystem
             return;
         }
 
-        if (!_powerCell.TryUseCharge(suit, cost))
+        if (!_powerCell.TryUseCharge(suit, Cost))
         {
             _popup.PopupEntity(Loc.GetString("ultima-hardsuit-insufficient-charge"), suit, user);
             return;
@@ -144,7 +144,7 @@ public sealed class UltimaHardsuitSystem : EntitySystem
     {
         var user = args.Performer;
 
-        const float cost = 180f;
+        const float Cost = 180f;
 
         if (!_inventory.TryGetSlotEntity(user, "outerClothing", out var suitUid))
             return;
@@ -155,7 +155,7 @@ public sealed class UltimaHardsuitSystem : EntitySystem
         if (!HasComp<UltimaHardsuitComponent>(suit))
             return;
 
-        if (!TryComp<PowerCellSlotComponent>(suit, out var slot))
+        if (!HasComp<PowerCellSlotComponent>(suit))
             return;
 
         if (!_powerCell.HasBattery(suit))
@@ -164,7 +164,7 @@ public sealed class UltimaHardsuitSystem : EntitySystem
             return;
         }
 
-        if (!_powerCell.TryUseCharge(suit, cost))
+        if (!_powerCell.TryUseCharge(suit, Cost))
         {
             _popup.PopupEntity(Loc.GetString("ultima-hardsuit-insufficient-charge"), suit, user);
             return;

@@ -1,0 +1,49 @@
+# The base samurai honour codes
+
+# Make sure to add new codes to this dataset or they will not be selected!!!!!!
+- type: dataset
+  id: SamuraiCodesBase
+  values:
+    - Hierarchy
+    - Mercy
+    - Polite
+    - Law
+    - Charity
+    - Restraint
+    - Cleanliness
+
+
+- type: samuraiCode
+  id: Hierarchy
+  codeName: samurai-code-hierarchy-name
+  codeDesc: samurai-code-hierarchy-desc
+
+- type: samuraiCode
+  id: Mercy
+  codeName: samurai-code-mercy-name
+  codeDesc: samurai-code-mercy-desc
+
+- type: samuraiCode
+  id: Polite
+  codeName: samurai-code-polite-name
+  codeDesc: samurai-code-polite-desc
+
+- type: samuraiCode
+  id: Law
+  codeName: samurai-code-law-name
+  codeDesc: samurai-code-law-desc
+
+- type: samuraiCode
+  id: Charity
+  codeName: samurai-code-charity-name
+  codeDesc: samurai-code-charity-desc
+
+- type: samuraiCode
+  id: Restraint
+  codeName: samurai-code-restraint-name
+  codeDesc: samurai-code-restraint-desc
+
+- type: samuraiCode
+  id: Cleanliness
+  codeName: samurai-code-cleanliness-name
+  codeDesc: samurai-code-cleanliness-desc

@@ -926,5 +926,12 @@ Entries:
   id: 15201
   time: '2026-09-11T12:31:06.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/152
+- author: Swonki, Hot_Mic, ALooseGoose, ItsMaitake
+  changes:
+  - message: Added the Samurai, a mid round Free Agent.
+    type: Add
+  id: 14101
+  time: '2026-09-14T13:32:05.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/141
 Order: -1
 

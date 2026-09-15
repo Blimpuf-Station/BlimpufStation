@@ -59,6 +59,7 @@
     children:
     - id: DragonSpawn
     - id: NinjaSpawn
+    - id: SamuraiSpawn
     - id: ParadoxCloneSpawn
     - id: ParadoxCrisisSpawn # Starlight
     - id: SleeperAgents

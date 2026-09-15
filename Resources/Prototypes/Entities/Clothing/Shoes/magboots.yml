@@ -66,96 +66,15 @@
   - type: StealTarget
     stealGroup: ClothingShoesBootsMagAdv
   - type: SyndicateResearchTarget
-    researchProtoIds:
-      - displayName: security-grade boots
-        validPrototypes:
-          - ClothingShoesBootsJack
-          - ClothingShoesBootsJackFilled
-          - ClothingShoesBootsCombat
-          - ClothingShoesBootsCombatFilled
-          - ClothingShoesBootsSyndieFilled
-          - ClothingShoesBootsWinterSecFilled
-          - ClothingShoesBootsWinterSec
-          - ClothingShoesBootsMercFilled
-          - ClothingShoesBootsMerc
-      - displayName: jetpack
-        validPrototypes:
-          - JetpackBlue
-          - JetpackBlueFilled
-          - JetpackBlack
-          - JetpackBlackFilled
-          - JetpackVoid
-          - JetpackVoidFilled
-          - JetpackMini
-          - JetpackMiniFilled
-          - JetpackVoidEngineer
-          - JetpackVoidEngineerFilled
-          - JetpackCaptain
-          - JetpackCaptainFilled
-          - JetpackSecurity
-          - JetpackSecurityFilled
-          - JetpackVoid
-          - JetpackVoidFilled
-          - JetpackSSFMarine
-          - JetpackSSFMarineFilled
-          - JetpackImprovised
-          - JetpackImprovisedFilled
-          - JetpackSpeedster
-          - JetpackSpeedsterFilled
-      - displayName: armor vest
-        validPrototypes:
-          - ClothingOuterArmorBasic
-          - ClothingOuterArmorBasicSlim
-          - ClothingOuterVestDetective
-          - ClothingOuterArmorBulletproof
-          - ClothingOuterArmorBlueShield
-          - ClothingOuterArmorReflective
-          - ClothingOuterArmorCaptainCarapace
-          - ClothingOuterArmorMakeshift
-          - ClothingOuterArmorPlate
-          - ClothingOuterPressArmor
-          - ClothingOuterArmorScrap
-          - ClothingOuterArmorSovietPlate
-          - ClothingOuterArmorStab
-          - ClothingOuterCoatWarden
-          - ClothingOuterCoatHoSTrench
-          - ClothingOuterCoatDetectiveLoadoutGrey
-          - ClothingOuterCoatDetectiveLoadout
-          - ClothingOuterCoatDetective
-          - ClothingOuterVestWeb
-          - ClothingOuterVestWebElite
-          - ClothingOuterVestWebEliteFilledMAA
-          - ClothingOuterVestWebEliteCentcomm
-          - ClothingOuterVestWebMerc
-          - ClothingOuterVestWebSalvageMerc
-      - displayName: disabler
-        validPrototypes:
-          - WeaponDisabler
-          - WeaponDisablerSMG
-      - displayName: spray painter
-        validPrototypes:
-          - SprayPainter
-          - SprayPainterEmpty
-      - displayName: magboots
-        validPrototypes:
-          - ClothingShoesBootsMagSci
-          - ClothingShoesBootsMag
-          - ClothingShoesBootsMagSec
-          - ClothingShoesBootsMagBSO
-          - ClothingShoesBootsMagSyndie
-          - ClothingShoesBootsMagERT
-          - ClothingShoesBootsMagGreenshield
-          - ClothingShoesBootsMagBlinding
-          - ClothingShoesBootsMagMedTak
-          - ClothingShoesBootsMagSyndieAdvanced
-          - ClothingShoesBootsMagAdv
-      - displayName: scythe
-        validPrototypes:
-          - HydroponicsToolScythe
-      - displayName: hydraulic clamp
-        validPrototypes:
-          - MechEquipmentGrabber
-          - MechEquipmentGrabberSmall
+    syndicateResearchSpecifiers:
+      - SyndicateResearchSpecifierClothingShoesBootsCombat
+      - SyndicateResearchSpecifierJetpack
+      - SyndicateResearchSpecifierClothingOuterArmor
+      - SyndicateResearchSpecifierWeaponDisabler
+      - SyndicateResearchSpecifierSprayPainter
+      - SyndicateResearchSpecifierClothingShoesBootsMagboots
+      - SyndicateResearchSpecifierHydroponicsToolScythe
+      - SyndicateResearchSpecifierMechEquipmentGrabber
     researchUnlockId: UplinkClothingShoesBootsMagSyndieAdvanced
     researchAnnouncementString: research-announcement-clothing-shoes-boots-mag-syndie-advanced
 

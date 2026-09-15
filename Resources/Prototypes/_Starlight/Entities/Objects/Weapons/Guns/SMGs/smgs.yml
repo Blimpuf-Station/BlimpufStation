@@ -340,7 +340,6 @@
   - type: WeaponDismantleOnShoot
     dismantleChance: 0
 
-
 - type: entity
   name: WT550b
   parent: [BaseWeaponSubMachineGun, BaseGrandTheftContraband] # Starlight, grand theft
@@ -404,66 +403,17 @@
   - type: StealTarget
     stealGroup: HOSWeapon # Proto5x and WT550b
   - type: SyndicateResearchTarget
-    researchProtoIds:
-      - displayName: fulton beacon
-        validPrototypes:
-          - FultonBeacon
-      - displayName: artifact crusher machine board
-        validPrototypes:
-          - ArtifactCrusherMachineCircuitboard
-      - displayName: security hud
-        validPrototypes:
-          - ClothingEyesGlassesSecurity
-          - ClothingEyesHudSecurity
-          - ClothingEyesEyepatchHudSecurity
-          - ClothingEyesEyepatchHudSecurityFlipped
-          - ClothingEyeGlassesSecurityPrescription
-          - ClothingEyesHudMedSec
-          - ClothingEyesGlassesBrigmedicPrescription
-          - ClothingEyesGlassesBrigmedic
-          - ClothingEyesHudBrigmedic
-          - ClothingEyesEyepatchHudBrigmedic
-          - ClothingEyesEyepatchHudBrigmedicFlipped
-          - ClothingEyesHudCorpsman
-          - ClothingEyesHudBlueShield
-          - ClothingEyesEyepatchHudBlueShieldFlipped
-          - ClothingEyesEyepatchHudBlueShield
-      - displayName: circular saw
-        validPrototypes:
-          - SawElectric
-          - SawRipper
-          - SawCyber
-          - SawAdvanced
-          - SawAbductor
-      - displayName: APC/Substation/SMES electronics
-        validPrototypes:
-          - APCElectronics
-          - APCAdvancedElectronics
-          - SubstationMachineCircuitboard
-          - WallmountSubstationElectronics
-          - SMESMachineCircuitboard
-          - SMESAdvancedMachineCircuitboard
-          - SMESHyperAdvancedMachineCircuitboard
-      - displayName: thruster machine board
-        validPrototypes:
-          - ThrusterMachineCircuitboard
-      - displayName: gavel hammer
-        validPrototypes:
-          - GavelHammer
-          - HeavyGavelHammer
-      - displayName: knife
-        validPrototypes:
-          - KitchenKnife
-          - CombatKnife
-          - SurvivalKnife
-          - RescueKnife
-          - KukriKnife
-          - UtilityKnife
-          - ThrowingKnife
-          - WeaponMeleeBoxcutter
+    syndicateResearchSpecifiers:
+      - SyndicateResearchSpecifierFultonBeacon
+      - SyndicateResearchSpecifierArtifactCrusherMachineCircuitboard
+      - SyndicateResearchSpecifierClothingEyesHudSecurity
+      - SyndicateResearchSpecifierSawElectric
+      - SyndicateResearchSpecifierAPCSMESSubstationElectronics
+      - SyndicateResearchSpecifierThrusterMachineCircuitboard
+      - SyndicateResearchSpecifierGavelHammer
+      - SyndicateResearchSpecifierKnife
     researchUnlockId: UplinkWt551Compact
     researchAnnouncementString: research-announcement-wt551-compact
-
 
 - type: entity
   name: WT550g

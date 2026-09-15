@@ -74,8 +74,9 @@ def find_missing_changelog_prs():
 
     print(f"\n=== Checking last {commits_count} commits ===")
 
-    # Get recent commits from the main branch
-    commits = list(repo.get_commits(sha='Starlight'))[:commits_count]
+    # Match the branch selected for the workflow, or the default branch when run locally.
+    branch = os.getenv("GITHUB_REF_NAME") or repo.default_branch
+    commits = list(repo.get_commits(sha=branch))[:commits_count]
 
     missing_prs = []
     processed_count = 0

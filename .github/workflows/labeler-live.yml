@@ -1,4 +1,4 @@
-name: "Labels: Branch stable"
+name: "Labels: Branch blimpuf-live"
 
 # Cancel older jobs on PRs when new changes are pushed
 concurrency:
@@ -10,7 +10,7 @@ on:
     types:
       - opened
     branches:
-      - 'Starlight'
+      - 'blimpuf-live'
 
 jobs:
   add_label:
@@ -22,4 +22,4 @@ jobs:
     steps:
     - uses: actions-ecosystem/action-add-labels@v1
       with:
-        labels: "Branch: Starlight"
+        labels: "Branch: Live"

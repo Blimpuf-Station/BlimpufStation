@@ -249,3 +249,12 @@
     sprite: *starlight-job-icon-rsi
     state: Mothership
   jobName: chat-radio-mothership
+
+#Samurai
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconSamurai
+  icon:
+    sprite: /Textures/_Starlight/Interface/Misc/job_icons.rsi
+    state: Samurai
+  jobName: job-name-samurai

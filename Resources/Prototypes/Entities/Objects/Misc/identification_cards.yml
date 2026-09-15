@@ -74,48 +74,15 @@
   - type: StealTarget
     stealGroup: CaptainIDCard
   - type: SyndicateResearchTarget
-    researchProtoIds:
-      - displayName: access configurator
-        validPrototypes:
-          - AccessConfigurator
-      - displayName: door electronics
-        validPrototypes:
-          - DoorElectronics
-      - displayName: multitool
-        validPrototypes:
-          - Multitool
-          - MultitoolAbductor
-          - MultitoolImprovised
-          - Mooltitool
-          - MultitoolInvisible
-      - displayName: forensic scanner
-        validPrototypes:
-          - ForensicScanner
-      - displayName: gold bar
-        validPrototypes:
-          - IngotGold
-          - IngotGold1
-      - displayName: syndicate ID card
-        validPrototypes:
-          - SyndicateIDCard
-          - SyndicateFootsoldierIDCard
-          - SyndicateAgentIDCard
-          - SyndiCommanderIDCard
-          - CommanderIDCard
-          - SyndiCorpsmanIDCard
-          - OperativeIDCard
-          - SyndiOperativeIDCard
-      - displayName: ID card computer board
-        validPrototypes:
-          - IDComputerCircuitboard
-      - displayName: jaws of life
-        validPrototypes:
-          - JawsOfLife
-          - JawsOfLifeMed
-          - JawsOfLifeCyber
-          - SyndicateJawsOfLife
-          - SyndicateJawsOfLifeStealth
-          - PrototypeJawsOfLife
+    syndicateResearchSpecifiers:
+      - SyndicateResearchSpecifierAccessConfigurator
+      - SyndicateResearchSpecifierDoorElectronics
+      - SyndicateResearchSpecifierMultitool
+      - SyndicateResearchSpecififierForensicScanner
+      - SyndicateResearchSpecifierIngotGold
+      - SyndicateResearchSpecifierSyndicateIDCard
+      - SyndicateResearchSpecifierIDComputerCircuitboard
+      - SyndicateResearchSpecifierJawsOfLife
     researchUnlockId: UplinkAccessHijacker
     researchAnnouncementString: research-announcement-access-hijacker
 

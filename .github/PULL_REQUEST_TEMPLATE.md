@@ -16,7 +16,7 @@ If your PR contains in-game changes you must provide screenshots/videos of the c
 - [ ] Before posting/requesting review of a PR, I have verified that the changes work.
 - [ ] I have added screenshots/videos of the changes, or this PR does not change in-game mechanics.
 - [ ] I swear that I own all uploaded assets, or have been granted the right to use them under their respective license.
-- [ ] I affirm that my changes are licensed under the [MIT License](https://github.com/Blimpuf-Station/BlimpufStation/blob/starlight-dev/LICENSE.TXT) and grant permission for use in this repository under its conditions.
+- [ ] I affirm that my changes are licensed under the [MIT License](https://github.com/Blimpuf-Station/BlimpufStation/blob/blimpuf-dev/LICENSE.TXT) and grant permission for use in this repository under its conditions.
 
 **Changelog**
 <!--

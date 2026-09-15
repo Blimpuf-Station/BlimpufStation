@@ -43,4 +43,4 @@ Works submitted to Starlight between **2024-11-04** (commit `84205e38`) through 
 
 Assets are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) unless otherwise stated. Some assets may be licensed under non-commercial licenses, such as [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) and [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). These assets may not be used for commercial purposes under any circumstance except by the copyright holder.
 
-See [LEGAL.md](https://github.com/Blimpuf-Station/BlimpufStation/blob/starlight-dev/LEGAL.md) for more information.
+See [LEGAL.md](https://github.com/Blimpuf-Station/BlimpufStation/blob/blimpuf-dev/LEGAL.md) for more information.

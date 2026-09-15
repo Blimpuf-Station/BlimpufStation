@@ -1,4 +1,4 @@
-name: "Labels: Branch staging"
+name: "Labels: Branch blimpuf-staging"
 
 # Cancel older jobs on PRs when new changes are pushed
 concurrency:
@@ -10,7 +10,7 @@ on:
     types:
       - opened
     branches:
-      - 'staging'
+      - 'blimpuf-staging'
 
 jobs:
   add_label:

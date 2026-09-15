@@ -1,0 +1,15 @@
+name: "Labels: Review Event"
+run-name: "Review labels for PR #${{ github.event.pull_request.number }}"
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+# Should allow for labels to automatically be set on review even on fork PRs.
+permissions: {}
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Review submitted; requesting a label refresh."

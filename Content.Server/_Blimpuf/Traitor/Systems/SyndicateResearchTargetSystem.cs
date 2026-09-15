@@ -2,7 +2,6 @@ using System.Linq;
 using Content.Server._Blimpuf.Traitor.Components;
 using Content.Server.Chat.Systems;
 using Content.Server.Popups;
-using Content.Server.SyndicateResearch;
 using Content.Shared._Blimpuf.Antags.Traitor.Components;
 using Content.Shared._Starlight.Antags.Traitor;
 using Content.Shared.DoAfter;
@@ -55,45 +54,42 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
 
         if (component.ResearchItem1 != null && !component.Task1Complete)
         {
-            message += Loc.GetString("traitor-research-task-1-requirements", ("item1", component.ResearchItem1.DisplayName)) + "\n";
+            var item = _prototype.Index(component.ResearchItem1.Value).DisplayName;
+            message += Loc.GetString("traitor-research-task-1-requirements", ("item1", item)) + "\n";
         }
         else if (component.ResearchItem1 != null && component.Task1Complete)
-        {
             message += Loc.GetString("traitor-research-task-1-complete") + "\n";
-        }
 
         if (component.ResearchItem2 != null && !component.Task2Complete)
         {
-            message += Loc.GetString("traitor-research-task-2-requirements", ("item2", component.ResearchItem2.DisplayName)) + "\n";
+            var item = _prototype.Index(component.ResearchItem2.Value).DisplayName;
+            message += Loc.GetString("traitor-research-task-2-requirements", ("item2", item)) + "\n";
         }
         else if (component.ResearchItem2 != null && component.Task2Complete)
-        {
             message += Loc.GetString("traitor-research-task-2-complete") + "\n";
-        }
 
         if (component.ResearchItem3 != null && !component.Task3Complete)
         {
-            message += Loc.GetString("traitor-research-task-3-requirements", ("item3", component.ResearchItem3.DisplayName)) + "\n";
+            var item = _prototype.Index(component.ResearchItem3.Value).DisplayName;
+            message += Loc.GetString("traitor-research-task-3-requirements", ("item3", item)) + "\n";
         }
         else if (component.ResearchItem3 != null && component.Task3Complete)
-        {
             message += Loc.GetString("traitor-research-task-3-complete") + "\n";
-        }
 
         if (component.ResearchItem4 != null && !component.Task4Complete)
         {
-            message += Loc.GetString("traitor-research-task-4-requirements", ("item4", component.ResearchItem4.DisplayName)) + "\n";
+            var item = _prototype.Index(component.ResearchItem4.Value).DisplayName;
+            message += Loc.GetString("traitor-research-task-4-requirements", ("item4", item)) + "\n";
         }
         else if (component.ResearchItem4 != null && component.Task4Complete)
-        {
             message += Loc.GetString("traitor-research-task-4-complete");
-        }
+
         args.PushMarkup(message);
     }
 
     private void OnInteractUsing(EntityUid uid, SyndicateResearchTargetComponent component, InteractUsingEvent args)
     {
-        if (!TryComp<MetaDataComponent>(args.Used, out var meta))
+        if (!TryComp(args.Used, out MetaDataComponent? meta))
             return;
 
         var proto = meta.EntityPrototype?.ID;
@@ -109,13 +105,13 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
             if (component.ItemScanned)
                 return;
 
-            if (component.ResearchProtoIds.Count < 4)
+            if (component.SyndicateResearchSpecifiers.Count < 4)
             {
                 _popup.PopupEntity(Loc.GetString("traitor-research-scan-failed"), uid);
                 return;
             }
 
-            var list = component.ResearchProtoIds.ToList();
+            var list = component.SyndicateResearchSpecifiers.ToList();
 
             _random.Shuffle(list);
 
@@ -126,30 +122,22 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
             component.ResearchItem3 = selected[2];
             component.ResearchItem4 = selected[3];
 
-            var confirm = _audio.PlayPvs("/Audio/Machines/scan_finish.ogg", uid)?.Entity;
-
+            var confirmSound = new SoundPathSpecifier("/Audio/Machines/scan_finish.ogg");
+            _audio.PlayPvs(confirmSound, uid);
 
             _popup.PopupEntity(Loc.GetString("traitor-research-scan-success"), uid);
 
             component.ItemScanned = true;
         }
 
-        if (component.ResearchItem1 != null && component.ResearchItem1.ValidPrototypes.Contains(proto) && !component.Task1Complete)
-        {
+        if (component.ResearchItem1 != null && _prototype.Index(component.ResearchItem1.Value).ValidPrototypes.Contains(proto) && !component.Task1Complete)
             component.ActiveResearchNumber = 1;
-        }
-        else if (component.ResearchItem2 != null && component.ResearchItem2.ValidPrototypes.Contains(proto) && !component.Task2Complete)
-        {
+        else if (component.ResearchItem2 != null && _prototype.Index(component.ResearchItem2.Value).ValidPrototypes.Contains(proto) && !component.Task2Complete)
             component.ActiveResearchNumber = 2;
-        }
-        else if (component.ResearchItem3 != null && component.ResearchItem3.ValidPrototypes.Contains(proto) && !component.Task3Complete)
-        {
+        else if (component.ResearchItem3 != null && _prototype.Index(component.ResearchItem3.Value).ValidPrototypes.Contains(proto) && !component.Task3Complete)
             component.ActiveResearchNumber = 3;
-        }
-        else if (component.ResearchItem4 != null && component.ResearchItem4.ValidPrototypes.Contains(proto) && !component.Task4Complete)
-        {
+        else if (component.ResearchItem4 != null && _prototype.Index(component.ResearchItem4.Value).ValidPrototypes.Contains(proto) && !component.Task4Complete)
             component.ActiveResearchNumber = 4;
-        }
         else
             return;
 
@@ -173,17 +161,13 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
             CancelDuplicate = false
         };
 
-        var userId = args.User;
-        var researchingId = uid;
-        var usedId = args.Used;
-
-        if (!TryComp<MetaDataComponent>(userId, out var userMeta))
+        if (!TryComp(args.User, out MetaDataComponent? userMeta))
             return;
 
-        if (!TryComp<MetaDataComponent>(researchingId, out var researchingMeta))
+        if (!TryComp(uid, out MetaDataComponent? researchingMeta))
             return;
 
-        if (!TryComp<MetaDataComponent>(usedId, out var usedMeta))
+        if (!TryComp(args.Used, out MetaDataComponent? usedMeta))
             return;
 
         _doAfter.TryStartDoAfter(doAfter);
@@ -214,18 +198,15 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
         {
             component.ResearchComplete = true;
 
-            if (component.ResearchUnlockId == null)
-                return;
-
             _completedResearch.Research(component.ResearchUnlockId);
-            var ResearchAnnouncementSound = new SoundPathSpecifier("/Audio/_Starlight/Announcements/attention.ogg");
+            var researchAnnouncementSound = new SoundPathSpecifier("/Audio/_Starlight/Announcements/attention.ogg");
 
             var delay = TimeSpan.FromSeconds(_random.Next(60, 301));
 
             Timer.Spawn(delay,
                 () =>
                 {
-                    _chat.DispatchGlobalAnnouncement(Loc.GetString(component.ResearchAnnouncementString), playSound: true, announcementSound: ResearchAnnouncementSound , colorOverride: Color.Red);
+                    _chat.DispatchGlobalAnnouncement(Loc.GetString(component.ResearchAnnouncementString), playSound: true, announcementSound: researchAnnouncementSound , colorOverride: Color.Red);
                 });
         }
 
