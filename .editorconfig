@@ -287,3 +287,14 @@ dotnet_naming_style.begin_s_.required_prefix = s_
 dotnet_naming_style.begin_s_.required_suffix =
 dotnet_naming_style.begin_s_.word_separator =
 dotnet_naming_style.begin_s_.capitalization = camel_case
+
+# YAML Files
+[*.{yml,yaml}]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+
+ij_yaml_indent_sequence_value = false
+ij_yaml_block_mapping_on_new_line = false
+ij_yaml_keep_line_breaks = true
