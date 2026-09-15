@@ -11,7 +11,7 @@
       roles:
       - 1535727158977105921 # Blimpuf Maintainers
       flags: [ADMIN, BAN, DEBUG, FUN, SERVER, SPAWN, VAREDIT, MAPPING, LOGS, ROUND, QUERY, ADMINHELP, VIEWNOTES, EDITNOTES, STEALTH, ADMINCHAT, MODERATOR, ADMINWHO, DANGER, HOST]
-      oocColor: "#965f7f"
+      oocColor: "#f2a3ef"
 
     - name: Loremaster
       roles:
