@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 20:36:41
-  entityCount: 36681
+  entityCount: 36670
 maps:
 - 1
 grids:
@@ -38173,15 +38173,6 @@ entities:
     - type: Transform
       pos: 67.5,52.5
       parent: 29399
-- proto: AstroNavCartridge
-  entities:
-  - uid: 1203
-    components:
-    - type: Transform
-      parent: 1202
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: ATM
   entities:
   - uid: 1215
@@ -100518,43 +100509,6 @@ entities:
     - type: Transform
       pos: -33.5,-58.5
       parent: 2
-- proto: CrateServicePersonnel
-  entities:
-  - uid: 1202
-    components:
-    - type: Transform
-      pos: 46.5,-9.5
-      parent: 2
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14673
-        moles:
-          Oxygen: 1.8856695
-          Nitrogen: 7.0937095
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 1207
-          - 1208
-          - 1209
-          - 1210
-          - 1213
-          - 1204
-          - 1211
-          - 1206
-          - 1212
-          - 1214
-          - 1203
-          - 1205
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
 - proto: CrateServiceReplacementLights
   entities:
   - uid: 11350
@@ -100778,15 +100732,6 @@ entities:
         moles:
           Oxygen: 1.7459903
           Nitrogen: 6.568249
-- proto: CrewManifestCartridge
-  entities:
-  - uid: 1204
-    components:
-    - type: Transform
-      parent: 1202
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: CrewMonitoringServer
   entities:
   - uid: 11372
@@ -118480,15 +118425,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: FundingAllocationComputerCircuitboard
-  entities:
-  - uid: 1205
-    components:
-    - type: Transform
-      parent: 1202
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: FurnitureAquarium
   entities:
   - uid: 13618
@@ -172359,15 +172295,6 @@ entities:
     - type: Physics
       canCollide: False
       bodyType: Static
-- proto: LogProbeCartridge
-  entities:
-  - uid: 1206
-    components:
-    - type: Transform
-      parent: 1202
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: LootSpawnerMaterials
   entities:
   - uid: 20138
@@ -173435,15 +173362,6 @@ entities:
     - type: Transform
       pos: -31.387192,58.9009
       parent: 2
-- proto: MaterialCloth
-  entities:
-  - uid: 1207
-    components:
-    - type: Transform
-      parent: 1202
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: MaterialCloth10
   entities:
   - uid: 1820
@@ -173481,15 +173399,6 @@ entities:
     - type: Transform
       pos: -49.44128,-11.567205
       parent: 2
-- proto: MaterialDurathread
-  entities:
-  - uid: 1208
-    components:
-    - type: Transform
-      parent: 1202
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: MaterialWoodPlank10
   entities:
   - uid: 20255
@@ -173848,15 +173757,6 @@ entities:
     - type: Transform
       pos: 27.69092,4.649842
       parent: 2
-- proto: MedTekCartridge
-  entities:
-  - uid: 1209
-    components:
-    - type: Transform
-      parent: 1202
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: MetalHydrogen1
   entities:
   - uid: 20318
@@ -174283,15 +174183,6 @@ entities:
     - type: Transform
       pos: -33.07807,59.45662
       parent: 2
-- proto: NanoTaskCartridge
-  entities:
-  - uid: 1210
-    components:
-    - type: Transform
-      parent: 1202
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: nctterminal
   entities:
   - uid: 20376
@@ -174300,15 +174191,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 18.5,-10.5
       parent: 2
-- proto: NetProbeCartridge
-  entities:
-  - uid: 1211
-    components:
-    - type: Transform
-      parent: 1202
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: NetworkConfigurator
   entities:
   - uid: 20377
@@ -174321,15 +174203,6 @@ entities:
     - type: Transform
       pos: 11.55334,-34.190166
       parent: 2
-- proto: NewsReaderCartridge
-  entities:
-  - uid: 1212
-    components:
-    - type: Transform
-      parent: 1202
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: NewtonCradle
   entities:
   - uid: 20379
@@ -174473,15 +174346,6 @@ entities:
     - type: Transform
       pos: -12.585021,-50.39183
       parent: 2
-- proto: NotekeeperCartridge
-  entities:
-  - uid: 1213
-    components:
-    - type: Transform
-      parent: 1202
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: NoticeBoard
   entities:
   - uid: 20403
@@ -234440,15 +234304,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 41.5,4.5
       parent: 29399
-- proto: WantedListCartridge
-  entities:
-  - uid: 1214
-    components:
-    - type: Transform
-      parent: 1202
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: WardrobeBlackFilled
   entities:
   - uid: 28903
@@ -237902,5 +237757,20 @@ entities:
     components:
     - type: Transform
       pos: 18.5,-9.5
+      parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 36951
+    components:
+    - type: Transform
+      pos: 44.5,-6.5
+      parent: 2
+      rot: 3.141592653589793 rad
+- proto: CrateServicePersonnel
+  entities:
+  - uid: 36952
+    components:
+    - type: Transform
+      pos: 46.5,-9.5
       parent: 2
 ...

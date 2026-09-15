@@ -27,6 +27,7 @@
     - BaseStationAllEventsEligible
     - BaseStationNanotrasen
     - BaseStationDeliveries
+    - BaseStationServiceJobs # imp
     - BaseStationCryoTeleportation #Starlight
     - BaseStationSecureTerminal # Starlight
   categories: [ HideSpawnMenu ]
