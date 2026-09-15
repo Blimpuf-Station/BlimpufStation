@@ -137,10 +137,10 @@
     state: icon
 
 - type: serviceJob
-  id: ServiceJobDARE
-  name: service-job-dare-name
-  description: service-job-dare-description
-  startAnnounce: service-job-dare-start
+  id: ServiceJobCARE
+  name: service-job-care-name
+  description: service-job-care-description
+  startAnnounce: service-job-care-start
   sprite:
     sprite: Objects/Specific/Hydroponics/cannabis.rsi
     state: produce

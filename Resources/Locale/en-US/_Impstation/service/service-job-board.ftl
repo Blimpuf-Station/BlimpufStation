@@ -69,9 +69,9 @@ service-job-scavenger-hunt-name = Scavenger Hunt
 service-job-scavenger-hunt-description = Hide items around the station for observant crew to find. Team building fun!
 service-job-scavenger-hunt-start = A station-wide scavenger hunt is starting soon! Leave no stone unturned!
 
-service-job-dare-name = D.A.R.E. Seminar
-service-job-dare-description = Learn the dangers of smoking the devil's lettuce and how to avoid it.
-service-job-dare-start = The D.A.R.E. seminar is starting soon! Learn about dangerous drugs and chemicals and how Not to become addicted to them!
+service-job-care-name = Contraband Avoidance, Reporting, and Enforcement (C.A.R.E) Seminar
+service-job-care-description = Come learn about the dangers of contraband in all of its many forms!
+service-job-care-start = The "Contraband, Avoidance, Reporting, and Enforcement", or C.A.R.E. seminar is starting soon! Learn about dangerous drugs or critical contraband and how best to avoid their influence!
 
 service-job-lottery-name = Lottery
 service-job-lottery-description = Conduct a lottery, make sure to have fun prizes ready!
