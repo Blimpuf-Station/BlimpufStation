@@ -70,7 +70,7 @@ service-job-scavenger-hunt-description = Hide items around the station for obser
 service-job-scavenger-hunt-start = A station-wide scavenger hunt is starting soon! Leave no stone unturned!
 
 service-job-care-name = Contraband Avoidance, Reporting, and Enforcement (C.A.R.E) Seminar
-service-job-care-description = Come learn about the dangers of contraband in all of its many forms!
+service-job-care-description = Come learn about the dangers of contraband in all of its many forms, whether they be chemicals, weapons, or other dangers.
 service-job-care-start = The "Contraband, Avoidance, Reporting, and Enforcement", or C.A.R.E. seminar is starting soon! Learn about dangerous drugs or critical contraband and how best to avoid their influence!
 
 service-job-lottery-name = Lottery

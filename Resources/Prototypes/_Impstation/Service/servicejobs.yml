@@ -142,8 +142,8 @@
   description: service-job-care-description
   startAnnounce: service-job-care-start
   sprite:
-    sprite: Objects/Specific/Hydroponics/cannabis.rsi
-    state: produce
+    sprite: Clothing/Hands/Gloves/Color/yellow.rsi
+    state: icon
 
 - type: serviceJob
   id: ServiceJobLottery

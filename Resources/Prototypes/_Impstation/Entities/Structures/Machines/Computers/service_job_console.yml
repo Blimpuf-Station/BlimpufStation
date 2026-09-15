@@ -20,6 +20,9 @@
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
       sprite: Structures/Machines/computers.rsi #Funky - sprite change
+  - type: ActivatableUIRequiresAccess
+  - type: AccessReader
+    access: [ [ "HeadOfPersonnel" ] ]
   - type: ServiceJobBoardConsole
   - type: ActivatableUI
     key: enum.ServiceJobBoardUiKey.Key
