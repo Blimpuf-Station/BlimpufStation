@@ -1,0 +1,278 @@
+- type: entity
+  id: VialCaseCC
+  parent: [ BaseStorageItem, BaseBagOpenClose, BaseCentcommContraband ]
+  name: CentComm vial case
+  description: A convenient, compact box with 6 empty vials.
+  components:
+  - type: LockVisuals
+  - type: LockedStorage
+  - type: AccessReader
+    access: [["CentralCommand"]]
+  - type: Lock
+    unlockOnClick: false
+    useAccess: true
+    autoUnlock: true  # For some reason they seem to mean the opposite of what they do
+    autoLock: false
+    showLockVerbs: true
+    breakOnAccessBreaker: false
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Specific/Medical/cc_vial_case.rsi
+    layers:
+    - state: closed
+      map: ["closeLayer"]
+    - state: open
+      map: ["openLayer"]
+    - state: vial1
+      map: ["vial1"]
+      visible: false
+    - state: vial2
+      map: ["vial2"]
+      visible: false
+    - state: vial3
+      map: ["vial3"]
+      visible: false
+    - state: vial4
+      map: ["vial4"]
+      visible: false
+    - state: vial5
+      map: ["vial5"]
+      visible: false
+    - state: vial6
+      map: ["vial6"]
+      visible: false
+  - type: Storage
+    grid:
+    - 0,0,2,1
+  - type: Item
+    sprite: _Blimpuf/Objects/Specific/Medical/cc_vial_case.rsi
+    size: Small
+    shape:
+    - 0,0,1,1
+    storedRotation: 90
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ChemistryEmptyVial
+          amount: 6
+  - type: ItemCounter
+    count:
+      tags: [Vial]
+    composite: true
+    layerStates:
+    - vial1
+    - vial2
+    - vial3
+    - vial4
+    - vial5
+    - vial6
+  - type: Appearance
+
+- type: entity
+  name: CentComm mini syringe
+  parent: [ Syringe, BaseCentcommContraband ]
+  description: A regular syringe, reshaped to fit inside of a gun.
+  id: MiniSyringeCC
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/syringe.rsi
+    layers:
+      - state: minisyringe1
+        map: ["enum.SolutionContainerLayers.Fill"]
+        visible: false
+      - state: ccsyringeproj
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 5
+  - type: SolutionContainerVisuals
+    maxFillLevels: 3
+    fillBaseName: minisyringe
+    inHandsMaxFillLevels: 3
+    inHandsFillBaseName: -fill-
+  - type: EmbeddableProjectile
+    offset: "0,-0.1"
+    minimumSpeed: 3
+    removalTime: 0.25
+    embedOnThrow: false
+  - type: SolutionInjectWhileEmbedded
+    transferAmount: 1
+    solution: injector
+    updateInterval: 2
+  - type: SolutionInjectOnEmbed
+    transferAmount: 1
+    solution: injector
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeCircle
+          radius: 0.2
+        density: 5
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,-0.3,0.1,0.3"
+        hard: false
+        mask:
+        - Impassable
+        - BulletImpassable
+  - type: Projectile
+    deleteOnCollide: false
+    onlyCollideWhenShot: true
+    damage:
+      types:
+        Piercing: 5
+  - type: Tag
+    tags:
+    - Syringe
+    - Trash
+    - SyringeGunAmmo
+
+# Should technically be in Weapons/Guns/pneumatic_cannon.yml
+- type: entity
+  name: experimental syringe gun
+  parent: [ BaseStorageItem, BaseCentcommContraband ]
+  id: LauncherSyringeCC
+  description: Load full of poisoned syringes for optimal fun.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Weapons/Guns/Cannons/syringe_gun.rsi
+    layers:
+    - state: syringe_gun
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,3,1
+    whitelist:
+      tags:
+      - SyringeGunAmmo
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/syringe_gun.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+    clumsyProof: true
+  - type: ContainerAmmoProvider
+    container: storagebase
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,2,1
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+
+# Should technically be in /Specific/medical.yml or cases.yml - just collecting currently
+- type: entity
+  id: BottleCaseCC
+  parent: [ BaseBottleCase, BaseCentcommContraband ]
+  name: chemical case
+  suffix: CentComm
+  description: A plastic case with slots for bottles.
+  components:
+  - type: LockVisuals
+  - type: LockedStorage
+  - type: AccessReader
+    access: [["CentralCommand"]]
+  - type: Lock
+    unlockOnClick: false
+    useAccess: true
+    autoUnlock: true
+    autoLock: false
+    showLockVerbs: true
+    breakOnAccessBreaker: false
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
+    layers:
+    - state: bottlecase
+    - state: bottle1
+      map: ["bottle1"]
+      visible: false
+    - state: bottle2
+      map: ["bottle2"]
+      visible: false
+    - state: bottle3
+      map: ["bottle3"]
+      visible: false
+    - state: bottle4
+      map: ["bottle4"]
+      visible: false
+    - state: bottle5
+      map: ["bottle5"]
+      visible: false
+    - state: bottle6
+      map: ["bottle6"]
+      visible: false
+    - state: bottle7
+      map: ["bottle7"]
+      visible: false
+    - state: bottle8
+      map: ["bottle8"]
+      visible: false
+  - type: Item
+    sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
+    size: Large
+    shape:
+    - 0,0,3,1
+
+# Should technically be in /Specific/medical.yml or cases.yml - just collecting currently
+- type: entity
+  id: PenPackCC
+  parent: [ BasePenPack, BaseCentcommContraband ]
+  name: autoinjector pack
+  suffix: CentComm
+  description: A pouch filled with some autoinjectors.
+  components:
+  - type: LockVisuals
+  - type: LockedStorage
+  - type: AccessReader
+    access: [["CentralCommand"]]
+  - type: Lock
+    unlockOnClick: false
+    useAccess: true
+    autoUnlock: true
+    autoLock: false
+    showLockVerbs: true
+    breakOnAccessBreaker: false
+  - type: Storage
+    maxItemSize: Tiny
+    grid:
+    - 0,0,1,1
+    whitelist:
+       tags:
+        - Medipen
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
+    state: injectorpack
+  - type: Item
+    sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
+    size: Small
+    shape:
+    - 0,0,1,1
+
+# Should technically be in /Specific/medical.yml or cases.yml - just collecting currently
+- type: entity
+  id: SurgicalKitCC
+  parent: [ BaseSurgicalKit, BaseCentcommContraband ]
+  name: surgical kit
+  suffix: CentComm
+  description: A compact kit of surgical tools.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
+    state: surgerykit
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,2,1
+    sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
