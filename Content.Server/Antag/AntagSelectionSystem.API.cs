@@ -431,7 +431,9 @@ public sealed partial class AntagSelectionSystem
         if (session == null)
             return;
 
-        _audio.PlayGlobal(briefingSound, session);
+        if (briefingSound != null)
+            RaiseNetworkEvent(new AntagBriefingSoundEvent(briefingSound), session);
+
         if (!string.IsNullOrEmpty(briefing))
         {
             var wrappedMessage = Loc.GetString("chat-manager-server-wrap-message", ("message", briefing));
