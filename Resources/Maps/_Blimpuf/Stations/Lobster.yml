@@ -154485,7 +154485,7 @@ entities:
       pos: -10.45,37.9
       parent: 2
       rot: 4.71238898038469 rad
-- proto: LockerHeadOfPersonnel
+- proto: LockerHeadOfPersonnelFilled
   entities:
   - uid: 25221
     components:
