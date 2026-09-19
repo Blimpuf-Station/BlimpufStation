@@ -1,0 +1,7 @@
+- type: entity
+  id: NinjaDigitalGlitchEffect
+  components:
+    - type: ParticleEmitter
+      effect: BLNinjaGlovesGlitch
+    - type: TimedDespawn
+      lifetime: 1
