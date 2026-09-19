@@ -33,6 +33,10 @@ using Content.Shared._Starlight.Overlay.Components;
 using Content.Shared._Starlight.Changeling;
 using Content.Server._Starlight.Objectives.Components;
 using Content.Shared.Flash;
+using Content.Shared.Silicons.Laws.Components;
+using Content.Shared.Stealth;
+using Content.Shared.Whitelist;
+
 // Starlight edit end
 
 namespace Content.Server._Starlight.Changeling;
@@ -43,6 +47,7 @@ public sealed partial class ChangelingSystem : EntitySystem
     [Dependency] private ChangelingIdentitySystem _changelingIdentitySystem = default!;
     [Dependency] private LanguageSystem _language = default!;
     [Dependency] private SharedFlashSystem _flashSystem = default!;
+    [Dependency] private SharedStealthSystem _stealth = default!;
 
     private static readonly ProtoId<ReagentPrototype> FerrochromicAcidPrototype = "FerrochromicAcid";
     private static readonly ProtoId<ReagentPrototype> PolytrinicAcidPrototype = "PolytrinicAcid";
@@ -74,6 +79,7 @@ public sealed partial class ChangelingSystem : EntitySystem
         SubscribeLocalEvent<ChangelingComponent, ActionThermalEyesightEvent>(OnThermalEyesight); // Starlight
         SubscribeLocalEvent<ChangelingComponent, ActionBiodegradeEvent>(OnBiodegrade);
         SubscribeLocalEvent<ChangelingComponent, ActionChameleonSkinEvent>(OnChameleonSkin);
+        SubscribeLocalEvent<ChangelingComponent, ActionCyberneticCamouflageEvent>(OnCyberneticCamouflage);
         SubscribeLocalEvent<ChangelingComponent, ActionEphedrineOverdoseEvent>(OnEphedrineOverdose);
         SubscribeLocalEvent<ChangelingComponent, ActionDesoxyephedrineOverdoseEvent>(OnDesoxyephedrineOverdose); // Starlight
         SubscribeLocalEvent<ChangelingComponent, ActionAmalgamOverdoseEvent>(OnAmalgamOverdose); // Starlight
@@ -477,6 +483,12 @@ public sealed partial class ChangelingSystem : EntitySystem
 
     private void OnChameleonSkin(EntityUid uid, ChangelingComponent comp, ref ActionChameleonSkinEvent args)
     {
+        if (comp.StealthMode == ChangelingStealthMode.CyberneticCamouflage)
+        {
+            _popup.PopupEntity(Loc.GetString("changeling-stealth-blocked"), uid, uid);
+            return;
+        }
+
         if (comp.StealthEnabled && HasComp<StealthComponent>(uid) && HasComp<StealthOnMoveComponent>(uid))
             ToggleChameleonSkin(uid, comp, false);
         else
@@ -491,6 +503,8 @@ public sealed partial class ChangelingSystem : EntitySystem
             RemComp<StealthOnMoveComponent>(uid);
             _popup.PopupEntity(Loc.GetString("changeling-chameleon-end"), uid, uid);
             comp.StealthEnabled = false;
+            comp.StealthMode = ChangelingStealthMode.None;
+            comp.StealthDrain = 1.5f;
         }
         else
         {
@@ -499,6 +513,50 @@ public sealed partial class ChangelingSystem : EntitySystem
             stealthonmove.PassiveVisibilityRate = -0.37f;
             _popup.PopupEntity(Loc.GetString("changeling-chameleon-start"), uid, uid);
             comp.StealthEnabled = true;
+            comp.StealthMode = ChangelingStealthMode.ChameleonSkin;
+        }
+    }
+
+    private void OnCyberneticCamouflage(EntityUid uid, ChangelingComponent comp, ref ActionCyberneticCamouflageEvent args)
+    {
+        if (comp.StealthMode == ChangelingStealthMode.ChameleonSkin)
+        {
+            _popup.PopupEntity(Loc.GetString("changeling-stealth-blocked"), uid, uid);
+            return;
+        }
+
+        if (comp.StealthEnabled && HasComp<StealthComponent>(uid))
+            ToggleCyberneticCamouflage(uid, comp, false);
+        else
+            ToggleCyberneticCamouflage(uid, comp, true);
+    }
+
+    public void ToggleCyberneticCamouflage(EntityUid uid, ChangelingComponent comp, bool toState)
+    {
+        if (!toState)
+        {
+            RemComp<StealthComponent>(uid);
+            _popup.PopupEntity(Loc.GetString("changeling-cybernetic-camouflage-end"), uid, uid);
+            comp.StealthEnabled = false;
+            comp.StealthMode = ChangelingStealthMode.None;
+            comp.StealthDrain = 0f;
+        }
+        else
+        {
+            var stealth = EnsureComp<StealthComponent>(uid);
+            stealth.AffectedEntities = new EntityWhitelist
+            {
+                Components = new[] { "SiliconLawBound" }
+            };
+            stealth.MinVisibility = -1;
+            stealth.MaxVisibility = -1;
+            stealth.ExamineThreshold = -100;
+            stealth.ExaminedDesc = "silicon-stealth-visual-effect";
+            _stealth.SetVisibility(uid, -1f, stealth);
+            _popup.PopupEntity(Loc.GetString("changeling-cybernetic-camouflage-start"), uid, uid);
+            comp.StealthEnabled = true;
+            comp.StealthMode = ChangelingStealthMode.CyberneticCamouflage;
+            Dirty(uid, stealth);
         }
     }
 

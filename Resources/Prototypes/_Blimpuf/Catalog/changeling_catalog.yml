@@ -1,0 +1,13 @@
+- type: listing
+  id: EvolutionMenuUtilityCyberneticCamouflage
+  name: evolutionmenu-utility-cybernetic-camouflage-name
+  description: evolutionmenu-utility-cybernetic-camouflage-desc
+  icon: { sprite: Changeling/changeling_abilities.rsi, state: cybernetic_camouflage }
+  productAction: ActionCyberneticCamouflage
+  cost:
+    EvolutionPoint: 3
+  categories:
+    - ChangelingAbilityUtility
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1

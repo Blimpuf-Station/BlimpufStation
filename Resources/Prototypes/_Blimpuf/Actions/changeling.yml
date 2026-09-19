@@ -1,0 +1,18 @@
+- type: entity
+  id: ActionCyberneticCamouflage
+  name: Cybernetic Camoflage
+  description: Instantly become undetectable by Silicon based beings. Costs 15 chemicals.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    useDelay: 1
+    itemIconStyle: NoItem
+    icon:
+      sprite: Changeling/changeling_abilities.rsi
+      state: cybernetic_camouflage
+    checkCanInteract: false
+    checkConsciousness: false
+  - type: InstantAction
+    event: !type:ActionCyberneticCamouflageEvent {}
+  - type: ChangelingAction
+    chemicalCost: 15 # Takes energy to disable, so we can make it a little cheaper.

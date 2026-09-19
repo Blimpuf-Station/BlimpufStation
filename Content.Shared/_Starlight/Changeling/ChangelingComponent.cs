@@ -19,6 +19,9 @@ public sealed partial class ChangelingComponent : Component
         new SoundPathSpecifier("/Audio/Effects/gib3.ogg"),
     };
 
+    [DataField]
+    public ChangelingStealthMode StealthMode = ChangelingStealthMode.None;
+
     [DataField] public SoundSpecifier ShriekSound = new SoundPathSpecifier("/Audio/Effects/changeling_shriek.ogg");
 
     [DataField] public float ShriekPower = 2.5f;
@@ -175,4 +178,11 @@ public sealed partial class TransformData
     /// </summary>
     [ViewVariables(VVAccess.ReadOnly), NonSerialized]
     public Entity<HumanoidAppearanceComponent> Appearance;
+}
+
+public enum ChangelingStealthMode
+{
+    None,
+    ChameleonSkin,
+    CyberneticCamouflage
 }
