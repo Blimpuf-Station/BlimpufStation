@@ -948,5 +948,13 @@ Entries:
   id: 15301
   time: '2026-09-19T08:30:06.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/153
+- author: Floximo, Rinary
+  changes:
+  - message: AI no longer sees job icons outside camera range while suit sensors are
+      not set to coordinates.
+    type: Fix
+  id: 16701
+  time: '2026-09-19T10:51:16.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/167
 Order: -1
 
