@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 23:06:56
-  entityCount: 19365
+  entityCount: 19371
 maps:
 - 1
 grids:
@@ -51979,11 +51979,6 @@ entities:
     - type: Transform
       pos: 35.5,-27.5
       parent: 2
-  - uid: 7404
-    components:
-    - type: Transform
-      pos: -19.5,-9.5
-      parent: 2
   - uid: 7405
     components:
     - type: Transform
@@ -59228,6 +59223,17 @@ entities:
       rot: 3.141592653589793 rad
       pos: -5.5,17.5
       parent: 2
+  - uid: 19399
+    components:
+    - type: Transform
+      pos: -18.5,-9.5
+      parent: 2
+  - uid: 19400
+    components:
+    - type: Transform
+      pos: -18.5,-10.5
+      parent: 2
+      rot: 3.141592653589793 rad
 - proto: DisposalJunction
   entities:
   - uid: 8605
@@ -62648,6 +62654,30 @@ entities:
       rot: 3.141592653589793 rad
       pos: -5.5,18.5
       parent: 2
+  - uid: 19401
+    components:
+    - type: Transform
+      pos: -17.5,-10.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 19403
+    components:
+    - type: Transform
+      pos: -16.5,-10.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 19404
+    components:
+    - type: Transform
+      pos: -15.5,-10.5
+      parent: 2
+      rot: 4.71238898038469 rad
+  - uid: 19405
+    components:
+    - type: Transform
+      pos: -14.5,-10.5
+      parent: 2
+      rot: 4.71238898038469 rad
 - proto: DisposalRouter
   entities:
   - uid: 9196
@@ -63237,12 +63267,6 @@ entities:
     - type: Transform
       pos: 22.5,15.5
       parent: 2
-  - uid: 9283
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -15.5,-10.5
-      parent: 2
   - uid: 9284
     components:
     - type: Transform
@@ -63253,6 +63277,12 @@ entities:
     components:
     - type: Transform
       pos: -10.5,22.5
+      parent: 2
+  - uid: 19398
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -19.5,-9.5
       parent: 2
 - proto: DisposalUnit
   entities:
@@ -63421,10 +63451,10 @@ entities:
     - type: Transform
       pos: -23.5,22.5
       parent: 2
-  - uid: 9319
+  - uid: 19397
     components:
     - type: Transform
-      pos: -15.5,-10.5
+      pos: -19.5,-9.5
       parent: 2
 - proto: DisposalXJunction
   entities:
@@ -129141,4 +129171,12 @@ entities:
     - type: Transform
       pos: -26.609678,7.5555515
       parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 19406
+    components:
+    - type: Transform
+      pos: -15.5,-10.5
+      parent: 2
+      rot: 3.141592653589793 rad
 ...
