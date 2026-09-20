@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 09:02:01
-  entityCount: 28353
+  entityCount: 28351
 maps:
 - 1
 grids:
@@ -79246,16 +79246,6 @@ entities:
       accessListsOriginal:
       - - Security
       - - Cadet
-- proto: CrateServicePersonnel
-  entities:
-  - uid: 12414
-    components:
-    - type: Transform
-      pos: -2.5,-19.5
-      parent: 2
-    - type: AccessReader
-      accessListsOriginal:
-      - - Command
 - proto: CrateServiceTheatre
   entities:
   - uid: 12415
@@ -184470,6 +184460,14 @@ entities:
     components:
     - type: Transform
       pos: 4.5,-4.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 28481
+    components:
+    - type: Transform
+      pos: -2.5,-19.5
       parent: 2
       rot: 1.5707963267948966 rad
 ...

@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 22:05:59
-  entityCount: 31217
+  entityCount: 31212
 maps:
 - 1
 grids:
@@ -19584,11 +19584,6 @@ entities:
     components:
     - type: Transform
       pos: 55.5,55.5
-      parent: 2
-  - uid: 1334
-    components:
-    - type: Transform
-      pos: 19.5,4.5
       parent: 2
   - uid: 12394
     components:
@@ -162698,11 +162693,6 @@ entities:
     - type: Transform
       pos: 59.5,-28.5
       parent: 2
-  - uid: 24008
-    components:
-    - type: Transform
-      pos: 18.5,4.5
-      parent: 2
   - uid: 25039
     components:
     - type: Transform
@@ -162713,6 +162703,11 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 27.5,20.5
+      parent: 2
+  - uid: 31319
+    components:
+    - type: Transform
+      pos: 19.5,4.5
       parent: 2
 - proto: SofaCornerRed
   entities:
@@ -171759,11 +171754,6 @@ entities:
     components:
     - type: Transform
       pos: 14.5,4.5
-      parent: 2
-  - uid: 25407
-    components:
-    - type: Transform
-      pos: 18.5,4.5
       parent: 2
   - uid: 25408
     components:
@@ -197527,5 +197517,12 @@ entities:
     components:
     - type: Transform
       pos: 18.5,-18.5
+      parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 31320
+    components:
+    - type: Transform
+      pos: 18.5,4.5
       parent: 2
 ...

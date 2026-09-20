@@ -165,22 +165,6 @@
     sprite: Clothing/Shoes/Specific/wizard.rsi
 
 - type: entity
-  parent: [ClothingShoesWizard, ClothingShoesBootsMagBase, BaseJetpack, BaseContrabandTier4, ClothingShoesMilitaryBase]
-  id: ClothingShoesSamurai
-  name: waraji
-  description: A traditional pair of shoes contrasted by a pair of jet thrusters sticking out the soles.
-  components:
-    - type: GasTank
-      outputPressure: 42.6
-      air:
-        # 2 minutes of thrust
-        volume: 0.75
-        temperature: 293.15
-        moles:
-          Oxygen: 0.153853429 # oxygen
-          Nitrogen: 0.153853429 # nitrogen
-
-- type: entity
   parent: [ClothingShoesBase, BaseChameleon]
   id: ClothingShoesChameleon
   name: black shoes

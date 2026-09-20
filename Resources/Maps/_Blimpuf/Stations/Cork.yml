@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 07/13/2026 05:52:45
-  entityCount: 10650
+  entityCount: 10651
 maps:
 - 1
 grids:
@@ -74051,5 +74051,12 @@ entities:
     components:
     - type: Transform
       pos: 7.5,-12.5
+      parent: 2
+- proto: ComputerServiceJobBoardFlatpack
+  entities:
+  - uid: 10718
+    components:
+    - type: Transform
+      pos: 3.5,-4.5
       parent: 2
 ...

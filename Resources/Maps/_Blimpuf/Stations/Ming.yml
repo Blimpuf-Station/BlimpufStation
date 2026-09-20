@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 20:54:29
-  entityCount: 29934
+  entityCount: 29936
 maps:
 - 1
 grids:
@@ -70469,6 +70469,12 @@ entities:
     - type: Transform
       pos: 31.5,25.5
       parent: 2
+  - uid: 30080
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -21.5,-7.5
+      parent: 2
 - proto: ChairPilotSeat
   entities:
   - uid: 11588
@@ -75007,13 +75013,6 @@ entities:
     components:
     - type: Transform
       pos: 10.5,-53.5
-      parent: 2
-- proto: CrateServicePersonnel
-  entities:
-  - uid: 12349
-    components:
-    - type: Transform
-      pos: -24.5,-8.5
       parent: 2
 - proto: CrayonBox
   entities:
@@ -185321,5 +185320,20 @@ entities:
     components:
     - type: Transform
       pos: -9.14,6.6
+      parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 30079
+    components:
+    - type: Transform
+      pos: -21.5,-8.5
+      parent: 2
+      rot: 3.141592653589793 rad
+- proto: CrateServicePersonnel
+  entities:
+  - uid: 30081
+    components:
+    - type: Transform
+      pos: -24.5,-8.5
       parent: 2
 ...
