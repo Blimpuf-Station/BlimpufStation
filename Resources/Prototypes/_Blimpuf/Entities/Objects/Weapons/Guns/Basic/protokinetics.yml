@@ -127,3 +127,65 @@
       whitelist:
         tags:
           - PKAUpgrade
+
+- type: entity
+  name: proto-kinetic disassembler
+  id: WeaponProtoKineticDisassembler
+  description: Fires lower damage kinetic bolts than a Proto-kinetic Accelerator, but at a more rapid rate. Great for tearing down structures.
+  parent: [BaseItem, BaseCargoContraband, BaseContrabandTier2]
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Objects/Weapons/Guns/Basic/kinetic_disassembler.rsi
+      layers:
+        - state: icon
+    - type: Item
+      sprite: _Blimpuf/Objects/Weapons/Guns/Basic/kinetic_disassembler.rsi
+      size: Large
+      shape:
+        - 0,0,3,1
+    - type: Clothing
+      sprite: _Blimpuf/Objects/Weapons/Guns/Basic/kinetic_disassembler.rsi
+      quickEquip: false
+      slots:
+        - suitStorage
+        - Belt
+    - type: GunWieldBonus
+      minAngle: -30
+      maxAngle: -30
+    - type: Wieldable
+      # starlight start
+    - type: MeleeWeapon
+      wideAnimationRotation: 90
+      damage:
+        types:
+          Blunt: 8
+      angle: 0
+      animation: WeaponArcThrust
+      soundHit:
+        collection: MetalThud
+    - type: MeleeRequiresWield
+    - type: AltFireMelee
+      # starlight end
+    - type: Gun
+      fireRate: 0.5
+      selectedMode: Burst
+      angleDecay: 45
+      minAngle: 44
+      maxAngle: 45
+      availableModes:
+        - Burst
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+      projectileSpeed: 25
+    - type: AmmoCounter
+    - type: Appearance
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 1.05 # 40% slower than a standard PKA
+      rechargeSound:
+        path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+    - type: BasicEntityAmmoProvider
+      proto: BulletKineticAntistructural
+      capacity: 3
+      count: 3
+    - type: UseDelay
+      delay: 1

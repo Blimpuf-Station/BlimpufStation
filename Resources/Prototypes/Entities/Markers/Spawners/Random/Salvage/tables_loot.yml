@@ -247,7 +247,9 @@
     - id: ClothingBeltSalvageWebbing
     - id: SeismicCharge
     - id: WeaponProtoKineticRailgun
-      weight: 0.25
+      weight: 0.3
+    - id: WeaponProtoKineticDisassembler
+      weight: 0.2
     - id: MineralScanner
       weight: 0.5
     - id: WeaponCrusher
@@ -262,6 +264,7 @@
   table: !type:GroupSelector
     children:
     - id: AdvancedMineralScanner
+    - id: WeaponProtoKineticDisassembler
     - id: BlueprintFulton
     - id: BlueprintSeismicCharge
     - id: WeaponCrusherGlaive

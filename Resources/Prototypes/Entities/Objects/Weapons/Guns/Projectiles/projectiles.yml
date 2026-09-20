@@ -611,6 +611,24 @@
     - type: TimedDespawn
       lifetime: 0.45 # 10ish tiles
     - type: GatheringProjectile
+
+# Blimpuf
+- type: entity
+  id: BulletKineticAntistructural
+  name: antistructural kinetic bolt
+  parent: BulletKinetic
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Projectile
+      impactEffect: BulletImpactEffectKinetic
+      damage:
+        types:
+          Blunt: 15 # 60% as good as a normal kinetic bullet
+          Structural: 30
+    # Short lifespan
+    - type: TimedDespawn
+      lifetime: 0.28
+    - type: GatheringProjectile
 # Blimpuf End
 
 - type: entity
