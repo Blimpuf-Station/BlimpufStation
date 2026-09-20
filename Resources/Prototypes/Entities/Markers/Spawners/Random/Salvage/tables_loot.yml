@@ -265,6 +265,7 @@
     children:
     - id: AdvancedMineralScanner
     - id: WeaponProtoKineticDisassembler
+    - id: BlueprintProtoKineticDisassembler
     - id: BlueprintFulton
     - id: BlueprintSeismicCharge
     - id: WeaponCrusherGlaive

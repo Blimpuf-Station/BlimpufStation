@@ -53,3 +53,14 @@
     providedRecipes:
     - DoubleEmergencyOxygenTank
     - DoubleEmergencyNitrogenTank
+
+# Blimpuf
+- type: entity
+  parent: BaseBlueprint
+  id: BlueprintProtoKineticDisassembler
+  name: proto-kinetic disassembler blueprint
+  description: A blueprint with a schematic of a proto-kinetic disassembler. It can be inserted into an autolathe.
+  components:
+    - type: Blueprint
+      providedRecipes:
+        - WeaponProtoKineticDisassembler

@@ -189,3 +189,10 @@
       count: 3
     - type: UseDelay
       delay: 1
+    - type: ContainerContainer
+      containers:
+        upgrades: !type:Container
+    - type: UpgradeableGun
+      whitelist:
+        tags:
+          - PKAUpgrade
