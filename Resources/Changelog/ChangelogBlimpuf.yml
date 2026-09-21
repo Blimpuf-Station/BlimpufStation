@@ -956,5 +956,12 @@ Entries:
   id: 16701
   time: '2026-09-19T10:51:16.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/167
+- author: Shimmers
+  changes:
+  - message: Add localization strings for cloud emotes.
+    type: Fix
+  id: 16801
+  time: '2026-09-21T13:14:00.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/168
 Order: -1
 
