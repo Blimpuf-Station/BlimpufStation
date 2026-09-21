@@ -963,5 +963,16 @@ Entries:
   id: 16801
   time: '2026-09-21T13:14:00.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/168
+- author: ItsMaitake and Shimmers
+  changes:
+  - message: Keycard Authentication Devices to the bridge and all heads of staff offices.
+    type: Add
+  - message: Fixed the salvage door linkages.
+    type: Fix
+  - message: Updated some lighting in various rooms.
+    type: Tweak
+  id: 16501
+  time: '2026-09-21T13:14:37.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/165
 Order: -1
 
