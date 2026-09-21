@@ -974,5 +974,13 @@ Entries:
   id: 16501
   time: '2026-09-21T13:14:37.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/165
+- author: wonderfulnewworld
+  changes:
+  - message: You can now take antag ghost roles with none enabled on your characters
+      again, and it'll create a random character.
+    type: Tweak
+  id: 17101
+  time: '2026-09-21T13:35:10.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/171
 Order: -1
 
