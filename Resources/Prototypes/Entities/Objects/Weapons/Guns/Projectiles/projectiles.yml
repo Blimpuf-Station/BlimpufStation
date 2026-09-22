@@ -624,7 +624,7 @@
       damage:
         types:
           Blunt: 15 # 60% as good as a normal kinetic bullet
-          Structural: 30
+          Structural: 60
     # Short lifespan
     - type: TimedDespawn
       lifetime: 0.28
