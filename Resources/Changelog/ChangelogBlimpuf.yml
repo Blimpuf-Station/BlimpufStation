@@ -982,5 +982,12 @@ Entries:
   id: 17101
   time: '2026-09-21T13:35:10.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/171
+- author: Shimmers
+  changes:
+  - message: Cargo techs are no longer required to equip goggles in their loadout.
+    type: Fix
+  id: 17401
+  time: '2026-09-23T13:05:10.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/174
 Order: -1
 
