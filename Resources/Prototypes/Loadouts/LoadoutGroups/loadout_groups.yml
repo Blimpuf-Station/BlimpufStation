@@ -948,6 +948,7 @@
 - type: loadoutGroup
   id: CargoTechnicianEyewear
   name: loadout-group-cargo-technician-eyewear
+  minLimit: 0
   loadouts:
     - CargoTechnicianCourierGoggles
 
