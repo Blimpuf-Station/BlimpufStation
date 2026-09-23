@@ -989,5 +989,12 @@ Entries:
   id: 17401
   time: '2026-09-23T13:05:10.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/174
+- author: ItsMaitake
+  changes:
+  - message: Proto-kinetic Blaster, Railgun, and Disassembler have been added to Salvage.
+    type: Add
+  id: 17001
+  time: '2026-09-23T13:46:31.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/170
 Order: -1
 
