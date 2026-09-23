@@ -11,6 +11,8 @@
   cost: 5000
   recipeUnlocks:
   - WeaponProtoKineticAccelerator
+  - WeaponProtoKineticBlaster
+  - WeaponProtoKineticRailgun
   - ShuttleGunKineticCircuitboard
   - MechEquipmentKineticAccelerator
   - FiringPinExpedition # Starlight
