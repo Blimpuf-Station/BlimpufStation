@@ -996,5 +996,13 @@ Entries:
   id: 17001
   time: '2026-09-23T13:46:31.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/170
+- author: Shimmers
+  changes:
+  - message: Intercoms and radios now transmit the language of the message itself
+      rather than the entity's default.
+    type: Fix
+  id: 17301
+  time: '2026-09-24T13:01:09.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/173
 Order: -1
 
