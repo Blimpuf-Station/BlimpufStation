@@ -137,6 +137,7 @@
   table: !type:AllSelector
     children:
     - id: ClothingNeckCloakHopElite
+    - id: ClothingOuterSoftsuitHop # Blimpuf
     - id: AccessConfigurator
     - id: BoxEncryptionKeyAssistant
     - id: BoxEncryptionKeyService
