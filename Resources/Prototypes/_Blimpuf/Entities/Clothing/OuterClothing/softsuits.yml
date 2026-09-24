@@ -1,0 +1,113 @@
+- type: entity
+  parent: [ClothingOuterEVASuitBase, BaseCommandContraband, BaseGrandTheftContraband]
+  id: ClothingOuterSoftsuitHop
+  name: head of personnel's softsuit
+  description: A special suit that protects against hazardous, low pressure environments, and paper cuts. Designed for the Head of Personnel.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/Hop.rsi
+  - type: Clothing
+    sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/Hop.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.525
+    lowPressureMultiplier: 10000
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.9
+        Piercing: 0.95
+        Heat: 0.9
+        Caustic: 0.9
+    staminaModifier: 0.8
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetSoftsuitHop
+    redirectDraw: true
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+      cell_slot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellSmall
+        whitelist:
+          tags:
+          - PowerCell
+          - PowerCellSmall
+  - type: Tag
+    tags:
+    - Hardsuit
+    - CorgiWearable
+    - WhitelistChameleon
+  - type: StealTarget
+    stealGroup: HOPSoftSuit
+
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ]
+  id: ClothingHeadHelmetSoftsuitHop
+  categories: [ HideSpawnMenu ]
+  name: head of personnel's softsuit helmet
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Clothing/Head/Hardsuits/HopSuit.rsi
+    layers:
+    - state: icon
+    - state: icon-flash
+      visible: false
+      shader: unshaded
+      map: [ "light" ]
+  - type: HandheldLight
+    addPrefix: false
+  - type: ToggleableVisuals
+    spriteLayer: light
+    clothingVisuals:
+      head:
+      - state: on-equipped-HELMET
+      head-vox:
+      - state: on-equipped-HELMET-vox
+      head-vulpkanin:
+      - state: on-equipped-HELMET-vulpkanin
+      head-reptilian:
+      - state: on-equipped-HELMET-reptilian
+      head-dog:
+      - state: on-equipped-HELMET-dog
+      head-avali:
+      - state: on-equipped-HELMET-avali
+      head-resomi:
+      - state: on-equipped-HELMET-resomi
+  - type: Clothing
+    sprite: _Blimpuf/Clothing/Head/Hardsuits/HopSuit.rsi
+    clothingVisuals:
+      head:
+      - state: off-equipped-HELMET
+      head-vox:
+      - state: off-equipped-HELMET-vox
+      head-vulpkanin:
+      - state: off-equipped-HELMET-vulpkanin
+      head-reptilian:
+      - state: off-equipped-HELMET-reptilian
+      head-dog:
+      - state: off-equipped-HELMET-dog
+      head-avali:
+      - state: off-equipped-HELMET-avali
+      head-resomi:
+      - state: off-equipped-HELMET-resomi
+  - type: PointLight
+    color: "#adeeff"
+  - type: PressureProtection
+    highPressureMultiplier: 0.45
+    lowPressureMultiplier: 10000
+  - type: Tag
+    tags:
+    - HelmetEVA
+    - CorgiWearable
+    - WhitelistChameleon
