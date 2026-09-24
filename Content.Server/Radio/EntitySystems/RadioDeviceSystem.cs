@@ -174,7 +174,7 @@ public sealed partial class RadioDeviceSystem : SharedRadioDeviceSystem
         //Starlight begin
         if (_protoMan.TryIndex<RadioChannelPrototype>(component.BroadcastChannel, out var channel) &&
             _recentlySent.Add((args.Message, args.Source, channel.ID)))
-            _radio.SendRadioMessage(args.Source, args.Message, channel, uid);
+            _radio.SendRadioMessage(args.Source, args.Message, channel, uid, args.Language);
         else if (_chat.TryGetCustomChannel(uid, component.BroadcastChannel, out var customChannel) &&
                  _recentlySent.Add((args.Message, args.Source, customChannel.Id)))
             _radio.SendCustomRadioMessage(args.Source, args.Message, customChannel, uid);
