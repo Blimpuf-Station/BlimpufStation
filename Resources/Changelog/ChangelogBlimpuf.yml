@@ -1004,5 +1004,12 @@ Entries:
   id: 17301
   time: '2026-09-24T13:01:09.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/173
+- author: PipeToadCouncil, ScarletLightweaverSS14, DevCS-CP, ItsMaitake
+  changes:
+  - message: The Head of Personnel now has a softsuit that spawns in their locker.
+    type: Add
+  id: 17501
+  time: '2026-09-24T14:23:14.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/175
 Order: -1
 
