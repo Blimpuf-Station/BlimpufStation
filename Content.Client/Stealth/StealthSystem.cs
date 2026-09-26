@@ -1,9 +1,10 @@
 using Content.Client.Interactable.Components;
-using Content.Client.StatusIcon;
 using Content.Shared.Stealth;
 using Content.Shared.Stealth.Components;
+using Content.Shared.Whitelist;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
+using Robust.Client.Player;
 using Robust.Shared.Prototypes;
 
 namespace Content.Client.Stealth;
@@ -15,8 +16,12 @@ public sealed partial class StealthSystem : SharedStealthSystem
     [Dependency] private IPrototypeManager _protoMan = default!;
     [Dependency] private SharedTransformSystem _transformSystem = default!;
     [Dependency] private SpriteSystem _sprite = default!;
+    [Dependency] private IPlayerManager _player = default!;
+    [Dependency] private EntityWhitelistSystem _whitelistSystem = default!;
 
     private ShaderInstance _shader = default!;
+
+    private readonly Dictionary<EntityUid, bool> _shaderStates = new();
 
     public override void Initialize()
     {
@@ -29,6 +34,32 @@ public sealed partial class StealthSystem : SharedStealthSystem
         SubscribeLocalEvent<StealthComponent, BeforePostShaderRenderEvent>(OnShaderRender);
     }
 
+    // Blimpuf Start
+    public override void Shutdown()
+    {
+        _shaderStates.Clear();
+
+        base.Shutdown();
+    }
+
+    public override void FrameUpdate(float frameTime)
+    {
+        base.FrameUpdate(frameTime);
+
+        var query = EntityQueryEnumerator<StealthComponent>();
+
+        while (query.MoveNext(out var uid, out var component))
+        {
+            var shouldApply = component.Enabled && ShouldApplyStealth(component);
+
+            if (_shaderStates.TryGetValue(uid, out var currentState) && currentState == shouldApply)
+                continue;
+
+            SetShader(uid, shouldApply, component);
+        }
+    }
+    // Blimpuf End
+
     public override void SetEnabled(EntityUid uid, bool value, StealthComponent? component = null)
     {
         if (!Resolve(uid, ref component) || component.Enabled == value)
@@ -38,10 +69,27 @@ public sealed partial class StealthSystem : SharedStealthSystem
         SetShader(uid, value, component);
     }
 
+    // Blimpuf Start
+    private bool ShouldApplyStealth(StealthComponent component)
+    {
+        if (component.AffectedEntities == null)
+            return true;
+
+        var viewer = _player.LocalEntity;
+
+        if (!viewer.HasValue)
+            return false;
+
+        return _whitelistSystem.IsWhitelistPass(component.AffectedEntities, viewer.Value);
+    }
+    // Blimpuf End
+
     private void SetShader(EntityUid uid, bool enabled, StealthComponent? component = null, SpriteComponent? sprite = null)
     {
         if (!Resolve(uid, ref component, ref sprite, false))
             return;
+
+        _shaderStates[uid] = enabled;
 
         _sprite.SetColor((uid, sprite), Color.White);
         sprite.PostShader = enabled ? _shader : null;
@@ -64,11 +112,13 @@ public sealed partial class StealthSystem : SharedStealthSystem
 
     private void OnStartup(EntityUid uid, StealthComponent component, ComponentStartup args)
     {
-        SetShader(uid, component.Enabled, component);
+        SetShader(uid, component.Enabled && ShouldApplyStealth(component), component);
     }
 
     private void OnShutdown(EntityUid uid, StealthComponent component, ComponentShutdown args)
     {
+        _shaderStates.Remove(uid);
+
         if (!Terminating(uid))
             SetShader(uid, false, component);
     }

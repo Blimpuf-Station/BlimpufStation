@@ -1,3 +1,5 @@
+using Content.Shared.Changeling.Systems;
+using Content.Shared.Whitelist;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
@@ -10,7 +12,6 @@ namespace Content.Shared.Stealth.Components;
 /// Use other components (like StealthOnMove) to modify this component's visibility based on certain conditions.
 /// </summary>
 [RegisterComponent, NetworkedComponent]
-[Access(typeof(SharedStealthSystem))]
 public sealed partial class StealthComponent : Component
 {
     /// <summary>
@@ -72,6 +73,12 @@ public sealed partial class StealthComponent : Component
     /// </summary>
     [DataField("examinedDesc")]
     public string ExaminedDesc = "stealth-visual-effect";
+
+    /// <summary>
+    /// Blimpuf edit - Only invisible to entities with these components/tags
+    /// </summary>
+    [DataField]
+    public EntityWhitelist? AffectedEntities;
 }
 
 [Serializable, NetSerializable]
@@ -80,11 +87,13 @@ public sealed class StealthComponentState : ComponentState
     public readonly float Visibility;
     public readonly TimeSpan? LastUpdated;
     public readonly bool Enabled;
+    public readonly EntityWhitelist? AffectedEntities;
 
-    public StealthComponentState(float stealthLevel, TimeSpan? lastUpdated, bool enabled)
+    public StealthComponentState(float stealthLevel, TimeSpan? lastUpdated, bool enabled, EntityWhitelist? affectedEntities)
     {
         Visibility = stealthLevel;
         LastUpdated = lastUpdated;
         Enabled = enabled;
+        AffectedEntities = affectedEntities;
     }
 }
