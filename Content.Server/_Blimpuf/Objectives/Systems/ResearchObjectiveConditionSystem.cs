@@ -1,6 +1,6 @@
 using Content.Server._Blimpuf.Objectives.Components;
 using Content.Server.Objectives.Components;
-using Content.Server.SyndicateResearch;
+using Content.Server._Blimpuf.Traitor.Systems;
 using Content.Shared.Objectives.Components;
 
 namespace Content.Server._Blimpuf.Objectives.Systems;

@@ -381,11 +381,13 @@
   id: BoxFolderPlasticClipboardThreePapers
 
 - type: entity
-  parent: BoxFolderClipboardEmpty
+  parent: [BoxFolderClipboardEmpty, BaseRepresentativesContraband]
   id: BoxFolderCentComClipboardEmpty
   name: CentComm clipboard
   description: A luxurious clipboard upholstered with green velvet. Often seen carried by CentComm officials, seldom seen actually used.
   components:
+  - type: Contraband
+    allowedDepartments: [ CentralCommand ]
   - type: Sprite
     sprite: Objects/Misc/cc-clipboard.rsi
     layers:
@@ -481,35 +483,14 @@
   - type: StealTarget
     stealGroup: BoxFolderQmClipboard
   - type: SyndicateResearchTarget
-    researchProtoIds:
-      - displayName: cargo department ID
-        validPrototypes:
-          - CargoIDCard
-          - MailTechIDCard
-          - MiningIDCard
-          - SalvageLeadIDCard
-          - SalvageIDCard
-          - QuartermasterIDCard
-      - displayName: fulton beacon
-        validPrototypes:
-          - FultonBeacon
-      - displayName: global positioning system
-        validPrototypes:
-          - HandheldGPSBasic
-      - displayName: handheld mass scanner
-        validPrototypes:
-          - HandHeldMassScanner
-      - displayName: proximity sensor
-        validPrototypes:
-          - ProximitySensor
-      - displayName: telecommunications server machine board
-        validPrototypes:
-          - TelecomServerCircuitboard
-      - displayName: mailing unit electronics
-        validPrototypes:
-          - MailingUnitElectronics
-      - displayName: flatpacker 1001 machine board
-        validPrototypes:
-          - FlatpackerMachineCircuitboard
+    syndicateResearchSpecifiers:
+      - SyndicateResearchSpecifierCargoIDCard
+      - SyndicateResearchSpecifierFultonBeacon
+      - SyndicateResearchSpecifierHandheldGPSBasic
+      - SyndicateResearchSpecifierHandheldMassScanner
+      - SyndicateResearchSpecifierProximitySensor
+      - SyndicateResearchSpecifierTelecomServerCircuitboard
+      - SyndicateResearchSpecifierMailingUnitElectronics
+      - SyndicateResearchSpecifierFlatpackerMachineCircuitboard
     researchUnlockId: UplinkSyndieClipboard
     researchAnnouncementString: research-announcement-syndie-clipboard

@@ -167,3 +167,9 @@
   background: /Textures/_Starlight/LobbyScreens/StationVisitor.webp
   title: lobby-state-background-stationvisitor-title
   artist: lobby-state-background-stationvisitor-artist
+
+- type: lobbyBackground
+  id: ThingsToSay
+  background: /Textures/_Starlight/LobbyScreens/ThingsToSay.webp
+  title: lobby-state-background-thingstosay-title
+  artist: lobby-state-background-thingstosay-artist

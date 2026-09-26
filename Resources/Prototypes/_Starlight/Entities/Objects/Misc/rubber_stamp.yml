@@ -1,7 +1,7 @@
 # NT stamps
 - type: entity
   name: magistrate stamp
-  parent: [ RubberStampBase, BaseCommandContraband ]
+  parent: [ RubberStampBase, BaseRepresentativesContraband, BaseContrabandTier2 ] # Blimpuf
   id: RubberStampMagistrate
   suffix: DO NOT MAP
   components:
@@ -15,7 +15,7 @@
 
 - type: entity
   name: cc representative's rubber stamp
-  parent: [ RubberStampBase, BaseCommandContraband ]
+  parent: [ RubberStampBase, BaseRepresentativesContraband, BaseContrabandTier2 ] # Blimpuf
   id: RubberStampNtrep
   suffix: DO NOT MAP
   components:
@@ -29,7 +29,7 @@
 
 - type: entity
   name: internal affairs agent's rubber stamp
-  parent: [ RubberStampBase, BaseLawContraband ]
+  parent: [ RubberStampBase, BaseRepresentativesContraband, BaseContrabandTier2 ] # Blimpuf
   id: RubberStampIAA
   suffix: DO NOT MAP
   components:
@@ -43,7 +43,7 @@
 
 - type: entity
   name: central enforcer rubber stamp
-  parent: [ RubberStampBase, BaseBlueShieldContraband ]
+  parent: [ RubberStampBase, BaseRepresentativesContraband, BaseContrabandTier2 ] # Blimpuf
   id: RubberStampBSO
   suffix: DO NOT MAP
   components:
@@ -69,121 +69,97 @@
     - type: Sprite
       sprite: _Starlight/Objects/Misc/stamps.rsi
       state: stamp-brigmedic
+    - type: Contraband # Blimpuf
+      tier: Tier2
+      allowedJobs: [ Brigmedic ]
 
-# CC Division Stamps
+# CC Department Stamps
 - type: entity
-  name: central administration division rubber stamp
-  parent: RubberStampBase
-  id: RubberStampCAD
+  name: central department of administrative action rubber stamp
+  parent: [ BaseCentcommContraband, RubberStampBase ] # Blimpuf
+  id: RubberStampCDAA
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Administration Division"
+    stampedName: "Central Department of Administrative Action"
     stampedColor: "#1155CC"
     stampState: "paper_stamp-cap"
   - type: Sprite
     state: stamp-cap
 
 - type: entity
-  name: central cargo division rubber stamp
-  parent: RubberStampBase
-  id: RubberStampCCD
+  name: central department of logistics rubber stamp
+  parent: [ BaseCentcommContraband, RubberStampBase ] # Blimpuf
+  id: RubberStampCDL
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Cargo Division"
+    stampedName: "Central Department of Logistics"
     stampedColor: "#9e794a"
     stampState: "paper_stamp-qm"
   - type: Sprite
     state: stamp-detective
 
 - type: entity
-  name: central engineering division rubber stamp
-  parent: RubberStampBase
-  id: RubberStampCED
+  name: central department of engineering rubber stamp
+  parent: [ BaseCentcommContraband, RubberStampBase ] # Blimpuf
+  id: RubberStampCDE
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Engineering Division"
+    stampedName: "Central Department of Engineering"
     stampedColor: "#e39919"
     stampState: "paper_stamp-ntrep"
   - type: Sprite
     state: stamp-ce
 
 - type: entity
-  name: central intelligence division rubber stamp
-  parent: RubberStampBase
-  id: RubberStampCID
+  name: central department of health and medicine rubber stamp
+  parent: [ BaseCentcommContraband, RubberStampBase ] # Blimpuf
+  id: RubberStampCDHM
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Intelligence Division"
-    stampedColor: "#660089"
-    stampState: "paper_stamp-rd"
-  - type: Sprite
-    state: stamp-rd
-
-- type: entity
-  name: central medical division rubber stamp
-  parent: RubberStampBase
-  id: RubberStampCMD
-  categories: [ DoNotMap ]
-  components:
-  - type: Stamp
-    stampedName: "Central Medical Division"
+    stampedName: "Central Department of Health and Medicine"
     stampedColor: "#0AAFC3"
     stampState: "paper_stamp-cmo"
   - type: Sprite
     state: stamp-cmo
 
 - type: entity
-  name: central research division rubber stamp
-  parent: RubberStampBase
-  id: RubberStampCRD
+  name: central department of research rubber stamp
+  parent: [ BaseCentcommContraband, RubberStampBase ] # Blimpuf
+  id: RubberStampCDR
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Research Division"
+    stampedName: "Central Department of Research"
     stampedColor: "#9900FF"
     stampState: "paper_stamp-rd"
   - type: Sprite
     state: stamp-wizard
 
 - type: entity
-  name: central domestic division rubber stamp
-  parent: RubberStampBase
-  id: RubberStampCDD
+  name: central department of guest services rubber stamp
+  parent: [ BaseCentcommContraband, RubberStampBase ] # Blimpuf
+  id: RubberStampCDGS
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Domestic Division"
+    stampedName: "Central Department of Guest Services"
     stampedColor: "#6AA84F"
     stampState: "paper_stamp-centcom"
   - type: Sprite
     state: stamp-centcom
 
 - type: entity
-  name: central special operations division rubber stamp
-  parent: RubberStampBase
-  id: RubberStampCSOD
-  suffix: DO NOT MAP
-  components:
-  - type: Stamp
-    stampedName: "Central Special Operations Division"
-    stampedColor: "#ad2a6b"
-    stampState: "paper_stamp-csop"
-  - type: Sprite
-    sprite: _Starlight/Objects/Misc/stamps.rsi
-    state: stamp-csop
-
-- type: entity
-  name: central security division rubber stamp
-  parent: RubberStampBase
-  id: RubberStampCSD
+  name: central department of security and welfare rubber stamp
+  parent: [ BaseCentcommContraband, RubberStampBase ] # Blimpuf
+  id: RubberStampCDSW
   categories: [ DoNotMap ]
   components:
   - type: Stamp
-    stampedName: "Central Security Division"
+    stampedName: "Central Department of Security and Welfare"
     stampedColor: "#2c6682"
     stampState: "paper_stamp-hos"
   - type: Sprite
@@ -191,7 +167,7 @@
 
 - type: entity
   name: cc department stamps box
-  parent: BoxCardboard
+  parent: [ BoxCardboard, BaseCentcommContraband ] # Blimpuf
   id: BoxStampsCCDepartments
   components:
     - type: Storage
@@ -206,15 +182,13 @@
         storagebase: !type:AllSelector
           children:
             - id: RubberStampCentcom
-            - id: RubberStampCAD
-            - id: RubberStampCCD
-            - id: RubberStampCED
-            - id: RubberStampCID
-            - id: RubberStampCMD
-            - id: RubberStampCRD
-            - id: RubberStampCDD
-            - id: RubberStampCSOD
-            - id: RubberStampCSD
+            - id: RubberStampCDAA
+            - id: RubberStampCDL
+            - id: RubberStampCDE
+            - id: RubberStampCDHM
+            - id: RubberStampCDR
+            - id: RubberStampCDGS
+            - id: RubberStampCDSW
     - type: Sprite
       sprite: _Starlight/Objects/Storage/boxes.rsi
       layers:
@@ -224,7 +198,7 @@
 # CC Administrative Stamps
 - type: entity
   name: ACKNOWLEDGED rubber stamp
-  parent: RubberStampBase
+  parent: [ BaseCentcommContraband, RubberStampBase ] # Blimpuf
   id: RubberStampAcknowledged
   suffix: DO NOT MAP
   components:
@@ -238,7 +212,7 @@
 
 - type: entity
   name: MISSING STAMPS rubber stamp
-  parent: RubberStampBase
+  parent: [ BaseCentcommContraband, RubberStampBase ] # Blimpuf
   id: RubberStampMissingStamps
   suffix: DO NOT MAP
   components:
@@ -252,7 +226,7 @@
 
 - type: entity
   name: INCORRECT STAMPS rubber stamp
-  parent: RubberStampBase
+  parent: [ BaseCentcommContraband, RubberStampBase ] # Blimpuf
   id: RubberStampIncorrectStamps
   suffix: DO NOT MAP
   components:
@@ -266,7 +240,7 @@
 
 - type: entity
   name: INCORRECT FORM rubber stamp
-  parent: RubberStampBase
+  parent: [ BaseCentcommContraband, RubberStampBase ] # Blimpuf
   id: RubberStampIncorrectForm
   suffix: DO NOT MAP
   components:
@@ -280,7 +254,7 @@
 
 - type: entity
   name: INCOMPLETE FORM rubber stamp
-  parent: RubberStampBase
+  parent: [ BaseCentcommContraband, RubberStampBase ] # Blimpuf
   id: RubberStampIncompleteForm
   suffix: DO NOT MAP
   components:
@@ -294,7 +268,7 @@
 
 - type: entity
   name: SENT TO ATS rubber stamp
-  parent: RubberStampBase
+  parent: [ BaseCentcommContraband, RubberStampBase ] # Blimpuf
   id: RubberStampSentToATS
   suffix: DO NOT MAP
   components:
@@ -308,7 +282,7 @@
 
 - type: entity
   name: DEFER TO COMMAND rubber stamp
-  parent: RubberStampBase
+  parent: [ BaseCentcommContraband, RubberStampBase ] # Blimpuf
   id: RubberStampDeferToCommand
   suffix: DO NOT MAP
   components:
@@ -322,7 +296,7 @@
 
 - type: entity
   name: STANDBY rubber stamp
-  parent: RubberStampBase
+  parent: [ BaseCentcommContraband, RubberStampBase ] # Blimpuf
   id: RubberStampStandby
   suffix: DO NOT MAP
   components:
@@ -336,7 +310,7 @@
 
 - type: entity
   name: cc administrative stamps box
-  parent: BoxCardboard
+  parent: [ BoxCardboard, BaseCentcommContraband ] # Blimpuf
   id: BoxStampsCCAdministrative
   components:
     - type: Storage
@@ -380,11 +354,14 @@
   - type: Sprite
     sprite: _Starlight/Objects/Misc/stamps.rsi
     state: stamp-salvagelead
+  - type: Contraband
+    tier: Tier2 # Blimpuf
+    allowedJobs: [ SalvageLead ]
 
 # TSF/Solgov stamp
 - type: entity
   name: trans-solar federation rubber stamp
-  parent: RubberStampBase
+  parent: [ RubberStampBase, BaseContrabandTier3, BaseTSFContraband ] # Blimpuf
   id: RubberStampTSF
   categories: [ DoNotMap ]
   components:
@@ -397,7 +374,7 @@
 
 - type: entity
   name: trans-solar marine corps rubber stamp
-  parent: RubberStampBase
+  parent: [ RubberStampBase, BaseContrabandTier3, BaseTSFContraband ] # Blimpuf
   id: RubberStampTSMC
   categories: [ DoNotMap ]
   components:
@@ -410,7 +387,7 @@
 
 - type: entity
   name: solgov law enforcement rubber stamp
-  parent: RubberStampBase
+  parent: [ RubberStampBase, BaseContrabandTier3, BaseTSFContraband ] # Blimpuf
   id: RubberStampSolgovLaw
   categories: [ DoNotMap ]
   components:
@@ -423,7 +400,7 @@
 
 - type: entity
   name: solgov representative rubber stamp
-  parent: RubberStampBase
+  parent: [ RubberStampBase, BaseContrabandTier3, BaseTSFContraband ] # Blimpuf
   id: RubberStampSolgovRep
   categories: [ DoNotMap ]
   components:
@@ -436,7 +413,7 @@
 
 - type: entity
   name: solgov traders rubber stamp
-  parent: RubberStampBase
+  parent: [ RubberStampBase, BaseContrabandTier3, BaseTSFContraband ] # Blimpuf
   id: RubberStampSolgovTraders
   categories: [ DoNotMap ]
   components:
@@ -460,4 +437,6 @@
       stampState: "paper_stamp-psychologist"
     - type: Sprite
       state: stamp-hop
-
+    - type: Contraband # Blimpuf
+      tier: Tier2
+      allowedJobs: [ Reporter ]

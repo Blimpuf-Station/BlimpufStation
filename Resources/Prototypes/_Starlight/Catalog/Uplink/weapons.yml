@@ -10,9 +10,9 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledUzi
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 11
+    Telecrystal: 55
   cost:
-    Telecrystal: 15
+    Telecrystal: 70
   categories:
     - UplinkWeaponry
 
@@ -69,9 +69,9 @@
   productEntity: WeaponPistolDeagle
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 4
+    Telecrystal: 8
   cost:
-    Telecrystal: 6
+    Telecrystal: 15
   categories:
     - UplinkWeaponry
 
@@ -87,9 +87,9 @@
   productEntity: BigBoxSyndicateBundle
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 3
+    Telecrystal: 10
   cost:
-    Telecrystal: 6
+    Telecrystal: 25
   categories:
     - UplinkWeaponry
 
@@ -100,9 +100,9 @@
   productEntity: HomerunBat
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 9
   cost:
-    Telecrystal: 4
+    Telecrystal: 15
   categories:
     - UplinkWeaponry
 
@@ -112,7 +112,7 @@
   description: uplink-switchblade-desc
   productEntity: WeaponMeleeSwitchblade
   cost:
-    Telecrystal: 1
+    Telecrystal: 3
   categories:
     - UplinkWeaponry
 
@@ -124,8 +124,8 @@
   icon: { sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi, state: exp-320g }
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 11
+    Telecrystal: 55
   cost:
-    Telecrystal: 15
+    Telecrystal: 70
   categories:
     - UplinkWeaponry

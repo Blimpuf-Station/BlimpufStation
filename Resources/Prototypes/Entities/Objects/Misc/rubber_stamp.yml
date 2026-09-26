@@ -42,7 +42,7 @@
 
 - type: entity
   name: captain's rubber stamp
-  parent: [RubberStampBase, BaseCommandContraband]
+  parent: [RubberStampBase, BaseCommandContraband, BaseContrabandTier2] # Blimpuf
   id: RubberStampCaptain
   categories: [ DoNotMap ]
   components:
@@ -55,7 +55,7 @@
 
 - type: entity
   name: CentComm rubber stamp
-  parent: RubberStampBase
+  parent: [ BaseCentcommContraband, RubberStampBase ] # Blimpuf
   id: RubberStampCentcom
   categories: [ DoNotMap ]
   components:
@@ -78,6 +78,9 @@
     stampState: "paper_stamp-chaplain"
   - type: Sprite
     state: stamp-chaplain
+  - type: Contraband # Blimpuf
+    tier: Tier2
+    allowedJobs: [ Chaplain ]
 
 - type: entity
   name: lawyer's rubber stamp
@@ -92,6 +95,9 @@
   - type: Sprite
     sprite: _Starlight/Objects/Misc/stamps.rsi  # Starlight
     state: stamp-lawyer
+  - type: Contraband # Blimpuf
+    tier: Tier2
+    allowedJobs: [ Lawyer ]
 
 - type: entity
   name: clown's rubber stamp
@@ -105,10 +111,13 @@
     stampState: "paper_stamp-clown"
   - type: Sprite
     state: stamp-clown
+  - type: Contraband # Blimpuf
+    tier: Tier2
+    allowedJobs: [ Clown ]
 
 - type: entity
   name: chief engineer's rubber stamp
-  parent: [RubberStampBase, BaseCommandContraband]
+  parent: [RubberStampBase, BaseCommandContraband, BaseContrabandTier2] # Blimpuf
   id: RubberStampCE
   categories: [ DoNotMap ]
   components:
@@ -121,7 +130,7 @@
 
 - type: entity
   name: chief medical officer's rubber stamp
-  parent: [RubberStampBase, BaseCommandContraband]
+  parent: [RubberStampBase, BaseCommandContraband, BaseContrabandTier2] # Blimpuf
   id: RubberStampCMO
   categories: [ DoNotMap ]
   components:
@@ -134,7 +143,7 @@
 
 - type: entity
   name: head of personnel's rubber stamp
-  parent: [RubberStampBase, BaseCommandContraband]
+  parent: [RubberStampBase, BaseCommandContraband, BaseContrabandTier2] # Blimpuf
   id: RubberStampHop
   categories: [ DoNotMap ]
   components:
@@ -147,7 +156,7 @@
 
 - type: entity
   name: head of security's rubber stamp
-  parent: [RubberStampBase, BaseCommandContraband]
+  parent: [RubberStampBase, BaseCommandContraband, BaseContrabandTier2] # Blimpuf
   id: RubberStampHos
   categories: [ DoNotMap ]
   components:
@@ -171,10 +180,13 @@
     sound: null
   - type: Sprite
     state: stamp-mime
+  - type: Contraband # Blimpuf
+    tier: Tier2
+    allowedJobs: [ Mime ]
 
 - type: entity
   name: quartermaster's rubber stamp
-  parent: [RubberStampBase, BaseCommandContraband]
+  parent: [RubberStampBase, BaseCommandContraband, BaseContrabandTier2] # Blimpuf
   id: RubberStampQm
   categories: [ DoNotMap ]
   components:
@@ -187,7 +199,7 @@
 
 - type: entity
   name: research director's rubber stamp
-  parent: [RubberStampBase, BaseCommandContraband]
+  parent: [RubberStampBase, BaseCommandContraband, BaseContrabandTier2] # Blimpuf
   id: RubberStampRd
   categories: [ DoNotMap ]
   components:
@@ -227,7 +239,7 @@
 
 - type: entity
   name: warden's rubber stamp
-  parent: [RubberStampBase, BaseSecurityContraband]
+  parent: [RubberStampBase, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   id: RubberStampWarden
   categories: [ DoNotMap ]
   components:
@@ -264,7 +276,7 @@
 
 - type: entity
   name: detective's rubber stamp
-  parent: [RubberStampBase, BaseSecurityContraband]
+  parent: [RubberStampBase, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   id: RubberStampDetective
   categories: [ DoNotMap ]
   components:
@@ -288,6 +300,9 @@
     stampState: "paper_stamp-psychologist"
   - type: Sprite
     state: stamp-psychologist
+  - type: Contraband # Blimpuf
+    tier: Tier2
+    allowedJobs: [ Psychologist ]
 
 - type: entity
   name: wizard's rubber stamp

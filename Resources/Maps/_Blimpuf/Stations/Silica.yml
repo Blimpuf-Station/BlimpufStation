@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 09:02:01
-  entityCount: 28353
+  entityCount: 28351
 maps:
 - 1
 grids:
@@ -7953,43 +7953,43 @@ entities:
         - node:
             zIndex: 3
             color: '#FFFFFFFF'
-            id: slsign1
+            id: blsign1
           decals:
             7322: -11,9
         - node:
             zIndex: 3
             color: '#FFFFFFFF'
-            id: slsign2
+            id: blsign2
           decals:
             7323: -10,9
         - node:
             zIndex: 1
             color: '#FFFFFFFF'
-            id: slsign3
+            id: blsign3
           decals:
             8049: -9,9
         - node:
             zIndex: 1
             color: '#FFFFFFFF'
-            id: slsign4
+            id: blsign4
           decals:
             8050: -8,9
         - node:
             zIndex: 1
             color: '#FFFFFFFF'
-            id: slsign5
+            id: blsign5
           decals:
             8051: -7,9
         - node:
             zIndex: 3
             color: '#FFFFFFFF'
-            id: slsign6
+            id: blsign6
           decals:
             7319: -6,9
         - node:
             zIndex: 3
             color: '#FFFFFFFF'
-            id: slsign7
+            id: blsign7
           decals:
             7318: -5,9
         - node:
@@ -79246,16 +79246,6 @@ entities:
       accessListsOriginal:
       - - Security
       - - Cadet
-- proto: CrateServicePersonnel
-  entities:
-  - uid: 12414
-    components:
-    - type: Transform
-      pos: -2.5,-19.5
-      parent: 2
-    - type: AccessReader
-      accessListsOriginal:
-      - - Command
 - proto: CrateServiceTheatre
   entities:
   - uid: 12415
@@ -184470,6 +184460,14 @@ entities:
     components:
     - type: Transform
       pos: 4.5,-4.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 28481
+    components:
+    - type: Transform
+      pos: -2.5,-19.5
       parent: 2
       rot: 1.5707963267948966 rad
 ...

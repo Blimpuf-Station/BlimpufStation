@@ -12,7 +12,7 @@
   productEntity: WeaponPistolViperWorn
   secondHandCategory: commonSecondHand
   cost:
-    Telecrystal: 1
+    Telecrystal: 7
 
 - type: listing
   id: UplinkSecondHandCobraWorn
@@ -21,7 +21,7 @@
   productEntity: WeaponPistolCobraWorn
   secondHandCategory: commonSecondHand
   cost:
-    Telecrystal: 2
+    Telecrystal: 9
 
 - type: listing
   id: UplinkSecondHandC20rWorn
@@ -31,7 +31,7 @@
   productEntity: WeaponSubMachineGunC20rWorn
   secondHandCategory: rareSecondHand
   cost:
-    Telecrystal: 6
+    Telecrystal: 32
 
 - type: listing
   id: UplinkSecondHandHushpupWorn
@@ -41,7 +41,7 @@
   productEntity: WeaponShotgunHushpupWorn
   secondHandCategory: rareSecondHand
   cost:
-    Telecrystal: 2
+    Telecrystal: 13
 
 - type: listing
   id: UplinkSecondHandBulldogWorn
@@ -51,7 +51,7 @@
   productEntity: WeaponShotgunBulldogWorn
   secondHandCategory: veryRareSecondHand
   cost:
-    Telecrystal: 4
+    Telecrystal: 21
 
 - type: listing
   id: UplinkSecondHandHristovWorn
@@ -61,7 +61,7 @@
   productEntity: WeaponSniperHristovWorn
   secondHandCategory: veryRareSecondHand
   cost:
-    Telecrystal: 6
+    Telecrystal: 28
 
 - type: listing
   id: UplinkSecondHandMosinWorn
@@ -71,7 +71,7 @@
   productEntity: WeaponSniperMosinWorn
   secondHandCategory: commonSecondHand
   cost:
-    Telecrystal: 1
+    Telecrystal: 2
 
 - type: listing
   id: UplinkSecondHandEstocWorn
@@ -81,7 +81,7 @@
   productEntity: WeaponRifleEstocWorn
   secondHandCategory: rareSecondHand
   cost:
-    Telecrystal: 4
+    Telecrystal: 21
 
 - type: listing
   id: UplinkSecondHandL6SawWorn
@@ -91,7 +91,7 @@
   productEntity: WeaponLightMachineGunL6Worn
   secondHandCategory: rareSecondHand
   cost:
-    Telecrystal: 6
+    Telecrystal: 31
 
 - type: listing
   id: UplinkSecondHandEnergyCrossbowWorn
@@ -101,7 +101,7 @@
   productEntity: WeaponEnergyCrossbowWorn
   secondHandCategory: rareSecondHand
   cost:
-    Telecrystal: 2
+    Telecrystal: 9
 
 # --- MELEE ---
 
@@ -114,7 +114,7 @@
   productEntity: EnergySwordWorn
   secondHandCategory: veryRareSecondHand
   cost:
-    Telecrystal: 4
+    Telecrystal: 20
 
 - type: listing
   id: UplinkSecondHandEnergyDaggerWorn
@@ -124,7 +124,7 @@
   productEntity: EnergyDaggerWorn
   secondHandCategory: rareSecondHand
   cost:
-    Telecrystal: 1
+    Telecrystal: 5
 
 # --- AMMO ---
 
@@ -195,7 +195,7 @@
   productEntity: ExGrenadeWorn
   secondHandCategory: rareSecondHand
   cost:
-    Telecrystal: 2
+    Telecrystal: 10
 
 - type: listing
   id: UplinkSecondHandSmokeGrenadeWorn
@@ -204,7 +204,7 @@
   productEntity: SmokeGrenadeWorn
   secondHandCategory: commonSecondHand
   cost:
-    Telecrystal: 1
+    Telecrystal: 3
 
 - type: listing
   id: UplinkSecondHandShrapnelGrenadeWorn
@@ -213,7 +213,7 @@
   productEntity: GrenadeShrapnelWorn
   secondHandCategory: rareSecondHand
   cost:
-    Telecrystal: 2
+    Telecrystal: 10
 
 - type: listing
   id: UplinkSecondHandIncendiaryGrenadeWorn
@@ -222,7 +222,7 @@
   productEntity: GrenadeIncendiaryWorn
   secondHandCategory: rareSecondHand
   cost:
-    Telecrystal: 2
+    Telecrystal: 10
 
 - type: listing
   id: UplinkSecondHandGrenadePongwinWorn
@@ -232,7 +232,7 @@
   productEntity: MobGrenadePenguinWorn
   secondHandCategory: rareSecondHand
   cost:
-    Telecrystal: 2
+    Telecrystal: 10
 
 - type: listing
   id: UplinkSecondHandPenExplodingWorn
@@ -242,7 +242,7 @@
   productEntity: PenExplodingWorn
   secondHandCategory: commonSecondHand
   cost:
-    Telecrystal: 1
+    Telecrystal: 5
 
 - type: listing
   id: UplinkSecondHandSyndieMiniBombWorn
@@ -252,7 +252,7 @@
   productEntity: SyndieMiniBombWorn
   secondHandCategory: rareSecondHand
   cost:
-    Telecrystal: 3
+    Telecrystal: 13
 
 - type: listing
   id: UplinkSecondHandSingularityGrenadeWorn
@@ -262,7 +262,7 @@
   productEntity: SingularityGrenadeWorn
   secondHandCategory: rareSecondHand
   cost:
-    Telecrystal: 1
+    Telecrystal: 5
 
 # --- TOOLS ---
 
@@ -273,7 +273,7 @@
   productEntity: C4Worn
   secondHandCategory: commonSecondHand
   cost:
-    Telecrystal: 1
+    Telecrystal: 6
 
 - type: listing
   id: UplinkSecondHandEmagWorn
@@ -282,7 +282,7 @@
   productEntity: EmagWorn
   secondHandCategory: rareSecondHand
   cost:
-    Telecrystal: 2
+    Telecrystal: 16
 
 # --- KITS ---
 

@@ -156,6 +156,11 @@
   id: OreBagOfHolding
   result: OreBagOfHolding
 
+- type: latheRecipe # Blimpuf
+  parent: ClothingBackpackHolding
+  id: ScrapBagOfHolding
+  result: ScrapBagOfHolding
+
 - type: latheRecipe
   id: ClothingMaskWeldingGas
   result: ClothingMaskWeldingGas

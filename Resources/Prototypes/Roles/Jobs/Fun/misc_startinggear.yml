@@ -139,13 +139,13 @@
     - AccessConfiguratorUniversal
     - AnomalyScanner
     - RubberStampCentcom
-    - RubberStampCAD
-    - RubberStampCED
-    - RubberStampCMD
-    - RubberStampCRD
-    - RubberStampCCD
-    - RubberStampCSD
-    - RubberStampCDD
+    - RubberStampCDAA
+    - RubberStampCDE
+    - RubberStampCDHM
+    - RubberStampCDR
+    - RubberStampCDL
+    - RubberStampCDSW
+    - RubberStampCDGS
     - RubberStampAcknowledged
     - RubberStampMissingStamps
     - RubberStampIncorrectStamps

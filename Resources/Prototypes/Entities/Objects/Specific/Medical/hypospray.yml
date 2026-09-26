@@ -57,40 +57,15 @@
     fillBaseName: hypo_fill
     solutionName: hypospray
   - type: SyndicateResearchTarget
-    researchProtoIds:
-      - displayName: jet injector
-        validPrototypes:
-          - JetInjector
-          - AdvancedJetInjector
-          - TacticalJetInjector
-          - DeforestJetInjector
-      - displayName: spray painter
-        validPrototypes:
-          - SprayPainter
-          - SprayPainterEmpty
-      - displayName: multitool
-        validPrototypes:
-          - Multitool
-          - MultitoolAbductor
-          - MultitoolImprovised
-          - Mooltitool
-          - MultitoolInvisible
-      - displayName: health analyzer
-        validPrototypes:
-          - HandheldHealthAnalyzer
-      - displayName: silver bar
-        validPrototypes:
-          - IngotSilver
-          - IngotSilver1
-      - displayName: chem dispenser machine board
-        validPrototypes:
-          - ChemDispenserMachineCircuitboard
-      - displayName: chemmaster 4000 machine board
-        validPrototypes:
-          - ChemMasterMachineCircuitboard
-      - displayName: dropper
-        validPrototypes:
-          - Dropper
+    syndicateResearchSpecifiers:
+      - SyndicateResearchSpecifierJetInjector
+      - SyndicateResearchSpecifierSprayPainter
+      - SyndicateResearchSpecifierMultitool
+      - SyndicateResearchSpecifierHandheldHealthAnalyzer
+      - SyndicateResearchSpecifierIngotSilver
+      - SyndicateResearchSpecifierChemDispenserCircuitboard
+      - SyndicateResearchSpecifierChemMasterMachineCircuitboard
+      - SyndicateResearchSpecifierDropper
     researchUnlockId: UplinkAdvancedGorlexHypospray
     researchAnnouncementString: research-announcement-advanced-gorlex-hypospray
 

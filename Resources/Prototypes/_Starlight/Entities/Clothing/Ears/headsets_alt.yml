@@ -39,7 +39,7 @@
       path: /Audio/_Starlight/Effects/Radio/cc.ogg
 
 - type: entity
-  parent: [ClothingHeadsetAlt, BaseNanoTrasenContraband]
+  parent: [ClothingHeadsetAlt, BaseRepresentativesContraband]
   id: ClothingHeadsetAltNanoTrasen
   name: NanoTrasen over-ear headset
   components:
@@ -59,7 +59,7 @@
       path: /Audio/_Starlight/Effects/Radio/cc.ogg
 
 - type: entity
-  parent: [ClothingHeadsetAlt, BaseNanoTrasenContraband]
+  parent: [ClothingHeadsetAlt, BaseRepresentativesContraband]
   id: ClothingHeadsetAltRepresentative
   name: NanoTrasen representative over-ear headset
   components:
@@ -79,7 +79,7 @@
     stealGroup: ClothingHeadsetAltCommand # Starlight
 
 - type: entity
-  parent: [ClothingHeadsetAlt, BaseNanoTrasenContraband]
+  parent: [ClothingHeadsetAlt, BaseRepresentativesContraband]
   id: ClothingHeadsetAltNCTrainer
   name: NanoTrasen career trainer over-ear headset
   description: This is used by your well-taught corporate training team.
@@ -130,7 +130,7 @@
     sprite: Clothing/Ears/Headsets/command.rsi
 
 - type: entity
-  parent: [ClothingHeadsetAlt, BaseCommandContraband]
+  parent: [ClothingHeadsetAlt, BaseRepresentativesContraband]
   id: ClothingHeadsetAltCCRep
   name: central command representative over-ear headset
   components:
@@ -155,6 +155,8 @@
   name: blood-red over-ear commander headset
   description: An updated, modular syndicate intercom that fits over the head and takes encryption keys (there are 5 key slots.).
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier4
   - type: Headset
   - type: EncryptionKeyHolder
     keySlots: 5
@@ -176,6 +178,8 @@
   name: blood-red over-ear agent headset
   description: An updated, modular syndicate intercom that fits over the head and takes encryption keys (there are 5 key slots.).
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier4
   - type: Headset
   - type: EncryptionKeyHolder
     keySlots: 5
@@ -211,7 +215,7 @@
       path: /Audio/_Starlight/Effects/Radio/deathsquad.ogg
 
 - type: entity
-  parent: [ ClothingHeadsetAltNanoTrasen, BaseNanoTrasenContraband ]
+  parent: [ ClothingHeadsetAltNanoTrasen, BaseRepresentativesContraband ]
   id: ClothingHeadsetAltNTSF
   name: NTSF over-ear headset
   components:

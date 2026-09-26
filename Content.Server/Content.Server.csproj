@@ -31,7 +31,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Objectives\Interfaces\" />
-    <Folder Include="_Starlight\Achievement\" />
   </ItemGroup>
   <ItemGroup>
     <None Update="build.json">

@@ -7,7 +7,7 @@
 [head=1][color=#189450]────────────────────[/color][/head]
 [mono]
 [bold]Subject:[/bold] Comitas Systems
-[bold]Association:[/bold] The Syndicate, the Spinward Syndicate
+[bold]Association:[/bold] The Syndicate
 [bold]Objectives:[/bold] Data Collection
 
 Comitas Systems is a now defunct corporation that specialized in surveillance and information, pioneering the use of AUGVR to investigate virtual recreations of events captures on multiple cameras.

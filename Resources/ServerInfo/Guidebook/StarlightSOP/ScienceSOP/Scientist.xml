@@ -1,0 +1,17 @@
+<Document>
+# Scientist
+
+<GuideEntityEmbed Entity="ToyFigurineScientist" Caption="Scientist"/>
+
+1. Your direct superior is the Research Director.
+
+2. Scientists may only generate anomalies using the Anomaly Generator if express given permission by the Research Director to do so. A maximum of three anomalies can be generated at a time, provided they are being taken care of and contained.
+
+3. Scientists must ensure that anomalies are logged on a proper form, with a copy given to the Research Director.
+
+4. If a dangerous artifact node is being worked on, Scientists must alert the station, and the artifact be kept in a safe or contained environment.
+
+5. Scientists must ensure that the remains of animals or other generated lifeforms must be taken to the kitchen when their use is complete.
+
+6. Scientists are not to use the Research and Development console, unless given express permission by the Research Director.
+</Document>

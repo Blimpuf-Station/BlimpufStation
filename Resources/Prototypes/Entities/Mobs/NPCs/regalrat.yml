@@ -106,7 +106,7 @@
     makeSentient: true
     name: ghost-role-information-rat-king-name
     description: ghost-role-information-rat-king-description
-    rules: ghost-role-information-antagonist-rules
+    rules: ghost-role-information-freeagent-rules # Blimpuf Edit - Free Agent
     important: true # SL
     mindRoles:
     - MindRoleRatKing # Starlight-edit - GhostRoleSoloAntagonist -> RatKing

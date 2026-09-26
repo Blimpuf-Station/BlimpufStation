@@ -127,3 +127,8 @@
   license: "CC-BY-NC-SA-4.0"
   copyright: "The Prismatic Collective"
   source: "https://discord.gg/K36SqPPevv"
+
+- files: ["ThingsToSay.webp"]
+  license: "CC-BY-NC-SA-4.0"
+  copyright: "ItsMaitake"
+  source: "https://github.com/ItsMaitake"

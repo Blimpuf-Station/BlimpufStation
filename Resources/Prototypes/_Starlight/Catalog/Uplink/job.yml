@@ -5,9 +5,9 @@
   productEntity: ClothingUniformJumpsuitAtmosSyndie
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 8
+    Telecrystal: 10
   cost:
-    Telecrystal: 12
+    Telecrystal: 25
   categories:
     - UplinkJob
   conditions:
@@ -28,10 +28,10 @@
     }
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 18
+    Telecrystal: 45
   productEntity: MarriageAxe
   cost:
-    Telecrystal: 20
+    Telecrystal: 75
   categories:
     - UplinkJob
   conditions:
@@ -53,10 +53,10 @@
     }
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 16 # 2's really not much of a discount
+    Telecrystal: 15 # 2's really not much of a discount
   productEntity: WeaponLauncherHydraSyndicate
   cost:
-    Telecrystal: 20
+    Telecrystal: 30
   categories:
     - UplinkJob
   conditions:
@@ -73,9 +73,9 @@
   productEntity: EnergySwordBanana
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 4
+    Telecrystal: 20
   cost:
-    Telecrystal: 8
+    Telecrystal: 35
   categories:
     - UplinkJob
   conditions:
@@ -94,9 +94,9 @@
   productEntity: MagillitisSerumImplanter
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 4
+    Telecrystal: 15
   cost:
-    Telecrystal: 6
+    Telecrystal: 30
   categories:
     - UplinkJob
   conditions:
@@ -115,9 +115,9 @@
   productEntity: ClothingBackpackTrunkSyndicate
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 3
+    Telecrystal: 6
   cost:
-    Telecrystal: 4
+    Telecrystal: 12
   categories:
     - UplinkJob
   conditions:
@@ -134,9 +134,9 @@
   productEntity: ClownShoesNoSlip
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 1
+    Telecrystal: 3
   cost:
-    Telecrystal: 2
+    Telecrystal: 8
   categories:
     - UplinkJob
   conditions:
@@ -155,9 +155,9 @@
   productEntity: ClothingHandsGlovesBoxingRigged
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 3
   cost:
-    Telecrystal: 4
+    Telecrystal: 8
   categories:
     - UplinkJob
   conditions:
@@ -173,7 +173,7 @@
   description: uplink-mimana-stealthy-desc
   productEntity: TrashMimanaPeelStealthy
   cost:
-    Telecrystal: 1
+    Telecrystal: 4
   categories:
     - UplinkJob
   conditions:

@@ -34,7 +34,6 @@ using Content.Shared.Players.RateLimiting;
 
 #region Starlight
 using Content.Server._Starlight.BugReports;
-using Content.Shared._Starlight.Achievement;
 using Content.Server.Holiday;
 using Content.Shared._Starlight;
 using Content.Shared._Starlight.DocumentManager;
@@ -108,7 +107,6 @@ internal static class ServerContentIoC
         deps.Register<IPlayerRolesManager, PlayerRolesManager>();
         deps.Register<ItemPriceManager, ItemPriceManager>();
         deps.Register<IBugReportManager, BugReportManager>();
-        deps.Register<IAchievementRewardManager, NullLinkPlayerManager>();
         deps.Register<PreWrittenDocumentManager>();
         // 🌟Starlight🌟 end
         // nulllink start

@@ -29,7 +29,7 @@
         friction: 0.2
 
 - type: entity
-  parent: [FragileGrenadeBase, ScatteringGrenadeBase, BaseSecurityContraband]
+  parent: [FragileGrenadeBase, ScatteringGrenadeBase, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   id: ClusterBang
   name: clusterbang
   description: Can be used only with flashbangs. Explodes several times.

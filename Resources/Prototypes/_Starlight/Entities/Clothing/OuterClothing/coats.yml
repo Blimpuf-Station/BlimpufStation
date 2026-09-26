@@ -9,7 +9,7 @@
         Cold: 0.9
 
 - type: entity
-  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, BaseBlueShieldContraband]
+  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, BaseRepresentativesContraband, BaseContrabandTier2] # Blimpuf
   id: ClothingOuterCoatBlueShield
   name: enforcer's overcoat
   description: A coat worn by Central Command Enforcement Officers who don't mind a little cold. Heavily reinforced, for when diplomacy won't cut it.
@@ -33,7 +33,7 @@
   - type: Item
 
 - type: entity
-  parent: [ ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband ]
+  parent: [ ClothingOuterStorageBase, ClothingOuterColdBase, BaseRepresentativesContraband ]
   id: ClothingOuterCoatMagi
   name: magistrate longcoat
   description: New and improved, this jacket actually keeps you warm! Brought to you by the NanoTrasen Fashion Board.
@@ -59,7 +59,7 @@
         Cold: 0.85
 
 - type: entity
-  parent: [ ClothingOuterBase, BaseNanoTrasenContraband, AllowSuitStorageClothingGasTanks ]
+  parent: [ ClothingOuterBase, BaseRepresentativesContraband, AllowSuitStorageClothingGasTanks ]
   id: ClothingOuterRobesMagistrate
   name: magistrate robes
   description: This robe commands authority. Much more dense than the commoner variants.
@@ -82,7 +82,7 @@
         Cold: 0.85
 
 - type: entity
-  parent: [ ClothingOuterStorageFoldableBase, ClothingOuterColdBase, BaseCommandContraband, AllowSuitStorageClothingGasTanks ]
+  parent: [ ClothingOuterStorageFoldableBase, ClothingOuterColdBase, BaseRepresentativesContraband, AllowSuitStorageClothingGasTanks ]
   id: ClothingOuterCoatNtrep
   name: cc representative jacket
   description: A fancy black jacket, standard issue to Central Command Representatives.
@@ -105,7 +105,7 @@
         Cold: 0.85
 
 - type: entity
-  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatNtrep, BaseCommandContraband ]
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatNtrep, BaseRepresentativesContraband ]
   id: ClothingOuterCoatNtrepOpen
   name: cc representative jacket
 
@@ -133,7 +133,7 @@
   name: senior chemist lab coat
 
 - type: entity
-  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, BaseSecurityContraband, ClothingOuterWinterCoatToggleable]
+  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, BaseSecurityContraband, ClothingOuterWinterCoatToggleable, BaseContrabandTier2] # Blimpuf
   id: ClothingOuterCoatCorpsman
   name: corpsman's armored jacket
   description: Stylish black and red jacket, with tacticooly placed armor plating.
@@ -170,7 +170,7 @@
     zombificationResistanceCoefficient: 0.75
 
 - type: entity
-  parent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing, BaseSecurityContraband]
+  parent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   id: ClothingOuterCoatLabBrigmedic
   name: brigmedic's reminisced overcoat
   description: A labcoat from reminisced, peaceful days. It's been reinforced several times over.
@@ -199,7 +199,7 @@
   name: brigmedic's reminisced overcoat
 
 - type: entity
-  parent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing, BaseSecurityContraband]
+  parent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   id: ClothingOuterCoatLabCorpsman
   name: corpsman's nostalgic overcoat
   description: A dark labcoat that's been reinforced several times over. Peaceful days died.
@@ -293,6 +293,8 @@
   name: soviet great coat
   description: Smells like damp concrete and expired rations.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier3
   - type: Sprite
     sprite: _Starlight/Clothing/OuterClothing/Coats/soviet_greatcoat.rsi
   - type: Clothing
@@ -626,7 +628,7 @@
     sprite: _Starlight/Clothing/OuterClothing/Coats/chef-senior.rsi
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: [ BaseCentcommContraband, ClothingOuterStorageBase ] # Blimpuf
   id: ClothingOuterCoatChefCentComm
   name: centcomm chef's jacket
   description: A distinct white and green jacket worn by the chefs at Central Command. Turns you into a walking advertisement.

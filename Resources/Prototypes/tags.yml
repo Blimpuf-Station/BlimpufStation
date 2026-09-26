@@ -1140,6 +1140,9 @@
   id: PlushieSharkPink # Storage whitelist: MopBucket. ItemMapper: MopBucket
 
 - type: Tag
+  id: PlushieSharkRed # Storage whitelist: MopBucket. ItemMapper: MopBucket
+
+- type: Tag
   id: Potato # ConstructionGraph: PowerCellPotato
 
 - type: Tag

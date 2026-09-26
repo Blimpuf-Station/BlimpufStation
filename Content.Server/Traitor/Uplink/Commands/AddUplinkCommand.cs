@@ -73,7 +73,7 @@ public sealed partial class AddUplinkCommand : LocalizedEntityCommands
         }
 
         // Finally add uplink
-        if (!_uplinkSystem.AddUplink(user, 20, uplinkEntity: uplinkEntity, giveDiscounts: isDiscounted))
+        if (!_uplinkSystem.AddUplink(user, 100, uplinkEntity: uplinkEntity, giveDiscounts: isDiscounted))
             shell.WriteLine(Loc.GetString("add-uplink-command-error-2"));
     }
 

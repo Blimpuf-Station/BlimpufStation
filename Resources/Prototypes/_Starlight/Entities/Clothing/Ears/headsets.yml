@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ ClothingHeadset, BaseNanoTrasenContraband ]
+  parent: [ ClothingHeadset, BaseRepresentativesContraband ]
   id: ClothingHeadsetIAA
   name: internal affairs agent headset
   description: A headset for internal affairs agents to hear the captain's last words.
@@ -9,11 +9,12 @@
         key_slots:
         - EncryptionKeyCommon
         - EncryptionKeyNCTrainer
+        - EncryptionKeySecurity
     - type: Sprite
       sprite: Clothing/Ears/Headsets/servicesecurity.rsi
 
 - type: entity
-  parent: [ ClothingHeadset, BaseLawContraband ]
+  parent: [ ClothingHeadset, BaseRepresentativesContraband ]
   id: ClothingHeadsetMagistrate
   name: magistrate headset
   description: A headset for magistrates to hear the captain's last words.
@@ -62,6 +63,8 @@
   name: SSF marine over-ear headset
   description: Priyom.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier3
   - type: Headset
   - type: ContainerFill
     containers:

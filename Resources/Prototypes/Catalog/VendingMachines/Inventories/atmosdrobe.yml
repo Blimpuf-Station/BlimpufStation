@@ -15,3 +15,9 @@
     ClothingNeckScarfStripedLightBlue: 3
   contrabandInventory:
     ToyFigurineAtmosTech: 1
+  emaggedInventory: # Blimpuf
+    ClothingHandsGlovesConducting: 1 # Blimpuf
+    ClothingMaskGasSyndicate: 1 # Blimpuf
+    ClothingUniformJumpsuitRepairmanSyndie: 1 # Blimpuf
+    ClothingHeadHatSyndie: 1 # Blimpuf
+    ClothingOuterWinterSyndieCap: 1 # Blimpuf

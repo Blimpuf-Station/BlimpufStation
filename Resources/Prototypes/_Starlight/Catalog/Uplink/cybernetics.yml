@@ -9,9 +9,9 @@
     }
   productEntity: CyberEyeNightVision
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 6
   cost:
-    Telecrystal: 4
+    Telecrystal: 14
   categories:
     - UplinkCybernetics
 
@@ -26,9 +26,9 @@
     }
   productEntity: CyberEyeThermal
   discountDownTo:
-    Telecrystal: 4
-  cost:
     Telecrystal: 8
+  cost:
+    Telecrystal: 20
   categories:
     - UplinkCybernetics
 
@@ -44,9 +44,9 @@
   productEntity: ClothingBackpackDufelSyndicateFilledMantisBladeArms
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 5
+    Telecrystal: 10
   cost:
-    Telecrystal: 7
+    Telecrystal: 25
   categories:
     - UplinkCybernetics
 
@@ -64,7 +64,7 @@
   discountDownTo:
     Telecrystal: 0
   cost:
-    Telecrystal: 2
+    Telecrystal: 6
   categories:
     - UplinkCybernetics
 
@@ -80,9 +80,9 @@
   productEntity: HandImplantForensics
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 1
-  cost:
     Telecrystal: 2
+  cost:
+    Telecrystal: 8
   categories:
     - UplinkCybernetics
 
@@ -100,6 +100,6 @@
   discountDownTo:
     Telecrystal: 2
   cost:
-    Telecrystal: 5
+    Telecrystal: 8
   categories:
     - UplinkCybernetics

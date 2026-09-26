@@ -81,3 +81,6 @@ lobby-state-background-fearishonk-artist = IllegalXeno
 
 lobby-state-background-stationvisitor-title = Station Visitor
 lobby-state-background-stationvisitor-artist = The Prismatic Collective
+
+lobby-state-background-thingstosay-title = Things To Say To Central Command!
+lobby-state-background-thingstosay-artist = ItsMaitake

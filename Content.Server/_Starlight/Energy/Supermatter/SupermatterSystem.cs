@@ -3,7 +3,6 @@ using Content.Server.Atmos.EntitySystems;
 using Content.Server.Explosion.EntitySystems;
 using Content.Server.Lightning;
 using Content.Server.Radio.EntitySystems;
-using Content.Server._Starlight.Achievement;
 using Content.Server.Station.Systems;
 using Content.Shared.Atmos;
 using Content.Shared.Damage;
@@ -31,7 +30,6 @@ namespace Content.Server._Starlight.Energy.Supermatter;
 
 public sealed partial class SupermatterSystem : AccUpdateEntitySystem
 {
-    [Dependency] private AchievementSystem _achievements = default!;
     [Dependency] private DamageableSystem _damageable = default!;
     [Dependency] private AtmosphereSystem _atmosphere = default!;
     [Dependency] private AudioSystem _audio = default!;
@@ -66,8 +64,6 @@ public sealed partial class SupermatterSystem : AccUpdateEntitySystem
         if (IsImmune(args.User))
             return;
 
-        _achievements.QueueUnlockAchievement(args.User, "forbidden_candy");
-
         _audio.PlayPvs(Const.AudioEvaporate, ent.Owner);
 
         float damage = 1;
@@ -90,8 +86,6 @@ public sealed partial class SupermatterSystem : AccUpdateEntitySystem
         // Check for supermatter immunity
         if (IsImmune(args.OtherEntity))
             return;
-
-        _achievements.QueueUnlockAchievement(args.OtherEntity, "forbidden_candy");
 
         _audio.PlayPvs(Const.AudioEvaporate, ent.Owner);
         float damage = 1;
@@ -145,9 +139,6 @@ public sealed partial class SupermatterSystem : AccUpdateEntitySystem
     private void Cascad(Entity<SupermatterComponent> supermatter)
     {
         if (supermatter.Comp.Durability > 0.01) return;
-
-        if (_station.GetOwningStation(supermatter.Owner) is { } station)
-            _achievements.QueueUnlockAchievementForJobs("you_super_matter", station, "ChiefEngineer", "AtmosphericTechnician");
 
         _explosion.QueueExplosion(supermatter, ExplosionSystem.DefaultExplosionPrototypeId, 150, 3, 20);
         _cascade.StartCascade(Transform(supermatter.Owner).Coordinates);

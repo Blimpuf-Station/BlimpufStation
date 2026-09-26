@@ -33,6 +33,7 @@
   - type: StackLayerThreshold
     thresholds: [1]
   - type: Sprite
+    drawdepth: BelowMobs
     sprite: _Starlight/Objects/Economy/salvage_ticket.rsi
     state: icon
     layers:

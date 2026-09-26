@@ -133,48 +133,6 @@ public sealed partial class ObjectivesSystem : SharedObjectivesSystem
         }
 
         // 🌟Starlight🌟 start
-        var builder = new StringBuilder();
-        builder.AppendLine(Loc.GetString("cards"));
-
-        var mindQuery = EntityQueryEnumerator<MindComponent>();
-        while (mindQuery.MoveNext(out var mindId, out var mind))
-        {
-            if (!(mind.OwnedEntity is { } ent)
-                || !TryComp<RailroadableComponent>(ent, out var railroadable))
-                continue;
-
-            var cardsToProcess = new List<Entity<RailroadCardComponent, RuleOwnerComponent>>();
-            var cards = new List<Entity<RailroadCardComponent, RuleOwnerComponent>>();
-
-            if (railroadable.Completed is not null)
-                cards.AddRange(railroadable.Completed);
-
-            if (railroadable.ActiveCard is { } activeCard)
-                cards.Add(activeCard);
-
-            foreach (var card in cards)
-                if (!card.Comp1.ShowObjective)
-                    cardsToProcess.Add(card);
-
-            if (cardsToProcess.Count == 0)
-                continue;
-
-            _job.MindTryGetJobName(mindId, out var jobName);
-            var custody = IsInCustody(mindId, mind) ? Loc.GetString("objectives-in-custody") : string.Empty;
-
-            builder.AppendLine(Loc.GetString("objectives-with-objectives", ("custody", custody), ("title", mind.CharacterName ?? "anonymous"), ("agent", jobName ?? "unemployed")));
-
-            var completedObjectives = 0;
-            foreach (var card in cardsToProcess)
-            {
-                var collect = new CollectObjectiveInfoEvent([]);
-                RaiseLocalEvent(card, ref collect);
-                foreach (var objective in collect.Objectives)
-                    WriteObjective(ref completedObjectives, builder, objective.Title, objective.Progress);
-            }
-            builder.AppendLine();
-        }
-        ev.AddLine(builder.AppendLine().ToString());
 
         var stationStatsQuery = EntityQueryEnumerator<StationCrewStatisticsComponent>();
         while (stationStatsQuery.MoveNext(out var stationUid, out var stats))

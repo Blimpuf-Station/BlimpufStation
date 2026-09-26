@@ -11,7 +11,6 @@ using Content.Client.UserInterface.Systems.MenuBar.Widgets;
 using Content.Client.UserInterface.Systems.Sandbox;
 using Content.Client._Starlight.UserInterface.Systems.Language; // Starlight
 using Content.Client._Starlight.UserInterface.Systems.BugReport; // Starlight
-using Content.Client._Starlight.Achievement; // Starlight
 using Robust.Client.UserInterface.Controllers;
 
 namespace Content.Client.UserInterface.Systems.MenuBar;
@@ -29,7 +28,6 @@ public sealed partial class GameTopMenuBarUIController : UIController
     [Dependency] private EmotesUIController _emotes = default!;
     [Dependency] private LanguageMenuUIController _language = default!; // Starlight
     [Dependency] private BugReportUIController _bug = default!; // Starlight
-    [Dependency] private AchievementUIController _achievement = default!; // Starlight
 
     private GameTopMenuBar? GameTopMenuBar => UIManager.GetActiveUIWidgetOrNull<GameTopMenuBar>();
 
@@ -55,7 +53,6 @@ public sealed partial class GameTopMenuBarUIController : UIController
         _emotes.UnloadButton();
         _language.UnloadButton(); // Starlight
         _bug.UnloadButton(); // Starlight
-        _achievement.UnloadButton(); // Starlight
     }
 
     public void LoadButtons()
@@ -71,6 +68,5 @@ public sealed partial class GameTopMenuBarUIController : UIController
         _emotes.LoadButton();
         _language.LoadButton(); // Starlight
         _bug.LoadButton(); // Starlight
-        _achievement.LoadButton(); // Starlight
     }
 }

@@ -124,9 +124,9 @@
   productEntity: ClothingOuterHardsuitUltima
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 50
+    Telecrystal: 55
   cost:
-    Telecrystal: 75
+    Telecrystal: 66
   categories:
     - UplinkResearch
   conditions:
@@ -147,9 +147,9 @@
   productEntity: WeaponLaserTaipanRevolver
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 50
+    Telecrystal: 40
   cost:
-    Telecrystal: 75
+    Telecrystal: 50
   categories:
     - UplinkResearch
   conditions:
@@ -170,9 +170,9 @@
   productEntity: WeaponLaserIncinerator
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 70
+    Telecrystal: 50
   cost:
-    Telecrystal: 85
+    Telecrystal: 60
   categories:
     - UplinkResearch
   conditions:
@@ -282,7 +282,7 @@
   description: uplink-syndie-clipboard-desc
   productEntity: BoxFolderSyndieClipboard
   cost:
-    Telecrystal: 100
+    Telecrystal: 80
   categories:
     - UplinkResearch
   conditions:
@@ -303,9 +303,9 @@
   productEntity: WeaponSyndieEnergyShotgun
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 60
+    Telecrystal: 40
   cost:
-    Telecrystal: 70
+    Telecrystal: 50
   categories:
     - UplinkResearch
   conditions:
@@ -328,7 +328,7 @@
   discountDownTo:
     Telecrystal: 35
   cost:
-    Telecrystal: 50
+    Telecrystal: 45
   categories:
     - UplinkResearch
   conditions:

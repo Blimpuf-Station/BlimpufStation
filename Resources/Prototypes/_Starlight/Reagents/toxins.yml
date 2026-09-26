@@ -5,6 +5,7 @@
   desc: reagent-desc-devil-juice
   color: "#66181A"
   physicalDesc: reagent-physical-desc-devil-juice
+  contrabandTier: Tier1 # Blimpuf
   allowedDepartments:
     - Medical
   flavor: perfid

@@ -1,5 +1,4 @@
 ﻿using Content.Server._Starlight.Objectives.Events;
-using Content.Server._Starlight.Achievement;
 using Content.Server.Administration.Managers;
 using Content.Server.EUI;
 using Content.Server.Revolutionary.Components;
@@ -25,7 +24,6 @@ public sealed partial class RailroadingSystem : SharedRailroadingSystem
 {
     private const string CriminalCardPrototypeId = "RRCardCriminal";
 
-    [Dependency] private AchievementSystem _achievements = default!;
     [Dependency] private IRobustRandom _random = default!;
     [Dependency] private IPlayerManager _players = default!;
     [Dependency] private IAdminManager _admins = default!;
@@ -179,15 +177,6 @@ public sealed partial class RailroadingSystem : SharedRailroadingSystem
 
                 var cardPerformer = EnsureComp<RailroadCardPerformerComponent>(card);
                 cardPerformer.Performer = subject;
-
-                if (TryComp<MetaDataComponent>(card.Owner, out var meta)
-                    && meta.EntityPrototype?.ID == CriminalCardPrototypeId)
-                {
-                    var achievementId = HasComp<CommandStaffComponent>(subject.Owner)
-                        ? "wavering_loyalty"
-                        : "on_the_run";
-                    _achievements.QueueUnlockAchievement(subject.Owner, achievementId);
-                }
 
                 var @event = new RailroadingCardChosenEvent(subject);
                 RaiseLocalEvent(card, ref @event);

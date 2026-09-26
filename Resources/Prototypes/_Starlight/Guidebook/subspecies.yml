@@ -35,11 +35,6 @@
   text: "/ServerInfo/_Starlight/Guidebook/Mobs/SubMobs/NeoHuman.xml"
 
 - type: guideEntry
-  id: NeoShadekin
-  name: subspecies-name-neoshadekin
-  text: "/ServerInfo/_Starlight/Guidebook/Mobs/SubMobs/NeoShadekin.xml"
-
-- type: guideEntry
   id: NeoSlimePerson
   name: subspecies-name-neoslimeperson
   text: "/ServerInfo/_Starlight/Guidebook/Mobs/SubMobs/NeoSlimePerson.xml"

@@ -518,8 +518,6 @@ public sealed partial class InjectorSystem : EntitySystem
         else
             _solutionContainer.Refill(target, targetSolution, removedSolution);
 
-        RaiseLocalEvent(target, new SuccessfulInjectEvent(user, injector.Owner, target, removedSolution.Clone()), true); // Starlight: Achievements
-
         LocId msgSuccess = target == user ? "injector-component-inject-success-message-self" : "injector-component-inject-success-message";
 
         if (selfEv.OverrideMessage != null)

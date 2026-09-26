@@ -1,6 +1,6 @@
 - type: entity
   name: hybrid taser
-  parent: [ BaseWeaponBatterySmall, BaseSecurityContraband ]
+  parent: [ BaseWeaponBatterySmall, BaseSecurityContraband, BaseContrabandTier2 ] # Blimpuf
   id: WeaponAdvancedTaser
   description: A low-capacity, energy-based stun gun used by security teams to subdue targets at range.
   components:
@@ -55,7 +55,7 @@
 
 - type: entity
   name: energy gun
-  parent: [ BaseWeaponBatterySmall, BaseSecurityContraband ]
+  parent: [ BaseWeaponBatterySmall, BaseSecurityContraband, BaseContrabandTier3 ] # Blimpuf
   id: WeaponEnergyGun
   description: An energy gun capable of switching between lethal and debilitating lasers.
   components:
@@ -95,7 +95,7 @@
 
 - type: entity
   name: miniature energy gun
-  parent: [ BaseWeaponBatterySmall, BaseSecurityContraband ]
+  parent: [ BaseWeaponBatterySmall, BaseSecurityContraband, BaseContrabandTier3 ] # Blimpuf
   id: WeaponMiniEnergyGun
   description: An energy gun capable of switching between lethal and debilitating lasers.
   components:
@@ -168,7 +168,7 @@
 
 - type: entity
   name: dominator
-  parent: [ BaseWeaponBatterySmall, BaseSecurityContraband ]
+  parent: [ BaseWeaponBatterySmall, BaseSecurityContraband, BaseContrabandTier3 ] # Blimpuf
   id: WeaponDominator
   description: A high-tech weapon created by the law enforcement organization Sibyl System, designed specifically to fight crime.
   components:
@@ -231,10 +231,12 @@
 
 - type: entity
   name: X-01 multiphase energy gun
-  parent: [ BaseWeaponBatterySmall, BaseBlueShieldContraband, BaseGrandTheftContraband ]
+  parent: [ BaseWeaponBatterySmall, BaseRepresentativesContraband ]
   id: WeaponMultiphaseGun
   description: This is an expensive, modern version of the antique laser pistol, with several unique fire modes.
   components:
+  - type: Contraband
+    tier: Tier3
   - type: Appearance
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Battery/multiphase_gun.rsi
@@ -294,7 +296,7 @@
 
 - type: entity
   name: MT-7 Magnum
-  parent: [ BaseWeaponBatterySmall, BaseSecurityContraband ]
+  parent: [ BaseWeaponBatterySmall, BaseSecurityContraband, BaseContrabandTier3 ] # Blimpuf
   id: WeaponEnergyMagnumGun
   description: This is an expensive, modern recreation of the Mateba revolver, with several unique fire modes. And a slow self recharging battery. However, it has a slower recharge then most battery related weapons.
   components:
@@ -378,7 +380,7 @@
     pvsIncrease: 0.3
 
 - type: entity
-  parent: [BaseWeaponBattery, BaseSecurityContraband ]
+  parent: [BaseWeaponBattery, BaseSecurityContraband, BaseContrabandTier3 ] # Blimpuf
   id: WeaponIonCarbine
   name: ion carbine
   components:
@@ -411,7 +413,7 @@
 
 - type: entity
   name: immolator laser gun
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecuritySalvageContraband]
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband, BaseSalvageContraband, BaseContrabandTier3] # Blimpuf
   id: WeaponLaserImmolator
   description: An irregular, unstable firearm. It remains warm to the touch long after it has finished firing.
   components:
@@ -438,7 +440,7 @@
     price: 300
 
 - type: entity
-  parent: [BaseWeaponBatterySmall, BaseSecurityContraband ]
+  parent: [BaseWeaponBatterySmall, BaseSecurityContraband, BaseContrabandTier3 ] # Blimpuf
   id: WeaponDecloner
   name: decloner
   components:
@@ -463,7 +465,7 @@
 
 - type: entity
   name: m1911
-  parent: [BaseWeaponBatterySmall, BaseSecurityContraband ]
+  parent: [BaseWeaponBatterySmall, BaseSecurityContraband, BaseContrabandTier3 ] # Blimpuf
   id: WeaponPulseM1911
   suffix: Pulse
   description: A compact pulse core in a classic NanoTrasen officer pistol design. It's not the size of the gun, it's the size of the hole it puts in people.
@@ -508,7 +510,7 @@
 
 - type: entity
   name: pulse pistol
-  parent: [BaseWeaponBatterySmall, BaseSecurityContraband ]
+  parent: [BaseWeaponBatterySmall, BaseSecurityContraband, BaseContrabandTier3 ] # Blimpuf
   id: WeaponPulsePistol
   description: An extremely compact version of the pulse carabine.
   components:
@@ -561,7 +563,7 @@
 
 - type: entity
   name: PDW-9 taser pistol
-  parent: [ BaseWeaponBatterySmall, BaseSecurityContraband ]
+  parent: [ BaseWeaponBatterySmall, BaseSecurityContraband, BaseContrabandTier2 ] # Blimpuf
   id: WeaponPDW9
   description: A compact pulse core in a classic NanoTrasen officer pistol design. It's not the size of the gun, it's the size of the hole it puts in people.
   components:
@@ -950,50 +952,15 @@
   - type: FiringPinHolder
     supportedPins: [ AdvancedLaser ]
   - type: SyndicateResearchTarget
-    researchProtoIds:
-      - displayName: fire bomb
-        validPrototypes:
-          - FireBomb
-      - displayName: turbo recharger machine board
-        validPrototypes:
-          - TurboItemRechargerCircuitboard
-      - displayName: atmos fire suit
-        validPrototypes:
-          - ClothingOuterSuitAtmosFire
-      - displayName: stun baton
-        validPrototypes:
-          - Stunbaton
-          - EnforcerStunbaton
-          - DoubleStunbaton
-          - PurpleStunbaton
-          - ClothingHandsKnuckleDustersStun
-      - displayName: disabler
-        validPrototypes:
-          - WeaponDisabler
-          - WeaponDisablerSMG
-      - displayName: large internals tank
-        validPrototypes:
-          - OxygenTank
-          - OxygenTankFilled
-          - NitrogenTank
-          - NitrogenTankFilled
-          - AirTank
-          - AirTankFilled
-          - NitrousOxideTank
-          - NitrousOxideTankFilled
-          - HealiumTankEmpty
-          - HealiumTankFilled
-          - ZXATankEmpty
-          - ZXATankFilled
-      - displayName: cautery
-        validPrototypes:
-          - Cautery
-          - CauteryCyber
-          - CauteryRipper
-          - CauteryAbductor
-      - displayName: torch
-        validPrototypes:
-          - Torch
+    syndicateResearchSpecifiers:
+      - SyndicateResearchSpecifierFireBomb
+      - SyndicateResearchSpecifierTurboItemRechargerCircuitboard
+      - SyndicateResearchSpecifierClothingOuterSuitAtmosFire
+      - SyndicateResearchSpecifierStunBaton
+      - SyndicateResearchSpecifierWeaponDisabler
+      - SyndicateResearchSpecifierTankInternals
+      - SyndicateResearchSpecifierCautery
+      - SyndicateResearchSpecifierTorch
     researchUnlockId: UplinkWeaponLaserIncinerator
     researchAnnouncementString: research-announcement-weapon-laser-incinerator
 

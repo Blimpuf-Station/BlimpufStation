@@ -1,5 +1,4 @@
-using Content.Client._Starlight.Managers;
-using Content.Client._Starlight.Achievement;
+﻿using Content.Client._Starlight.Managers;
 using Content.Client._NullLink; // NullLink
 using Content.Client.Administration.Managers;
 using Content.Client.Changelog;
@@ -87,7 +86,6 @@ namespace Content.Client.Entry
         [Dependency] private INullLinkPlayerResourcesManager _nullLinkResourcesManager = default!; //NullLink
         [Dependency] private ISharedNullLinkPlayerRolesReqManager _sharedNullLinkPlayer = default!; //NullLink
         [Dependency] private PreWrittenDocumentManager _documentManager = default!; // Starlight
-        [Dependency] private IClientAchievementManager _achievementManager = default!; // Starlight
 
         public override void PreInit()
         {
@@ -204,8 +202,6 @@ namespace Content.Client.Entry
             _nullLinkResourcesManager.Initialize();
             _sharedNullLinkPlayer.Initialize();
             // NullLink end
-
-            _achievementManager.Initialize(); // Starlight
 
             // Disable engine-default viewport since we use our own custom viewport control.
             _userInterfaceManager.MainViewport.Visible = false;

@@ -1,0 +1,23 @@
+- type: entity
+  name: scrap bag of holding
+  id: ScrapBagOfHolding
+  parent: ScrapBag
+  description: A robust bag of holding for salvage billionaires to carry large amounts of scrap. Magnetises any nearby scrap even when not attached to a belt.
+  components:
+  - type: ItemToggle  #starlight edit, added toggle
+    onUse: false
+    verbToggleOn: verb-toggle-magnet-activate
+    verbToggleOff: verb-toggle-magnet-deactivate
+  - type: ComponentToggler
+    components:
+    - type: MagnetPickup
+      range: 2
+      requiresEquipping: false  # Starlight Edit - make it work even without being equipped
+  - type: Sprite
+    sprite: _Starlight/Objects/Specific/Mining/ore_bag_holding.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Starlight/Objects/Specific/Mining/ore_bag_holding.rsi
+  - type: Storage
+    grid:
+    - 0,0,19,9

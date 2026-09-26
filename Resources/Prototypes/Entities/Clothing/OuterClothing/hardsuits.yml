@@ -124,7 +124,7 @@
 
 #Salvage Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseSalvageMiningContraband] # Starlight
+  parent: [ClothingOuterHardsuitBase, BaseSalvageContraband, BaseMiningContraband] # Starlight
   id: ClothingOuterHardsuitSalvage
   name: salvage hardsuit # Starlight - rename for mining hardsuit addition
   description: A special suit that protects against hazardous, low pressure environments. Has reinforced plating for wildlife encounters.
@@ -272,7 +272,7 @@
 
 #Security Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseSecurityContraband]
+  parent: [ClothingOuterHardsuitBase, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   id: ClothingOuterHardsuitSecurity
   name: security hardsuit
   description: A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.
@@ -311,7 +311,7 @@
 
 #Brigmedic Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseSecurityContraband]
+  parent: [ClothingOuterHardsuitBase, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   id: ClothingOuterHardsuitBrigmedic
   name: brigmedic hardsuit
   description: Special hardsuit of the guardian angel of the brig. It is the medical version of the security hardsuit.
@@ -356,7 +356,7 @@
 
 #Warden's Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseSecurityContraband]
+  parent: [ClothingOuterHardsuitBase, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   id: ClothingOuterHardsuitWarden
   name: warden's hardsuit
   description: A specialized, heavy riot suit geared to combat low pressure environments.
@@ -584,54 +584,15 @@
   - type: StealTarget
     stealGroup: ClothingOuterHardsuitRd
   - type: SyndicateResearchTarget
-    researchProtoIds:
-      - displayName: uranium
-        validPrototypes:
-          - SheetUranium
-          - SheetUranium1
-      - displayName: baseball bat
-        validPrototypes:
-          - BaseBallBat
-      - displayName: stun baton
-        validPrototypes:
-          - Stunbaton
-          - EnforcerStunbaton
-          - DoubleStunbaton
-          - PurpleStunbaton
-          - ClothingHandsKnuckleDustersStun
-      - displayName: flash
-        validPrototypes:
-          - Flash
-          - SciFlash
-          - Flash4Use
-          - Flash3Use
-          - Flash1Use
-          - Flash0Use
-          - GrenadeFlashBang
-          - ClusterBangFull
-          - FlashPayload
-      - displayName: defibrillator
-        validPrototypes:
-          - BaseDefibrillator
-          - Defibrillator
-          - DefibrillatorEmpty
-          - DefibrillatorOneHandedUnpowered
-          - DefibrillatorCompact
-          - DefibrillatorSyndicate
-          - DefibrillatorSyndicateOneHandedUnpowered
-          - DefibrillatorBrigmedical
-          - DefibrillatorParamed
-      - displayName: plasma spear
-        validPrototypes:
-          - SpearPlasma
-      - displayName: fireaxe
-        validPrototypes:
-          - FireAxe
-          - FireAxeFlaming
-      - displayName: pickaxe
-        validPrototypes:
-          - Pickaxe
-          - PickaxeDiamond
+    syndicateResearchSpecifiers:
+      - SyndicateResearchSpecifierSheetUranium
+      - SyndicateResearchSpecifierBaseBallBat
+      - SyndicateResearchSpecifierStunBaton
+      - SyndicateResearchSpecifierFlash
+      - SyndicateResearchSpecifierDefibrillator
+      - SyndicateResearchSpecifierSpearPlasma
+      - SyndicateResearchSpecifierFireAxe
+      - SyndicateResearchSpecifierPickaxe
     researchUnlockId: UplinkClothingOuterHardsuitUltima
     researchAnnouncementString: research-announcement-clothing-outer-hardsuit-ultima
 
@@ -751,6 +712,8 @@
   name: blood-red hardsuit
   description: A heavily armored hardsuit designed for work in special operations. Property of Gorlex Marauders.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier4
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/syndicate.rsi
   - type: Item
@@ -822,6 +785,8 @@
   name: syndicate elite hardsuit
   description: An elite version of the blood-red hardsuit, with improved radiation resistance and fireproofing. Property of Gorlex Marauders.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier4
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/syndieelite.rsi
   - type: Clothing
@@ -873,6 +838,8 @@
   name: syndicate commander hardsuit
   description: A bulked up version of the blood-red hardsuit, purpose-built for the commander of a syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier4
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/syndiecommander.rsi
   - type: Clothing
@@ -918,6 +885,8 @@
   name: cybersun juggernaut suit
   description: A suit made by the cutting edge R&D department at cybersun to be hyper resilient.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier4
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/cybersun.rsi
   - type: Clothing

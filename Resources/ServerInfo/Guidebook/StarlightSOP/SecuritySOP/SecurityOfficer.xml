@@ -3,8 +3,9 @@
 
 <GuideEntityEmbed Entity="ToyFigurineSecurity" Caption="Security Officer"/>
 
--1.\n
-Standard [color=#00a933]Code Green[/color] equipment is:
+1. Your direct superior is the Head of Security.
+
+2. Standard [color=#00a933]Code Green[/color] equipment is:
 
 <Box>
 	<GuideEntityEmbed Entity="WeaponDisabler"/>
@@ -31,14 +32,9 @@ Standard [color=#00a933]Code Green[/color] equipment is:
 	<GuideEntityEmbed Entity="Zipties"/>
 </Box>
 
-- 2.\n
-Security Officers should make themselves readily available to the crew, either by patrolling actively or by guarding departments.
-- 3.\n
-Security Officers are cleared to confine sentenced criminals in the brig for up to [bold]10 minutes[/bold].\n\n
-3.1\n
-For a sentence to be valid, it must be read aloud to the Warden or Head of Security. If done over radio, an audible confirmation must be received.\n\n
-3.2\n
-Security officers are responsible for ensuring that any sentences they themselves were involved in are properly documented in the Criminal Records System.
-- 4.\n
-When practical, Security Officers should patrol in pairs.
+3. Security Officers are to perform patrols of the station to provide a visible presence of Security on the station.
+
+4. Security Officers are expected to keep all conflicts contained and limited in scope of who is affected, with as few innocent casualties as is realistic.
+
+5. Before arresting a crewmember, Security Officers must inform the targeted party that they are under arrest while including what crime they are being arrested for.
 </Document>

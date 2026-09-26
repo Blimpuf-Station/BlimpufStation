@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "tgstation at 606005645d3a14c4439e5ce14785650121b22678, modified by EmoGarbage404, edited for Starlight by Conflee, edited for Blimpuf by ItsMaitake",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "blsign1"
+    },
+    {
+      "name": "blsign2"
+    },
+    {
+      "name": "blsign3"
+    },
+    {
+      "name": "blsign4"
+    },
+    {
+      "name": "blsign5"
+    },
+    {
+      "name": "blsign6"
+    },
+    {
+      "name": "blsign7"
+    }
+  ]
+}

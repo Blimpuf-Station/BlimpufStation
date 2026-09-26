@@ -9,11 +9,6 @@
   text: "/ServerInfo/_Starlight/Guidebook/Mobs/Thaven.xml"
 
 - type: guideEntry
-  id: Shadekin
-  name: species-name-shadekin
-  text: "/ServerInfo/_Starlight/Guidebook/Mobs/Shadekin.xml"
-
-- type: guideEntry
   id: TNebri
   name: species-name-tnebri
   text: "/ServerInfo/_Starlight/Guidebook/Mobs/TNebri.xml"

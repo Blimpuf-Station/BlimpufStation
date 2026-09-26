@@ -243,6 +243,9 @@
   id: ElderArena
 
 - type: Tag
+  id: Electrodachi
+
+- type: Tag
   id: Elf
 
 - type: Tag
@@ -608,6 +611,9 @@
 
 - type: Tag
   id: Sausage # MetamorphRecipe: FoodSausageBun
+
+- type: Tag
+  id: Samurai
 
 - type: Tag
   id: ScanGateMachineBoard

@@ -4,6 +4,8 @@
   name: cybersun ultima hardsuit
   description: A highly advanced hardsuit, that definitely doesn't have a user centered design. Capable of repetitive self-destructs. Cybersun is not liable for any damages that may result from usage of the suit.
   components:
+    - type: Contraband # Blimpuf
+      tier: Tier4
     - type: Sprite
       sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/syndicate-experimental-hardsuit.rsi
     - type: Clothing

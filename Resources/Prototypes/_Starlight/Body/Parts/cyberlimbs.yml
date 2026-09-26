@@ -746,7 +746,7 @@
 - type: entity
   id: LeftArmCyberBulwark
   name: "left bulwark arm"
-  parent: [PartCyber, BaseLeftArm, BaseSecurityContraband]
+  parent: [PartCyber, BaseLeftArm, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   components:
     - type: BaseLayerId
       layers:
@@ -774,7 +774,7 @@
 - type: entity
   id: LeftHandCyberBulwark
   name: "left bulwark hand"
-  parent: [PartCyber, BaseLeftHand, BaseSecurityContraband]
+  parent: [PartCyber, BaseLeftHand, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   components:
     - type: BaseLayerId
       layers:
@@ -807,7 +807,7 @@
 - type: entity
   id: RightArmCyberBulwark
   name: "right bulwark arm"
-  parent: [PartCyber, BaseRightArm, BaseSecurityContraband]
+  parent: [PartCyber, BaseRightArm, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   components:
     - type: BaseLayerId
       layers:
@@ -835,7 +835,7 @@
 - type: entity
   id: RightHandCyberBulwark
   name: "right bulwark hand"
-  parent: [PartCyber, BaseRightHand, BaseSecurityContraband]
+  parent: [PartCyber, BaseRightHand, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   components:
     - type: BaseLayerId
       layers:
@@ -1478,7 +1478,7 @@
 - type: entity
   id: LeftArmCyberZeus
   name: "left zeus arm"
-  parent: [PartCyber, BaseLeftArm, BaseSecurityContraband]
+  parent: [PartCyber, BaseLeftArm, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   components:
     - type: BaseLayerId
       layers:
@@ -1498,7 +1498,7 @@
 - type: entity
   id: LeftHandCyberZeus
   name: "left zeus hand"
-  parent: [PartCyber, BaseLeftHand, BaseSecurityContraband]
+  parent: [PartCyber, BaseLeftHand, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   components:
     - type: BaseLayerId
       layers:
@@ -1531,7 +1531,7 @@
 - type: entity
   id: RightArmCyberZeus
   name: "right zeus arm"
-  parent: [PartCyber, BaseRightArm, BaseSecurityContraband]
+  parent: [PartCyber, BaseRightArm, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   components:
     - type: BaseLayerId
       layers:
@@ -1551,7 +1551,7 @@
 - type: entity
   id: RightHandCyberZeus
   name: "right zeus hand"
-  parent: [PartCyber, BaseRightHand, BaseSecurityContraband]
+  parent: [PartCyber, BaseRightHand, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   components:
     - type: BaseLayerId
       layers:
@@ -1926,7 +1926,7 @@
 - type: entity
   id: LeftArmCyberHerakles
   name: "left herakles arm"
-  parent: [PartCyber, BaseLeftArm, BaseSecurityContraband]
+  parent: [PartCyber, BaseLeftArm, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   components:
     - type: BaseLayerId
       layers:
@@ -1946,7 +1946,7 @@
 - type: entity
   id: LeftHandCyberHerakles
   name: "left herakles hand"
-  parent: [PartCyber, BaseLeftHand, BaseSecurityContraband]
+  parent: [PartCyber, BaseLeftHand, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   components:
     - type: BaseLayerId
       layers:
@@ -1979,7 +1979,7 @@
 - type: entity
   id: RightArmCyberHerakles
   name: "right herakles arm"
-  parent: [PartCyber, BaseRightArm, BaseSecurityContraband]
+  parent: [PartCyber, BaseRightArm, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   components:
     - type: BaseLayerId
       layers:
@@ -1999,7 +1999,7 @@
 - type: entity
   id: RightHandCyberHerakles
   name: "right herakles hand"
-  parent: [PartCyber, BaseRightHand, BaseSecurityContraband]
+  parent: [PartCyber, BaseRightHand, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   components:
     - type: BaseLayerId
       layers:

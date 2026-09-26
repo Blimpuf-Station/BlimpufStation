@@ -69,67 +69,67 @@
     state: bold9
 
 - type: decal
-  id: slsign1
+  id: blsign1
   tags: ["station", "markings"]
   defaultCleanable: false
   defaultSnap: true
   sprite:
-    sprite: _Starlight/Decals/starlightsign.rsi
-    state: slsign1
+    sprite: _Blimpuf/Decals/blimpufsign.rsi
+    state: blsign1
 
 - type: decal
-  id: slsign2
+  id: blsign2
   tags: ["station", "markings"]
   defaultCleanable: false
   defaultSnap: true
   sprite:
-    sprite: _Starlight/Decals/starlightsign.rsi
-    state: slsign2
+    sprite: _Blimpuf/Decals/blimpufsign.rsi
+    state: blsign2
 
 - type: decal
-  id: slsign3
+  id: blsign3
   tags: ["station", "markings"]
   defaultCleanable: false
   defaultSnap: true
   sprite:
-    sprite: _Starlight/Decals/starlightsign.rsi
-    state: slsign3
+    sprite: _Blimpuf/Decals/blimpufsign.rsi
+    state: blsign3
 
 - type: decal
-  id: slsign4
+  id: blsign4
   tags: ["station", "markings"]
   defaultCleanable: false
   defaultSnap: true
   sprite:
-    sprite: _Starlight/Decals/starlightsign.rsi
-    state: slsign4
+    sprite: _Blimpuf/Decals/blimpufsign.rsi
+    state: blsign4
 
 - type: decal
-  id: slsign5
+  id: blsign5
   tags: ["station", "markings"]
   defaultCleanable: false
   defaultSnap: true
   sprite:
-    sprite: _Starlight/Decals/starlightsign.rsi
-    state: slsign5
+    sprite: _Blimpuf/Decals/blimpufsign.rsi
+    state: blsign5
 
 - type: decal
-  id: slsign6
+  id: blsign6
   tags: ["station", "markings"]
   defaultCleanable: false
   defaultSnap: true
   sprite:
-    sprite: _Starlight/Decals/starlightsign.rsi
-    state: slsign6
+    sprite: _Blimpuf/Decals/blimpufsign.rsi
+    state: blsign6
 
 - type: decal
-  id: slsign7
+  id: blsign7
   tags: ["station", "markings"]
   defaultCleanable: false
   defaultSnap: true
   sprite:
-    sprite: _Starlight/Decals/starlightsign.rsi
-    state: slsign7
+    sprite: _Blimpuf/Decals/blimpufsign.rsi
+    state: blsign7
 
 - type: decal
   id: circle1

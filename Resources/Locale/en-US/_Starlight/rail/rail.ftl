@@ -1,5 +1,4 @@
 card-selection-window-title = CARD SELECTION
-cards = Cards
 
 
 railroading-card-examined = ┌Active card:

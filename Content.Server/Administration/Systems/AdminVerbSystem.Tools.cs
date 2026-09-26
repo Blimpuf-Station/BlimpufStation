@@ -44,7 +44,7 @@ using Content.Server.Administration.Components;
 using Content.Server.Power.Components;
 using Content.Shared.Body.Components;
 using Content.Shared.Body.Part;
-using Content.Shared.Contraband;
+using Content.Shared._Blimpuf.Contraband; // Blimpuf
 using Content.Shared.Electrocution;
 using Content.Shared.Humanoid;
 using Content.Shared.Overlays;

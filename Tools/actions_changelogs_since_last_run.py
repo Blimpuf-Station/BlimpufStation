@@ -6,8 +6,8 @@ Sends updates to a Discord webhook for new changelog entries since the last GitH
 Automatically figures out the last run and changelog contents with the GitHub API.
 """
 
-import itertools
 import os
+import sys
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -20,9 +20,10 @@ DEBUG_CHANGELOG_FILE_OLD = Path("Resources/Changelog/Old.yml")
 GITHUB_API_URL = os.environ.get("GITHUB_API_URL", "https://api.github.com")
 
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
-DISCORD_CHANGELOG_ROLE_ID = int(os.environ.get("DISCORD_CHANGELOG_ROLE_ID", "1308143973684088883"))
+DISCORD_CHANGELOG_ROLE_ID = os.environ.get("DISCORD_CHANGELOG_ROLE_ID", "")
+SEND_STEP_NAME = "Send Blimpuf live changelog"
 
-CHANGELOG_FILE = "Resources/Changelog/ChangelogStarlight.yml"
+CHANGELOG_FILE = "Resources/Changelog/ChangelogBlimpuf.yml"
 TYPES_TO_EMOJI = {"Fix": "🐛", "Add": "🆕", "Remove": "❌", "Tweak": "⚒️"}
 ChangelogEntry = dict[str, Any]
 
@@ -34,8 +35,7 @@ EMBED_FIELD_VALUE_LIMIT = 1024
 
 def main():
     if not DISCORD_WEBHOOK_URL:
-        print("No webhook URL; skipping send")
-        return
+        raise RuntimeError("Set the DISCORD_WEBHOOK_URL Actions secret before publishing.")
 
     if DEBUG:
         last_changelog_stream = DEBUG_CHANGELOG_FILE_OLD.read_text()
@@ -43,7 +43,7 @@ def main():
         last_changelog_stream = get_last_changelog()
 
     last_changelog = yaml.safe_load(last_changelog_stream) or {}
-    with open(CHANGELOG_FILE, "r") as f:
+    with open(CHANGELOG_FILE, "r", encoding="utf-8") as f:
         cur_changelog = yaml.safe_load(f) or {}
 
     new_entries = list(diff_changelog(last_changelog, cur_changelog))
@@ -51,7 +51,8 @@ def main():
         print("No new entries to report.")
         return
 
-    ping_role_once(str(DISCORD_CHANGELOG_ROLE_ID))
+    if DISCORD_CHANGELOG_ROLE_ID:
+        ping_role_once(DISCORD_CHANGELOG_ROLE_ID)
 
     pr_groups = group_entries_by_pr(new_entries)
     for pr_id, entries in pr_groups.items():
@@ -70,8 +71,19 @@ def get_most_recent_workflow(
     for run in sorted_runs:
         if run["id"] == current["id"]:
             continue
-        return run
-    raise RuntimeError("No previous successful workflow run found")
+        # Older publishers could succeed without sending. Only this repaired step
+        # establishes a baseline for the next announcement.
+        resp = sess.get(run["jobs_url"], params={"per_page": 100}, timeout=30)
+        resp.raise_for_status()
+        if any(
+            job["conclusion"] == "success" and any(
+                step["name"] == SEND_STEP_NAME and step["conclusion"] == "success"
+                for step in job.get("steps", [])
+            )
+            for job in resp.json().get("jobs", [])
+        ):
+            return run
+    return None
 
 
 def get_current_run(
@@ -83,10 +95,19 @@ def get_current_run(
 
 
 def get_past_runs(sess: requests.Session, current_run: Any) -> Any:
-    params = {"status": "success", "created": f"<={current_run['created_at']}"}
-    resp = sess.get(f"{current_run['workflow_url']}/runs", params=params)
-    resp.raise_for_status()
-    return resp.json()
+    params = {
+        "status": "success", "created": f"<={current_run['created_at']}",
+        "branch": current_run["head_branch"], "per_page": 100,
+    }
+    url = f"{current_run['workflow_url']}/runs"
+    runs = []
+    while url:
+        resp = sess.get(url, params=params, timeout=30)
+        resp.raise_for_status()
+        runs.extend(resp.json().get("workflow_runs", []))
+        url = resp.links.get("next", {}).get("url")
+        params = None
+    return {"workflow_runs": runs}
 
 
 def get_last_changelog() -> str:
@@ -96,11 +117,14 @@ def get_last_changelog() -> str:
 
     session = requests.Session()
     session.headers["Authorization"] = f"Bearer {github_token}"
-    session.headers["Accept"] = "Accept: application/vnd.github+json"
+    session.headers["Accept"] = "application/vnd.github+json"
     session.headers["X-GitHub-Api-Version"] = "2022-11-28"
 
     most_recent = get_most_recent_workflow(session, github_repository, github_run)
-    last_sha = most_recent["head_commit"]["id"]
+    if most_recent is None:
+        print("First Discord announcement: including the full Blimpuf changelog.")
+        return "Entries: []"
+    last_sha = most_recent["head_sha"]
     print(f"Last successful publish job was {most_recent['id']}: {last_sha}")
     return get_last_changelog_by_sha(session, last_sha, github_repository)
 
@@ -182,7 +206,7 @@ def build_embed_for_pr(pr_id: str, entries: list[ChangelogEntry]) -> dict[str, A
   #      "fields": [
   #          {"name": "Author(s)", "value": author_field[:EMBED_FIELD_VALUE_LIMIT], "inline": False}
   #      ],
-        "footer": {"text": "Starlight changelog"},
+        "footer": {"text": "Blimpuf changelog"},
         "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
     }
     if pr_id != "no-pr":
@@ -199,10 +223,13 @@ def send_embed(embed: dict[str, Any]):
 
 
 def ping_role_once(role_id: str):
-    content = f"<@&{role_id}> New changelog updates are ready for release."
+    announcement = "A new Blimpuf live build is available. Changelog follows."
+    if os.environ.get("CHANGELOG_ONLY") == "true":
+        announcement = "Blimpuf changelog updates."
+    content = f"<@&{role_id}> {announcement}"
     payload = {
         "content": content,
-        "allowed_mentions": {"roles": [int(role_id)]},
+        "allowed_mentions": {"parse": [], "roles": [role_id]},
     }
     post_with_retries(payload)
 
@@ -211,25 +238,23 @@ def post_with_retries(payload: dict[str, Any]):
     attempt = 0
     while True:
         try:
-            resp = requests.post(DISCORD_WEBHOOK_URL, json=payload, timeout=10)
+            resp = requests.post(DISCORD_WEBHOOK_URL, params={"wait": "true"}, json=payload, timeout=30)
             if resp.status_code == 429:
                 attempt += 1
                 if attempt > 20:
-                    print("Too many rate limit retries; giving up", file=sys.stderr)
-                    sys.exit(1)
+                    raise RuntimeError("Discord rate limit retries exhausted.")
                 retry_after = resp.json().get("retry_after", 5)
                 print(f"Rate limited; sleeping {retry_after}s (attempt {attempt})")
                 time.sleep(retry_after)
                 continue
             resp.raise_for_status()
             return
-        except requests.exceptions.RequestException as e:
+        except requests.exceptions.RequestException:
             attempt += 1
             if attempt > 5:
-                print(f"Failed after retries: {e}", file=sys.stderr)
-                return
+                raise RuntimeError("Discord delivery failed after retries.") from None
             backoff = 2 ** attempt
-            print(f"Request failed ({e}), backing off {backoff}s and retrying")
+            print(f"Discord request failed; retrying in {backoff}s", file=sys.stderr)
             time.sleep(backoff)
 
 

@@ -636,6 +636,7 @@
     - item: Shovel
     - item: MineralScannerUnpowered
     - item: BorgOreBag
+    - item: BorgScrapBag
     - item: RadioHandheldExpedition # Starlight
     - hand: # Starlight
         emptyRepresentative: GoldOre

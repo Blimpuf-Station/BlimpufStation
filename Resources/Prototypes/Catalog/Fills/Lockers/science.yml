@@ -20,4 +20,5 @@
     - id: AnomalyScanner
     - id: NodeScanner
     - id: NetworkConfigurator
+    - id: BoxFolderAnomalyReports # Blimpuf
       prob: 0.5

@@ -2,14 +2,20 @@ name: Publish
 
 concurrency:
   group: publish
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 on:
   workflow_dispatch:
+    inputs:
+      changelog_only:
+        description: Send Discord changelog without building or uploading
+        type: boolean
+        default: false
 
 jobs:
   build:
     name: Build & Package
+    if: github.ref == 'refs/heads/blimpuf-live' && !inputs.changelog_only
     runs-on: ubuntu-latest
     environment: prod
     steps:
@@ -46,36 +52,35 @@ jobs:
       - name: Publish version
         run: Tools/publish_multi_request.py
         env:
+          FORK_ID: blimpuf-live
           PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
           GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
 
   update-changelog:
     name: Publish Changelogs
-#    needs: build
+    if: >-
+      !cancelled() && github.ref == 'refs/heads/blimpuf-live' &&
+      (inputs.changelog_only || needs.build.result == 'success')
+    needs: build
     runs-on: ubuntu-latest
     environment: prod
+    permissions:
+      contents: read
+      actions: read
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Set up SSH
-        env:
-          ACTIONS_SSH_KEY: ${{ secrets.ACTIONS_SSH_KEY }}
-        run: |
-          mkdir -p ~/.ssh
-          echo "$ACTIONS_SSH_KEY" | tr -d '\r' > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
+      - name: Install changelog dependencies
+        run: sudo apt-get update && sudo apt-get install -y python3-requests python3-yaml
 
-      - name: Test SSH Connection
-        run: ssh -T git@github.com || exit 0
-
-      - name: Publish changelog (Discord)
-        continue-on-error: true
-        run: Tools/actions_changelogs_since_last_run.py
+      - name: Send Blimpuf live changelog
+        run: /usr/bin/python3 Tools/actions_changelogs_since_last_run.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          # The webhook must target live changelog channel 1500641641768423614.
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          DISCORD_CHANGELOG_ROLE_ID: "1308143973684088883"
+          DISCORD_CHANGELOG_ROLE_ID: "1548096887570178148"
+          CHANGELOG_ONLY: ${{ inputs.changelog_only }}

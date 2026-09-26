@@ -47,15 +47,15 @@ def switchBranch(branchName):
 
 def __main__():
     print("Running builds...")
-    print("Switching to stable branch...")
-    switchBranch('stable')
+    print("Switching to blimpuf-live branch...")
+    switchBranch('blimpuf-live')
     sleep(2)  # wait for branch switch to complete
-    print("Running stable build...")
+    print("Running blimpuf-live build...")
     stablelines = runBuild()
-    print("Switching to starlight-dev branch...")
-    switchBranch('starlight-dev')
+    print("Switching to blimpuf-dev branch...")
+    switchBranch('blimpuf-dev')
     sleep(2)  # wait for branch switch to complete
-    print("Running starlight-dev build...")
+    print("Running blimpuf-dev build...")
     devlines = runBuild()
 
     print("Comparing results...")
@@ -70,19 +70,19 @@ def __main__():
 
     #convert to string
     if only_in_dev:
-        diff_output += "Warnings only in starlight-dev build:\n"
+        diff_output += "Warnings only in blimpuf-dev build:\n"
         for line in only_in_dev:
             diff_output += line + "\n"
 
     if diff_output:
-        print("Differences found between stable and starlight-dev builds:")
+        print("Differences found between blimpuf-live and blimpuf-dev builds:")
         print(diff_output)
         #output to a file
         with open('build_warnings_diff.txt', 'w') as f:
             f.write(diff_output)
             print("Differences written to build_warnings_diff.txt")
     else:
-        print("No differences found between stable and starlight-dev builds.")
+        print("No differences found between blimpuf-live and blimpuf-dev builds.")
 
 if __name__ == "__main__":
     __main__()

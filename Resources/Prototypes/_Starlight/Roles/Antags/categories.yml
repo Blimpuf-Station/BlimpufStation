@@ -23,6 +23,7 @@
   accentColor: "#753c2f"
   antags:
   - SpaceNinja
+  - SamuraiAntag
   - Thief
 
 - type: antagCategory

@@ -119,7 +119,7 @@
 
 - type: entity
   name: double-barreled shotgun
-  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityBartenderZookeeperContraband] # Starlight-edit - SecurityBartender -> SecurityBartenderZookeeper
+  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityContraband, BaseBartenderContraband, BaseZookeeperContraband, BaseContrabandTier3] # Starlight-edit - SecurityBartender -> SecurityBartenderZookeeper; Blimpuf
   id: WeaponShotgunDoubleBarreled
   description: An immortal classic. Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
   components:
@@ -152,7 +152,7 @@
 
 - type: entity
   name: Sentiel
-  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityContraband]
+  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   id: WeaponShotgunEnforcer
   description: A premium semi-automatic shotgun, and the pride of all security forces. Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
   components: # intend for Enforcer to have wider choke for semi-auto function
@@ -181,7 +181,7 @@
 
 - type: entity
   name: Kammerer
-  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityContraband]
+  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   id: WeaponShotgunKammerer
   description: An old yet faithful design, and a favorite among irregular forces of many worlds. Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
   components: # intend for Kammerer to have tighter choke for slower fire rate and/or manual cycling
@@ -202,7 +202,7 @@
 
 - type: entity
   name: sawn-off shotgun
-  parent: [ BaseWeaponShotgun, BaseSecurityBartenderZookeeperContraband ] # Starlight-edit - SecurityBartender -> SecurityBartenderZookeeper
+  parent: [ BaseWeaponShotgun, BaseSecurityContraband, BaseBartenderContraband, BaseZookeeperContraband, BaseContrabandTier3 ] # Starlight-edit - SecurityBartender -> SecurityBartenderZookeeper; Blimpuf
   id: WeaponShotgunSawn
   description: Groovy! Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
   components: # needs to be super inaccurate because you don't need to wield it

@@ -48,6 +48,20 @@
       path: "/Audio/Weapons/smash.ogg"
   # 🌟Starlight-end🌟
 
+# Blimpuf - Emagged Salvage Vendor
+- type: entity
+  name: pickaxe
+  parent: Pickaxe
+  id: DullPickaxe
+  description: The striking surface on this pickaxe is incredibly dull.
+  components:
+    - type: IncreaseDamageOnWield
+      damage:
+        groups:
+          Brute: 3
+        types:
+          Structural: 5
+
 - type: entity
   name: mining drill
   parent: BaseItem
@@ -124,7 +138,7 @@
     radius: 4
 
 - type: entity
-  parent: [BaseWeaponCrusher, BaseSecurityCargoContraband]
+  parent: [BaseWeaponCrusher, BaseSecurityContraband, BaseCargoContraband, BaseContrabandTier3] # Blimpuf
   id: WeaponCrusher
   components:
   - type: Tag
@@ -185,7 +199,7 @@
     playSoundOnDoafter: true #SL
 
 - type: entity
-  parent: [ BaseKnife, BaseWeaponCrusher, BaseSecurityCargoContraband]
+  parent: [ BaseKnife, BaseWeaponCrusher, BaseSecurityContraband, BaseCargoContraband, BaseContrabandTier3] # Blimpuf
   id: WeaponCrusherDagger
   name: crusher dagger
   description: A scaled down version of a proto-kinetic crusher. Uses kinetic energy to vibrate the blade at high speeds.
@@ -230,7 +244,7 @@
 
 # Like a crusher... but better
 - type: entity
-  parent: [ WeaponCrusher, BaseSecurityCargoContraband]
+  parent: [ WeaponCrusher, BaseSecurityContraband, BaseCargoContraband, BaseContrabandTier3] # Blimpuf
   id: WeaponCrusherGlaive
   name: crusher glaive
   description: An early design of the proto-kinetic accelerator, in glaive form.

@@ -24,7 +24,7 @@
   id: MagiReq
   roles:
     - 1499230491943895110 # Blimpuf Directors
-    - 1535727158977105921 # Blimpuf Maintainers
+    - 1535902129695490159 # Blimpuf Leadership
     - 1514361719655497912 # Magistrate Whitelist
   discord: roles-req-discord-blimpuf
   rolesLoc: roles-req-magi
@@ -33,7 +33,7 @@
   id: CCEReq
   roles:
     - 1499230491943895110 # Blimpuf Directors
-    - 1535727158977105921 # Blimpuf Maintainers
+    - 1535902129695490159 # Blimpuf Leadership
     - 1514361585647222914 # CCE Whitelist
   discord: roles-req-discord-blimpuf
   rolesLoc: roles-req-cce

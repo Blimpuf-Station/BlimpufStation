@@ -3,8 +3,9 @@
 
 <GuideEntityEmbed Entity="ToyFigurineDetective" Caption="Detective"/>
 
-- 1.\n
-Standard [color=#00a933]Code Green[/color] equipment is:
+1. Your direct superior is the Head of Security.
+
+2. Standard [color=#00a933]Code Green[/color] equipment is:
 
 
 <Box>
@@ -27,18 +28,9 @@ Standard [color=#00a933]Code Green[/color] equipment is:
 	<GuideEntityEmbed Entity="ClothingShoesBootsJack"/>
 </Box>
 
-- 2.\n
-The Detective inherits their duties, clearances and responsibilities from the Security Officer when their own SOP does not apply.
-- 3.\n
-The Detective is responsible for the investigation of crime-scenes.
-- 4.\n
-The Detective is responsible for interrogation of prisoners and detainees if necessary.\n\n
-4.1\n
-Any time spent in interrogation is to be subtracted from the subject's confinement time.
-- 5.\n
-The Detective is permitted to ignore the Uniform Requirements in Security SOP §2 with approval from the Head of Security.\n\n
-5.1\n
-This is only allowed for purposes of undercover investigation.\n\n
-5.2\n
-The Detective's real ID must remain somewhere on their person at all times despite this.
+3. Detectives are responsible for investigating crime scenes that require a finer eye for detail.
+
+4. Detectives are the lead in interrogations and investigations, unless otherwise assigned.
+
+5. Detectives are not held to the standard dress code that the Security team is held accountable towards maintaining.
 </Document>

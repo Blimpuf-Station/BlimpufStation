@@ -1,7 +1,7 @@
 # Rubber
 - type: entity
   name: Drozd
-  parent: [WeaponSubMachineGunDrozd, BaseSecurityContraband]
+  parent: [WeaponSubMachineGunDrozd, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   id: WeaponSubMachineGunDrozdRubber
   suffix: Non-Lethal
   components:
@@ -26,7 +26,7 @@
 
 - type: entity
   name: SP-91-RC
-  parent: [BaseWeaponSubMachineGun, BaseSecurityContraband]
+  parent: [BaseWeaponSubMachineGun, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   id: WeaponSubMachineGunSP91RC
   description: Compact submachine gun designed for riot control.
   components:
@@ -119,7 +119,7 @@
 #PPSH
 - type: entity
   name: PPSH 59 SMG
-  parent: [BaseWeaponSubMachineGun, BaseSovietContraband]
+  parent: [BaseWeaponSubMachineGun, BaseSovietContraband, BaseContrabandTier3] # Blimpuf
   id: WeaponSubMachineGunPPSH
   description: Beloved by USSP veterans and feared by friendly fire protocols everywhere. Uses .35 ammo.
   components:
@@ -340,7 +340,6 @@
   - type: WeaponDismantleOnShoot
     dismantleChance: 0
 
-
 - type: entity
   name: WT550b
   parent: [BaseWeaponSubMachineGun, BaseGrandTheftContraband] # Starlight, grand theft
@@ -404,65 +403,17 @@
   - type: StealTarget
     stealGroup: HOSWeapon # Proto5x and WT550b
   - type: SyndicateResearchTarget
-    researchProtoIds:
-      - displayName: fulton beacon
-        validPrototypes:
-          - FultonBeacon
-      - displayName: artifact crusher machine board
-        validPrototypes:
-          - ArtifactCrusherMachineCircuitboard
-      - displayName: security hud
-        validPrototypes:
-          - ClothingEyesGlassesSecurity
-          - ClothingEyesHudSecurity
-          - ClothingEyesEyepatchHudSecurity
-          - ClothingEyesEyepatchHudSecurityFlipped
-          - ClothingEyeGlassesSecurityPrescription
-          - ClothingEyesHudMedSec
-          - ClothingEyesGlassesBrigmedicPrescription
-          - ClothingEyesGlassesBrigmedic
-          - ClothingEyesHudBrigmedic
-          - ClothingEyesEyepatchHudBrigmedic
-          - ClothingEyesEyepatchHudBrigmedicFlipped
-          - ClothingEyesHudCorpsman
-          - ClothingEyesHudBlueShield
-          - ClothingEyesEyepatchHudBlueShieldFlipped
-          - ClothingEyesEyepatchHudBlueShield
-      - displayName: circular saw
-        validPrototypes:
-          - SawElectric
-          - SawRipper
-          - SawCyber
-          - SawAdvanced
-          - SawAbductor
-      - displayName: APC/Substation/SMES electronics
-        validPrototypes:
-          - APCElectronics
-          - APCAdvancedElectronics
-          - SubstationMachineCircuitboard
-          - WallmountSubstationElectronics
-          - SMESMachineCircuitboard
-          - SMESAdvancedMachineCircuitboard
-          - SMESHyperAdvancedMachineCircuitboard
-      - displayName: thruster machine board
-        validPrototypes:
-          - ThrusterMachineCircuitboard
-      - displayName: gavel hammer
-        validPrototypes:
-          - GavelHammer
-      - displayName: knife
-        validPrototypes:
-          - KitchenKnife
-          - CombatKnife
-          - SurvivalKnife
-          - RescueKnife
-          - KukriKnife
-          - UtilityKnife
-          - ThrowingKnife
-          - WeaponMeleeBoxcutter
+    syndicateResearchSpecifiers:
+      - SyndicateResearchSpecifierFultonBeacon
+      - SyndicateResearchSpecifierArtifactCrusherMachineCircuitboard
+      - SyndicateResearchSpecifierClothingEyesHudSecurity
+      - SyndicateResearchSpecifierSawElectric
+      - SyndicateResearchSpecifierAPCSMESSubstationElectronics
+      - SyndicateResearchSpecifierThrusterMachineCircuitboard
+      - SyndicateResearchSpecifierGavelHammer
+      - SyndicateResearchSpecifierKnife
     researchUnlockId: UplinkWt551Compact
     researchAnnouncementString: research-announcement-wt551-compact
-
 
 - type: entity
   name: WT550g
@@ -486,5 +437,7 @@
     - type: Clothing
       sprite: _Starlight/Objects/Weapons/Guns/SMGs/wt550g.rsi
     - type: Contraband
+      tier: Tier4 # Blimpuf
+      contrabandType: CentralCommand # Blimpuf
       allowedDepartments: [ CentralCommand ]
       allowedJobs: []

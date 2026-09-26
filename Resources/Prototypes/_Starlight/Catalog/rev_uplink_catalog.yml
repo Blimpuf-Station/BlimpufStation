@@ -456,9 +456,9 @@
   productEntity: WeaponRevolverPythonAP
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 10
   cost:
-    Telecrystal: 4 # Originally was 13 and then 8 TC but was not used due to high cost
+    Telecrystal: 18
   categories:
   - UplinkWeaponry
 
@@ -470,9 +470,9 @@
   productEntity: FireAxeFlaming
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 4
+    Telecrystal: 15
   cost:
-    Telecrystal: 6
+    Telecrystal: 25
   categories:
   - UplinkWeaponry
 
@@ -484,9 +484,9 @@
   productEntity: BriefcaseWeaponDMRFilled
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 10
+    Telecrystal: 42
   cost:
-    Telecrystal: 14
+    Telecrystal: 65
   categories:
   - UplinkWeaponry
   conditions:
@@ -501,7 +501,7 @@
   description: uplink-flash-grenade-desc
   productEntity: GrenadeFlashBang
   cost:
-    Telecrystal: 1
+    Telecrystal: 5
   categories:
   - UplinkExplosives
 
@@ -512,9 +512,9 @@
   productEntity: ElectricalDisruptionKit
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 4
+    Telecrystal: 15
   cost:
-    Telecrystal: 6
+    Telecrystal: 30
   categories:
     - UplinkExplosives
 
@@ -525,9 +525,9 @@
   productEntity: ClusterGrenade
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 5
-  cost:
     Telecrystal: 8
+  cost:
+    Telecrystal: 16
   categories:
   - UplinkExplosives
 
@@ -538,7 +538,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: red }
   productEntity: MagazinePistolHP
   cost:
-    Telecrystal: 1
+    Telecrystal: 5
   categories:
   - UplinkAmmo
 
@@ -549,7 +549,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: fmj }
   productEntity: MagazinePistolFMJ
   cost:
-    Telecrystal: 1
+    Telecrystal: 5
   categories:
   - UplinkAmmo
 
@@ -560,7 +560,7 @@
   icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi, state: icon }
   productEntity: SpeedLoaderMagnumAP
   cost:
-    Telecrystal: 3
+    Telecrystal: 12
   categories:
   - UplinkAmmo
 
@@ -571,9 +571,9 @@
   productEntity: HammerBreachingNT
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 8
+    Telecrystal: 20
   cost:
-    Telecrystal: 12
+    Telecrystal: 33
   categories:
   - UplinkWeaponry
 
@@ -584,9 +584,9 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledMedical
   discountCategory: usualDiscounts
   discountDownTo:
-    Telecrystal: 2
+    Telecrystal: 12
   cost:
-    Telecrystal: 4
+    Telecrystal: 20
   categories:
   - UplinkDisruption
 
@@ -634,7 +634,7 @@
   description: uplink-clothing-conducting-gloves-desc
   productEntity: ClothingHandsGlovesConducting
   cost:
-    Telecrystal: 1
+    Telecrystal: 5
   categories:
   - UplinkPointless
 

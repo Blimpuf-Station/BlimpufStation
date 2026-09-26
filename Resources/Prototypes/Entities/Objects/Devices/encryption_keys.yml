@@ -66,7 +66,7 @@
     - state: nano_label
 
 - type: entity
-  parent: [ EncryptionKey, BaseCentcommCommandContraband ]
+  parent: [ EncryptionKey, BaseCentcommContraband, BaseCommandContraband ]
   id: EncryptionKeyStationMaster
   name: station master encryption key
   description: An encryption key used by station's bosses.
@@ -144,7 +144,7 @@
     - EncryptionMedical
 
 - type: entity
-  parent: [ EncryptionKey, BaseMedicalScienceContraband ]
+  parent: [ EncryptionKey, BaseMedicalContraband, BaseScienceContraband ]
   id: EncryptionKeyMedicalScience
   name: med-sci encryption key
   description: An encryption key used by someone who hasn't decided which side to take.
@@ -195,7 +195,7 @@
     - state: robotics_label
 
 - type: entity
-  parent: [ EncryptionKey, BaseSecurityInternalAffairsContraband ] # Starlight
+  parent: [ EncryptionKey, BaseSecurityContraband, BaseInternalAffairsContraband ] # Starlight
   id: EncryptionKeySecurity
   name: security encryption key
   description: An encryption key used by security.
@@ -248,7 +248,7 @@
     price: 500 # 1000 for 2
 
 - type: entity
-  parent: [ EncryptionKey, BaseSiliconScienceContraband ]
+  parent: [ EncryptionKey, BaseScienceContraband, BaseSiliconContraband ]
   id: EncryptionKeyBinary
   name: binary translator key
   description: An encryption key that translates binary signals used by silicons.

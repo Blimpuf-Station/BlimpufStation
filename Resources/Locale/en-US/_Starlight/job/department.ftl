@@ -1,2 +1,2 @@
-department-Representatives = CC Representatives
+department-Representatives = CentComm Representatives
 department-TSF = Trans-Solar Federation
