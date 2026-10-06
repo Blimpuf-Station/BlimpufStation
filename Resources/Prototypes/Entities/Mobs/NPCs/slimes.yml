@@ -170,6 +170,17 @@
         Base: blue_adult_slime
       Dead:
         Base: blue_adult_slime_dead
+  - type: MultiHandedItem
+  - type: Item
+    sprite: Mobs/Aliens/slimeblue.rsi
+    size: Huge
+  - type: Clothing
+    quickEquip: false
+    sprite: Mobs/Aliens/slimeblue.rsi
+    equippedPrefix: 0
+    slots:
+    - HEAD
+  - type: CanEscapeInventory
 
 - type: entity
   name: blue slime
@@ -212,6 +223,17 @@
           Structural: 4
           Caustic: 1
           Poison: 4
+    - type: MultiHandedItem
+    - type: Item
+      sprite: Mobs/Aliens/slimegreen.rsi
+      size: Huge
+    - type: Clothing
+      quickEquip: false
+      sprite: Mobs/Aliens/slimegreen.rsi
+      equippedPrefix: 0
+      slots:
+      - HEAD
+    - type: CanEscapeInventory
 
 - type: entity
   name: green slime
@@ -253,6 +275,17 @@
           Blunt: 6
           Structural: 4
           Caustic: 4
+    - type: MultiHandedItem
+    - type: Item
+      sprite: Mobs/Aliens/slimeyellow.rsi
+      size: Huge
+    - type: Clothing
+      quickEquip: false
+      sprite: Mobs/Aliens/slimeyellow.rsi
+      equippedPrefix: 0
+      slots:
+      - HEAD
+    - type: CanEscapeInventory
 
 - type: entity
   name: yellow slime
