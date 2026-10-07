@@ -22,6 +22,7 @@
   profileMigration:
     oldSpecies:
     - ProtoVulp
+    - NeoVulpkanin # Blimpuf
 
 - type: speciesBaseSprites
   id: MobNeoVulpSprites

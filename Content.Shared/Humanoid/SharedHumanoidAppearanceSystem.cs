@@ -163,7 +163,6 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
         var changed = false;
         var result = new HumanoidCharacterProfile(profile)
         {
-            Species = MigrateImportedSpeciesIdentifier(profile.Species, ref changed),
             ForcedPrototype = MigrateNeocyteIdentifier(profile.ForcedPrototype, ref changed),
         };
 
@@ -195,20 +194,6 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
 
         result.SpeciesLoadout = MigrateNeocyteLoadout(profile.SpeciesLoadout, ref changed);
         return result;
-    }
-
-    private static string MigrateImportedSpeciesIdentifier(string identifier, ref bool changed)
-    {
-        var migrated = identifier switch
-        {
-            "Dwarf" => "Human",
-            "ProtoDwarf" => "NeoHuman",
-            "Cyclorite" => "TNebri",
-            _ => MigrateNeocyteIdentifier(identifier, ref changed),
-        };
-
-        changed |= migrated != identifier;
-        return migrated;
     }
 
     private static RoleLoadout? MigrateNeocyteLoadout(RoleLoadout? loadout, ref bool changed)

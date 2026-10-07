@@ -16,6 +16,8 @@
   profileMigration:
     oldSpecies:
     - ProtoHuman
+    - NeoDwarf # Blimpuf
+    - ProtoDwarf # Blimpuf
 
 - type: speciesBaseSprites
   id: MobNeoHumanSprites
