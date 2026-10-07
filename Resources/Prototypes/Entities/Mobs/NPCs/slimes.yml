@@ -316,9 +316,6 @@
     - type: HTN
       rootTask:
         task: SimpleHostileCompound
-    - type: MultiHandedItem
-    - type: Item
-      size: Huge
     - type: Sprite
       sprite: Mobs/Aliens/slimes.rsi
       layers:
@@ -362,4 +359,15 @@
         storagebase: !type:Container
           ents: [ ]
     - type: Hands
+    - type: MultiHandedItem
+    - type: Item
+      sprite: Mobs/Aliens/slimegray.rsi
+      size: Huge
+    - type: Clothing
+      quickEquip: false
+      sprite: Mobs/Aliens/slimegray.rsi
+      equippedPrefix: 0
+      slots:
+      - HEAD
+    - type: CanEscapeInventory
 # Blimpuf - End
