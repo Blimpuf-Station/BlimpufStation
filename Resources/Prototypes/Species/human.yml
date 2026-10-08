@@ -10,6 +10,9 @@
   customName: true # Starlight
   roundstartCyberwareCapacity: 5 # Starlight
   minHeight: 0.85
+  profileMigration:
+    oldSpecies:
+    - Dwarf # Blimpuf- technically not necessary as unknown species default to Human
 
 # The lack of a layer means that
 # this person cannot have round-start anything
