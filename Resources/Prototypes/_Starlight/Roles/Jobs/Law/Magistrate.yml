@@ -4,18 +4,21 @@
   description: job-description-magistrate
   playTimeTracker: JobMagistrate
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Command
-      time: 30h
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 30h
-    - !type:RolesRequirement
-      proto: MagiReq
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+  - !type:DepartmentTimeRequirement
+    department: Command
+    time: 10h
+  - !type:DepartmentTimeRequirement
+    department: Representatives
+    time: 10h
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 10h
+  - !type:RolesRequirement
+    proto: MagiReq
+  - !type:TraitsRequirement
+    traits:
+      - Iterator
+    inverted: true
   startingGear: MagistrateGear
   icon: "JobIconMagistrate"
   rules: job-rules-corporate-aligned

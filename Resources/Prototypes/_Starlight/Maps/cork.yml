@@ -68,7 +68,6 @@
             Musician: [ 2, 2 ]
             Reporter: [ 1, 1 ]
             ServiceWorker: [ 2, 3 ]
-            Performer: [ 1, 2 ]
             Assistant: [ -1, -1 ]
             # silicon
             StationAi: [ 1, 1 ]

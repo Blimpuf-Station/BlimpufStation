@@ -1,6 +1,6 @@
 - type: body
   id: Neocyte
-  name: neocyte # Starlight, quotation marks removed
+  name: neocyte
   root: torso
   slots:
     head:

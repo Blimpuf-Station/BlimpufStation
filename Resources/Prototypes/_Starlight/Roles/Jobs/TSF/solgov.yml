@@ -4,9 +4,9 @@
   description: ghost-role-information-tsf-officer-desc
   playTimeTracker: JobSolGovOfficer
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 36000 # 10 hrs
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 5h
   startingGear: SolGovOfficerGear
   setPreference: false
   icon: JobIconTSFOfficer
@@ -21,12 +21,9 @@
   description: ghost-role-information-tsf-officer-desc
   playTimeTracker: JobSolGovOfficerSheriff
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 36000 # 10 hrs
-    - !type:RoleTimeRequirement
-      role: JobSolGovOfficer
-      time: 7200 # 2 hrs
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 10h
   startingGear: SolGovOfficerSheriffGear
   setPreference: false
   icon: JobIconTSFOfficer

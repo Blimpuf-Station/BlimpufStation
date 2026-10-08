@@ -37,3 +37,10 @@
     - 1514361585647222914 # CCE Whitelist
   discord: roles-req-discord-blimpuf
   rolesLoc: roles-req-cce
+
+- type: roleRequirementPrototype
+  id: DiscordMemberReq
+  roles:
+  - 1502818685256073317 # Discord Community Member
+  discord: roles-req-discord-blimpuf
+  rolesLoc: roles-req-discord-member

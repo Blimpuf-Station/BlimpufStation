@@ -2,24 +2,23 @@
 
 - type: randomHumanoidSettings
   id: EventHumanoid
-  speciesBlacklist: # Starlight start
-    - NeoArachnid # Can't let them spawn as ghost roles, at least, not until we can figure out how to force equip armor on them.
+  speciesBlacklist: # Blimpuf- prevent nearly half of event humanoids from being Neocyte subvariants
+    - NeoArachnid
+    - NeoAvali
+    - NeoTNebri
     - NeoDiona
+    - NeoFelionoid
+    - NeoHuman
+    - NeoMoth
     - NeoReptilian
     - NeoResomi
+    - NeoSlimePerson
+    - NeoThaven
     - NeoVox
     - NeoVulp
-    - NeoAvali
-    - NeoFelionoid
     - NeoShadekin
-    - NeoThaven
-    - NeoTNebri
-    - NeoMoth
-    - NeoSlimePerson
-    - NeoLagomorph
     - NeoElf
-    - Neocyte
-    - NeoHuman # Starlight end
+    - NeoLagomorph
   components:
     - type: RandomHumanoidAppearance
       randomizeName: false

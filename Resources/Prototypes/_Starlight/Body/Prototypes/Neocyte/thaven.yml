@@ -1,6 +1,6 @@
 - type: body
   id: NeoThaven
-  name: neo-thaven # Starlight, quotation marks removed
+  name: neo-thaven
   root: torso
   slots:
     head:
@@ -22,7 +22,7 @@
       - left leg
       organs:
         heart: OrganNeocyteHeart
-        lungs: OrganNeocyteLungs # I can't imagine them NOT fixing their nitro dependancy.
+        lungs: OrganNeocyteLungs
         stomach: OrganNeocyteStomach
         liver: OrganNeocyteLiver
         kidneys: OrganNeocyteKidneys

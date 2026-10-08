@@ -63,7 +63,6 @@
   accentColor: "#69bbbb"
   antags:
   - CosmicAntagCultist
-  - Devil
   - Vampire
 
 - type: antagCategory

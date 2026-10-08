@@ -21,6 +21,8 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.Manager;
 using Robust.Shared.Serialization.Markdown;
+using Robust.Shared.Serialization.Markdown.Mapping; // Blimpuf
+using Robust.Shared.Serialization.Markdown.Sequence; // Blimpuf
 using Robust.Shared.Utility;
 using YamlDotNet.RepresentationModel;
 namespace Content.Shared.Humanoid;
@@ -75,7 +77,42 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
         yamlStream.Load(reader);
 
         var root = yamlStream.Documents[0].RootNode;
-        var export = _serManager.Read<HumanoidProfileExport>(root.ToDataNode(), notNullableOverride: true);
+
+        // Blimpuf start - discard non-hair markings if they aren't compatible with our profile format
+        var data = (MappingDataNode) root.ToDataNode();
+        var appearance = data.Get<MappingDataNode>("profile").Get<MappingDataNode>("appearance");
+
+        if (appearance.TryGet<MappingDataNode>("markings", out var markings))
+        {
+            if (markings.TryGet<MappingDataNode>("Head", out var head))
+            {
+                if (head.TryGet<SequenceDataNode>("Hair", out var hair) &&
+                    hair.Count > 0 && hair[0] is MappingDataNode hairMarking)
+                {
+                    appearance["hair"] = hairMarking["markingId"];
+                    if (hairMarking.TryGet<SequenceDataNode>("markingColor", out var hairColors) &&
+                        hairColors.Count > 0)
+                    {
+                        appearance["hairColor"] = hairColors[0];
+                    }
+                }
+                if (head.TryGet<SequenceDataNode>("FacialHair", out var facialHair) &&
+                    facialHair.Count > 0 && facialHair[0] is MappingDataNode facialHairMarking)
+                {
+                    appearance["facialHair"] = facialHairMarking["markingId"];
+                    if (facialHairMarking.TryGet<SequenceDataNode>("markingColor", out var facialHairColors) &&
+                        facialHairColors.Count > 0)
+                    {
+                        appearance["facialHairColor"] = facialHairColors[0];
+                    }
+                }
+            }
+
+            appearance.Remove("markings");
+        }
+
+        var export = _serManager.Read<HumanoidProfileExport>(data, notNullableOverride: true);
+        // Blimpuf end
 
         switch (export.Version)
         {

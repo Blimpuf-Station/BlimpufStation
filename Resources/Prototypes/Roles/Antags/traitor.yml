@@ -5,9 +5,6 @@
   setPreference: true
   objective: roles-antag-syndicate-agent-objective
   guides: [ Traitors ]
-  requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 12h # Starlight, mostly just to ensure you know basic controls.
   playTimeTracker: AntagTraitor # Starlight
 
 - type: antagSpecifier
@@ -34,9 +31,6 @@
   setPreference: true
   objective: roles-antag-syndicate-agent-sleeper-objective
   guides: [ Traitors ]
-  requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 12h # Starlight, mostly just to ensure you know basic controls.
   playTimeTracker: AntagTraitor # Starlight
 
 - type: antagSpecifier

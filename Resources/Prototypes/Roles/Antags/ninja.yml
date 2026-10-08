@@ -6,19 +6,11 @@
   objective: roles-antag-space-ninja-objective
   roleLoadout: [ AntagSpaceNinja ] # Starlight
   guides: [ SpaceNinja ]
-  # Starlight start
   previewStartingGear: SpaceNinjaGear
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 24h
-  - !type:RoleTimeRequirement
-    role: JobSecurityOfficer # It's better than nothing.
-    time: 1h
-  - !type:RoleTimeRequirement
-    role: AntagThief # Learn how to be subversive and stealthy.
-    time: 1h
+    time: 5h
   playTimeTracker: AntagNinja
-  # Starlight end
 
 - type: antagSpecifier
   parent: RestrictedAntag

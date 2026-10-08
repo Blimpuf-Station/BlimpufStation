@@ -35,7 +35,6 @@
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
-            Performer: [ 2, 2 ]
             Reporter: [ 2, 3 ]
             Lawyer: [ 1, 1 ]
             #engineering

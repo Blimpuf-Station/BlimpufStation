@@ -30,8 +30,6 @@
   id: GeneralMindshieldBlacklistedAntag
   jobBlacklist:
   - SalvageLead
-  - SalvageSpecialist
-  - Paramedic
 
 # Zombie (Initial Infected)
 ## Sabotaging Chem as a Chem II is too easy, and always the "best" thing you can do without question.
@@ -52,24 +50,25 @@
   - Roboticist
 
 # Vampire
-## Only Mining, because they literally die from starlight.
+## Only Mining and Salvage, because they literally die from starlight.
 ## Oh, and Chaplain, because they're already restricted from it, so this saves us selection time later.
 - type: antagSpecifier
   abstract: true
   parent: RestrictedAntag
   id: VampireRestrictedAntag
   jobBlacklist:
+  - SalvageSpecialist
   - MiningSpecialist
   - Chaplain
 
 # Changeling
-## Only Mining, although less important than their Vampire restriction, but moreso, because they have to forgo their entire job or kill the rest of mining to actually be a Changeling.
+## Only Salvage, although less important than their Vampire restriction, but moreso, because they have to forgo their entire job or kill the rest of salvage to actually be a Changeling.
 - type: antagSpecifier
   abstract: true
   parent: RestrictedAntag
   id: ChangelingRestrictedAntag
   jobBlacklist:
-  - MiningSpecialist
+  - SalvageSpecialist
 
 # Devil
 ## Specifically excludes: Head of Personnel, Internal Affairs Agent, and Paramedic

@@ -18,6 +18,9 @@
   youngAge: 100
   oldAge: 200
   loadout: NeocyteLoadout
+  profileMigration:
+    oldSpecies:
+    - ProtoKin
 
 - type: speciesBaseSprites
   id: MobNeoShadekinSprites

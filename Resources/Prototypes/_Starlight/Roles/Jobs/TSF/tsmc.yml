@@ -4,8 +4,6 @@
   description: ghost-role-information-tsf-marine-desc
   playTimeTracker: JobTSFCrew
   requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 72000 # 20h
   setPreference: false
   icon: JobIconTSF
   rules: job-rules-tsf-aligned
@@ -22,11 +20,9 @@
   description: ghost-role-information-tsf-marine-desc
   playTimeTracker: JobTSFMarine
   requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 72000 # 20h
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 18000 # 5h
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 3h
   setPreference: false
   icon: JobIconTSF
   rules: job-rules-tsf-aligned
@@ -43,13 +39,9 @@
   description: ghost-role-information-tsf-marine-desc
   playTimeTracker: TSFMarineElite
   requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 72000 # 20h
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 18000 # 5h
-    - !type:RolesRequirement
-      proto: CCEReq
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 10h
   setPreference: false
   icon: JobIconTSF
   rules: job-rules-tsf-aligned

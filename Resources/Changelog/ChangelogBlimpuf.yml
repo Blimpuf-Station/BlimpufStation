@@ -1029,5 +1029,37 @@ Entries:
   id: 17601
   time: '2026-09-28T13:33:22.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/176
+- author: Limerent-Sun
+  changes:
+  - message: Overhauled role hour requirements.
+    type: Tweak
+  id: 17801
+  time: '2026-10-02T09:51:03.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/178
+- author: wonderfulnewworld, Limerent-Sun
+  changes:
+  - message: Neocytes will now appear as ghost roles, with random frames.
+    type: Add
+  - message: Neocytes will now always spawn with a frame.
+    type: Fix
+  - message: TNebri, Neo-TNebri, and Neo-Vox no longer take damage from water vapor.
+    type: Fix
+  - message: Neocytes now restore their frames after polymorphing.
+    type: Fix
+  - message: NeoShadekin now have a frame slot and spawn with frames.
+    type: Tweak
+  - message: Ghostroles will no longer spawn Neocyte subspecies.
+    type: Tweak
+  id: 18001
+  time: '2026-10-05T16:57:15.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/180
+- author: Shimmers
+  changes:
+  - message: Select Thaven hairstyles now appear properly in the character creation
+      menu and import from other servers.
+    type: Fix
+  id: 17701
+  time: '2026-10-06T16:47:56.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/177
 Order: -1
 

@@ -1,14 +1,17 @@
-# No idea why it's in sci but we ball.
-# Why is this one file?
 - type: job
   id: StationAi
   name: job-name-station-ai
   description: job-description-station-ai
   playTimeTracker: JobStationAi
   requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 20h
   - !type:RoleTimeRequirement
     role: JobBorg
     time: 5h
+  - !type:DepartmentTimeRequirement
+    department: Command
+    time: 1h
   weight: 10
   displayWeight: 1 # Starlight, we're reordering things
   icon: JobIconStationAi
@@ -29,8 +32,9 @@
   description: job-description-borg
   playTimeTracker: JobBorg
   requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 10h
+  - !type:DepartmentTimeRequirement
+    department: Science
+    time: 1h
   displayWeight: 0 # Starlight, we're reordering things
   icon: JobIconBorg
   supervisors: job-supervisors-station-ai # Starlight, listen to the AI.

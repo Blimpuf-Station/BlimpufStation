@@ -5,14 +5,13 @@
   setPreference: true
   objective: roles-antag-thief-objective
   guides: [ Thieves ]
-  requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 5h # Starlight. Low stakes, low involvement.
   playTimeTracker: AntagThief # Starlight
 
 - type: antagSpecifier
   parent: RestrictedAntag
   id: Thief
+  jobBlacklist:
+  - SalvageSpecialist
   prefRoles:
   - Thief
   allowNonHumans: true

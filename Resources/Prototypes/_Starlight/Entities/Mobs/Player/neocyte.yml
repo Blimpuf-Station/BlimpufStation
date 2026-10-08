@@ -42,10 +42,10 @@
 
 - type: entity
   save: false
-  name: Urist McScalester # Starlight
-  suffix: Urisst' Mztosster # Starlight
-  parent: BaseMobNeoReptilian # Starlight, ProtoReptile -> NeoReptilian
-  id: MobNeoReptilian # Starlight, ProtoReptile -> NeoReptilian
+  name: Urist McScalester
+  suffix: Urisst' Mztosster
+  parent: BaseMobNeoReptilian
+  id: MobNeoReptilian
 
 - type: entity
   save: false
@@ -56,20 +56,20 @@
 - type: entity
   save: false
   name: Urist McHandster
-  parent: BaseMobNeoHuman # Starlight, Humie -> Human
-  id: MobNeoHuman # Starlight, Humie -> Human
+  parent: BaseMobNeoHuman
+  id: MobNeoHuman
 
 - type: entity
   save: false
   name: Urist McFelinster
-  parent: BaseMobNeoFelionoid # Starlight, Feline -> Felionoid
-  id: MobNeoFelionoid # Starlight, Feline -> Felionoid
+  parent: BaseMobNeoFelionoid
+  id: MobNeoFelionoid
 
 - type: entity
   save: false
   name: Urist McPlantster
-  parent: BaseMobNeoDiona # Starlight, Dionae -> Diona
-  id: MobNeoDiona # Starlight, Dionae -> Diona
+  parent: BaseMobNeoDiona
+  id: MobNeoDiona
 
 - type: entity
   save: false
@@ -80,7 +80,7 @@
 - type: entity
   save: false
   name: Urist McSpaceRaptorster
-  suffix: Urist McAvalister # Starlight
+  suffix: Urist McAvalister
   parent: BaseMobNeoAvali
   id: MobNeoAvali
 
@@ -90,7 +90,6 @@
   parent: BaseMobNeoArachnid
   id: MobNeoArachnid
 
-# Starlight start
 - type: entity
   save: false
   name: Urist McElgister
@@ -102,4 +101,3 @@
   name: Urist McBnuuister
   parent: BaseMobNeoLagomorph
   id: MobNeoLagomorph
-# Starlight end

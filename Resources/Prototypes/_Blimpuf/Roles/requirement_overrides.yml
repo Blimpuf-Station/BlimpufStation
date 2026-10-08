@@ -1,0 +1,295 @@
+- type: jobRequirementOverride
+  id: LaunchWindow
+  jobs:
+    # Command
+    Captain:
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 5h
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+      inverted: true
+    HeadOfPersonnel:
+    - !type:DepartmentTimeRequirement
+      department: Civilian
+      time: 5h
+    - !type:OverallPlaytimeRequirement
+      time: 8h
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+      inverted: true
+    ChiefEngineer:
+    - !type:RoleTimeRequirement
+      role: JobAtmosphericTechnician
+      time: 5h
+    - !type:RoleTimeRequirement
+      role: JobStationEngineer
+      time: 5h
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+      inverted: true
+    ChiefMedicalOfficer:
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 5h
+    - !type:RoleTimeRequirement
+      role: JobMedicalDoctor
+      time: 1h
+    - !type:RoleTimeRequirement
+      role: JobChemist
+      time: 1h
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+      inverted: true
+    HeadOfSecurity:
+    - !type:RoleTimeRequirement
+      role: JobWarden
+      time: 5h
+    - !type:RoleTimeRequirement
+      role: JobDetective
+      time: 1h
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+      inverted: true
+    Quartermaster:
+    - !type:DepartmentTimeRequirement
+      department: Cargo
+      time: 5h
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+      inverted: true
+    - !type:RoleTimeRequirement
+      role: JobCargoTechnician
+      time: 2h
+    - !type:RoleTimeRequirement
+      role: JobSalvageSpecialist
+      time: 2h
+    ResearchDirector:
+    - !type:DepartmentTimeRequirement
+      department: Science
+      time: 3h
+    - !type:OverallPlaytimeRequirement
+      time: 8h
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+      inverted: true
+    # CC Representatives
+    NanoTrasenRepresentative:
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 5h
+    - !type:RoleTimeRequirement
+      role: JobIAA
+      time: 1h
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+      inverted: true
+    Magistrate:
+    - !type:RolesRequirement
+      proto: MagiReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+      inverted: true
+    BlueShield:
+    - !type:RolesRequirement
+      proto: CCEReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+      inverted: true
+    IAA:
+    - !type:RoleTimeRequirement
+      role: JobLawyer
+      time: 1h
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+      inverted: true
+    # Security
+    Warden:
+    - !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 2h
+    - !type:RoleTimeRequirement
+      role: JobDetective
+      time: 1h
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+      inverted: true
+    Brigmedic:
+    - !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 1h
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 2h
+    Detective:
+    - !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 1h
+    DutyOfficer:
+    - !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 1h
+    SecurityOfficer:
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 2h
+    SecurityCadet:
+    - !type:OverallPlaytimeRequirement
+      time: 1h
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 30h
+      inverted: true
+    # Cargo
+    SalvageSpecialist:
+    - !type:RoleTimeRequirement
+      role: JobCargoTechnician
+      time: 1h
+    MiningSpecialist:
+    - !type:OverallPlaytimeRequirement
+      time: 1h
+    SalvageLead:
+    - !type:RoleTimeRequirement
+      role: JobSalvageSpecialist
+      time: 5h
+    # Engineering
+    StationEngineer:
+    - !type:RoleTimeRequirement
+      role: JobTechnicalAssistant
+      time: 1h
+    AtmosphericTechnician:
+    - !type:RoleTimeRequirement
+      role: JobStationEngineer
+      time: 2h
+    # Medical
+    MedicalDoctor:
+    - !type:RoleTimeRequirement
+      role: JobMedicalIntern
+      time: 1h
+    Chemist:
+    - !type:RoleTimeRequirement
+      role: JobMedicalIntern
+      time: 1h
+    Paramedic:
+    - !type:RoleTimeRequirement
+      role: JobMedicalDoctor
+      time: 1h
+    Surgeon:
+    - !type:RoleTimeRequirement
+      role: JobMedicalDoctor
+      time: 1h
+    # Science
+    Scientist:
+    - !type:RoleTimeRequirement
+      role: JobResearchAssistant
+      time: 1h
+    Roboticist:
+    - !type:DepartmentTimeRequirement
+      department: Science
+      time: 2h
+    # Silicon
+    StationAi:
+    - !type:RoleTimeRequirement
+      role: JobBorg
+      time: 3h
+    Borg:
+    - !type:OverallPlaytimeRequirement
+      time: 1h
+    # Service
+    Lawyer:
+    - !type:OverallPlaytimeRequirement
+      time: 3h
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+      inverted: true
+    Reporter:
+      []
+
+- type: jobRequirementOverride
+  id: PlaytestDiscordOverride
+  jobs:
+    Captain:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    HeadOfPersonnel:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    ChiefEngineer:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    ChiefMedicalOfficer:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    HeadOfSecurity:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    Quartermaster:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    ResearchDirector:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    NanoTrasenRepresentative:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    Magistrate:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    BlueShield:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    Warden:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator
+    SalvageLead:
+    - !type:RolesRequirement
+      proto: DiscordMemberReq
+    - !type:TraitsRequirement
+      traits:
+      - Iterator

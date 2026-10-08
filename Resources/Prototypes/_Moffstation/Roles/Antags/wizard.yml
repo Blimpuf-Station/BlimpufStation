@@ -6,12 +6,9 @@
   setPreference: true
   objective: roles-solo-antagonist-wizard-duelist-objective # Starlight solo antag
   roleLoadout: [ AntagWizardDuelist ] # Starlight
-  requirements: # Starlight start
+  requirements:
   - !type:OverallPlaytimeRequirement
-    time: 48h # You've got the potential to mass grief.
-  - !type:DepartmentTimeRequirement
-    department: Security
-    time: 6h # Starlight end
+    time: 5h
   guides: [ WizardDuel ]
 
 # Wizard duelist starting gear

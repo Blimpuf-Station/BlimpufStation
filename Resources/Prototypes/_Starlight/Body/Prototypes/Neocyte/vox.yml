@@ -1,6 +1,6 @@
 - type: body
   id: NeoVox
-  name: neo-vox # Starlight, quotation marks removed
+  name: neo-vox
   root: torso
   slots:
     head:

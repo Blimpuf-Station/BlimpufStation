@@ -4,8 +4,9 @@
   description: job-description-centcommoff
   playTimeTracker: JobCentralCommandOfficial
   requirements:
-  - !type:RolesRequirement
-    proto: MentorReq
+  - !type:DepartmentTimeRequirement
+    department: Representatives
+    time: 20h
   setPreference: false
   startingGear: CentcommGear
   icon: "JobIconCentralCommandOfficial" #Starlight

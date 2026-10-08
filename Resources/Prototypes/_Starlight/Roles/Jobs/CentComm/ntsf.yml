@@ -4,11 +4,9 @@
   description: job-description-nanotrasen-special-forces
   playTimeTracker: JobNTSF
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 72000 # 20 hrs
-    - !type:RolesRequirement
-      proto: CCEReq
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 10h
   setPreference: false
   startingGear: NanoTrasenSpecialForcesGear
   icon: JobIconNanoTrasenSpecialForces

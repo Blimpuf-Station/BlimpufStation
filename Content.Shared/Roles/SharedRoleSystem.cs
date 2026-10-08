@@ -1,5 +1,8 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using Content.Shared._Blimpuf.CCVar; // Blimpuf
+using Content.Shared._Blimpuf.Roles; // Blimpuf
+using Content.Shared._NullLink; // Blimpuf
 using Content.Shared.Administration.Logs;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
@@ -728,6 +731,50 @@ public abstract partial class SharedRoleSystem : EntitySystem
         return job.Requirements;
     }
 
+    // Blimpuf start
+    /// <summary>
+    /// Applies Discord playtime overrides after the server's requirement preset, without changing the prototype.
+    /// Other restrictions still apply, and the overrides do not extend to loadouts.
+    /// </summary>
+    public HashSet<JobRequirement>? GetRoleRequirements(JobPrototype job, ICommonSession? player)
+    {
+        return ApplyDiscordTimeOverrides(GetRoleRequirements(job), player, grant => grant.AllJobs || grant.Jobs.Contains(job.ID));
+    }
+
+    public HashSet<JobRequirement>? GetRoleRequirements(AntagPrototype antag, ICommonSession? player)
+    {
+        return ApplyDiscordTimeOverrides(GetRoleRequirements(antag), player, grant => grant.AllAntags);
+    }
+
+    private HashSet<JobRequirement>? ApplyDiscordTimeOverrides(
+        HashSet<JobRequirement>? requirements,
+        ICommonSession? player,
+        Func<DiscordJobTimeOverridePrototype, bool> applies)
+    {
+        if (requirements == null || player == null)
+            return requirements;
+
+        var overrides = _cfg.GetCVar(BlimpufCCVars.DiscordJobTimeOverrides);
+        if (string.IsNullOrWhiteSpace(overrides))
+            return requirements;
+
+        var roles = IoCManager.Resolve<ISharedNullLinkPlayerRolesReqManager>();
+        foreach (var id in overrides.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries))
+        {
+            if (!_prototypes.TryIndex<DiscordJobTimeOverridePrototype>(id, out var grant))
+                continue;
+
+            if (!applies(grant) || !roles.IsAnyRole(player, grant.Roles))
+                continue;
+
+            return requirements.Where(requirement => requirement is not
+                (OverallPlaytimeRequirement or DepartmentTimeRequirement or RoleTimeRequirement)).ToHashSet();
+        }
+
+        return requirements;
+    }
+    // Blimpuf end
+
     // TODO ROLES Change to readonly?
     /// <inheritdoc cref="GetRoleRequirements(JobPrototype)"/>
     public HashSet<JobRequirement>? GetRoleRequirements(AntagPrototype antag)
@@ -745,12 +792,27 @@ public abstract partial class SharedRoleSystem : EntitySystem
         return _prototypes.TryIndex(jobId, out var job) ? GetRoleRequirements(job) : null;
     }
 
+    // Blimpuf start
+    /// <inheritdoc cref="GetRoleRequirements(JobPrototype, ICommonSession?)"/>
+    public HashSet<JobRequirement>? GetRoleRequirements(ProtoId<JobPrototype> jobId, ICommonSession? player)
+    {
+        return _prototypes.TryIndex(jobId, out var job) ? GetRoleRequirements(job, player) : null;
+    }
+    // Blimpuf end
+
     // TODO ROLES Change to readonly?
     /// <inheritdoc cref="GetRoleRequirements(JobPrototype)"/>
     public HashSet<JobRequirement>? GetRoleRequirements(ProtoId<AntagPrototype> antagId)
     {
         return _prototypes.TryIndex(antagId, out var antag) ? GetRoleRequirements(antag) : null;
     }
+
+    // Blimpuf start
+    public HashSet<JobRequirement>? GetRoleRequirements(ProtoId<AntagPrototype> antagId, ICommonSession? player)
+    {
+        return _prototypes.TryIndex(antagId, out var antag) ? GetRoleRequirements(antag, player) : null;
+    }
+    // Blimpuf end
 
     /// <summary>
     /// Returns the localized name of a role type's subtype. If the provided subtype parameter turns out to be empty, it returns the localized name of the role type instead.

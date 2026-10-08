@@ -4,19 +4,19 @@
   description: job-description-ce
   playTimeTracker: JobChiefEngineer
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobAtmosphericTechnician
-      time: 7h # Starlight
-    - !type:RoleTimeRequirement
-      role: JobStationEngineer
-      time: 7h # Starlight
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 20h # Starlight
-    - !type:TraitsRequirement # Starlight
-      traits:
-        - Iterator
-      inverted: true
+  - !type:RoleTimeRequirement
+    role: JobAtmosphericTechnician
+    time: 10h
+  - !type:RoleTimeRequirement
+    role: JobStationEngineer
+    time: 10h
+  - !type:DepartmentTimeRequirement
+    department: Engineering
+    time: 25h
+  - !type:TraitsRequirement
+    traits:
+    - Iterator
+    inverted: true
   weight: 10
   startingGear: ChiefEngineerGear
   icon: "JobIconChiefEngineer"

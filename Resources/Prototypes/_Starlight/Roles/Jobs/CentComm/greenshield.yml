@@ -4,9 +4,6 @@
   description: job-description-greenshield
   playTimeTracker: JobCCGreenShield
   requirements:
-  - !type:RoleTimeRequirement
-    role: JobBlueShield
-    time: 3h # You are a bodyguard of the highest ranking people in the sector, you have to have some experience in the closest related role.
   - !type:RolesRequirement
     proto: CCEReq
   setPreference: false

@@ -13,23 +13,22 @@
     - Shadekin
     - Felionoid
     - Thaven
-    - NeoArachnid # Can't let them spawn as ghost roles, at least, not until we can figure out how to force equip armor on them.
+    - NeoArachnid
+    - NeoAvali
+    - NeoTNebri # Blimpuf rename
     - NeoDiona
+    - NeoFelionoid
+    - NeoHuman
+    - NeoMoth
     - NeoReptilian
     - NeoResomi
+    - NeoSlimePerson
+    - NeoThaven
     - NeoVox
     - NeoVulp
-    - NeoAvali
-    - NeoFelionoid
     - NeoShadekin
-    - NeoThaven
-    - NeoTNebri
-    - NeoMoth
-    - NeoSlimePerson
-    - NeoLagomorph
     - NeoElf
-    - Neocyte
-    - NeoHuman
+    - NeoLagomorph
   components:
     - type: AutoImplant
       implants:
@@ -786,22 +785,22 @@
     - Lagomorph
     - Elf
     - NeoArachnid
+    - NeoAvali
+    - NeoTNebri # Blimpuf rename
     - NeoDiona
+    - NeoFelionoid
+    - NeoHuman
+    - NeoMoth
     - NeoReptilian
     - NeoResomi
+    - NeoSlimePerson
+    - NeoThaven
     - NeoVox
     - NeoVulp
-    - NeoAvali
-    - NeoFelionoid
     - NeoShadekin
-    - NeoThaven
-    - NeoTNebri
-    - NeoMoth
-    - NeoSlimePerson
-    - NeoLagomorph
     - NeoElf
+    - NeoLagomorph
     - Neocyte
-    - NeoHuman # Re-enable if we figure out how to force equip armor on them.
   components:
     - type: GhostRole
       name: ghost-role-information-tsf-marine-name
@@ -927,23 +926,22 @@
   id: CCGreenshieldBasic
   speciesBlacklist:
     - Vox
-    - NeoArachnid # Can't let them spawn as ghost roles, at least, not until we can figure out how to force equip armor on them.
+    - NeoArachnid
+    - NeoAvali
+    - NeoTNebri # Blimpuf rename
     - NeoDiona
+    - NeoFelionoid
+    - NeoHuman
+    - NeoMoth
     - NeoReptilian
     - NeoResomi
+    - NeoSlimePerson
+    - NeoThaven
     - NeoVox
     - NeoVulp
-    - NeoAvali
-    - NeoFelionoid
     - NeoShadekin
-    - NeoThaven
-    - NeoTNebri
-    - NeoMoth
-    - NeoSlimePerson
-    - NeoLagomorph
     - NeoElf
-    - Neocyte
-    - NeoHuman
+    - NeoLagomorph
   parent: EventHumanoidCentcomm
   randomizeName: false
   components:
@@ -1131,23 +1129,22 @@
   id: SamuraiBasic
   speciesBlacklist:
     - Vox
-    - NeoArachnid # Can't let them spawn as ghost roles, at least, not until we can figure out how to force equip armor on them.
+    - NeoArachnid
+    - NeoAvali
+    - NeoTNebri # Blimpuf rename
     - NeoDiona
+    - NeoFelionoid
+    - NeoHuman
+    - NeoMoth
     - NeoReptilian
     - NeoResomi
+    - NeoSlimePerson
+    - NeoThaven
     - NeoVox
     - NeoVulp
-    - NeoAvali
-    - NeoFelionoid
-    - NeoThaven
-    - NeoCyclorite
-    - NeoDwarf
-    - NeoMoth
-    - NeoSlimePerson
-    - NeoLagomorph
+    - NeoShadekin
     - NeoElf
-    - Neocyte
-    - NeoHuman
+    - NeoLagomorph
   parent: EventHumanoid
   randomizeName: false
   components:

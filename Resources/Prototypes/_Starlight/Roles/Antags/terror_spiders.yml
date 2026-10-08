@@ -6,7 +6,7 @@
   guides: [ TerrorSpiders ]
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 48h
+    time: 5h
   playTimeTracker: AntagTerrorPrincess
 
 - type: antagSpecifier
