@@ -145,113 +145,12 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
          * Add custom handling here for forks / version numbers if you care.
          */
 
-        export.Profile = MigrateImportedNeocyteProfile(export.Profile);
         export.Profile.ForcedPrototype = string.Empty;
 
         var profile = export.Profile;
         var collection = IoCManager.Instance;
         profile.EnsureValid(session, collection!);
         return profile;
-    }
-
-    /// <summary>
-    /// Allows legacy Protogen, Cyclorite, and Dwarf characters from other servers to be imported as current species.
-    /// This is only for manual import compatibility.
-    /// </summary>
-    private static HumanoidCharacterProfile MigrateImportedNeocyteProfile(HumanoidCharacterProfile profile)
-    {
-        var changed = false;
-        var result = new HumanoidCharacterProfile(profile)
-        {
-            ForcedPrototype = MigrateNeocyteIdentifier(profile.ForcedPrototype, ref changed),
-        };
-
-        var cybernetics = new List<string>(profile.Cybernetics.Count);
-        foreach (var cybernetic in profile.Cybernetics)
-            cybernetics.Add(MigrateNeocyteIdentifier(cybernetic, ref changed));
-        result.Cybernetics = cybernetics;
-
-        var appearance = profile.Appearance.Clone();
-        appearance.HairStyleId = MigrateNeocyteIdentifier(appearance.HairStyleId, ref changed);
-        appearance.FacialHairStyleId = MigrateNeocyteIdentifier(appearance.FacialHairStyleId, ref changed);
-        var markings = new List<Marking>(appearance.Markings.Count);
-        foreach (var marking in appearance.Markings)
-        {
-            var id = MigrateNeocyteIdentifier(marking.MarkingId, ref changed);
-            markings.Add(id == marking.MarkingId
-                ? marking
-                : new Marking(id, marking.MarkingColors, marking.IsGlowing)
-                {
-                    Visible = marking.Visible,
-                    Forced = marking.Forced,
-                });
-        }
-        appearance.Markings = markings;
-        result.Appearance = appearance;
-
-        foreach (var loadout in profile.Loadouts.Values)
-            result = result.WithLoadout(MigrateNeocyteLoadout(loadout, ref changed)!);
-
-        result.SpeciesLoadout = MigrateNeocyteLoadout(profile.SpeciesLoadout, ref changed);
-        return result;
-    }
-
-    private static RoleLoadout? MigrateNeocyteLoadout(RoleLoadout? loadout, ref bool changed)
-    {
-        if (loadout == null)
-            return null;
-
-        var migrated = new RoleLoadout(MigrateNeocyteIdentifier(loadout.Role, ref changed))
-        {
-            EntityName = loadout.EntityName,
-        };
-
-        foreach (var (group, selected) in loadout.SelectedLoadouts)
-        {
-            var migratedGroup = MigrateNeocyteIdentifier(group, ref changed);
-            var migratedSelected = new List<Loadout>(selected.Count);
-            foreach (var selectedLoadout in selected)
-            {
-                migratedSelected.Add(new Loadout
-                {
-                    Prototype = MigrateNeocyteIdentifier(selectedLoadout.Prototype, ref changed),
-                });
-            }
-
-            migrated.SelectedLoadouts[migratedGroup] = migratedSelected;
-        }
-
-        return migrated;
-    }
-
-    private static string MigrateNeocyteIdentifier(string identifier, ref bool changed)
-    {
-        var migrated = identifier
-            .Replace("ProtoSlimePerson", "NeoSlimePerson", StringComparison.Ordinal)
-            .Replace("TrueProtogen", "TrueNeocyte", StringComparison.Ordinal)
-            .Replace("ProtogenCybernetics", "NeocyteCybernetics", StringComparison.Ordinal)
-            .Replace("Protogen", "Neocyte", StringComparison.Ordinal)
-            .Replace("ProtoArachnid", "NeoArachnid", StringComparison.Ordinal)
-            .Replace("ProtoAvali", "NeoAvali", StringComparison.Ordinal)
-            .Replace("ProtoCyclorite", "NeoTNebri", StringComparison.Ordinal)
-            .Replace("ProtoDiona", "NeoDiona", StringComparison.Ordinal)
-            .Replace("ProtoElf", "NeoElf", StringComparison.Ordinal)
-            .Replace("ProtoFelionoid", "NeoFelionoid", StringComparison.Ordinal)
-            .Replace("ProtoHuman", "NeoHuman", StringComparison.Ordinal)
-            .Replace("ProtoLagomorph", "NeoLagomorph", StringComparison.Ordinal)
-            .Replace("ProtoMoth", "NeoMoth", StringComparison.Ordinal)
-            .Replace("ProtoReptilian", "NeoReptilian", StringComparison.Ordinal)
-            .Replace("ProtoResomi", "NeoResomi", StringComparison.Ordinal)
-            .Replace("ProtoSlime", "NeoSlime", StringComparison.Ordinal)
-            .Replace("ProtoThaven", "NeoThaven", StringComparison.Ordinal)
-            .Replace("ProtoVox", "NeoVox", StringComparison.Ordinal)
-            .Replace("ProtoVulp", "NeoVulpkanin", StringComparison.Ordinal)
-            .Replace("Cyclorite", "TNebri", StringComparison.Ordinal);
-
-        migrated = ProtoKinIdentifier.Replace(migrated, "NeoShadekin");
-
-        changed |= migrated != identifier;
-        return migrated;
     }
 
     private void OnInit(EntityUid uid, HumanoidAppearanceComponent humanoid, ComponentInit args)
