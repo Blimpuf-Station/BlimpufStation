@@ -74,19 +74,19 @@
   - /Audio/_FarHorizons/Voice/Proto/Resomi/resomi_squawk_1.ogg
 
 - type: soundCollection
-  id: NeoVulpBark
+  id: NeoVulpkaninBark
   files:
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/dog_bark1.ogg
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/dog_bark2.ogg
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/dog_bark3.ogg
 
 - type: soundCollection
-  id: NeoVulpYip
+  id: NeoVulpkaninYip
   files:
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/yip.ogg
 
 - type: soundCollection
-  id: NeoVulpHowl
+  id: NeoVulpkaninHowl
   files:
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/howl.ogg
 
@@ -97,14 +97,14 @@
   - /Audio/_FarHorizons/Voice/Proto/Felionoid/cat_growl2.ogg
 
 - type: soundCollection
-  id: NeoVulpGrowl
+  id: NeoVulpkaninGrowl
   files:
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/growl1.ogg
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/growl2.ogg
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/growl3.ogg
 
 - type: soundCollection
-  id: NeoVulpSnarls
+  id: NeoVulpkaninSnarls
   files:
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/dog_snarl1.ogg
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/dog_snarl2.ogg

@@ -79,7 +79,7 @@
   - /Audio/_FarHorizons/Voice/Proto/Human/snore3.ogg
 
 - type: soundCollection
-  id: NeoVulpYawns
+  id: NeoVulpkaninYawns
   files:
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/vulp_yawn1.ogg
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/vulp_yawn2.ogg
@@ -90,6 +90,6 @@
   - /Audio/_FarHorizons/Voice/Proto/Vox/vox_sneeze.ogg
 
 - type: soundCollection
-  id: NeoVulpSneeze
+  id: NeoVulpkaninSneeze
   files:
   - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/vulp_sneeze.ogg

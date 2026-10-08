@@ -226,7 +226,7 @@
   id: UndergarmentBottomBoxersVulpkanin
   bodyPart: UndergarmentBottom
   markingCategory: UndergarmentBottom
-  speciesRestriction: [Vulpkanin, NeoVulp, Neocyte] # Starlight
+  speciesRestriction: [Vulpkanin, NeoVulpkanin, Neocyte] # Starlight
   coloring:
     default:
       type: null
@@ -239,7 +239,7 @@
   id: UndergarmentBottomBriefsVulpkanin
   bodyPart: UndergarmentBottom
   markingCategory: UndergarmentBottom
-  speciesRestriction: [Vulpkanin, NeoVulp, Neocyte] # Starlight
+  speciesRestriction: [Vulpkanin, NeoVulpkanin, Neocyte] # Starlight
   coloring:
     default:
       type: null
@@ -252,7 +252,7 @@
   id: UndergarmentBottomSatinVulpkanin
   bodyPart: UndergarmentBottom
   markingCategory: UndergarmentBottom
-  speciesRestriction: [Vulpkanin, NeoVulp, Neocyte] # Starlight
+  speciesRestriction: [Vulpkanin, NeoVulpkanin, Neocyte] # Starlight
   coloring:
     default:
       type: null
@@ -265,7 +265,7 @@
   id: UndergarmentTopBraVulpkanin
   bodyPart: UndergarmentTop
   markingCategory: UndergarmentTop
-  speciesRestriction: [Vulpkanin, NeoVulp, Neocyte] # Starlight
+  speciesRestriction: [Vulpkanin, NeoVulpkanin, Neocyte] # Starlight
   coloring:
     default:
       type: null
@@ -278,7 +278,7 @@
   id: UndergarmentTopSportsbraVulpkanin
   bodyPart: UndergarmentTop
   markingCategory: UndergarmentTop
-  speciesRestriction: [Vulpkanin, NeoVulp, Neocyte] # Starlight
+  speciesRestriction: [Vulpkanin, NeoVulpkanin, Neocyte] # Starlight
   coloring:
     default:
       type: null
@@ -291,7 +291,7 @@
   id: UndergarmentTopBinderVulpkanin
   bodyPart: UndergarmentTop
   markingCategory: UndergarmentTop
-  speciesRestriction: [Vulpkanin, NeoVulp, Neocyte] # Starlight
+  speciesRestriction: [Vulpkanin, NeoVulpkanin, Neocyte] # Starlight
   coloring:
     default:
       type: null
@@ -304,7 +304,7 @@
   id: UndergarmentTopTanktopVulpkanin
   bodyPart: UndergarmentTop
   markingCategory: UndergarmentTop
-  speciesRestriction: [Vulpkanin, NeoVulp, Neocyte] # Starlight
+  speciesRestriction: [Vulpkanin, NeoVulpkanin, Neocyte] # Starlight
   coloring:
     default:
       type: null

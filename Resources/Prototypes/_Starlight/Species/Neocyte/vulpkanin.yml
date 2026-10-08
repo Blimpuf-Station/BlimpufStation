@@ -1,17 +1,17 @@
 - type: species
-  id: NeoVulp
-  name: subspecies-name-neovulp
+  id: NeoVulpkanin
+  name: subspecies-name-neovulpkanin
   roundStart: true
-  prototype: MobNeoVulp
-  sprites: MobNeoVulpSprites
+  prototype: MobNeoVulpkanin
+  sprites: MobNeoVulpkaninSprites
   defaultSkinTone: "#ffda93"
-  markingLimits: MobNeoVulpMarkingLimits
-  dollPrototype: AppearanceNeoVulp
+  markingLimits: MobNeoVulpkaninMarkingLimits
+  dollPrototype: AppearanceNeoVulpkanin
   skinColoration: Hues
   customName: true
   roundstartCyberwareCapacity: 6
   subspeciesOf: Neocyte # This is alternative version of other species. It will only be displayed in subspecies list
-  subspeciesName: subspecies-name-neovulp
+  subspeciesName: subspecies-name-neovulpkanin
   loadout: NeocyteLoadout
   minHeight: 0.9
   defaultHeight: 1
@@ -22,25 +22,24 @@
   profileMigration:
     oldSpecies:
     - ProtoVulp
-    - NeoVulpkanin # Blimpuf
 
 - type: speciesBaseSprites
-  id: MobNeoVulpSprites
+  id: MobNeoVulpkaninSprites
   sprites:
     Hair: MobHumanoidAnyMarking
-    Head: MobNeoVulpHead
+    Head: MobNeoVulpkaninHead
     Eyes: MobNeocyteEyes #looks odd, but this just removes eyes since they're replaced by the LEDs.
     Snout: MobHumanoidAnyMarking
     UndergarmentTop: MobHumanoidAnyMarking
     UndergarmentBottom: MobHumanoidAnyMarking
-    Chest: MobNeoVulpTorso
+    Chest: MobNeoVulpkaninTorso
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
-    LArm: MobNeoVulpLArm
-    RArm: MobNeoVulpRArm
-    LHand: MobNeoVulpLHand
-    RHand: MobNeoVulpRHand
+    LArm: MobNeoVulpkaninLArm
+    RArm: MobNeoVulpkaninRArm
+    LHand: MobNeoVulpkaninLHand
+    RHand: MobNeoVulpkaninRHand
     LLeg: MobVulpkaninLLeg
     RLeg: MobVulpkaninRLeg
     LFoot: MobVulpkaninLFoot
@@ -51,24 +50,24 @@
     BodyCoverCover: MobHumanoidAnyMarking
 
 - type: markingPoints
-  id: MobNeoVulpMarkingLimits
+  id: MobNeoVulpkaninMarkingLimits
   points:
     FaceCover:
       points: 1
       required: true
-      defaultMarkings: [ NeoVulpVisor ]
+      defaultMarkings: [ NeoVulpkaninVisor ]
     FaceCoverCover:
       points: 1
       required: true
-      defaultMarkings: [ NeoVulpLEDFace ]
+      defaultMarkings: [ NeoVulpkaninLEDFace ]
     BodyCover:
       points: 1
       required: true
-      defaultMarkings: [ NeoVulpMediumArmor ]
+      defaultMarkings: [ NeoVulpkaninMediumArmor ]
     BodyCoverCover:
       points: 1
       required: true
-      defaultMarkings: [ NeoVulpLights ]
+      defaultMarkings: [ NeoVulpkaninLights ]
     Hair:
       points: 1
       required: false
@@ -103,89 +102,89 @@
       required: false
 
 - type: humanoidBaseSprite
-  id: MobNeoVulpMarkingMatchSkin
+  id: MobNeoVulpkaninMarkingMatchSkin
   markingsMatchSkin: false
 
 - type: humanoidBaseSprite
-  id: MobNeoVulpHead
+  id: MobNeoVulpkaninHead
   baseSprite:
     sprite: _FarHorizons/Mobs/Species/Proto-Vulp/parts.rsi
     state: head_m
 
 - type: humanoidBaseSprite
-  id: MobNeoVulpHeadMale
+  id: MobNeoVulpkaninHeadMale
   baseSprite:
     sprite: _FarHorizons/Mobs/Species/Proto-Vulp/parts.rsi
     state: head_m
 
 - type: humanoidBaseSprite
-  id: MobNeoVulpHeadFemale
+  id: MobNeoVulpkaninHeadFemale
   baseSprite:
     sprite: _FarHorizons/Mobs/Species/Proto-Vulp/parts.rsi
     state: head_f
 
 - type: humanoidBaseSprite
-  id: MobNeoVulpTorso
+  id: MobNeoVulpkaninTorso
   baseSprite:
     sprite: _Starlight/Mobs/Species/Proto-Vulp/parts.rsi
     state: torso_m
 
 - type: humanoidBaseSprite
-  id: MobNeoVulpTorsoMale
+  id: MobNeoVulpkaninTorsoMale
   baseSprite:
     sprite: _Starlight/Mobs/Species/Proto-Vulp/parts.rsi
     state: torso_m
 
 - type: humanoidBaseSprite
-  id: MobNeoVulpTorsoFemale
+  id: MobNeoVulpkaninTorsoFemale
   baseSprite:
     sprite: _Starlight/Mobs/Species/Proto-Vulp/parts.rsi # Let's give them a proper torso
     state: torso_f
 
 - type: humanoidBaseSprite
-  id: MobNeoVulpLLeg
+  id: MobNeoVulpkaninLLeg
   baseSprite:
     sprite: _Starlight/Mobs/Species/Proto-Vulp/parts.rsi
     state: l_leg
 
 - type: humanoidBaseSprite
-  id: MobNeoVulpLArm
+  id: MobNeoVulpkaninLArm
   baseSprite:
     sprite: _FarHorizons/Mobs/Species/Proto-Vulp/parts.rsi
     state: l_arm
 
 - type: humanoidBaseSprite
-  id: MobNeoVulpLHand
+  id: MobNeoVulpkaninLHand
   baseSprite:
     sprite: _FarHorizons/Mobs/Species/Proto-Vulp/parts.rsi
     state: l_hand
 
 - type: humanoidBaseSprite
-  id: MobNeoVulpLFoot
+  id: MobNeoVulpkaninLFoot
   baseSprite:
     sprite: _Starlight/Mobs/Species/Vulpkanin/parts.rsi
     state: l_foot
 
 - type: humanoidBaseSprite
-  id: MobNeoVulpRLeg
+  id: MobNeoVulpkaninRLeg
   baseSprite:
     sprite: _Starlight/Mobs/Species/Proto-Vulp/parts.rsi # New legs. They're not actually used right now, but the framework's there for someone to finish the displacement map later.
     state: r_leg
 
 - type: humanoidBaseSprite
-  id: MobNeoVulpRArm
+  id: MobNeoVulpkaninRArm
   baseSprite:
     sprite: _FarHorizons/Mobs/Species/Proto-Vulp/parts.rsi
     state: r_arm
 
 - type: humanoidBaseSprite
-  id: MobNeoVulpRHand
+  id: MobNeoVulpkaninRHand
   baseSprite:
     sprite: _FarHorizons/Mobs/Species/Proto-Vulp/parts.rsi
     state: r_hand
 
 - type: humanoidBaseSprite
-  id: MobNeoVulpRFoot
+  id: MobNeoVulpkaninRFoot
   baseSprite:
     sprite: _Starlight/Mobs/Species/Vulpkanin/parts.rsi
     state: r_foot

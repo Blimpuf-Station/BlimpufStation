@@ -245,7 +245,7 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
             .Replace("ProtoSlime", "NeoSlime", StringComparison.Ordinal)
             .Replace("ProtoThaven", "NeoThaven", StringComparison.Ordinal)
             .Replace("ProtoVox", "NeoVox", StringComparison.Ordinal)
-            .Replace("ProtoVulp", "NeoVulp", StringComparison.Ordinal)
+            .Replace("ProtoVulp", "NeoVulpkanin", StringComparison.Ordinal)
             .Replace("Cyclorite", "TNebri", StringComparison.Ordinal);
 
         migrated = ProtoKinIdentifier.Replace(migrated, "NeoShadekin");
