@@ -1,0 +1,183 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprites by Thlrds",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "athamas",
+      "directions": 4
+    },
+    {
+      "name": "beak",
+      "directions": 4
+    },
+    {
+      "name": "bottom_half",
+      "directions": 4
+    },
+    {
+      "name": "bowlcut",
+      "directions": 4
+    },
+    {
+      "name": "charred_head",
+      "directions": 4
+    },
+    {
+      "name": "deathhead_head",
+      "directions": 4
+    },
+    {
+      "name": "eye_rim_scar_left",
+      "directions": 4
+    },
+    {
+      "name": "eye_rim_scar_right",
+      "directions": 4
+    },
+    {
+      "name": "eye_scar_left",
+      "directions": 4
+    },
+    {
+      "name": "eye_scar_right",
+      "directions": 4
+    },
+    {
+      "name": "eyes_heterochromia_moth",
+      "directions": 4
+    },
+    {
+      "name": "eyes_heterochromia_soft",
+      "directions": 4
+    },
+    {
+      "name": "eyes_soft_skin",
+      "directions": 4
+    },
+    {
+      "name": "eyes_soft",
+      "directions": 4
+    },
+    {
+      "name": "fan_head",
+      "directions": 4
+    },
+    {
+      "name": "fangs",
+      "directions": 4
+    },
+    {
+      "name": "feathery",
+      "directions": 4
+    },
+    {
+      "name": "firewatch_head",
+      "directions": 4
+    },
+    {
+      "name": "gothic_head",
+      "directions": 4
+    },
+    {
+      "name": "head_badmolt_moth",
+      "directions": 4
+    },
+    {
+      "name": "head_chimera_moth",
+      "directions": 4
+    },
+    {
+      "name": "head_eyebags_moth",
+      "directions": 4
+    },
+    {
+      "name": "head_twisting_moth",
+      "directions": 4
+    },
+    {
+      "name": "jungle_head",
+      "directions": 4
+    },
+    {
+      "name": "maple",
+      "directions": 4
+    },
+    {
+      "name": "moonfly_head",
+      "directions": 4
+    },
+    {
+      "name": "moth_burn_l",
+      "directions": 4
+    },
+    {
+      "name": "moth_burn_r",
+      "directions": 4
+    },
+    {
+      "name": "moth_face_claw",
+      "directions": 4
+    },
+    {
+      "name": "moth_slash_l",
+      "directions": 4
+    },
+    {
+      "name": "moth_slash_r",
+      "directions": 4
+    },
+    {
+      "name": "mothbeetlehorn",
+      "directions": 4
+    },
+    {
+      "name": "mothbiggereyes_primary",
+      "directions": 4
+    },
+    {
+      "name": "mothbiggereyes_secondary",
+      "directions": 4
+    },
+    {
+      "name": "motheyeliner",
+      "directions": 4
+    },
+    {
+      "name": "oakworm_head",
+      "directions": 4
+    },
+    {
+      "name": "plasmafire",
+      "directions": 4
+    },
+    {
+      "name": "pointy_head",
+      "directions": 4
+    },
+    {
+      "name": "ragged_head",
+      "directions": 4
+    },
+    {
+      "name": "royal_head",
+      "directions": 4
+    },
+    {
+      "name": "top_half",
+      "directions": 4
+    },
+    {
+      "name": "whitefly_head",
+      "directions": 4
+    },
+    {
+      "name": "witchwing_head",
+      "directions": 4
+    }
+  ]
+}

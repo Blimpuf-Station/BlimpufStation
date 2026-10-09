@@ -34,20 +34,25 @@
     RLeg: MobMothRLeg
     LFoot: MobMothLFoot
     RFoot: MobMothRFoot
+    NeckFluff: MobMothNeckFluff
 
 - type: humanoidBaseSprite
   id: MobMothEyes
   baseSprite:
-    sprite: Mobs/Species/Moth/parts.rsi
+    sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
     state: eyes
 
 - type: markingPoints
   id: MobMothMarkingLimits
-  #onlyWhitelisted: true // Starlight removal
+  onlyWhitelisted: true # Aurora's Song Removal of Starlight's removal - This is now obsolete as Moths have hair
   points:
     Hair:
       points: 1 # Starlight
       required: false
+    NeckFluff:
+      points: 1
+      required: true
+      defaultMarkings: [ MothFloofDefault ]
     FacialHair:
       points: 0
       required: false
@@ -87,83 +92,89 @@
 - type: humanoidBaseSprite
   id: MobMothHead
   baseSprite:
-    sprite: Mobs/Species/Moth/parts.rsi
+    sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
     state: head_m
 
 - type: humanoidBaseSprite
   id: MobMothHeadMale
   baseSprite:
-    sprite: Mobs/Species/Moth/parts.rsi
+    sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
     state: head_m
 
 - type: humanoidBaseSprite
   id: MobMothHeadFemale
   baseSprite:
-    sprite: Mobs/Species/Moth/parts.rsi
+    sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
     state: head_f
 
 - type: humanoidBaseSprite
   id: MobMothTorso
   baseSprite:
-    sprite: Mobs/Species/Moth/parts.rsi
+    sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
     state: torso_m
 
 - type: humanoidBaseSprite
   id: MobMothTorsoMale
   baseSprite:
-    sprite: Mobs/Species/Moth/parts.rsi
+    sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
     state: torso_m
 
 - type: humanoidBaseSprite
   id: MobMothTorsoFemale
   baseSprite:
-    sprite: Mobs/Species/Moth/parts.rsi
+    sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
     state: torso_f
 
 - type: humanoidBaseSprite
   id: MobMothLLeg
   baseSprite:
-    sprite: Mobs/Species/Moth/parts.rsi
+    sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
     state: l_leg
 
 - type: humanoidBaseSprite
   id: MobMothLHand
   baseSprite:
-    sprite: Mobs/Species/Moth/parts.rsi
+    sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
     state: l_hand
 
 - type: humanoidBaseSprite
   id: MobMothLArm
   baseSprite:
-    sprite: Mobs/Species/Moth/parts.rsi
+    sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
     state: l_arm
 
 - type: humanoidBaseSprite
   id: MobMothLFoot
   baseSprite:
-    sprite: Mobs/Species/Moth/parts.rsi
+    sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
     state: l_foot
 
 - type: humanoidBaseSprite
   id: MobMothRLeg
   baseSprite:
-    sprite: Mobs/Species/Moth/parts.rsi
+    sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
     state: r_leg
 
 - type: humanoidBaseSprite
   id: MobMothRHand
   baseSprite:
-    sprite: Mobs/Species/Moth/parts.rsi
+    sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
     state: r_hand
 
 - type: humanoidBaseSprite
   id: MobMothRArm
   baseSprite:
-    sprite: Mobs/Species/Moth/parts.rsi
+    sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
     state: r_arm
 
 - type: humanoidBaseSprite
   id: MobMothRFoot
   baseSprite:
-    sprite: Mobs/Species/Moth/parts.rsi
+    sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
     state: r_foot
+
+- type: humanoidBaseSprite
+  id: MobMothNeckFluff
+  baseSprite:
+    sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
+    state: neck_fluff

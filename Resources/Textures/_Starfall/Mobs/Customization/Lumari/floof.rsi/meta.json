@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprites by Thlrds",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "athamas_floof",
+      "directions": 4
+    },
+    {
+      "name": "bee_floof",
+      "directions": 4
+    },
+    {
+      "name": "beetle_floof",
+      "directions": 4
+    },
+    {
+      "name": "charred_floof",
+      "directions": 4
+    },
+    {
+      "name": "dbushy_floof",
+      "directions": 4
+    },
+    {
+      "name": "default_floof",
+      "directions": 4
+    },
+    {
+      "name": "epipyropidae_floof",
+      "directions": 4
+    },
+    {
+      "name": "fan_floof",
+      "directions": 4
+    },
+    {
+      "name": "feathery_floof",
+      "directions": 4
+    },
+    {
+      "name": "firewatch_floof",
+      "directions": 4
+    },
+    {
+      "name": "flannel_floof",
+      "directions": 4
+    },
+    {
+      "name": "glasswing_floof",
+      "directions": 4
+    },
+    {
+      "name": "gothic_floof",
+      "directions": 4
+    },
+    {
+      "name": "jungle_floof",
+      "directions": 4
+    },
+    {
+      "name": "ladybug_floof",
+      "directions": 4
+    },
+    {
+      "name": "maple_floof",
+      "directions": 4
+    },
+    {
+      "name": "mothfirefly_floof",
+      "directions": 4
+    },
+    {
+      "name": "mothtruebutterfly_floof",
+      "directions": 4
+    },
+    {
+      "name": "oaktree_hopper_floof",
+      "directions": 4
+    },
+    {
+      "name": "oakworm_floof",
+      "directions": 4
+    },
+    {
+      "name": "origins_floof",
+      "directions": 4
+    },
+    {
+      "name": "plasmafire_floof",
+      "directions": 4
+    },
+    {
+      "name": "pointy_floof",
+      "directions": 4
+    },
+    {
+      "name": "rhinobeetle_floof",
+      "directions": 4
+    },
+    {
+      "name": "royal_floof",
+      "directions": 4
+    },
+    {
+      "name": "snoth_floof_primary",
+      "directions": 4
+    },
+    {
+      "name": "snoth_floof_secondary",
+      "directions": 4
+    },
+    {
+      "name": "stellar_floof",
+      "directions": 4
+    },
+    {
+      "name": "swirly_floof",
+      "directions": 4
+    },
+    {
+      "name": "underwing_floof",
+      "directions": 4
+    },
+    {
+      "name": "wartorn_floof",
+      "directions": 4
+    },
+    {
+      "name": "whitefly_floof",
+      "directions": 4
+    },
+    {
+      "name": "wings_backstabbed_floof",
+      "directions": 4
+    },
+    {
+      "name": "witchwing_floof",
+      "directions": 4
+    }
+  ]
+}
+

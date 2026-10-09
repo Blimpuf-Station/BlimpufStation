@@ -45,6 +45,7 @@
     FaceCoverCover: MobHumanoidAnyMarking
     BodyCover: MobHumanoidAnyMarking
     BodyCoverCover: MobHumanoidAnyMarking
+    NeckFluff: MobMothNeckFluff
 
 - type: markingPoints
   id: MobNeoMothMarkingLimits

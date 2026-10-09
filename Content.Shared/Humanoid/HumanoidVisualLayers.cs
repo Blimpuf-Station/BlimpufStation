@@ -32,6 +32,8 @@ namespace Content.Shared.Humanoid
         StencilMask,
         Ensnare,
         Fire,
+        NeckFluff, // Aurora's Song
+        TailOverlay, // Aurora's Song
 
         FaceCover, // Far Horizons
         FaceCoverCover, // Far Horizons

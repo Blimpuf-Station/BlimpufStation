@@ -25,7 +25,8 @@ namespace Content.Shared.Humanoid.Markings
         FaceCover, // Far Horizons
         FaceCoverCover, // Far Horizons
         BodyCover, // Far Horizons
-        BodyCoverCover // Far Horizons
+        BodyCoverCover, // Far Horizons
+        NeckFluff // Aurora's Song
     }
 
     public static class MarkingCategoriesConversion
@@ -59,6 +60,7 @@ namespace Content.Shared.Humanoid.Markings
                 HumanoidVisualLayers.BodyCover => MarkingCategories.BodyCover, // Far Horizons
                 HumanoidVisualLayers.BodyCoverCover => MarkingCategories.BodyCoverCover, // Far Horizons
                 HumanoidVisualLayers.Tail => MarkingCategories.Tail,
+                HumanoidVisualLayers.NeckFluff => MarkingCategories.NeckFluff, // Aurora's Song
                 _ => MarkingCategories.Overlay
             };
         }

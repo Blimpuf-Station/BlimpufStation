@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprites by Thlrds",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "plated_chest",
+      "directions": 4
+    },
+    {
+      "name": "plated_l_arm",
+      "directions": 4
+    },
+    {
+      "name": "plated_r_arm",
+      "directions": 4
+    },
+    {
+      "name": "radiant_chest",
+      "directions": 4
+    },
+    {
+      "name": "radiant_head",
+      "directions": 4
+    },
+    {
+      "name": "radiant_l_arm",
+      "directions": 4
+    },
+    {
+      "name": "radiant_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "radiant_r_arm",
+      "directions": 4
+    },
+    {
+      "name": "radiant_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "spotted_chest",
+      "directions": 4
+    },
+    {
+      "name": "spotted_head",
+      "directions": 4
+    },
+    {
+      "name": "spotted_l_arm",
+      "directions": 4
+    },
+    {
+      "name": "spotted_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "spotted_r_arm",
+      "directions": 4
+    },
+    {
+      "name": "spotted_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "stripes_chest",
+      "directions": 4
+    },
+    {
+      "name": "stripes_head",
+      "directions": 4
+    },
+    {
+      "name": "stripes_l_arm",
+      "directions": 4
+    },
+    {
+      "name": "stripes_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "stripes_r_arm",
+      "directions": 4
+    },
+    {
+      "name": "stripes_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "toxic_chest",
+      "directions": 4
+    },
+    {
+      "name": "toxic_head",
+      "directions": 4
+    },
+    {
+      "name": "toxic_l_arm",
+      "directions": 4
+    },
+    {
+      "name": "toxic_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "toxic_r_arm",
+      "directions": 4
+    },
+    {
+      "name": "toxic_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "weevil_head",
+      "directions": 4
+    }
+  ]
+}
