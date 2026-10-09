@@ -127,7 +127,17 @@ public sealed partial class StatusIconSystem : SharedStatusIconSystem
             return false;
 
         if (data.HideOnStealth && TryComp<StealthComponent>(ent, out var stealth) && stealth.Enabled)
-            return false;
+        {
+            if (stealth.AffectedEntities == null)
+                return false;
+
+            var player = _playerManager.LocalEntity;
+
+            if (player.HasValue && _entityWhitelist.IsWhitelistPass(stealth.AffectedEntities, player.Value))
+                return false;
+
+            return true;
+        }
 
         if (TryComp<SpriteComponent>(ent, out var sprite) && !sprite.Visible)
             return false;

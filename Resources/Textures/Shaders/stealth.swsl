@@ -15,6 +15,11 @@ void fragment() {
         discard;
     }
 
+    // No distortion effect at -1 visibility, true stealth
+    if (visibility <= -1.0) {
+        discard;
+    }
+
     // get distortion magnitude. hand crafted from a random jumble of trig functions
     highp vec2 coords = (FRAGCOORD.xy + reference) * distance_scale;
     highp float w = sin(TIME + (coords.x + coords.y + 2.0*sin(TIME*time_scale) * sin(TIME*time_scale + coords.x - coords.y)) );

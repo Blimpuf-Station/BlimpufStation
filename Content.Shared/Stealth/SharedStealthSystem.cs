@@ -1,15 +1,18 @@
 using Content.Shared.Examine;
 using Content.Shared.Mobs;
-using Content.Shared.Mobs.Systems;
 using Content.Shared.Stealth.Components;
 using Robust.Shared.GameStates;
 using Robust.Shared.Timing;
+using Content.Shared.Whitelist;
+using Robust.Shared.Player;
 
 namespace Content.Shared.Stealth;
 
 public abstract partial class SharedStealthSystem : EntitySystem
 {
     [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private EntityWhitelistSystem _whitelist = default!;
+    [Dependency] private ISharedPlayerManager _playerManager = default!;
 
     public override void Initialize()
     {
@@ -29,7 +32,9 @@ public abstract partial class SharedStealthSystem : EntitySystem
 
     private void OnExamineAttempt(EntityUid uid, StealthComponent component, ExamineAttemptEvent args)
     {
-        if (!component.Enabled || GetVisibility(uid, component) > component.ExamineThreshold)
+        var affected = component.AffectedEntities == null || _whitelist.IsWhitelistPass(component.AffectedEntities, args.Examiner);
+
+        if (!component.Enabled || GetVisibility(uid, component) > component.ExamineThreshold || !affected)
             return;
 
         // Don't block examine for owner or children of the cloaked entity.
@@ -98,7 +103,7 @@ public abstract partial class SharedStealthSystem : EntitySystem
 
     private void OnStealthGetState(EntityUid uid, StealthComponent component, ref ComponentGetState args)
     {
-        args.State = new StealthComponentState(component.LastVisibility, component.LastUpdated, component.Enabled);
+        args.State = new StealthComponentState(component.LastVisibility, component.LastUpdated, component.Enabled, component.AffectedEntities);
     }
 
     private void OnStealthHandleState(EntityUid uid, StealthComponent component, ref ComponentHandleState args)
@@ -109,6 +114,7 @@ public abstract partial class SharedStealthSystem : EntitySystem
         SetEnabled(uid, cast.Enabled, component);
         component.LastVisibility = cast.Visibility;
         component.LastUpdated = cast.LastUpdated;
+        component.AffectedEntities = cast.AffectedEntities;
     }
 
     private void OnMove(EntityUid uid, StealthOnMoveComponent component, ref MoveEvent args)
