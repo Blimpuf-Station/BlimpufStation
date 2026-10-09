@@ -1,6 +1,6 @@
 - type: entity
   parent: BaseMobNeocyte
-  id: BaseMobNeoVulp
+  id: BaseMobNeoVulpkanin
   name: Urist McVulpster
   abstract: true
   components:
@@ -54,12 +54,12 @@
     state: full
   - type: Damageable
     damageContainer: Hybrid
-    damageModifierSet: NeoVulp
+    damageModifierSet: NeoVulpkanin
   - type: Body
-    prototype: NeoVulp
+    prototype: NeoVulpkanin
     requiredLegs: 2
   - type: HumanoidAppearance
-    species: NeoVulp
+    species: NeoVulpkanin
     hideLayersOnEquip:
     - Snout
     - SnoutCover
@@ -116,9 +116,9 @@
     maxZoom: "1.125, 1.125"
   - type: Vocal
     sounds:
-      Male: NeoVulpMSounds
-      Female: NeoVulpFSounds
-      Unsexed: NeoVulpMSounds
+      Male: NeoVulpkaninMSounds
+      Female: NeoVulpkaninFSounds
+      Unsexed: NeoVulpkaninMSounds
   - type: MeleeWeapon # Starlight start
     soundHit:
       path: /Audio/Weapons/pierce.ogg
@@ -182,11 +182,11 @@
 
 - type: entity
   parent: [BaseNeocyteAppearance, BaseSpeciesDummy]
-  id: AppearanceNeoVulp
+  id: AppearanceNeoVulpkanin
   categories: [ HideSpawnMenu ]
   components:
   - type: HumanoidAppearance
-    species: NeoVulp
+    species: NeoVulpkanin
     hideLayersOnEquip:
     - Snout
     - SnoutCover

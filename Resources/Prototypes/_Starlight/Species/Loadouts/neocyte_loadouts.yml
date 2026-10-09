@@ -39,7 +39,7 @@
     - NeoReptilian
     - NeoResomi
     - NeoVox
-    - NeoVulp
+    - NeoVulpkanin
 
 - type: loadout
   id: NeocyteArmorLightSpeed
@@ -64,7 +64,7 @@
     - NeoReptilian
     - NeoResomi
     - NeoVox
-    - NeoVulp
+    - NeoVulpkanin
 
 - type: loadout
   id: NeocyteArmorMediumBasic
@@ -89,7 +89,7 @@
     - NeoReptilian
     - NeoResomi
     - NeoVox
-    - NeoVulp
+    - NeoVulpkanin
 
 - type: loadout
   id: NeocyteArmorMediumMagic
@@ -114,7 +114,7 @@
     - NeoReptilian
     - NeoResomi
     - NeoVox
-    - NeoVulp
+    - NeoVulpkanin
 
 - type: loadout
   id: NeocyteArmorHeavyBasic
@@ -139,7 +139,7 @@
     - NeoReptilian
     - NeoResomi
     - NeoVox
-    - NeoVulp
+    - NeoVulpkanin
 
 - type: loadout
   id: NeocyteArmorHeavySpace
@@ -164,4 +164,4 @@
     - NeoReptilian
     - NeoResomi
     - NeoVox
-    - NeoVulp
+    - NeoVulpkanin

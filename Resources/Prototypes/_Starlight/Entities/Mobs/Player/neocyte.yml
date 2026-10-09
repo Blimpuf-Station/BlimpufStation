@@ -7,8 +7,8 @@
 - type: entity
   save: false
   name: Urist McVulpster
-  parent: BaseMobNeoVulp
-  id: MobNeoVulp
+  parent: BaseMobNeoVulpkanin
+  id: MobNeoVulpkanin
 
 - type: entity
   save: false

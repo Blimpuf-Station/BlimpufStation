@@ -7,7 +7,7 @@
     Blunt: 1.1
 
 - type: damageModifierSet
-  id: NeoVulp # Inherits Neocyte with Vulp-like twist (better/worse cold/heat)
+  id: NeoVulpkanin # Inherits Neocyte with Vulp-like twist (better/worse cold/heat)
   coefficients:
     Shock: 1.25
     Heat: 1.25 # Fur my beloved
