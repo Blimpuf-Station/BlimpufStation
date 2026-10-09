@@ -1,3 +1,4 @@
+using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
 using System.Numerics;
@@ -78,10 +79,10 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
 
         var root = yamlStream.Documents[0].RootNode;
 
-        // Blimpuf start - discard non-hair markings if they aren't compatible with our profile format
+        // Blimpuf start - If markings are nested by body part, extract them.
         var data = (MappingDataNode) root.ToDataNode();
         var appearance = data.Get<MappingDataNode>("profile").Get<MappingDataNode>("appearance");
-
+        // If "markings" is a MappingDataNode instead of a SequenceDataNode, it has nested data instead of a list of markings.
         if (appearance.TryGet<MappingDataNode>("markings", out var markings))
         {
             if (markings.TryGet<MappingDataNode>("Head", out var head))
@@ -95,6 +96,7 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
                     {
                         appearance["hairColor"] = hairColors[0];
                     }
+                    head.Remove("Hair");
                 }
                 if (head.TryGet<SequenceDataNode>("FacialHair", out var facialHair) &&
                     facialHair.Count > 0 && facialHair[0] is MappingDataNode facialHairMarking)
@@ -105,10 +107,22 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
                     {
                         appearance["facialHairColor"] = facialHairColors[0];
                     }
+                    head.Remove("FacialHair");
                 }
             }
 
-            appearance.Remove("markings");
+            var flattenedMarkings = new SequenceDataNode();
+            foreach (var bodyRegion in markings.Values)
+            {
+                foreach (var markingRegion in ((MappingDataNode)bodyRegion).Children)
+                {
+                    foreach (var marking in (SequenceDataNode)markingRegion.Value)
+                    {
+                        flattenedMarkings.Add(marking);
+                    }
+                }
+            }
+            appearance["markings"] = flattenedMarkings;
         }
 
         var export = _serManager.Read<HumanoidProfileExport>(data, notNullableOverride: true);
