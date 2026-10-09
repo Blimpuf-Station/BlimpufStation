@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesCC
+  name: CentComm shoes
+  description: A sturdy pair of fancy black leather shoes with a pair of green and gold socks. Fancy!
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Clothing/Shoes/Specific/ccshoes.rsi
+  - type: Clothing
+    sprite: _Blimpuf/Clothing/Shoes/Specific/ccshoes.rsi
