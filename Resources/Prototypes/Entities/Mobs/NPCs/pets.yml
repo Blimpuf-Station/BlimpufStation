@@ -1096,6 +1096,13 @@
   - type: Item
     sprite: Mobs/Pets/Smile/smile.rsi
     size: Huge
+  - type: Clothing
+    quickEquip: false
+    sprite: Mobs/Pets/Smile/smile.rsi
+    equippedPrefix: 0
+    slots:
+    - HEAD
+  - type: CanEscapeInventory
   - type: MobPrice
     price: 3000 # it is a truly valuable creature
   - type: GhostRole
