@@ -1061,5 +1061,12 @@ Entries:
   id: 17701
   time: '2026-10-06T16:47:56.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/177
+- author: Shimmers
+  changes:
+  - message: Removed 14 Starlight specific lobby arts.
+    type: Remove
+  id: 18101
+  time: '2026-10-09T10:55:32.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/181
 Order: -1
 
