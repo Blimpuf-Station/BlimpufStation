@@ -149,7 +149,7 @@
   - type: Speech
     speechVerb: Slime
     speechSounds: Slime
-    allowedEmotes: ['Squish', 'Bubble', 'Pop', 'Sloshes', 'Fizz', 'Wobble']
+    allowedEmotes: ['Squish', 'Bubble', 'Slosh', 'Pop', 'Fizz', 'Wobble']
     restrictVocalEmotesToAllowed: true
   - type: Vocal
     sounds:
