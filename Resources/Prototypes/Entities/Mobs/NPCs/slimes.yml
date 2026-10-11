@@ -282,6 +282,16 @@
   parent: BaseMobAdultSlimes
   id: MobSlimesGeras
   components:
+    # Work around till we find out why geras dont inherit the parent components
+    - type: Vocal
+      sounds:
+        Unsexed: SlimeCoreSounds
+    - type: Speech
+      speechVerb: Slime
+      speechSounds: Slime
+      allowedEmotes: [ 'Squish', 'Bubble', 'Slosh', 'Pop', 'Fizz', 'Wobble' ]
+      restrictVocalEmotesToAllowed: true
+    # End of workaround
     # they portable...
     - type: GerasBall
     - type: HTN
