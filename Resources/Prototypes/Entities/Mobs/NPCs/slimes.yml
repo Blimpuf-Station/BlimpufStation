@@ -149,7 +149,11 @@
   - type: Speech
     speechVerb: Slime
     speechSounds: Slime
-    allowedEmotes: ['Squish', 'Bubble', 'Slosh','Pop', 'Fizz','Wobble']
+    allowedEmotes: ['Squish', 'Bubble', 'Pop', 'Sloshes', 'Fizz', 'Wobble']
+    restrictVocalEmotesToAllowed: true
+  - type: Vocal
+    sounds:
+      Unsexed: SlimeCoreSounds
   - type: TypingIndicator
     proto: slime
   - type: NpcFactionMember
