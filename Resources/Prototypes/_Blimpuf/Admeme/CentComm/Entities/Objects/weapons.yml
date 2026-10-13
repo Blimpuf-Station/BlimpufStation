@@ -7,6 +7,7 @@
   - type: AccessReader
     access: [["CentralCommand"]]
   - type: Lock
+    mindShieldLock: true
     unlockOnClick: false
     useAccess: true
     autoUnlock: true
@@ -75,8 +76,18 @@
   name: experimental syringe gun
   parent: [ BaseStorageItem, BaseCentcommContraband ]
   id: LauncherSyringeCC
-  description: Load full of poisoned syringes for optimal fun.
+  description: Experimental syringe gun, designed for rapid distance injection.
   components:
+  - type: AccessReader
+    access: [["CentralCommand"]]
+  - type: Lock
+    mindShieldLock: true
+    unlockOnClick: false
+    useAccess: true
+    autoUnlock: true
+    autoLock: true
+    showLockVerbs: true
+    breakOnAccessBreaker: false
   - type: Sprite
     sprite: _Blimpuf/Objects/Weapons/Guns/Cannons/syringe_gun.rsi
     layers:
@@ -89,7 +100,7 @@
       tags:
       - SyringeGunAmmo
   - type: Gun
-    fireRate: 1
+    fireRate: 3
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto

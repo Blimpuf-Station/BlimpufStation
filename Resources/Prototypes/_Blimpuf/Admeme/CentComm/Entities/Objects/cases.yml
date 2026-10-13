@@ -11,6 +11,7 @@
   - type: AccessReader
     access: [["CentralCommand"]]
   - type: Lock
+    mindShieldLock: true
     unlockOnClick: false
     useAccess: true
     autoUnlock: true  # For some reason they seem to mean the opposite of what they do
@@ -20,6 +21,12 @@
   - type: Sprite
     sprite: _Blimpuf/Objects/Specific/Medical/cc_vial_case.rsi
     layers:
+    - state: locked #Not added yet
+      map: [ "enum.LockVisualLayers.Lock" ]
+      shader: unshaded
+    - state: unlocked #Not added yet
+      map: [ light ]
+      shader: unshaded
     - state: closed
       map: ["closeLayer"]
     - state: open
@@ -77,11 +84,12 @@
   suffix: CentComm
   description: A plastic case with slots for bottles.
   components:
-  - type: LockVisuals # Still need to add those
+  - type: LockVisuals
   - type: LockedStorage
   - type: AccessReader
     access: [["CentralCommand"]]
   - type: Lock
+    mindShieldLock: true
     unlockOnClick: false
     useAccess: true
     autoUnlock: true
@@ -92,6 +100,12 @@
     sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
     layers:
     - state: bottlecase
+    - state: locked #Not added yet
+      map: [ "enum.LockVisualLayers.Lock" ]
+      shader: unshaded
+    - state: unlocked #Not added yet
+      map: [ light ]
+      shader: unshaded
     - state: bottle1
       map: ["bottle1"]
       visible: false
@@ -143,6 +157,7 @@
   - type: AccessReader
     access: [["CentralCommand"]]
   - type: Lock
+    mindShieldLock: true
     unlockOnClick: false
     useAccess: true
     autoUnlock: true
@@ -158,7 +173,14 @@
         - Medipen
   - type: Sprite
     sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
-    state: injectorpack
+    layers:
+    - state: injectorpack
+    - state: locked #Not added yet
+      map: [ "enum.LockVisualLayers.Lock" ]
+      shader: unshaded
+    - state: unlocked #Not added yet
+      map: [ light ]
+      shader: unshaded
   - type: Item
     sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
     size: Small
