@@ -73,7 +73,7 @@
   id: OrganNeoDionaLungsNymph
   categories: [ HideSpawnMenu ]
   parent: OrganNeoDionaLungs
-  name: Neo-Diona nymph lungs
+  name: neo-diona nymph lungs
   suffix: Neo-Diona Nymph
   description: "Filters oxygen from an atmosphere, which is then sent into the bloodstream to be used as an electron carrier."
   components:
@@ -84,7 +84,7 @@
   id: OrganNeoDionaNymphLungs
   categories: [ HideSpawnMenu ]
   parent: MobDionaNymphAccent
-  name: Neo-Diona nymph lungs
+  name: neo-diona nymph lungs
   suffix: Neo-Diona Nymph
   description: Contains the lungs of a formerly fully-formed Neo-Diona. Breathtaking.
   components:

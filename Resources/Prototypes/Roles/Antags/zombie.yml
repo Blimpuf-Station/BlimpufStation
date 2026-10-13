@@ -7,15 +7,15 @@
   guides: [ Zombies ]
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 24h # Starlight start. It's like legal raiding.
-  - !type:DepartmentTimeRequirement # Mainly to know that you can treat yourself. Also teaches you what your primary target as an II is.
+    time: 5h
+  - !type:DepartmentTimeRequirement
     department: Medical
-    time: 4h
+    time: 1h
   - !type:SpeciesRequirement
     species:
     - IPC
     inverted: true
-  playTimeTracker: AntagInitialInfected # Starlight end
+  playTimeTracker: AntagInitialInfected
 
 - type: antagSpecifier
   parent: ZombieRestrictedAntag # Starlight

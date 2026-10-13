@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/16/2026 22:53:11
-  entityCount: 16247
+  entityCount: 16248
 maps:
 - 1
 grids:
@@ -47978,15 +47978,15 @@ entities:
       parent: 2
 - proto: DogBed
   entities:
-  - uid: 6523
-    components:
-    - type: Transform
-      pos: -22.5,37.5
-      parent: 2
   - uid: 16108
     components:
     - type: Transform
       pos: -9.5,60.5
+      parent: 2
+  - uid: 16252
+    components:
+    - type: Transform
+      pos: -20.5,48.5
       parent: 2
 - proto: DonkpocketBoxSpawner
   entities:
@@ -79445,6 +79445,11 @@ entities:
     - type: Transform
       pos: -9.5,30.5
       parent: 2
+  - uid: 16256
+    components:
+    - type: Transform
+      pos: -22.5,37.5
+      parent: 2
 - proto: PottedPlantRandomPlastic
   entities:
   - uid: 11001
@@ -84386,11 +84391,6 @@ entities:
     components:
     - type: Transform
       pos: -20.5,41.5
-      parent: 2
-  - uid: 11824
-    components:
-    - type: Transform
-      pos: -20.5,48.5
       parent: 2
   - uid: 11825
     components:
@@ -89434,13 +89434,6 @@ entities:
     - type: Transform
       pos: 16.5,30.5
       parent: 2
-- proto: SpawnMobCorgi
-  entities:
-  - uid: 12562
-    components:
-    - type: Transform
-      pos: -22.5,37.5
-      parent: 2
 - proto: SpawnMobCrabAtmos
   entities:
   - uid: 12563
@@ -94112,13 +94105,6 @@ entities:
     components:
     - type: Transform
       pos: -27.54433,17.142042
-      parent: 2
-- proto: ToyIan
-  entities:
-  - uid: 13315
-    components:
-    - type: Transform
-      pos: -22.170961,37.297226
       parent: 2
 - proto: TP14KitchenDeepFryer
   entities:
@@ -109699,4 +109685,26 @@ entities:
     - type: Transform
       pos: 21.5,18.5
       parent: 2
+- proto: SpawnMobCorgi
+  entities:
+  - uid: 16251
+    components:
+    - type: Transform
+      pos: -20.5,48.5
+      parent: 2
+- proto: ToyIan
+  entities:
+  - uid: 16253
+    components:
+    - type: Transform
+      pos: -20.170961,48.297226
+      parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 16255
+    components:
+    - type: Transform
+      pos: -22.5,38.5
+      parent: 2
+      rot: 1.5707963267948966 rad
 ...

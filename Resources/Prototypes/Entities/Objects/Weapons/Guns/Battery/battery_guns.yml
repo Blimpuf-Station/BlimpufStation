@@ -786,41 +786,15 @@
     supportedPins: [ AdvancedLaser ]
   # starlight end
   - type: SyndicateResearchTarget
-    researchProtoIds:
-      - displayName: combat gloves
-        validPrototypes:
-          - ClothingHandsGlovesCombat
-          - ClothingHandsMercGlovesCombat
-          - ClothingHandsSalvageMercGlovesCombat
-      - displayName: power drill
-        validPrototypes:
-          - PowerDrill
-      - displayName: svalinn laser pistol
-        validPrototypes:
-          - WeaponLaserSvalinn
-      - displayName: plasma tank
-        validPrototypes:
-          - PlasmaTank
-          - PlasmaTankFilled
-      - displayName: scalpel
-        validPrototypes:
-          - Scalpel
-          - ScalpelRipper
-          - ScalpelLaser
-          - ScalpelAdvanced
-          - ScalpelCyber
-      - displayName: diagnostic hud
-        validPrototypes:
-          - ClothingEyesHudDiagnostic
-          - ClothingEyesEyepatchHudDiag
-          - ClothingEyesEyepatchHudDiagFlipped
-      - displayName: portable cooling unit
-        validPrototypes:
-          - CoolingUnit
-      - displayName: wire brush
-        validPrototypes:
-          - WireBrush
-          - WireBrushElectrical
+    syndicateResearchSpecifiers:
+      - SyndicateResearchSpecifierClothingHandsGlovesCombat
+      - SyndicateResearchSpecifierPowerDrill
+      - SyndicateResearchSpecifierWeaponLaserSvalinn
+      - SyndicateResearchSpecifierPlasmaTank
+      - SyndicateResearchSpecifierScalpel
+      - SyndicateResearchSpecifierClothingEyesHudDiagnostic
+      - SyndicateResearchSpecifierCoolingUnit
+      - SyndicateResearchSpecifierWireBrush
     researchUnlockId: UplinkSyndicateTacticalLaser
     researchAnnouncementString: research-announcement-syndicate-tactical-laser
 
@@ -1010,77 +984,15 @@
     maxCharge: 480
     startingCharge: 480
   - type: SyndicateResearchTarget
-    researchProtoIds:
-      - displayName: power cell
-        validPrototypes:
-          - PowerCellSmall
-          - PowerCellMedium
-          - PowerCellHigh
-          - PowerCellHyper
-          - PowerCellMicroreactor
-          - PowerCellSmallNuclear
-          - PowerCellAntiqueProto
-          - PowerCellSmallPrinted
-          - PowerCellMediumPrinted
-          - PowerCellHighPrinted
-          - PowerCellHyperPrinted
-          - PowerCellMicroreactorPrinted
-      - displayName: 12 gauge shotgun shell
-        validPrototypes:
-          - ShellShotgunBeanbag
-          - ShellShotgunSlug
-          - ShellShotgunFlare
-          - ShellShotgun
-          - ShellShotgunIncendiary
-          - ShellShotgunPractice
-          - ShellShotgunImprovised
-          - ShellShotgunUranium
-          - ShellShotgunBirdshot
-          - ShellShotgunBreaching
-      - displayName: welding torch
-        validPrototypes:
-          - Welder
-          - WelderCyber
-          - WelderExperimental
-          - WelderMini
-          - WelderIndustrial
-          - WelderIndustrialAdvanced
-          - WelderAbductor
-          - Cowelder
-          - WelderInvisible
-          - RefuelingWelder
-      - displayName: uranium
-        validPrototypes:
-          - SheetUranium
-          - SheetUranium1
-      - displayName: defibrillator
-        validPrototypes:
-          - BaseDefibrillator
-          - Defibrillator
-          - DefibrillatorEmpty
-          - DefibrillatorOneHandedUnpowered
-          - DefibrillatorCompact
-          - DefibrillatorSyndicate
-          - DefibrillatorSyndicateOneHandedUnpowered
-          - DefibrillatorBrigmedical
-          - DefibrillatorParamed
-      - displayName: rifle stock
-        validPrototypes:
-          - RifleStock
-      - displayName: signal trigger
-        validPrototypes:
-          - SignalTrigger
-      - displayName: flash
-        validPrototypes:
-          - Flash
-          - SciFlash
-          - Flash4Use
-          - Flash3Use
-          - Flash1Use
-          - Flash0Use
-          - GrenadeFlashBang
-          - ClusterBangFull
-          - FlashPayload
+    syndicateResearchSpecifiers:
+      - SyndicateResearchSpecifierPowerCell
+      - SyndicateResearchSpecifierShellShotgun
+      - SyndicateResearchSpecifierWelder
+      - SyndicateResearchSpecifierSheetUranium
+      - SyndicateResearchSpecifierDefibrillator
+      - SyndicateResearchSpecifierRifleStock
+      - SyndicateResearchSpecifierSignalTrigger
+      - SyndicateResearchSpecifierFlash
     researchUnlockId: UplinkSyndieEnergyShotgun
     researchAnnouncementString: research-announcement-syndie-energy-shotgun
 
@@ -1142,43 +1054,15 @@
     supportedPins: [ AdvancedLaser ]
   # starlight end
   - type: SyndicateResearchTarget
-    researchProtoIds:
-      - displayName: seismic charge
-        validPrototypes:
-          - SeismicCharge
-      - displayName: gunpowder
-        validPrototypes:
-          - MaterialGunpowder
-      - displayName: implant extractor
-        validPrototypes:
-          - Implanter
-      - displayName: flash
-        validPrototypes:
-          - Flash
-          - SciFlash
-          - Flash4Use
-          - Flash3Use
-          - Flash1Use
-          - Flash0Use
-          - GrenadeFlashBang
-          - ClusterBangFull
-          - FlashPayload
-      - displayName: node scanner
-        validPrototypes:
-          - NodeScanner
-      - displayName: gyroscope machine board
-        validPrototypes:
-          - GyroscopeMachineCircuitboard
-      - displayName: cloth
-        validPrototypes:
-          - MaterialCloth
-          - MaterialCloth10
-          - MaterialCloth1
-      - displayName: modular grenade payload
-        validPrototypes:
-          - ExplosivePayload
-          - FlashPayload
-          - ChemicalPayload
+    syndicateResearchSpecifiers:
+      - SyndicateResearchSpecifierSeismicCharge
+      - SyndicateResearchSpecifierMaterialGunpowder
+      - SyndicateResearchSpecifierImplanter
+      - SyndicateResearchSpecifierFlash
+      - SyndicateResearchSpecifierNodeScanner
+      - SyndicateResearchSpecifierGyroscopeMachineCircuitboard
+      - SyndicateResearchSpecifierMaterialCloth
+      - SyndicateResearchSpecifierModularGrenadePayload
     researchUnlockId: UplinkWeaponLaserTaipanRevolver
     researchAnnouncementString: research-announcement-weapon-laser-taipan
 

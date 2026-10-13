@@ -1,0 +1,198 @@
+- type: entity
+  name: proto-kinetic blaster
+  id: WeaponProtoKineticBlaster
+  parent: [BaseItem, BaseCargoContraband, BaseContrabandTier2] # Blimpuf
+  description: Fires lower-damage kinetic bolts at a shorter range.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Weapons/Guns/Basic/kinetic_blaster.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    sprite: _Blimpuf/Objects/Weapons/Guns/Basic/kinetic_blaster.rsi
+    quickEquip: false
+    slots:
+      - suitStorage
+      - Belt
+  - type: Item
+    sprite: _Blimpuf/Objects/Weapons/Guns/Basic/kinetic_blaster.rsi
+    size: Small
+    shape:
+      - 0,0,1,0
+      - 0,1,0,1
+  - type: AmmoCounter
+  - type: Appearance
+  - type: Gun
+    fireRate: 1
+    selectedMode: SemiAuto
+    angleDecay: 45
+    minAngle: 14 # Roughly 7x as much minimum spread as a wielded PKA
+    maxAngle: 20 # Roughly 10x as much maximum spread as a wielded PKA
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+    projectileSpeed: 20 # 4/5 as fast as a standard PKA
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 1.35 # Bit over 1/2 as fast as a standard PKA
+    rechargeSound:
+      path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+  - type: BasicEntityAmmoProvider
+    proto: BulletKineticWeak
+    capacity: 2 # 1 more base ammo
+    count: 2 # 1 more base ammo
+  - type: UpgradeableGun
+    whitelist:
+      tags:
+      - PKAUpgrade
+  - type: ContainerContainer
+    containers:
+      upgrades: !type:Container
+  - type: Tag
+    tags:
+      - Sidearm
+  - type: CanDualWield
+    dualWieldInaccuracyPenalty: 50
+
+- type: entity
+  name: proto-kinetic railgun
+  id: WeaponProtoKineticRailgun
+  description: Fires higher-damage kinetic bolts at a longer range.
+  parent: [BaseItem, BaseCargoContraband, BaseContrabandTier2]
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Objects/Weapons/Guns/Basic/kinetic_railgun.rsi
+      layers:
+        - state: icon
+    - type: Item
+      sprite: _Blimpuf/Objects/Weapons/Guns/Basic/kinetic_railgun.rsi
+      size: Large
+      shape:
+        - 0,0,3,1
+    - type: Clothing
+      sprite: _Blimpuf/Objects/Weapons/Guns/Basic/kinetic_railgun.rsi
+      quickEquip: false
+      slots:
+        - suitStorage
+        - Belt
+    - type: GunWieldBonus
+      minAngle: -50
+      maxAngle: -55
+    - type: Wieldable
+    - type: MeleeWeapon
+      wideAnimationRotation: 90
+      damage:
+        types:
+          Blunt: 12
+      angle: 0
+      animation: WeaponArcThrust
+      soundHit:
+        collection: MetalThud
+    - type: MeleeRequiresWield
+    - type: AltFireMelee
+    - type: Gun
+      fireRate: 0.35
+      selectedMode: SemiAuto
+      angleDecay: 45
+      minAngle: 50
+      maxAngle: 55
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+      projectileSpeed: 30 # 33% faster speed that normal PKA
+    - type: SpeedModifiedOnWield
+      walkModifier: 0.225
+      sprintModifier: 0.225
+    - type: CursorOffsetRequiresWield
+    - type: EyeCursorOffset
+      maxOffset: 4
+      pvsIncrease: 0.4
+    - type: AmmoCounter
+    - type: Appearance
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 1.6 # Twiceish as long to recharge as the standard PKA
+      rechargeSound:
+        path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+    - type: BasicEntityAmmoProvider
+      proto: BulletKineticStrong
+      capacity: 1
+      count: 1
+    - type: UseDelay
+      delay: 1
+    - type: ContainerContainer
+      containers:
+        upgrades: !type:Container
+    - type: UpgradeableGun
+      whitelist:
+        tags:
+          - PKAUpgrade
+
+- type: entity
+  name: proto-kinetic disassembler
+  id: WeaponProtoKineticDisassembler
+  description: Fires lower damage kinetic bolts than a Proto-kinetic Accelerator, but at a more rapid rate. Great for tearing down structures.
+  parent: [BaseItem, BaseCargoContraband, BaseContrabandTier2]
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Objects/Weapons/Guns/Basic/kinetic_disassembler.rsi
+      layers:
+        - state: icon
+    - type: Item
+      sprite: _Blimpuf/Objects/Weapons/Guns/Basic/kinetic_disassembler.rsi
+      size: Large
+      shape:
+        - 0,0,3,1
+    - type: Clothing
+      sprite: _Blimpuf/Objects/Weapons/Guns/Basic/kinetic_disassembler.rsi
+      quickEquip: false
+      slots:
+        - suitStorage
+        - Belt
+    - type: GunWieldBonus
+      minAngle: -30
+      maxAngle: -30
+    - type: Wieldable
+      # starlight start
+    - type: MeleeWeapon
+      wideAnimationRotation: 90
+      damage:
+        types:
+          Blunt: 8
+      angle: 0
+      animation: WeaponArcThrust
+      soundHit:
+        collection: MetalThud
+    - type: MeleeRequiresWield
+    - type: AltFireMelee
+      # starlight end
+    - type: Gun
+      fireRate: 0.5
+      selectedMode: Burst
+      angleDecay: 45
+      minAngle: 44
+      maxAngle: 45
+      availableModes:
+        - Burst
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+      projectileSpeed: 25
+    - type: AmmoCounter
+    - type: Appearance
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 1.05 # 40% slower than a standard PKA
+      rechargeSound:
+        path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
+    - type: BasicEntityAmmoProvider
+      proto: BulletKineticAntistructural
+      capacity: 3
+      count: 3
+    - type: UseDelay
+      delay: 1
+    - type: ContainerContainer
+      containers:
+        upgrades: !type:Container
+    - type: UpgradeableGun
+      whitelist:
+        tags:
+          - PKAUpgrade

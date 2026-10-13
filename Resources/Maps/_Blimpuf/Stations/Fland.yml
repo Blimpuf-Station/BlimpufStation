@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 22:56:22
-  entityCount: 37766
+  entityCount: 37765
 maps:
 - 1
 grids:
@@ -174751,6 +174751,11 @@ entities:
     - type: Transform
       pos: 29.5,9.5
       parent: 2
+  - uid: 37868
+    components:
+    - type: Transform
+      pos: 61.5,47.5
+      parent: 2
 - proto: PaperBin20
   entities:
   - uid: 26540
@@ -174894,16 +174899,6 @@ entities:
     components:
     - type: Transform
       pos: 61.5,58.5
-      parent: 2
-  - uid: 26568
-    components:
-    - type: Transform
-      pos: 61.5,47.5
-      parent: 2
-  - uid: 26569
-    components:
-    - type: Transform
-      pos: 57.5,44.5
       parent: 2
   - uid: 26570
     components:
@@ -209832,12 +209827,6 @@ entities:
     - type: Transform
       pos: 79.5,36.5
       parent: 2
-  - uid: 32057
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 57.5,44.5
-      parent: 2
   - uid: 32058
     components:
     - type: Transform
@@ -239658,4 +239647,12 @@ entities:
     - type: Transform
       pos: 87.53917,-53.523365
       parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 37867
+    components:
+    - type: Transform
+      pos: 57.5,44.5
+      parent: 2
+      rot: 1.5707963267948966 rad
 ...

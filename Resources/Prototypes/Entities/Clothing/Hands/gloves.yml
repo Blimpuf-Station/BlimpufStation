@@ -563,61 +563,15 @@
   - type: StealTarget
     stealGroup: ClothingHandsKnuckleDustersQM
   - type: SyndicateResearchTarget
-    researchProtoIds:
-      - displayName: jet injector
-        validPrototypes:
-          - JetInjector
-          - AdvancedJetInjector
-          - TacticalJetInjector
-          - DeforestJetInjector
-      - displayName: dropper
-        validPrototypes:
-          - Dropper
-      - displayName: bruise pack
-        validPrototypes:
-          - Brutepack
-          - Brutepack1
-          - SyndicateBrutePack
-          - SyndicateBrutePack1
-          - GoldBrutePack
-          - GoldBrutePack1
-          - RedBruizPack
-          - RedBrutePack1
-          - RedBrutePack10
-          - RedBrutePack
-          - Bluebrutepack1
-          - Bluebrutepack10
-          - Bluebrutepack20
-          - DeforestBrutePack1
-          - DeforestBrutePack
-          - RedBruizPack1
-          - RedBruizPack10
-          - RedLacePack1
-          - RedLacePack10
-          - RedPunctPack1
-          - RedPunctPack10
-      - displayName: chemical analysis goggles
-        validPrototypes:
-          - ClothingEyesGlassesChemical
-          - ClothingEyesHudChemical
-          - ClothingEyeGlassesChemicalPrescription
-          - ClothingEyesGlassesJensenChemical
-          - ClothingEyesEyepatchHudChemical
-          - ClothingEyesEyepatchHudChemicalFlipped
-      - displayName: brute automender
-        validPrototypes:
-          - AutoMenderBrute
-          - AutoMenderBruteFilled
-      - displayName: appraisal tool
-        validPrototypes:
-          - AppraisalTool
-          - GoldenAppraisalTool
-      - displayName: butcher's cleaver
-        validPrototypes:
-          - ButchCleaver
-      - displayName: health analyzer
-        validPrototypes:
-          - HandheldHealthAnalyzer
+    syndicateResearchSpecifiers:
+      - SyndicateResearchSpecifierJetInjector
+      - SyndicateResearchSpecifierDropper
+      - SyndicateResearchSpecifierBrutepack
+      - SyndicateResearchSpecifierClothingEyesGlassesChemical
+      - SyndicateResearchSpecifierAutoMenderBrute
+      - SyndicateResearchSpecifierAppraisalTool
+      - SyndicateResearchSpecifierButchCleaver
+      - SyndicateResearchSpecifierHandheldHealthAnalyzer
     researchUnlockId: UplinkGlovesKnuckleDustersStimulant
     researchAnnouncementString: research-announcement-gloves-knuckle-dusters-stimulant
 

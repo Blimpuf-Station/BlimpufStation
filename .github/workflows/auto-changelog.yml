@@ -3,8 +3,8 @@ name: Update Changelog
 on:
   push:
     branches:
-      - Starlight
-      - starlight-dev
+      - blimpuf-live
+      - blimpuf-dev
 
 
 permissions:
@@ -53,6 +53,7 @@ jobs:
         uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          result-encoding: string
           script: |
             const pr = await github.rest.repos.listPullRequestsAssociatedWithCommit({
               owner: context.repo.owner,

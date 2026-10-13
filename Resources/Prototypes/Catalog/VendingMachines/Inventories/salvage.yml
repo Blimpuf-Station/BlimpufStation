@@ -12,6 +12,8 @@
     RadioHandheldExpedition: 5 #starlight
     WeaponGrapplingGun: 5
     WeaponProtoKineticAccelerator: 5 # starlight end
+    WeaponProtoKineticBlaster: 4 # Blimpuf
+    WeaponProtoKineticRailgun: 2 # Blimpuf
   contrabandInventory:
     PlushieCarp: 1
   emaggedInventory: # Blimpuf

@@ -1,0 +1,10 @@
+- type: entity
+  parent: [BaseThiefStealObjective, BaseThiefCommandStealObjective]
+  id: HOPSoftSuitStealObjective
+  components:
+  - type: NotJobRequirement
+    jobs: [ HeadOfPersonnel ]
+  - type: StealCondition
+    stealGroup: HOPSoftSuit
+  - type: Objective
+    difficulty: 1.3

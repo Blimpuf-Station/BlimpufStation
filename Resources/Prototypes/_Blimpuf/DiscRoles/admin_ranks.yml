@@ -3,24 +3,30 @@
   ranks:
     - name: Director
       roles:
-        - 1499230491943895110 # Blimpuf Directors
+      - 1499230491943895110 # Blimpuf Directors
       flags: [ADMIN, BAN, DEBUG, FUN, PERMISSIONS, SERVER, SPAWN, VAREDIT, MAPPING, LOGS, ROUND, QUERY, ADMINHELP, VIEWNOTES, EDITNOTES, MASSBAN, STEALTH, ADMINCHAT, PII, MODERATOR, ADMINWHO, DANGER, HOST, NAMECOLOR]
       oocColor: "#cc87f0"
 
     - name: Maintainer
       roles:
-        - 1535727158977105921 # Blimpuf Maintainers
+      - 1535727158977105921 # Blimpuf Maintainers
+      flags: [ADMIN, BAN, DEBUG, FUN, SERVER, SPAWN, VAREDIT, MAPPING, LOGS, ROUND, QUERY, ADMINHELP, VIEWNOTES, EDITNOTES, STEALTH, ADMINCHAT, MODERATOR, ADMINWHO, DANGER, HOST]
+      oocColor: "#f2a3ef"
+
+    - name: Loremaster
+      roles:
+      - 1505338987295019204 # Blimpuf Loremasters
       flags: [ADMIN, BAN, DEBUG, FUN, SERVER, SPAWN, VAREDIT, MAPPING, LOGS, ROUND, QUERY, ADMINHELP, VIEWNOTES, EDITNOTES, STEALTH, ADMINCHAT, MODERATOR, ADMINWHO]
-      oocColor: "#965f7f"
+      oocColor: "#5a55e0"
 
     - name: Game Admin
       roles:
-        - 1500725068937040013 # Blimpuf Staff
-      flags: [ADMIN, BAN, DEBUG, FUN, SERVER, SPAWN, VAREDIT, LOGS, ROUND, QUERY, ADMINHELP, VIEWNOTES, EDITNOTES, ADMINCHAT, MODERATOR, ADMINWHO]
+      - 1500725068937040013 # Blimpuf Staff
+      flags: [ADMIN, BAN, DEBUG, FUN, SERVER, SPAWN, VAREDIT, MAPPING, LOGS, ROUND, QUERY, ADMINHELP, VIEWNOTES, EDITNOTES, ADMINCHAT, MODERATOR, ADMINWHO]
       oocColor: "#f1c40f"
 
     - name: Trial Game Admin
       roles:
-        - 1526335907219640490 # Blimpuf Trial Admin
+      - 1526335907219640490 # Blimpuf Trial Admin
       flags: [ADMIN, BAN, DEBUG, SERVER, LOGS, ADMINHELP, VIEWNOTES, EDITNOTES, ADMINCHAT, ADMINWHO]
       oocColor: "#ddce93"

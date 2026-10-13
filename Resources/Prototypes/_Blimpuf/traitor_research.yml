@@ -1,0 +1,898 @@
+﻿## ALPHABETIZE THIS BY ID
+## HARD ENOUGH SEARCHING THROUGH THIS FILE AS IT STANDS
+## I WILL METAGRUDGE YOU IF YOU DONT
+## TRY ME /EVIL
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierAccessConfigurator
+  displayName: access configurator
+  validPrototypes:
+    - AccessConfigurator
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierAnimalCube
+  displayName: animal cube
+  validPrototypes:
+    - MonkeyCubeWrapped
+    - MonkeyCube
+    - KoboldCubeWrapped
+    - KoboldCube
+    - CowCube
+    - GoatCube
+    - MothroachCube
+    - MoproachCube
+    - MouseCube
+    - CockroachCube
+    - SpaceCarpCube
+    - SpaceTickCube
+    - AbominationCube
+    - ScurretCube
+    - CCMoproachCube
+    - SyndicateSpongeWrapped
+    - SyndicateSponge
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierAnomalyCore
+  displayName: volatile anomaly core
+  validPrototypes:
+    - AnomalyCorePyroclastic
+    - AnomalyCoreGravity
+    - AnomalyCoreIce
+    - AnomalyCoreFlesh
+    - AnomalyCoreRock
+    - AnomalyCoreLiquid
+    - AnomalyCoreBluespace
+    - AnomalyCoreElectricity
+    - AnomalyCoreFlora
+    - AnomalyCoreShadow
+    - AnomalyCoreTech
+    - AnomalyCoreSanta
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierAntiPoisonMedipen
+  displayName: poison auto-injector
+  validPrototypes:
+    - AntiPoisonMedipen
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierAPCSMESSubstationElectronics
+  displayName: APC/substation/SMES electronics
+  validPrototypes:
+    - APCElectronics
+    - APCAdvancedElectronics
+    - SubstationMachineCircuitboard
+    - WallmountSubstationElectronics
+    - SMESMachineCircuitboard
+    - SMESAdvancedMachineCircuitboard
+    - SMESHyperAdvancedMachineCircuitboard
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierAppraisalTool
+  displayName: appraisal tool
+  validPrototypes:
+    - AppraisalTool
+    - GoldenAppraisalTool
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierArtifactCrusherMachineCircuitboard
+  displayName: artifact crusher machine board
+  validPrototypes:
+    - ArtifactCrusherMachineCircuitboard
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierAutoMenderBrute
+  displayName: brute automender
+  validPrototypes:
+    - AutoMenderBrute
+    - AutoMenderBruteFilled
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierBaseBallBat
+  displayName: baseball bat
+  validPrototypes:
+    - BaseBallBat
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierBluespaceCrystal
+  displayName: bluespace crystal
+  validPrototypes:
+    - BluespaceCrystal
+    - BluespaceCrystal1
+    - BluespaceCrystal3
+    - BluespaceCrystal5
+    - ArtificialBluespaceCrystal
+    - ArtificialBluespaceCrystal1
+    - ArtificialBluespaceCrystal5
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierBrutepack
+  displayName: bruise pack
+  validPrototypes:
+    - Brutepack
+    - Brutepack1
+    - SyndicateBrutePack
+    - SyndicateBrutePack1
+    - GoldBrutePack
+    - GoldBrutePack1
+    - RedBruizPack
+    - RedBrutePack1
+    - RedBrutePack10
+    - RedBrutePack
+    - Bluebrutepack1
+    - Bluebrutepack10
+    - Bluebrutepack20
+    - DeforestBrutePack1
+    - DeforestBrutePack
+    - RedBruizPack1
+    - RedBruizPack10
+    - RedLacePack1
+    - RedLacePack10
+    - RedPunctPack1
+    - RedPunctPack10
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierButchCleaver
+  displayName: butcher's cleaver
+  validPrototypes:
+    - ButchCleaver
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierCargoIDCard
+  displayName: cargo department ID
+  validPrototypes:
+    - CargoIDCard
+    - MailTechIDCard
+    - MiningIDCard
+    - SalvageLeadIDCard
+    - SalvageIDCard
+    - QuartermasterIDCard
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierCautery
+  displayName: cautery
+  validPrototypes:
+    - Cautery
+    - CauteryCyber
+    - CauteryRipper
+    - CauteryAbductor
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierChemDispenserCircuitboard
+  displayName: chem dispenser machine board
+  validPrototypes:
+    - ChemDispenserMachineCircuitboard
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierChemMasterMachineCircuitboard
+  displayName: chemmaster 4000 machine board
+  validPrototypes:
+    - ChemMasterMachineCircuitboard
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierClothingEyesGlassesChemical
+  displayName: chemical analysis goggles
+  validPrototypes:
+    - ClothingEyesGlassesChemical
+    - ClothingEyesHudChemical
+    - ClothingEyeGlassesChemicalPrescription
+    - ClothingEyesGlassesJensenChemical
+    - ClothingEyesEyepatchHudChemical
+    - ClothingEyesEyepatchHudChemicalFlipped
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierClothingEyesGlassesMeson
+  displayName: engineering goggles
+  validPrototypes:
+    - ClothingEyesGlassesMeson
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierClothingEyesHudDiagnostic
+  displayName: diagnostic hud
+  validPrototypes:
+    - ClothingEyesHudDiagnostic
+    - ClothingEyesEyepatchHudDiag
+    - ClothingEyesEyepatchHudDiagFlipped
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierClothingEyesHudMedical
+  displayName: medical hud
+  validPrototypes:
+    - ClothingEyesHudMedical
+    - ClothingEyesEyepatchHudMedical
+    - ClothingEyesEyepatchHudMedicalFlipped
+    - ClothingEyeGlassesMedicalPrescription
+    - ClothingEyesHudMedSec
+    - ClothingEyesGlassesBrigmedicPrescription
+    - ClothingEyesGlassesBrigmedic
+    - ClothingEyesHudBrigmedic
+    - ClothingEyesEyepatchHudBrigmedic
+    - ClothingEyesEyepatchHudBrigmedicFlipped
+    - ClothingEyesHudCorpsman
+    - ClothingEyesHudBlueShield
+    - ClothingEyesEyepatchHudBlueShieldFlipped
+    - ClothingEyesEyepatchHudBlueShield
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierClothingEyesHudSecurity
+  displayName: security hud
+  validPrototypes:
+    - ClothingEyesGlassesSecurity
+    - ClothingEyesHudSecurity
+    - ClothingEyesEyepatchHudSecurity
+    - ClothingEyesEyepatchHudSecurityFlipped
+    - ClothingEyeGlassesSecurityPrescription
+    - ClothingEyesHudMedSec
+    - ClothingEyesGlassesBrigmedicPrescription
+    - ClothingEyesGlassesBrigmedic
+    - ClothingEyesHudBrigmedic
+    - ClothingEyesEyepatchHudBrigmedic
+    - ClothingEyesEyepatchHudBrigmedicFlipped
+    - ClothingEyesHudCorpsman
+    - ClothingEyesHudBlueShield
+    - ClothingEyesEyepatchHudBlueShieldFlipped
+    - ClothingEyesEyepatchHudBlueShield
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierClothingHandsGlovesCombat
+  displayName: combat gloves
+  validPrototypes:
+    - ClothingHandsGlovesCombat
+    - ClothingHandsMercGlovesCombat
+    - ClothingHandsSalvageMercGlovesCombat
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierClothingHandsGlovesColorYellow
+  displayName: insulated gloves
+  validPrototypes:
+    - ClothingHandsGlovesColorYellow
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierClothingOuterArmor
+  displayName: armor vest
+  validPrototypes:
+    - ClothingOuterArmorBasic
+    - ClothingOuterArmorBasicSlim
+    - ClothingOuterVestDetective
+    - ClothingOuterArmorBulletproof
+    - ClothingOuterArmorBlueShield
+    - ClothingOuterArmorReflective
+    - ClothingOuterArmorCaptainCarapace
+    - ClothingOuterArmorPlate
+    - ClothingOuterPressArmor
+    - ClothingOuterArmorSovietPlate
+    - ClothingOuterArmorStab
+    - ClothingOuterCoatWarden
+    - ClothingOuterCoatHoSTrench
+    - ClothingOuterCoatDetectiveLoadoutGrey
+    - ClothingOuterCoatDetectiveLoadout
+    - ClothingOuterCoatDetective
+    - ClothingOuterVestWeb
+    - ClothingOuterVestWebElite
+    - ClothingOuterVestWebEliteFilledMAA
+    - ClothingOuterVestWebEliteCentcomm
+    - ClothingOuterVestWebMerc
+    - ClothingOuterVestWebSalvageMerc
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierClothingOuterArmorImprovised
+  displayName: improvised vest
+  validPrototypes:
+    - ClothingOuterArmorImprovised
+    - ClothingOuterArmorScrap
+    - ClothingOuterArmorMakeshift
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierClothingOuterSuitAtmosFire
+  displayName: atmos fire suit
+  validPrototypes:
+    - ClothingOuterSuitAtmosFire
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierClothingShoesBootsCombat
+  displayName: security-grade boots
+  validPrototypes:
+    - ClothingShoesBootsJack
+    - ClothingShoesBootsJackFilled
+    - ClothingShoesBootsCombat
+    - ClothingShoesBootsCombatFilled
+    - ClothingShoesBootsSyndieFilled
+    - ClothingShoesBootsWinterSecFilled
+    - ClothingShoesBootsWinterSec
+    - ClothingShoesBootsMercFilled
+    - ClothingShoesBootsMerc
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierClothingShoesBootsJump
+  displayName: jump boots
+  validPrototypes:
+    - ClothingShoesBootsJump
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierClothingShoesBootsMagboots
+  displayName: magboots
+  validPrototypes:
+    - ClothingShoesBootsMagSci
+    - ClothingShoesBootsMag
+    - ClothingShoesBootsMagSec
+    - ClothingShoesBootsMagBSO
+    - ClothingShoesBootsMagSyndie
+    - ClothingShoesBootsMagERT
+    - ClothingShoesBootsMagGreenshield
+    - ClothingShoesBootsMagBlinding
+    - ClothingShoesBootsMagMedTak
+    - ClothingShoesBootsMagSyndieAdvanced
+    - ClothingShoesBootsMagAdv
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierClothingShoesBootsMoon
+  displayName: moon boots
+  validPrototypes:
+    - ClothingShoesBootsMoon
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierCoolingUnit
+  displayName: portable cooling unit
+  validPrototypes:
+    - CoolingUnit
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierDefibrillator
+  displayName: defibrillator
+  validPrototypes:
+    - BaseDefibrillator
+    - Defibrillator
+    - DefibrillatorEmpty
+    - DefibrillatorOneHandedUnpowered
+    - DefibrillatorCompact
+    - DefibrillatorSyndicate
+    - DefibrillatorSyndicateOneHandedUnpowered
+    - DefibrillatorBrigmedical
+    - DefibrillatorParamed
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierDoorElectronics
+  displayName: NT/CC door electronics
+  validPrototypes:
+    - DoorElectronics
+    - DoorElectronicsCaptain
+    - DoorElectronicsHeadOfPersonnel
+    - DoorElectronicsCommand
+    - DoorElectronicsBar
+    - DoorElectronicsBarKitchen
+    - DoorElectronicsHydroponics
+    - DoorElectronicsChapel
+    - DoorElectronicsTheatre
+    - DoorElectronicsKitchen
+    - DoorElectronicsKitchenHydroponics
+    - DoorElectronicsJanitor
+    - DoorElectronicsInternalAffairs
+    - DoorElectronicsService
+    - DoorElectronicsServiceTheatre
+    - DoorElectronicsQuartermaster
+    - DoorElectronicsSalvage
+    - DoorElectronicsCargo
+    - DoorElectronicsChiefEngineer
+    - DoorElectronicsAtmospherics
+    - DoorElectronicsEngineering
+    - DoorElectronicsMorgue
+    - DoorElectronicsResearchDirector
+    - DoorElectronicsMedicalResearch
+    - DoorElectronicsResearch
+    - DoorElectronicsHeadOfSecurity
+    - DoorElectronicsArmory
+    - DoorElectronicsDetective
+    - DoorElectronicsSecurity
+    - DoorElectronicsSecurityInternalAffairs
+    - DoorElectronicsBrig
+    - DoorElectronicsChiefMedicalOfficer
+    - DoorElectronicsChemistry
+    - DoorElectronicsMedical
+    - DoorElectronicsCentralCommand
+    - DoorElectronicsExternal
+    - DoorElectronicsMaintenance
+    - DoorElectronicsVault
+    - DoorElectronicsNtrep
+    - DoorElectronicsRobotics
+    - DoorElectronicsSurgery
+    - DoorElectronicsParamedic
+    - DoorElectronicsMining
+    - DoorElectronicsSalvageMining
+    - DoorElectronicsMail
+    - DoorElectronicsLegal
+    - DoorElectronicsCourtroom
+    - DoorElectronicsAttorney
+    - DoorElectronicsBrigmed
+    - DoorElectronicsBrigmedPara
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierDropper
+  displayName: dropper
+  validPrototypes:
+    - Dropper
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierFireAxe
+  displayName: fireaxe
+  validPrototypes:
+    - FireAxe
+    - FireAxeFlaming
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierFireBomb
+  displayName: fire bomb
+  validPrototypes:
+    - FireBomb
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierFireExtinguisher
+  displayName: fire extinguisher
+  validPrototypes:
+    - FireExtinguisher
+    - FireExtinguisherMini
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierFlash
+  displayName: flash
+  validPrototypes:
+    - Flash
+    - SciFlash
+    - Flash4Use
+    - Flash3Use
+    - Flash1Use
+    - Flash0Use
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierFlatpackerMachineCircuitboard
+  displayName: flatpacker 1001 machine board
+  validPrototypes:
+    - FlatpackerMachineCircuitboard
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecififierForensicScanner
+  displayName: forensic scanner
+  validPrototypes:
+    - ForensicScanner
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierFultonBeacon
+  displayName: fulton beacon
+  validPrototypes:
+    - FultonBeacon
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierGavelHammer
+  displayName: gavel hammer
+  validPrototypes:
+    - GavelHammer
+    - HeavyGavelHammer
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierGyroscopeMachineCircuitboard
+  displayName: gyroscope machine board
+  validPrototypes:
+    - GyroscopeMachineCircuitboard
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierHandheldGPSBasic
+  displayName: global positioning system
+  validPrototypes:
+    - HandheldGPSBasic
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierHandheldHealthAnalyzer
+  displayName: health analyzer
+  validPrototypes:
+    - HandheldHealthAnalyzer
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierHandheldMassScanner
+  displayName: handheld mass scanner
+  validPrototypes:
+    - HandHeldMassScanner
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierHydroponicsToolScythe
+  displayName: scythe
+  validPrototypes:
+    - HydroponicsToolScythe
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierIDComputerCircuitboard
+  displayName: ID card computer board
+  validPrototypes:
+    - IDComputerCircuitboard
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierImplanter
+  displayName: implant extractor
+  validPrototypes:
+    - Implanter
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierIngotGold
+  displayName: gold
+  validPrototypes:
+    - IngotGold
+    - IngotGold1
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierIngotSilver
+  displayName: silver
+  validPrototypes:
+    - IngotSilver
+    - IngotSilver1
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierJawsOfLife
+  displayName: jaws of life
+  validPrototypes:
+    - JawsOfLife
+    - JawsOfLifeMed
+    - JawsOfLifeCyber
+    - SyndicateJawsOfLife
+    - SyndicateJawsOfLifeStealth
+    - PrototypeJawsOfLife
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierJetInjector
+  displayName: jet injector
+  validPrototypes:
+    - JetInjector
+    - AdvancedJetInjector
+    - TacticalJetInjector
+    - DeforestJetInjector
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierJetpack
+  displayName: jetpack
+  validPrototypes:
+    - JetpackBlue
+    - JetpackBlueFilled
+    - JetpackBlack
+    - JetpackBlackFilled
+    - JetpackVoid
+    - JetpackVoidFilled
+    - JetpackMini
+    - JetpackMiniFilled
+    - JetpackVoidEngineer
+    - JetpackVoidEngineerFilled
+    - JetpackCaptain
+    - JetpackCaptainFilled
+    - JetpackSecurity
+    - JetpackSecurityFilled
+    - JetpackVoid
+    - JetpackVoidFilled
+    - JetpackSSFMarine
+    - JetpackSSFMarineFilled
+    - JetpackImprovised
+    - JetpackImprovisedFilled
+    - JetpackSpeedster
+    - JetpackSpeedsterFilled
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierKnife
+  displayName: knife
+  validPrototypes:
+    - KitchenKnife
+    - CombatKnife
+    - SurvivalKnife
+    - RescueKnife
+    - KukriKnife
+    - UtilityKnife
+    - ThrowingKnife
+    - WeaponMeleeBoxcutter
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierMailingUnitElectronics
+  displayName: mailing unit electronics
+  validPrototypes:
+    - MailingUnitElectronics
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierMaterialBiomass
+  displayName: biomass
+  validPrototypes:
+    - MaterialBiomass
+    - MaterialBiomass1
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierMaterialCloth
+  displayName: cloth
+  validPrototypes:
+    - MaterialCloth
+    - MaterialCloth10
+    - MaterialCloth1
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierMaterialGunpowder
+  displayName: gunpowder
+  validPrototypes:
+    - MaterialGunpowder
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierMechAirTank
+  displayName: exosuit air tank
+  validPrototypes:
+    - MechAirTank
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierMechEquipmentGrabber
+  displayName: hydraulic clamp
+  validPrototypes:
+    - MechEquipmentGrabber
+    - MechEquipmentGrabberSmall
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierMechThruster
+  displayName: exosuit thruster
+  validPrototypes:
+    - MechThruster
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierModularGrenadePayload
+  displayName: modular grenade payload
+  validPrototypes:
+    - ExplosivePayload
+    - FlashPayload
+    - ChemicalPayload
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierMultitool
+  displayName: multitool
+  validPrototypes:
+    - Multitool
+    - MultitoolAbductor
+    - MultitoolImprovised
+    - Mooltitool
+    - MultitoolInvisible
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierNodeScanner
+  displayName: node scanner
+  validPrototypes:
+    - NodeScanner
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierPickaxe
+  displayName: pickaxe
+  validPrototypes:
+    - Pickaxe
+    - PickaxeDiamond
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierPlasmaTank
+  displayName: plasma tank
+  validPrototypes:
+    - PlasmaTank
+    - PlasmaTankFilled
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierPowerCell
+  displayName: power cell
+  validPrototypes:
+    - PowerCellSmall
+    - PowerCellMedium
+    - PowerCellHigh
+    - PowerCellHyper
+    - PowerCellMicroreactor
+    - PowerCellSmallNuclear
+    - PowerCellAntiqueProto
+    - PowerCellSmallPrinted
+    - PowerCellMediumPrinted
+    - PowerCellHighPrinted
+    - PowerCellHyperPrinted
+    - PowerCellMicroreactorPrinted
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierPowerDrill
+  displayName: power cell
+  validPrototypes:
+    - PowerDrill
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierProximitySensor
+  displayName: proximity sensor
+  validPrototypes:
+    - ProximitySensor
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierRCD
+  displayName: RCD
+  validPrototypes:
+    - RCD
+    - RCDEmpty
+    - RCDChiefEngineer
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierRifleStock
+  displayName: rifle stock
+  validPrototypes:
+    - RifleStock
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierSawElectric
+  displayName: circular saw
+  validPrototypes:
+    - SawElectric
+    - SawRipper
+    - SawCyber
+    - SawAdvanced
+    - SawAbductor
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierScalpel
+  displayName: scalpel
+  validPrototypes:
+    - Scalpel
+    - ScalpelRipper
+    - ScalpelLaser
+    - ScalpelAdvanced
+    - ScalpelCyber
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierSeismicCharge
+  displayName: seismic charge
+  validPrototypes:
+    - SeismicCharge
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierSheetPlasteel
+  displayName: uranium
+  validPrototypes:
+    - SheetPlasteel
+    - SheetPlasteel1
+    - SheetPlasteel10
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierSheetUranium
+  displayName: uranium
+  validPrototypes:
+    - SheetUranium
+    - SheetUranium1
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierShellShotgun
+  displayName: 12 guage shotgun shell
+  validPrototypes:
+    - ShellShotgunBeanbag
+    - ShellShotgunSlug
+    - ShellShotgunFlare
+    - ShellShotgun
+    - ShellShotgunIncendiary
+    - ShellShotgunPractice
+    - ShellShotgunImprovised
+    - ShellShotgunUranium
+    - ShellShotgunBirdshot
+    - ShellShotgunBreaching
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierSignalTrigger
+  displayName: signal trigger
+  validPrototypes:
+    - SignalTrigger
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierSpearPlasma
+  displayName: plasma spear
+  validPrototypes:
+    - SpearPlasma
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierSprayPainter
+  displayName: spray painter
+  validPrototypes:
+    - SprayPainter
+    - SprayPainterEmpty
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierStationAiCircuitboard
+  displayName: station AI-related console board
+  validPrototypes:
+    - StationAiUploadCircuitboard
+    - StationAiFixerCircuitboard
+    - RoboticsConsoleCircuitboard
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierStunBaton
+  displayName: stun baton
+  validPrototypes:
+    - Stunbaton
+    - EnforcerStunbaton
+    - DoubleStunbaton
+    - PurpleStunbaton
+    - ClothingHandsKnuckleDustersStun
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierSyndicateIDCard
+  displayName: syndicate ID card
+  validPrototypes:
+    - SyndicateIDCard
+    - SyndicateFootsoldierIDCard
+    - SyndicateAgentIDCard
+    - SyndiCommanderIDCard
+    - CommanderIDCard
+    - SyndiCorpsmanIDCard
+    - OperativeIDCard
+    - SyndiOperativeIDCard
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierTankInternals
+  displayName: large internals tank
+  validPrototypes:
+    - OxygenTank
+    - OxygenTankFilled
+    - NitrogenTank
+    - NitrogenTankFilled
+    - AirTank
+    - AirTankFilled
+    - NitrousOxideTank
+    - NitrousOxideTankFilled
+    - HealiumTankEmpty
+    - HealiumTankFilled
+    - ZXATankEmpty
+    - ZXATankFilled
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierTelecomServerCircuitboard
+  displayName: telecommunications server machine board
+  validPrototypes:
+    - TelecomServerCircuitboard
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierThrusterMachineCircuitboard
+  displayName: thruster machine board
+  validPrototypes:
+    - ThrusterMachineCircuitboard
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierTorch
+  displayName: torch
+  validPrototypes:
+    - Torch
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierTurboItemRechargerCircuitboard
+  displayName: turbo recharger machine board
+  validPrototypes:
+    - TurboItemRechargerCircuitboard
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierVendingMachineTankDispenserEVACircuitboard
+  displayName: gas tank dispenser circuitboard
+  validPrototypes:
+    - VendingMachineTankDispenserEVACircuitboard
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierWeaponDisabler
+  displayName: disabler
+  validPrototypes:
+    - WeaponDisabler
+    - WeaponDisablerSMG
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierWeaponLaserSvalinn
+  displayName: svalinn laser pistol
+  validPrototypes:
+    - WeaponLaserSvalinn
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierWireBrush
+  displayName: wire brush
+  validPrototypes:
+    - WireBrush
+    - WireBrushElectrical
+
+- type: SyndicateResearchSpecifier
+  id: SyndicateResearchSpecifierWelder
+  displayName: welding tool
+  validPrototypes:
+    - Welder
+    - WelderCyber
+    - WelderExperimental
+    - WelderMini
+    - WelderIndustrial
+    - WelderIndustrialAdvanced
+    - WelderAbductor
+    - Cowelder
+    - WelderInvisible
+    - RefuelingWelder

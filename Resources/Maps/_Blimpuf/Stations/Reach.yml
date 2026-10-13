@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 19:12:33
-  entityCount: 3478
+  entityCount: 3476
 maps:
 - 1
 grids:
@@ -10322,13 +10322,6 @@ entities:
     - type: Transform
       pos: -16.563213,2.6005049
       parent: 2
-- proto: FlippoEngravedLighter
-  entities:
-  - uid: 1494
-    components:
-    - type: Transform
-      pos: 26.017355,2.4964807
-      parent: 2
 - proto: FloorDrain
   entities:
   - uid: 1495
@@ -15374,14 +15367,6 @@ entities:
     - type: Transform
       pos: 17.5,0.5
       parent: 2
-- proto: HoPIDCard
-  entities:
-  - uid: 2199
-    components:
-    - type: Transform
-      parent: 2198
-    - type: Physics
-      canCollide: False
 - proto: HospitalCurtainsOpen
   entities:
   - uid: 2200
@@ -19797,11 +19782,6 @@ entities:
     - type: Transform
       pos: 19.5,-4.5
       parent: 2
-  - uid: 2811
-    components:
-    - type: Transform
-      pos: 26.5,2.5
-      parent: 2
   - uid: 2812
     components:
     - type: Transform
@@ -19970,23 +19950,6 @@ entities:
       parent: 2
 - proto: ToolboxEmergencyFilled
   entities:
-  - uid: 2198
-    components:
-    - type: Transform
-      pos: 26.506453,2.5815358
-      parent: 2
-    - type: Storage
-      storedItems:
-        2199:
-          position: 0,0
-          _rotation: East
-    - type: ContainerContainer
-      containers:
-        storagebase: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 2199
   - uid: 2839
     components:
     - type: Transform
@@ -23578,4 +23541,20 @@ entities:
     - type: Transform
       pos: 10.5,11.5
       parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 3490
+    components:
+    - type: Transform
+      pos: 26.5,2.5
+      parent: 2
+      rot: 4.71238898038469 rad
+- proto: FlippoEngravedLighter
+  entities:
+  - uid: 3491
+    components:
+    - type: Transform
+      pos: 25.5,2.5
+      parent: 2
+      rot: 4.71238898038469 rad
 ...

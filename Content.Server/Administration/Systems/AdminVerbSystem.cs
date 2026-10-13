@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Server._Starlight.Samurai;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Administration.UI;
@@ -10,6 +11,7 @@ using Content.Server.Prayer;
 using Content.Server.Preferences.Managers;
 using Content.Server.Silicons.Laws;
 using Content.Server.Station.Systems;
+using Content.Shared._Starlight.Samurai;
 using Content.Shared.Administration;
 using Content.Shared.Administration.Systems;
 using Content.Shared.Chemistry.Components.SolutionManager;
@@ -80,7 +82,8 @@ namespace Content.Server.Administration.Systems
         [Dependency] private SiliconLawSystem _siliconLawSystem = default!;
         [Dependency] private SharedHumanoidAppearanceSystem _humanoidAppearance = default!;
         [Dependency] private IServerPreferencesManager _prefsManager = default!;
-        [Dependency] private ThavenMoodsSystem _moods = default!; //Starlight
+        [Dependency] private ThavenMoodsSystem _moods = default!;
+        [Dependency] private SamuraiCodesSystem _codes = default!;
         [Dependency] private TraitSystem _traitSystem = default!; //Starlight
         [Dependency] private SLSharedCharacterInfoSystem _sLSharedCharacterInfoSystem = default!; //Starlight
         [Dependency] private TagSystem _tag = default!; //Starlight
@@ -456,6 +459,29 @@ namespace Content.Server.Administration.Systems
 
                             _euiManager.OpenEui(ui, session);
                             ui.UpdateMoods((args.Target, moods));
+                        },
+                        Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Actions/actions_borg.rsi"), "state-laws"),
+                    });
+                }
+                #endregion
+                // End Impstation Additions
+
+                #region Starlight Samurai
+                // Begin Blimpuf Additions
+                if (TryComp<SamuraiCodesComponent>(args.Target, out var codes))
+                {
+                    args.Verbs.Add(new Verb()
+                    {
+                        Text = Loc.GetString("samurai-codes-ui-verb"),
+                        Category = VerbCategory.Admin,
+                        Act = () =>
+                        {
+                            var ui = new SamuraiCodesEui(_codes, EntityManager, _adminManager);
+                            if (!_playerManager.TryGetSessionByEntity(args.User, out var session))
+                                return;
+
+                            _euiManager.OpenEui(ui, session);
+                            ui.UpdateCodes((args.Target, codes));
                         },
                         Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Actions/actions_borg.rsi"), "state-laws"),
                     });

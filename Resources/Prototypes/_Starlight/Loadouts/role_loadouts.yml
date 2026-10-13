@@ -330,6 +330,14 @@
   - GroupSpeciesBreathTool
   - GroupTankHarness
 
+- type: roleLoadout
+  id: AntagSamurai
+  groups:
+    - NeocyteCybernetics
+    - SurvivalExtended
+    - GroupSpeciesBreathTool
+    - GroupTankHarness
+
 # Wizard duelist from Moff Station. Placed here instead of in Moff's files since they're not a free agent here.
 - type: roleLoadout
   id: RoleSurvivalWizardDuelist

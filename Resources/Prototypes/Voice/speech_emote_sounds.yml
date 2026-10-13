@@ -218,6 +218,18 @@
   sounds:
     Squish:
       collection: Squishes
+    # Funky start
+    Bubble:
+      collection: Bubbles
+    Pop:
+      collection: Pops
+    Slosh:
+      collection: Sloshes
+    Fizz:
+      collection: Fizzes
+    Wobble:
+      collection: Wobbles
+    # Funky end
     Scream:
       collection: MaleScreams
     Laugh:
@@ -268,12 +280,6 @@
     Whine:
       collection: Whine
     #endregion Afterlight
-    #region Starlight
-    Bubble:
-      collection: Bubbles
-    Pop:
-      collection: Pops
-    #endregion Starlight
   params:
     variation: 0.125
 
@@ -282,6 +288,18 @@
   sounds:
     Squish:
       collection: Squishes
+# Funky start
+    Bubble:
+      collection: Bubbles
+    Pop:
+      collection: Pops
+    Slosh:
+      collection: Sloshes
+    Fizz:
+      collection: Fizzes
+    Wobble:
+      collection: Wobbles
+# Funky end
     Scream:
       collection: FemaleScreams
     Laugh:
@@ -332,12 +350,6 @@
     Whine:
       collection: Whine
     #endregion Afterlight
-    #region Starlight
-    Bubble:
-      collection: Bubbles
-    Pop:
-      collection: Pops
-    #endregion Starlight
   params:
     variation: 0.125
 

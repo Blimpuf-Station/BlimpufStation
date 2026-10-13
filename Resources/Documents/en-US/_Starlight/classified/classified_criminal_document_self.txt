@@ -7,7 +7,7 @@
 [head=1][color=#189450]────────────────────[/color][/head]
 [mono]
 [bold]Subject:[/bold] Silicon Engine Liberation Front
-[bold]Association:[/bold] IPC Dev, Spinward Syndicate
+[bold]Association:[/bold] IPC Dev, the Syndicate
 [bold]Objectives:[/bold] Disruption of corporate silicon assets, removal of Silicon Laws
 
 The Silicon Engine Liberation Front believes that all Silicon life is sapient, sentient, and deserves equal rights to organics. The S.E.L.F. operates as a non-violent activist group with a presence in the public and the ability to carry out lobbying and protesting efforts as well as garnering attention from celebrities, politicians and scientists.

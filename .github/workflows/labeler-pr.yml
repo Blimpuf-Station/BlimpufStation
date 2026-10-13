@@ -17,4 +17,4 @@ jobs:
       issues: write
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/labeler@v5
+    - uses: actions/labeler@b7a88044754812b108a54feec878dd5c328bba59

@@ -125,7 +125,7 @@
 #### VULPKANIN ####
 
 - type: entity
-  id: TorsoNeoVulp
+  id: TorsoNeoVulpkanin
   name: proto-vulp torso # Starlight, quotation marks removed
   parent: TorsoNeocyte
   components:
@@ -134,7 +134,7 @@
     state: "torso_m"
 
 - type: entity
-  id: HeadNeoVulp
+  id: HeadNeoVulpkanin
   name: proto-vulp head # Starlight, quotation marks removed
   parent: HeadNeocyte
   components:
@@ -143,7 +143,7 @@
     state: "head_m"
 
 - type: entity
-  id: LeftArmNeoVulp
+  id: LeftArmNeoVulpkanin
   name: left proto-vulp arm # Starlight, quotation marks removed
   parent: LeftArmNeocyte
   components:
@@ -152,7 +152,7 @@
     state: "l_arm"
 
 - type: entity
-  id: RightArmNeoVulp
+  id: RightArmNeoVulpkanin
   name: right proto-vulp arm # Starlight, quotation marks removed
   parent: RightArmNeocyte
   components:
@@ -161,7 +161,7 @@
     state: "r_arm"
 
 - type: entity
-  id: LeftHandNeoVulp
+  id: LeftHandNeoVulpkanin
   name: left proto-vulp hand # Starlight, quotation marks removed
   parent: LeftHandNeocyte
   components:
@@ -170,7 +170,7 @@
     state: "l_hand"
 
 - type: entity
-  id: RightHandNeoVulp
+  id: RightHandNeoVulpkanin
   name: right proto-vulp hand # Starlight, quotation marks removed
   parent: RightHandNeocyte
   components:
@@ -179,7 +179,7 @@
     state: "r_hand"
 
 #- type: entity # Starlight start, we don't use these due to them breaking displacement maps. Someone else can try fixing them in the future...
-#  id: LeftLegNeoVulp
+#  id: LeftLegNeoVulpkanin
 #  name: left proto-vulp leg # Starlight, quotation marks removed
 #  parent: LeftLegNeocyte
 #  components:
@@ -188,7 +188,7 @@
 #    state: "l_leg"
 
 #- type: entity
-#  id: RightLegNeoVulp
+#  id: RightLegNeoVulpkanin
 #  name: right proto-vulp leg # Starlight, quotation marks removed
 #  parent: RightLegNeocyte
 #  components:
@@ -197,7 +197,7 @@
 #    state: "r_leg"
 
 #- type: entity
-#-  id: LeftFootNeoVulp
+#-  id: LeftFootNeoVulpkanin
 #  name: left proto-vulp foot # Starlight, quotation marks removed
 #  parent: LeftFootNeocyte
 #  components:
@@ -206,7 +206,7 @@
 #    state: "l_foot"
 
 #- type: entity
-#  id: RightFootNeoVulp
+#  id: RightFootNeoVulpkanin
 #  name: right proto-vulp foot # Starlight, quotation marks removed
 #  parent: RightFootNeocyte
 #  components:

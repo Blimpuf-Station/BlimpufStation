@@ -6,7 +6,7 @@
   requirements:
   - !type:DepartmentTimeRequirement
     department: Engineering
-    time: 15h # Starlight
+    time: 5h
   weight: 0 # Starlight
   startingGear: AtmosphericTechnicianGear
   icon: "JobIconAtmosphericTechnician"

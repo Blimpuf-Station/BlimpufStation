@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 19:28:02
-  entityCount: 25157
+  entityCount: 25153
 maps:
 - 1
 grids:
@@ -20045,11 +20045,6 @@ entities:
     components:
     - type: Transform
       pos: 21.5,55.5
-      parent: 2
-  - uid: 1264
-    components:
-    - type: Transform
-      pos: 54.5,14.5
       parent: 2
   - uid: 1265
     components:
@@ -151814,20 +151809,6 @@ entities:
     - type: Transform
       pos: 39.5,13.5
       parent: 2
-- proto: UniformPrinter
-  entities:
-  - uid: 21888
-    components:
-    - type: Transform
-      pos: 50.5,16.5
-      parent: 2
-    - type: TechnologyDatabase
-      supportedDisciplines:
-      - Industrial
-      - Arsenal
-      - Experimental
-      - CivilianServices
-      - Biochemical
 - proto: UprightPianoInstrument
   entities:
   - uid: 21889
@@ -168778,4 +168759,25 @@ entities:
       text: Cargo Break
     - type: WarpPoint
       location: Cargo Break
+- proto: UniformPrinter
+  entities:
+  - uid: 25282
+    components:
+    - type: Transform
+      pos: 54.5,14.5
+      parent: 2
+    - type: TechnologyDatabase
+      supportedDisciplines:
+      - Industrial
+      - Arsenal
+      - Experimental
+      - CivilianServices
+      - Biochemical
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 25283
+    components:
+    - type: Transform
+      pos: 50.5,16.5
+      parent: 2
 ...

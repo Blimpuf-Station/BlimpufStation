@@ -54,3 +54,33 @@
       amount: 2
     - id: JetpackSecurityFilled # because mapping them manually sucks
       amount: 2
+
+- type: entity
+  id: SuitStorageSamurai
+  parent: SuitStorageBase
+  suffix: Samurai
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        entity_storage: !type:NestedSelector
+          tableId: FillSamuraiStorageStandard
+
+- type: entityTable
+  id: FillSamuraiStorageStandard
+  table: !type:AllSelector
+    children:
+      - id: OxygenTankFilled
+      - id: NitrogenTankFilled
+      - id: CoolingUnit
+      - id: ClothingMaskBreath
+      - id: Katana
+      - !type:GroupSelector
+        children:
+          - id: ClothingOuterHardsuitSamurai
+            weight: 25
+          - id: ClothingOuterHardsuitBlueSamurai
+            weight: 25
+          - id: ClothingOuterHardsuitGreenSamurai
+            weight: 25
+          - id: ClothingOuterHardsuitPurpleSamurai
+            weight: 25

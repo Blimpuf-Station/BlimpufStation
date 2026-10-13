@@ -139,7 +139,7 @@
     - !type:SpeciesRequirement
       species:
         - Vulpkanin
-        - NeoVulp
+        - NeoVulpkanin
       inverted: true
     - !type:TraitsRequirement
       traits:

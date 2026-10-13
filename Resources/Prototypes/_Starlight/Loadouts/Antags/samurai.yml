@@ -1,0 +1,9 @@
+- type: loadout
+  id: SamuraiClothesBasic
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitKimono
+    shoes: ClothingShoesWizard
+    id: SamuraiPDA
+    ears: ClothingHeadsetFreelance
+    belt: SamuraiElectrodachiSheath
+    back: Katana

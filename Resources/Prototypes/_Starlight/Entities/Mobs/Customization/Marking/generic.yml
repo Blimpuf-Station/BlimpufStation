@@ -112,7 +112,7 @@
   id: ChestNecklace
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulp, Thaven, Elf, Neocyte]
+  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulpkanin, Thaven, Elf, Neocyte]
   forcedColoring: false
   followSkinColor: false
   coloring:
@@ -128,7 +128,7 @@
   id: ChestCutHere
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulp, Thaven, Elf, Neocyte]
+  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulpkanin, Thaven, Elf, Neocyte]
   coloring:
     default:
       type:
@@ -179,7 +179,7 @@
   id: HandBraceletLeft
   bodyPart: LHand
   markingCategory: Arms
-  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulp, Elf, Neocyte]
+  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulpkanin, Elf, Neocyte]
   forcedColoring: false
   followSkinColor: false
   coloring:
@@ -195,7 +195,7 @@
   id: HandBraceletRight
   bodyPart: RHand
   markingCategory: Arms
-  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulp, Elf, Neocyte]
+  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulpkanin, Elf, Neocyte]
   forcedColoring: false
   followSkinColor: false
   coloring:
@@ -211,7 +211,7 @@
   id: HandRingsLeft
   bodyPart: LHand
   markingCategory: Arms
-  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulp, Elf, Neocyte]
+  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulpkanin, Elf, Neocyte]
   forcedColoring: false
   followSkinColor: false
   coloring:
@@ -229,7 +229,7 @@
   id: HandRingsRight
   bodyPart: RHand
   markingCategory: Arms
-  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulp, Elf, Neocyte]
+  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulpkanin, Elf, Neocyte]
   forcedColoring: false
   followSkinColor: false
   coloring:
@@ -247,7 +247,7 @@
   id: ArmDollJointsTattooLeft
   bodyPart: LArm
   markingCategory: Arms
-  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulp, Elf, Neocyte]
+  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulpkanin, Elf, Neocyte]
   coloring:
     default:
       type:
@@ -261,7 +261,7 @@
   id: ArmDollJointsTattooRight
   bodyPart: RArm
   markingCategory: Arms
-  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulp, Elf, Neocyte]
+  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulpkanin, Elf, Neocyte]
   coloring:
     default:
       type:
@@ -275,7 +275,7 @@
   id: HandDollJointsTattooLeft
   bodyPart: LHand
   markingCategory: Arms
-  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulp, Elf, Neocyte]
+  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulpkanin, Elf, Neocyte]
   coloring:
     default:
       type:
@@ -289,7 +289,7 @@
   id: HandDollJointsTattooRight
   bodyPart: RHand
   markingCategory: Arms
-  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulp, Elf, Neocyte]
+  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulpkanin, Elf, Neocyte]
   coloring:
     default:
       type:
@@ -303,7 +303,7 @@
   id: ArmHeavyTattoosLeft
   bodyPart: LArm
   markingCategory: Arms
-  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulp, Elf, Neocyte]
+  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulpkanin, Elf, Neocyte]
   coloring:
     default:
       type:
@@ -319,7 +319,7 @@
   id: ArmHeavyTattoosRight
   bodyPart: RArm
   markingCategory: Arms
-  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulp, Elf, Neocyte]
+  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulpkanin, Elf, Neocyte]
   coloring:
     default:
       type:
@@ -335,7 +335,7 @@
   id: HandHeavyTattoosLeft
   bodyPart: LHand
   markingCategory: Arms
-  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulp, Elf, Neocyte]
+  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulpkanin, Elf, Neocyte]
   coloring:
     default:
       type:
@@ -351,7 +351,7 @@
   id: HandHeavyTattoosRight
   bodyPart: RHand
   markingCategory: Arms
-  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulp, Elf, Neocyte]
+  speciesRestriction: [Human, NeoHuman, Arachnid, NeoArachnid, SlimePerson, NeoSlimePerson, Reptilian, NeoReptilian, Vulpkanin, NeoVulpkanin, Elf, Neocyte]
   coloring:
     default:
       type:

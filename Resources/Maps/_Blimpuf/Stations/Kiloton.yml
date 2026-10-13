@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 22:24:28
-  entityCount: 41286
+  entityCount: 41287
 maps:
 - 1
 grids:
@@ -160830,11 +160830,6 @@ entities:
     - type: Transform
       pos: 8.5,-8.5
       parent: 2
-  - uid: 23729
-    components:
-    - type: Transform
-      pos: -12.5,-10.5
-      parent: 2
   - uid: 23730
     components:
     - type: Transform
@@ -161229,6 +161224,11 @@ entities:
     components:
     - type: Transform
       pos: -26.5,-26.5
+      parent: 2
+  - uid: 41380
+    components:
+    - type: Transform
+      pos: -9.5,-10.5
       parent: 2
 - proto: PottedPlantRandomPlastic
   entities:
@@ -256418,4 +256418,12 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 9.655084,-21.462732
       parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 41381
+    components:
+    - type: Transform
+      pos: -12.5,-10.5
+      parent: 2
+      rot: 3.141592653589793 rad
 ...

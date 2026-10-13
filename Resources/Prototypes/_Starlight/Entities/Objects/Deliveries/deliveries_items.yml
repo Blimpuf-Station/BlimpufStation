@@ -99,6 +99,7 @@
         - MedTekCartridgeStealObjective
         - AstroNavCartridgeStealObjective
         - ClothingOuterHardsuitVoidParamedStealObjective
+        - HOPSoftSuitStealObjective # Blimpuf
         - SecureTechFabCircuitboardStealObjective
         - DepartmentalTechFabCircuitboardStealObjective
         - PTechCircuitboardStealObjective

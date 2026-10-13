@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/06/2026 06:56:23
-  entityCount: 18056
+  entityCount: 18055
 maps:
 - 1
 grids:
@@ -45876,11 +45876,6 @@ entities:
       parent: 2
 - proto: ComputerTelevision
   entities:
-  - uid: 6657
-    components:
-    - type: Transform
-      pos: -43.5,-35.5
-      parent: 2
   - uid: 6658
     components:
     - type: Transform
@@ -119190,5 +119185,12 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 13.142442,-40.748253
+      parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 18165
+    components:
+    - type: Transform
+      pos: -43.5,-35.5
       parent: 2
 ...

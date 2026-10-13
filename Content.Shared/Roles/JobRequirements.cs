@@ -27,7 +27,7 @@ public static class JobRequirements
         HumanoidCharacterProfile? profile)
     {
         var sys = entManager.System<SharedRoleSystem>();
-        var requirements = sys.GetRoleRequirements(job);
+        var requirements = sys.GetRoleRequirements(job, player); // Blimpuf
         return TryRequirementsMet(requirements, player, playTimes, out reason, entManager, protoManager, profile);
     }
 

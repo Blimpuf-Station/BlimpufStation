@@ -1,5 +1,5 @@
 - type: entity
-  id: OrganProtokinEyes
+  id: OrganNeoShadekinEyes
   parent: OrganNeocyteEyes
   name: shadekin cybernetic eyes
   suffix: NeoShadekin

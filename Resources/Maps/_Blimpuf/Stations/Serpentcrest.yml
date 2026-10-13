@@ -164481,12 +164481,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 51.5,14.5
       parent: 2
-  - uid: 24770
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 30.5,47.5
-      parent: 2
   - uid: 24771
     components:
     - type: Transform
@@ -167022,13 +167016,6 @@ entities:
     - type: Transform
       pos: -5.4423094,19.542625
       parent: 2
-- proto: ToyFigurineHeadOfPersonnel
-  entities:
-  - uid: 25190
-    components:
-    - type: Transform
-      pos: 30.677542,47.506157
-      parent: 2
 - proto: ToyFigurineHeadOfSecurity
   entities:
   - uid: 25191
@@ -167199,13 +167186,6 @@ entities:
     components:
     - type: Transform
       pos: -14.012007,-17.349012
-      parent: 2
-- proto: ToyIan
-  entities:
-  - uid: 25216
-    components:
-    - type: Transform
-      pos: 30.372854,47.67022
       parent: 2
 - proto: ToyMauler
   entities:
@@ -188228,4 +188208,26 @@ entities:
     - type: Transform
       pos: -9.552427,49.802536
       parent: 2
+- proto: ToyIan
+  entities:
+  - uid: 29590
+    components:
+    - type: Transform
+      pos: 31.372854,50.67022
+      parent: 2
+- proto: ToyFigurineHeadOfPersonnel
+  entities:
+  - uid: 29591
+    components:
+    - type: Transform
+      pos: 31.677542,50.506157
+      parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 29592
+    components:
+    - type: Transform
+      pos: 30.5,47.5
+      parent: 2
+      rot: 3.141592653589793 rad
 ...

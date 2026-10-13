@@ -5,16 +5,18 @@
   description: job-description-ntrep
   playTimeTracker: JobNanoTrasenRepresentative
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Command
-      time: 30h # Still less than Magistrate. You should be experienced with Command before you tell them how to do their jobs.
-    - !type:RoleTimeRequirement
-      role: JobIAA
-      time: 8h
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+  - !type:OverallPlaytimeRequirement
+    time: 40h
+  - !type:DepartmentTimeRequirement
+    department: Command
+    time: 25h
+  - !type:RoleTimeRequirement
+    role: JobIAA
+    time: 8h
+  - !type:TraitsRequirement
+    traits:
+      - Iterator
+    inverted: true
   startingGear: CentralCommandRepresentativeGear
   icon: JobIconNanoTrasenRepresentative
   rules: job-rules-corporate-aligned

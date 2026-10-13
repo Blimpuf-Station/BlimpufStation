@@ -187,67 +187,15 @@
         IdCardConsole-privilegedId: !type:ContainerSlot
         IdCardConsole-targetId: !type:ContainerSlot
     - type: SyndicateResearchTarget
-      researchProtoIds:
-        - displayName: biomass
-          validPrototypes:
-            - MaterialBiomass
-            - MaterialBiomass1
-        - displayName: station AI-related console board
-          validPrototypes:
-            - StationAiUploadCircuitboard
-            - StationAiFixerCircuitboard
-            - RoboticsConsoleCircuitboard
-            - ComputerXenoborgsControlCircuitboard
-        - displayName: animal cube
-          validPrototypes:
-            - MonkeyCubeWrapped
-            - MonkeyCube
-            - KoboldCubeWrapped
-            - KoboldCube
-            - CowCube
-            - GoatCube
-            - MothroachCube
-            - MoproachCube
-            - MouseCube
-            - CockroachCube
-            - SpaceCarpCube
-            - SpaceTickCube
-            - AbominationCube
-            - ScurretCube
-            - CCMoproachCube
-            - SyndicateSpongeWrapped
-            - SyndicateSponge
-        - displayName: forensic scanner
-          validPrototypes:
-            - ForensicScanner
-        - displayName: health analyzer
-          validPrototypes:
-            - HandheldHealthAnalyzer
-        - displayName: diagnostic HuD
-          validPrototypes:
-            - ClothingEyesHudDiagnostic
-            - ClothingEyesEyepatchHudDiag
-            - ClothingEyesEyepatchHudDiagFlipped
-        - displayName: medical HuD
-          validPrototypes:
-            - ClothingEyesHudMedical
-            - ClothingEyesEyepatchHudMedical
-            - ClothingEyesEyepatchHudMedicalFlipped
-            - ClothingEyeGlassesMedicalPrescription
-            - ClothingEyesHudMedSec
-            - ClothingEyesGlassesBrigmedicPrescription
-            - ClothingEyesGlassesBrigmedic
-            - ClothingEyesHudBrigmedic
-            - ClothingEyesEyepatchHudBrigmedic
-            - ClothingEyesEyepatchHudBrigmedicFlipped
-            - ClothingEyesHudCorpsman
-            - ClothingEyesHudBlueShield
-            - ClothingEyesEyepatchHudBlueShieldFlipped
-            - ClothingEyesEyepatchHudBlueShield
-        - displayName: spray painter
-          validPrototypes:
-            - SprayPainter
-            - SprayPainterEmpty
+      syndicateResearchSpecifiers:
+        - SyndicateResearchSpecifierMaterialBiomass
+        - SyndicateResearchSpecifierStationAiCircuitboard
+        - SyndicateResearchSpecifierAnimalCube
+        - SyndicateResearchSpecififierForensicScanner
+        - SyndicateResearchSpecifierHandheldHealthAnalyzer
+        - SyndicateResearchSpecifierClothingEyesHudDiagnostic
+        - SyndicateResearchSpecifierClothingEyesHudMedical
+        - SyndicateResearchSpecifierSprayPainter
       researchUnlockId: UplinkPersonaHologramGenerator
       researchAnnouncementString: research-announcement-persona-hologram-generator
 

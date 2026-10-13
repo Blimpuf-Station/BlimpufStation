@@ -15,54 +15,15 @@
   - type: StealTarget
     stealGroup: HandTeleporter
   - type: SyndicateResearchTarget
-    researchProtoIds:
-      - displayName: volatile anomaly core
-        validPrototypes:
-          - AnomalyCorePyroclastic
-          - AnomalyCoreGravity
-          - AnomalyCoreIce
-          - AnomalyCoreFlesh
-          - AnomalyCoreRock
-          - AnomalyCoreLiquid
-          - AnomalyCoreBluespace
-          - AnomalyCoreElectricity
-          - AnomalyCoreFlora
-          - AnomalyCoreShadow
-          - AnomalyCoreTech
-          - AnomalyCoreSanta
-      - displayName: bluespace crystal
-        validPrototypes:
-          - BluespaceCrystal
-          - BluespaceCrystal1
-          - BluespaceCrystal3
-          - BluespaceCrystal5
-          - ArtificialBluespaceCrystal
-          - ArtificialBluespaceCrystal1
-          - ArtificialBluespaceCrystal5
-      - displayName: fire extinguisher
-        validPrototypes:
-          - FireExtinguisher
-          - FireExtinguisherMini
-      - displayName: engineering goggles
-        validPrototypes:
-          - ClothingEyesGlassesMeson
-      - displayName: insulated gloves
-        validPrototypes:
-          - ClothingHandsGlovesColorYellow
-      - displayName: RCD
-        validPrototypes:
-          - RCD
-          - RCDEmpty
-          - RCDChiefEngineer
-      - displayName: poison auto-injector
-        validPrototypes:
-          - AntiPoisonMedipen
-      - displayName: cautery
-        validPrototypes:
-          - Cautery
-          - CauteryCyber
-          - CauteryRipper
-          - CauteryAbductor
+    syndicateResearchSpecifiers:
+      - SyndicateResearchSpecifierAnomalyCore
+      - SyndicateResearchSpecifierBluespaceCrystal
+      - SyndicateResearchSpecifierFireExtinguisher
+      - SyndicateResearchSpecifierClothingEyesGlassesMeson
+      - SyndicateResearchSpecifierClothingHandsGlovesColorYellow
+      - SyndicateResearchSpecifierRCD
+      - SyndicateResearchSpecifierAntiPoisonMedipen
+      - SyndicateResearchSpecifierCautery
     researchUnlockId: UplinkTeleportationRelay
     researchAnnouncementString: research-announcement-teleportation-relay
 

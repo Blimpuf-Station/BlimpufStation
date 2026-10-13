@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 19:59:09
-  entityCount: 17013
+  entityCount: 17014
 maps:
 - 1
 grids:
@@ -93,7 +93,7 @@ entities:
           version: 7
         0,-1:
           ind: 0,-1
-          tiles: ewAAAAAAAHsAAAAAAABrAAAAAAAAewAAAAAAAHsAAAAAAABrAAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAAdAAAAAAAAHQAAAAAAAB0AAAAAAAAdAAAAAAAAHQAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAHQAAAAAAAB0AAAAAAAAdAAAAAAAAHQAAAAAAAB0AAAAAAAAdAAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAawAAAAAAAB0AAAAAAAAdAAAAAAAAHQAAAAAAAB0AAAAAAAAdAAAAAAAAHQAAAAAAAB0AAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAABrAAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAABrAAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAAdAAAAAAAAHQAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAABqAAAAAAAAagAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAHQAAAAAAAB0AAAAAAAAdAAAAAAAAHQAAAAAAAB0AAAAAAAB7AAAAAAAAewAAAAAAAGoAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAB0AAAAAAAAdAAAAAAAAHQAAAAAAAB0AAAAAAAAdAAAAAAAAewAAAAAAAGoAAAAAAABqAAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAOgAAAAAAADoAAAAAAAA6AAAAAAAAOgAAAAAAAHsAAAAAAAAdAAAAAAAAHQAAAAAAAB0AAAAAAAAdAAAAAAAAHQAAAAAAAHsAAAAAAABrAAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAawAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAAB7AAAAAAAAHQAAAAAAAB0AAAAAAAAdAAAAAAAAHQAAAAAAAB0AAAAAAAB7AAAAAAAAHQAAAAAAAB0AAAAAAABrAAAAAAAAewAAAAAAAHsAAAAAAAA6AAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAewAAAAAAAB0AAAAAAAAdAAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAB0AAAAAAAAdAAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAOgAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAHsAAAAAAAAdAAAAAAAAHQAAAAAAAHsAAAAAAABbAAAAAAAAWwAAAAAAAB0AAAAAAAAdAAAAAAAAHQAAAAAAAHsAAAAAAABrAAAAAAAAewAAAAAAAHsAAAAAAABbAAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAHQAAAAAAAB0AAAAAAAB7AAAAAAAAWwAAAAAAAFsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAA==
+          tiles: ewAAAAAAAHsAAAAAAABrAAAAAAAAewAAAAAAAHsAAAAAAABrAAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAEQAAAAAAABEAAAAAAAARAAAAAAAAEQAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAAdAAAAAAAAHQAAAAAAAB0AAAAAAAAdAAAAAAAAHQAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAHQAAAAAAAB0AAAAAAAAdAAAAAAAAHQAAAAAAAB0AAAAAAAAdAAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAawAAAAAAAB0AAAAAAAAdAAAAAAAAHQAAAAAAAB0AAAAAAAAdAAAAAAAAHQAAAAAAAB0AAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAABrAAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAABrAAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAAdAAAAAAAAHQAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAABqAAAAAAAAagAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAHQAAAAAAAB0AAAAAAAAdAAAAAAAAHQAAAAAAAB0AAAAAAAB7AAAAAAAAagAAAAAAAGoAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAB0AAAAAAAAdAAAAAAAAHQAAAAAAAB0AAAAAAAAdAAAAAAAAewAAAAAAAGoAAAAAAABqAAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAOgAAAAAAADoAAAAAAAA6AAAAAAAAOgAAAAAAAHsAAAAAAAAdAAAAAAAAHQAAAAAAAB0AAAAAAAAdAAAAAAAAHQAAAAAAAHsAAAAAAAB4AAAAAAAAeAAAAAAAAHsAAAAAAAB7AAAAAAAAawAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAAB7AAAAAAAAHQAAAAAAAB0AAAAAAAAdAAAAAAAAHQAAAAAAAB0AAAAAAAB7AAAAAAAAHQAAAAAAAB0AAAAAAABrAAAAAAAAewAAAAAAAHsAAAAAAAA6AAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAewAAAAAAAB0AAAAAAAAdAAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAewAAAAAAAB0AAAAAAAAdAAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAOgAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAHsAAAAAAAAdAAAAAAAAHQAAAAAAAHsAAAAAAABbAAAAAAAAWwAAAAAAAB0AAAAAAAAdAAAAAAAAHQAAAAAAAHsAAAAAAABrAAAAAAAAewAAAAAAAHsAAAAAAABbAAAAAAAAewAAAAAAAHsAAAAAAAB7AAAAAAAAHQAAAAAAAB0AAAAAAAB7AAAAAAAAWwAAAAAAAFsAAAAAAAB7AAAAAAAAewAAAAAAAHsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAFsAAAAAAABbAAAAAAAAWwAAAAAAAA==
           version: 7
         -1,-2:
           ind: -1,-2
@@ -6912,6 +6912,7 @@ entities:
             id: WoodTrimThinEndE
           decals:
             6360: 59,36
+            7510: 15,-7
         - node:
             color: '#FFFFFFFF'
             id: WoodTrimThinInnerNe
@@ -7660,6 +7661,11 @@ entities:
             id: trimlinearrowccwsw
           decals:
             6929: -1,38
+        - node:
+            color: '#FFFFFFFF'
+            id: WoodTrimThinEndW
+          decals:
+            7509: 14,-7
     - type: OccluderTree
     - type: Shuttle
       dampingModifier: 0.25
@@ -9110,11 +9116,6 @@ entities:
     components:
     - type: Transform
       pos: 71.5,-18.5
-      parent: 2
-  - uid: 101
-    components:
-    - type: Transform
-      pos: 14.5,-9.5
       parent: 2
   - uid: 102
     components:
@@ -10809,17 +10810,6 @@ entities:
       parent: 2
     - type: AccessReader
       accessListsOriginal: []
-- proto: AirlockMaintHOPLocked
-  entities:
-  - uid: 326
-    components:
-    - type: MetaData
-      name: HoP Office
-    - type: Transform
-      pos: 14.5,-6.5
-      parent: 2
-    - type: AccessReader
-      accessListsOriginal: []
 - proto: AirlockMaintHydroLocked
   entities:
   - uid: 327
@@ -12090,16 +12080,6 @@ entities:
       - - Engineering
     - type: Fixtures
       fixtures: {}
-  - uid: 517
-    components:
-    - type: MetaData
-      name: HoP Office APC
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 16.5,-6.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
   - uid: 518
     components:
     - type: MetaData
@@ -12855,6 +12835,16 @@ entities:
     - type: AccessReader
       accessListsOriginal:
       - - Engineering
+    - type: Fixtures
+      fixtures: {}
+  - uid: 17096
+    components:
+    - type: MetaData
+      name: HoP Office APC
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 17.5,-6.5
+      parent: 2
     - type: Fixtures
       fixtures: {}
 - proto: APCElectronics
@@ -20775,16 +20765,6 @@ entities:
     - type: Transform
       pos: 9.5,-9.5
       parent: 2
-  - uid: 2101
-    components:
-    - type: Transform
-      pos: 16.5,-6.5
-      parent: 2
-  - uid: 2102
-    components:
-    - type: Transform
-      pos: 16.5,-5.5
-      parent: 2
   - uid: 2103
     components:
     - type: Transform
@@ -20874,11 +20854,6 @@ entities:
     components:
     - type: Transform
       pos: 22.5,-2.5
-      parent: 2
-  - uid: 2121
-    components:
-    - type: Transform
-      pos: 16.5,-7.5
       parent: 2
   - uid: 2122
     components:
@@ -25794,6 +25769,16 @@ entities:
     components:
     - type: Transform
       pos: -2.5,-15.5
+      parent: 2
+  - uid: 17101
+    components:
+    - type: Transform
+      pos: 17.5,-5.5
+      parent: 2
+  - uid: 17102
+    components:
+    - type: Transform
+      pos: 17.5,-6.5
       parent: 2
 - proto: CableApcStack
   entities:
@@ -34678,21 +34663,6 @@ entities:
     - type: Transform
       pos: 17.5,-7.5
       parent: 2
-  - uid: 4864
-    components:
-    - type: Transform
-      pos: 16.5,-7.5
-      parent: 2
-  - uid: 4865
-    components:
-    - type: Transform
-      pos: 16.5,-6.5
-      parent: 2
-  - uid: 4866
-    components:
-    - type: Transform
-      pos: 15.5,-7.5
-      parent: 2
   - uid: 4867
     components:
     - type: Transform
@@ -38172,6 +38142,11 @@ entities:
     components:
     - type: Transform
       pos: -0.5,-17.5
+      parent: 2
+  - uid: 17099
+    components:
+    - type: Transform
+      pos: 17.5,-6.5
       parent: 2
 - proto: CableMVStack
   entities:
@@ -79661,6 +79636,11 @@ entities:
     - type: Transform
       pos: 0.5,40.5
       parent: 2
+  - uid: 17092
+    components:
+    - type: Transform
+      pos: 15.5,-9.5
+      parent: 2
 - proto: NitrousOxideCanister
   entities:
   - uid: 11752
@@ -79802,6 +79782,11 @@ entities:
     components:
     - type: Transform
       pos: 0.5,39.5
+      parent: 2
+  - uid: 17091
+    components:
+    - type: Transform
+      pos: 15.5,-8.5
       parent: 2
 - proto: OxygenTankFilled
   entities:
@@ -81029,15 +81014,6 @@ entities:
     components:
     - type: Transform
       pos: 38.5,-1.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-- proto: PosterLegitIan
-  entities:
-  - uid: 11910
-    components:
-    - type: Transform
-      pos: 17.5,-6.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -84560,6 +84536,17 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 3.5,-28.5
       parent: 2
+  - uid: 17093
+    components:
+    - type: Transform
+      pos: 15.5,-9.5
+      parent: 2
+  - uid: 17094
+    components:
+    - type: Transform
+      pos: 15.5,-8.5
+      parent: 2
+      rot: 3.141592653589793 rad
 - proto: RailingCornerSmall
   entities:
   - uid: 12446
@@ -97710,16 +97697,6 @@ entities:
     - type: Transform
       pos: 4.5,-17.5
       parent: 2
-  - uid: 14405
-    components:
-    - type: Transform
-      pos: 15.5,-6.5
-      parent: 2
-  - uid: 14406
-    components:
-    - type: Transform
-      pos: 16.5,-6.5
-      parent: 2
   - uid: 14407
     components:
     - type: Transform
@@ -105725,6 +105702,21 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 67.5,-45.5
       parent: 2
+  - uid: 17098
+    components:
+    - type: Transform
+      pos: 15.5,-7.5
+      parent: 2
+  - uid: 17103
+    components:
+    - type: Transform
+      pos: 16.5,-7.5
+      parent: 2
+  - uid: 17104
+    components:
+    - type: Transform
+      pos: 16.5,-6.5
+      parent: 2
 - proto: WallReinforcedRust
   entities:
   - uid: 15963
@@ -108884,11 +108876,6 @@ entities:
     - type: Transform
       pos: 16.5,-8.5
       parent: 2
-  - uid: 16589
-    components:
-    - type: Transform
-      pos: 14.5,-8.5
-      parent: 2
   - uid: 16590
     components:
     - type: Transform
@@ -111109,4 +111096,32 @@ entities:
     - type: Transform
       pos: 18.5,45.5
       parent: 2
+- proto: AirlockMaintHOPLocked
+  entities:
+  - uid: 17085
+    components:
+    - type: MetaData
+      name: HoP Office
+    - type: Transform
+      pos: 14.5,-7.5
+      parent: 2
+    - type: AccessReader
+      accessListsOriginal: []
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 17087
+    components:
+    - type: Transform
+      pos: 15.5,-6.5
+      parent: 2
+      rot: 4.71238898038469 rad
+- proto: PosterLegitIan
+  entities:
+  - uid: 17095
+    components:
+    - type: Transform
+      pos: 18.5,-6.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
 ...

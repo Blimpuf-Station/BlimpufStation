@@ -33,6 +33,10 @@ ghost-role-information-cc-bartender-description = Serve up drinks to weary stati
 ghost-role-information-cc-janitor-name = CentComm Janitor
 ghost-role-information-cc-janitor-description = Keep the floors on CentComm outposts squeaky clean.
 
+ghost-role-information-samurai-name = Samurai
+ghost-role-information-samurai-description = You are a Samurai, a representative of your clan. You have been sent on a mission to educate the station on what it means to be honorable.
+ghost-role-information-samurai-rules = You must abide by your code of honor, and use it to judge what is honorable and not.
+
 ghost-important-role = [bold]Now looking for candidates to play as {$rolename}[/bold]
 ghost-gui-aghost-toggle-ghost-visibility-popup-on = Invisible to non-admins.
 ghost-gui-aghost-toggle-ghost-visibility-popup-off = Visible to non-admins.

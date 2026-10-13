@@ -1,0 +1,38 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-4.0",
+    "copyright": "Icon and Equipped-Belt/Back made by ItsMaitake based on PKA from Paradise Station. Inhand and front/back wielded variants by ItsMaitake. Side wield sprites by RiceMar1244 but Modified by ItsMaitake for sniper",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
+        },
+        {
+          "name": "wielded-inhand-left",
+          "directions": 4
+        },
+        {
+          "name": "wielded-inhand-right",
+          "directions": 4
+        },
+        {
+            "name": "equipped-BELT",
+            "directions": 4
+        },
+		{
+            "name": "equipped-SUITSTORAGE",
+            "directions": 4
+        }
+    ]
+}

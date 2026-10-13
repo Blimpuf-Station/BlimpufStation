@@ -1,5 +1,6 @@
-using Content.Shared._Blimpuf.Antags.Traitor.Components;
+using Content.Shared._Blimpuf.Antags.Traitor;
 using Robust.Shared.Audio;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server._Blimpuf.Traitor.Components;
 
@@ -8,13 +9,13 @@ public sealed partial class SyndicateResearchTargetComponent : Component
 {
     [DataField] public Boolean ItemScanned;
 
-    [DataField] public ResearchTargetEntry? ResearchItem1;
+    [DataField] public ProtoId<SyndicateResearchSpecifierPrototype>? ResearchItem1;
 
-    [DataField] public ResearchTargetEntry? ResearchItem2;
+    [DataField] public ProtoId<SyndicateResearchSpecifierPrototype>? ResearchItem2;
 
-    [DataField] public ResearchTargetEntry? ResearchItem3;
+    [DataField] public ProtoId<SyndicateResearchSpecifierPrototype>? ResearchItem3;
 
-    [DataField] public ResearchTargetEntry? ResearchItem4;
+    [DataField] public ProtoId<SyndicateResearchSpecifierPrototype>? ResearchItem4;
 
     [DataField] public Boolean Task1Complete;
 
@@ -24,7 +25,7 @@ public sealed partial class SyndicateResearchTargetComponent : Component
 
     [DataField] public Boolean Task4Complete;
 
-    [DataField(required: true)] public List<ResearchTargetEntry> ResearchProtoIds = new();
+    [DataField(required: true)] public List<ProtoId<SyndicateResearchSpecifierPrototype>> SyndicateResearchSpecifiers = new();
 
     [DataField] public Boolean ResearchComplete;
 
@@ -32,10 +33,18 @@ public sealed partial class SyndicateResearchTargetComponent : Component
 
     [DataField] public SoundSpecifier ResearchSound = new SoundPathSpecifier("/Audio/_Blimpuf/Items/traitor-research.ogg");
 
-    [DataField (required: true)] public String ResearchUnlockId;
+    [DataField(required: true)] public String ResearchUnlockId = default!;
 
-    [DataField (required: true)] public String ResearchAnnouncementString;
+    [DataField(required: true)] public String ResearchAnnouncementString = default!;
 
     public EntityUid? ActiveSound;
+
+    [DataDefinition]
+    public sealed partial class ResearchTargetEntry
+    {
+        [DataField(required: true)] public string DisplayName = string.Empty;
+
+        [DataField(required: true)] public List<EntProtoId> ValidPrototypes = new();
+    }
 }
 

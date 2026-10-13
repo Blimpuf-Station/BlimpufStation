@@ -1348,3 +1348,76 @@
     sprintModifier: 0.95
   - type: HeldSpeedModifier
   - type: Unremoveable
+
+#Samurai Hardsuit
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseContrabandTier4]
+  id: ClothingOuterHardsuitSamurai
+  name: red samurai hardsuit
+  description: A long passed down relic of the Carp Tooth Clan.
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/samurai-red.rsi
+    - type: Clothing
+      sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/samurai-red.rsi
+    - type: PressureProtection
+      highPressureMultiplier: 0.525
+      lowPressureMultiplier: 10000
+    - type: ClothingSpeedModifier
+      walkModifier: 0.9
+      sprintModifier: 0.9
+    - type: Pierceable
+      level: Metal
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.4
+          Slash: 0.3
+          Piercing: 0.3
+          Caustic: 0.75
+          Heat: 0.5
+          Radiation: 0.75
+      staminaModifier: 0.9
+    - type: ExplosionResistance
+      damageCoefficient: 0.75
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitSamurai
+
+- type: entity
+  parent: ClothingOuterHardsuitSamurai
+  id: ClothingOuterHardsuitBlueSamurai
+  name: blue samurai hardsuit
+  description: A long passed down relic of the Carp Tooth Clan.
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/samurai-blue.rsi
+    - type: Clothing
+      sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/samurai-blue.rsi
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitBlueSamurai
+
+- type: entity
+  parent: ClothingOuterHardsuitSamurai
+  id: ClothingOuterHardsuitGreenSamurai
+  name: green samurai hardsuit
+  description: A long passed down relic of the Carp Tooth Clan.
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/samurai-green.rsi
+    - type: Clothing
+      sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/samurai-green.rsi
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitGreenSamurai
+
+- type: entity
+  parent: ClothingOuterHardsuitSamurai
+  id: ClothingOuterHardsuitPurpleSamurai
+  name: purple samurai hardsuit
+  description: A long passed down relic of the Carp Tooth Clan.
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/samurai-purple.rsi
+    - type: Clothing
+      sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/samurai-purple.rsi
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitPurpleSamurai

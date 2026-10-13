@@ -4,15 +4,15 @@
   description: job-description-warden
   playTimeTracker: JobWarden
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 15h # Starlight
-    - !type:RoleTimeRequirement # Starlight
-      role: JobDutyOfficer # Starlight
-      time: 5h # Starlight
-    - !type:RoleTimeRequirement
-      role: JobDetective # Starlight
-      time: 1h # Starlight
+  - !type:RoleTimeRequirement
+    role: JobSecurityOfficer
+    time: 10h
+  - !type:RoleTimeRequirement
+    role: JobDutyOfficer
+    time: 3h
+  - !type:RoleTimeRequirement
+    role: JobDetective
+    time: 1h
   weight: 5
   startingGear: WardenGear
   icon: "JobIconWarden"

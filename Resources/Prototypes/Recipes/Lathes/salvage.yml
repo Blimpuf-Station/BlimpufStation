@@ -102,3 +102,15 @@
     Gold: 500
     Silver: 500
 
+# Blimpuf
+- type: latheRecipe
+  id: WeaponProtoKineticDisassembler
+  result: WeaponProtoKineticDisassembler
+  categories:
+    - Weapons
+  completetime: 5
+  materials:
+    Steel: 2000
+    Glass: 1000
+    Silver: 500
+    Gold: 500

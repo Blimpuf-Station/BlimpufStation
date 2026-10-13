@@ -84884,15 +84884,6 @@ entities:
       parent: 2
 - proto: ComputerCriminalRecords
   entities:
-  - uid: 14039
-    components:
-    - type: Transform
-      pos: 13.5,66.5
-      parent: 2
-    - type: AccessReader
-      accessListsOriginal:
-      - - Security
-      - - Cadet
   - uid: 14040
     components:
     - type: Transform
@@ -203685,5 +203676,12 @@ entities:
     components:
     - type: Transform
       pos: -13.5,83.5
+      parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 32802
+    components:
+    - type: Transform
+      pos: 13.5,66.5
       parent: 2
 ...
