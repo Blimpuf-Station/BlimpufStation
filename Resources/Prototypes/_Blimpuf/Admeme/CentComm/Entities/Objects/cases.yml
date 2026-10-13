@@ -223,3 +223,75 @@
         - id: Drill
         - id: ScalpelLaser
         - id: SawAdvanced
+
+- type: entity
+  id: BottleCaseCCFilledMedical
+  suffix: CentComm, Medical
+  parent: BottleCaseCC
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ChemistryBottleOmnizine
+        - id: ChemistryBottleOmnizine
+        - id: ChemistryBottleAmbuzolPlus
+        - id: ChemistryBottleTranexamicAcid
+        - id: ChemistryBottleDexalinPlus
+        - id: ChemistryBottleAmoxla
+        - id: ChemistryBottleSaline
+        - id: ChemistryBottleSaline
+
+- type: entity
+  id: BottleCaseCCFilledCryogenics
+  suffix: CentComm, Cryogenics
+  parent: BottleCaseCC
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ChemistryBottleNecrosol
+        - id: ChemistryBottleNecrosol
+        - id: ChemistryBottleCryoxadone
+        - id: ChemistryBottleCryoxadone
+        - id: ChemistryBottleOpporozidone
+        - id: ChemistryBottleOpporozidone
+        - id: ChemistryBottleDoxarubixadone
+        - id: ChemistryBottleChronexaline
+
+- type: entity
+  id: BottleCaseCCFilledBotanical
+  suffix: CentComm, Botanical
+  parent: BottleCaseCC
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ChemistryBottleEZNutrient
+        - id: ChemistryBottleLeft4Zed
+        - id: ChemistryBottleUnstableMutagen
+        - id: ChemistryBottleRobustHarvest
+        - id: ChemistryBottlePhalanximine
+        - id: ChemistryBottleCryoxadone
+        - id: ChemistryBottleDiethylamine
+        - id: ChemistryBottleDiethylamine
+
+- type: entity
+  id: BottleCaseCCFilledNarcotics
+  suffix: CentComm, Narcotics
+  parent: BottleCaseCC
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ChemistryBottleHaloperidol
+        - id: ChemistryBottleHaloperidol
+        - id: ChemistryBottlePsicodine
+        - id: ChemistryBottlePhenylpiperidine
+        - id: ChemistryBottleDiphenylmethylamine
+        - id: ChemistryBottleSpaceMirage
+        - id: ChemistryBottleHappiness
+        - id: ChemistryBottleTHC
