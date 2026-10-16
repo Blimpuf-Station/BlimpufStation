@@ -26,13 +26,11 @@
 - type: guideEntry
   id: SpaceLaw
   name: guide-entry-rules-space-law
-  text: "/ServerInfo/Guidebook/ServerRules/SpaceLaw/SpaceLaw.xml"
+  text: "/ServerInfo/_Blimpuf/Guidebook/ServerRules/SpaceLaw/SpaceLaw.xml"
   children:
   - SpaceLawCrimeList
-  - SupernaturalEntities #Starlight
 
 - type: guideEntry
   id: SpaceLawCrimeList
-  name: guide-entry-rules-sl-crime-list
-  text: "/ServerInfo/Guidebook/ServerRules/SpaceLaw/SLCrimeList.xml"
-
+  name: guide-entry-rules-blimpuf-crime-list
+  text: "/ServerInfo/_Blimpuf/Guidebook/ServerRules/SpaceLaw/BlimpufCrimeList.xml"

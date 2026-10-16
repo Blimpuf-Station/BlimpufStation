@@ -43,7 +43,7 @@
   name: roles-antag-selfagent-name
   text: "/ServerInfo/_Starlight/Guidebook/Antagonist/SiliconLiberation.xml"
 
-- type: guideEntry
-  id: Devil
-  name: guide-entry-devil
-  text: "/ServerInfo/_Starlight/Guidebook/Antagonist/Devil.xml"
+#- type: guideEntry
+#  id: Devil
+#  name: guide-entry-devil
+#  text: "/ServerInfo/_Starlight/Guidebook/Antagonist/Devil.xml"

@@ -26,7 +26,7 @@
     <GuideEntityEmbed Entity="BaseUplinkRadio" Caption="Uplink Implant"/>
   </Box>
 
-  [bold]Make sure to close your PDA uplink to prevent anyone else from seeing it.[/bold] You don't want [color=#cb0000]Security[/color] to notice you have it and confiscate it from you!
+  [bold]Make sure to close your PDA uplink to prevent anyone else from seeing it.[/bold] You don't want [color=#02cfe0]Security[/color] to notice you have it and confiscate it from you!
 
   Implanted uplinks are not normally accessible to other people, so they do not have any security measures. They can, however, be removed from you with an empty implanter.
 
@@ -64,7 +64,7 @@
   Remember, the Syndicate want only your targets dead. [color=red]Try to avoid mass murder or major damage to the station,[/color] as the more innocent lives you take, the more of a liability you become.
 
   ## Evasion & Self-Termination
-  Your objectives may require you to [italic][color=cyan]make it to CentComm without being killed or captured.[/color][/italic] Don't let [color=#cb0000]Security[/color] stop you, complete your other objectives and [bold]come back alive.[/bold]
+  Your objectives may require you to [italic][color=cyan]make it to CentComm without being killed or captured.[/color][/italic] Don't let [color=#02cfe0]Security[/color] stop you, complete your other objectives and [bold]come back alive.[/bold]
 
   Alternatively, your objectives may require you to [italic][color=cyan]die a glorious death.[/color][/italic] [bold]Make sure you don't come back from the dead,[/bold] or else you may wake up in cuffs.
 
@@ -94,16 +94,16 @@
     <GuideEntityEmbed Entity="HandTeleporter" Caption=""/>
   <!-- Starlight Start - Energy Shotgun and SMG as objectives -->
   </Box>
-  - Stealing the [color=#cb0000]Head of Security[/color]'s [bold]Proto-5x[/bold].
+  - Stealing the [color=#02cfe0]Head of Security[/color]'s [bold]Proto-5x[/bold].
   <Box>
     <GuideEntityEmbed Entity="WeaponEnergyMagnum" Caption=""/>
   </Box>
-  - Stealing the [color=#cb0000]Warden[/color]'s [bold]energy shotgun[/bold].
+  - Stealing the [color=#02cfe0]Warden[/color]'s [bold]energy shotgun[/bold].
   <Box>
     <GuideEntityEmbed Entity="WeaponEnergyMagnum" Caption=""/>
   <!-- Starlight End - Energy Shotgun and SMG as objectives -->
   </Box>
-  - Stealing the [color=#cb0000]Detective[/color]'s [bold]energy magnum[/bold]. <!-- Starlight - moved magnum to detective -->
+  - Stealing the [color=#02cfe0]Detective[/color]'s [bold]energy magnum[/bold]. <!-- Starlight - moved magnum to detective -->
   <Box>
     <GuideEntityEmbed Entity="WeaponEnergyMagnum" Caption=""/>
   </Box>
@@ -129,7 +129,7 @@
   All Story Objectives are denoted by a bold green  [bold][color=green]'RP'[/bold][/color]  icon
 
   Story Objectives may ask you to:
-  - Recover captured Contraband from the Armory in [color=#cb0000]Security[/color]. Security often gathers a large amount of Contraband that they lock in the Armory, much of it being Syndicate in origin. Deprive the enemy of material, and recover it.
+  - Recover captured Contraband from the Armory in [color=#02cfe0]Security[/color]. Security often gathers a large amount of Contraband that they lock in the Armory, much of it being Syndicate in origin. Deprive the enemy of material, and recover it.
   - Interrogate the [color=#1f78ff]Central Command Representative[/color] and other Department Heads for [color=#9819ff]Corporate Secrets[/color]. A very risky objective, making using of disguises and Security gear to detain may be needed. Remember to turn off their coordinates or take them off-station to prevent trackers from finding them.
   - Challenge people to duels, to the death or otherwise. Remember you need to escape to Central Command still, so murder isn't advised- unless you use this as a guise to get to a kill target that is. Consensual duels are the best excuse.
   - Many many more!

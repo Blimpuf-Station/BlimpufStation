@@ -4,8 +4,8 @@ meta:
   engineVersion: 277.0.0
   forkId: ""
   forkVersion: ""
-  time: 09/20/2026 20:23:00
-  entityCount: 25299
+  time: 10/15/2026 01:36:27
+  entityCount: 25297
 maps:
 - 1
 grids:
@@ -9331,8 +9331,8 @@ entities:
     - type: DeviceList
       devices:
       - 606
-      - 15043
-      - 15222
+      - 14772
+      - 12107
       - 11549
       - 11550
     - type: Fixtures
@@ -75095,8 +75095,6 @@ entities:
     - type: DeviceList
       devices:
       - 606
-      - 15043
-      - 15222
       - 11549
       - 11550
     - type: Fixtures
@@ -81195,14 +81193,6 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#FF1212FF'
-  - uid: 12107
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 118.5,46.5
-      parent: 2
-    - type: AtmosPipeColor
-      color: '#0335FCFF'
   - uid: 12108
     components:
     - type: Transform
@@ -89299,14 +89289,6 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#FF1212FF'
-  - uid: 13155
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 121.5,45.5
-      parent: 2
-    - type: AtmosPipeColor
-      color: '#FF1212FF'
   - uid: 13156
     components:
     - type: Transform
@@ -89342,15 +89324,11 @@ entities:
   - uid: 13160
     components:
     - type: Transform
-      anchored: False
-      rot: 1.5707963267948966 rad
-      pos: 117.5,46.5
+      rot: 3.141592653589793 rad
+      pos: 115.5,46.5
       parent: 2
-    - type: Physics
-      canCollide: True
-      bodyType: Dynamic
     - type: AtmosPipeColor
-      color: '#0335FCFF'
+      color: '#FF1212FF'
   - uid: 13161
     components:
     - type: Transform
@@ -100639,6 +100617,14 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
+  - uid: 13155
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 121.5,45.5
+      parent: 2
+    - type: AtmosPipeColor
+      color: '#FF1212FF'
   - uid: 13487
     components:
     - type: Transform
@@ -101884,14 +101870,6 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0335FCFF'
-  - uid: 14772
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 115.5,46.5
-      parent: 2
-    - type: AtmosPipeColor
-      color: '#FF1212FF'
   - uid: 14773
     components:
     - type: Transform
@@ -103341,6 +103319,17 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
+  - uid: 12107
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 118.5,46.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 40
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
   - uid: 13631
     components:
     - type: Transform
@@ -104096,18 +104085,6 @@ entities:
       deviceLists:
       - 42
       - 11461
-    - type: AtmosPipeColor
-      color: '#0335FCFF'
-  - uid: 15043
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 116.5,46.5
-      parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 40
-      - 11455
     - type: AtmosPipeColor
       color: '#0335FCFF'
   - uid: 15044
@@ -104894,6 +104871,16 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 10263
+    - type: AtmosPipeColor
+      color: '#FF1212FF'
+  - uid: 14772
+    components:
+    - type: Transform
+      pos: 121.5,46.5
+      parent: 2
+    - type: DeviceNetwork
+      deviceLists:
+      - 40
     - type: AtmosPipeColor
       color: '#FF1212FF'
   - uid: 15139
@@ -105830,18 +105817,6 @@ entities:
       deviceLists:
       - 11485
       - 127
-    - type: AtmosPipeColor
-      color: '#FF1212FF'
-  - uid: 15222
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 114.5,46.5
-      parent: 2
-    - type: DeviceNetwork
-      deviceLists:
-      - 40
-      - 11455
     - type: AtmosPipeColor
       color: '#FF1212FF'
   - uid: 15223
@@ -119037,6 +119012,13 @@ entities:
     - type: Transform
       pos: 124.5,32.5
       parent: 2
+    - type: StationAiCore
+      lawConsole: 17986
+    - type: DeviceLinkSource
+      linkedPorts:
+        17986:
+        - - AiLawConsoleSender
+          - AiLawConsoleReceiver
 - proto: Plunger
   entities:
   - uid: 17368
@@ -137900,6 +137882,11 @@ entities:
       rot: 3.141592653589793 rad
       pos: 124.5,29.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - ResearchDirector
+    - type: SiliconLawUpdater
+      core: 17367
 - proto: StationAnchor
   entities:
   - uid: 20273

@@ -16,7 +16,7 @@
 # Starlight start
   - type: ConditionalHealing
     healingDefinitions:
-    - allowedTags: [ IPC, Neocyte, NeoArachnid, NeoAvali, NeoTNebri, NeoDiona, NeoFelionoid, NeoHuman, NeoMoth, NeoReptilian, NeoResomi, NeoSlimePerson, NeoThaven, NeoVox, NeoVulp, NeoShadekin, NeoElf, NeoLagomorph ] # Starlight
+    - allowedTags: [ IPC, Neocyte, NeoArachnid, NeoAvali, NeoTNebri, NeoDiona, NeoFelionoid, NeoHuman, NeoMoth, NeoReptilian, NeoResomi, NeoSlimePerson, NeoThaven, NeoVox, NeoVulpkanin, NeoShadekin, NeoElf, NeoLagomorph ] # Starlight
       healing:
         damageContainers:
           - IPC # Starlight

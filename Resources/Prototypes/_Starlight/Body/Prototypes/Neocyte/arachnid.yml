@@ -1,6 +1,6 @@
 - type: body
   id: NeoArachnid
-  name: neo-arachnid # Starlight, quotation marks removed
+  name: neo-arachnid
   root: torso
   slots:
     head:

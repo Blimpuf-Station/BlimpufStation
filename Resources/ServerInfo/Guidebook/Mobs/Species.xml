@@ -5,13 +5,11 @@
 
   <Box>
   <GuideEntityEmbed Entity="AppearanceArachnid" Caption="Arachnid"/>
-  <GuideEntityEmbed Entity="AppearanceDiona" Caption="Diona"/>
-  <GuideEntityEmbed Entity="AppearanceHuman" Caption="Doll[PH]"/><!--Doll placeholder-->
+  <GuideEntityEmbed Entity="AppearanceDiona" Caption="Diona"/><!--Doll goes below-->
   <GuideEntityEmbed Entity="AppearanceElf" Caption="Elf"/>
   </Box>
   <Box>
-  <GuideEntityEmbed Entity="AppearanceHuman" Caption="Harpy[PH]"/><!--Harpy placeholder-->
-  <GuideEntityEmbed Entity="AppearanceHuman" Caption="Human"/>
+  <GuideEntityEmbed Entity="AppearanceHuman" Caption="Human"/><!--Harpy goes above-->
   <GuideEntityEmbed Entity="AppearanceMoth" Caption="Moth Person"/>
   <GuideEntityEmbed Entity="AppearanceNeocyte" Caption="Neocyte"/>
   <GuideEntityEmbed Entity="AppearanceReptilian" Caption="Reptilian"/>

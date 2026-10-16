@@ -22,6 +22,10 @@
   standardSize: 170
   standardWeight: 100
   standardDensity: 110
+  profileMigration:
+    oldSpecies:
+    - NeoCyclorite
+    - ProtoCyclorite
 
 - type: speciesBaseSprites
   id: MobNeoTNebriSprites

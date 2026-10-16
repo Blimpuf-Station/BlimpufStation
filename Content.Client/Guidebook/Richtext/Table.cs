@@ -22,6 +22,9 @@ public sealed class Table : TableContainer, IDocumentTag
 
         Columns = columnsCount;
 
+        if (args.TryGetValue("MinForcedColumnWidth", out var minColumnWidth))
+            MinForcedColumnWidth = float.Parse(minColumnWidth);
+
         return true;
     }
 }

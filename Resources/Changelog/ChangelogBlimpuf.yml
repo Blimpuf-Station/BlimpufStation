@@ -1029,5 +1029,90 @@ Entries:
   id: 17601
   time: '2026-09-28T13:33:22.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/176
+- author: Limerent-Sun
+  changes:
+  - message: Overhauled role hour requirements.
+    type: Tweak
+  id: 17801
+  time: '2026-10-02T09:51:03.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/178
+- author: wonderfulnewworld, Limerent-Sun
+  changes:
+  - message: Neocytes will now appear as ghost roles, with random frames.
+    type: Add
+  - message: Neocytes will now always spawn with a frame.
+    type: Fix
+  - message: TNebri, Neo-TNebri, and Neo-Vox no longer take damage from water vapor.
+    type: Fix
+  - message: Neocytes now restore their frames after polymorphing.
+    type: Fix
+  - message: NeoShadekin now have a frame slot and spawn with frames.
+    type: Tweak
+  - message: Ghostroles will no longer spawn Neocyte subspecies.
+    type: Tweak
+  id: 18001
+  time: '2026-10-05T16:57:15.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/180
+- author: Shimmers
+  changes:
+  - message: Select Thaven hairstyles now appear properly in the character creation
+      menu and import from other servers.
+    type: Fix
+  id: 17701
+  time: '2026-10-06T16:47:56.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/177
+- author: Shimmers
+  changes:
+  - message: Removed 14 Starlight specific lobby arts.
+    type: Remove
+  id: 18101
+  time: '2026-10-09T10:55:32.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/181
+- author: Shimmers
+  changes:
+  - message: Add marking support for character imports from Delta-V.
+    type: Add
+  id: 18601
+  time: '2026-10-11T08:58:26.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/186
+- author: Limerent-Sun
+  changes:
+  - message: Reworked Space Law. Yes, all of it.
+    type: Tweak
+  id: 19001
+  time: '2026-10-14T17:10:48.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/190
+- author: Shimmers
+  changes:
+  - message: Corrected various minor Guidebook discrepancies.
+    type: Fix
+  id: 19101
+  time: '2026-10-15T13:57:18.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/191
+- author: Limerent-Sun
+  changes:
+  - message: SSD ZZ icon now shows how long you have been disconnected.
+    type: Tweak
+  id: 19201
+  time: '2026-10-15T18:25:44.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/192
+- author: ItsMaitake
+  changes:
+  - message: Departmental clothing vendor drobes now have Syndicate specific clothing
+      types when emagged, instead of just being Operative Jumpsuits/Jumpskirts.
+    type: Tweak
+  id: 18801
+  time: '2026-10-15T18:51:24.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/188
+- author: OmgDev
+  changes:
+  - message: Smile and other slime-kin can also Squish, Pop, and Bubble!
+    type: Add
+  - message: Added an option to SpeechComponent that allows entities to opt-in to
+      vocal emotes rather then having to blacklist global ones!
+    type: Tweak
+  id: 19701
+  time: '2026-10-16T08:42:52.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/197
 Order: -1
 
