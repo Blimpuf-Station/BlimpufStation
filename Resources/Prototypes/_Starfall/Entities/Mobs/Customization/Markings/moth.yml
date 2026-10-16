@@ -1,0 +1,3085 @@
+# Antennae
+- type: marking
+  id: MothAntennasAthamas
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: athamas
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasBanner
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: banner_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: banner_secondary
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasBeads
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: beads_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: beads_secondary
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasCharred
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: charred
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasDbushy
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: dbushy
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasDcurvy
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: dcurvy
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasDefault
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: default
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasDfan
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: dfan
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasDpointy
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: dpointy
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasFeathery
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: feathery
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasFirewatch
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: firewatch
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasFlowing
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: flowing
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasGray
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: gray
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasJewled
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: jewled_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: jewled_secondary
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasJungle
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: jungle
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasMaple
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: maple
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasMoffra
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: moffra
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasOakworm
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: oakworm
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasOrigins
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: origins
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasPlasmafire
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: plasmafire
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasReinforced
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: reinforced
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasRoyal
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: royal
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasStriped
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: striped
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasTattered
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: tattered
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasUnderwing
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: underwing_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: underwing_secondary
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasWhitefly
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: whitefly
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasWitchwing
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/antennae.rsi
+    state: witchwing
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasChitinidBee
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_antennas.rsi
+    state: bee
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasChitinidCurly
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_antennas.rsi
+    state: curly
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasChitinidDefault
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_antennas.rsi
+    state: default
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasChitinidFirefly
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_antennas.rsi
+    state: firefly_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_antennas.rsi
+    state: firefly_secondary
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasChitinidGray
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_antennas.rsi
+    state: gray
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasChitinidLong
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_antennas.rsi
+    state: long
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasChitinidRadar
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_antennas.rsi
+    state: radar
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasChitinidShort
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_antennas.rsi
+    state: short
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasChitinidSlick
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_antennas.rsi
+    state: slick
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasChitinidSpeed
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_antennas.rsi
+    state: speed
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennasChitinidWeevil
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_antennas.rsi
+    state: weevil
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothHeadBeetleHorn
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: mothbeetlehorn
+  markingCategory: HeadTop
+
+- type: marking
+  id: MothAntennaless
+  bodyPart: HeadTop
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: Effects/text.rsi
+    state: blank
+  markingCategory: HeadTop
+
+# Arms
+- type: marking
+  id: MothLArmAthamas
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: athamas_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmAthamas
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: athamas_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmCharred
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: charred_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmCharred
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: charred_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmChimera
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: chimera_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmDeathhead
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: deathhead_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmDeathhead
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: deathhead_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmFan
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: fan_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmFan
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: fan_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmFirewatch
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: firewatch_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmFirewatch
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: firewatch_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmGothic
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: gothic_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmGothic
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: gothic_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLHandChimera
+  bodyPart: LHand
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: hand_l_chimera_moth
+  markingCategory: Arms
+
+- type: marking
+  id: MothLHandProsthetic
+  bodyPart: LHand
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: hand_l_prosthetic_moth
+  markingCategory: Arms
+
+- type: marking
+  id: MothLHandTwisting
+  bodyPart: LHand
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: hand_l_twisting_moth
+  markingCategory: Arms
+
+- type: marking
+  id: MothRHandProsthetic
+  bodyPart: RHand
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: hand_r_prosthetic_moth
+  markingCategory: Arms
+
+- type: marking
+  id: MothRHandTwisting
+  bodyPart: RHand
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: hand_r_twisting_moth
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmJungle
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: jungle_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmJungle
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: jungle_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmMoonfly
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: moonfly_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmMoonfly
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: moonfly_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmOakworm
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: oakworm_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmOakworm
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: oakworm_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmPointy
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: pointy_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmPointy
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: pointy_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmProsthetic
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: prosthetic_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmProsthetic
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: prosthetic_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmRagged
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: ragged_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmRagged
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: ragged_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmRoyal
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: royal_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmRoyal
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: royal_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmTwisting
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: twisting_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmTwisting
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: twisting_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmWhitefly
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: whitefly_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmWhitefly
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: whitefly_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmWitchwing
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: witchwing_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmWitchwing
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/arms.rsi
+    state: witchwing_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmChitinidPlated
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: plated_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmChitinidPlated
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: plated_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmChitinidRadiant
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: radiant_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmChitinidRadiant
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: radiant_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmChitinidSpotted
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: spotted_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmChitinidSpotted
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: spotted_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmChitinidStripes
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: stripes_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmChitinidStripes
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: stripes_r_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothLArmChitinidToxic
+  bodyPart: LArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: toxic_l_arm
+  markingCategory: Arms
+
+- type: marking
+  id: MothRArmChitinidToxic
+  bodyPart: RArm
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: toxic_r_arm
+  markingCategory: Arms
+
+# Chest
+- type: marking
+  id: MothChestAthamas
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: athamas
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestCharred
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: charred_chest
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestChimeraF
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: chest_chimera_f_moth
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestChimeraM
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: chest_chimera_m_moth
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestLTwistingF
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: chest_l_twisting_f_moth
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestLTwistingM
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: chest_l_twisting_m_moth
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestRTwistingF
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: chest_r_twisting_f_moth
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestRTwistingM
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: chest_r_twisting_m_moth
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestStar
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: chest_star_moth
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestDeathhead
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: deathhead_chest
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestExoBelly
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: exo_belly
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestFan
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: fan_chest
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestFirewatch
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: firewatch_chest
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestGothic
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: gothic_chest
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestHipScars
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: hip_scars
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestJungle
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: jungle_chest
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestMoonfly
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: moonfly_chest
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestBodyClaw
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: moth_body_claw
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestOakworm
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: oakworm_chest
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestPointy
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: pointy_chest
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestRagged
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: ragged_chest
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestRoyal
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: royal_chest
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestTorsoIncision
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: torso_incision_moth
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestWhitefly
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: whitefly_chest
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestWitchwing
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chest.rsi
+    state: witchwing_chest
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestChitinidPlated
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: plated_chest
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestChitinidRadiant
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: radiant_chest
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestChitinidSpotted
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: spotted_chest
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestChitinidStripes
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: stripes_chest
+  markingCategory: Chest
+
+- type: marking
+  id: MothChestChitinidToxic
+  bodyPart: Chest
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: toxic_chest
+  markingCategory: Chest
+
+# Eyes
+- type: marking
+  id: MothHeadEyesDefault
+  bodyPart: Eyes
+  speciesRestriction: [Moth, NeoMoth] # FH
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: _Starfall/Mobs/Species/Lumari/parts.rsi
+    state: eyes
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: eyes_heterochromia_moth
+  markingCategory: Eyes
+
+- type: marking
+  id: MothHeadEyesSoft
+  bodyPart: Eyes
+  speciesRestriction: [Moth, NeoMoth] # FH
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+    layers:
+      eyes_soft_skin:
+        type:
+          !type:SkinColoring
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: eyes_soft
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: eyes_heterochromia_soft
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: eyes_soft_skin
+  markingCategory: Eyes
+
+- type: marking
+  id: MothHeadBiggerEyes
+  bodyPart: Eyes
+  speciesRestriction: [Moth, NeoMoth] # FH
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: mothbiggereyes_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: mothbiggereyes_secondary
+  markingCategory: Eyes
+
+- type: marking
+  id: MothHeadEyebags
+  bodyPart: Eyes
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: head_eyebags_moth
+  markingCategory: Eyes
+
+- type: marking
+  id: MothHeadEyeliner
+  bodyPart: Eyes
+  speciesRestriction: [Moth, NeoMoth] # FH
+  coloring:
+    default:
+      type:
+        !type:EyeColoring
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: motheyeliner
+  markingCategory: Eyes
+
+# Floof (Thlrd named it this, don't blame me)
+- type: marking
+  id: MothFloofAthamas
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: athamas_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofBee
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: bee_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofBeetle
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: beetle_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofCharred
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: charred_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofDBushy
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: dbushy_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofDefault
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: default_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofEpipyropidae
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: epipyropidae_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofFan
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: fan_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofFeathery
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: feathery_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofFirewatch
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: firewatch_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofFlannel
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: flannel_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofGlasswing
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: glasswing_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofGothic
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: gothic_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofJungle
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: jungle_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofLadybug
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: ladybug_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofMaple
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: maple_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofFirefly
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: mothfirefly_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofTrueButterfly
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: mothtruebutterfly_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofOaktreeHopper
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: oaktree_hopper_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofOakworm
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: oakworm_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofOrigins
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: origins_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofPlasmafire
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: plasmafire_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofPointy
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: pointy_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofRhinoBeetle
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: rhinobeetle_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofRoyal
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: royal_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofSnoth
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: snoth_floof_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: snoth_floof_secondary
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofStellar
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: stellar_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofSwirly
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: swirly_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofUnderwing
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: underwing_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofWartorn
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: wartorn_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofWhitefly
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: whitefly_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofBackstabbed
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: wings_backstabbed_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofWitchwing
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/floof.rsi
+    state: witchwing_floof
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofChitinidBeeSnout
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_wings.rsi
+    state: bee_tertiary
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofMoffra
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: moffra_tertiary
+  markingCategory: NeckFluff
+
+- type: marking
+  id: MothFloofless
+  bodyPart: NeckFluff
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: Effects/text.rsi
+    state: blank
+  markingCategory: NeckFluff
+
+# Hair
+- type: marking
+  id: MothHairAfro
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: afro
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairAmazon
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: amazon
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairBalding
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: balding
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairBeachWave
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: beach_wave
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairBedHead
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: bed_head
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairBeehive
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: beehive
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairBigAfro
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: big_afro
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairBixie
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: bixie
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairBob
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: bob
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairBowlcut
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: bowlcut
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairBraid
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: braid
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairBuisness
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: buisness
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairBun
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: bun
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairBuzzCut
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: buzz_cut
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairCombOver
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: comb_over
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairCombedAfro
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: combed_afro
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairCornrows
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: cornrows
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairCrewCut
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: crew_cut
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairCurly
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: curly
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairDavid
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: david
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairDoubleBuns
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: double_buns
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairDreadlocks
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: dreadlocks
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairEltonCutLeft
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: elton_cut_left
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairEltonCutRight
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: elton_cut_right
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairElven
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: elven
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairEmo
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: emo
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairFeathered
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: feathered
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairFlatTop
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: flat_top
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairFloorLengthBedhead
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: floor_length_bedhead
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairHighBraid
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: high_braid
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairLongDreadlocks
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: long_dreadlocks
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairLongParted
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: long_parted
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairLongUndercut
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: long_undercut
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairLongUnkempt
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: long_unkempt
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairLongWavy
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: long_wavy
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairLowTaperFade
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: low_taper_fade
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairMessyBangs
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: messy_bangs
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairPompadour
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: pompadour
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairShortBraid
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: short_braid
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairShortParted
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: short_parted
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairSingleHair
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: single_hair
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairTiltedBangs
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: tilted_bangs
+  markingCategory: Hair
+
+- type: marking
+  id: MothHairUndercut
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/hair.rsi
+    state: undercut
+  markingCategory: Hair
+
+- type: marking
+  id: MothHeadBowlcut
+  bodyPart: Hair
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: bowlcut
+  markingCategory: Hair
+
+# Head
+- type: marking
+  id: MothHeadAthamas
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: athamas
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadBottomHalf
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: bottom_half
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadCharred
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: charred_head
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadDeathhead
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: deathhead_head
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadEyeRimScarLeft
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: eye_rim_scar_left
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadEyeRimScarRight
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: eye_rim_scar_right
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadEyeScarLeft
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: eye_scar_left
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadEyeScarRight
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: eye_scar_right
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadFan
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: fan_head
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadFirewatch
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: firewatch_head
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadGothic
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: gothic_head
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadBadmolt
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: head_badmolt_moth
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadChimera
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: head_chimera_moth
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadTwisting
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: head_twisting_moth
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadJungle
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: jungle_head
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadMoonfly
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: moonfly_head
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadBurnL
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: moth_burn_l
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadBurnR
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: moth_burn_r
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadFaceClaw
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: moth_face_claw
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadSlashL
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: moth_slash_l
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadSlashR
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: moth_slash_r
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadOakworm
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: oakworm_head
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadPointy
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: pointy_head
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadRagged
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: ragged_head
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadRoyal
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: royal_head
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadTopHalf
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: top_half
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadWhitefly
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: whitefly_head
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadWitchwing
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: witchwing_head
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadChitinidRadiant
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: radiant_head
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadChitinidSpotted
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: spotted_head
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadChitinidStripes
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: stripes_head
+  markingCategory: Head
+
+- type: marking
+  id: MothHeadChitinidToxic
+  bodyPart: Head
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: toxic_head
+  markingCategory: Head
+
+# Head Side
+- type: marking
+  id: MothHeadPlasmafire
+  bodyPart: HeadSide
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: plasmafire
+  markingCategory: HeadSide
+
+- type: marking
+  id: MothHeadMaple
+  bodyPart: HeadSide
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: maple
+  markingCategory: HeadSide
+
+- type: marking
+  id: MothHeadFeathery
+  bodyPart: HeadSide
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: feathery
+  markingCategory: HeadSide
+
+# Legs
+- type: marking
+  id: MothLLegAthamas
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: athamas_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegAthamas
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: athamas_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegCharred
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: charred_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegCharred
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: charred_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegDeathhead
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: deathhead_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegDeathhead
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: deathhead_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegFan
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: fan_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegFan
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: fan_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegFirewatch
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: firewatch_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegFirewatch
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: firewatch_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLFootChimera
+  bodyPart: LFoot
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: foot_l_chimera_moth
+  markingCategory: Legs
+
+- type: marking
+  id: MothLFootProsthetic
+  bodyPart: LFoot
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: foot_l_prosthetic_moth
+  markingCategory: Legs
+
+- type: marking
+  id: MothRFootProsthetic
+  bodyPart: RFoot
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: foot_r_prosthetic_moth
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegGothic
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: gothic_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegGothic
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: gothic_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegJungle
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: jungle_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegJungle
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: jungle_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegMoonfly
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: moonfly_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegMoonfly
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: moonfly_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegOakworm
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: oakworm_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegOakworm
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: oakworm_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegPointy
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: pointy_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegPointy
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: pointy_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegRagged
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: ragged_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegRagged
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: ragged_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegRoyal
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: royal_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegRoyal
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: royal_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegSlashed
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: slashed_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegSlashed
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: slashed_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegWhitefly
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: whitefly_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegWhitefly
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: whitefly_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegWitchwing
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: witchwing_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegWitchwing
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: witchwing_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegChitinidRadiant
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: radiant_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegChitinidRadiant
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: radiant_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegChitinidSpotted
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: spotted_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegChitinidSpotted
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: spotted_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegChitinidStripes
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: stripes_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegChitinidStripes
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: stripes_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegChitinidToxic
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: toxic_l_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegChitinidToxic
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: toxic_r_leg
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegProsthetic
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: leg_l_prosthetic_moth
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegProsthetic
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: leg_r_prosthetic_moth
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegTwisting
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: leg_l_twisting_moth
+  markingCategory: Legs
+
+- type: marking
+  id: MothRLegTwisting
+  bodyPart: RLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: leg_r_twisting_moth
+  markingCategory: Legs
+
+- type: marking
+  id: MothLLegChimera
+  bodyPart: LLeg
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/legs.rsi
+    state: leg_l_chimera_moth
+  markingCategory: Legs
+
+# Snout
+- type: marking
+  id: MothHeadChitinidWeevil
+  bodyPart: Snout
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_parts.rsi
+    state: weevil_head
+  markingCategory: Snout
+
+- type: marking
+  id: MothHeadBeak
+  bodyPart: Snout
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: beak
+  markingCategory: Snout
+
+- type: marking
+  id: MothHeadFangs
+  bodyPart: Snout
+  speciesRestriction: [Moth, NeoMoth] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/head.rsi
+    state: fangs
+  markingCategory: Snout
+
+# Wings
+- type: marking
+  id: MothWingsAthamas
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: athamas_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: athamas_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsBee
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: bee_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: bee_secondary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: bee_tertiary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsBeetle
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: beetle_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: beetle_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsCharred
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: charred_primary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsDbushy
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: dbushy_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: dbushy_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsDeathhead
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: deathhead_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: deathhead_secondary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: deathhead_tertiary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsDefault
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: default_primary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsEpipyropidae
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: epipyropidae_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: epipyropidae_secondary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: epipyropidae_tertiary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsFan
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: fan_primary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsFeathery
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: feathery_primary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsFirewatch
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: firewatch_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: firewatch_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsFlannel
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: flannel_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: flannel_quaternary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: flannel_secondary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: flannel_tertiary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsGlasswing
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: glasswing_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: glasswing_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsGothic
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: gothic_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: gothic_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsJungle
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: jungle_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: jungle_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsLadybug
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: ladybug_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: ladybug_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsMaple
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: maple_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: maple_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsMoffra
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: moffra_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: moffra_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsFirefly
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: mothfirefly_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: mothfirefly_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsTrueButterfly
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: mothtruebutterfly_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: mothtruebutterfly_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsOaktreeHopper
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: oaktree_hopper_primary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsOakworm
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: oakworm_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: oakworm_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsOrigins
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: origins_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: origins_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsPlasmafire
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: plasmafire_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: plasmafire_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsPointy
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: pointy_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: pointy_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsRhinoBeetle
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: rhinobeetle_primary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsRoyal
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: royal_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: royal_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsSnoth
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: snoth_primary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsStellar
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: stellar_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: stellar_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsTattered
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: tattered_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: tattered_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsSwirly
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: swirly_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: swirly_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsUnderwing
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: underwing_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: underwing_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsWartorn
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: wartorn_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: wartorn_secondary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: wartorn_tertiary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsWhitefly
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: whitefly_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: whitefly_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsBackstabbed
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: wings_backstabbed_primary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsWitchwing
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: witchwing_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/wings.rsi
+    state: witchwing_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsChitinidBee
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_wings.rsi
+    state: bee_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_wings.rsi
+    state: bee_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsChitinidDefault
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_wings.rsi
+    state: default
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsChitinidHoneypot
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_wings.rsi
+    state: honeypot_primary
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_wings.rsi
+    state: honeypot_secondary
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsChitinidSmooth
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_wings.rsi
+    state: smooth
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsChitinidStubby
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_wings.rsi
+    state: stubby
+  markingCategory: Tail
+
+- type: marking
+  id: MothWingsChitinidTailess
+  bodyPart: Tail
+  speciesRestriction: [Moth, NeoMoth, Neocyte] # FH
+  sprites:
+  - sprite: _Starfall/Mobs/Customization/Lumari/chitinid_wings.rsi
+    state: tailess
+  markingCategory: Tail
+
+
