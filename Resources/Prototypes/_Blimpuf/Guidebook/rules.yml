@@ -1,0 +1,103 @@
+- type: guideEntry
+  id: BlimpufRuleset
+  name: guide-entry-blimpuf-rules
+  ruleEntry: true
+  priority: 10
+  text: "/ServerInfo/_Blimpuf/Guidebook/ServerRules/BlimpufRules.xml"
+  children:
+  - BlimpufRule1
+  - BlimpufRule2
+  - BlimpufRule3
+  - BlimpufRule4
+  - BlimpufRule5
+  - BlimpufRule6
+  - BlimpufRule7
+  - BlimpufRule8
+  - BlimpufRule9
+  - BlimpufRule10
+  - BlimpufRule11
+  - BlimpufMetashield
+
+- type: guideEntry
+  id: BlimpufRule1
+  name: guide-entry-blimpuf-rule-1
+  ruleEntry: true
+  priority: 1
+  text: "/ServerInfo/_Blimpuf/Guidebook/ServerRules/RuleRespect.xml"
+
+- type: guideEntry
+  id: BlimpufRule2
+  name: guide-entry-blimpuf-rule-2
+  ruleEntry: true
+  priority: 2
+  text: "/ServerInfo/_Blimpuf/Guidebook/ServerRules/RuleAgeAndLanguage.xml"
+
+- type: guideEntry
+  id: BlimpufRule3
+  name: guide-entry-blimpuf-rule-3
+  ruleEntry: true
+  priority: 3
+  text: "/ServerInfo/_Blimpuf/Guidebook/ServerRules/RuleERP.xml"
+
+- type: guideEntry
+  id: BlimpufRule4
+  name: guide-entry-blimpuf-rule-4
+  ruleEntry: true
+  priority: 4
+  text: "/ServerInfo/_Blimpuf/Guidebook/ServerRules/RulePlayACharacter.xml"
+
+- type: guideEntry
+  id: BlimpufRule5
+  name: guide-entry-blimpuf-rule-5
+  ruleEntry: true
+  priority: 5
+  text: "/ServerInfo/_Blimpuf/Guidebook/ServerRules/RuleRoleplay.xml"
+
+- type: guideEntry
+  id: BlimpufRule6
+  name: guide-entry-blimpuf-rule-6
+  ruleEntry: true
+  priority: 6
+  text: "/ServerInfo/_Blimpuf/Guidebook/ServerRules/RuleEscalation.xml"
+
+- type: guideEntry
+  id: BlimpufRule7
+  name: guide-entry-blimpuf-rule-7
+  ruleEntry: true
+  priority: 7
+  text: "/ServerInfo/_Blimpuf/Guidebook/ServerRules/RuleAhelp.xml"
+
+- type: guideEntry
+  id: BlimpufRule8
+  name: guide-entry-blimpuf-rule-8
+  ruleEntry: true
+  priority: 8
+  text: "/ServerInfo/_Blimpuf/Guidebook/ServerRules/RuleLOOC.xml"
+
+- type: guideEntry
+  id: BlimpufRule9
+  name: guide-entry-blimpuf-rule-9
+  ruleEntry: true
+  priority: 9
+  text: "/ServerInfo/_Blimpuf/Guidebook/ServerRules/RuleMetagaming.xml"
+
+- type: guideEntry
+  id: BlimpufRule10
+  name: guide-entry-blimpuf-rule-10
+  ruleEntry: true
+  priority: 10
+  text: "/ServerInfo/_Blimpuf/Guidebook/ServerRules/RuleSSD.xml"
+
+- type: guideEntry
+  id: BlimpufRule11
+  name: guide-entry-blimpuf-rule-11
+  ruleEntry: true
+  priority: 11
+  text: "/ServerInfo/_Blimpuf/Guidebook/ServerRules/RuleGriefing.xml"
+
+- type: guideEntry
+  id: BlimpufMetashield
+  name: guide-entry-blimpuf-metashield
+  ruleEntry: true
+  priority: 12
+  text: "/ServerInfo/_Blimpuf/Guidebook/ServerRules/Metashield.xml"

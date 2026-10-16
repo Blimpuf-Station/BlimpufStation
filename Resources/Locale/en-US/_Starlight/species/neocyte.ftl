@@ -4,7 +4,7 @@ guidebook-armor-neocyte = Neocyte Frames
 # Starlight Neo Slime, Human, Felionoid renamed
 # Blimpuf - Neocytes, Elves, T'Nebri renamed
 subspecies-name-trueneocyte = True Neocyte
-subspecies-name-neovulp = Neo-Vulpkanin
+subspecies-name-neovulpkanin = Neo-Vulpkanin
 subspecies-name-neovox = Neo-Vox
 subspecies-name-neothaven = Neo-Thaven
 subspecies-name-neoslimeperson = Neo-Slime

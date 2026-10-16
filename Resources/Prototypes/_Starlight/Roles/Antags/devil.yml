@@ -4,7 +4,7 @@
   antagonist: true
 #  setPreference: true # Blimpuf: disabled
   objective: roles-antag-devil-objective
-  guides: [ Devil ]
+#  guides: [ Devil ] # Blimpuf: disabled
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 10h

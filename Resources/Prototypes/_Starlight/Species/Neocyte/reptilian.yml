@@ -52,7 +52,7 @@
     FaceCover:
       points: 1
       required: true
-      defaultMarkings: [ NeoVulpVisor ]
+      defaultMarkings: [ NeoVulpkaninVisor ]
     FaceCoverCover:
       points: 1
       required: true

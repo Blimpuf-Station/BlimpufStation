@@ -13,7 +13,7 @@
   id: NeocyteTail
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Neocyte, NeoVulp, NeoVox, NeoThaven, NeoShadekin, NeoResomi, NeoHuman, NeoMoth, NeoFelionoid, NeoTNebri, NeoAvali, NeoElf, NeoLagomorph] # Starlight, ProtoHumie -> NeoHuman, ProtoFeline -> NeoFelionoid, ProtoCyclorite -> NeoTNebri
+  speciesRestriction: [Neocyte, NeoVulpkanin, NeoVox, NeoThaven, NeoShadekin, NeoResomi, NeoHuman, NeoMoth, NeoFelionoid, NeoTNebri, NeoAvali, NeoElf, NeoLagomorph] # Starlight, ProtoHumie -> NeoHuman, ProtoFeline -> NeoFelionoid, ProtoCyclorite -> NeoTNebri
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/protogen/protogen.rsi
     state: tail_protogen
@@ -22,7 +22,7 @@
   id: NeocyteTailBushy
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Neocyte, NeoVulp, NeoVox, NeoThaven, NeoShadekin, NeoResomi, NeoHuman, NeoMoth, NeoFelionoid, NeoTNebri, NeoAvali, NeoElf, NeoLagomorph] # Starlight, ProtoHumie -> NeoHuman, ProtoFeline -> NeoFelionoid, ProtoCyclorite -> NeoTNebri
+  speciesRestriction: [Neocyte, NeoVulpkanin, NeoVox, NeoThaven, NeoShadekin, NeoResomi, NeoHuman, NeoMoth, NeoFelionoid, NeoTNebri, NeoAvali, NeoElf, NeoLagomorph] # Starlight, ProtoHumie -> NeoHuman, ProtoFeline -> NeoFelionoid, ProtoCyclorite -> NeoTNebri
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/protogen/protogen.rsi
     state: bushy_tail_protogen
@@ -31,7 +31,7 @@
   id: NeocyteTailShark
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Neocyte, NeoVulp, NeoVox, NeoThaven, NeoShadekin, NeoResomi, NeoHuman, NeoMoth, NeoFelionoid, NeoTNebri, NeoAvali, NeoElf, NeoLagomorph] # Starlight, ProtoHumie -> NeoHuman, ProtoFeline -> NeoFelionoid, ProtoCyclorite -> NeoTNebri
+  speciesRestriction: [Neocyte, NeoVulpkanin, NeoVox, NeoThaven, NeoShadekin, NeoResomi, NeoHuman, NeoMoth, NeoFelionoid, NeoTNebri, NeoAvali, NeoElf, NeoLagomorph] # Starlight, ProtoHumie -> NeoHuman, ProtoFeline -> NeoFelionoid, ProtoCyclorite -> NeoTNebri
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/protogen/protogen.rsi
     state: shark_tail_protogen
@@ -40,7 +40,7 @@
   id: NeocyteEars
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Neocyte, NeoVulp, NeoVox, NeoThaven, NeoShadekin, NeoHuman, NeoMoth, NeoFelionoid, NeoTNebri, NeoAvali, NeoElf, NeoLagomorph] #resomi too smol + Starlight, ProtoHumie -> NeoHuman, ProtoFeline -> NeoFelionoid, ProtoCyclorite -> NeoTNebri
+  speciesRestriction: [Neocyte, NeoVulpkanin, NeoVox, NeoThaven, NeoShadekin, NeoHuman, NeoMoth, NeoFelionoid, NeoTNebri, NeoAvali, NeoElf, NeoLagomorph] #resomi too smol + Starlight, ProtoHumie -> NeoHuman, ProtoFeline -> NeoFelionoid, ProtoCyclorite -> NeoTNebri
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/protogen/protogen.rsi
     state: ears_protogen
@@ -51,7 +51,7 @@
   id: TwoNeocyteEars
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Neocyte, NeoVulp, NeoVox, NeoThaven, NeoShadekin, NeoHuman, NeoMoth, NeoFelionoid, NeoTNebri, NeoAvali, NeoElf, NeoLagomorph] #resomi too smol + Starlight, ProtoHumie -> NeoHuman, ProtoFeline -> NeoFelionoid, ProtoCyclorite -> NeoTNebri
+  speciesRestriction: [Neocyte, NeoVulpkanin, NeoVox, NeoThaven, NeoShadekin, NeoHuman, NeoMoth, NeoFelionoid, NeoTNebri, NeoAvali, NeoElf, NeoLagomorph] #resomi too smol + Starlight, ProtoHumie -> NeoHuman, ProtoFeline -> NeoFelionoid, ProtoCyclorite -> NeoTNebri
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/protogen/protogen.rsi
     state: two_ears_protogen
@@ -122,136 +122,136 @@
 #region VULPKANIN ####
 
 - type: marking
-  id: NeoVulpPawSocksFeet
+  id: NeoVulpkaninPawSocksFeet
   bodyPart: RFoot
   markingCategory: Overlay
-  speciesRestriction: [NeoVulp]
+  speciesRestriction: [NeoVulpkanin]
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/proto-vulp/proto-vulp.rsi
     state: pawsocks_feet
 
 - type: marking
-  id: NeoVulpPawSocksLegs
+  id: NeoVulpkaninPawSocksLegs
   bodyPart: LLeg
   markingCategory: Legs
-  speciesRestriction: [NeoVulp]
+  speciesRestriction: [NeoVulpkanin]
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/proto-vulp/proto-vulp.rsi
     state: pawsocks_legs
 
 - type: marking
-  id: NeoVulpVisor
+  id: NeoVulpkaninVisor
   bodyPart: FaceCover
   markingCategory: FaceCover
-  speciesRestriction: [NeoVulp, NeoReptilian, NeoHuman] # Starlight, ProtoHumie -> NeoHuman ProtoReptile -> NeoReptilian
+  speciesRestriction: [NeoVulpkanin, NeoReptilian, NeoHuman] # Starlight, ProtoHumie -> NeoHuman ProtoReptile -> NeoReptilian
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/proto-vulp/visor_shapes.rsi
     state: vulpvisor
 
 - type: marking
-  id: NeoVulpVisorFourEyes
+  id: NeoVulpkaninVisorFourEyes
   bodyPart: FaceCover
   markingCategory: FaceCover
-  speciesRestriction: [NeoVulp]
+  speciesRestriction: [NeoVulpkanin]
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/proto-vulp/visor_shapes.rsi
     state: vulpvisor-four-eyes
 
 - type: marking
-  id: NeoVulpSnoutLong
+  id: NeoVulpkaninSnoutLong
   bodyPart: Snout
   markingCategory: Snout
-  speciesRestriction: [NeoVulp]
+  speciesRestriction: [NeoVulpkanin]
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/proto-vulp/visor_markings.rsi
     state: snout
 
 - type: marking
-  id: NeoVulpVisorSideWings
+  id: NeoVulpkaninVisorSideWings
   bodyPart: FaceCover
   markingCategory: Head
-  speciesRestriction: [NeoVulp]
+  speciesRestriction: [NeoVulpkanin]
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/proto-vulp/visor_markings.rsi
     state: side-visor-wings
 
 - type: marking
-  id: NeoVulpMediumArmor
+  id: NeoVulpkaninMediumArmor
   bodyPart: BodyCover
   markingCategory: BodyCover
-  speciesRestriction: [NeoVulp]
+  speciesRestriction: [NeoVulpkanin]
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/proto-vulp/body_armor.rsi
     state: medium
 
 - type: marking
-  id: NeoVulpMediumArmorAngled
+  id: NeoVulpkaninMediumArmorAngled
   bodyPart: BodyCover
   markingCategory: BodyCover
-  speciesRestriction: [NeoVulp]
+  speciesRestriction: [NeoVulpkanin]
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/proto-vulp/body_armor.rsi
     state: mediumangled
 
 - type: marking
-  id: NeoVulpLEDFace
+  id: NeoVulpkaninLEDFace
   bodyPart: FaceCoverCover
   markingCategory: FaceCoverCover
-  speciesRestriction: [NeoVulp]
+  speciesRestriction: [NeoVulpkanin]
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/proto-vulp/led_shapes_face.rsi
     state: face
 
 - type: marking
-  id: NeoVulpLEDFaceLong
+  id: NeoVulpkaninLEDFaceLong
   bodyPart: FaceCoverCover
   markingCategory: FaceCoverCover
-  speciesRestriction: [NeoVulp]
+  speciesRestriction: [NeoVulpkanin]
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/proto-vulp/led_shapes_face.rsi
     state: long
 
 - type: marking
-  id: NeoVulpLEDFaceFourEyes
+  id: NeoVulpkaninLEDFaceFourEyes
   bodyPart: FaceCoverCover
   markingCategory: FaceCoverCover
-  speciesRestriction: [NeoVulp]
+  speciesRestriction: [NeoVulpkanin]
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/proto-vulp/led_shapes_face.rsi
     state: four-eyes
 
 - type: marking
-  id: NeoVulpClaws
+  id: NeoVulpkaninClaws
   bodyPart: RHand
   markingCategory: Overlay
-  speciesRestriction: [NeoVulp]
+  speciesRestriction: [NeoVulpkanin]
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/proto-vulp/led_shapes_body.rsi
     state: claws
 
 - type: marking
-  id: NeoVulpClawsLong
+  id: NeoVulpkaninClawsLong
   bodyPart: RHand
   markingCategory: Overlay
-  speciesRestriction: [NeoVulp]
+  speciesRestriction: [NeoVulpkanin]
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/proto-vulp/led_shapes_body.rsi
     state: clawslong
 
 - type: marking
-  id: NeoVulpLights
+  id: NeoVulpkaninLights
   bodyPart: BodyCoverCover
   markingCategory: BodyCoverCover
-  speciesRestriction: [NeoVulp]
+  speciesRestriction: [NeoVulpkanin]
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/proto-vulp/led_shapes_body.rsi
     state: body
 
 - type: marking
-  id: NeoVulpLightsAngled
+  id: NeoVulpkaninLightsAngled
   bodyPart: BodyCoverCover
   markingCategory: BodyCoverCover
-  speciesRestriction: [NeoVulp]
+  speciesRestriction: [NeoVulpkanin]
   sprites:
   - sprite: _FarHorizons/Mobs/Customization/proto-vulp/led_shapes_body.rsi
     state: bodyangled

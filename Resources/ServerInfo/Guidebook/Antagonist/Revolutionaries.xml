@@ -52,12 +52,11 @@
   - [bold]Visibly be destroyed upon being implanted into a [color=#ed7300]Head Revolutionary[/color][/bold], giving you away
   - NOT protect against flash disorientation
 
-  Assume all of [color=#cb0000]Security[/color], [color=#1b67a5]Command[/color], [color=#a86819]Salvage specialists[/color], [color=#5b97bc]Paramedics[/color] and [color=#478bff]Internal Affairs Agents[/color] to be implanted with [color=cyan]MindShields™[/color] already, [bold]however they can be removed by using an empty implanter obtainable from the Medical department's MedFab, or by using an [color=#ed7300][bold]SKB Demindshielder[/bold][/color] available in your [color=#ed7300]uplink.[/color][/bold] <!-- Starlight-edit -->
+  Assume all of [color=#02cfe0]Security[/color], [color=#1b67a5]Command[/color], and [color=#478bff]Internal Affairs Agents[/color] to be implanted with [color=cyan]MindShields™[/color] already, [bold]however they can be removed by using an empty implanter obtainable from the Medical department's MedFab, or by using an [color=#ed7300][bold]SKB Demindshielder[/bold][/color] available in your [color=#ed7300]uplink.[/color][/bold] <!-- Starlight-edit -->
 
   <Box>
     <GuideEntityEmbed Entity="ToyFigurineSecurity" Caption=""/>
     <GuideEntityEmbed Entity="ToyFigurineCaptain" Caption=""/>  <!-- Starlight-edit -->
-    <GuideEntityEmbed Entity="ToyFigurineSalvage" Caption=""/>
     <GuideEntityEmbed Entity="ToyFigurineLawyer" Caption=""/>
   </Box>
 
@@ -107,7 +106,7 @@
 
   If a [color=yellow]rift[/color] is destroyed, you won't be able to place another one. And you'll only be able to place another if the [bold]current one is charged.[/bold]
 
-  It is recommended to discuss early on in the round where you'll place the [color=yellow]rift[/color] with your [color=red]revolutionaries[/color] so that they can [bold]fortify[/bold] the area to prevent [color=#cb0000]Security[/color] from [bold]destroying[/bold] it.
+  It is recommended to discuss early on in the round where you'll place the [color=yellow]rift[/color] with your [color=red]revolutionaries[/color] so that they can [bold]fortify[/bold] the area to prevent [color=#02cfe0]Security[/color] from [bold]destroying[/bold] it.
 
   ## Tips
 
@@ -127,15 +126,15 @@
     <GuideEntityEmbed Entity="ExosuitFabricator" Caption="Exosuit Fabricator"/>
   </Box>
 
-  - Be careful who you're trying to convert. Early on in the round some crew like [color=green]Musicians[/color] or [color=green]Bartenders[/color] wear [bold]sunglasses[/bold]. While [color=#a86819]Salvage specialists[/color] are outright [color=cyan]MindShielded™[/color].
+  - Be careful who you're trying to convert. Early on in the round some crew like [color=green]Musicians[/color] or [color=green]Bartenders[/color] wear [bold]sunglasses[/bold], while [color=#02cfe0]Security Officers[/color] are outright [color=cyan]MindShielded™[/color].
 
   <Box>
     <GuideEntityEmbed Entity="ToyFigurineMusician" Caption="'Ow. Okay'"/>
     <GuideEntityEmbed Entity="ToyFigurineBartender" Caption="'Give me a reason why I should join'"/>
-    <GuideEntityEmbed Entity="ToyFigurineSalvage" Caption="'...'"/>
+      <GuideEntityEmbed Entity="ToyFigurineSecurity" Caption="'Rookie mistake, kid'"/>
   </Box>
 
-  - If you're in for a long run, convert [color=#2189ff]Medical[/color] personnel. Long revolutionary rounds will inevitably mean lots of losses. Competent doctors will prioritize your health and of your allies over those from [color=#cb0000]Security[/color] or [color=#1b67a5]Command[/color], if by any chance they're getting treated in [color=#2189ff]Medbay[/color] rather than in [color=#cb0000]Brigmedic's medical bay[/color].
+  - If you're in for a long run, convert [color=#2189ff]Medical[/color] personnel. Long revolutionary rounds will inevitably mean lots of losses. Competent doctors will prioritize your health and of your allies over those from [color=#02cfe0]Security[/color] or [color=#1b67a5]Command[/color], if by any chance they're getting treated in [color=#2189ff]Medbay[/color] rather than in [color=#cb0000]Brigmedic's medical bay[/color].
 
   <Box>
     <GuideEntityEmbed Entity="ToyFigurineMedicalDoctor" Caption="'Accidental OD'"/>

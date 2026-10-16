@@ -52,7 +52,7 @@
     - /Audio/_FarHorizons/Voice/Proto/Vox/shriek1.ogg
 
 - type: soundCollection
-  id: NeoVulpScreams
+  id: NeoVulpkaninScreams
   files:
     - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/vulp_scream1.ogg
     - /Audio/_FarHorizons/Voice/Proto/Vulpkanin/vulp_scream2.ogg

@@ -837,7 +837,7 @@
     - service-sop-lawyer
     - service-sop-mime
     - service-sop-musician
-    - service-sop-performer
+#    - service-sop-performer Blimpuf removal
     - service-sop-reporter
     - service-sop-serviceworker
     - service-sop-zookeeper
@@ -915,11 +915,11 @@
   text: "/ServerInfo/Guidebook/StarlightSOP/ServiceSOP/Musician.xml"
   priority: 13
 
-- type: guideEntry
-  id: service-sop-performer
-  name: guide-entry-sl-service-sop-performer
-  text: "/ServerInfo/Guidebook/StarlightSOP/ServiceSOP/Performer.xml"
-  priority: 14
+#- type: guideEntry
+#  id: service-sop-performer
+#  name: guide-entry-sl-service-sop-performer
+#  text: "/ServerInfo/Guidebook/StarlightSOP/ServiceSOP/Performer.xml"
+#  priority: 14`
 
 - type: guideEntry
   id: service-sop-reporter

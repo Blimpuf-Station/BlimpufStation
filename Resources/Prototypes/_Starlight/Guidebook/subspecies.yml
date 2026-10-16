@@ -65,6 +65,6 @@
   text: "/ServerInfo/_Starlight/Guidebook/Mobs/SubMobs/NeoVox.xml"
 
 - type: guideEntry
-  id: NeoVulp
-  name: subspecies-name-neovulp
-  text: "/ServerInfo/_Starlight/Guidebook/Mobs/SubMobs/NeoVulp.xml"
+  id: NeoVulpkanin
+  name: subspecies-name-neovulpkanin
+  text: "/ServerInfo/_Starlight/Guidebook/Mobs/SubMobs/NeoVulpkanin.xml"
