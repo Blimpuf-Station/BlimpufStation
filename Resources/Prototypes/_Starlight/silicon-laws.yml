@@ -1,8 +1,11 @@
 # AI Crewsimov Lawset
 # Just Crewsimov With no law 0
+# Blimpuf edit - Law 0 made Cyborg Only
 - type: siliconLawset
   id: CrewsimovAI
   name: law-crewsimov-name
+  cyborgOnlyLaws:
+  - Crewsimov0
   laws:
   - Crewsimov1
   - Crewsimov2
