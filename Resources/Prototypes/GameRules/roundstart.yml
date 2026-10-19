@@ -173,8 +173,8 @@
     table: !type:GroupSelector
       children:
       - id: NukiePlanetSpawn
-      - id: NukiePlanetSpawnWestern
-      - id: NukiePlanetSpawnGeiger
+  #    - id: NukiePlanetSpawnWestern Blimpuf disabled
+  #    - id: NukiePlanetSpawnGeiger Blimpuf disabled
   # Starlight end
   # Starlight - removing the LoadMapRule from here to instead handle it in the dynamic rules above
   #- type: LoadMapRule
