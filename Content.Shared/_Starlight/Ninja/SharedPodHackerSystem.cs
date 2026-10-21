@@ -61,7 +61,7 @@ public sealed partial class SharedPodHackerSystem : EntitySystem
             return;
 
         // despawn ninja
-        AddComp<TimedDespawnComponent>(uid);
+        EnsureComp<TimedDespawnComponent>(uid).Lifetime = 0.5f;
 
         var ev = new PodCalledInEvent(uid, args.Target.Value);
         RaiseLocalEvent(args.User, ref ev);
