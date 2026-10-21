@@ -229,7 +229,7 @@
   #Starlight end
 
 - type: entity
-  parent: [BaseComputerCircuitboard, BaseCargoContraband, BaseContrabandTier2] # Blimpuf
+  parent: [BaseComputerCircuitboard, BaseCivilianContraband, BaseContrabandTier2] # Blimpuf
   id: CargoRequestServiceComputerCircuitboard
   name: service request computer board
   description: A computer printed circuit board for a service request computer.
@@ -524,7 +524,7 @@
     prototype: ComputerRadar
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseMachineCircuitboard, BaseEngineeringContraband] # Blimpuf
   id: SolarControlComputerCircuitboard
   name: solar control computer board
   description: A computer printed circuit board for a solar control console.
