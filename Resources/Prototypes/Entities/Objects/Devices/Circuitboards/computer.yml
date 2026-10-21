@@ -524,7 +524,7 @@
     prototype: ComputerRadar
 
 - type: entity
-  parent: [BaseMachineCircuitboard, BaseEngineeringContraband] # Blimpuf
+  parent: [BaseComputerCircuitboard, BaseEngineeringContraband] # Blimpuf
   id: SolarControlComputerCircuitboard
   name: solar control computer board
   description: A computer printed circuit board for a solar control console.
