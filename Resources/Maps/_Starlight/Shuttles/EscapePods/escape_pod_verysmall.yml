@@ -84,10 +84,6 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: ExplosionAirtightGrid
-    - type: ChunkContainer
-      chunkEntities: []
-    - type: TileHistory
-      chunkHistory: {}
 - proto: AirlockGlassShuttle
   entities:
   - uid: 2

@@ -141,10 +141,6 @@ entities:
     - type: ExplosionAirtightGrid
     - type: RadiationGridResistance
     - type: EscapePod
-    - type: ChunkContainer
-      chunkEntities: []
-    - type: TileHistory
-      chunkHistory: {}
 - proto: AirAlarm
   entities:
   - uid: 2
