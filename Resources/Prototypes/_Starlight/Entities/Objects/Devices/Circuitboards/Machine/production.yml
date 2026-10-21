@@ -1275,7 +1275,7 @@
 # Departmental Techfabs
 - type: entity
   id: CargoTechFabCircuitboard
-  parent: [BaseMachineCircuitboard, BaseCargoContraband]
+  parent: [BaseMachineCircuitboard, BaseCargoContraband, BaseContrabandTier2] # Blimpuf
   name: cargo techfab machine board
   description: A machine printed circuit board for a cargo techfab.
   components:
@@ -1292,7 +1292,7 @@
 
 - type: entity
   id: EngineeringTechFabCircuitboard
-  parent: [BaseMachineCircuitboard, BaseEngineeringContraband]
+  parent: [BaseMachineCircuitboard, BaseEngineeringContraband, BaseContrabandTier2] # Blimpuf
   name: engineering techfab machine board
   description: A machine printed circuit board for an engineering techfab.
   components:
@@ -1309,7 +1309,7 @@
 
 - type: entity
   id: ServiceTechFabCircuitboard
-  parent: [BaseMachineCircuitboard, BaseCivilianContraband]
+  parent: [BaseMachineCircuitboard, BaseCivilianContraband, BaseContrabandTier2] # Blimpuf
   name: service techfab machine board
   description: A machine printed circuit board for a service techfab.
   components:
@@ -1326,7 +1326,7 @@
 
 - type: entity
   id: ScienceTechFabCircuitboard
-  parent: [BaseMachineCircuitboard, BaseScienceContraband]
+  parent: [BaseMachineCircuitboard, BaseScienceContraband, BaseContrabandTier2] # Blimpuf
   name: science techfab machine board
   description: A machine printed circuit board for a science techfab.
   components:
@@ -1343,7 +1343,7 @@
 
 - type: entity
   id: CommandTechFabCircuitboard
-  parent: [BaseMachineCircuitboard, BaseCommandContraband]
+  parent: [BaseMachineCircuitboard, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   name: command techfab machine board
   description: A machine printed circuit board for a command techfab.
   components:
@@ -1361,7 +1361,7 @@
 - type: entity
   id: NanoTrasenTechFabCircuitboard
   categories: [ DoNotMap ]
-  parent: [BaseMachineCircuitboard, BaseRepresentativesContraband]
+  parent: [BaseMachineCircuitboard, BaseCentcommContraband]
   name: NanoTrasen techfab machine board
   description: A machine printed circuit board for a NanoTrasen techfab.
   components:

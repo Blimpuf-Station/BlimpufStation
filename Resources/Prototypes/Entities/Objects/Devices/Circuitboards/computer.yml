@@ -38,7 +38,7 @@
 # FH - End
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseEngineeringContraband, BaseContrabandTier2] # Blimpuf
   id: AlertsComputerCircuitboard
   name: atmospheric alerts computer board
   description: A computer printed circuit board for an atmospheric alerts computer.
@@ -55,7 +55,7 @@
     #Starlight end
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseEngineeringContraband, BaseContrabandTier2] # Blimpuf
   id: AtmosMonitoringComputerCircuitboard
   name: atmospheric network monitor board
   description: A computer printed circuit board for an atmospheric network monitor.
@@ -72,7 +72,7 @@
     #Starlight end
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseEngineeringContraband, BaseContrabandTier2] # Blimpuf
   id: PowerComputerCircuitboard
   name: power monitoring computer board
   description: A computer printed circuit board for a power monitoring computer.
@@ -89,7 +89,7 @@
     #Starlight end
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseMedicalContraband, BaseContrabandTier2] # Blimpuf
   id: MedicalRecordsComputerCircuitboard
   name: medical records computer board
   description: A computer printed circuit board for a medical records computer.
@@ -100,7 +100,7 @@
       prototype: ComputerMedicalRecords
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   id: CriminalRecordsComputerCircuitboard
   name: criminal records computer board
   description: A computer printed circuit board for a criminal records computer.
@@ -117,7 +117,7 @@
     #Starlight end
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   id: StationRecordsComputerCircuitboard
   name: station records computer board
   description: A computer printed circuit board for a station records computer.
@@ -134,7 +134,7 @@
     #Starlight end
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseCargoContraband, BaseContrabandTier2] # Blimpuf
   id: CargoRequestComputerCircuitboard
   name: cargo request computer board
   description: A computer printed circuit board for a cargo request computer.
@@ -153,7 +153,7 @@
     #Starlight end
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseEngineeringContraband, BaseContrabandTier2] # Blimpuf
   id: CargoRequestEngineeringComputerCircuitboard
   name: engineering request computer board
   description: A computer printed circuit board for an engineering request computer.
@@ -172,7 +172,7 @@
   #Starlight end
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseMedicalContraband, BaseContrabandTier2] # Blimpuf
   id: CargoRequestMedicalComputerCircuitboard
   name: medical request computer board
   description: A computer printed circuit board for a medical request computer.
@@ -191,7 +191,7 @@
   #Starlight end
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseScienceContraband, BaseContrabandTier2] # Blimpuf
   id: CargoRequestScienceComputerCircuitboard
   name: science request computer board
   description: A computer printed circuit board for a science request computer.
@@ -210,7 +210,7 @@
   #Starlight end
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   id: CargoRequestSecurityComputerCircuitboard
   name: security request computer board
   description: A computer printed circuit board for a security request computer.
@@ -229,7 +229,7 @@
   #Starlight end
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseCargoContraband, BaseContrabandTier2] # Blimpuf
   id: CargoRequestServiceComputerCircuitboard
   name: service request computer board
   description: A computer printed circuit board for a service request computer.
@@ -248,7 +248,7 @@
   #Starlight end
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   id: FundingAllocationComputerCircuitboard
   name: funding allocation computer board
   description: A computer printed circuit board for a funding allocation card console.
@@ -261,7 +261,7 @@
     price: 750
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseCargoContraband, BaseContrabandTier2] # Blimpuf
   id: CargoSaleComputerCircuitboard
   name: cargo sale computer board
   description: A computer printed circuit board for a cargo sale computer.
@@ -272,8 +272,8 @@
       prototype: ComputerPalletConsole
 
 - type: entity
+  parent: [BaseComputerCircuitboard, BaseCargoContraband, BaseContrabandTier2] # Blimpuf
   id: CargoBountyComputerCircuitboard
-  parent: BaseComputerCircuitboard
   name: cargo bounty computer board
   description: A computer printed circuit board for a cargo bounty computer.
   components:
@@ -290,7 +290,7 @@
   #Starlight end
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseCargoContraband, BaseContrabandTier2] # Blimpuf
   id: SalvageJobBoardComputerCircuitboard
   name: salvage job board computer board
   description: A computer printed circuit board for a salvage job board computer.
@@ -307,7 +307,7 @@
   #Starlight end
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseCargoContraband, BaseContrabandTier2] # Blimpuf
   id: SalvageExpeditionsComputerCircuitboard
   name: salvage expeditions computer board
   description: A computer printed circuit board for a salvage expeditions computer.
@@ -320,7 +320,7 @@
       stealGroup: SalvageExpeditionsComputerCircuitboard
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseCargoContraband, BaseContrabandTier2] # Blimpuf
   id: CargoShuttleConsoleCircuitboard
   name: remote cargo shuttle console board # Starlight begin
   description: A computer printed circuit board for a remote cargo shuttle console. # Starlight end
@@ -333,7 +333,7 @@
     stealGroup: CargoShuttleConsoleCircuitboard
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseSecurityContraband] # Blimpuf
   id: SurveillanceCameraMonitorCircuitboard
   name: surveillance camera monitor board
   description: A computer printed circuit board for a surveillance camera monitor.
@@ -354,7 +354,7 @@
   #Starlight end
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseCivilianContraband] # Blimpuf
   id: SurveillanceWirelessCameraMonitorCircuitboard
   name: surveillance wireless camera monitor board
   description: A computer printed circuit board for a surveillance wireless camera monitor.
@@ -365,7 +365,7 @@
     prototype: ComputerSurveillanceWirelessCameraMonitor
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseXenoborgContraband] # Blimpuf
   id: XenoborgCameraMonitorCircuitboard
   name: xenoborg camera monitor board
   description: A computer printed circuit board for a xenoborg camera monitor.
@@ -389,7 +389,7 @@
         - RamChip # FH
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseScienceContraband, BaseContrabandTier2] # Blimpuf
   id: ResearchComputerCircuitboard
   name: R&D computer board
   description: A computer printed circuit board for a R&D console.
@@ -400,7 +400,7 @@
       prototype: ComputerResearchAndDevelopment
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseScienceContraband] # Blimpuf
   id: AnalysisComputerCircuitboard
   name: analysis computer board
   description: A computer printed circuit board for an analysis console.
@@ -411,7 +411,7 @@
       prototype: ComputerAnalysisConsole
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseScienceContraband] # Blimpuf
   id: TechDiskComputerCircuitboard
   name: tech disk terminal board
   description: A computer printed circuit board for a technology disk terminal.
@@ -422,7 +422,7 @@
     prototype: ComputerTechnologyDiskTerminal
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseMedicalContraband, BaseContrabandTier2] # Blimpuf
   id: CrewMonitoringComputerCircuitboard
   name: crew monitoring computer board
   description: A computer printed circuit board for a crew monitoring console.
@@ -439,7 +439,7 @@
   #Starlight end
 
 - type: entity
-  parent: [BaseComputerCircuitboard, BaseCommandContraband]
+  parent: [BaseComputerCircuitboard, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   id: IDComputerCircuitboard
   name: ID card computer board
   description: A computer printed circuit board for an ID card console.
@@ -468,7 +468,7 @@
       prototype: computerBodyScanner
 
 - type: entity
-  parent: [ BaseComputerCircuitboard, BaseCommandContraband ]
+  parent: [BaseComputerCircuitboard, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   id: CommsComputerCircuitboard
   name: communications computer board
   description: A computer printed circuit board for a communications console.
@@ -492,7 +492,7 @@
     prototype: SyndicateComputerComms
 
 - type: entity
-  parent: [ BaseComputerCircuitboard, BaseSyndicateContraband ]
+  parent: [ BaseComputerCircuitboard, BaseMagicalContraband ] # Blimpuf
   id: WizardCommsComputerCircuitboard
   name: wizard communications computer board
   description: A computer printed circuit board for a wizard communications console.
@@ -619,7 +619,7 @@
     prototype: ComputerIFFSyndicate
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseCivilianContraband] # Blimpuf
   id: ComputerMassMediaCircuitboard
   name: news manager console board
   description: Write your message to the world!
@@ -649,7 +649,7 @@
       prototype: ComputerSensorMonitoring
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseScienceContraband, BaseContrabandTier2] # Blimpuf
   id: RoboticsConsoleCircuitboard
   name: robotics control console board
   description: A computer printed circuit board for a robotics control console.
@@ -660,7 +660,7 @@
       prototype: ComputerRoboticsControl
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseXenoborgContraband] # Blimpuf
   id: ComputerXenoborgsControlCircuitboard
   name: xenoborg control console board
   description: A computer printed circuit board for a xenoborg control console.
@@ -671,7 +671,7 @@
       prototype: ComputerXenoborgsControl
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   id: StationAiUploadCircuitboard
   name: AI upload console board
   description: A computer printed circuit board for an AI upload console.
@@ -682,7 +682,7 @@
       prototype: StationAiUploadComputer
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   id: StationAiFixerCircuitboard
   name: AI restoration console board
   description: A computer printed circuit board for an AI restoration console console.
