@@ -111,15 +111,27 @@ namespace Content.IntegrationTests.Tests.Preferences
             Assert.That(!prefs.Characters.Any(p => p.Key != 0));
         }
 
+        // Blimpuf start
         [Test]
-        public async Task TestNoPendingDatabaseChanges()
+        public void TestNoPendingSqliteDatabaseChanges()
         {
-            var pair = Pair;
-            var server = pair.Server;
-            var db = GetDb(server);
-            Assert.That(async () => await db.HasPendingModelChanges(), Is.False,
+            var builder = new DbContextOptionsBuilder<SqliteServerDbContext>();
+            builder.UseSqlite("Data Source=:memory:");
+            using var context = new SqliteServerDbContext(builder.Options);
+            Assert.That(context.Database.HasPendingModelChanges(), Is.False,
                 "The database has pending model changes. Add a new migration to apply them. See https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations");
         }
+
+        [Test]
+        public void TestNoPendingPostgresDatabaseChanges()
+        {
+            var builder = new DbContextOptionsBuilder<PostgresServerDbContext>();
+            builder.UseNpgsql("Server=localhost");
+            using var context = new PostgresServerDbContext(builder.Options);
+            Assert.That(context.Database.HasPendingModelChanges(), Is.False,
+                "The database has pending model changes. Add a new migration to apply them. See https://learn.microsoft.com/en-us/ef/core/managing-schemas/migrations");
+        }
+        // Blimpuf end
 
         private static NetUserId NewUserId()
         {
