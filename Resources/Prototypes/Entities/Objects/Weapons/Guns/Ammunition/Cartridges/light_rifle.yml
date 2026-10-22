@@ -33,7 +33,7 @@
         color: "#3F47DB"
 
 - type: entity
-  parent: BaseCartridgeLightRifleSP
+  parent: [BaseCartridgeLightRifleSP, BaseContrabandTier1] # Blimpuf Practice is Tier 1
   id: CartridgeLightRiflePractice
   name: cartridge (.30 rifle practice)
   description: A classic intermediate cartridge used by many combat rifles and LMGs. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
