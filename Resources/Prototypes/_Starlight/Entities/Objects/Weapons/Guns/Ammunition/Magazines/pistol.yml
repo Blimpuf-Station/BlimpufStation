@@ -246,7 +246,7 @@
 - type: entity
   id: MagazinePistolSP
   name: pistol magazine (.35 auto SP)
-  parent: BaseMagazinePistol
+  parent: [BaseMagazinePistol, BaseSalvageContraband] # Blimpuf
   description: 10-round single-stack magazine for pistols. Intended to hold general-purpose kinetic ammunition.
   components:
   - type: BallisticAmmoProvider

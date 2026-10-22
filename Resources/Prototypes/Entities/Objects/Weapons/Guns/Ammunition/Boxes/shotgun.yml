@@ -13,7 +13,7 @@
 
 - type: entity
   abstract: true
-  parent: BaseAmmoProvider
+  parent: [BaseAmmoProvider, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   id: AmmoProviderShotgunShell
   components:
     - type: Sprite
@@ -52,7 +52,7 @@
       - state: beanbag
 
 - type: entity
-  parent: AmmoProviderShotgunShell
+  parent: [AmmoProviderShotgunShell, BaseSalvageContraband] # Blimpuf
   id: BoxLethalshot
   name: box of 12 gauge buckshot # Starlight change: .50 -> 12 gauge
   description: A cardboard box of 12 gauge shotgun shells. Intended to hold general-purpose kinetic ammunition. # Starlight change: .50 -> 12 gauge

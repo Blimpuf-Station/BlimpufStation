@@ -1,6 +1,6 @@
 - type: entity
   name: box of .25 caseless (rubber) magazines
-  parent: BoxMagazine
+  parent: [BaseContrabandTier2, BoxMagazine] # Blimpuf Less-Lethal is Tier 2
   id: BoxMagazineCaselessRifleRubber
   description: A box full of
   components:
@@ -13,7 +13,7 @@
 
 - type: entity
   name: box of .30 rifle (rubber) magazines
-  parent: BoxMagazine
+  parent: [BaseContrabandTier2, BoxMagazine] # Blimpuf Less-Lethal is Tier 2
   id: BoxMagazineLightRifleRubber
   description: A box full of .30 rifle (practice) magazines.
   components:
@@ -26,7 +26,7 @@
 
 - type: entity
   name: box of Vector (rubber) magazines
-  parent: BoxMagazine
+  parent: [BaseContrabandTier2, BoxMagazine] # Blimpuf Less-Lethal is Tier 2
   id: BoxMagazineMagnumSubMachineGunRubber
   description: A box full of Vector (rubber) magazines.
   components:
@@ -39,7 +39,7 @@
 
 - type: entity
   name: box of pistol .35 auto (rubber) magazines
-  parent: BoxMagazine
+  parent: [BaseContrabandTier2, BoxMagazine] # Blimpuf Less-Lethal is Tier 2
   id: BoxMagazinePistolRubber
   description: A box full of pistol .35 auto (rubber) magazines.
   components:
@@ -52,7 +52,7 @@
 
 - type: entity
   name: box of machine pistol .35 auto (rubber) magazines
-  parent: BoxMagazine
+  parent: [BaseContrabandTier2, BoxMagazine] # Blimpuf Less-Lethal is Tier 2
   id: BoxMagazinePistolHighCapacityRubber
   description: A box full of machine pistol .35 auto (rubber) magazines.
   components:
@@ -66,7 +66,7 @@
 
 - type: entity
   name: box of SMG .35 auto (rubber) magazines
-  parent: BoxMagazine
+  parent: [BaseContrabandTier2, BoxMagazine] # Blimpuf Less-Lethal is Tier 2
   id: BoxMagazinePistolSubMachineGunRubber
   description: A box full of SMG .35 auto (rubber) magazines.
   components:
@@ -79,7 +79,7 @@
 
 - type: entity
   name: box of .20 rifle (rubber) magazines
-  parent: BoxMagazine
+  parent: [BaseContrabandTier2, BoxMagazine] # Blimpuf Less-Lethal is Tier 2
   id: BoxMagazineRifleRubber
   description: A box full of .20 rifle (rubber) magazines.
   components:

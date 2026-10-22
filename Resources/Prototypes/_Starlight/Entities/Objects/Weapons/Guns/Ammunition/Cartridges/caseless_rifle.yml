@@ -1,7 +1,7 @@
 - type: entity
   id: CartridgeCaselessRifleRubber
   name: cartridge (.25 caseless rubber)
-  parent: BaseCartridgeCaselessRifle
+  parent: [BaseContrabandTier2, BaseCartridgeCaselessRifle] # Blimpuf Less-Lethal is Tier 2
   components:
   - type: CartridgeAmmo
     proto: RubberBulletTrace
