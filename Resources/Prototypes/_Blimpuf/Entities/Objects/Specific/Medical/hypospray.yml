@@ -29,3 +29,16 @@
     allowedModes:
     - HyposprayDynamicMode
     - HyposprayInjectMode
+
+- type: entity
+  parent: Hypopen
+  id: HypopenNocturine
+  suffix: Hypopen (Nocturine)
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nocturine
+          Quantity: 10

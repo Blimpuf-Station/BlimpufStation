@@ -1,0 +1,11 @@
+- type: thiefBackpackSet
+  id: ExtrovertSet
+  name: thief-backpack-category-extrovert-name
+  description: thief-backpack-category-extrovert-description
+  sprite:
+    sprite: Mobs/Species/Human/organs.rsi
+    state: brain
+  content:
+  - MindControlImplanter
+  - HypopenNocturine
+  - ThievingGloves
