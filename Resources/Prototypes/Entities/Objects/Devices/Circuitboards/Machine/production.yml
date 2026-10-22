@@ -1103,7 +1103,7 @@
 
 - type: entity
   id: EmitterCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseEngineeringContraband, BaseContrabandTier2] # Blimpuf
   name: emitter machine board
   components:
     - type: Sprite
