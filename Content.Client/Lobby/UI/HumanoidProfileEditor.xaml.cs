@@ -120,6 +120,8 @@ namespace Content.Client.Lobby.UI
 
         private readonly ColorSelectorSliders _rgbSkinColorSelector = new();
 
+        public MultiselectOptionButton<Gender> PronounsButton { get; private set; } // Blimpuf
+
         private bool _isDirty;
 
         private static readonly ProtoId<GuideEntryPrototype> DefaultSpeciesGuidebook = "Species";
@@ -248,17 +250,22 @@ namespace Content.Client.Lobby.UI
 
             #endregion Age
 
+            // Blimpuf - support for secondary pronoun selection
             #region Gender
 
-            PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-male-text"), (int)Gender.Male);
-            PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-female-text"), (int)Gender.Female);
-            PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-epicene-text"), (int)Gender.Epicene);
-            PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-neuter-text"), (int)Gender.Neuter);
-
-            PronounsButton.OnItemSelected += args =>
+            PronounsContainer.AddChild(PronounsButton = new MultiselectOptionButton<Gender>
             {
-                PronounsButton.SelectId(args.Id);
-                SetGender((Gender)args.Id);
+                ToolTip = Loc.GetString("blimpuf-pronouns-selection-hint")
+            });
+
+            PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-male-text"), Gender.Male);
+            PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-female-text"), Gender.Female);
+            PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-epicene-text"), Gender.Epicene);
+            PronounsButton.AddItem(Loc.GetString("humanoid-profile-editor-pronouns-neuter-text"), Gender.Neuter);
+
+            PronounsButton.OnItemSelected += _ =>
+            {
+                SetGender(PronounsButton.SelectedKeys[0]);
             };
 
             #endregion Gender
@@ -1579,19 +1586,6 @@ namespace Content.Client.Lobby.UI
         private void SetSex(Sex newSex)
         {
             Profile = Profile?.WithSex(newSex);
-            // for convenience, default to most common gender when new sex is selected
-            switch (newSex)
-            {
-                case Sex.Male:
-                    Profile = Profile?.WithGender(Gender.Male);
-                    break;
-                case Sex.Female:
-                    Profile = Profile?.WithGender(Gender.Female);
-                    break;
-                default:
-                    Profile = Profile?.WithGender(Gender.Epicene);
-                    break;
-            }
 
             UpdateGenderControls();
             Markings.SetSex(newSex);
@@ -1600,7 +1594,9 @@ namespace Content.Client.Lobby.UI
 
         private void SetGender(Gender newGender)
         {
-            Profile = Profile?.WithGender(newGender);
+            Profile = Profile?.WithGender(newGender).WithSecondaryGender(
+                PronounsButton.SelectedKeys.Count == 2 ? PronounsButton.SelectedKeys[1] : null);
+            UpdateGenderControls();
             ReloadPreview();
         }
 
@@ -1876,7 +1872,23 @@ namespace Content.Client.Lobby.UI
                 return;
             }
 
-            PronounsButton.SelectId((int)Profile.Gender);
+            PronounsButton.DeselectAll();
+            PronounsButton.SelectKey(Profile.Gender);
+            if (Profile.SecondaryGender is { } secondaryGender)
+                PronounsButton.SelectKey(secondaryGender);
+
+            for (var i = 0; i < PronounsButton.ItemCount; i++)
+            {
+                var selected = PronounsButton.SelectedKeys.Contains(PronounsButton.GetItemKey(i));
+                PronounsButton.SetItemDisabled(i, PronounsButton.SelectedKeys.Count == 1 ? selected : !selected);
+            }
+
+            var primary = Profile.Gender.ToString().ToLowerInvariant();
+            PronounsButton.Label = Profile.SecondaryGender is { } secondary
+                ? Loc.GetString("blimpuf-pronouns-pair",
+                    ("primary", Loc.GetString($"blimpuf-pronouns-subject-{primary}")),
+                    ("secondary", Loc.GetString($"blimpuf-pronouns-subject-{secondary.ToString().ToLowerInvariant()}")))
+                : Loc.GetString($"humanoid-profile-editor-pronouns-{primary}-text");
         }
 
         private void UpdateSpawnPriorityControls()
