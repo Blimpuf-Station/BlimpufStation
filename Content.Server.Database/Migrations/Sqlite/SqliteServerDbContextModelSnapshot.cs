@@ -936,6 +936,10 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasColumnName("preference_id");
 
+                    b.Property<string>("SecondaryGender")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("secondary_gender");
+
                     b.Property<string>("Sex")
                         .IsRequired()
                         .HasColumnType("TEXT")

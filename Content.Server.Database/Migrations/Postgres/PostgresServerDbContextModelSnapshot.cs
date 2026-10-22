@@ -990,6 +990,10 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("integer")
                         .HasColumnName("preference_id");
 
+                    b.Property<string>("SecondaryGender")
+                        .HasColumnType("text")
+                        .HasColumnName("secondary_gender");
+
                     b.Property<string>("Sex")
                         .IsRequired()
                         .HasColumnType("text")
