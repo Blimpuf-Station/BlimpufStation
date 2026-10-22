@@ -936,10 +936,6 @@ namespace Content.Server.Database.Migrations.Sqlite
                         .HasColumnType("INTEGER")
                         .HasColumnName("preference_id");
 
-                    b.Property<string>("SecondaryGender")
-                        .HasColumnType("TEXT")
-                        .HasColumnName("secondary_gender");
-
                     b.Property<string>("Sex")
                         .IsRequired()
                         .HasColumnType("TEXT")
@@ -1576,6 +1572,22 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.ToTable("whitelist", (string)null);
                 });
 
+            modelBuilder.Entity("Content.Server.Database._Blimpuf.BlimpufProfile", b =>
+                {
+                    b.Property<int>("ProfileId")
+                        .HasColumnType("INTEGER")
+                        .HasColumnName("profile_id");
+
+                    b.Property<string>("SecondaryGender")
+                        .HasColumnType("TEXT")
+                        .HasColumnName("secondary_gender");
+
+                    b.HasKey("ProfileId")
+                        .HasName("PK_blimpuf_profile");
+
+                    b.ToTable("blimpuf_profile", (string)null);
+                });
+
             modelBuilder.Entity("PlayerRound", b =>
                 {
                     b.Property<int>("PlayersId")
@@ -2199,6 +2211,18 @@ namespace Content.Server.Database.Migrations.Sqlite
                     b.Navigation("Profile");
                 });
 
+            modelBuilder.Entity("Content.Server.Database._Blimpuf.BlimpufProfile", b =>
+                {
+                    b.HasOne("Content.Server.Database.Profile", "Profile")
+                        .WithOne("BlimpufProfile")
+                        .HasForeignKey("Content.Server.Database._Blimpuf.BlimpufProfile", "ProfileId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("FK_blimpuf_profile_profile_profile_id");
+
+                    b.Navigation("Profile");
+                });
+
             modelBuilder.Entity("PlayerRound", b =>
                 {
                     b.HasOne("Content.Server.Database.Player", null)
@@ -2292,6 +2316,8 @@ namespace Content.Server.Database.Migrations.Sqlite
             modelBuilder.Entity("Content.Server.Database.Profile", b =>
                 {
                     b.Navigation("Antags");
+
+                    b.Navigation("BlimpufProfile");
 
                     b.Navigation("CDProfile");
 
