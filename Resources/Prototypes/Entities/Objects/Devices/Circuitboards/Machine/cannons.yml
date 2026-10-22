@@ -71,7 +71,7 @@
 
 - type: entity
   id: ShuttleGunKineticCircuitboard
-  parent: [BaseMachineCircuitboard, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
+  parent: [BaseMachineCircuitboard, BaseSecurityContraband, BaseCargoContraband, BaseContrabandTier3] # Blimpuf
   name: PTK-800 "Matter Dematerializer" machine board
   description: A machine printed circuit board for an PTK-800 "Matter Dematerializer".
   suffix: DO NOT MAP, Machine Board
