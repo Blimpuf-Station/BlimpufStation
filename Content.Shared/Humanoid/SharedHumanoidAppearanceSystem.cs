@@ -243,6 +243,7 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
         targetHumanoid.MarkingSet = new(sourceHumanoid.MarkingSet);
 
         SetSex(target, sourceHumanoid.Sex, false, targetHumanoid);
+        targetHumanoid.SecondaryGender = sourceHumanoid.SecondaryGender; // Blimpuf
         SetGender((target, targetHumanoid), sourceHumanoid.Gender);
 
         Dirty(target, targetHumanoid);
@@ -584,6 +585,8 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
         EnsureDefaultMarkings(uid, humanoid);
 
         humanoid.Gender = profile.Gender;
+        humanoid.SecondaryGender = profile.SecondaryGender; // Blimpuf
+        _identity.QueueIdentityUpdate(uid); // Blimpuf
         if (TryComp<GrammarComponent>(uid, out var grammar))
         {
             _grammarSystem.SetGender((uid, grammar), profile.Gender);

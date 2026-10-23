@@ -49,6 +49,8 @@ public sealed class CrewManifestEntry
 
     public string Gender { get; } // Delta-V: Added gender to crew manifest
 
+    public string? SecondaryGender { get; init; } // Blimpuf
+
     public string JobTitle { get; }
 
     public string JobIcon { get; }
