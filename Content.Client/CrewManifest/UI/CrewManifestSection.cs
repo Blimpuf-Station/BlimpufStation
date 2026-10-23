@@ -26,12 +26,11 @@ public sealed class CrewManifestSection : BoxContainer
             Text = Loc.GetString(section.Name)
         });
 
-        // var gridContainer = new GridContainer() //Box - replaces with a box container to better fit long names - for pronoun display
-        var gridContainer = new BoxContainer()
+        // Box - use a box container to fit names and pronouns.
+        var columnsContainer = new BoxContainer()
         {
             Orientation = LayoutOrientation.Horizontal,
             HorizontalExpand = true,
-            // Columns = 2 //Box - replaces with a horizontal orientation instead - for pronoun display
         };
 
         // Delta-V - Start of column BoxContainers.
@@ -49,15 +48,14 @@ public sealed class CrewManifestSection : BoxContainer
             SizeFlagsStretchRatio = 2,
         };
 
-        gridContainer.AddChild(namesContainer);
-        gridContainer.AddChild(titlesContainer);
+        columnsContainer.AddChild(namesContainer);
+        columnsContainer.AddChild(titlesContainer);
         // Delta-V - end of column BoxContainers.
 
-        AddChild(gridContainer);
+        AddChild(columnsContainer);
 
         foreach (var entry in entries)
         {
-            // var name = new RichTextLabel() // Box - Comments out for pronouns pr
             // Delta-V - start of name and pronoun container
             var nameContainer = new BoxContainer()
             {
@@ -70,7 +68,6 @@ public sealed class CrewManifestSection : BoxContainer
             var gender = new RichTextLabel()
             {
                 Margin = new Thickness(6, 0, 0, 0),
-                StyleClasses = { "CrewManifestGender" }
             };
             gender.SetMessage(Loc.GetString("blimpuf-pronouns-display",
                 ("pronouns", PronounFormatter.Format(entry.Gender, entry.SecondaryGender)))); // Blimpuf
@@ -109,8 +106,6 @@ public sealed class CrewManifestSection : BoxContainer
             }
 
             // Delta-V - grid was replaced with two BoxContainer columns
-            //gridContainer.AddChild(name);
-            //gridContainer.AddChild(titleContainer);
             namesContainer.AddChild(nameContainer);
             titlesContainer.AddChild(titleContainer);
             // Delta-V - end of grid container change

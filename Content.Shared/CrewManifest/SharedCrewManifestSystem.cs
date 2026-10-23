@@ -58,7 +58,6 @@ public sealed class CrewManifestEntry
     public string JobPrototype { get; }
 
     public CrewManifestEntry(string name, string gender, string jobTitle, string jobIcon, string jobPrototype) // Delta-v - Box - adds gender to string
-
     {
         Name = name;
         Gender = gender; // Delta-V: Added gender to crew manifest
