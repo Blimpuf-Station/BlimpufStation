@@ -21,3 +21,9 @@ thief-backpack-category-ninja-description =
     Includes: A battery powered, chameleon stealth scarf, an
     EMP Implant, a bottle of Tanzinide, a Hypopen and a
     Scram Implant.
+
+thief-backpack-category-infiltrator-name = Extrovert Kit
+thief-backpack-category-infiltrator-description =
+    Walls are just a suggestion! Nothing is stopping you!
+    Includes: A breaching hammer, an RCD, a contortionist
+    jumpsuit, and a full EVA Suit. Coming through!

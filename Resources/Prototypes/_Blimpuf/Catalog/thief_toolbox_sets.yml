@@ -38,3 +38,17 @@
   - ChemistryBottleTazinide
   - Hypopen
   - ScramImplanter
+
+- type: thiefBackpackSet
+  id: InfiltratorSet
+  name: thief-backpack-category-infiltrator-name
+  description: thief-backpack-category-infiltrator-description
+  sprite:
+    sprite: _Starlight/Objects/Weapons/Melee/BreachingHammer.rsi
+    state: icon
+  content:
+  - HammerBreachingNT
+  - RCD
+  - ClothingUniformJumpsuitAtmosSyndie
+  - ClothingOuterHardsuitEVA
+  - ClothingHeadHelmetEVA
