@@ -5,7 +5,7 @@
   playTimeTracker: JobCCGreenShield
   requirements:
   - !type:RoleTimeRequirement
-    role: JobBlueshield
+    role: JobBlueShield
     time: 3h
   setPreference: false
   startingGear: GSOGear
