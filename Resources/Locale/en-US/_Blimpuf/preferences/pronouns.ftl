@@ -4,3 +4,4 @@ blimpuf-pronouns-subject-female = She
 blimpuf-pronouns-subject-epicene = They
 blimpuf-pronouns-subject-neuter = It
 blimpuf-pronouns-pair = { $primary } / { $secondary }
+blimpuf-pronouns-display = ({ $pronouns })

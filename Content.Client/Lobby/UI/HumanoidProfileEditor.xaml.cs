@@ -13,6 +13,7 @@ using Content.Client.UserInterface.Systems.Guidebook;
 using Content.Client._CD.Records.UI;
 using Content.Shared._CD.Records;
 // Cosmatic Drift Record System-end
+using Content.Shared._Blimpuf.Preferences; // Blimpuf
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
 using Content.Shared.Guidebook;
@@ -1883,12 +1884,7 @@ namespace Content.Client.Lobby.UI
                 PronounsButton.SetItemDisabled(i, PronounsButton.SelectedKeys.Count == 1 ? selected : !selected);
             }
 
-            var primary = Profile.Gender.ToString().ToLowerInvariant();
-            PronounsButton.Label = Profile.SecondaryGender is { } secondary
-                ? Loc.GetString("blimpuf-pronouns-pair",
-                    ("primary", Loc.GetString($"blimpuf-pronouns-subject-{primary}")),
-                    ("secondary", Loc.GetString($"blimpuf-pronouns-subject-{secondary.ToString().ToLowerInvariant()}")))
-                : Loc.GetString($"humanoid-profile-editor-pronouns-{primary}-text");
+            PronounsButton.Label = PronounFormatter.Format(Profile.Gender, Profile.SecondaryGender); // Blimpuf
         }
 
         private void UpdateSpawnPriorityControls()

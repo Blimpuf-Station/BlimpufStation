@@ -1,4 +1,5 @@
 ﻿using Content.Shared.CrewManifest;
+using Content.Shared._Blimpuf.Preferences; // Blimpuf
 using Content.Shared.StatusIcon;
 using Robust.Client.GameObjects;
 using Robust.Client.UserInterface.Controls;
@@ -71,7 +72,8 @@ public sealed class CrewManifestSection : BoxContainer
                 Margin = new Thickness(6, 0, 0, 0),
                 StyleClasses = { "CrewManifestGender" }
             };
-            gender.SetMessage(Loc.GetString("gender-display", ("gender", entry.Gender)));
+            gender.SetMessage(Loc.GetString("blimpuf-pronouns-display",
+                ("pronouns", PronounFormatter.Format(entry.Gender, entry.SecondaryGender)))); // Blimpuf
 
             nameContainer.AddChild(name);
             nameContainer.AddChild(gender);
