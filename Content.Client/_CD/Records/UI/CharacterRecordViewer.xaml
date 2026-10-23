@@ -39,11 +39,6 @@
                                 <Control HorizontalExpand="True" />
                                 <Label Name="RecordContainerJob" Align="Right" />
                             </BoxContainer>
-                            <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
-                                <Label Text="{Loc 'cd-character-records-viewer-record-gender'}"/>
-                                <Control HorizontalExpand="True" />
-                                <Label Name="RecordContainerGender" Align="Right" />
-                            </BoxContainer>
                             <!-- Blimpuf -->
                             <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
                                 <Label Text="{Loc 'blimpuf-character-records-pronouns'}"/>
