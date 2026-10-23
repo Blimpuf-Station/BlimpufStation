@@ -21,15 +21,6 @@
   rolesLoc: roles-req-mentor
 
 - type: roleRequirementPrototype
-  id: MagiReq
-  roles:
-    - 1499230491943895110 # Blimpuf Directors
-    - 1535902129695490159 # Blimpuf Leadership
-    - 1514361719655497912 # Magistrate Whitelist
-  discord: roles-req-discord-blimpuf
-  rolesLoc: roles-req-magi
-
-- type: roleRequirementPrototype
   id: DiscordMemberReq
   roles:
   - 1502818685256073317 # Discord Community Member

@@ -93,8 +93,9 @@
       - Iterator
       inverted: true
     Magistrate:
-    - !type:RolesRequirement
-      proto: MagiReq
+    - !type:DepartmentTimeRequirement
+      department: Representatives
+      time: 3h
     - !type:TraitsRequirement
       traits:
       - Iterator
