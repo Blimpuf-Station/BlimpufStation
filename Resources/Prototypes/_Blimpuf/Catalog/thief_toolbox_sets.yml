@@ -52,3 +52,18 @@
   - ClothingUniformJumpsuitAtmosSyndie
   - ClothingOuterHardsuitEVA
   - ClothingHeadHelmetEVA
+
+- type: thiefBackpackSet
+  id: PilotSet
+  name: thief-backpack-category-pilot-name
+  description: thief-backpack-category-pilot-description
+  sprite:
+    sprite: Structures/Shuttles/thruster.rsi
+    state: base
+  content:
+  - CrateThiefShuttle
+  - Multitool
+  - ClothingOuterHardsuitEVA
+  - ClothingHeadHelmetEVA
+  - JetpackBlackFilled
+  - ClothingShoesBootsMagSyndie
