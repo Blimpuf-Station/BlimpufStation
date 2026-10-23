@@ -1114,5 +1114,12 @@ Entries:
   id: 19701
   time: '2026-10-16T08:42:52.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/197
+- author: Shimmers
+  changes:
+  - message: Intercoms now output R&D unlocks correctly.
+    type: Fix
+  id: 20201
+  time: '2026-10-23T11:13:32.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/202
 Order: -1
 
