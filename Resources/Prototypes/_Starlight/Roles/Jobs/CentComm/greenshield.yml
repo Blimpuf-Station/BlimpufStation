@@ -4,8 +4,9 @@
   description: job-description-greenshield
   playTimeTracker: JobCCGreenShield
   requirements:
-  - !type:RolesRequirement
-    proto: CCEReq
+  - !type:RoleTimeRequirement
+    role: JobBlueshield
+    time: 3h
   setPreference: false
   startingGear: GSOGear
   icon: JobIconCCGreenShield
