@@ -8,15 +8,20 @@
 - type: roleRequirementPrototype
   id: StaffReq
   roles:
-    - 1500725068937040013 # Blimpuf Staff
+  - 1499230491943895110 # Blimpuf Directors
+  - 1535902129695490159 # Blimpuf Leadership
+  - 1500725068937040013 # Blimpuf Game Admin
+  - 1526335907219640490 # Blimpuf Trial Admin
   discord: roles-req-discord-blimpuf
   rolesLoc: roles-req-staff
 
 - type: roleRequirementPrototype
   id: MentorReq
   roles:
-    - 1500725068937040013 # Blimpuf Staff
-    - 1526356067137749062 # Mentor
+  - 1499230491943895110 # Blimpuf Directors
+  - 1535902129695490159 # Blimpuf Leadership
+  - 1500725068937040013 # Blimpuf Game Admin
+  - 1526356067137749062 # Mentor
   discord: roles-req-discord-blimpuf
   rolesLoc: roles-req-mentor
 
