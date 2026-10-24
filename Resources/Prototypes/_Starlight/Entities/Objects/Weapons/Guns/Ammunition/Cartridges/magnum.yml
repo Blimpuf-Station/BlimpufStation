@@ -1,7 +1,7 @@
 - type: entity
   id: CartridgeMagnumRubber
   name: cartridge (.45 magnum rubber)
-  parent: BaseCartridgeMagnum
+  parent: [BaseCartridgeMagnum, BaseContrabandTier2] # Blimpuf Less-Lethal is Tier 2
   components:
   - type: CartridgeAmmo
     proto: RubberBulletTrace

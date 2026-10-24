@@ -83,7 +83,7 @@
 
 # Departmental techfabs
 - type: entity
-  parent: [BaseFlatpack, BaseMedicalContraband]
+  parent: [BaseFlatpack, BaseMedicalContraband, BaseContrabandTier2] # Blimpuf
   id: MedicalTechFabFlatpack
   name: medical techfab flatpack
   description: A flatpack used for constructing a medical techfab.
@@ -92,7 +92,7 @@
     entity: MedicalTechFab
 
 - type: entity
-  parent: [BaseFlatpack, BaseSecurityContraband]
+  parent: [BaseFlatpack, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   id: SecurityTechFabFlatpack
   name: security techfab flatpack
   description: A flatpack used for constructing a security techfab.
@@ -101,7 +101,7 @@
     entity: SecurityTechFab
 
 - type: entity
-  parent: [BaseFlatpack, BaseCargoContraband]
+  parent: [BaseFlatpack, BaseCargoContraband, BaseContrabandTier2] # Blimpuf
   id: CargoTechFabFlatpack
   name: cargo techfab flatpack
   description: A flatpack used for constructing a cargo techfab.
@@ -110,7 +110,7 @@
     entity: CargoTechFab
 
 - type: entity
-  parent: [BaseFlatpack, BaseEngineeringContraband]
+  parent: [BaseFlatpack, BaseEngineeringContraband, BaseContrabandTier2] # Blimpuf
   id: EngineeringTechFabFlatpack
   name: engineering techfab flatpack
   description: A flatpack used for constructing an engineering techfab.
@@ -119,7 +119,7 @@
     entity: EngineeringTechFab
 
 - type: entity
-  parent: [BaseFlatpack, BaseCivilianContraband]
+  parent: [BaseFlatpack, BaseCivilianContraband, BaseContrabandTier2] # Blimpuf
   id: ServiceTechFabFlatpack
   name: service techfab flatpack
   description: A flatpack used for constructing a service techfab.
@@ -128,7 +128,7 @@
     entity: ServiceTechFab
 
 - type: entity
-  parent: [BaseFlatpack, BaseScienceContraband]
+  parent: [BaseFlatpack, BaseScienceContraband, BaseContrabandTier2] # Blimpuf
   id: ScienceTechFabFlatpack
   name: science techfab flatpack
   description: A flatpack used for constructing a science techfab.
@@ -137,7 +137,7 @@
     entity: ScienceTechFab
 
 - type: entity
-  parent: [BaseFlatpack, BaseCommandContraband]
+  parent: [BaseFlatpack, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   id: CommandTechFabFlatpack
   name: command techfab flatpack
   description: A flatpack used for constructing a command techfab.
@@ -146,7 +146,7 @@
     entity: CommandTechFab
 
 - type: entity
-  parent: [BaseFlatpack, BaseRepresentativesContraband]
+  parent: [BaseFlatpack, BaseCentcommContraband] # Blimpuf
   id: NanoTrasenTechFabFlatpack
   name: NanoTrasen techfab flatpack
   description: A flatpack used for constructing a NanoTrasen techfab.

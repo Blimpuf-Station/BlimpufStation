@@ -30,7 +30,7 @@
     proto: BulletCaselessRifleTrace
 
 - type: entity
-  parent: BaseCartridgeCaselessRifle
+  parent: [BaseCartridgeCaselessRifle, BaseContrabandTier1] # Blimpuf Practice is Tier 1
   id: CartridgeCaselessRiflePractice
   name: cartridge (.25 caseless practice)
   description: A small caliber utilizing caseless technology, omitting conventional brass casing in favor of hardened propellant. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
