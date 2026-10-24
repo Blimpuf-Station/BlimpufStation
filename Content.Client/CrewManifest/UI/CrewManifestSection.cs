@@ -32,6 +32,7 @@ public sealed class CrewManifestSection : BoxContainer
         {
             Orientation = LayoutOrientation.Horizontal,
             HorizontalExpand = true,
+            SeparationOverride = 6, // Blimpuf
             // Columns = 2 //Box - replaces with a horizontal orientation instead - for pronoun display
         };
 
