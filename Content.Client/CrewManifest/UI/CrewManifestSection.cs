@@ -10,6 +10,8 @@ namespace Content.Client.CrewManifest.UI;
 
 public sealed class CrewManifestSection : BoxContainer
 {
+    internal BoxContainer NamesColumn { get; } // Blimpuf
+
     public CrewManifestSection(
         IPrototypeManager prototypeManager,
         SpriteSystem spriteSystem,
@@ -37,9 +39,8 @@ public sealed class CrewManifestSection : BoxContainer
         var namesContainer = new BoxContainer()
         {
             Orientation = LayoutOrientation.Vertical,
-            HorizontalExpand = true,
-            SizeFlagsStretchRatio = 3,
         };
+        NamesColumn = namesContainer; // Blimpuf
 
         var titlesContainer = new BoxContainer()
         {
