@@ -1121,5 +1121,15 @@ Entries:
   id: 20201
   time: '2026-10-23T11:13:32.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/202
+- author: Limerent-Sun
+  changes:
+  - message: Replaced secure, criminal, and corporate documents with the Command Training
+      Manual.
+    type: Tweak
+  - message: Updated Command & CentComm Representatives SOP.
+    type: Tweak
+  id: 21401
+  time: '2026-10-24T08:04:08.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/214
 Order: -1
 
