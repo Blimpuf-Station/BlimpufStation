@@ -70,56 +70,79 @@
 
   DAGD allows a lot of things that are normally banned, but you can never loose the Tesla. If you aren't sure if what you want to do is allowed, Ahelp it!
 
-  ## Appropriation
-  More often than not, you'll have to [italic][color=cyan]steal a possession of a department head.[/color][/italic]
+  ## Research
+  More often than not, you'll have to [italic][color=cyan]research a possession of a department head or high ranking security member.[/color][/italic]
 
   The target may be in their office, or on their person. It may become necessary to kill whoever is carrying it, if you cannot pickpocket them.
 
-  Some of the things you may be tasked with include:
-  - Stealing the [color=yellow]Captain[/color]'s [bold]ID Card[/bold], [bold]antique laser pistol[/bold], [bold]jetpack[/bold], or [bold]nuclear authentication disk[/bold].
+  Research is generally simple, first you'll need your best friend, [italic][color=red]the Syndicate Research Analyzer![/color][/italic]
+  <Box>
+    <GuideEntityEmbed Entity="ResearchAnalyzer" Caption="Your best friend!"/>
+  </Box>
+  You can buy as many of these as you want for free, so don't worry about losing it. This is still [color=red]Contraband[/color] though, and will get you arrested by Security if you're caught with it and gives your affiliation away, so be careful!
+
+  Some of the things you may be tasked to research might include:
+  - Researching the [color=yellow]Captain[/color]'s [bold]ID Card[/bold], [bold]antique laser pistol[/bold], or [bold]jetpack[/bold].
   <Box>
     <GuideEntityEmbed Entity="CaptainIDCard" Caption=""/>
     <GuideEntityEmbed Entity="WeaponAntiqueLaser" Caption=""/>
     <GuideEntityEmbed Entity="JetpackCaptainFilled" Caption=""/>
-    <GuideEntityEmbed Entity="NukeDisk" Caption=""/>
   </Box>
-  - Stealing the [color=#5b97bc]Chief Medical Officer[/color]'s [bold]hypospray[/bold] or [bold]handheld crew monitor[/bold].
+  - Researching the [color=#5b97bc]Chief Medical Officer[/color]'s [bold]hypospray[/bold].
   <Box>
     <GuideEntityEmbed Entity="Hypospray" Caption=""/>
-    <GuideEntityEmbed Entity="HandheldCrewMonitorEmpty" Caption=""/>
   </Box>
-  - Stealing the [color=#c96dbf]Research Director[/color]'s [bold]experimental hardsuit[/bold] or [bold]hand teleporter[/bold].
+  - Researching the [color=#c96dbf]Research Director[/color]'s [bold]experimental hardsuit[/bold] or [bold]hand teleporter[/bold].
   <Box>
     <GuideEntityEmbed Entity="ClothingOuterHardsuitRd" Caption=""/>
     <GuideEntityEmbed Entity="HandTeleporter" Caption=""/>
   <!-- Starlight Start - Energy Shotgun and SMG as objectives -->
   </Box>
-  - Stealing the [color=#02cfe0]Head of Security[/color]'s [bold]Proto-5x[/bold].
+  - Researching the [color=#02cfe0]Head of Security[/color]'s [bold]Proto-5x[/bold] or [bold]WT550b[/bold].
   <Box>
-    <GuideEntityEmbed Entity="WeaponEnergyMagnum" Caption=""/>
+    <GuideEntityEmbed Entity="WeaponEnergySMG" Caption=""/>
+    <GuideEntityEmbed Entity="WeaponSubMachineGunWt550b" Caption=""/>
   </Box>
-  - Stealing the [color=#02cfe0]Warden[/color]'s [bold]energy shotgun[/bold].
+  - Researching the [color=#02cfe0]Warden[/color]'s [bold]energy shotgun[/bold].
   <Box>
-    <GuideEntityEmbed Entity="WeaponEnergyMagnum" Caption=""/>
+    <GuideEntityEmbed Entity="WeaponEnergyShotgun" Caption=""/>
   <!-- Starlight End - Energy Shotgun and SMG as objectives -->
   </Box>
-  - Stealing the [color=#02cfe0]Detective[/color]'s [bold]energy magnum[/bold]. <!-- Starlight - moved magnum to detective -->
+  - Researching the [color=#02cfe0]Detective[/color]'s [bold]energy magnum[/bold]. <!-- Starlight - moved magnum to detective -->
   <Box>
     <GuideEntityEmbed Entity="WeaponEnergyMagnum" Caption=""/>
   </Box>
-  - Stealing the [color=#f39f27]Chief Engineer[/color]'s [bold]advanced magboots[/bold].
+  - Researching the [color=#f39f27]Chief Engineer[/color]'s [bold]advanced magboots[/bold].
   <Box>
     <GuideEntityEmbed Entity="ClothingShoesBootsMagAdv" Caption=""/>
   </Box>
-  - Stealing the [color=#b18644]Quartermaster[/color]'s [bold]requisition digi-board[/bold].
+  - Researching the [color=#b18644]Quartermaster[/color]'s [bold]requisition digi-board[/bold] or [bold]golden knuckle dusters[/bold].
   <Box>
     <GuideEntityEmbed Entity="BoxFolderQmClipboard" Caption=""/>
+    <GuideEntityEmbed Entity="ClothingHandsKnuckleDustersQM" Caption=""/>
   </Box>
-  - Butchering Ian, the [color=#9fed58]Head of Personnel[/color]'s dog, and obtaining the [bold]corgi meat[/bold].
+  - Researching the [color=#9fed58]Head of Personnel[/color]'s [bold]bureaucratic digi-board[/bold].
   <Box>
-    <GuideEntityEmbed Entity="MobCorgiIan" Caption=""/>
-    <GuideEntityEmbed Entity="FoodMeatCorgi" Caption=""/>
+    <GuideEntityEmbed Entity="BoxFolderHoPClipboard" Caption=""/>
   </Box>
+  Alternatively, you may be tasked to research a total amount of items. Items researched by others will count towards any objective, total or specific, so don't worry about someone else doing it! You're all in this together!
+
+  To Research an item, you must:
+    1) Scan it with the Syndicate Research Analyzer to get the tasks required
+    2) Inspect the item to see what items it requires to research
+    3) Use all 4 items on the item to research it
+
+  Once Research is complete, a [italic][color=yellow]new uplink listing[/color][/italic] will be added to the [italic][color=#680f15]Research tab in your uplink![/color][/italic]
+
+  <Box>
+      <GuideEntityEmbed Entity="WeaponAntiqueLaser" Caption="Target"/>
+      <GuideEntityEmbed Entity="ResearchAnalyzer" Caption="+ Research"/>
+      <GuideEntityEmbed Entity="WeaponLaserSyndicateTacticalLaser" Caption="= New item!"/>
+  </Box>
+
+  This item will be [bold]completely free[/bold] for the person who finishes the research! However, anyone else who contributed will [color=red]NOT[/color] get this for free, only the person who completed the last task!
+
+  [italic][color=red]Be wary that from a random time between a minute and 5 minutes after completing research on an item, it will be announced to the whole station that research has been completed, so you can never truly be covert about this![/color][/italic]
 
   ## Roleplay and Story Objectives
   There are a number of ways to do your job as an antagonist, but some objectives are much more open ended than others. [bold]Story Objectives[/bold] are objectives that are designed to be more free-form and encourage you to complete them however you see fit. They are also often things that would be hard or impossible to track mechanically.

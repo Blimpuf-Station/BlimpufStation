@@ -1114,5 +1114,81 @@ Entries:
   id: 19701
   time: '2026-10-16T08:42:52.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/197
+- author: Shimmers
+  changes:
+  - message: Intercoms now output R&D unlocks correctly.
+    type: Fix
+  id: 20201
+  time: '2026-10-23T11:13:32.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/202
+- author: Limerent-Sun
+  changes:
+  - message: Replaced secure, criminal, and corporate documents with the Command Training
+      Manual.
+    type: Tweak
+  - message: Updated Command & CentComm Representatives SOP.
+    type: Tweak
+  id: 21401
+  time: '2026-10-24T08:04:08.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/214
+- author: ALooseGoose
+  changes:
+  - message: Rebased all remaining Traitor/Nukie uplink items to a 100TC base.
+    type: Fix
+  - message: Fixed a bug where Traitors can do the same research task multiple times
+      at once.
+    type: Fix
+  - message: The person who completes the last Syndicate Research task for any of
+      the items gets the resulting item for free.
+    type: Tweak
+  - message: The shared Syndicate Research task is no 1-3 research completed as opposed
+      to 4-6.
+    type: Tweak
+  - message: Traitors can now roll Specific Research objectives where they have to
+      research a specific item akin to steal objectives.
+    type: Add
+  - message: A guidebook entry for Syndicate Research has been added to the Traitor
+      guide.
+    type: Add
+  id: 20301
+  time: '2026-10-24T08:12:46.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/203
+- author: Limerent-Sun
+  changes:
+  - message: Ghost role antagonists can now roll random species.
+    type: Fix
+  id: 20501
+  time: '2026-10-24T08:24:34.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/205
+- author: Limerent-Sun
+  changes:
+  - message: Round now ends upon evac arrival at CC, not departure.
+    type: Tweak
+  id: 21101
+  time: '2026-10-24T09:08:07.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/211
+- author: Swonki, Caws, Shimmers
+  changes:
+  - message: Ninjas can use escape pods to extract after completing their objectives.
+    type: Add
+  - message: Escape pods have been updated with diagonal lattice.
+    type: Tweak
+  id: 20801
+  time: '2026-10-24T12:28:15.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/208
+- author: Limerent-Sun
+  changes:
+  - message: CCE and Magistrate no longer require an additional whitelist to play.
+    type: Remove
+  id: 21301
+  time: '2026-10-24T18:27:09.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/213
+- author: DrWhoFan13, BlueMoon59, TGRCDev
+  changes:
+  - message: Pronouns now show up on crew manifest.
+    type: Add
+  id: 20901
+  time: '2026-10-24T21:13:35.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/209
 Order: -1
 

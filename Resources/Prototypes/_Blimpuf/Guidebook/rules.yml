@@ -98,6 +98,5 @@
 - type: guideEntry
   id: BlimpufMetashield
   name: guide-entry-blimpuf-metashield
-  ruleEntry: true
-  priority: 12
+  priority: 20
   text: "/ServerInfo/_Blimpuf/Guidebook/ServerRules/Metashield.xml"

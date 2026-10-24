@@ -11,6 +11,8 @@ namespace Content.Client.CrewManifest.UI;
 
 public sealed class CrewManifestSection : BoxContainer
 {
+    internal BoxContainer NamesColumn { get; } // Blimpuf
+
     public CrewManifestSection(
         IPrototypeManager prototypeManager,
         SpriteSystem spriteSystem,
@@ -31,15 +33,16 @@ public sealed class CrewManifestSection : BoxContainer
         {
             Orientation = LayoutOrientation.Horizontal,
             HorizontalExpand = true,
+            SeparationOverride = 6, // Blimpuf
+            // Columns = 2 //Box - replaces with a horizontal orientation instead - for pronoun display
         };
 
         // Delta-V - Start of column BoxContainers.
         var namesContainer = new BoxContainer()
         {
             Orientation = LayoutOrientation.Vertical,
-            HorizontalExpand = true,
-            SizeFlagsStretchRatio = 3,
         };
+        NamesColumn = namesContainer; // Blimpuf
 
         var titlesContainer = new BoxContainer()
         {
@@ -84,7 +87,11 @@ public sealed class CrewManifestSection : BoxContainer
             };
 
             var title = new RichTextLabel();
-            title.SetMessage(entry.JobTitle);
+            // Blimpuf - use compact job names while preserving custom record titles.
+            var jobTitle = entry.JobTitle;
+            if (prototypeManager.TryIndex<JobPrototype>(entry.JobPrototype, out var job) && jobTitle == job.LocalizedName)
+                jobTitle = job.LocalizedJobSelectName;
+            title.SetMessage(jobTitle);
 
 
             if (prototypeManager.TryIndex<JobIconPrototype>(entry.JobIcon, out var jobIcon))

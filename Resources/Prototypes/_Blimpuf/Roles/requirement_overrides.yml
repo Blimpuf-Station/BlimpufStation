@@ -93,15 +93,17 @@
       - Iterator
       inverted: true
     Magistrate:
-    - !type:RolesRequirement
-      proto: MagiReq
+    - !type:DepartmentTimeRequirement
+      department: Representatives
+      time: 3h
     - !type:TraitsRequirement
       traits:
       - Iterator
       inverted: true
     BlueShield:
-    - !type:RolesRequirement
-      proto: CCEReq
+    - !type:DepartmentTimeRequirement
+      department: Representatives
+      time: 3h
     - !type:TraitsRequirement
       traits:
       - Iterator
