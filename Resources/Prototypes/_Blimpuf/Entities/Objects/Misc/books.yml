@@ -28,3 +28,9 @@
     - Xenoborgs
     - Wizard
     - BlimpufMetashield
+  - type: Contraband
+    tier: Tier4
+    allowedJobs:
+    - Captain
+    - NanoTrasenRepresentative
+    - Magistrate
