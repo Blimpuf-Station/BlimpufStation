@@ -1,0 +1,183 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprites by Thlrds",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "afro",
+      "directions": 4
+    },
+    {
+      "name": "amazon",
+      "directions": 4
+    },
+    {
+      "name": "balding",
+      "directions": 4
+    },
+    {
+      "name": "beach_wave",
+      "directions": 4
+    },
+    {
+      "name": "bed_head",
+      "directions": 4
+    },
+    {
+      "name": "beehive",
+      "directions": 4
+    },
+    {
+      "name": "big_afro",
+      "directions": 4
+    },
+    {
+      "name": "bixie",
+      "directions": 4
+    },
+    {
+      "name": "bob",
+      "directions": 4
+    },
+    {
+      "name": "bowlcut",
+      "directions": 4
+    },
+    {
+      "name": "braid",
+      "directions": 4
+    },
+    {
+      "name": "buisness",
+      "directions": 4
+    },
+    {
+      "name": "bun",
+      "directions": 4
+    },
+    {
+      "name": "buzz_cut",
+      "directions": 4
+    },
+    {
+      "name": "comb_over",
+      "directions": 4
+    },
+    {
+      "name": "combed_afro",
+      "directions": 4
+    },
+    {
+      "name": "cornrows",
+      "directions": 4
+    },
+    {
+      "name": "crew_cut",
+      "directions": 4
+    },
+    {
+      "name": "curly",
+      "directions": 4
+    },
+    {
+      "name": "david",
+      "directions": 4
+    },
+    {
+      "name": "double_buns",
+      "directions": 4
+    },
+    {
+      "name": "dreadlocks",
+      "directions": 4
+    },
+    {
+      "name": "elton_cut_left",
+      "directions": 4
+    },
+    {
+      "name": "elton_cut_right",
+      "directions": 4
+    },
+    {
+      "name": "elven",
+      "directions": 4
+    },
+    {
+      "name": "emo",
+      "directions": 4
+    },
+    {
+      "name": "feathered",
+      "directions": 4
+    },
+    {
+      "name": "flat_top",
+      "directions": 4
+    },
+    {
+      "name": "floor_length_bedhead",
+      "directions": 4
+    },
+    {
+      "name": "high_braid",
+      "directions": 4
+    },
+    {
+      "name": "long_dreadlocks",
+      "directions": 4
+    },
+    {
+      "name": "long_parted",
+      "directions": 4
+    },
+    {
+      "name": "long_undercut",
+      "directions": 4
+    },
+    {
+      "name": "long_unkempt",
+      "directions": 4
+    },
+    {
+      "name": "long_wavy",
+      "directions": 4
+    },
+    {
+      "name": "low_taper_fade",
+      "directions": 4
+    },
+    {
+      "name": "messy_bangs",
+      "directions": 4
+    },
+    {
+      "name": "pompadour",
+      "directions": 4
+    },
+    {
+      "name": "short_braid",
+      "directions": 4
+    },
+    {
+      "name": "short_parted",
+      "directions": 4
+    },
+    {
+      "name": "single_hair",
+      "directions": 4
+    },
+    {
+      "name": "tilted_bangs",
+      "directions": 4
+    },
+    {
+      "name": "undercut",
+      "directions": 4
+    }
+  ]
+}
