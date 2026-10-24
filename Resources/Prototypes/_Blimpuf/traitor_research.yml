@@ -685,7 +685,7 @@
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierPowerDrill
-  displayName: power cell
+  displayName: power drill
   validPrototypes:
     - PowerDrill
 

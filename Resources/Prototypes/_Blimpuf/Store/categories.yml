@@ -1,7 +1,7 @@
 #uplink categoires
 - type: storeCategory
   id: UplinkResearch
-  name: Research
+  name: store-category-research
   priority: 10
 
 # Blimpuf brand huggables

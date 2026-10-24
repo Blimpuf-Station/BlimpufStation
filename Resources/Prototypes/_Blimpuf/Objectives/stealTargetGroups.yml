@@ -6,3 +6,10 @@
   sprite:
     sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/Hop.rsi
     state: icon
+
+- type: stealTargetGroup
+  id: CommandTrainingManual
+  name: steal-target-groups-command-training-manual
+  sprite:
+    sprite: Objects/Specific/Chapel/codexnanotrasimus.rsi
+    state: icon

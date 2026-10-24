@@ -49,6 +49,13 @@ public sealed record GeneralStationRecord
     [DataField]
     public Gender Gender = Gender.Epicene;
 
+    // Blimpuf
+    /// <summary>
+    ///     Secondary gender identity tied to this station record.
+    /// </summary>
+    [DataField]
+    public Gender? SecondaryGender;
+
     /// <summary>
     ///     The priority to display this record at.
     ///     This is taken from the 'weight' of a job prototype,

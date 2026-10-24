@@ -5,7 +5,7 @@ using Content.Shared.Objectives.Components;
 
 namespace Content.Server._Blimpuf.Objectives.Systems;
 
-public sealed class SyndicateResearchObjectiveSystem : EntitySystem
+public sealed class SyndicateResearchTotalSystem : EntitySystem
 {
     [Dependency] private readonly SyndicateResearchSystem _research = default!;
 
@@ -13,10 +13,10 @@ public sealed class SyndicateResearchObjectiveSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<ResearchObjectiveConditionComponent, ObjectiveGetProgressEvent>(OnGetProgress);
+        SubscribeLocalEvent<ResearchTotalConditionComponent, ObjectiveGetProgressEvent>(OnGetProgress);
     }
 
-    private void OnGetProgress(EntityUid uid, ResearchObjectiveConditionComponent comp, ref ObjectiveGetProgressEvent args)
+    private void OnGetProgress(EntityUid uid, ResearchTotalConditionComponent comp, ref ObjectiveGetProgressEvent args)
     {
         if (!TryComp<NumberObjectiveComponent>(uid, out var number))
         {

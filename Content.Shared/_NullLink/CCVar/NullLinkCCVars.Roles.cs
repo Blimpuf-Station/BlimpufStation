@@ -15,7 +15,7 @@ public sealed partial class NullLinkCCVars
         CVarDef.Create("nulllink.roles_req.mentors", "MentorReq", CVar.SERVER | CVar.REPLICATED);
 
     public static readonly CVarDef<string> RoleReqPeacefulBypass =
-        CVarDef.Create("nulllink.roles_req.peaceful_bypass", "CCEReq", CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("nulllink.roles_req.peaceful_bypass", "StaffReq", CVar.SERVER | CVar.REPLICATED);
 
     public static readonly CVarDef<string> BunkerBypass =
         CVarDef.Create("nulllink.roles_req.panic_bunker_bypass", "StaffReq", CVar.SERVER | CVar.REPLICATED);

@@ -1,0 +1,5 @@
+- type: guideEntry
+  id: BlimpufCommandTrainingManual
+  priority: 0
+  name: guide-entry-blimpuf-command-training-manual
+  text: "/ServerInfo/_Blimpuf/Guidebook/Command/CommandTrainingManual.xml"

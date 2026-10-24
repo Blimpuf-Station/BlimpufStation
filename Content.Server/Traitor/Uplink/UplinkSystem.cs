@@ -136,7 +136,7 @@ public sealed partial class UplinkSystem : EntitySystem
 
         //EnsureComp<TagComponent>(uplinkEntity.Value);
         //_tagSystem.AddTag(uplinkEntity.Value, "DAGDUplink"); // Starlight, unneeded, since we'll be using Wizden's way of adding objectives.
-        _store.TryAddCurrency(new Dictionary<string, FixedPoint2> { { TelecrystalCurrencyPrototype, 15 } }, uplinkEntity.Value, store); // Adds 15 TC - Starlight 50 -> 15
+        _store.TryAddCurrency(new Dictionary<string, FixedPoint2> { { TelecrystalCurrencyPrototype, 50 } }, uplinkEntity.Value, store); // Blimpuf reversion of Starlight edit - We like 50 TC actually lmao
         return true;
     }
     // funkystation end

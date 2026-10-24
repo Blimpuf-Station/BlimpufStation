@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Shared._Blimpuf.IdentityManagement; // Blimpuf
 using Content.Shared.Examine;
 using Content.Shared.Hands.Components;
 using Content.Shared.IdentityManagement;
@@ -6,9 +7,11 @@ using Content.Shared.Input;
 using Content.Shared.Interaction;
 using Content.Shared.Inventory.VirtualItem;
 using Content.Shared.Localizations;
+using Robust.Shared.Enums; // Blimpuf
 using Robust.Shared.Input.Binding;
 using Robust.Shared.Map;
 using Robust.Shared.Player;
+using Robust.Shared.Random; // Blimpuf
 using Robust.Shared.Utility;
 
 namespace Content.Shared.Hands.EntitySystems;
@@ -206,6 +209,20 @@ public abstract partial class SharedHandsSystem : EntitySystem
     //TODO: Actually shows all items/clothing/etc.
     private void HandleExamined(EntityUid examinedUid, HandsComponent handsComp, ExaminedEvent args)
     {
+        // Blimpuf start
+        var identity = Identity.Entity(examinedUid, EntityManager);
+        Gender? secondaryGender = null;
+        if (TryComp<BlimpufIdentityPronounsComponent>(identity, out var pronouns))
+        {
+            // Match the species description, the server chooses for networked entities.
+            if (_net.IsClient && !IsClientSide(examinedUid))
+                return;
+
+            if (args.UseSecondaryPronouns ??= _random.Prob(0.5f))
+                secondaryGender = pronouns.SecondaryGender;
+        }
+        // Blimpuf end
+
         var heldItemNames = EnumerateHeld((examinedUid, handsComp))
             .Where(entity => !HasComp<VirtualItemComponent>(entity))
             .Select(item => FormattedMessage.EscapeText(Identity.Name(item, EntityManager)))
@@ -213,12 +230,22 @@ public abstract partial class SharedHandsSystem : EntitySystem
             .ToList();
 
         var locKey = heldItemNames.Count != 0 ? "comp-hands-examine" : "comp-hands-examine-empty";
-        var locUser = ("user", Identity.Entity(examinedUid, EntityManager));
+        var locUser = ("user", identity);
         var locItems = ("items", ContentLocalizationManager.FormatList(heldItemNames));
 
         using (args.PushGroup(nameof(HandsComponent)))
         {
-            args.PushMarkup(Loc.GetString(locKey, locUser, locItems));
+            // Blimpuf start
+            if (secondaryGender is { } gender)
+            {
+                locKey = heldItemNames.Count != 0 ? "blimpuf-comp-hands-examine" : "blimpuf-comp-hands-examine-empty";
+                args.PushMarkup(Loc.GetString(locKey, ("gender", gender.ToString().ToLowerInvariant()), locItems));
+            }
+            else
+            {
+                args.PushMarkup(Loc.GetString(locKey, locUser, locItems));
+            }
+            // Blimpuf end
         }
     }
 }
