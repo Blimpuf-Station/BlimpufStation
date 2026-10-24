@@ -85,7 +85,11 @@ public sealed class CrewManifestSection : BoxContainer
             };
 
             var title = new RichTextLabel();
-            title.SetMessage(entry.JobTitle);
+            // Blimpuf - use compact job names while preserving custom record titles.
+            var jobTitle = entry.JobTitle;
+            if (prototypeManager.TryIndex<JobPrototype>(entry.JobPrototype, out var job) && jobTitle == job.LocalizedName)
+                jobTitle = job.LocalizedJobSelectName;
+            title.SetMessage(jobTitle);
 
 
             if (prototypeManager.TryIndex<JobIconPrototype>(entry.JobIcon, out var jobIcon))
