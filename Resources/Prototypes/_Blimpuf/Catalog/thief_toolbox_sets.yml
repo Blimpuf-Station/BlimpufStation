@@ -54,6 +54,21 @@
   - ClothingHeadHelmetEVA
 
 - type: thiefBackpackSet
+  id: SaboteurSet
+  name: thief-backpack-category-saboteur-name
+  description: thief-backpack-category-saboteur-description
+  sprite:
+    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    state: emp
+  content:
+  - EmpGrenade
+  - EmpGrenade
+  - EmpGrenade
+  - CyberEyeNightVision
+  - EngineeringIDCard
+  - Wirecutter
+
+- type: thiefBackpackSet
   id: PilotSet
   name: thief-backpack-category-pilot-name
   description: thief-backpack-category-pilot-description
@@ -73,8 +88,8 @@
   name: thief-backpack-category-bluespace-name
   description: thief-backpack-category-bluespace-description
   sprite:
-    sprite: Structures/Shuttles/thruster.rsi
-    state: base
+    sprite: _Starlight/Objects/Materials/materials.rsi
+    state: refined_bluespace_crystal
   content:
   - DeviceQuantumSpinInverter
   - DeviceQuantumSpinInverter

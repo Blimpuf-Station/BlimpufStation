@@ -28,6 +28,13 @@ thief-backpack-category-infiltrator-description =
     Includes: A breaching hammer, an RCD, a contortionist
     jumpsuit, and a full EVA Suit. Coming through!
 
+thief-backpack-category-saboteur-name = Saboteur Kit
+thief-backpack-category-saboteur-description =
+    The shadows are a thief's best friend.
+    Includes: 3 EMP Grenades, Cybernetic Night Vision
+    eyes, an Engineering ID Card, insulated gloves and
+    wirecutters.
+
 thief-backpack-category-pilot-name = Pilot Kit
 thief-backpack-category-pilot-description =
     You took a quick shuttle piloting course with the
