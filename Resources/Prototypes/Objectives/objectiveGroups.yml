@@ -151,6 +151,7 @@
     ClothingNeckClownmedalStealObjective: 0.5
     # Blimpuf
     HOPSoftSuitStealObjective: 1
+    CommandTrainingManualStealObjective: 0.5
 
 - type: weightedRandom
   id: ThiefObjectiveGroupStructure

@@ -1,6 +1,6 @@
 - type: entity
   id: BookCommandTrainingManual
-  parent: BaseGuidebook
+  parent: [ BaseGuidebook ]
   name: command training manual
   description: An official NanoTrasen briefing for station command personnel.
   components:
@@ -9,6 +9,8 @@
     state: icon
   - type: Item
     sprite: Objects/Specific/Chapel/codexnanotrasimus.rsi
+  - type: StealTarget
+    stealGroup: CommandTrainingManual
   - type: GuideHelp
     includeChildren: false
     guides:
