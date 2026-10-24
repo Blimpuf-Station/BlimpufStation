@@ -1167,5 +1167,14 @@ Entries:
   id: 21101
   time: '2026-10-24T09:08:07.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/211
+- author: Swonki, Caws, Shimmers
+  changes:
+  - message: Ninjas can use escape pods to extract after completing their objectives.
+    type: Add
+  - message: Escape pods have been updated with diagonal lattice.
+    type: Tweak
+  id: 20801
+  time: '2026-10-24T12:28:15.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/208
 Order: -1
 
