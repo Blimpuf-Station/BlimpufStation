@@ -35,3 +35,12 @@ thief-backpack-category-pilot-description =
     Includes: A Syndicate Shuttle construction bundle,
     a full Syndicate EVA suit, a black jetpack and blood
     red magboots. All aboard and buckle up!
+
+thief-backpack-category-bluespace-name = Bluespace Kit
+thief-backpack-category-bluespace-description =
+    Who knew harnessing the power of bluespace would
+    make such an effective thief?
+    Includes: A pair of Quantum spin inverters, a
+    holofield generator, a Bluespace Backpack, and
+    4 Bluespace Crystals.
+

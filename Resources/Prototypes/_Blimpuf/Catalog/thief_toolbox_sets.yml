@@ -67,3 +67,20 @@
   - ClothingHeadHelmetEVA
   - JetpackBlackFilled
   - ClothingShoesBootsMagSyndie
+
+- type: thiefBackpackSet
+  id: BluespaceSet
+  name: thief-backpack-category-bluespace-name
+  description: thief-backpack-category-bluespace-description
+  sprite:
+    sprite: Structures/Shuttles/thruster.rsi
+    state: base
+  content:
+  - DeviceQuantumSpinInverter
+  - DeviceQuantumSpinInverter
+  - HoloprojectorField
+  - ClothingBackpackHolding
+  - BluespaceCrystal1
+  - BluespaceCrystal1
+  - BluespaceCrystal1
+  - BluespaceCrystal1
