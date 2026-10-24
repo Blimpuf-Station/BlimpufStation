@@ -42,3 +42,15 @@
     sprite: _Blimpuf/Clothing/Head/Hats/wizard_blue_trim.rsi
   - type: Clothing
     sprite: _Blimpuf/Clothing/Head/Hats/wizard_blue_trim.rsi
+
+# CC Beret
+- type: entity
+  parent: ClothingHeadHatCCberet
+  id: ClothingHeadHatCCBeretOrnate
+  name: Ornate CentComm Beret
+  description: A beret trimmed in gilden fabric. It's quite heavy.
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Clothing/Head/Hats/ornateccberet.rsi
+    - type: Clothing
+      sprite: _Blimpuf/Clothing/Head/Hats/ornateccberet.rsi
