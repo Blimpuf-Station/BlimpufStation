@@ -52,6 +52,9 @@ public sealed class FullCharacterRecords(
     public Gender Gender = gender;
 
     [ViewVariables]
+    public Gender? SecondaryGender; // Blimpuf
+
+    [ViewVariables]
     public Sex Sex = sex;
 
     [ViewVariables]

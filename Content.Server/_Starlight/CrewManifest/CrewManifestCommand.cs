@@ -121,7 +121,7 @@ public sealed partial class CrewManifestCommand : ToolshedCommand
         var species = !string.IsNullOrEmpty(humanoid?.CustomSpecieName)
             ? $"{humanoid.CustomSpecieName} ({humanoid.Species})"
             : humanoid?.Species.Id ?? "Unknown";
-        _records.CreateGeneralRecord(station, target, name, age, species, gender, jobId ?? "Unknown",
+        _records.CreateGeneralRecord(station, target, name, age, species, gender, humanoid?.SecondaryGender, jobId ?? "Unknown", // Blimpuf - read secondary pronoun
             fingerprint?.Fingerprint, dna?.DNA, null, records);
     }
 
