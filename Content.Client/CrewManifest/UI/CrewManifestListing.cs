@@ -1,5 +1,7 @@
 ﻿using Content.Shared.CrewManifest;
 using Content.Shared.Roles;
+using System.Linq;
+using System.Numerics;
 using Robust.Client.GameObjects;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Prototypes;
@@ -18,6 +20,34 @@ public sealed partial class CrewManifestListing : BoxContainer
         IoCManager.InjectDependencies(this);
         _spriteSystem = _entitySystem.GetEntitySystem<SpriteSystem>();
     }
+
+    // Blimpuf start - ensure columns remain aligned in manifest regardless of name length
+    protected override Vector2 MeasureOverride(Vector2 availableSize)
+    {
+        var sections = Children.OfType<CrewManifestSection>();
+        var nameWidth = 0f;
+        foreach (var section in sections)
+        {
+            foreach (var name in section.NamesColumn.Children)
+            {
+                name.Measure(new Vector2(float.PositiveInfinity, float.PositiveInfinity));
+                nameWidth = Math.Max(nameWidth, name.DesiredSize.X);
+            }
+        }
+
+        // share the longest name/pronoun width across departments, keeping the usual 60% share
+        if (float.IsFinite(availableSize.X))
+            nameWidth = Math.Max(nameWidth, availableSize.X * 0.6f);
+
+        foreach (var section in sections)
+        {
+            if (section.NamesColumn.SetWidth != nameWidth)
+                section.NamesColumn.SetWidth = nameWidth;
+        }
+
+        return base.MeasureOverride(availableSize);
+    }
+    // Blimpuf end
 
     public void AddCrewManifestEntries(CrewManifestEntries entries)
     {

@@ -10,6 +10,8 @@ namespace Content.Client.CrewManifest.UI;
 
 public sealed class CrewManifestSection : BoxContainer
 {
+    internal BoxContainer NamesColumn { get; } // Blimpuf
+
     public CrewManifestSection(
         IPrototypeManager prototypeManager,
         SpriteSystem spriteSystem,
@@ -25,30 +27,71 @@ public sealed class CrewManifestSection : BoxContainer
             Text = Loc.GetString(section.Name)
         });
 
-        var gridContainer = new GridContainer()
+        // var gridContainer = new GridContainer() //Box - replaces with a box container to better fit long names - for pronoun display
+        var gridContainer = new BoxContainer()
         {
+            Orientation = LayoutOrientation.Horizontal,
             HorizontalExpand = true,
-            Columns = 2
+            SeparationOverride = 6, // Blimpuf
+            // Columns = 2 //Box - replaces with a horizontal orientation instead - for pronoun display
         };
+
+        // Delta-V - Start of column BoxContainers.
+        var namesContainer = new BoxContainer()
+        {
+            Orientation = LayoutOrientation.Vertical,
+        };
+        NamesColumn = namesContainer; // Blimpuf
+
+        var titlesContainer = new BoxContainer()
+        {
+            Orientation = LayoutOrientation.Vertical,
+            HorizontalExpand = true,
+            SizeFlagsStretchRatio = 2,
+        };
+
+        gridContainer.AddChild(namesContainer);
+        gridContainer.AddChild(titlesContainer);
+        // Delta-V - end of column BoxContainers.
 
         AddChild(gridContainer);
 
         foreach (var entry in entries)
         {
-            var name = new RichTextLabel()
+            // var name = new RichTextLabel() // Box - Comments out for pronouns pr
+            // Delta-V - start of name and pronoun container
+            var nameContainer = new BoxContainer()
             {
+                Orientation = LayoutOrientation.Horizontal,
                 HorizontalExpand = true,
             };
+            var name = new RichTextLabel();
             name.SetMessage(entry.Name);
+
+            var gender = new RichTextLabel()
+            {
+                Margin = new Thickness(6, 0, 0, 0),
+                StyleClasses = { "CrewManifestGender" }
+            };
+            gender.SetMessage(Loc.GetString("gender-display", ("gender", entry.Gender)));
+
+            nameContainer.AddChild(name);
+            nameContainer.AddChild(gender);
+            // Delta-V - end of name and pronoun container
 
             var titleContainer = new BoxContainer()
             {
                 Orientation = LayoutOrientation.Horizontal,
-                HorizontalExpand = true
+                HorizontalExpand = true,
+                SizeFlagsStretchRatio = 1, // Delta-V
             };
 
             var title = new RichTextLabel();
-            title.SetMessage(entry.JobTitle);
+            // Blimpuf - use compact job names while preserving custom record titles.
+            var jobTitle = entry.JobTitle;
+            if (prototypeManager.TryIndex<JobPrototype>(entry.JobPrototype, out var job) && jobTitle == job.LocalizedName)
+                jobTitle = job.LocalizedJobSelectName;
+            title.SetMessage(jobTitle);
 
 
             if (prototypeManager.TryIndex<JobIconPrototype>(entry.JobIcon, out var jobIcon))
@@ -69,8 +112,12 @@ public sealed class CrewManifestSection : BoxContainer
                 titleContainer.AddChild(title);
             }
 
-            gridContainer.AddChild(name);
-            gridContainer.AddChild(titleContainer);
+            // Delta-V - grid was replaced with two BoxContainer columns
+            //gridContainer.AddChild(name);
+            //gridContainer.AddChild(titleContainer);
+            namesContainer.AddChild(nameContainer);
+            titlesContainer.AddChild(titleContainer);
+            // Delta-V - end of grid container change
         }
     }
 }
