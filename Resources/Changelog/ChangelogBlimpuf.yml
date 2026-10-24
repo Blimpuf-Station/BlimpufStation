@@ -1183,5 +1183,12 @@ Entries:
   id: 21301
   time: '2026-10-24T18:27:09.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/213
+- author: DrWhoFan13, BlueMoon59, TGRCDev
+  changes:
+  - message: Pronouns now show up on crew manifest.
+    type: Add
+  id: 20901
+  time: '2026-10-24T21:13:35.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/209
 Order: -1
 
