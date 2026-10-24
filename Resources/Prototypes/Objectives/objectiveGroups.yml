@@ -3,7 +3,8 @@
   id: TraitorObjectiveGroups
   weights:
     # TraitorObjectiveGroupSteal: 0  Blimpuf edit, Steal Objectives are kill
-    TraitorObjectiveGroupResearch: 1
+    TraitorObjectiveGroupResearchTotal: 1
+    TraitorObjectiveGroupResearchSpecific: 1
     TraitorObjectiveGroupKill: 1
     TraitorObjectiveGroupState: 1 #As in, something about your character. Alive, dead, arrested, gained an ability...
     TraitorObjectiveGroupSocial: 0.25 #Involves helping/harming others without killing them or stealing their stuff, lowered because the chance of rolling this was enormous when its just one objective in the category
