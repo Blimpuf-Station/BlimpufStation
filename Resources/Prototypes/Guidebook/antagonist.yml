@@ -25,26 +25,31 @@
 
 - type: guideEntry
   id: Traitors
+  priority: 1
   name: guide-entry-traitors
   text: "/ServerInfo/Guidebook/Antagonist/Traitors.xml"
 
 - type: guideEntry
   id: Changelings
+  priority: 5
   name: guide-entry-changelings
   text: "/ServerInfo/Guidebook/Antagonist/Changelings.xml"
 
 - type: guideEntry
   id: NuclearOperatives
+  priority: 2
   name: guide-entry-nuclear-operatives
   text: "/ServerInfo/Guidebook/Antagonist/Nuclear Operatives.xml"
 
 - type: guideEntry
   id: Zombies
+  priority: 3
   name: guide-entry-zombies
   text: "/ServerInfo/Guidebook/Antagonist/Zombies.xml"
 
 - type: guideEntry
   id: Revolutionaries
+  priority: 7
   name: guide-entry-revolutionaries
   text: "/ServerInfo/Guidebook/Antagonist/Revolutionaries.xml"
 
@@ -55,6 +60,7 @@
 
 - type: guideEntry
   id: SpaceNinja
+  priority: 8
   name: guide-entry-space-ninja
   text: "/ServerInfo/Guidebook/Antagonist/SpaceNinja.xml"
 
@@ -65,6 +71,7 @@
 
 - type: guideEntry
   id: Wizard
+  priority: 12
   name: guide-entry-wizard
   text: "/ServerInfo/Guidebook/Antagonist/Wizard.xml"
   # Moffstation - Start - Wizard Duelist
@@ -74,5 +81,6 @@
 
 - type: guideEntry
   id: Xenoborgs
+  priority: 11
   name: guide-entry-xenoborgs
   text: "/ServerInfo/Guidebook/Antagonist/Xenoborgs.xml"
