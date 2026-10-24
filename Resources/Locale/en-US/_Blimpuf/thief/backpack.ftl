@@ -29,7 +29,9 @@ thief-backpack-category-infiltrator-description =
     jumpsuit, and a full EVA Suit. Coming through!
 
 thief-backpack-category-pilot-name = Pilot Kit
-thief-backpack-category-infiltrator-description =
-    Includes: A crate with everything needed to
-    set up a shuttle, a full EVA suit, a black jetpack
-    and Blood-Red Magboots. Buckle up!
+thief-backpack-category-pilot-description =
+    You took a quick shuttle piloting course with the
+    fellas down at the Syndicate before this.
+    Includes: A Syndicate Shuttle construction bundle,
+    a full Syndicate EVA suit, a black jetpack and blood
+    red magboots. All aboard and buckle up!
