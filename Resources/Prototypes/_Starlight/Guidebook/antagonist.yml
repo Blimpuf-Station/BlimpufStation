@@ -1,5 +1,6 @@
 - type: guideEntry
   id: Vampires
+  priority: 10
   name: guide-entry-vampires
   text: "/ServerInfo/_Starlight/Guidebook/Antagonist/Vampire/Vampires.xml"
   children:
@@ -30,6 +31,7 @@
 
 - type: guideEntry
   id: Abductors
+  priority: 9
   name: guide-entry-abductors
   text: "/ServerInfo/Guidebook/Antagonist/Abductors.xml"
 
@@ -40,6 +42,7 @@
 
 - type: guideEntry
   id: SELFAgent
+  priority: 4
   name: roles-antag-selfagent-name
   text: "/ServerInfo/_Starlight/Guidebook/Antagonist/SiliconLiberation.xml"
 
