@@ -63,17 +63,17 @@ public sealed class GridPowerTests : GameTest
         new("/Maps/_Starlight/Shuttles/Cargo/cargo_syndicate.yml"),
 
         // Evac
-        new("/Maps/_Starlight/Shuttles/Evac/emergency_cluster.yml"),
-        new("/Maps/_Starlight/Shuttles/Evac/emergency_delta.yml"),
+        new("/Maps/_Blimpuf/Shuttles/Evac/emergency_cluster.yml"),
+        new("/Maps/_Blimpuf/Shuttles/Evac/emergency_delta.yml"),
         new("/Maps/_Starlight/Shuttles/Evac/emergency_hotel.yml"),
-        new("/Maps/_Starlight/Shuttles/Evac/emergency_lox.yml"),
-        new("/Maps/_Starlight/Shuttles/Evac/emergency_manor.yml"),
-        new("/Maps/_Starlight/Shuttles/Evac/emergency_ming.yml"),
-        new("/Maps/_Starlight/Shuttles/Evac/emergency_prism.yml"),
-        new("/Maps/_Starlight/Shuttles/Evac/emergency_raven.yml"),
-        new("/Maps/_Starlight/Shuttles/Evac/emergency_silica.yml"),
-        new("/Maps/_Starlight/Shuttles/Evac/emergency_spacemall.yml"),
-        new("/Maps/_Starlight/Shuttles/Evac/emergency_starboard.yml"),
+        new("/Maps/_Blimpuf/Shuttles/Evac/emergency_lox.yml"),
+        new("/Maps/_Blimpuf/Shuttles/Evac/emergency_manor.yml"),
+        new("/Maps/_Blimpuf/Shuttles/Evac/emergency_ming.yml"),
+        new("/Maps/_Blimpuf/Shuttles/Evac/emergency_prism.yml"),
+        new("/Maps/_Blimpuf/Shuttles/Evac/emergency_raven.yml"),
+        new("/Maps/_Blimpuf/Shuttles/Evac/emergency_silica.yml"),
+        new("/Maps/_Blimpuf/Shuttles/Evac/emergency_spacemall.yml"),
+        new("/Maps/_Blimpuf/Shuttles/Evac/emergency_starboard.yml"),
         new("/Maps/_Starlight/Shuttles/Evac/emergency_syndicate.yml"),
 
         // Shipyard

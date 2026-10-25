@@ -14,7 +14,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'MW'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/_Starlight/Shuttles/Evac/emergency_ming.yml
+          emergencyShuttlePath: /Maps/_Blimpuf/Shuttles/Evac/emergency_ming.yml # Blimpuf
         - type: StationJobs
           availableJobs:
             #service

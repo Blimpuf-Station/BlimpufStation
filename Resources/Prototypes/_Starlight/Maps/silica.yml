@@ -14,7 +14,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'CW'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/_Starlight/Shuttles/Evac/emergency_silica.yml
+          emergencyShuttlePath: /Maps/_Blimpuf/Shuttles/Evac/emergency_silica.yml # Blimpuf
         - type: StationCargoShuttle
           path: /Maps/_Starlight/Shuttles/Cargo/cargo_silica.yml
         - type: StationJobs
