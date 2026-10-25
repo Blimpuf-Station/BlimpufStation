@@ -28,9 +28,9 @@
     }
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 15
+    Telecrystal: 75
   cost:
-    Telecrystal: 20
+    Telecrystal: 100
   categories:
     - UplinkWeaponry
   conditions:
@@ -51,9 +51,9 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledBullpup
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 13
+    Telecrystal: 65
   cost:
-    Telecrystal: 17
+    Telecrystal: 85
   categories:
     - UplinkWeaponry
   conditions:
@@ -69,9 +69,9 @@
   productEntity: WeaponPistolDeagle
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 8
+    Telecrystal: 40
   cost:
-    Telecrystal: 15
+    Telecrystal: 65
   categories:
     - UplinkWeaponry
 
@@ -87,9 +87,9 @@
   productEntity: BigBoxSyndicateBundle
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 10
+    Telecrystal: 50
   cost:
-    Telecrystal: 25
+    Telecrystal: 125
   categories:
     - UplinkWeaponry
 

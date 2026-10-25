@@ -63,10 +63,9 @@ public sealed partial class AntagLoadProfileRuleSystem : GameRuleSystem<AntagLoa
         }
 
         #region Starlight
-        var species = Proto.Index(SharedHumanoidAppearanceSystem.DefaultSpecies);
-
-        if (profile is not null)
-            species = Proto.Index(profile.Species);
+        var speciesId = profile?.Species ?? HumanoidCharacterProfile.Random(
+            Proto.Index<RandomHumanoidSettingsPrototype>("EventHumanoidAntag").SpeciesBlacklist).Species;
+        var species = Proto.Index<SpeciesPrototype>(speciesId);
 
         if (ent.Comp.SpeciesHardOverride is not null)
             species = Proto.Index(ent.Comp.SpeciesHardOverride.Value);

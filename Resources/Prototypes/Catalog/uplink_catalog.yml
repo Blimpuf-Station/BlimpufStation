@@ -1511,7 +1511,7 @@
   icon: { sprite: /Textures/Actions/Implants/implants.rsi, state: explosive }
   productEntity: MacroBombImplanter
   cost:
-    Telecrystal: 60
+    Telecrystal: 45
   categories:
     - UplinkImplants
   conditions:
@@ -1531,7 +1531,7 @@
   icon: { sprite: /Textures/Objects/Magic/magicactions.rsi, state: gib }
   productEntity: DeathAcidifierImplanter
   cost:
-    Telecrystal: 20
+    Telecrystal: 5
   categories:
     - UplinkImplants
   conditions:

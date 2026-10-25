@@ -1,5 +1,6 @@
 - type: guideEntry
   id: CosmicCult
+  priority: 6
   name: guide-entry-cosmiccult
   text: "/ServerInfo/_Starlight/Guidebook/CosmicCult/CosmicCult.xml"
   children:

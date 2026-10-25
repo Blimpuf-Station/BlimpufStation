@@ -33,8 +33,8 @@
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicateFilledDeagle
-  name: Desert Eagle bundle
-  description: "Contains high damage Desert Eagle, a 3 magnum magazines."
+  name: Jungle Hawk bundle
+  description: "Contains a high damage Jungle Hawk, and 3 magnum magazines."
   components:
   - type: EntityTableContainerFill
     containers:
