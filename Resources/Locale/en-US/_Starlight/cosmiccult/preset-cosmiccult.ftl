@@ -111,16 +111,12 @@ cosmiccult-monument-stage3-briefing =
 
 cosmiccult-rift-inuse = You can't do this right now.
 cosmiccult-rift-invaliduser = You lack the proper tools to deal with this.
-cosmiccult-rift-chaplainoops = Wield your holy scripture.
 cosmiccult-rift-lambda-charging = The Nullspace Stabilizer blast is charging...
-cosmiccult-rift-bible-charging = You begin purifying the malign rift...
 cosmiccult-rift-alreadyempowered = You are already empowered; the rift's power would be wasted.
 cosmiccult-rift-wasempowered = Your body won't be able to handle being empowered a second time...
 cosmiccult-rift-beginabsorb = The rift begins to merge with you...
-cosmiccult-rift-beginpurge = Your consecration begins purging the malign rift...
 
 cosmiccult-rift-absorb = {$NAME} absorbs the rift, and malign light empowers their body!
-cosmiccult-rift-purge = The malign rift is expunged!
 
 
 ## CHANTRY
