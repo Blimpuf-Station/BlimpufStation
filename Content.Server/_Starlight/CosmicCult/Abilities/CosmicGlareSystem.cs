@@ -13,7 +13,6 @@ using Content.Shared.Silicons.Borgs.Components;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Player;
 using Content.Shared.Light.Components;
-using Content.Server.Bible.Components;
 using Content.Shared.Mindshield.Components;
 using Content.Server.Popups;
 using Content.Shared._Starlight.NullSpace.Components;
@@ -72,7 +71,7 @@ public sealed partial class CosmicGlareSystem : EntitySystem
                 return true;
 
             var ent = player.AttachedEntity.Value;
-            if (!HasComp<MobStateComponent>(ent) || _cosmicCult.EntityIsCultist(ent) || HasComp<BibleUserComponent>(ent) || HasComp<MindShieldComponent>(ent))
+            if (!HasComp<MobStateComponent>(ent) || _cosmicCult.EntityIsCultist(ent) || HasComp<MindShieldComponent>(ent))
                 return true;
 
             return !_interact.InRangeUnobstructed((uid, Transform(uid)), (ent, Transform(ent)), range: 0, collisionMask: CollisionGroup.Impassable);
