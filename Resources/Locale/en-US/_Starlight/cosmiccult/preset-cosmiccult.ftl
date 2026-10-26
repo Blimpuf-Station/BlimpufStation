@@ -150,7 +150,7 @@ cosmiccult-ui-deconverted-text =
 
     Any further wrongdoings are logged and punishable. So be nice.
 
-cosmiccult-ui-deconverted-rule = Reminder: As per Rule 3 of server rules, [bold][color=#a4885c]De-converted Cosmic Cultists forget what happened while they were enthralled by cosmic influence.[/color][/bold]
+cosmiccult-ui-deconverted-rule = Reminder: As per our Continuity rule within Rule 5 of our Server Rules, [bold][color=#a4885c]De-converted Cosmic Cultists forget what happened while they were enthralled by cosmic influence.[/color][/bold]
 
 cosmiccult-ui-deconverted-ruletext = Your character may learn what happened through further investigation and roleplay, but should not be able to remember being a cultist nor any actions they committed for the cult.
 
