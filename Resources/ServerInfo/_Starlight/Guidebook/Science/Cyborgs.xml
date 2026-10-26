@@ -2,8 +2,6 @@
   # Cyborgs
   Cyborgs are man-machine hybrids, purpose-built by the [textlink="robotics"  link="Robotics"] division of science for various duties across the station. Bound by strictly-followed [color=cyan]silicon laws[/color], they serve the crew unconditionally. [italic](Most of the time.)[italic]
 
-  Note: Unlike many servers, on Starlight, Lawless Cyborgs are NOT Free Agents. You are still bound by server rules.
-
   ## Basic Components
   <Box>
     <GuideEntityEmbed Entity="CyborgEndoskeleton" Caption="Cyborg Endoskeleton"/>
