@@ -99,7 +99,7 @@ public sealed class GridPowerTests : GameTest
         new("/Maps/_Starlight/Shuttles/ShuttleEvent/syndie_evacpod.yml"),
 
         // Other Antagonists
-        new("/Maps/_Starlight/Shuttles/mothership.yml"), // Xenoborgs
+        new("/Maps/_Starlight/Shuttles/ShuttleEvent/mothership.yml"), // Xenoborgs
         new("/Maps/_Starlight/Shuttles/ShuttleEvent/abductor_shuttle.yml"), // Abductors
 
         // Events / Admemes
