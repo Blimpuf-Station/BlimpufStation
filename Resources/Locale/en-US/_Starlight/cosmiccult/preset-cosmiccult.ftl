@@ -7,7 +7,7 @@ roles-antag-cosmiccult-name = Cosmic Cultist
 roles-antag-cosmiccult-description = Usher in the end of all things through subterfuge and sabotage, brainwashing those who would oppose you.
 
 cosmiccult-gamemode-title = The Cosmic Cult
-cosmiccult-gamemode-description = Scanners detect an anomalous increase in nullspace activity. There is no additional data.
+cosmiccult-gamemode-description = Scanners detect an anomalous increase in malign activity. There is no additional data.
 
 cosmiccult-vote-steward-initiator = The Unknown
 cosmiccult-vote-steward-title = Cosmic Cult Stewardship
@@ -21,7 +21,7 @@ cosmiccult-finale-ready = A terrifying light surges forth from The Monument!
 cosmiccult-finale-speedup = The beckoning quickens! Energy surges through the surroundings...
 
 cosmiccult-finale-degen = You feel yourself unravelling!
-cosmiccult-finale-location = Scanners are detecting an enormous nullspace activity spike {$location}!
+cosmiccult-finale-location = Scanners are detecting an enormous anomalous activity spike {$location}!
 cosmiccult-finale-cancel-begin = Your mind's willpower begins to shatter the ritual...
 cosmiccult-finale-beckon-begin = The whispers in the back of your mind intensify...
 cosmiccult-finale-beckon-success = You beckon for the final curtain call.
@@ -60,8 +60,8 @@ cosmiccult-summary-crewminor = The cult has been left stewardless.
 cosmiccult-summary-crewmajor = All cosmic cultists were eliminated.
 cosmiccult-summary-crewcomplete = Every single cosmic cultist was deconverted!
 
-cosmiccult-elimination-shuttle-call = Based on scans from our long-range sensors, the nullspace anomaly has subsided. We thank you for your prudence. An emergency shuttle has been automatically called to the station for decontamination and debriefing procedures. ETA: {$time} {$units}. Please note, if the psychological impact of the anomaly is negligible, you may recall the shuttle to extend the shift.
-cosmiccult-elimination-announcement = Based on scans from our long-range sensors, the nullspace anomaly has subsided. We thank you for your prudence. An emergency shuttle is already inbound. Return to CentComm safely for decontamination and debriefing procedures.
+cosmiccult-elimination-shuttle-call = Based on scans from our long-range sensors, the malign anomaly has subsided. We thank you for your prudence. An emergency shuttle has been automatically called to the station for decontamination and debriefing procedures. ETA: {$time} {$units}. Please note, if the psychological impact of the anomaly is negligible, you may recall the shuttle to extend the shift.
+cosmiccult-elimination-announcement = Based on scans from our long-range sensors, the malign anomaly has subsided. We thank you for your prudence. An emergency shuttle is already inbound. Return to CentComm safely for decontamination and debriefing procedures.
 
 
 ## BRIEFINGS
@@ -111,7 +111,7 @@ cosmiccult-monument-stage3-briefing =
 
 cosmiccult-rift-inuse = You can't do this right now.
 cosmiccult-rift-invaliduser = You lack the proper tools to deal with this.
-cosmiccult-rift-lambda-charging = The Nullspace Stabilizer blast is charging...
+cosmiccult-rift-lambda-charging = The Lambda Stabilizer blast is charging...
 cosmiccult-rift-alreadyempowered = You are already empowered; the rift's power would be wasted.
 cosmiccult-rift-wasempowered = Your body won't be able to handle being empowered a second time...
 cosmiccult-rift-beginabsorb = The rift begins to merge with you...
@@ -121,8 +121,8 @@ cosmiccult-rift-absorb = {$NAME} absorbs the rift, and malign light empowers the
 
 ## CHANTRY
 
-cosmiccult-chantry-location = A dangerous increase in nullspace activity has been detected {$location}! Intercept and intervene immediately!
-cosmiccult-chantry-destruction = The sudden nullspace activity spike has been neutralized. Ongoing vigilance is advised.
+cosmiccult-chantry-location = A dangerous increase in anomalous activity has been detected {$location}! Intercept and intervene immediately!
+cosmiccult-chantry-destruction = The sudden anomalous activity spike has been neutralized. Ongoing vigilance is advised.
 cosmiccult-chantry-powerup = The vacuous chantry flares to life!
 
 ## UI / BASE POPUP
@@ -183,9 +183,9 @@ cosmiccult-announce-tier2-progress = An unnerving numbness prickles your senses.
 
 cosmiccult-announce-tier3-progress = Arcs of bluespace energy crackle across the station's groaning structure. The end draws near.
 
-cosmiccult-announce-tier3-warning = Critical increase in nullspace activity detected. Infected personnel are to be subdued or neutralized on sight.
+cosmiccult-announce-tier3-warning = Critical increase in anomalous activity detected. Infected personnel are to be subdued or neutralized on sight.
 
-cosmiccult-announce-finale-warning = All station crew. The nullspace anomaly is going supercritical, instruments failing; realspace-to-nullspace transitional event horizon IMMINENT. If you are not already on counter-protocol, immediately sortie and intervene. Repeat: Intervene immediately or die.
+cosmiccult-announce-finale-warning = All station crew. The malign anomaly is going supercritical, instruments failing; event horizon IMMINENT. If you are not already on counter-protocol, immediately sortie and intervene. Repeat: Intervene immediately or die.
 
 cosmiccult-announce-victory-summon = A FRACTION OF COSMIC POWER IS CALLED FORTH.
 
