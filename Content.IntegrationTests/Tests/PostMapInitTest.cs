@@ -113,8 +113,12 @@ namespace Content.IntegrationTests.Tests
             .ToArray();
 
         private static readonly string[] GameMaps = GameDataScrounger.PrototypesOfKind<GameMapPrototype>().Where(x => x != PoolManager.TestMap).ToArray();
-        private static readonly ResPath[] AllMapFiles = GameDataScrounger.FilesInDirectoryInVfs("/Maps/_Blimpuf", "*.yml"); // Starlight map folder
-        private static readonly ResPath[] ShuttleMapFiles = GameDataScrounger.FilesInDirectoryInVfs("/Maps/_Starlight/Shuttles", "*.yml"); // Starlight shuttle folder
+        private static readonly ResPath[] AllMapFiles = GameDataScrounger.FilesInDirectoryInVfs("/Maps/_Blimpuf", "*.yml"); // Blimpuf map folder
+        private static readonly ResPath[] ShuttleMapFiles =
+        [
+            .. GameDataScrounger.FilesInDirectoryInVfs("/Maps/_Starlight/Shuttles", "*.yml"), // Starlight shuttle folder
+            .. GameDataScrounger.FilesInDirectoryInVfs("/Maps/_Blimpuf/Shuttles", "*.yml") // Blimpuf shuttle folder
+        ];
 
         private static readonly ProtoId<EntityCategoryPrototype> DoNotMapCategory = "DoNotMap";
 
