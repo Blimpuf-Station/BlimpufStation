@@ -178655,6 +178655,11 @@ entities:
     - type: Transform
       pos: 31.5,6.5
       parent: 2
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
 - proto: VendingMachineSmite
   entities:
   - uid: 27586

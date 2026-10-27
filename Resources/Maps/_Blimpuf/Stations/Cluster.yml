@@ -88143,6 +88143,7 @@ entities:
     - type: Transform
       pos: 13.5,4.5
       parent: 2
+    - type: AccessReader
 - proto: VendingMachineSoda
   entities:
   - uid: 13130

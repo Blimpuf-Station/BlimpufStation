@@ -200965,6 +200965,11 @@ entities:
       locked: False
     - type: Physics
       bodyType: Static
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
 - proto: LockerBrigmedic
   entities:
   - uid: 2362
@@ -252213,6 +252218,11 @@ entities:
     - type: Transform
       pos: 12.5,-15.5
       parent: 2
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
 - proto: VendingMachineSnack
   entities:
   - uid: 36302

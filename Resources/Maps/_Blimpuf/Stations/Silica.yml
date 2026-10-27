@@ -134643,6 +134643,11 @@ entities:
     - type: Transform
       pos: 40.5,13.5
       parent: 2
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
   - uid: 20090
     components:
     - type: Transform
@@ -167082,6 +167087,11 @@ entities:
     - type: Transform
       pos: 47.5,16.5
       parent: 2
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
 - proto: VendingMachineSustenance
   entities:
   - uid: 24959

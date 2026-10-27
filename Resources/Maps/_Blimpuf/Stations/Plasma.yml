@@ -164750,6 +164750,11 @@ entities:
     - type: Transform
       pos: -85.5,-47.5
       parent: 2
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
 - proto: VendingMachineSustenance
   entities:
   - uid: 24410

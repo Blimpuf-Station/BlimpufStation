@@ -142887,7 +142887,9 @@ entities:
           Oxygen: 1.7459903
           Nitrogen: 6.568249
     - type: AccessReader
-      accessListsOriginal:
+      access:
+      - - Brig
+      - - GenpopEnter
       - - Hydroponics
     - type: Lock
       locked: False
@@ -175738,6 +175740,11 @@ entities:
     - type: Transform
       pos: -47.5,63.5
       parent: 2
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
   - uid: 27433
     components:
     - type: Transform
@@ -176168,6 +176175,11 @@ entities:
     - type: Transform
       pos: -57.5,61.5
       parent: 2
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
 - proto: VendingMachineSmite
   entities:
   - uid: 27499
@@ -253231,11 +253243,21 @@ entities:
     - type: Transform
       pos: -47.5,63.5
       parent: 2
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
   - uid: 42644
     components:
     - type: Transform
       pos: -46.5,63.5
       parent: 2
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
   - uid: 42645
     components:
     - type: Transform

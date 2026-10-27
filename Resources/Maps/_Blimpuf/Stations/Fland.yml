@@ -212106,6 +212106,11 @@ entities:
     - type: Transform
       pos: 49.5,21.5
       parent: 2
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
 - proto: VendingMachineSnack
   entities:
   - uid: 32402

@@ -133156,6 +133156,11 @@ entities:
       parent: 2
     - type: Lock
       locked: False
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
 - proto: LockerFreezerVaultFilled
   entities:
   - uid: 20743
@@ -162568,6 +162573,11 @@ entities:
     - type: Transform
       pos: 29.5,3.5
       parent: 2
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
 - proto: VendingMachineSoda
   entities:
   - uid: 25604

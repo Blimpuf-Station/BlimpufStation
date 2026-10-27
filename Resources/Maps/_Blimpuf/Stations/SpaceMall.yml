@@ -237992,6 +237992,11 @@ entities:
     - type: Transform
       pos: 8.5,19.5
       parent: 2
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
   - uid: 36927
     components:
     - type: Transform

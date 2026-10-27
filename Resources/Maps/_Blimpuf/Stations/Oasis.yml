@@ -211831,9 +211831,10 @@ entities:
       pos: 31.5,8.5
       parent: 29399
     - type: AccessReader
-      accessListsOriginal:
-      - - Bar
-      access: []
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
 - proto: VendingMachineCargoDrobe
   entities:
   - uid: 25371
@@ -211885,9 +211886,10 @@ entities:
       pos: 12.5,9.5
       parent: 29399
     - type: AccessReader
-      accessListsOriginal:
-      - - Service
-      access: []
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
 - proto: VendingMachineChemDrobe
   entities:
   - uid: 25377
@@ -212152,9 +212154,10 @@ entities:
       pos: 12.5,-11.5
       parent: 29399
     - type: AccessReader
-      accessListsOriginal:
-      - - Medical
-      access: []
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
 - proto: VendingMachineMedicalBase
   entities:
   - uid: 25414
@@ -212271,6 +212274,11 @@ entities:
     - type: Transform
       pos: 7.5,9.5
       parent: 29399
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
 - proto: VendingMachineSovietSoda
   entities:
   - uid: 25428

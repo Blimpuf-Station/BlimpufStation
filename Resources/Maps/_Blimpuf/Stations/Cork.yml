@@ -64098,6 +64098,11 @@ entities:
     - type: Transform
       pos: -3.5,22.5
       parent: 2
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
 - proto: VendingMachineSustenance
   entities:
   - uid: 7883

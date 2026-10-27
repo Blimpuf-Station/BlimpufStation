@@ -168200,6 +168200,11 @@ entities:
     - type: Transform
       pos: 16.5,3.5
       parent: 2
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
 - proto: VendingMachineSustenance
   entities:
   - uid: 25312

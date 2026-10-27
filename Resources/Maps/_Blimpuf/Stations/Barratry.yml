@@ -4,7 +4,7 @@ meta:
   engineVersion: 277.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/16/2026 22:53:11
+  time: 10/26/2026 23:44:26
   entityCount: 16248
 maps:
 - 1
@@ -12239,8 +12239,6 @@ entities:
     - type: Transform
       pos: 14.5,15.5
       parent: 2
-    - type: Physics
-      sleepTime: 0.01666665
   - uid: 52
     components:
     - type: Transform
@@ -16400,6 +16398,13 @@ entities:
     components:
     - type: Transform
       pos: 20.030567,18.619143
+      parent: 2
+- proto: BoxFolderGreen
+  entities:
+  - uid: 16245
+    components:
+    - type: Transform
+      pos: -0.5,10.5
       parent: 2
 - proto: BoxFolderRed
   entities:
@@ -43469,6 +43474,14 @@ entities:
       rot: 3.141592653589793 rad
       pos: -32.5,-3.5
       parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 16255
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -22.5,38.5
+      parent: 2
 - proto: ComputerShipyard
   entities:
   - uid: 16132
@@ -44099,6 +44112,11 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -72.5,8.5
+      parent: 2
+  - uid: 16257
+    components:
+    - type: Transform
+      pos: -51.5,49.5
       parent: 2
 - proto: CryogenicSleepUnitSpawnerLateJoin
   entities:
@@ -77128,11 +77146,6 @@ entities:
     - type: Transform
       pos: -52.5,49.5
       parent: 2
-  - uid: 10655
-    components:
-    - type: Transform
-      pos: -51.5,49.5
-      parent: 2
 - proto: MechFigurineSpawner50
   entities:
   - uid: 10656
@@ -88462,6 +88475,15 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+- proto: SignLawyer
+  entities:
+  - uid: 16250
+    components:
+    - type: Transform
+      pos: 21.5,18.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
 - proto: SignLibrary
   entities:
   - uid: 12415
@@ -88475,6 +88497,15 @@ entities:
     components:
     - type: Transform
       pos: -24.5,14.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+- proto: SignMagistrate
+  entities:
+  - uid: 16249
+    components:
+    - type: Transform
+      pos: 19.5,22.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -89434,6 +89465,13 @@ entities:
     - type: Transform
       pos: 16.5,30.5
       parent: 2
+- proto: SpawnMobCorgi
+  entities:
+  - uid: 16251
+    components:
+    - type: Transform
+      pos: -20.5,48.5
+      parent: 2
 - proto: SpawnMobCrabAtmos
   entities:
   - uid: 12563
@@ -89869,6 +89907,18 @@ entities:
     components:
     - type: Transform
       pos: -66.5,5.5
+      parent: 2
+- proto: SpawnPointLawyer
+  entities:
+  - uid: 16246
+    components:
+    - type: Transform
+      pos: 17.5,17.5
+      parent: 2
+  - uid: 16247
+    components:
+    - type: Transform
+      pos: 19.5,17.5
       parent: 2
 - proto: SpawnPointLibrarian
   entities:
@@ -94106,6 +94156,13 @@ entities:
     - type: Transform
       pos: -27.54433,17.142042
       parent: 2
+- proto: ToyIan
+  entities:
+  - uid: 16253
+    components:
+    - type: Transform
+      pos: -20.170961,48.297226
+      parent: 2
 - proto: TP14KitchenDeepFryer
   entities:
   - uid: 13316
@@ -94709,6 +94766,13 @@ entities:
     - type: Transform
       pos: 1.5,10.5
       parent: 2
+- proto: VendingMachineLegalDrobe
+  entities:
+  - uid: 16248
+    components:
+    - type: Transform
+      pos: 16.5,13.5
+      parent: 2
 - proto: VendingMachineMedical
   entities:
   - uid: 13384
@@ -94744,11 +94808,6 @@ entities:
       parent: 2
 - proto: VendingMachineNutri
   entities:
-  - uid: 13388
-    components:
-    - type: Transform
-      pos: -50.5,53.5
-      parent: 2
   - uid: 13389
     components:
     - type: Transform
@@ -94831,6 +94890,16 @@ entities:
     - type: Transform
       pos: -59.5,83.5
       parent: 2
+  - uid: 16258
+    components:
+    - type: Transform
+      pos: -50.5,53.5
+      parent: 2
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
 - proto: VendingMachineSustenance
   entities:
   - uid: 13399
@@ -109643,68 +109712,4 @@ entities:
     - type: Transform
       pos: -24.486898,29.543127
       parent: 2
-- proto: BoxFolderGreen
-  entities:
-  - uid: 16245
-    components:
-    - type: Transform
-      pos: -0.5,10.5
-      parent: 2
-- proto: SpawnPointLawyer
-  entities:
-  - uid: 16246
-    components:
-    - type: Transform
-      pos: 17.5,17.5
-      parent: 2
-  - uid: 16247
-    components:
-    - type: Transform
-      pos: 19.5,17.5
-      parent: 2
-- proto: VendingMachineLegalDrobe
-  entities:
-  - uid: 16248
-    components:
-    - type: Transform
-      pos: 16.5,13.5
-      parent: 2
-- proto: SignMagistrate
-  entities:
-  - uid: 16249
-    components:
-    - type: Transform
-      pos: 19.5,22.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-- proto: SignLawyer
-  entities:
-  - uid: 16250
-    components:
-    - type: Transform
-      pos: 21.5,18.5
-      parent: 2
-- proto: SpawnMobCorgi
-  entities:
-  - uid: 16251
-    components:
-    - type: Transform
-      pos: -20.5,48.5
-      parent: 2
-- proto: ToyIan
-  entities:
-  - uid: 16253
-    components:
-    - type: Transform
-      pos: -20.170961,48.297226
-      parent: 2
-- proto: ComputerServiceJobBoard
-  entities:
-  - uid: 16255
-    components:
-    - type: Transform
-      pos: -22.5,38.5
-      parent: 2
-      rot: 1.5707963267948966 rad
 ...

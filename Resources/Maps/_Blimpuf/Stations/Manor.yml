@@ -180459,6 +180459,11 @@ entities:
     - type: Transform
       pos: -40.5,51.5
       parent: 2
+    - type: AccessReader
+      access:
+      - - Brig
+      - - GenpopEnter
+      - - Hydroponics
 - proto: VendingMachineTankDispenserEngineering
   entities:
   - uid: 28089
