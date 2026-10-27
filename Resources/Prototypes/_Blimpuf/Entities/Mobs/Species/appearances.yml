@@ -2,3 +2,6 @@
   parent: [BaseSpeciesDummy, BaseInventoryOvinia]
   id: AppearanceOvinia
   categories: [ HideSpawnMenu ]
+  components:
+  - type: HumanoidAppearance
+    species: Ovinia

@@ -12,6 +12,7 @@
   <GuideEntityEmbed Entity="AppearanceHuman" Caption="Human"/><!--Harpy goes above-->
   <GuideEntityEmbed Entity="AppearanceMoth" Caption="Moth Person"/>
   <GuideEntityEmbed Entity="AppearanceNeocyte" Caption="Neocyte"/>
+  <GuideEntityEmbed Entity="AppearanceOvinia" Caption="Ovinia"/>
   <GuideEntityEmbed Entity="AppearanceReptilian" Caption="Reptilian"/>
   <GuideEntityEmbed Entity="AppearanceResomi" Caption="Resomi"/>
   </Box>
