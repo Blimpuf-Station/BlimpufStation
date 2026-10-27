@@ -3,7 +3,8 @@
 - type: marking
   id: OviniaLambHorns
   bodyPart: HeadTop
-  groupWhitelist: [ Ovinia ]
+  markingCategory: HeadTop # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/horn_markings.rsi
       state: ovinia-lamb-horns
@@ -11,7 +12,8 @@
 - type: marking
   id: OviniaRamHorns
   bodyPart: HeadTop
-  groupWhitelist: [ Ovinia ]
+  markingCategory: HeadTop # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/horn_markings.rsi
       state: ovinia-ram-horns
@@ -19,7 +21,8 @@
 - type: marking
   id: OviniaPointyHorns
   bodyPart: HeadTop
-  groupWhitelist: [ Ovinia ]
+  markingCategory: HeadTop # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/horn_markings.rsi
       state: ovinia-pointy-horns
@@ -27,7 +30,8 @@
 - type: marking
   id: OviniaCurvedHorns
   bodyPart: HeadTop
-  groupWhitelist: [ Ovinia ]
+  markingCategory: HeadTop # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/horn_markings.rsi
       state: ovinia-curved-horns
@@ -35,7 +39,8 @@
 - type: marking
   id: OviniaDeerHorns
   bodyPart: HeadTop
-  groupWhitelist: [ Ovinia ]
+  markingCategory: HeadTop # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/horn_markings.rsi
       state: ovinia-deer-horns
@@ -43,7 +48,8 @@
 - type: marking
   id: OviniaDevilHorns
   bodyPart: HeadTop
-  groupWhitelist: [ Ovinia ]
+  markingCategory: HeadTop # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/horn_markings.rsi
       state: ovinia-devil-horns
@@ -51,7 +57,8 @@
 - type: marking
   id: OviniaBaphometHorns
   bodyPart: HeadTop
-  groupWhitelist: [ Ovinia ]
+  markingCategory: HeadTop # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/horn_markings.rsi
       state: ovinia-baphomet-horns
@@ -59,7 +66,8 @@
 - type: marking
   id: OviniaIbexHorns
   bodyPart: HeadTop
-  groupWhitelist: [ Ovinia ]
+  markingCategory: HeadTop # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/horn_markings.rsi
       state: ovinia-ibex-horns
@@ -67,7 +75,8 @@
 - type: marking
   id: OviniaJacobHorns
   bodyPart: HeadTop
-  groupWhitelist: [ Ovinia ]
+  markingCategory: HeadTop # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/horn_markings.rsi
       state: ovinia-jacob-horns
@@ -77,7 +86,8 @@
 - type: marking
   id: OviniaEars
   bodyPart: HeadSide
-  groupWhitelist: [ Ovinia ]
+  markingCategory: HeadSide # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/ear_markings.rsi
       state: ovinia-ears
@@ -87,7 +97,8 @@
 - type: marking
   id: OviniaEarsCow
   bodyPart: HeadSide
-  groupWhitelist: [ Ovinia ]
+  markingCategory: HeadSide # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/ear_markings.rsi
       state: cow-ears
@@ -97,7 +108,8 @@
 - type: marking
   id: OviniaEarsDeer
   bodyPart: HeadSide
-  groupWhitelist: [ Ovinia ]
+  markingCategory: HeadSide # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/ear_markings.rsi
       state: deer-ears
@@ -107,7 +119,8 @@
 - type: marking
   id: OviniaEarsHorse
   bodyPart: Headside
-  groupWhitelist: [ Ovinia ]
+  markingCategory: HeadSide # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/ear_markings.rsi
       state: horse-ears
@@ -121,7 +134,8 @@
 - type: marking
   id: OviniaNeckfluff
   bodyPart: FacialHair # will fix this if we decide on introducing neck fluff layer
-  groupWhitelist: [ Ovinia ]
+  markingCategory: FacialHair # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
   - sprite: _MACRO/Mobs/Customization/Ovinia/head_markings.rsi
     state: ovinia-neck-fluff
@@ -131,7 +145,8 @@
 - type: marking
   id: OviniaSnout
   bodyPart: Snout
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Snout # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/snout_markings.rsi
       state: ovinia-snout
@@ -141,7 +156,8 @@
 - type: marking
   id: OviniaFace
   bodyPart: Snout
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Snout # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/snout_markings.rsi
       state: ovinia-face
@@ -151,7 +167,8 @@
 - type: marking
   id: OviniaBlaze
   bodyPart: Snout
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Snout # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/snout_markings.rsi
       state: ovinia-blaze
@@ -162,7 +179,8 @@
 - type: marking
   id: OviniaTummy
   bodyPart: Chest
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Chest # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
   - sprite: _MACRO/Mobs/Customization/Ovinia/body_markings.rsi
     state: ovinia-tummy
@@ -170,7 +188,8 @@
 - type: marking
   id: OviniaChestFullMasc
   bodyPart: Chest
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Chest # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
   - sprite: _MACRO/Mobs/Customization/Ovinia/body_markings.rsi
     state: ovinia-full-m
@@ -178,7 +197,8 @@
 - type: marking
   id: OviniaChestFullFem
   bodyPart: Chest
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Chest # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
   - sprite: _MACRO/Mobs/Customization/Ovinia/body_markings.rsi
     state: ovinia-full-f
@@ -186,7 +206,8 @@
 - type: marking
   id: OviniaPatternFawn
   bodyPart: Chest
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Chest # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
   - sprite: _MACRO/Mobs/Customization/Ovinia/body_markings.rsi
     state: torso-fawn
@@ -198,7 +219,8 @@
 - type: marking
   id: OviniaPatternCattleMasc
   bodyPart: Chest
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Chest # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
   - sprite: _MACRO/Mobs/Customization/Ovinia/body_markings.rsi
     state: torso-cow-m
@@ -206,7 +228,8 @@
 - type: marking
   id: OviniaPatternCattleFem
   bodyPart: Chest
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Chest # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
   - sprite: _MACRO/Mobs/Customization/Ovinia/body_markings.rsi
     state: torso-cow-f
@@ -215,7 +238,8 @@
 - type: marking
   id: OviniaRightArmValais
   bodyPart: RArm
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Arms # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
   - sprite: _MACRO/Mobs/Customization/Ovinia/body_markings.rsi
     state: ovinia-arm-valais-right
@@ -225,7 +249,8 @@
 - type: marking
   id: OviniaLeftArmValais
   bodyPart: LArm
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Arms # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
   - sprite: _MACRO/Mobs/Customization/Ovinia/body_markings.rsi
     state: ovinia-arm-valais-left
@@ -235,7 +260,8 @@
 - type: marking
   id: OviniaRightHandHoof
   bodyPart: RHand
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Arms # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
   - sprite: _MACRO/Mobs/Customization/Ovinia/body_markings.rsi
     state: hand-hoof-right
@@ -249,7 +275,8 @@
 - type: marking
   id: OviniaLeftHandHoof
   bodyPart: LHand
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Arms # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
   - sprite: _MACRO/Mobs/Customization/Ovinia/body_markings.rsi
     state: hand-hoof-left
@@ -263,7 +290,8 @@
 - type: marking
   id: OviniaTailAnimated
   bodyPart: Tail
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Tail # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/tail_markings.rsi
       state: ovinia-tail_wag
@@ -271,7 +299,8 @@
 - type: marking
   id: OviniaTail
   bodyPart: Tail
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Tail # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/tail_markings.rsi
       state: ovinia-tail
@@ -281,7 +310,8 @@
 - type: marking
   id: OviniaRightLegValais
   bodyPart: RLeg
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Legs # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/body_markings.rsi
       state: ovinia-leg-valais-right
@@ -291,7 +321,8 @@
 - type: marking
   id: OviniaLeftLegValais
   bodyPart: LLeg
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Legs # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/body_markings.rsi
       state: ovinia-leg-valais-left
@@ -301,7 +332,8 @@
 - type: marking
   id: OviniaLeftHoof
   bodyPart: RFoot
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Legs # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/body_markings.rsi
       state: ovinia-hoof-right
@@ -315,7 +347,8 @@
 - type: marking
   id: OviniaRightHoof
   bodyPart: LFoot
-  groupWhitelist: [ Ovinia ]
+  markingCategory: Legs # Blimpuf- Convert from Nubody
+  speciesRestriction: [ Ovinia ] # Blimpuf- Convert from Nubody
   sprites:
     - sprite: _MACRO/Mobs/Customization/Ovinia/body_markings.rsi
       state: ovinia-hoof-left

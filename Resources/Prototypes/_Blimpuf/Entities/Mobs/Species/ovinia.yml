@@ -1,0 +1,66 @@
+- type: entity
+  parent: [BaseMobSpeciesOrganic, BaseSpeciesPickupableLarge, BaseInventoryOvinia]
+  id: BaseMobOvinia
+  name: Urist McSheepie
+  abstract: true
+  components:
+  # Starlight-start: Languages
+  - type: LanguageKnowledge
+    speaks:
+    - GalacticCommon
+    understands:
+    - GalacticCommon
+  # Starlight-end
+  - type: Absorbable
+  - type: Icon # It will not have an icon in the adminspawn menu without this. Body parts seem fine for whatever reason.
+    sprite: _MACRO/Mobs/Species/Ovinia/parts.rsi
+    state: full
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatHuman
+      amount: 5
+  - type: Body
+    prototype: Ovinia
+  - type: HumanoidAppearance
+    species: Ovinia
+  - type: Wagging # Starlight
+  - type: NpcFactionMember
+    factions:
+    - AnimalFriend
+  - type: TypingIndicator
+    proto: ovinia
+  - type: Vocal
+    sounds:
+      Male: MaleOvinia
+      Female: FemaleOvinia
+      Unsexed: MaleOvinia
+  - type: Speech
+    speechSounds: Ovinia
+    speechVerb: Ovinia
+    allowedEmotes: [ 'Baa', 'Moo' ]
+  - type: Damageable
+    damageModifierSet: Ovinia
+  - type: Flammable
+  - type: FireStackModifier
+    modifier: 0.75 # less fire stacks!
+  - type: EatTimeModifier
+    modifier: 1.2 # quite slow eaters
+  - type: Hunger
+    baseDecayRate: 0.0083 # slower than normal (chewin they cud)
+  - type: Thirst
+    baseDecayRate: 0.0083 # slower than normal
+  - type: SleepTimeModifier
+    modifier: 2
+  - type: PettingChanceModifier
+    modifier: 1.2
+  - type: ProtectedFromStepTriggers
+  - type: Tag
+    tags:
+    - OviniaEmotes
+    - DoorBumpOpener
+    - CanPilot
+    - FootstepSound
+    - AnomalyHost
+    - NotLabelable
+    - PersonaBlacklisted # Blimpuf
