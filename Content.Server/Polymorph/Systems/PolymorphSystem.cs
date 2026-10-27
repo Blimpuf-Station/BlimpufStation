@@ -113,7 +113,7 @@ public sealed partial class PolymorphSystem : EntitySystem
         if (component.Configuration.Forced)
             return;
 
-        if (_actions.AddAction(uid, ref component.Action, out var action, RevertPolymorphId))
+        if (_actions.AddAction(uid, ref component.Action, out var action, component.Configuration.RevertAction))
         {
             _actions.SetEntityIcon((component.Action.Value, action), component.Parent);
             _actions.SetUseDelay(component.Action.Value, TimeSpan.FromSeconds(component.Configuration.Delay));
