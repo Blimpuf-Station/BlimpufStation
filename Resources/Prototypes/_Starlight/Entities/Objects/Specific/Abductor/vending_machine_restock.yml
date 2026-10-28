@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseVendingMachineRestock
+  parent: [BaseVendingMachineRestock, BaseContrabandTier4] # Blimpuf
   id: VendingMachineRestockAbductorDispenser
   name: alien dispenser restock
   description: A box filled with weird organs. Load it into a alien dispenser to begin.
