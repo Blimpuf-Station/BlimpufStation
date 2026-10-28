@@ -175,7 +175,7 @@
       - state: practice
 
 - type: entity
-  parent: AmmoProviderShotgunShell
+  parent: [BaseContrabandTier2, AmmoProviderShotgunShell, BaseZookeeperContraband] # Blimpuf Less-Lethal is Tier 2
   id: BoxShellTranquilizer
   name: box of 12 gauge tranquilizer slugs # Starlight change: .50 -> 12 gauge
   description: A cardboard box of 12 gauge shotgun shells. Intended to hold nonlethal tranquilizer ammunition. # Starlight change: .50 -> 12 gauge
