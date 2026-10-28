@@ -1,5 +1,5 @@
-﻿- type: entity
-  parent: ToteBase
+- type: entity
+  parent: [ToteBase, BaseContrabandTier3, BaseRepresentativesContraband] # Blimpuf
   id: BoxMagiCircuitBoards
   name: law circuit tote
   components:
@@ -10,7 +10,7 @@
             - id: LawCommsComputerCircuitboard # Starlight
 
 - type: entity
-  parent: BoxStamps
+  parent: [BoxStamps, BaseContrabandTier2, BaseCommandContraband, BaseSecurityContraband] # Blimpuf
   id: BoxWardenStamps
   name: warden's stamp box
   components:
