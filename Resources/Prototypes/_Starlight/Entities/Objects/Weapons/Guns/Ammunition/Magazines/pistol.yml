@@ -392,7 +392,7 @@
 - type: entity
   id: MagazinePistolPractice
   name: pistol magazine (.35 auto practice)
-  parent: BaseMagazinePistol
+  parent: [BaseContrabandTier1, BaseMagazinePistol] # Blimpuf Practice is Tier 1
   description: 10-round single-stack magazine for pistols. Intended to hold non-harmful chalk ammunition.
   components:
   - type: BallisticAmmoProvider
@@ -442,7 +442,7 @@
 - type: entity
   id: MagazinePistolRubber
   name: pistol magazine (.35 auto rubber)
-  parent: BaseMagazinePistol
+  parent: [BaseContrabandTier2, BaseMagazinePistol] # Blimpuf Less-Lethal is Tier 2
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolRubber
@@ -673,7 +673,7 @@
 - type: entity
   id: MagazinePistolHighCapacityPractice
   name: extended pistol magazine (.35 auto practice)
-  parent: BaseMagazinePistolHighCapacity
+  parent: [BaseContrabandTier1, BaseMagazinePistolHighCapacity] # Blimpuf Practice is Tier 1
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolPractice
@@ -697,7 +697,7 @@
 - type: entity
   id: MagazinePistolHighCapacityRubber
   name: extended pistol magazine (.35 auto rubber)
-  parent: BaseMagazinePistolHighCapacity
+  parent: [BaseContrabandTier2, BaseMagazinePistolHighCapacity] # Blimpuf Less-Lethal is Tier 2
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolRubber
@@ -915,7 +915,7 @@
 - type: entity
   id: MagazinePistolSubMachineGunPractice
   name: SMG magazine (.35 auto practice)
-  parent: BaseMagazinePistolSubMachineGun
+  parent: [BaseContrabandTier1, BaseMagazinePistolSubMachineGun] # Blimpuf Practice is Tier 1
   description: 30-round double-stack magazine for submachine guns. Intended to hold non-harmful chalk ammunition.
   components:
   - type: BallisticAmmoProvider
@@ -992,7 +992,7 @@
 - type: entity
   id: MagazinePistolSubMachineGunRubber
   name: SMG magazine (.35 auto rubber)
-  parent: BaseMagazinePistolSubMachineGun
+  parent: [BaseContrabandTier2, BaseMagazinePistolSubMachineGun] # Blimpuf Less-Lethal is Tier 2
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolRubber

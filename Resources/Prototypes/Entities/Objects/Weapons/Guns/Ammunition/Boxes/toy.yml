@@ -33,12 +33,16 @@
       - state: shelltoy
 
 - type: entity
-  parent: BaseMagazineBoxMagnum
+  parent: BaseItem # Blimpuf - unparented to get rid of the contraband tag
   id: BoxCartridgeCap
   name: cap gun cartridge box
   description: A cardboard box of cap gun cartridges.
   components:
   - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeMagnum
     proto: CartridgeCap
     capacity: 20
   - type: MagazineVisuals
@@ -53,3 +57,8 @@
       - state: mag-cap-1
         map: ["enum.GunVisualLayers.Mag"]
       - state: capbase
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
