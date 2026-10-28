@@ -15,10 +15,6 @@
   - Male
   - Female
   - Unsexed
-  defaultSoundsBySex:
-  - MaleOvinia
-  - FemaleOvinia
-  - MaleOvinia
 
 # Blimpuf Start
 - type: speciesBaseSprites
