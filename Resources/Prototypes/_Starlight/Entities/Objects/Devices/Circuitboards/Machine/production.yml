@@ -126,7 +126,7 @@
 
 - type: entity
   id: VendingMachineAmmoCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   name: Amm-O-Mat circuitboard
   description: A machine printed circuit board for an Amm-O-Mat machine
   components:
@@ -171,7 +171,7 @@
 
 - type: entity
   id: VendingMachineCartCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   name: PTech circuitboard
   description: A machine printed circuit board for a PTech machine
   components:
@@ -454,7 +454,7 @@
 
 - type: entity
   id: VendingMachineEngivendCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseEngineeringContraband] # Blimpuf
   name: Engi-Vend circuitboard
   description: A machine printed circuit board for a Engi-Vend machine
   components:
@@ -499,7 +499,7 @@
 
 - type: entity
   id: VendingMachineSecCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   name: SecTech circuitboard
   description: A machine printed circuit board for a SecTech machine
   components:
@@ -661,7 +661,7 @@
 
 - type: entity
   id: VendingMachineRoboticsCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseScienceContraband] # Blimpuf
   name: Robotech Deluxe circuitboard
   description: A machine printed circuit board for a Robotech Deluxe machine
   components:
@@ -1107,7 +1107,7 @@
 
 - type: entity
   id: VendingMachineChemicalsCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseMedicalContraband, BaseContrabandTier2] # Blimpuf
   name: ChemVend circuitboard
   description: A machine printed circuit board for a ChemVend machine
   components:
