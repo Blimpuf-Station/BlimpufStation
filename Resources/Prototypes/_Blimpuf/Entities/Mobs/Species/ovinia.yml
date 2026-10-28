@@ -4,13 +4,14 @@
   name: Urist McSheepie
   abstract: true
   components:
-  # Starlight-start: Languages
   - type: LanguageKnowledge
     speaks:
     - GalacticCommon
+    - Ruminant
     understands:
     - GalacticCommon
-  # Starlight-end
+    - Ruminant
+    - OldRuminant
   - type: Absorbable
   - type: Icon # It will not have an icon in the adminspawn menu without this. Body parts seem fine for whatever reason.
     sprite: _MACRO/Mobs/Species/Ovinia/parts.rsi
@@ -24,7 +25,7 @@
     prototype: Ovinia
   - type: HumanoidAppearance
     species: Ovinia
-  - type: Wagging # Starlight
+  - type: Wagging
   - type: NpcFactionMember
     factions:
     - AnimalFriend
@@ -63,4 +64,4 @@
     - FootstepSound
     - AnomalyHost
     - NotLabelable
-    - PersonaBlacklisted # Blimpuf
+    - PersonaBlacklisted
