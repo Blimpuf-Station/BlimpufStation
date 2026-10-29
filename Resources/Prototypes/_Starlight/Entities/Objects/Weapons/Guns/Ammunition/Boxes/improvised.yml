@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseItem
+  parent: [BaseItem, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   id: BaseMagazineBoxImprovised
   name: improvised ammunition box (.any)
   description: This looks suspiciously like a .20 magazine box with a crude bullet drawing ontop. Mixing ammo is not advised.

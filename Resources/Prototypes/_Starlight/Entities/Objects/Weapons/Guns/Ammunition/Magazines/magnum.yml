@@ -1,7 +1,7 @@
 - type: entity
   id: BaseMagazineMagnum
   name: pistol magazine (.45 magnum)
-  parent: [ BaseSecurityContraband, BaseSalvageContraband, BaseMagazinePistol, BaseContrabandTier3 ] # Blimpuf
+  parent: [BaseSecurityContraband, BaseMagazinePistol, BaseContrabandTier3] # Blimpuf
   abstract: true
   components:
   - type: Tag
@@ -17,7 +17,7 @@
 - type: entity
   id: BaseMagazineMagnumSubMachineGun
   name: SMG magazine (.45 magnum)
-  parent: [BaseItem, BaseSecurityContraband, BaseSalvageContraband, BaseContrabandTier3] # Blimpuf
+  parent: [BaseItem, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   abstract: true
   components:
   - type: Tag
@@ -97,7 +97,7 @@
 - type: entity
   id: MagazineMagnumPractice
   name: pistol magazine (.45 magnum practice)
-  parent: BaseMagazineMagnum
+  parent: [BaseContrabandTier1, BaseMagazineMagnum] # Blimpuf Practice is Tier 1
   description: 7-round single stack pistol magazine. Intended to hold non-harmful chalk ammunition.
   components:
   - type: BallisticAmmoProvider
@@ -217,7 +217,7 @@
 - type: entity
   id: MagazineMagnumSubMachineGunPractice
   name: SMG magazine (.45 magnum practice)
-  parent: BaseMagazineMagnumSubMachineGun
+  parent: [BaseContrabandTier1, BaseMagazineMagnumSubMachineGun] # Blimpuf Practice is Tier 1
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumPractice
@@ -289,7 +289,7 @@
 - type: entity
   id: MagazineMagnumRubber
   name: pistol magazine (.45 magnum rubber)
-  parent: BaseMagazineMagnum
+  parent: [BaseContrabandTier2, BaseMagazineMagnum] # Blimpuf Less-Lethal is Tier 2
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumRubber
@@ -313,7 +313,7 @@
 - type: entity
   id: MagazineMagnumSubMachineGunRubber
   name: "Vector magazine (.45 magnum rubber)"
-  parent: BaseMagazineMagnumSubMachineGun
+  parent: [BaseContrabandTier2, BaseMagazineMagnumSubMachineGun] # Blimpuf Less-Lethal is Tier 2
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumRubber
@@ -517,7 +517,7 @@
 - type: entity
   id: MagazineDMRPractice
   name: "DMR magazine (.45 magnum practice)"
-  parent: BaseMagazineRifleDMR
+  parent: [BaseContrabandTier1, BaseMagazineRifleDMR] # Blimpuf Practice is Tier 1
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumPractice
@@ -565,7 +565,7 @@
 - type: entity
   id: MagazineDMRRubber
   name: "DMR magazine (.45 magnum rubber)"
-  parent: BaseMagazineRifleDMR
+  parent: [BaseContrabandTier2, BaseMagazineRifleDMR] # Blimpuf Less-Lethal is Tier 2
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumRubber
