@@ -80,6 +80,7 @@
   id: ShellShotgunBreaching
   name: 12 gauge breaching shell
   parent: [ BaseShellShotgun, BaseSyndicateContraband ]
+  description: 12 gauge shell notably made to breach walls and doors. Most commonly used by law enforcements to raid hideouts. #Blimpuf
   components:
   - type: Sprite
     layers:

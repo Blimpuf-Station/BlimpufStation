@@ -3,6 +3,7 @@
   parent: [ BaseCartridge, BaseSecurityContraband, BaseContrabandTier3 ] # Blimpuf
   id: BaseCartridgeLightRifleSP
   name: cartridge (.30 rifle SP)
+  description: A classic intermediate cartridge used by many combat rifles and LMGs. Standard kinetic cartridge, mostly used by law enforcements in engaging low-level threats. #Blimpuf
   components:
   - type: Tag
     tags:

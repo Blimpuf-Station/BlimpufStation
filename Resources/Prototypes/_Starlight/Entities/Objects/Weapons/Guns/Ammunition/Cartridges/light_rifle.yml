@@ -2,6 +2,7 @@
   id: CartridgeLightRifleRubber
   name: cartridge (.30 rifle rubber)
   parent: BaseCartridgeLightRifleSP
+  description: A rimless cartridge competing with the .20, often used by combat rifles and LMGs. Less-lethal cartridge, designed for riot control with minimal casualties. Broken bones will result in a deduction of pay. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: RubberBulletTrace
@@ -41,6 +42,7 @@
   id: CartridgeLightRifleHP
   name: cartridge (.30 rifle HP)
   parent: BaseCartridgeLightRifleSP
+  description: A rimless cartridge competing with the .20, often used by combat rifles and LMGs. Hollow-Points expands on impact with soft targets. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleTraceHP
@@ -56,6 +58,7 @@
   id: CartridgeLightRifleFMJ
   name: cartridge (.30 rifle FMJ)
   parent: BaseCartridgeLightRifleSP
+  description: A rimless cartridge competing with the .20, often used by combat rifles and LMGs. Full Metal Jacket allows for higher muzzle velocity. A good in-between Hollow-Points and Armor-Piercing cartridge. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleTraceFMJ
@@ -71,6 +74,7 @@
   id: CartridgeLightRifleAP
   name: cartridge (.30 rifle AP)
   parent: BaseCartridgeLightRifleSP
+  description: A rimless cartridge competing with the .20, often used by combat rifles and LMGs. Praised across the galaxy, Armor-Piercing is renown for it's ability to easily penetrate armor. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleTraceAP
