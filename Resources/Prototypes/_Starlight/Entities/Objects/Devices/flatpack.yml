@@ -40,21 +40,21 @@
       medical: "#52B4E9"
       service: "#9FED58"
       engineering: "#EFB341"
-      security: "#DE3A3A"
+      security: "#37789B" # Blimpuf BlueSec
       science: "#D381C9"
       supply: "#A46106"
       cpu_command: "#334E6D"
       cpu_medical: "#52B4E9"
       cpu_service: "#9FED58"
       cpu_engineering: "#EFB341"
-      cpu_security: "#DE3A3A"
+      cpu_security: "#37789B" # Blimpuf BlueSec
       cpu_science: "#D381C9"
       cpu_supply: "#A46106"
   - type: StaticPrice
     price: 250
 
 - type: entity
-  parent: [BaseStructureFlatpack, BaseEngineeringContraband]
+  parent: [BaseStructureFlatpack, BaseEngineeringContraband, BaseContrabandTier2] # Blimpuf
   id: SupermatterFlatpack
   name: supermatter flatpack
   description: A flatpack used for constructing a Supermatter Crystal.
@@ -67,7 +67,7 @@
     entity: SupermatterCrystal
 
 - type: entity
-  parent: [ BaseStructureFlatpack, BaseEngineeringContraband ]
+  parent: [ BaseStructureFlatpack, BaseEngineeringContraband, BaseContrabandTier2] # Blimpuf
   id: TEGCenterFlatpack
   name: teg center flatpack
   description: A flatpack used for constructing the main component of a Thermo-Electric Generator.
@@ -80,7 +80,7 @@
     entity: TegCenter
 
 - type: entity
-  parent: [ BaseStructureFlatpack, BaseEngineeringContraband ]
+  parent: [ BaseStructureFlatpack, BaseEngineeringContraband, BaseContrabandTier2] # Blimpuf
   id: TEGCirculatorFlatpack
   name: teg circulator flatpack
   description: A flatpack used for constructing a Circulator for a Thermo-Electric Generator.
@@ -106,7 +106,7 @@
     entity: Reflector
 
 - type: entity
-  parent: BaseFlatpack
+  parent: [BaseFlatpack, BaseSecurityContraband, BaseCargoContraband, BaseContrabandTier3] # Blimpuf
   id: ShuttleGunKineticFlatpack
   name: PTK-800 "Matter Dematerializer" Flatpack
   description: A flatpack used for constructing a PTK-800 "Matter Dematerializer".
@@ -119,7 +119,7 @@
       entity: ShuttleGunKinetic
 
 - type: entity
-  parent: [BaseStructureFlatpack, BaseEngineeringContraband]
+  parent: [BaseStructureFlatpack, BaseEngineeringContraband, BaseContrabandTier2] # Blimpuf
   id: NuclearReactorSmallFlatpack
   name: Small Nuclear Reactor Flatpack
   description: A flatpack used for constructing a small nuclear reactor. Parts sold separately.
@@ -132,7 +132,7 @@
     entity: NuclearReactorSmallEmpty
 
 - type: entity
-  parent: [BaseStructureFlatpack, BaseEngineeringContraband]
+  parent: [BaseStructureFlatpack, BaseEngineeringContraband, BaseContrabandTier2] # Blimpuf
   id: GasTurbineSmallFlatpack
   name: Small Gas Turbine Flatpack
   description: A flatpack used for constructing a small gas turbine. Parts sold separately.
