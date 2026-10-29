@@ -193,7 +193,7 @@
 - type: loadout
   id: SecMittens
   equipment:
-    gloves: ClothingHandsMittensSecurityRed
+    gloves: ClothingHandsMittensSecurityBlue
 
 # Helmets
 - type: loadout
