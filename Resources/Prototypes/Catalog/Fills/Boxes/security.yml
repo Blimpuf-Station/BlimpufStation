@@ -48,7 +48,7 @@
 
 - type: entity
   name: stinger grenade box
-  parent: [BaseContrabandTier3, BaseSecurityContraband, BoxCardboard] # Blimpuf 
+  parent: [BaseContrabandTier3, BaseSecurityContraband, BoxCardboard] # Blimpuf
   id: BoxStinger
   description: A box full of stinger grenades. Disperse!
   components:
