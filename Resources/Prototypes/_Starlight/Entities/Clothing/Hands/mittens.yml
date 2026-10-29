@@ -414,13 +414,13 @@
 # Security
 - type: entity
   parent: [ClothingHandsMittensBase, BaseSecurityContraband]
-  id: ClothingHandsMittensSecurityRed
-  name: red security mittens
-  description: Black mittens, but slightly red! The detective will LOVE you if you wear these.
+  id: ClothingHandsMittensSecurityBlue
+  name: blue security mittens
+  description: Black mittens, but slightly blue! The detective will LOVE you if you wear these.
   components:
   - type: Sprite
-    sprite: _Starlight/Clothing/Hands/Mittens/securitymittensred.rsi
+    sprite: _Starlight/Clothing/Hands/Mittens/securitymittensblue.rsi
   - type: Clothing
-    sprite: _Starlight/Clothing/Hands/Mittens/securitymittensred.rsi
+    sprite: _Starlight/Clothing/Hands/Mittens/securitymittensblue.rsi
   - type: Fiber
-    fiberMaterial: fibers-red-and-black-woven-fur
+    fiberMaterial: fibers-blue-and-black-woven-fur
