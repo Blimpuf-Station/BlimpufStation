@@ -1,0 +1,7 @@
+- type: jobIcon
+  parent: JobIcon
+  id: LanguageIconRuminant
+  icon:
+    sprite: /Textures/_Blimpuf/Interface/language_icon.rsi
+    state: ruminant
+  allowSelection: false
