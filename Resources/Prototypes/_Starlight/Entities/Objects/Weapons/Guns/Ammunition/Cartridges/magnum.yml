@@ -58,7 +58,7 @@
   id: CartridgeMagnumFMJ
   name: cartridge (.45 magnum FMJ)
   parent: BaseCartridgeMagnum
-  description: Heavy magnum cartridge mostly used by revolvers. Full Metal Jacket come with a copper casing allowing higher muzzle velocity. Full metal jacket projectiles have a full copper casing. A good in-between soft-point and armor-piercing projectiles, for lightly armored threats. #Blimpuf
+  description: Heavy magnum cartridge mostly used by revolvers. Full Metal Jacket come with a full copper casing. Full metal jacket projectiles have a full copper casing. A good in-between soft-point and armor-piercing projectiles, for lightly armored threats. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumTraceFMJ

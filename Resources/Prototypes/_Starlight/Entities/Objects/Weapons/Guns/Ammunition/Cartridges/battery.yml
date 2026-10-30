@@ -22,7 +22,7 @@
   id: CartridgeBattery
   name: cartridge (laser)
   parent: BaseCartridgeBattery
-  description: A single-use battery cartridge designed for laser carbines to allow for rapid fire. #Blimpuf
+  description: A single-use battery cartridge designed for laser carbines, allowing for a faster rate of fire. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: RedLaserBeam
