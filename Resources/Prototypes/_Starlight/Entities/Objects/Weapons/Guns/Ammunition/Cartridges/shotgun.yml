@@ -79,7 +79,7 @@
 - type: entity
   id: ShellShotgunBreaching
   name: 12 gauge breaching shell
-  parent: [ BaseShellShotgun, BaseSyndicateContraband ]
+  parent: [BaseShellShotgun, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   components:
   - type: Sprite
     layers:

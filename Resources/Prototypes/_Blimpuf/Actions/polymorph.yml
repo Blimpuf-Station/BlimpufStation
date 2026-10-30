@@ -1,0 +1,7 @@
+- type: entity
+  parent: ActionRevertPolymorph
+  id: ActionRevertPolymorphGeras
+  description: Revert back into your humanoid form.
+  components:
+  - type: ConfirmableAction
+    popup: revert-geras-polymorph-action-popup

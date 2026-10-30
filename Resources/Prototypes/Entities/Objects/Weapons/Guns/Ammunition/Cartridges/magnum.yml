@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: [ BaseCartridge, BaseSecurityContraband, BaseSalvageContraband, BaseContrabandTier3 ] # Starlight-edit - Security -> SecuritySalvage; Blimpuf
+  parent: [ BaseCartridge, BaseSecurityContraband, BaseContrabandTier3 ] # Blimpuf
   id: BaseCartridgeMagnum
   name: cartridge (.45 magnum)
   components:
@@ -18,7 +18,7 @@
   - type: SpentAmmoVisuals
 
 - type: entity
-  parent: BaseCartridgeMagnum
+  parent: [BaseCartridgeMagnum, BaseSalvageContraband] # Blimpuf
   id: CartridgeMagnumSP
   name: cartridge (.45 magnum SP)
   description: Heavy magnum cartridge mostly used by revolvers. Standard kinetic ammunition is common and useful in most situations.
@@ -34,7 +34,7 @@
         color: "#3F47DB"
 
 - type: entity
-  parent: BaseCartridgeMagnum
+  parent: [BaseContrabandTier1, BaseCartridgeMagnum] # Blimpuf Practice is Tier 1
   id: CartridgeMagnumPractice
   name: cartridge (.45 magnum practice)
   description: Heavy magnum cartridge mostly used by revolvers. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.

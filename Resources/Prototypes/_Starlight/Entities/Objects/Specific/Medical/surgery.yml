@@ -40,7 +40,7 @@
 - type: entity
   name: abductor's bottle of bone gel
   id: BoneGelAbductor
-  parent: BoneGel
+  parent: [BoneGel, BaseContrabandTier4] # Blimpuf
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/Surgery/bone_gel.rsi
@@ -133,7 +133,7 @@
 - type: entity
   name: abductor's retractor
   id: RetractorAbductor
-  parent: Retractor
+  parent: [Retractor, BaseContrabandTier4] # Blimpuf
   description: A surgical tool used to hold open incisions.
   components:
   - type: Sprite
@@ -181,7 +181,7 @@
 - type: entity
   name: abductor's circular saw
   id: SawAbductor
-  parent: SawElectric
+  parent: [SawElectric, BaseContrabandTier4] # Blimpuf
   description: You think you can cut anything with it.
   components:
   - type: Sprite
@@ -282,7 +282,7 @@
 - type: entity
   name: abductor's cautery
   id: CauteryAbductor
-  parent: Cautery
+  parent: [Cautery, BaseContrabandTier4] # Blimpuf
   components:
   - type: Sprite
     state: abductor
@@ -340,7 +340,7 @@
 - type: entity
   name: abductor's hemostat
   id: HemostatAbductor
-  parent: Hemostat
+  parent: [Hemostat, BaseContrabandTier4] # Blimpuf
   description: A surgical tool used to compress blood vessels to prevent bleeding.
   components:
   - type: Sprite
@@ -421,7 +421,7 @@
 - type: entity
   name: abductor's bone setter
   id: BoneSetterAbductor
-  parent: BoneSetter
+  parent: [BoneSetter, BaseContrabandTier4] # Blimpuf
   description: A surgical tool used for setting bones. It also breaks them quite well.
   components:
   - type: Sprite
@@ -469,7 +469,7 @@
 - type: entity
   name: abductor's scalpel
   id: ScalpelAbductor
-  parent: Scalpel
+  parent: [Scalpel, BaseContrabandTier4] # Blimpuf
   components:
   - type: Sprite
     state: abductor
@@ -514,7 +514,7 @@
 - type: entity
   name: abductor's drill
   id: DrillAbductor
-  parent: Drill
+  parent: [Drill, BaseContrabandTier4] # Blimpuf
   components:
   - type: Sprite
     state: abductor

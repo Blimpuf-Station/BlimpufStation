@@ -40,6 +40,13 @@ public sealed partial record PolymorphConfiguration
     [DataField(required: true, serverOnly: true)]
     public EntProtoId Entity;
 
+    // Blimpuf
+    /// <summary>
+    /// The action granted to manually revert this polymorph.
+    /// </summary>
+    [DataField(serverOnly: true)]
+    public EntProtoId RevertAction = "ActionRevertPolymorph";
+
     /// <summary>
     /// Additional entity to spawn when polymorphing/reverting.
     /// Gets parented to the entity polymorphed into.

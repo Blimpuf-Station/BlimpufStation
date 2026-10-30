@@ -2,7 +2,7 @@
 
 - type: entity
   id: ShuttleGunSvalinnMachineGunCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   name: LSE-400c "Svalinn machine gun" machine board
   description: A machine printed circuit board for an LSE-400c "Svalinn machine gun".
   suffix: DO NOT MAP, Machine Board
@@ -19,7 +19,7 @@
 
 - type: entity
   id: ShuttleGunPerforatorCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   name: LSE-1200c "Perforator" machine board
   description: A machine printed circuit board for an LSE-1200c "Perforator".
   suffix: DO NOT MAP, Machine Board
@@ -36,7 +36,7 @@
 
 - type: entity
   id: ShuttleGunFriendshipCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   name: EXP-320g "Friendship" machine board
   description: A machine printed circuit board for an EXP-320g "Friendship".
   suffix: DO NOT MAP, Machine Board
@@ -53,7 +53,7 @@
 
 - type: entity
   id: ShuttleGunDusterCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   name: EXP-2100g "Duster" machine board
   description: A machine printed circuit board for an EXP-2100g "Duster".
   suffix: DO NOT MAP, Machine Board
@@ -71,7 +71,7 @@
 
 - type: entity
   id: ShuttleGunKineticCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseSecurityContraband, BaseCargoContraband, BaseContrabandTier3] # Blimpuf
   name: PTK-800 "Matter Dematerializer" machine board
   description: A machine printed circuit board for an PTK-800 "Matter Dematerializer".
   suffix: DO NOT MAP, Machine Board

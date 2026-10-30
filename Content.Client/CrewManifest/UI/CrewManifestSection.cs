@@ -41,6 +41,8 @@ public sealed class CrewManifestSection : BoxContainer
         var namesContainer = new BoxContainer()
         {
             Orientation = LayoutOrientation.Vertical,
+            HorizontalExpand = true,
+            SizeFlagsStretchRatio = 3,
         };
         NamesColumn = namesContainer; // Blimpuf
 

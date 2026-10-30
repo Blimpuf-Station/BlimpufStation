@@ -126,7 +126,7 @@
 
 - type: entity
   id: VendingMachineAmmoCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   name: Amm-O-Mat circuitboard
   description: A machine printed circuit board for an Amm-O-Mat machine
   components:
@@ -171,7 +171,7 @@
 
 - type: entity
   id: VendingMachineCartCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   name: PTech circuitboard
   description: A machine printed circuit board for a PTech machine
   components:
@@ -454,7 +454,7 @@
 
 - type: entity
   id: VendingMachineEngivendCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseEngineeringContraband] # Blimpuf
   name: Engi-Vend circuitboard
   description: A machine printed circuit board for a Engi-Vend machine
   components:
@@ -499,7 +499,7 @@
 
 - type: entity
   id: VendingMachineSecCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   name: SecTech circuitboard
   description: A machine printed circuit board for a SecTech machine
   components:
@@ -661,7 +661,7 @@
 
 - type: entity
   id: VendingMachineRoboticsCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseScienceContraband] # Blimpuf
   name: Robotech Deluxe circuitboard
   description: A machine printed circuit board for a Robotech Deluxe machine
   components:
@@ -1107,7 +1107,7 @@
 
 - type: entity
   id: VendingMachineChemicalsCircuitboard
-  parent: BaseMachineCircuitboard
+  parent: [BaseMachineCircuitboard, BaseMedicalContraband, BaseContrabandTier2] # Blimpuf
   name: ChemVend circuitboard
   description: A machine printed circuit board for a ChemVend machine
   components:
@@ -1275,7 +1275,7 @@
 # Departmental Techfabs
 - type: entity
   id: CargoTechFabCircuitboard
-  parent: [BaseMachineCircuitboard, BaseCargoContraband]
+  parent: [BaseMachineCircuitboard, BaseCargoContraband, BaseContrabandTier2] # Blimpuf
   name: cargo techfab machine board
   description: A machine printed circuit board for a cargo techfab.
   components:
@@ -1292,7 +1292,7 @@
 
 - type: entity
   id: EngineeringTechFabCircuitboard
-  parent: [BaseMachineCircuitboard, BaseEngineeringContraband]
+  parent: [BaseMachineCircuitboard, BaseEngineeringContraband, BaseContrabandTier2] # Blimpuf
   name: engineering techfab machine board
   description: A machine printed circuit board for an engineering techfab.
   components:
@@ -1309,7 +1309,7 @@
 
 - type: entity
   id: ServiceTechFabCircuitboard
-  parent: [BaseMachineCircuitboard, BaseCivilianContraband]
+  parent: [BaseMachineCircuitboard, BaseCivilianContraband, BaseContrabandTier2] # Blimpuf
   name: service techfab machine board
   description: A machine printed circuit board for a service techfab.
   components:
@@ -1326,7 +1326,7 @@
 
 - type: entity
   id: ScienceTechFabCircuitboard
-  parent: [BaseMachineCircuitboard, BaseScienceContraband]
+  parent: [BaseMachineCircuitboard, BaseScienceContraband, BaseContrabandTier2] # Blimpuf
   name: science techfab machine board
   description: A machine printed circuit board for a science techfab.
   components:
@@ -1343,7 +1343,7 @@
 
 - type: entity
   id: CommandTechFabCircuitboard
-  parent: [BaseMachineCircuitboard, BaseCommandContraband]
+  parent: [BaseMachineCircuitboard, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   name: command techfab machine board
   description: A machine printed circuit board for a command techfab.
   components:
@@ -1361,7 +1361,7 @@
 - type: entity
   id: NanoTrasenTechFabCircuitboard
   categories: [ DoNotMap ]
-  parent: [BaseMachineCircuitboard, BaseRepresentativesContraband]
+  parent: [BaseMachineCircuitboard, BaseCentcommContraband]
   name: NanoTrasen techfab machine board
   description: A machine printed circuit board for a NanoTrasen techfab.
   components:

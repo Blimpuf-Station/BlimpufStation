@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprites by Thlrds",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "athamas",
+      "directions": 4
+    },
+    {
+      "name": "charred_chest",
+      "directions": 4
+    },
+    {
+      "name": "chest_chimera_f_moth",
+      "directions": 4
+    },
+    {
+      "name": "chest_chimera_m_moth",
+      "directions": 4
+    },
+    {
+      "name": "chest_l_twisting_f_moth",
+      "directions": 4
+    },
+    {
+      "name": "chest_l_twisting_m_moth",
+      "directions": 4
+    },
+    {
+      "name": "chest_r_twisting_f_moth",
+      "directions": 4
+    },
+    {
+      "name": "chest_r_twisting_m_moth",
+      "directions": 4
+    },
+    {
+      "name": "chest_star_moth",
+      "directions": 4
+    },
+    {
+      "name": "deathhead_chest",
+      "directions": 4
+    },
+    {
+      "name": "exo_belly",
+      "directions": 4
+    },
+    {
+      "name": "fan_chest",
+      "directions": 4
+    },
+    {
+      "name": "firewatch_chest",
+      "directions": 4
+    },
+    {
+      "name": "gothic_chest",
+      "directions": 4
+    },
+    {
+      "name": "hip_scars",
+      "directions": 4
+    },
+    {
+      "name": "jungle_chest",
+      "directions": 4
+    },
+    {
+      "name": "moonfly_chest",
+      "directions": 4
+    },
+    {
+      "name": "moth_body_claw",
+      "directions": 4
+    },
+    {
+      "name": "oakworm_chest",
+      "directions": 4
+    },
+    {
+      "name": "pointy_chest",
+      "directions": 4
+    },
+    {
+      "name": "ragged_chest",
+      "directions": 4
+    },
+    {
+      "name": "royal_chest",
+      "directions": 4
+    },
+    {
+      "name": "torso_incision_moth",
+      "directions": 4
+    },
+    {
+      "name": "whitefly_chest",
+      "directions": 4
+    },
+    {
+      "name": "witchwing_chest",
+      "directions": 4
+    }
+  ]
+}
