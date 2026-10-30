@@ -1,0 +1,6 @@
+﻿- type: entity
+  parent: ActionLiquidSpray
+  id: ActionSuperLiquidSpray
+  components:
+    - type: Action
+      useDelay: 1
