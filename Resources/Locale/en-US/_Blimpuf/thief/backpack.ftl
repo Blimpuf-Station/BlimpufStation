@@ -48,6 +48,11 @@ thief-backpack-category-bluespace-description =
     Who knew harnessing the power of bluespace would
     make such an effective thief?
     Includes: A pair of Quantum spin inverters, a
-    holofield generator, a Bluespace Backpack, and
-    4 Bluespace Crystals.
+    Bluespace Backpack, and 4 Bluespace Crystals.
+
+thief-backpack-category-self-defence-name = Self Defence Kit
+thief-backpack-category-bluespace-description =
+    I WILL NOT BE HARASSED! BITCH!
+    Includes: A disabler, a telescopic shield, a force
+    field projector, an armor vest, and a combat medkit.
 

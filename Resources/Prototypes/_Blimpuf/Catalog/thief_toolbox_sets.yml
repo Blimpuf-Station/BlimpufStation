@@ -78,8 +78,8 @@
   content:
   - CrateThiefShuttle
   - Multitool
-  - ClothingOuterHardsuitEVA
-  - ClothingHeadHelmetEVA
+  - ClothingOuterEVASuitSyndicate
+  - ClothingHeadHelmetSyndicate
   - JetpackBlackFilled
   - ClothingShoesBootsMagSyndie
 
@@ -93,9 +93,22 @@
   content:
   - DeviceQuantumSpinInverter
   - DeviceQuantumSpinInverter
-  - HoloprojectorField
   - ClothingBackpackHolding
   - BluespaceCrystal1
   - BluespaceCrystal1
   - BluespaceCrystal1
   - BluespaceCrystal1
+
+- type: thiefBackpackSet
+  id: SelfDefenceSet
+  name: thief-backpack-category-self-defence-name
+  description: thief-backpack-category-self-defence-description
+  sprite:
+    sprite: Objects/Weapons/Guns/Battery/disabler.rsi
+    state: base
+  content:
+  - WeaponDisabler
+  - TelescopicShield
+  - HoloprojectorField
+  - ClothingOuterArmorBase
+  - MedkitCombatFilled
