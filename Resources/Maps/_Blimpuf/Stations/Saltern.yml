@@ -4,7 +4,7 @@ meta:
   engineVersion: 277.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/16/2026 23:46:04
+  time: 10/27/2026 03:56:27
   entityCount: 14185
 maps:
 - 1
@@ -885,10 +885,10 @@ entities:
             0: 3549
           8,6:
             2: 4381
-            4: 34816
+            3: 34816
           8,7:
             2: 62737
-            4: 8
+            3: 8
           0,12:
             0: 13073
             2: 8
@@ -935,11 +935,11 @@ entities:
           11,2:
             0: 4351
             2: 8192
-            3: 32768
+            4: 32768
           11,3:
             0: 61713
             2: 34
-            3: 136
+            4: 136
           11,-1:
             0: 30583
           11,4:
@@ -950,9 +950,9 @@ entities:
             0: 28791
           12,2:
             0: 119
-            3: 28672
+            4: 28672
           12,3:
-            3: 119
+            4: 119
             0: 61440
           12,-1:
             0: 29311
@@ -1405,22 +1405,22 @@ entities:
           9,6:
             2: 15
             5: 8704
-            3: 34816
+            4: 34816
           9,7:
             2: 61440
             5: 2
-            3: 8
+            4: 8
           9,8:
             2: 61441
           10,5:
             0: 4095
           10,6:
             2: 15
-            3: 8704
+            4: 8704
             6: 34816
           10,7:
             2: 61440
-            3: 2
+            4: 2
             6: 8
           10,8:
             2: 13094
@@ -1429,10 +1429,10 @@ entities:
             0: 4095
           11,6:
             2: 15
-            3: 43520
+            4: 43520
           11,7:
             2: 61696
-            3: 10
+            4: 10
           12,5:
             0: 4095
           12,6:
@@ -1455,7 +1455,7 @@ entities:
           14,7:
             2: 29945
           14,4:
-            3: 61152
+            4: 61152
           15,6:
             2: 1141
           15,5:
@@ -1702,11 +1702,11 @@ entities:
           moles: {}
         - volume: 2500
           temperature: 293.15
-          moles: {}
-        - volume: 2500
-          temperature: 293.15
           moles:
             Nitrogen: 6666.982
+        - volume: 2500
+          temperature: 293.15
+          moles: {}
         - volume: 2500
           temperature: 293.15
           moles:
@@ -5408,6 +5408,8 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -25.5,-15.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal: []
   - uid: 14180
     components:
     - type: Transform
@@ -6259,6 +6261,8 @@ entities:
     - type: Transform
       pos: -29.5,-15.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal: []
 - proto: AirlockMaintEngiLocked
   entities:
   - uid: 222
@@ -6277,6 +6281,13 @@ entities:
     components:
     - type: Transform
       pos: -21.5,-22.5
+      parent: 2
+- proto: AirlockMaintHOPLocked
+  entities:
+  - uid: 14213
+    components:
+    - type: Transform
+      pos: 12.5,19.5
       parent: 2
 - proto: AirlockMaintHydroLocked
   entities:
@@ -8914,6 +8925,13 @@ entities:
     components:
     - type: Transform
       pos: -37.34845,-14.363373
+      parent: 2
+- proto: BoxFolderGreen
+  entities:
+  - uid: 14182
+    components:
+    - type: Transform
+      pos: -5.5,-11.5
       parent: 2
 - proto: BoxFolderGreenEmpty
   entities:
@@ -33478,6 +33496,13 @@ entities:
     - type: Transform
       pos: 37.603355,-3.5149672
       parent: 2
+- proto: ClothingUniformJumpskirtDetective
+  entities:
+  - uid: 14190
+    components:
+    - type: Transform
+      pos: 15.57035,18.510712
+      parent: 2
 - proto: ClothingUniformJumpskirtJanimaidmini
   entities:
   - uid: 5323
@@ -34047,6 +34072,10 @@ entities:
     - type: Transform
       pos: -29.5,-27.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Magistrate
+        - IAA
 - proto: ComputerCommsMedical
   entities:
   - uid: 5399
@@ -34288,6 +34317,13 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 26.5,18.5
+      parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 14228
+    components:
+    - type: Transform
+      pos: 10.5,21.5
       parent: 2
 - proto: ComputerShipyard
   entities:
@@ -39084,13 +39120,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: FaxMachineBase
-  entities:
-  - uid: 6207
-    components:
-    - type: Transform
-      pos: -4.5,-11.5
-      parent: 2
 - proto: FaxMachineCaptain
   entities:
   - uid: 6208
@@ -39109,6 +39138,13 @@ entities:
       parent: 2
     - type: FaxMachine
       destinationAddress: Cargo
+- proto: FaxMachineCCInternalAffairs
+  entities:
+  - uid: 102
+    components:
+    - type: Transform
+      pos: -4.5,-11.5
+      parent: 2
 - proto: FaxMachineCCMagi
   entities:
   - uid: 14116
@@ -62478,6 +62514,9 @@ entities:
       rot: 3.141592653589793 rad
       pos: 44.5,10.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Atmospherics
     - type: DeviceLinkSource
       linkedPorts:
         9413:
@@ -62491,6 +62530,9 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 45.5,14.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Atmospherics
     - type: DeviceLinkSource
       linkedPorts:
         551:
@@ -62511,6 +62553,9 @@ entities:
     - type: Transform
       pos: -26.5,-12.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Command
     - type: DeviceLinkSource
       linkedPorts:
         11000:
@@ -65182,6 +65227,15 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
+- proto: PosterLegitLoveIan
+  entities:
+  - uid: 14205
+    components:
+    - type: Transform
+      pos: 11.5,22.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
 - proto: PosterLegitNanotrasenLogo
   entities:
   - uid: 9913
@@ -65389,6 +65443,15 @@ entities:
     components:
     - type: Transform
       pos: 29.5,7.5
+      parent: 2
+    - type: Fixtures
+      fixtures: {}
+- proto: PosterPrisonSmallBrain
+  entities:
+  - uid: 14236
+    components:
+    - type: Transform
+      pos: 15.5,19.5
       parent: 2
     - type: Fixtures
       fixtures: {}
@@ -74687,6 +74750,13 @@ entities:
     - type: Transform
       pos: 49.5,-27.5
       parent: 2
+- proto: SpawnMobCorgi
+  entities:
+  - uid: 14227
+    components:
+    - type: Transform
+      pos: 11.5,20.5
+      parent: 2
 - proto: SpawnMobCrabAtmos
   entities:
   - uid: 11331
@@ -75032,6 +75102,18 @@ entities:
     components:
     - type: Transform
       pos: -48.5,-11.5
+      parent: 2
+- proto: SpawnPointLawyer
+  entities:
+  - uid: 14184
+    components:
+    - type: Transform
+      pos: -31.5,-21.5
+      parent: 2
+  - uid: 14185
+    components:
+    - type: Transform
+      pos: -31.5,-24.5
       parent: 2
 - proto: SpawnPointLibrarian
   entities:
@@ -79040,6 +79122,13 @@ entities:
     - type: Transform
       pos: 12.5,12.5
       parent: 2
+- proto: VendingMachineCart
+  entities:
+  - uid: 14223
+    components:
+    - type: Transform
+      pos: 11.5,21.5
+      parent: 2
 - proto: VendingMachineChang
   entities:
   - uid: 11950
@@ -79261,6 +79350,16 @@ entities:
     - type: Transform
       pos: -3.5,-12.5
       parent: 2
+- proto: VendingMachineLegalDrobe
+  entities:
+  - uid: 14188
+    components:
+    - type: Transform
+      pos: -32.5,-27.5
+      parent: 2
+    - type: AccessReader
+      accessListsOriginal:
+      - - Lawyer
 - proto: VendingMachineMedical
   entities:
   - uid: 11985
@@ -89995,82 +90094,5 @@ entities:
     components:
     - type: Transform
       pos: 9.615229,30.49403
-      parent: 2
-- proto: BoxFolderGreen
-  entities:
-  - uid: 14182
-    components:
-    - type: Transform
-      pos: -5.5,-11.5
-      parent: 2
-- proto: SpawnPointLawyer
-  entities:
-  - uid: 14184
-    components:
-    - type: Transform
-      pos: -31.5,-21.5
-      parent: 2
-  - uid: 14185
-    components:
-    - type: Transform
-      pos: -31.5,-24.5
-      parent: 2
-- proto: VendingMachineLegalDrobe
-  entities:
-  - uid: 14188
-    components:
-    - type: Transform
-      pos: -32.5,-27.5
-      parent: 2
-- proto: ClothingUniformJumpskirtDetective
-  entities:
-  - uid: 14190
-    components:
-    - type: Transform
-      pos: 15.57035,18.510712
-      parent: 2
-- proto: PosterLegitLoveIan
-  entities:
-  - uid: 14205
-    components:
-    - type: Transform
-      pos: 11.5,22.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
-- proto: AirlockMaintHOPLocked
-  entities:
-  - uid: 14213
-    components:
-    - type: Transform
-      pos: 12.5,19.5
-      parent: 2
-- proto: VendingMachineCart
-  entities:
-  - uid: 14223
-    components:
-    - type: Transform
-      pos: 11.5,21.5
-      parent: 2
-- proto: SpawnMobCorgi
-  entities:
-  - uid: 14227
-    components:
-    - type: Transform
-      pos: 11.5,20.5
-      parent: 2
-- proto: ComputerServiceJobBoard
-  entities:
-  - uid: 14228
-    components:
-    - type: Transform
-      pos: 10.5,21.5
-      parent: 2
-- proto: PosterPrisonSmallBrain
-  entities:
-  - uid: 14236
-    components:
-    - type: Transform
-      pos: 15.5,19.5
       parent: 2
 ...

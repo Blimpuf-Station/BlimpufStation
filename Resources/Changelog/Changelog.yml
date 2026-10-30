@@ -7878,3 +7878,52 @@
   id: 405093
   time: '2026-05-17T18:12:19.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/4386
+- author: wonderfulnewworld
+  changes:
+  - message: Phenylpiperidine no longer says it applies forced sleep when it actually doesn't.
+    type: Fix
+  id: 407284
+  time: '2026-08-04T09:24:55.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5501
+- author: Johnny
+  changes:
+  - message: Moved most of the atmospheric devices into the atmos category in construction menu.
+    type: Tweak
+  id: 407304
+  time: '2026-08-04T09:55:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5428
+- author: Spaghetti-Bit
+  changes:
+  - message: Gave all vampires nightvision upon choosing a class, it's no longer exclusive to Umbrae.
+    type: Tweak
+  id: 407327
+  time: '2026-08-06T09:30:33.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5504
+- author: Xale
+  changes:
+  - message: Cuffing no longer prevents player controlled zombies from attacking.
+    type: Fix
+  id: 407376
+  time: '2026-08-09T11:12:33.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5445
+- author: Conflee, SevenShades
+  changes:
+  - message: Added Shipping Containers. They are large 3x1 storage structures that can not be built to avoid abuse due to their size, but can be broken. There are 30 containers, with many being corporate branded.
+    type: Add
+  id: 407388
+  time: '2026-08-10T12:50:35.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5404
+- author: Drakobird, Conf
+  changes:
+  - message: A chilling new ability for the revenant.
+    type: Add
+  id: 407393
+  time: '2026-08-10T13:27:48.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5336
+- author: Glaud
+  changes:
+  - message: Purrfus cyborgs now come with an paperwork printing module, holding a document printer, an integrated fax transmitter, a clipboard and a document slot.
+    type: Add
+  id: 407406
+  time: '2026-08-10T13:58:51.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5454

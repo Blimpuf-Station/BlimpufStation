@@ -1,7 +1,7 @@
 - type: entity
   id: MagazineLightRifleRubber
   name: "magazine (.30 rifle rubber)"
-  parent: BaseMagazineLightRifle
+  parent: [BaseContrabandTier2, BaseMagazineLightRifle] # Blimpuf Less-Lethal is Tier 2
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifleRubber

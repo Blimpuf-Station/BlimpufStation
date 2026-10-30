@@ -92,7 +92,7 @@
     node: shell
 
 - type: entity
-  parent: BaseSpeedLoaderMagnum
+  parent: [BaseSpeedLoaderMagnum, BaseSalvageContraband] # Blimpuf
   id: SpeedLoaderMagnumSP
   name: "speed loader (.45 magnum SP)"
   components:

@@ -18,7 +18,7 @@
   - type: SpentAmmoVisuals
 
 - type: entity
-  parent: BaseCartridgePistol
+  parent: [BaseCartridgePistol, BaseSalvageContraband] # Blimpuf
   id: CartridgePistolSP
   name: cartridge (.35 auto SP)
   description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Standard kinetic ammunition is common and useful in most situations.
@@ -34,7 +34,7 @@
         color: "#3F47DB"
 
 - type: entity
-  parent: BaseCartridgePistol
+  parent: [BaseContrabandTier1, BaseCartridgePistol] # Blimpuf Practice is Tier 1
   id: CartridgePistolPractice
   name: cartridge (.35 auto practice)
   description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.

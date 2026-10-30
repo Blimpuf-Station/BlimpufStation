@@ -23,14 +23,14 @@
       medical: "#52B4E9"
       service: "#9FED58"
       engineering: "#EFB341"
-      security: "#DE3A3A"
+      security: "#37789B" # Blimpuf BlueSec
       science: "#D381C9"
       supply: "#A46106"
       cpu_command: "#334E6D"
       cpu_medical: "#52B4E9"
       cpu_service: "#9FED58"
       cpu_engineering: "#EFB341"
-      cpu_security: "#DE3A3A"
+      cpu_security: "#37789B" # Blimpuf BlueSec
       cpu_science: "#D381C9"
       cpu_supply: "#A46106"
   - type: StaticPrice
@@ -51,7 +51,7 @@
     price: 75
 
 - type: entity
-  parent: BaseFlatpack
+  parent: [BaseFlatpack, BaseEngineeringContraband, BaseContrabandTier2] # Blimpuf
   id: AmePartFlatpack
   name: AME flatpack
   description: A flatpack used for constructing an antimatter engine reactor.
@@ -71,7 +71,7 @@
     stealGroup: AmePartFlatpack
 
 - type: entity
-  parent: BaseFlatpack
+  parent: [BaseFlatpack, BaseEngineeringContraband, BaseContrabandTier2] # Blimpuf
   id: SingularityGeneratorFlatpack
   name: singularity generator flatpack
   description: A flatpack used for constructing a singularity generator.
@@ -103,7 +103,7 @@
     - Power
 
 - type: entity
-  parent: BaseFlatpack
+  parent: [BaseFlatpack, BaseEngineeringContraband, BaseContrabandTier2] # Blimpuf
   id: ContainmentFieldGeneratorFlatpack
   name: containment field generator flatpack
   description: A flatpack used for constructing a containment field generator.
@@ -119,7 +119,7 @@
     - Power
 
 - type: entity
-  parent: BaseFlatpack
+  parent: [BaseFlatpack, BaseEngineeringContraband, BaseContrabandTier2] # Blimpuf
   id: EmitterFlatpack
   name: emitter flatpack
   description: A flatpack used for constructing an emitter.
@@ -135,7 +135,7 @@
     - Power
 
 - type: entity
-  parent: BaseFlatpack
+  parent: [BaseFlatpack, BaseEngineeringContraband, BaseContrabandTier2] # Blimpuf
   id: TeslaGeneratorFlatpack
   name: tesla generator flatpack
   description: A flatpack used for constructing a tesla generator.
@@ -235,7 +235,7 @@
     entity: FaxMachineBase
 
 - type: entity
-  parent: BaseFlatpack
+  parent: [BaseFlatpack, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   id: CrewMonitoringServerFlatpack
   name: crew monitoring server flatpack
   description: A flatpack used for constructing a crew monitoring server.
@@ -244,7 +244,7 @@
     entity: CrewMonitoringServer
 
 - type: entity
-  parent: BaseFlatpack
+  parent: [BaseFlatpack, BaseMedicalContraband, BaseContrabandTier2] # Blimpuf
   id: CrewMonitoringComputerFlatpack
   name: crew monitoring computer flatpack
   description: A flatpack used for constructing a crew monitoring console.
