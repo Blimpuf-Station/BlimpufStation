@@ -21,7 +21,7 @@
   parent: [BaseCartridgePistol, BaseSalvageContraband] # Blimpuf
   id: CartridgePistolSP
   name: cartridge (.35 auto SP)
-  description: Medium-power rimless cartridge, widely-considered the standard in most parts of the galaxy, used by semi-automatic pistols and small automatic firearms. Soft-point, standard kinetic cartridge, mostly used by law enforcements in engaging low-level threats. #Blimpuf mostly bringing up to par since I didn't check it first... WOOPS!
+  description: A medium-power pistol and submachine gun cartridge, widely-considered the standard in most parts of the sector. Soft-point, standard kinetic projectile, the soft lead tip expands slightly on impact to increase damage, at a slight cost to armor penetration. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletPistolTraceSP
@@ -37,7 +37,7 @@
   parent: [BaseContrabandTier1, BaseCartridgePistol] # Blimpuf Practice is Tier 1
   id: CartridgePistolPractice
   name: cartridge (.35 auto practice)
-  description: Medium-power rimless cartridge, widely-considered the standard in most parts of the galaxy, used by semi-automatic pistols and small automatic firearms. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage. #Blimpuf
+  description: A medium-power pistol and submachine gun cartridge, widely-considered the standard in most parts of the sector. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletPistolTracePractice
@@ -53,7 +53,7 @@
   parent: BaseCartridgePistol
   id: CartridgePistolIncendiary
   name: cartridge (.35 auto incendiary)
-  description: Medium-power rimless cartridge, widely-considered the standard in most parts of the galaxy, used by semi-automatic pistols and small automatic firearms. Incendiary ammunition contains a self-igniting compound that sets targets ablaze. #Blimpuf
+  description: A medium-power pistol and submachine gun cartridge, widely-considered the standard in most parts of the sector. Incendiary ammunition contains a self-igniting compound that sets targets ablaze. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletPistolTraceIncendiary
@@ -68,7 +68,7 @@
 - type: entity
   id: CartridgePistolUranium
   name: cartridge (.35 auto uranium)
-  description: Medium-power rimless cartridge, widely-considered the standard in most parts of the galaxy, used by semi-automatic pistols and small automatic firearms. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside. #Blimpuf
+  description: A medium-power pistol and submachine gun cartridge, widely-considered the standard in most parts of the sector. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside. #Blimpuf
   parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo

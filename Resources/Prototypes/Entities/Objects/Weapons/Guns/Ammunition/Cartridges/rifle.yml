@@ -21,7 +21,7 @@
   parent: BaseCartridgeRifle
   id: CartridgeRifleSP
   name: cartridge (.20 rifle SP)
-  description: Rimless centerfire intermediate power cartridge, the most common after the .35, often used in semi-automatic and automatic rifles. Soft-point, standard kinetic cartridge, mostly used by law enforcements in engaging low-level threats. #Blimpuf
+  description: A intermediate rifle cartridge for combat rifles. Soft-point, standard kinetic projectile, the soft lead tip expands slightly on impact to increase damage, at a slight cost to armor penetration. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTraceSP
@@ -37,7 +37,7 @@
   parent: [BaseContrabandTier1, BaseCartridgeRifle] # Blimpuf Practice is Tier 1
   id: CartridgeRiflePractice
   name: cartridge (.20 rifle practice)
-  description: ARimless centerfire intermediate power cartridge, the most common after the .35, often used in semi-automatic and automatic rifles. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage. #Blimpuf
+  description: A intermediate rifle cartridge for combat rifles. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTracePractice
@@ -53,7 +53,7 @@
   parent: BaseCartridgeRifle
   id: CartridgeRifleIncendiary
   name: cartridge (.20 rifle incendiary)
-  description: Rimless centerfire intermediate power cartridge, the most common after the .35, often used in semi-automatic and automatic rifles. Incendiary ammunition contains a self-igniting compound that sets targets ablaze. #Blimpuf
+  description: A intermediate rifle cartridge for combat rifles. Incendiary ammunition contains a self-igniting compound that sets targets ablaze. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTraceIncendiary
@@ -69,7 +69,7 @@
   parent: BaseCartridgeRifle
   id: CartridgeRifleUranium
   name: cartridge (.20 rifle uranium)
-  description: Rimless centerfire intermediate power cartridge, the most common after the .35, often used in semi-automatic and automatic rifles. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside. #Blimpuf
+  description: A intermediate rifle cartridge for combat rifles. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTraceUranium

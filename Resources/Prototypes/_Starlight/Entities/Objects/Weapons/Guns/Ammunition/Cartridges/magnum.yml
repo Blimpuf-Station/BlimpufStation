@@ -42,7 +42,7 @@
   id: CartridgeMagnumHP
   name: cartridge (.45 magnum HP)
   parent: BaseCartridgeMagnum
-  description: A rimless, heavy duty, high-power cartridge. Very rarely seen, it is used by revolvers. The lack of tip allows the hollow-point cartridge to expand on impact with a soft target. #Blimpuf
+  description: Heavy magnum cartridge mostly used by revolvers. The cavity at it's tip allows the hollow-point projectile to expand on impact with a soft target for maximum damage. Ineffective against armoured opponents. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumTraceHP
@@ -58,7 +58,7 @@
   id: CartridgeMagnumFMJ
   name: cartridge (.45 magnum FMJ)
   parent: BaseCartridgeMagnum
-  description: A rimless, heavy duty, high-power cartridge. Very rarely seen, it is used by revolvers. Full Metal Jacket come with a copper casing allowing higher muzzle velocity. A good in-between hollow-point and armor-piercing cartridges, for softer armor. #Blimpuf
+  description: Heavy magnum cartridge mostly used by revolvers. Full Metal Jacket come with a copper casing allowing higher muzzle velocity. Full metal jacket projectiles have a full copper casing. A good in-between soft-point and armor-piercing projectiles, for lightly armored threats. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumTraceFMJ

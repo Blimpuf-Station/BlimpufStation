@@ -3,7 +3,7 @@
   parent: [ BaseCartridge, BaseSecurityContraband, BaseContrabandTier3 ] # Blimpuf
   id: BaseCartridgeLightRifleSP
   name: cartridge (.30 rifle SP)
-  description: A classic intermediate cartridge used by many combat rifles and LMGs. Soft-point, standard kinetic projectile, mostly used by law enforcements in engaging low-level threats. #Blimpuf
+  description: A powerful intermediate rifle cartridge used by many combat rifles and LMGs. Soft-point, standard kinetic projectile, the soft lead tip expands slightly on impact to increase damage, at a slight cost to armor penetration. #Blimpuf
   components:
   - type: Tag
     tags:
@@ -37,7 +37,7 @@
   parent: [BaseContrabandTier1, BaseCartridgeLightRifleSP] # Blimpuf Practice is Tier 1
   id: CartridgeLightRiflePractice
   name: cartridge (.30 rifle practice)
-  description: A classic intermediate cartridge used by many combat rifles and LMGs.Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage. #Blimpuf
+  description: A powerful intermediate rifle cartridge used by many combat rifles and LMGs. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleTracePractice
@@ -53,7 +53,7 @@
   parent: BaseCartridgeLightRifleSP
   id: CartridgeLightRifleIncendiary
   name: cartridge (.30 rifle incendiary)
-  description: A rimless cartridge competing with the .20, often used by bolt-action rifles, DMRs and LMGs. Incendiary ammunition contains a self-igniting compound that sets targets ablaze. #Blimpuf
+  description: A powerful intermediate rifle cartridge used by many combat rifles and LMGs. Incendiary ammunition contains a self-igniting compound that sets targets ablaze. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleTraceIncendiary
@@ -69,7 +69,7 @@
   parent: BaseCartridgeLightRifleSP
   id: CartridgeLightRifleUranium
   name: cartridge (.30 rifle uranium)
-  description: A rimless cartridge competing with the .20, often used by bolt-action rifles, DMRs and LMGs. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside. #Blimpuf
+  description: A powerful intermediate rifle cartridge used by many combat rifles and LMGs. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleTraceUranium

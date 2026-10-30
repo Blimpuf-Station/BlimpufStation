@@ -1,7 +1,7 @@
 - type: entity
   id: CartridgeRifleRubber
   name: cartridge (.20 rifle rubber)
-  description: Rimless centerfire intermediate power cartridge, the most common after the .35, often used in semi-automatic and automatic rifles. Less-lethal cartridge, designed for riot control with minimal casualties. Broken bones will result in pay deduction.. #Blimpuf
+  description: A intermediate rifle cartridge for combat rifles. Less-lethal cartridge, designed for riot control with minimal casualties. Broken bones will result in pay deduction. #Blimpuf
   parent: [BaseContrabandTier2, BaseCartridgeRifle] # Blimpuf Less-Lethal is Tier 2
   components:
   - type: CartridgeAmmo
@@ -18,7 +18,7 @@
   id: CartridgeRifleHP
   name: cartridge (.20 rifle HP)
   parent: BaseCartridgeRifle
-  description: Rimless centerfire intermediate power cartridge, the most common after the .35, often used in semi-automatic and automatic rifles. The lack of tip allows the hollow-point cartridge to expand on impact with a soft target. #Blimpuf
+  description: A intermediate rifle cartridge for combat rifles. The cavity at it's tip allows the hollow-point projectile to expand on impact with a soft target for maximum damage. Ineffective against armoured opponents. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTraceHP
@@ -34,7 +34,7 @@
   id: CartridgeRifleFMJ
   name: cartridge (.20 rifle FMJ)
   parent: BaseCartridgeRifle
-  description: Rimless centerfire intermediate power cartridge, the most common after the .35, often used in semi-automatic and automatic rifles. Full metal jacket come with a copper casing, allowing higher muzzle velocity. A good in-between hollow-points and armor-piercing cartridges, for softer armor. #Blimpuf
+  description: A intermediate rifle cartridge for combat rifles. Full metal jacket projectiles have a full copper casing. A good in-between soft-points and armor-piercing cartridges, for lightly armored threats. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTraceFMJ
@@ -50,7 +50,7 @@
   id: CartridgeRifleAP
   name: cartridge (.20 rifle AP)
   parent: BaseCartridgeRifle
-  description: Rimless centerfire intermediate power cartridge, the most common after the .35, often used in semi-automatic and automatic rifles. Praised across the galaxy, with a tungsten tip, armor-piercing is renown for its ability to easily penetrate armor. #Blimpuf
+  description: A intermediate rifle cartridge for combat rifles. Armor-piercing ammunition is renowned for its ability to cut straight through body armor. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTraceAP

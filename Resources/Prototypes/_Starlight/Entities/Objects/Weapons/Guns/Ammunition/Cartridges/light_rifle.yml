@@ -42,7 +42,7 @@
   id: CartridgeLightRifleHP
   name: cartridge (.30 rifle HP)
   parent: BaseCartridgeLightRifleSP
-  description: A classic intermediate cartridge used by many combat rifles and LMGs. The lack of tip allows the hollow-point projectile to expand on impact with soft targets. #Blimpuf
+  description: A powerful intermediate rifle cartridge used by many combat rifles and LMGs. The cavity at it's tip allows the hollow-point projectile to expand on impact with a soft target for maximum damage. Ineffective against armoured opponents. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleTraceHP
@@ -58,7 +58,7 @@
   id: CartridgeLightRifleFMJ
   name: cartridge (.30 rifle FMJ)
   parent: BaseCartridgeLightRifleSP
-  description: A classic intermediate cartridge used by many combat rifles and LMGs. Full metal jacket projectiles have a full copper casing. A good in-between soft-point and armor-piercing projectiles, for light armor. #Blimpuf
+  description: A powerful intermediate rifle cartridge used by many combat rifles and LMGs. Full metal jacket projectiles have a full copper casing. A good in-between soft-point and armor-piercing projectiles, for lightly armored threats. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleTraceFMJ
@@ -74,7 +74,7 @@
   id: CartridgeLightRifleAP
   name: cartridge (.30 rifle AP)
   parent: BaseCartridgeLightRifleSP
-  description: A classic intermediate cartridge used by many combat rifles and LMGs. Armor-piercing ammunition is renowned for its ability to cut straight through body armor.
+  description: A powerful intermediate rifle cartridge used by many combat rifles and LMGs. Armor-piercing ammunition is renowned for its ability to cut straight through body armor. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleTraceAP

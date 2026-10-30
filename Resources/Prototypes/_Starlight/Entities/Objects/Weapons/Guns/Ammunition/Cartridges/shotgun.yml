@@ -79,7 +79,7 @@
 - type: entity
   id: ShellShotgunBreaching
   name: 12 gauge breaching shell
-  description: 12 gauge shell notably made to breach walls and doors. Most commonly used by law enforcements raiding hideouts. #Blimpuf
+  description: 12 gauge shell notably made to breach walls and doors. Typically used by emergency response teams to remove obstacles. #Blimpuf
   parent: [BaseShellShotgun, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   components:
   - type: Sprite
