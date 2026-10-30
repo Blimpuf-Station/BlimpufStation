@@ -65,7 +65,7 @@ public sealed partial class CosmicFinaleComponent : Component
     public TimeSpan? SongTimer;
 
     /// <summary>
-    /// The degen that people suffer if they don't have mindshields, aren't a chaplain, or aren't cultists while the Finale is Available or Active. This feature is currently disabled.
+    /// The degen for non-cultists without mindshields while the Finale is Available or Active. This feature is currently disabled.
     /// </summary>
     [DataField]
     public DamageSpecifier FinaleDegen = new()
