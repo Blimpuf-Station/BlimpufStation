@@ -1,7 +1,7 @@
 - type: entity
   id: CartridgeLightRifleRubber
   name: cartridge (.30 rifle rubber)
-  description: A classic intermediate cartridge used by many combat rifles and LMGs. Less-lethal cartridge, designed for riot control with minimal casualties. Broken bones will result in pay deduction. #Blimpuf
+  description: A powerful intermediate rifle cartridge used by many combat rifles and LMGs. Less-lethal cartridge, designed for riot control with minimal casualties. Broken bones will result in pay deduction. #Blimpuf
   parent: [BaseContrabandTier2, BaseCartridgeLightRifleSP] # Blimpuf Less-Lethal is Tier 2
   components:
   - type: CartridgeAmmo
