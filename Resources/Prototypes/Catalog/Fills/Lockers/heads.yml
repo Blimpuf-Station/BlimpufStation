@@ -333,6 +333,7 @@
     - id: ScienceTechFabFlatpack
     - id: RDDiploma
     - id: XenobiologyConsoleCameraTagger
+    - id: SiliconLawConfigurator
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
