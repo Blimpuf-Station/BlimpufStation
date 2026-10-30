@@ -1253,5 +1253,12 @@ Entries:
   id: 21701
   time: '2026-10-30T12:13:01.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/217
+- author: RedSpeeds
+  changes:
+  - message: Fixed asteroids lacking collision.
+    type: Fix
+  id: 23501
+  time: '2026-10-30T20:00:29.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/235
 Order: -1
 
