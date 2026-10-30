@@ -1260,5 +1260,14 @@ Entries:
   id: 23501
   time: '2026-10-30T20:00:29.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/235
+- author: Shimmers
+  changes:
+  - message: The Bridge on Sushi has been rearranged.
+    type: Tweak
+  - message: The IAA's fax machine on Saltern is now functional.
+    type: Fix
+  id: 22601
+  time: '2026-10-30T20:01:09.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/226
 Order: -1
 
