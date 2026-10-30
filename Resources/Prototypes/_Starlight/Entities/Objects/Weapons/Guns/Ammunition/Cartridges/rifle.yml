@@ -1,6 +1,7 @@
 - type: entity
   id: CartridgeRifleRubber
   name: cartridge (.20 rifle rubber)
+  description: A intermediate rifle cartridge for combat rifles. Less-lethal projectile, designed for riot control with minimal casualties. Broken bones will result in pay deduction. #Blimpuf
   parent: [BaseContrabandTier2, BaseCartridgeRifle] # Blimpuf Less-Lethal is Tier 2
   components:
   - type: CartridgeAmmo
@@ -17,7 +18,7 @@
   id: CartridgeRifleHP
   name: cartridge (.20 rifle HP)
   parent: BaseCartridgeRifle
-  description: A modern intermediate cartridge for combat rifles. Standard kinetic ammunition is common and useful in most situations.
+  description: A intermediate rifle cartridge for combat rifles. The cavity at it's tip allows the hollow-point projectile to expand on impact with a soft target for maximum damage. Ineffective against armoured opponents. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTraceHP
@@ -33,6 +34,7 @@
   id: CartridgeRifleFMJ
   name: cartridge (.20 rifle FMJ)
   parent: BaseCartridgeRifle
+  description: A intermediate rifle cartridge for combat rifles. Full metal jacket projectiles have a full copper casing. A good in-between soft-points and armor-piercing cartridges, for lightly armored threats. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTraceFMJ
@@ -48,6 +50,7 @@
   id: CartridgeRifleAP
   name: cartridge (.20 rifle AP)
   parent: BaseCartridgeRifle
+  description: A intermediate rifle cartridge for combat rifles. Armor-piercing ammunition is renowned for its ability to cut straight through body armor. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTraceAP
