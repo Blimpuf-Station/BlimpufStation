@@ -1,0 +1,93 @@
+﻿- type: entity
+  parent: MobSlimesPet
+  id: MobSlimesPetSmirk
+  name: Smirk
+  description: A devious Syndicate slime.
+  components:
+  - type: ReagentSucker
+    sprayLiquid: ActionSuperLiquidSpray
+  - type: SolutionContainerManager
+    solutions:
+      vestineSupply:
+        maxVol: 500
+        canReact: false
+        reagents:
+        - ReagentId: Vestine
+          Quantity: 500
+  - type: MultiSolutionRegeneration
+    solutions:
+    - solution: bloodstream
+      pauseWhenDead: true
+      generated:
+        reagents:
+        - ReagentId: Omnizine
+          Quantity: 0.4
+      duration: 1
+    - solution: vestineSupply
+      pauseWhenDead: true
+      generated:
+        reagents:
+        - ReagentId: Vestine
+          Quantity: 1
+      duration: 1
+  - type: Squeezable
+    solution: vestineSupply
+    squeezeDuration: 2
+    squeezeDamage:
+      groups:
+        Brute: 50
+    squeezeStartMessage: squeezable-smirk-begin
+  - type: Bloodstream
+    bloodReagentColor: "#FF0000"
+  - type: GhostRole
+    name: ghost-role-information-smirk-name
+    allowMovement: true
+    description: ghost-role-information-smirk-description
+    rules: ghost-role-information-syndicate-reinforcement-rules
+    important: true
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+    raffle:
+      settings: default
+  - type: GhostTakeoverAvailable
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: Access
+    tags:
+    - NuclearOperative
+    - SyndicateAgent
+  - type: Sprite
+    sprite: _Blimpuf/Mobs/Smirk/smirk.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: smirk_the_slime
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      state: smirk_the_slime_face
+      shader: unshaded
+    - map: [ "head" ]
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: smirk_the_slime
+        BaseUnshaded: smirk_the_slime_face
+      Dead:
+        Base: smirk_the_slime_dead
+  - type: Butcherable
+    spawned:
+    - id: FoodMeatSlime
+      amount: 1
+    - id: MaterialSmirkExtract
+      amount: 1
+  - type: Loadout
+    prototypes: [ SmirkHatGear ]
+  - type: Item
+    sprite: _Blimpuf/Mobs/Smirk/smirk.rsi
+  - type: Grammar
+    attributes:
+      gender: male
+
+- type: startingGear
+  id: SmirkHatGear
+  equipment:
+    head: ClothingHeadHatSyndie
