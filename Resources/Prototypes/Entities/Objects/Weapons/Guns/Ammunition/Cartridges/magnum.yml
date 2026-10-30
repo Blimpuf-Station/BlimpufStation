@@ -21,7 +21,7 @@
   parent: [BaseCartridgeMagnum, BaseSalvageContraband] # Blimpuf
   id: CartridgeMagnumSP
   name: cartridge (.45 magnum SP)
-  description: Heavy magnum cartridge mostly used by revolvers. Standard kinetic ammunition is common and useful in most situations.
+  description: A rimless, heavy duty, high-power cartridge. Very rarely seen, it is used by revolvers. Soft-point, standard kinetic cartridge, mostly used by law enforcements in engaging low-level threats. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumTraceSP
@@ -37,7 +37,7 @@
   parent: [BaseContrabandTier1, BaseCartridgeMagnum] # Blimpuf Practice is Tier 1
   id: CartridgeMagnumPractice
   name: cartridge (.45 magnum practice)
-  description: Heavy magnum cartridge mostly used by revolvers. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
+  description: A rimless, heavy duty, high-power cartridge. Very rarely seen, it is used by revolvers. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumTracePractice
@@ -53,7 +53,7 @@
   parent: BaseCartridgeMagnum
   id: CartridgeMagnumIncendiary
   name: cartridge (.45 magnum incendiary)
-  description: Heavy magnum cartridge mostly used by revolvers. Incendiary ammunition contains a self-igniting compound that sets targets ablaze.
+  description: A rimless, heavy duty, high-power cartridge. Very rarely seen, it is used by revolvers. Incendiary ammunition contains a self-igniting compound that sets targets ablaze.
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumTraceIncendiary
@@ -69,7 +69,7 @@
   parent: BaseCartridgeMagnum
   id: CartridgeMagnumAP
   name: cartridge (.45 magnum armor-piercing)
-  description: Heavy magnum cartridge mostly used by revolvers. Armor-piercing ammunition is renowned for its ability to cut straight through body armor.
+  description: A rimless, heavy duty, high-power cartridge. Very rarely seen, it is used by revolvers. Praised Praised across the galaxy, with a tungsten tip, armor-piercing is renown for it's ability to easily penetrate armor.
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumTraceAP
@@ -85,7 +85,7 @@
   parent: BaseCartridgeMagnum
   id: CartridgeMagnumUranium
   name: cartridge (.45 magnum uranium)
-  description: Heavy magnum cartridge mostly used by revolvers. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside.
+  description: A rimless, heavy duty, high-power cartridge. Very rarely seen, it is used by revolvers. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside.
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumTraceUranium

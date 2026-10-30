@@ -22,6 +22,7 @@
   id: CartridgeBattery
   name: cartridge (laser)
   parent: BaseCartridgeBattery
+  description: Super-heated plasma contained in a tungsten tip. This rimless cartridge allows for rapid delivery of high-powered lasers.
   components:
   - type: CartridgeAmmo
     proto: RedLaserBeam
