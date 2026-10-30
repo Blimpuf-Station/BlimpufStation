@@ -37,7 +37,7 @@
   parent: [BaseContrabandTier1, BaseCartridgeMagnum] # Blimpuf Practice is Tier 1
   id: CartridgeMagnumPractice
   name: cartridge (.45 magnum practice)
-  description: A rimless, heavy duty, high-power cartridge. Very rarely seen, it is used by revolvers. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
+  description: A rimless, heavy duty, high-power cartridge. Very rarely seen, it is used by revolvers. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumTracePractice
@@ -53,7 +53,7 @@
   parent: BaseCartridgeMagnum
   id: CartridgeMagnumIncendiary
   name: cartridge (.45 magnum incendiary)
-  description: A rimless, heavy duty, high-power cartridge. Very rarely seen, it is used by revolvers. Incendiary ammunition contains a self-igniting compound that sets targets ablaze.
+  description: A rimless, heavy duty, high-power cartridge. Very rarely seen, it is used by revolvers. Incendiary ammunition contains a self-igniting compound that sets targets ablaze. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumTraceIncendiary
@@ -69,7 +69,7 @@
   parent: BaseCartridgeMagnum
   id: CartridgeMagnumAP
   name: cartridge (.45 magnum armor-piercing)
-  description: A rimless, heavy duty, high-power cartridge. Very rarely seen, it is used by revolvers. Praised Praised across the galaxy, with a tungsten tip, armor-piercing is renown for it's ability to easily penetrate armor.
+  description: A rimless, heavy duty, high-power cartridge. Very rarely seen, it is used by revolvers. Praised Praised across the galaxy, with a tungsten tip, armor-piercing is renown for it's ability to easily penetrate armor. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumTraceAP
@@ -85,7 +85,7 @@
   parent: BaseCartridgeMagnum
   id: CartridgeMagnumUranium
   name: cartridge (.45 magnum uranium)
-  description: A rimless, heavy duty, high-power cartridge. Very rarely seen, it is used by revolvers. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside.
+  description: A rimless, heavy duty, high-power cartridge. Very rarely seen, it is used by revolvers. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumTraceUranium
