@@ -74,7 +74,7 @@ public sealed class GridPowerTests : GameTest
         new("/Maps/_Blimpuf/Shuttles/Evac/emergency_silica.yml"),
         new("/Maps/_Blimpuf/Shuttles/Evac/emergency_spacemall.yml"),
         new("/Maps/_Blimpuf/Shuttles/Evac/emergency_starboard.yml"),
-        new("/Maps/_Starlight/Shuttles/Evac/emergency_syndicate.yml"),
+        new("/Maps/_Blimpuf/Shuttles/Evac/emergency_syndicate.yml"),
 
         // Shipyard
         new("/Maps/_Starlight/Shuttles/Shipyard/barge.yml"),
