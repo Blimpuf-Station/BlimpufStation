@@ -3,7 +3,7 @@
   parent: [ BaseCartridge, BaseSecurityContraband, BaseContrabandTier3 ] # Blimpuf
   id: BaseCartridgeLightRifleSP
   name: cartridge (.30 rifle SP)
-  description: A rimless cartridge competing with the .20, often used by bolt-action rifles, DMRs and LMGs. Soft-point, standard kinetic cartridge, mostly used by law enforcements in engaging low-level threats. #Blimpuf
+  description: A classic intermediate cartridge used by many combat rifles and LMGs. Soft-point, standard kinetic projectile, mostly used by law enforcements in engaging low-level threats. #Blimpuf
   components:
   - type: Tag
     tags:
@@ -37,7 +37,7 @@
   parent: [BaseContrabandTier1, BaseCartridgeLightRifleSP] # Blimpuf Practice is Tier 1
   id: CartridgeLightRiflePractice
   name: cartridge (.30 rifle practice)
-  description: A rimless cartridge competing with the .20, often used by bolt-action rifles, DMRs and LMGs. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage. #Blimpuf
+  description: A classic intermediate cartridge used by many combat rifles and LMGs.Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleTracePractice

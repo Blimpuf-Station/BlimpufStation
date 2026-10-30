@@ -1,7 +1,7 @@
 - type: entity
   id: CartridgeMagnumRubber
   name: cartridge (.45 magnum rubber)
-  description: A rimless, heavy duty, high-power cartridge. Very rarely seen, it is used by revolvers. Less-lethal cartridge, designed for riot control with minimal casualties. Broken bones will result in pay deduction. #Blimpuf
+  description: Heavy magnum cartridge mostly used by revolvers. Less-lethal projectile, designed for riot control with minimal casualties. Broken bones will result in pay deduction. #Blimpuf
   parent: [BaseContrabandTier2, BaseCartridgeMagnum] # Blimpuf Less-Lethal is Tier 2
   components:
   - type: CartridgeAmmo

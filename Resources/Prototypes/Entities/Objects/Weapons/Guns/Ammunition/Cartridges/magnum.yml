@@ -21,7 +21,7 @@
   parent: [BaseCartridgeMagnum, BaseSalvageContraband] # Blimpuf
   id: CartridgeMagnumSP
   name: cartridge (.45 magnum SP)
-  description: A rimless, heavy duty, high-power cartridge. Very rarely seen, it is used by revolvers. Soft-point, standard kinetic cartridge, mostly used by law enforcements in engaging low-level threats. #Blimpuf
+  description: Heavy magnum cartridge mostly used by revolvers. Soft-point, standard kinetic projectile, mostly used by law enforcements in engaging low-level threats. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletMagnumTraceSP

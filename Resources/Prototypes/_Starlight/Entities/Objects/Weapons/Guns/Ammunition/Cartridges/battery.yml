@@ -22,7 +22,7 @@
   id: CartridgeBattery
   name: cartridge (laser)
   parent: BaseCartridgeBattery
-  description: Super-heated plasma contained in a tungsten tip. This rimless cartridge allows for rapid delivery of high-powered lasers. #Blimpuf
+  description: A single-use battery cartridge designed for laser carbines. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: RedLaserBeam
