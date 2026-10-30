@@ -112,3 +112,18 @@
   - HoloprojectorField
   - ClothingOuterArmorBase
   - MedkitCombatFilled
+
+- type: thiefBackpackSet
+  id: PranksterSet
+  name: thief-backpack-category-prankster-name
+  description: thief-backpack-category-prankster-description
+  sprite:
+    sprite: Objects/Specific/Hydroponics/banana.rsi
+    state: peel
+  content:
+  - LauncherCreamPie
+  - FoodPieBananaCream
+  - FoodPieBananaCream
+  - ClownShoesNoSlip
+  - EnergySwordBanana
+  - HoloprojectorClownBorg

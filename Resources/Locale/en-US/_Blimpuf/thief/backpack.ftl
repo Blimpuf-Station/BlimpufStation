@@ -56,3 +56,10 @@ thief-backpack-category-bluespace-description =
     Includes: A disabler, a telescopic shield, a force
     field projector, an armor vest, and a combat medkit.
 
+thief-backpack-category-self-prankster-name = Prankster Kit
+thief-backpack-category-prankster-description =
+    Honk.
+    Includes: A pie cannon, 2 extra pies, no-slip clown
+    shoes, a banana energy sword and a holopeel projector.
+    Bottom Text.
+
