@@ -1235,5 +1235,12 @@ Entries:
   id: 20701
   time: '2026-10-29T20:05:47.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/207
+- author: Shimmers
+  changes:
+  - message: Xenoborgs now use Starlight's mothership.
+    type: Fix
+  id: 20601
+  time: '2026-10-30T11:34:00.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/206
 Order: -1
 
