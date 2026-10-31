@@ -1,0 +1,161 @@
+- type: thiefBackpackSet
+  id: ExtrovertSet
+  name: thief-backpack-category-extrovert-name
+  description: thief-backpack-category-extrovert-description
+  sprite:
+    sprite: Mobs/Species/Human/organs.rsi
+    state: brain
+  content:
+  - MindControlImplanter
+  - HypopenNocturine
+  - ThievingGloves
+
+- type: thiefBackpackSet
+  id: GetawaySet
+  name: thief-backpack-category-getaway-name
+  description: thief-backpack-category-getaway-description
+  sprite:
+    sprite: Clothing/Shoes/Boots/speedboots.rsi
+    state: icon
+  content:
+  - ClothingShoesBootsSpeed
+  - PowerCellHyper
+  - FreedomImplanter
+  - Stimpack
+  - Stimpack
+  - Stimpack
+
+- type: thiefBackpackSet
+  id: NinjaSet
+  name: thief-backpack-category-ninja-name
+  description: thief-backpack-category-ninja-description
+  sprite:
+    sprite: Objects/Weapons/Melee/energykatana.rsi
+    state: icon
+  content:
+  - ClothingNeckChameleonPhaseCloak
+  - EMPImplanter
+  - ChemistryBottleTazinide
+  - Hypopen
+  - ScramImplanter
+
+- type: thiefBackpackSet
+  id: DemolitionistSet
+  name: thief-backpack-category-demolitionist-name
+  description: thief-backpack-category-demolitionist-description
+  sprite:
+    sprite: _Starlight/Objects/Weapons/Melee/BreachingHammer.rsi
+    state: icon
+  content:
+  - HammerBreachingNT
+  - RCD
+  - SeismicCharge
+  - SeismicCharge
+  - SeismicCharge
+  - SeismicCharge
+  - ToolboxSyndicateFilled
+
+- type: thiefBackpackSet
+  id: InfiltratorSet
+  name: thief-backpack-category-infiltrator-name
+  description: thief-backpack-category-infiltrator-description
+  sprite:
+    sprite: Structures/Piping/Atmospherics/vent.rsi
+    state: icon
+  content:
+  - ClothingUniformJumpsuitAtmosSyndie
+  - ClothingOuterHardsuitEVA
+  - ClothingHeadHelmetEVA
+  - TearGasGrenade
+  - TearGasGrenade
+  - TearGasGrenade
+
+- type: thiefBackpackSet
+  id: SaboteurSet
+  name: thief-backpack-category-saboteur-name
+  description: thief-backpack-category-saboteur-description
+  sprite:
+    sprite: Objects/Weapons/Grenades/empgrenade.rsi
+    state: icon
+  content:
+  - EmpGrenade
+  - EmpGrenade
+  - EmpGrenade
+  - CyberEyeNightVision
+  - EngineeringIDCard
+  - Wirecutter
+
+- type: thiefBackpackSet
+  id: PilotSet
+  name: thief-backpack-category-pilot-name
+  description: thief-backpack-category-pilot-description
+  sprite:
+    sprite: Structures/Shuttles/thruster.rsi
+    state: base
+  content:
+  - CrateThiefShuttle
+  - Multitool
+  - ClothingOuterEVASuitSyndicate
+  - ClothingHeadHelmetSyndicate
+  - JetpackBlackFilled
+  - ClothingShoesBootsMagSyndie
+
+- type: thiefBackpackSet
+  id: BluespaceSet
+  name: thief-backpack-category-bluespace-name
+  description: thief-backpack-category-bluespace-description
+  sprite:
+    sprite: _Starlight/Objects/Materials/materials.rsi
+    state: refined_bluespace_crystal
+  content:
+  - DeviceQuantumSpinInverter
+  - DeviceQuantumSpinInverter
+  - ClothingBackpackHolding
+  - BluespaceCrystal1
+  - BluespaceCrystal1
+  - BluespaceCrystal1
+  - BluespaceCrystal1
+
+- type: thiefBackpackSet
+  id: SelfDefenceSet
+  name: thief-backpack-category-self-defence-name
+  description: thief-backpack-category-self-defence-description
+  sprite:
+    sprite: Objects/Weapons/Guns/Battery/disabler.rsi
+    state: base
+  content:
+  - WeaponDisabler
+  - TelescopicShield
+  - HoloprojectorField
+  - ClothingOuterArmorBasic
+  - MedkitCombatFilled
+
+- type: thiefBackpackSet
+  id: PranksterSet
+  name: thief-backpack-category-prankster-name
+  description: thief-backpack-category-prankster-description
+  sprite:
+    sprite: Objects/Specific/Hydroponics/banana.rsi
+    state: peel
+  content:
+  - LauncherCreamPie
+  - FoodPieBananaCream
+  - FoodPieBananaCream
+  - FoodPieBananaCream
+  - ClownShoesNoSlip
+  - EnergySwordBanana
+  - HoloprojectorClownBorg
+
+- type: thiefBackpackSet
+  id: BlindingSet
+  name: thief-backpack-category-blinding-name
+  description: thief-backpack-category-blinding-description
+  sprite:
+    sprite: Objects/Weapons/Melee/flash.rsi
+    state: flash
+  content:
+  - Flash
+  - GrenadeFlashBang
+  - GrenadeFlashBang
+  - ClusterBangFull
+  - ClothingEyesGlassesSunglasses

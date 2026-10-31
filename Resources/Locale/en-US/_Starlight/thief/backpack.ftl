@@ -3,7 +3,7 @@ thief-backpack-category-syndie-description-starlight =
     You've made some connections. Whiskey, echo...
     Includes: A Camera bug, Access Breaker, Interdyne cigs,
     a Syndicate codeword, a Radio Jammer, a lighter,
-    a stimulant injector, and some strange red crystals.
+    and some strange red crystals.
 
 thief-backpack-category-communicator-description-starlight =
     Money is power, and secrets are money. Use your silver tongue
@@ -16,4 +16,4 @@ thief-backpack-category-sleeper-description-starlight =
     Until we close our eyes for good, use your illegal prescriptions
     to keep others asleep.
     Includes: Sleepy nitrous oxide tank, a healium tank,
-    two nocturine bottles, a tazinide bottle, and a hypopen.
+    two nocturine bottles, and a hypopen.
