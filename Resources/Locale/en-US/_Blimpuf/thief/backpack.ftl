@@ -18,15 +18,22 @@ thief-backpack-category-ninja-name = Ninja Kit
 thief-backpack-category-ninja-description =
     A master of the ways of the Ninja...Well, more
     like a Spider Clan wannabe.
-    Includes: A battery powered, chameleon stealth scarf, an
+    Includes: A battery powered chameleon stealth scarf, an
     EMP Implant, a bottle of Tanzinide, a Hypopen and a
     Scram Implant.
 
+thief-backpack-category-demolitionist-name = Demolitionist Kit
+thief-backpack-category-demolitionist-description =
+    Walls are just a suggestion! Nothing is stopping you!
+    Includes: A breaching hammer, an RCD, 4 seismic charges
+    and a full Syndicate toolbox. Coming through!
+
 thief-backpack-category-infiltrator-name = Infiltrator Kit
 thief-backpack-category-infiltrator-description =
-    Walls are just a suggestion! Nothing is stopping you!
-    Includes: A breaching hammer, an RCD, a contortionist
-    jumpsuit, and a full EVA Suit. Coming through!
+    Break into anywhere with ease. Vents may be claustraphobic,
+    but they're damn well helpful.
+    Includes: A contortionist jumpsuit, an EVA suit, an EVA helmet,
+    and 3 tear gas grenades for slipping away unseen.
 
 thief-backpack-category-saboteur-name = Saboteur Kit
 thief-backpack-category-saboteur-description =

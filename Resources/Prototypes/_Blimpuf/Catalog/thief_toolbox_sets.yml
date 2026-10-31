@@ -40,18 +40,35 @@
   - ScramImplanter
 
 - type: thiefBackpackSet
-  id: InfiltratorSet
-  name: thief-backpack-category-infiltrator-name
-  description: thief-backpack-category-infiltrator-description
+  id: DemolitionistSet
+  name: thief-backpack-category-demolitionist-name
+  description: thief-backpack-category-demolitionist-description
   sprite:
     sprite: _Starlight/Objects/Weapons/Melee/BreachingHammer.rsi
     state: icon
   content:
   - HammerBreachingNT
   - RCD
+  - SeismicCharge
+  - SeismicCharge
+  - SeismicCharge
+  - SeismicCharge
+  - ToolboxSyndicateFilled
+
+- type: thiefBackpackSet
+  id: InfiltratorSet
+  name: thief-backpack-category-infiltator-name
+  description: thief-backpack-category-infiltrator-description
+  sprite:
+    sprite: Structures/Piping/Atmospherics/vent.rsi
+    state: icon
+  content:
   - ClothingUniformJumpsuitAtmosSyndie
   - ClothingOuterHardsuitEVA
   - ClothingHeadHelmetEVA
+  - TearGasGrenade
+  - TearGasGrenade
+  - TearGasGrenade
 
 - type: thiefBackpackSet
   id: SaboteurSet
