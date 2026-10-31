@@ -1197,5 +1197,77 @@ Entries:
   id: 21001
   time: '2026-10-24T22:01:07.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/210
+- author: ItsMaitake
+  changes:
+  - message: Goat seeds now properly mutate from oat seeds.
+    type: Fix
+  id: 22401
+  time: '2026-10-27T19:39:30.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/224
+- author: Limerent-Sun
+  changes:
+  - message: Eeeps now recover from death as intended.
+    type: Fix
+  id: 22201
+  time: '2026-10-27T19:40:21.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/222
+- author: Limerent-Sun
+  changes:
+  - message: Station AI now starts on NT-Default.
+    type: Tweak
+  id: 22801
+  time: '2026-10-28T14:35:36.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/228
+- author: Lady Liliana
+  changes:
+  - message: Added medical and criminal record circuit boards to their respective
+      circuit totes.
+    type: Add
+  - message: Added contraband tags to various circuit boards.
+    type: Add
+  - message: Added contraband tags to various items missing them completely (abductor
+      for example).
+    type: Fix
+  - message: Changed ammo contraband tags to differentiate between ammo types.
+    type: Tweak
+  - message: Changed various contraband tags to better reflect their security level.
+    type: Tweak
+  id: 20701
+  time: '2026-10-29T20:05:47.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/207
+- author: Shimmers
+  changes:
+  - message: Xenoborgs now use Starlight's mothership.
+    type: Fix
+  id: 20601
+  time: '2026-10-30T11:34:00.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/206
+- author: Limerent-Sun
+  changes:
+  - message: Removed chaplain interactions with cosmic cultists and malign rifts.
+    type: Remove
+  - message: Removed chaplain immunity to cosmic cult abilities and conversion.
+    type: Remove
+  - message: Chaplain can now roll cosmic cultist.
+    type: Tweak
+  id: 21701
+  time: '2026-10-30T12:13:01.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/217
+- author: RedSpeeds
+  changes:
+  - message: Fixed asteroids lacking collision.
+    type: Fix
+  id: 23501
+  time: '2026-10-30T20:00:29.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/235
+- author: Shimmers
+  changes:
+  - message: The Bridge on Sushi has been rearranged.
+    type: Tweak
+  - message: The IAA's fax machine on Saltern is now functional.
+    type: Fix
+  id: 22601
+  time: '2026-10-30T20:01:09.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/226
 Order: -1
 

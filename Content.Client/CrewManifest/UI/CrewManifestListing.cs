@@ -35,14 +35,10 @@ public sealed partial class CrewManifestListing : BoxContainer
             }
         }
 
-        // share the longest name/pronoun width across departments, keeping the usual 60% share
-        if (float.IsFinite(availableSize.X))
-            nameWidth = Math.Max(nameWidth, availableSize.X * 0.6f);
-
         foreach (var section in sections)
         {
-            if (section.NamesColumn.SetWidth != nameWidth)
-                section.NamesColumn.SetWidth = nameWidth;
+            if (section.NamesColumn.MinWidth != nameWidth)
+                section.NamesColumn.MinWidth = nameWidth;
         }
 
         return base.MeasureOverride(availableSize);

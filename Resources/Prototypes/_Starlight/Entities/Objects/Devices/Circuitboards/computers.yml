@@ -1,5 +1,5 @@
 - type: entity
-  parent: [BaseComputerCircuitboard, BaseGrandTheftContraband]
+  parent: [BaseComputerCircuitboard, BaseCentcommContraband] # Blimpuf
   id: RecruitmentComputerCircuitboard
   name: recruitment computer computer board
   description: A computer printed circuit board for an recruitment computer.
@@ -15,7 +15,7 @@
       - HighRiskItem
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseCargoContraband, BaseContrabandTier2] # Blimpuf
   id: SalvageShuttleConsoleCircuitboard
   name: remote salvage shuttle console board
   description: A computer printed circuit board for a remote salvage shuttle console.
@@ -41,7 +41,7 @@
       price: 200
 
 - type: entity
-  parent: [BaseComputerCircuitboard, BaseCommandContraband]
+  parent: [BaseComputerCircuitboard, BaseCentcommContraband] # Blimpuf
   id: UniversalIdConsoleCircuitboard
   name: Universal ID console board
   description: A circuit board for a Universal ID console.
@@ -57,7 +57,7 @@
       - HighRiskItem
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseCargoContraband, BaseContrabandTier2] # Blimpuf
   id: MiningShuttleConsoleCircuitboard
   name: remote mining shuttle console board
   description: A computer printed circuit board for a remote mining shuttle console.
@@ -70,7 +70,7 @@
       stealGroup: MiningShuttleConsoleCircuitboard
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   id: SecurityShuttleConsoleCircuitboard
   name: remote security shuttle console board
   description: A computer printed circuit board for a remote security shuttle console.
@@ -81,7 +81,7 @@
       prototype: ComputerShuttleSecurity
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseScienceContraband] # Blimpuf
   id: XenobiologyConsoleCircuitboard
   name: xenobiology console board
   description: A computer printed circuit board for a xenobiology console.
@@ -95,7 +95,7 @@
 ## Departmental Communications Consoles BEGIN
 
 - type: entity
-  parent: [ BaseComputerCircuitboard, BaseCommandContraband ]
+  parent: [BaseComputerCircuitboard, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   id: EngineeringCommsComputerCircuitboard
   name: engineering communications console board
   description: A computer printed circuit board for a engineering communications console.
@@ -106,7 +106,7 @@
       prototype: ComputerCommsEngineering
 
 - type: entity
-  parent: [ BaseComputerCircuitboard, BaseCommandContraband ]
+  parent: [BaseComputerCircuitboard, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   id: MedicalCommsComputerCircuitboard
   name: medical communications console board
   description: A computer printed circuit board for a medical communications console.
@@ -117,7 +117,7 @@
       prototype: ComputerCommsMedical
 
 - type: entity
-  parent: [ BaseComputerCircuitboard, BaseCommandContraband ]
+  parent: [BaseComputerCircuitboard, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   id: ScienceCommsComputerCircuitboard
   name: science communications console board
   description: A computer printed circuit board for a science communications console.
@@ -128,7 +128,7 @@
       prototype: ComputerCommsScience
 
 - type: entity
-  parent: [ BaseComputerCircuitboard, BaseCommandContraband ]
+  parent: [BaseComputerCircuitboard, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   id: SecurityCommsComputerCircuitboard
   name: security communications console board
   description: A computer printed circuit board for a security communications console.
@@ -139,7 +139,7 @@
       prototype: ComputerCommsSecurity
 
 - type: entity
-  parent: [ BaseComputerCircuitboard, BaseCommandContraband ]
+  parent: [BaseComputerCircuitboard, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   id: ServiceCommsComputerCircuitboard
   name: service communications console board
   description: A computer printed circuit board for a service communications console.
@@ -150,7 +150,7 @@
       prototype: ComputerCommsService
 
 - type: entity
-  parent: [ BaseComputerCircuitboard, BaseCommandContraband ]
+  parent: [BaseComputerCircuitboard, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   id: CargoCommsComputerCircuitboard
   name: cargo communications console board
   description: A computer printed circuit board for a cargo communications console.
@@ -161,7 +161,7 @@
       prototype: ComputerCommsCargo
 
 - type: entity
-  parent: [ BaseComputerCircuitboard, BaseCommandContraband ]
+  parent: [BaseComputerCircuitboard, BaseRepresentativesContraband, BaseContrabandTier3] # Blimpuf
   id: LawCommsComputerCircuitboard
   name: corporate communications console board
   description: A computer printed circuit board for a corporate communications console.
@@ -175,7 +175,7 @@
 ## Departmental Communications Consoles END
 
 - type: entity
-  parent: BaseComputerCircuitboard
+  parent: [BaseComputerCircuitboard, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   id: ShipyardComputerCircuitboard
   name: shipyard computer board
   description: A computer printed circuit board for a shipyard computer.
