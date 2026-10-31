@@ -58,15 +58,21 @@ thief-backpack-category-bluespace-description =
     Bluespace Backpack, and 4 Bluespace Crystals.
 
 thief-backpack-category-self-defence-name = Self Defence Kit
-thief-backpack-category-bluespace-description =
+thief-backpack-category-self-defence-description =
     I WILL NOT BE HARASSED! BITCH!
     Includes: A disabler, a telescopic shield, a force
     field projector, an armor vest, and a combat medkit.
 
-thief-backpack-category-self-prankster-name = Prankster Kit
+thief-backpack-category-prankster-name = Prankster Kit
 thief-backpack-category-prankster-description =
     Honk.
-    Includes: A pie cannon, 2 extra pies, no-slip clown
-    shoes, a banana energy sword and a holopeel projector.
+    Includes: A pie cannon, 3 pies, no-slip clown shoes,
+    a banana energy sword and a holopeel projector.
     Bottom Text.
+
+thief-backpack-category-blinding-name = Blinding Kit
+thief-backpack-category-blinding-description =
+    Think fast chucklenuts!
+    Includes: A 6 charge flash, 2 flashbangs, a clusterbang
+    and some sick shades so you don't get blinded yourself.
 

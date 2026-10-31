@@ -57,7 +57,7 @@
 
 - type: thiefBackpackSet
   id: InfiltratorSet
-  name: thief-backpack-category-infiltator-name
+  name: thief-backpack-category-infiltrator-name
   description: thief-backpack-category-infiltrator-description
   sprite:
     sprite: Structures/Piping/Atmospherics/vent.rsi
@@ -75,8 +75,8 @@
   name: thief-backpack-category-saboteur-name
   description: thief-backpack-category-saboteur-description
   sprite:
-    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
-    state: emp
+    sprite: Objects/Weapons/Grenades/empgrenade.rsi
+    state: icon
   content:
   - EmpGrenade
   - EmpGrenade
@@ -127,7 +127,7 @@
   - WeaponDisabler
   - TelescopicShield
   - HoloprojectorField
-  - ClothingOuterArmorBase
+  - ClothingOuterArmorBasic
   - MedkitCombatFilled
 
 - type: thiefBackpackSet
@@ -141,6 +141,21 @@
   - LauncherCreamPie
   - FoodPieBananaCream
   - FoodPieBananaCream
+  - FoodPieBananaCream
   - ClownShoesNoSlip
   - EnergySwordBanana
   - HoloprojectorClownBorg
+
+- type: thiefBackpackSet
+  id: BlindingSet
+  name: thief-backpack-category-blinding-name
+  description: thief-backpack-category-blinding-description
+  sprite:
+    sprite: Objects/Weapons/Melee/flash.rsi
+    state: flash
+  content:
+  - Flash
+  - GrenadeFlashBang
+  - GrenadeFlashBang
+  - ClusterBangFull
+  - ClothingEyesGlassesSunglasses
