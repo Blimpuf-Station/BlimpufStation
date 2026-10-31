@@ -76,9 +76,9 @@
   text: subspecies-name-neoslimeperson
 
 - type: quickPhrase
-  id: SpeciesNeovulpPhrase
+  id: SpeciesNeovulpkaninPhrase
   parent: SpeciesNeocytePhrase
-  text: subspecies-name-neovulp
+  text: subspecies-name-neovulpkanin
 
 - type: quickPhrase
   id: SpeciesNeoresomiPhrase

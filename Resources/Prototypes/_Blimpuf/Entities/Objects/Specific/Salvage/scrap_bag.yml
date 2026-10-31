@@ -1,0 +1,29 @@
+- type: entity
+  name: scrap bag
+  id: ScrapBag
+  parent: OreBag
+  description: A robust bag for salvage specialists to carry large amounts of recyclable scrap items. Magnetises any nearby scrap when it's attached to a belt, in hand, or on the floor.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Specific/Salvage/scrap_bag.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Blimpuf/Objects/Specific/Salvage/scrap_bag.rsi
+    quickEquip: false
+    slots:
+    - belt
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,9,4
+    quickInsert: true
+    areaInsert: true
+    whitelist:
+      tags:
+        - SalvageScrap
+
+- type: entity
+  parent: ScrapBag
+  id: BorgScrapBag
+  name: integrated scrap bag
+  description: A scrap bag built into the frame of a mining cyborg.

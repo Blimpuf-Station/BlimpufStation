@@ -4,12 +4,10 @@
   antagonist: true
   objective: roles-antag-paradox-clone-objective
   setPreference: false
-  # Starlight start
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 48h # You should at least have some familiarity with the community to actually be able to pull this off.
+    time: 10h
   playTimeTracker: AntagParadoxClone
-  # Starlight end
 
 - type: antagSpecifier
   parent: RestrictedAntag

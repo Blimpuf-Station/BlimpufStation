@@ -237,7 +237,8 @@ public sealed partial class HumanoidAppearanceSystem : SharedHumanoidAppearanceS
         humanoid.HiddenLayers = new Dictionary<HumanoidVisualLayers, SlotFlags>();
         humanoid.CustomBaseLayers = customBaseLayers;
         humanoid.Sex = profile.Sex;
-        humanoid.Gender = profile.Gender;
+        humanoid.SecondaryGender = profile.SecondaryGender; // Blimpuf - add secondary gender
+        SetGender((uid, humanoid), profile.Gender); // Blimpuf
         humanoid.Age = profile.Age;
         humanoid.Species = profile.Species;
         humanoid.SkinColor = profile.Appearance.SkinColor; //starlight

@@ -7,6 +7,7 @@
   - !type:DepartmentTimeRequirement
     department: Civilian
     time: 0.5h
+  setPreference: false
   startingGear: PerformerGear
   icon: "JobIconPerformer"
   supervisors: job-supervisors-service-arts

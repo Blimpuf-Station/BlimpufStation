@@ -1,24 +1,25 @@
-# Best job.
-
 - type: job
   id: ChiefMedicalOfficer
   name: job-name-cmo
   description: job-description-cmo
   playTimeTracker: JobChiefMedicalOfficer
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobChemist
-      time: 7h # Starlight
-    - !type:RoleTimeRequirement
-      role: JobMedicalDoctor
-      time: 7h # Starlight
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 20h # Starlight
-    - !type:TraitsRequirement # Starlight
-      traits:
-        - Iterator
-      inverted: true
+  - !type:RoleTimeRequirement
+    role: JobChemist
+    time: 5h
+  - !type:RoleTimeRequirement
+    role: JobMedicalDoctor
+    time: 4h
+  - !type:RoleTimeRequirement
+    role: JobSurgeon
+    time: 2h
+  - !type:DepartmentTimeRequirement
+    department: Medical
+    time: 20h
+  - !type:TraitsRequirement
+    traits:
+    - Iterator
+    inverted: true
   weight: 10
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"

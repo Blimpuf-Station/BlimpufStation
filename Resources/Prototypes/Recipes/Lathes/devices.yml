@@ -156,6 +156,11 @@
   id: OreBagOfHolding
   result: OreBagOfHolding
 
+- type: latheRecipe # Blimpuf
+  parent: ClothingBackpackHolding
+  id: ScrapBagOfHolding
+  result: ScrapBagOfHolding
+
 - type: latheRecipe
   id: ClothingMaskWeldingGas
   result: ClothingMaskWeldingGas
@@ -204,6 +209,30 @@
     Steel: 1000
     Glass: 500
     Silver: 100
+
+# Blimpuf Start
+- type: latheRecipe
+  id: WeaponProtoKineticBlaster
+  result: WeaponProtoKineticBlaster
+  categories:
+    - Weapons
+  completetime: 5
+  materials:
+    Steel: 750
+    Glass: 300
+    Silver: 100
+
+- type: latheRecipe
+  id: WeaponProtoKineticRailgun
+  result: WeaponProtoKineticRailgun
+  categories:
+    - Weapons
+  completetime: 5
+  materials:
+    Steel: 1500
+    Glass: 750
+    Silver: 200
+# Blimpuf End
 
 - type: latheRecipe
   id: WeaponTetherGun

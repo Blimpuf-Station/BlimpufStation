@@ -1,0 +1,36 @@
+- type: lobbyBackground
+  id: SlimesInSpace
+  background: /Textures/_Blimpuf/LobbyScreens/SlimesInSpace.webp
+  title: lobby-state-background-slimesinspace-title
+  artist: lobby-state-background-slimesinspace-artist
+
+- type: lobbyBackground
+  id: LocalBotanistsMissing
+  background: /Textures/_Blimpuf/LobbyScreens/LocalBotanistsMissing.webp
+  title: lobby-state-background-localbotanistsmissing-title
+  artist: lobby-state-background-localbotanistsmissing-artist
+
+- type: lobbyBackground
+  id: TheCaptainVersusNarsie
+  background: /Textures/_Blimpuf/LobbyScreens/TheCaptainVersusNar'sie.webp
+  title: lobby-state-background-thecaptainversusnarsie-title
+  artist: lobby-state-background-thecaptainversusnarsie-artist
+
+- type: lobbyBackground
+  id: FearIsHonk
+  background: /Textures/_Blimpuf/LobbyScreens/TheOnlyThingTheyFearIsHonk.webp
+  title: lobby-state-background-fearishonk-title
+  artist: lobby-state-background-fearishonk-artist
+
+- type: lobbyBackground
+  id: StationVisitor
+  background: /Textures/_Blimpuf/LobbyScreens/StationVisitor.webp
+  title: lobby-state-background-stationvisitor-title
+  artist: lobby-state-background-stationvisitor-artist
+
+- type: lobbyBackground
+  id: ThingsToSay
+  background: /Textures/_Blimpuf/LobbyScreens/ThingsToSay.webp
+  title: lobby-state-background-thingstosay-title
+  artist: lobby-state-background-thingstosay-artist
+

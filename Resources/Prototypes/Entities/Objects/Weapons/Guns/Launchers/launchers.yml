@@ -84,7 +84,7 @@
     price: 10000
 
 - type: entity
-  parent: [ BaseWeaponLauncher, BaseGunWieldable, BaseJanitorContraband ] # Starlight: major -> jani contra
+  parent: [ BaseWeaponLauncher, BaseGunWieldable, BaseJanitorContraband, BaseContrabandTier2 ] # Starlight: major -> jani contra; Blimpuf
   id: WeaponLauncherHydra
   name: hydra
   description: PLOOP... FSSSSSS...
@@ -131,7 +131,7 @@
     proto: GrenadeFrag
   - type: ScanDetectable # Starlight: major contra (I think this is valid?)
   - type: Contraband
-    severity: Major
+    tier: Tier3 # Blimpuf
 
 - type: entity
   name: RPG-7
@@ -392,7 +392,7 @@
       - GrappleGun
 
 - type: entity
-  parent: WeaponNinjaChainSickle
+  parent: WeaponGrapplingGun
   id: WeaponGrapplingGunSyndie
   name: grappler gun # Starlight
   description: There's a heft to this grappling gun... you wonder what could possibly be inside.
@@ -406,6 +406,7 @@
       ropeSprite:
         sprite: Objects/Weapons/Guns/Launchers/grappling_gun.rsi
         state: rope
+    - type: LandAtCursor
     - type: Ensnaring
       freeTime: 2.0
       breakoutTime: 6 # 1/5th as long as ninja chain breakout

@@ -85,6 +85,7 @@
     allowedStates:
     - Alive
     - Critical
+    - Dead
     damage:
       groups:
         Airloss: -1
@@ -132,6 +133,7 @@
       Dead:
         Base: eeeplet_dead
   - type: MobThresholds
+    allowRevives: true
     thresholds:
       0: Alive
       100: Dead
@@ -221,6 +223,7 @@
       Dead:
         Base: eeep_dead
   - type: MobThresholds
+    allowRevives: true
     thresholds:
       0: Alive
       400: Critical

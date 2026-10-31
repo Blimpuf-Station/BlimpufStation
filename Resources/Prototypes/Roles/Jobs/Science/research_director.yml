@@ -6,14 +6,14 @@
   requirements:
   - !type:RoleTimeRequirement
     role: JobScientist
-    time: 10h # Starlight
+    time: 5h
   - !type:RoleTimeRequirement
     role: JobRoboticist
-    time: 5h # Starlight
+    time: 5h
   - !type:DepartmentTimeRequirement
     department: Science
-    time: 20h # Starlight
-  - !type:TraitsRequirement # Starlight
+    time: 15h
+  - !type:TraitsRequirement
     traits:
       - Iterator
     inverted: true

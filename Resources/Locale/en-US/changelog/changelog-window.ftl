@@ -12,7 +12,7 @@ changelog-button = Changelog
 changelog-button-new-entries = Changelog (new!)
 
 changelog-tab-title-Changelog = Changelog
-changelog-tab-title-ChangelogStarlight = STARLIGHT Changelog
+changelog-tab-title-ChangelogBlimpuf = Blimpuf Changelog
 changelog-tab-title-Admin = Admin
 changelog-tab-title-Maps = Maps
 changelog-tab-title-Rules = Rules

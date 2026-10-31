@@ -4,6 +4,8 @@
   name: advanced blood-red magboots
   description: Reverse-engineered from the Chief Engineers state-of-the-art magboots. They have an experimental magnetic pull of which does not slow the user, as well as the old integrated thrusters previous models had. The magnetic pull of these boots keep the user so stable that they have a harder time falling over from typical methods of stamina damage. It can hold 1.5 L of gas. # Starlight
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier4
   - type: Sprite
     sprite: _Blimpuf/Clothing/Shoes/Boots/magboots-syndicate-advanced.rsi
     state: icon
@@ -26,7 +28,11 @@
   - type: Item
     sprite: null
     size: Normal
-  - type: StaminaResistance # I cannot see how this could possibly be overpowered in the slightest c:
-    damageCoefficient: 0.5
   - type: StaticPrice
     price: 1500
+  - type: ComponentToggler
+    components:
+      - type: NoSlip
+      - type: StaminaResistance # I cannot see how this could possibly be overpowered in the slightest c:
+        damageCoefficient: 0.5
+

@@ -1,5 +1,5 @@
 - type: cloudEmote
-  id: Mark
+  id: cloud-emote-mark
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -7,7 +7,7 @@
     state: emote_mark
 
 - type: cloudEmote
-  id: Lenny
+  id: cloud-emote-lenny
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -15,7 +15,7 @@
     state: emote_lenny
 
 - type: cloudEmote
-  id: Nervous
+  id: cloud-emote-nervous
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -23,7 +23,7 @@
     state: emote_nervous
 
 - type: cloudEmote
-  id: Snore
+  id: cloud-emote-snore
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -31,7 +31,7 @@
     state: emote_snore
 
 - type: cloudEmote
-  id: Stare
+  id: cloud-emote-stare
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -39,7 +39,7 @@
     state: emote_stare
 
 - type: cloudEmote
-  id: Weh
+  id: cloud-emote-weh
   animationTime: 3
   sound: /Audio/Items/Toys/weh.ogg # Weh!
   icon:
@@ -47,7 +47,7 @@
     state: emote_weh
 
 - type: cloudEmote
-  id: Xp
+  id: cloud-emote-xp
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -55,7 +55,7 @@
     state: emote_xp
 
 - type: cloudEmote
-  id: Yes
+  id: cloud-emote-yes
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -63,7 +63,7 @@
     state: emote_yes
 
 - type: cloudEmote
-  id: Abductor
+  id: cloud-emote-abductor
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -71,7 +71,7 @@
     state: emote_abductor
 
 - type: cloudEmote
-  id: Amongus
+  id: cloud-emote-amongus
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -79,7 +79,7 @@
     state: emote_amongus
 
 - type: cloudEmote
-  id: Cool
+  id: cloud-emote-cool
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -87,7 +87,7 @@
     state: emote_cool
 
 - type: cloudEmote
-  id: Crying
+  id: cloud-emote-crying
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -95,7 +95,7 @@
     state: emote_crying
 
 - type: cloudEmote
-  id: Dizzy
+  id: cloud-emote-dizzy
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -103,7 +103,7 @@
     state: emote_dizzy
 
 - type: cloudEmote
-  id: Flustered
+  id: cloud-emote-flustered
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -111,7 +111,7 @@
     state: emote_flustered
 
 - type: cloudEmote
-  id: Heart
+  id: cloud-emote-heart
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -119,7 +119,7 @@
     state: emote_heart
 
 - type: cloudEmote
-  id: Huh
+  id: cloud-emote-huh
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -127,7 +127,7 @@
     state: emote_huh
 
 - type: cloudEmote
-  id: Man
+  id: cloud-emote-man
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -135,7 +135,7 @@
     state: emote_man
 
 - type: cloudEmote
-  id: No
+  id: cloud-emote-no
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -143,7 +143,7 @@
     state: emote_no
 
 - type: cloudEmote
-  id: OwO
+  id: cloud-emote-owo
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -151,7 +151,7 @@
     state: emote_owo
 
 - type: cloudEmote
-  id: Pause
+  id: cloud-emote-pause
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -159,7 +159,7 @@
     state: emote_pause
 
 - type: cloudEmote
-  id: Question
+  id: cloud-emote-question
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -167,7 +167,7 @@
     state: emote_question
 
 - type: cloudEmote
-  id: Shocked
+  id: cloud-emote-shocked
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -175,7 +175,7 @@
     state: emote_shocked
 
 - type: cloudEmote
-  id: Sing
+  id: cloud-emote-sing
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -183,7 +183,7 @@
     state: emote_sing
 
 - type: cloudEmote
-  id: Smile
+  id: cloud-emote-smile
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:
@@ -191,7 +191,7 @@
     state: emote_smile
 
 - type: cloudEmote
-  id: Smoile
+  id: cloud-emote-smoile
   animationTime: 3
   sound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
   icon:

@@ -14,7 +14,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/_Starlight/Shuttles/emergency_raven.yml
+          emergencyShuttlePath: /Maps/_Blimpuf/Shuttles/Evac/emergency_raven.yml # Blimpuf
         - type: StationJobs
           availableJobs:
             #service
@@ -66,7 +66,6 @@
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
             Boxer: [ 2, 2 ]
-            Performer: [ 1, 2 ]
             #silicon
             StationAi: [ 1, 1 ]
             Borg: [ 3, 3 ]

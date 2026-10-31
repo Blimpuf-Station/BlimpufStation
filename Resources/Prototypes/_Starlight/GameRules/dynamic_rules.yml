@@ -293,6 +293,13 @@
           - !type:HasBudgetCondition
           - !type:RoundDurationCondition
             min: 1800 # 30 minutes
+        - id: SamuraiSpawn
+          weight: 15
+          prob: 0.85
+          conditions:
+            - !type:HasBudgetCondition
+            - !type:RoundDurationCondition
+              min: 1800 # 30 minutes
         - id: ParadoxCloneSpawn
           weight: 20
           prob: 0.85 # Give it a small chance to fail, since it'll basically happen every round if I don't do this...
@@ -660,6 +667,13 @@
           - !type:HasBudgetCondition
           - !type:RoundDurationCondition
             min: 1800 # 30 minutes
+        - id: SamuraiSpawn
+          weight: 15
+          prob: 0.85
+          conditions:
+            - !type:HasBudgetCondition
+            - !type:RoundDurationCondition
+              min: 1800 # 30 minutes
         - id: ParadoxCloneSpawn
           weight: 20
           prob: 0.85 # Give it a small chance to fail, since it'll basically happen every round if I don't do this...

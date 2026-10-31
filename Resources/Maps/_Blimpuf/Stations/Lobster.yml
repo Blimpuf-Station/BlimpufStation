@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 21:25:33
-  entityCount: 25138
+  entityCount: 25134
 maps:
 - 1
 grids:
@@ -15061,11 +15061,6 @@ entities:
     components:
     - type: Transform
       pos: -0.5,48.5
-      parent: 2
-  - uid: 974
-    components:
-    - type: Transform
-      pos: -10.5,26.5
       parent: 2
   - uid: 975
     components:
@@ -68347,15 +68342,6 @@ entities:
     - type: Transform
       pos: 11.499425,28.415476
       parent: 2
-- proto: ClothingUniformJumpskirtHoPTurtleneck
-  entities:
-  - uid: 11285
-    components:
-    - type: Transform
-      parent: 11284
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: ClothingUniformJumpskirtHoSBlack
   entities:
   - uid: 11249
@@ -68480,15 +68466,6 @@ entities:
       inSlotFlag: INNERCLOTHING
     - type: Physics
       canCollide: False
-- proto: ClothingUniformJumpsuitHoPTurtleneck
-  entities:
-  - uid: 11286
-    components:
-    - type: Transform
-      parent: 11284
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: ClothingUniformJumpsuitHoSBlack
   entities:
   - uid: 11251
@@ -110259,33 +110236,6 @@ entities:
     - type: Transform
       pos: -24.5,32.5
       parent: 2
-- proto: LockerHeadOfPersonnelFilled
-  entities:
-  - uid: 11284
-    components:
-    - type: Transform
-      pos: -10.5,25.5
-      parent: 2
-    - type: EntityStorage
-      air:
-        volume: 200
-        immutable: False
-        temperature: 293.14673
-        moles:
-          Oxygen: 1.7459903
-          Nitrogen: 6.568249
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 11285
-          - 11286
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
 - proto: LockerHeadOfSecurityFilled
   entities:
   - uid: 11246
@@ -154535,4 +154485,19 @@ entities:
       pos: -10.45,37.9
       parent: 2
       rot: 4.71238898038469 rad
+- proto: LockerHeadOfPersonnelFilled
+  entities:
+  - uid: 25221
+    components:
+    - type: Transform
+      pos: -10.5,26.5
+      parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 25222
+    components:
+    - type: Transform
+      pos: -10.5,25.5
+      parent: 2
+      rot: 1.5707963267948966 rad
 ...

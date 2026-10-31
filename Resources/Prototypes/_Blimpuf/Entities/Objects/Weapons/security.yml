@@ -1,6 +1,6 @@
 - type: entity
   name: enforcer stun baton
-  parent: [ Stunbaton, BaseSecurityContraband ]
+  parent: [ BaseStunbaton, BaseRepresentativesContraband, BaseContrabandTier2 ]
   id: EnforcerStunbaton
   components:
   - type: Sprite

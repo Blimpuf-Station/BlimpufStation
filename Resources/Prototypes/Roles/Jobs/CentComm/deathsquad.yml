@@ -4,11 +4,9 @@
   description: job-description-deathsquad
   playTimeTracker: JobDeathSquad
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 20h
   - !type:DepartmentTimeRequirement
     department: Security
-    time: 10h
+    time: 6h
   setPreference: false
   startingGear: DeathSquadGear
   icon: "JobIconDeathSquad"

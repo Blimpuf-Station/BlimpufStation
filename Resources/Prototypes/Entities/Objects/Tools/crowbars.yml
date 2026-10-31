@@ -194,7 +194,7 @@
 
 # Abductor's Crowbar
 - type: entity
-  parent: BaseCrowbar
+  parent: [BaseCrowbar, BaseContrabandTier4] # Blimpuf
   id: CrowbarAbductor
   name: abductor's crowbar
   description: A multipurpose tool to pry open doors and fight interdimensional invaders.

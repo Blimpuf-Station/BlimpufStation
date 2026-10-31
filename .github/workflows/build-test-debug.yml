@@ -7,11 +7,11 @@ concurrency:
 
 on:
   push:
-    branches: [ master, staging, stable, Starlight, starlight-dev, upstream-devtest, fix/tests ]
+    branches: [ blimpuf-dev, blimpuf-staging, blimpuf-live ]
   merge_group:
   pull_request:
     types: [ opened, reopened, synchronize, ready_for_review ]
-    branches: [ master, staging, stable, Starlight, starlight-dev, upstream-devtest ]
+    branches: [ blimpuf-dev, blimpuf-staging, blimpuf-live ]
 
 jobs:
   build:

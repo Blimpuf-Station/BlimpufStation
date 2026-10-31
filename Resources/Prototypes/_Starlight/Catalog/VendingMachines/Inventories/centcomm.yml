@@ -9,15 +9,13 @@
     BoxFolderCentCom: 8
     HandLabeler: 4
     RubberStampCentcom: 5
-    RubberStampCAD: 5
-    RubberStampCCD: 5
-    RubberStampCED: 5
-    RubberStampCID: 5
-    RubberStampCMD: 5
-    RubberStampCRD: 5
-    RubberStampCDD: 5
-    RubberStampCSOD: 5
-    RubberStampCSD: 5
+    RubberStampCDAA: 5
+    RubberStampCDL: 5
+    RubberStampCDE: 5
+    RubberStampCDHM: 5
+    RubberStampCDR: 5
+    RubberStampCDGS: 5
+    RubberStampCDSW: 5
     RubberStampAcknowledged: 5
     RubberStampMissingStamps: 5
     RubberStampIncorrectStamps: 5

@@ -1,6 +1,6 @@
 - type: entity
   name: Central Command representative's pen
-  parent: [PenEmbeddable, BaseCommandContraband]
+  parent: [PenEmbeddable, BaseRepresentativesContraband]
   id: PenNTR
   description: The CC Representative's own unique pen, just not as sharp.
   components:

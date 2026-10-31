@@ -4,23 +4,25 @@
   description: job-description-hos
   playTimeTracker: JobHeadOfSecurity
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobWarden
-      time: 10h # Starlight
-    - !type:RoleTimeRequirement
-      role: JobDetective
-      time: 5h # knowing how to use the tools is important # Starlight
-    - !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 15h # Starlight
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 50h # Starlight - Literally the most pressured role in the game, you need extensive knowledge of your department
-    - !type:TraitsRequirement # Starlight
-      traits:
-        - Iterator
-        - Blindness
-      inverted: true
+  - !type:OverallPlaytimeRequirement
+    time: 40h
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 30h
+  - !type:RoleTimeRequirement
+    role: JobWarden
+    time: 10h
+  - !type:RoleTimeRequirement
+    role: JobDetective
+    time: 3h
+  - !type:RoleTimeRequirement
+    role: JobSecurityOfficer
+    time: 5h
+  - !type:TraitsRequirement
+    traits:
+      - Iterator
+      - Blindness
+    inverted: true
   weight: 10
   startingGear: HoSGear
   icon: "JobIconHeadOfSecurity"

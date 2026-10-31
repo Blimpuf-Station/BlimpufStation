@@ -24,8 +24,7 @@
         - id: FaxMachineFlatpack
         - id: ClothingOuterHardsuitNtrep
         - id: BriefcaseSecure
-        - !type:NestedSelector
-          tableId: CorporateDocumentTable
+        - id: BookCommandTrainingManual
 
 - type: entity
   id: LockerRepresentativeFilledBluespaced
@@ -62,8 +61,6 @@
         - id: PrinterDocFlatpack
         - id: FaxMachineFlatpack
         - id: BoxMagiCircuitBoards
-        - !type:NestedSelector
-          tableId: SecureDocumentTable
 
 - type: entity
   id: LockerMagistrateFilledBluespaced
@@ -96,8 +93,6 @@
         - id: LuxuryPen
         - id: BoxFolderCentComClipboard
         - id: BriefcaseBrown # Empty
-        - !type:NestedSelector
-          tableId: CriminalDocumentTable
 
 - type: entity
   id: LockerBlueshieldFilled

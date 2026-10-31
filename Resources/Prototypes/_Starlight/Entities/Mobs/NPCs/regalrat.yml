@@ -52,9 +52,9 @@
     makeSentient: true
     name: ghost-role-information-rat-servant-name
     description: ghost-role-information-rat-servant-description
-    rules: ghost-role-information-antagonist-rules
+    rules: ghost-role-information-familiar-rules
     mindRoles:
-    - MindRoleRatKing
+    - MindRoleGhostRoleFamiliar
     raffle:
       settings: short
   - type: GhostTakeoverAvailable

@@ -948,6 +948,7 @@
 - type: loadoutGroup
   id: CargoTechnicianEyewear
   name: loadout-group-cargo-technician-eyewear
+  minLimit: 0
   loadouts:
     - CargoTechnicianCourierGoggles
 
@@ -1674,7 +1675,6 @@
   minLimit: 2
   hidden: true
   loadouts:
-  - EmergencyDipsomaniaSyndicate # Blimpuf
   - EmergencyNitrogenSyndicate
   - EmergencyOxygenSyndicate
   - EmergencyElfOxygenSyndicate # Starlight
@@ -1689,7 +1689,6 @@
   minLimit: 2
   hidden: true
   loadouts:
-  - EmergencyDipsomaniaMilitaryDouble # Blimpuf
   - EmergencyNitrogenMilitaryDouble
   - EmergencyOxygenMilitaryDouble
   - EmergencyElfOxygenMilitaryDouble # Starlight

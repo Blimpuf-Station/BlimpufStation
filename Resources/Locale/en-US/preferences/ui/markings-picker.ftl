@@ -37,3 +37,5 @@ markings-category-Arms = Arms
 markings-category-Legs = Legs
 markings-category-Tail = Tail
 markings-category-Overlay = Overlay
+# Aurora's Song
+markings-category-NeckFluff = Neck Fluff

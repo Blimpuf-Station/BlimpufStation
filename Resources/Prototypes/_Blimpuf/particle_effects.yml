@@ -1,0 +1,34 @@
+- type: particleEffect
+  id: BLNinjaGlovesGlitch
+  sprite:
+    sprite: _Starfall/Particles/generic.rsi
+    state: cross
+  shader: unshaded
+  colorOverLifetime:
+    - time: 0.0
+      color: "#17873EFF"
+    - time: 0.1
+      color: "#17873EFF"
+    - time: 0.5
+      color: "#2AEB6DBB"
+    - time: 1.0
+      color: "#2AEB6D00"
+  lifetime: 0.15
+  lifetimeVariance: 0.2
+  speed: 1.5
+  speedVariance: 1.1
+  particleSize: 0.9
+  stretchFactor: 0.4
+  emissionRate: 60
+  maxCount: 60
+  burst: false
+  duration: 0
+  gravity: 0.5 # Higher number, faster they fall up or down
+  drag: 0.05
+  noiseStrength: 0.5
+  noiseFrequency: 1.2
+  spreadAngle: 15
+  emitAngle: 0
+  shape:
+    type: CircleFill
+    radius: 0.1

@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 09:42:02
-  entityCount: 43148
+  entityCount: 43143
 maps:
 - 1
 grids:
@@ -146576,13 +146576,6 @@ entities:
     - type: Transform
       pos: -21.51571,0.50600135
       parent: 2
-- proto: PlushieLizardJobHeadofpersonnel
-  entities:
-  - uid: 22851
-    components:
-    - type: Transform
-      pos: -4.4629784,27.528343
-      parent: 2
 - proto: PlushieLizardJobScientist
   entities:
   - uid: 22853
@@ -174045,11 +174038,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -10.5,27.5
-      parent: 2
-  - uid: 27186
-    components:
-    - type: Transform
-      pos: -4.5,27.5
       parent: 2
   - uid: 27187
     components:
@@ -255410,4 +255398,19 @@ entities:
     - type: Transform
       pos: -32.5329,59.477055
       parent: 2
+- proto: PlushieLizardJobHeadofpersonnel
+  entities:
+  - uid: 43268
+    components:
+    - type: Transform
+      pos: -2.4629784,25.528343
+      parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 43269
+    components:
+    - type: Transform
+      pos: -4.5,27.5
+      parent: 2
+      rot: 1.5707963267948966 rad
 ...

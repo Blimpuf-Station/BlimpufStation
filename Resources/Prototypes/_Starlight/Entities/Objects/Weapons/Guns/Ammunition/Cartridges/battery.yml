@@ -1,7 +1,7 @@
 - type: entity
   id: BaseCartridgeBattery
   name: cartridge (laser)
-  parent: [ BaseCartridge, BaseRestrictedContraband ]
+  parent: [BaseCartridge, BaseContrabandTier3, BaseSecurityContraband, BaseSalvageContraband] # Blimpuf
   abstract: true
   components:
   - type: Tag
@@ -17,8 +17,6 @@
       map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
-  - type: Contraband
-    allowedDepartments: [ Security, CentralCommand, Command, Cargo ]
 
 - type: entity
   id: CartridgeBattery

@@ -1,6 +1,6 @@
 - type: entity
   name: Lecter
-  parent: [WeaponRifleLecter, BaseSecurityContraband]
+  parent: [WeaponRifleLecter, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   id: WeaponRifleLecterRubber
   suffix: Non-lethal
   components:
@@ -25,7 +25,7 @@
 
 - type: entity
   name: lr-30
-  parent: [BaseItem, BaseGunWieldable, BaseSecuritySalvageContraband]
+  parent: [BaseItem, BaseGunWieldable, BaseSecurityContraband, BaseSalvageContraband, BaseContrabandTier3] # Blimpuf
   id: WeaponLr30
   description: Energy carbine with lethal mode.
   components:
@@ -77,7 +77,7 @@
 
 - type: entity
   name: IK-60 laser carbine
-  parent: [BaseItem, BaseGunWieldable, BaseSecurityContraband]
+  parent: [BaseItem, BaseGunWieldable, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   id: WeaponIK60
   description: A short, compact rifle-like carbine that relies more on battery-powered ammunition rather than a built-in battery. Used by the NanoTrasen Space Force in combat operations.
   components:
@@ -225,7 +225,7 @@
 
 - type: entity
   name: Leikha
-  parent: [ BaseWeaponRifle, BaseSecurityContraband ]
+  parent: [ BaseWeaponRifle, BaseSecurityContraband, BaseContrabandTier3 ] # Blimpuf
   id: WeaponRifleLeikha
   description: A high end military grade assault rifle. This one has been retrofitted with a scope and a burst reciever. Uses .20 rifle ammo.
   components:
@@ -284,7 +284,7 @@
 
 - type: entity
   name: L10 DMR
-  parent: [ BaseWeaponRifle, BaseSecurityContraband ]
+  parent: [ BaseWeaponRifle, BaseSecurityContraband, BaseContrabandTier3 ] # Blimpuf
   id: WeaponRifleL10
   description: "A scoped marksman rifle for medium range engagements, built on the Lecter platform.\nChambered in .45 magnum."
   components:
@@ -388,7 +388,7 @@
 
 - type: entity
   name: Peacemaker
-  parent: [ BaseWeaponRifle, BaseSecurityContraband ]
+  parent: [ BaseWeaponRifle, BaseSecurityContraband, BaseContrabandTier3 ] # Blimpuf
   id: WeaponRiflePeacemaker
   description: The best or worst thing you'll ever see, depending if it's pointed at you or not. Uses .20 rifle ammo.
   components:
@@ -436,7 +436,7 @@
 
 - type: entity
   name: M18-Militant
-  parent: [BaseWeaponRifle, BaseSalvageContraband]
+  parent: [BaseWeaponRifle, BaseSalvageContraband, BaseContrabandTier3] # Blimpuf
   id: WeaponRifleM18
   description: Aged yet dependable, this old-world assault rifle is chambered in .20 rifle ammunition. Renowned for its reliability and ease of maintenance even in the harshest environments, it remains a staple among your station's merce- salvage forces.
   components:
@@ -561,7 +561,7 @@
 
 - type: entity
   name: Lawbringer
-  parent: [BaseWeaponRifle, BaseSecurityContraband]
+  parent: [BaseWeaponRifle, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   id: WeaponRifleLawbringer
   description: "A bullpup carbine of modern design, commissioned by CentComm for their security forces.\nFeeds from .30 rifle magazines."
   components:

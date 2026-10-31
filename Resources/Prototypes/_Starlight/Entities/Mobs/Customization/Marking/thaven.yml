@@ -31,7 +31,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: bald
 - type: marking
-  id: ThavenHairBaldface
+  id: ThavenHairBaldfade
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -39,7 +39,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: baldface
 - type: marking
-  id: ThavenHairBedHair
+  id: ThavenHairBedhead
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -47,7 +47,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: bedhead
 - type: marking
-  id: ThavenHairBedHair2
+  id: ThavenHairBedheadv2
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -55,7 +55,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: bedhead2
 - type: marking
-  id: ThavenHairBedHair3
+  id: ThavenHairBedheadv3
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -279,7 +279,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: cia
 - type: marking
-  id: ThavenHairClassicafro
+  id: ThavenHairClassicAfro
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -287,7 +287,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: classicafro
 - type: marking
-  id: ThavenHairClassiccia
+  id: ThavenHairClassicCia
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -295,7 +295,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: classiccia
 - type: marking
-  id: ThavenHairClassicciabusiness
+  id: ThavenHairClassicciaBusiness
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -303,7 +303,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: classicciabusiness
 - type: marking
-  id: ThavenHairClassiccornrows
+  id: ThavenHairClassicCornrows
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -311,7 +311,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: classiccornrows
 - type: marking
-  id: ThavenHairClassicFloorlengthBedHair
+  id: ThavenHairClassicFloorlengthBedhead
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -320,7 +320,7 @@
     state: classicfloorlength_bedhead
 
 - type: marking
-  id: ThavenHairClassiclong2
+  id: ThavenHairClassicLong2
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -328,7 +328,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: classiclong2
 - type: marking
-  id: ThavenHairClassiclong3
+  id: ThavenHairClassicLong3
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -336,7 +336,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: classiclong3
 - type: marking
-  id: ThavenHairClassicmodern
+  id: ThavenHairClassicModern
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -344,7 +344,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: classicmodern
 - type: marking
-  id: ThavenHairClassicmulder
+  id: ThavenHairClassicMulder
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -352,7 +352,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: classicmulder
 - type: marking
-  id: ThavenHairClassicwisp
+  id: ThavenHairClassicWisp
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -360,7 +360,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: classicwisp
 - type: marking
-  id: ThavenHairCoffeehouse
+  id: ThavenHairCoffeeHouse
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -496,7 +496,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: dreads
 - type: marking
-  id: ThavenHairDrillhair
+  id: ThavenHairDrillHair
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -576,7 +576,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: flair
 - type: marking
-  id: ThavenHairFloorlengthBedHair
+  id: ThavenHairFloorlengthBedhead
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -784,7 +784,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: long3
 - type: marking
-  id: ThavenHairLongBedHair
+  id: ThavenHairLongBedhead
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -792,7 +792,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: long_bedhead
 - type: marking
-  id: ThavenHairLongBedHair2
+  id: ThavenHairLongBedhead2
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -800,7 +800,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: long_bedhead2
 - type: marking
-  id: ThavenHairLongbundled
+  id: ThavenHairLongWithBundles
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -888,7 +888,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: medfade
 - type: marking
-  id: ThavenHairMediumsidepart
+  id: ThavenHairMediumSidepart
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -1144,7 +1144,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: shaved
 - type: marking
-  id: ThavenHairShavedmohawk
+  id: ThavenHairShavedMohawk
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -1216,7 +1216,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: shortovereye
 - type: marking
-  id: ThavenHairShoulderlengthovereye
+  id: ThavenHairShoulderLengthOverEye
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -1288,7 +1288,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: spikyponytail
 - type: marking
-  id: ThavenHairSpookylong
+  id: ThavenHairSpookyLong
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH
@@ -1400,7 +1400,7 @@
   - sprite: _Starlight/Mobs/Customization/thaven/thaven_hair.rsi
     state: twintail
 - type: marking
-  id: ThavenHairTwostrands
+  id: ThavenHairTwoStrands
   bodyPart: Hair
   markingCategory: Hair
   speciesRestriction: [ Thaven, NeoThaven , Neocyte] #FH

@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ClothingShoesBootsMagBase, BaseBlueShieldContraband, ClothingShoesMilitaryBase ]
+  parent: [ClothingShoesBootsMagBase, BaseRepresentativesContraband, ClothingShoesMilitaryBase, BaseContrabandTier2 ] # Blimpuf
   id: ClothingShoesBootsMagBSO
   name: central command enforcer magboots
   description: A pair of standard magnetic boots, issued alongside the CCE hardsuit.

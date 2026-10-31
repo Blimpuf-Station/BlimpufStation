@@ -1,6 +1,6 @@
 - type: body
   id: NeoShadekin
-  name: neoshadekin # Starlight, quotation marks removed
+  name: neoshadekin
   root: torso
   slots:
     head:
@@ -9,7 +9,7 @@
       - torso
       organs:
         brain: OrganNeocyteBrain
-        eyes: OrganProtokinEyes
+        eyes: OrganNeoShadekinEyes
         tongue: OrganNeocyteTongueForked
         eye_implant: null
         brain_implant: null

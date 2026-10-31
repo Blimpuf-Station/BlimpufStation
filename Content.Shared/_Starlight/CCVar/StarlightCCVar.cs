@@ -11,7 +11,7 @@ public sealed partial class StarlightCCVars
     /// Basic CCVars
     /// </summary>
     public static readonly CVarDef<string> LobbyChangelogsList =
-        CVarDef.Create("lobby_changelog.list", "ChangelogStarlight.yml,Changelog.yml", CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("lobby_changelog.list", "ChangelogBlimpuf.yml,Changelog.yml", CVar.SERVER | CVar.REPLICATED);
 
     public static readonly CVarDef<string> ServerName =
         CVarDef.Create("lobby.server_name", "Blimpuf Station!", CVar.SERVER | CVar.REPLICATED);
@@ -27,7 +27,7 @@ public sealed partial class StarlightCCVars
     /// Whether the no EORG popup is enabled.
     /// </summary>
     public static readonly CVarDef<bool> RoundEndNoEorgPopup =
-        CVarDef.Create("game.round_end_eorg_popup_enabled", true, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("game.round_end_eorg_popup_enabled", false, CVar.SERVER | CVar.REPLICATED);
 
     /// <summary>
     /// Skip the no EORG popup.

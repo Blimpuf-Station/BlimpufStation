@@ -4,11 +4,11 @@
   description: job-description-decimus
   playTimeTracker: JobDecimus
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 72000 # 20 hrs
-    - !type:RolesRequirement
-      proto: CCEReq
+  - !type:OverallPlaytimeRequirement
+    time: 50h
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 20h
   setPreference: false
   startingGear: DecimusGear
   icon: JobIconDecimus

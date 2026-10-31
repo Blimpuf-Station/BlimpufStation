@@ -1,6 +1,6 @@
 # CCE hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseBlueShieldContraband]
+  parent: [ClothingOuterHardsuitBase, BaseRepresentativesContraband, BaseContrabandTier2] # Blimpuf
   id: ClothingOuterHardsuitBlueshield
   name: central command enforcer hardsuit
   description: A high-tech hardsuit perfect for diving in front of Mr. Pre- Er, Captain.
@@ -41,11 +41,13 @@
 
 #NTRep Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseGrandTheftContraband]
+  parent: [ClothingOuterHardsuitBase, BaseRepresentativesContraband]
   id: ClothingOuterHardsuitNtrep
   name: Central Command representative hardsuit
   description: It used to be blue, but too many premium cigars turned it tobacco brown.
   components:
+    - type: Contraband
+      tier: Tier3
     - type: Sprite
       sprite: _Starlight/Clothing/OuterClothing/Hardsuits/ntrepspace.rsi
     - type: Clothing
@@ -200,6 +202,8 @@
   name: syndicate infiltration hardsuit
   description: The Syndicate's Special Operations' hardsuit of choice, this hardsuit, as well as durability, has been built with stealth in mind.
   components:
+    - type: Contraband # Blimpuf
+      tier: Tier4
     - type: Sprite
       sprite: _Starlight/Clothing/OuterClothing/Hardsuits/infiltrationsyndie.rsi
     - type: Clothing
@@ -270,6 +274,8 @@
   name: SSF marine hardsuit
   description: SMIRNO!
   components:
+    - type: Contraband # Blimpuf
+      tier: Tier3
     - type: Sprite
       sprite: _Starlight/Clothing/OuterClothing/Hardsuits/sovietmarine.rsi
     - type: Clothing
@@ -355,7 +361,7 @@
 
 # Experimental Security Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseSecurityContraband]
+  parent: [ClothingOuterHardsuitBase, BaseSecurityContraband, BaseContrabandTier2] # Blimpuf
   id: ClothingOuterHardsuitSecurityExperimental
   name: experimental security hardsuit
   description: A high-tech hardsuit meant to eventually replace the standard security suit, it boasts an ID-Lock and Gun-Lock system. Rumors have it that the first prototype was stolen by the syndicate..
@@ -450,7 +456,7 @@
 
 #Mining Specialist Advanced hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseSalvageMiningContraband]
+  parent: [ClothingOuterHardsuitBase, BaseSalvageContraband, BaseMiningContraband]
   id: ClothingOuterHardsuitAdvancedMining
   name: advanced mining hardsuit
   description: An advanced jetpack-equipped hardsuit designed for mining operations.
@@ -517,7 +523,7 @@
 
 #Mining Hardsuit
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseSalvageMiningContraband]
+  parent: [ClothingOuterHardsuitBase, BaseSalvageContraband, BaseMiningContraband]
   id: ClothingOuterHardsuitMining
   name: mining hardsuit
   description: A special suit that protects against hazardous, low pressure environments encountered during space mining.
@@ -1342,3 +1348,76 @@
     sprintModifier: 0.95
   - type: HeldSpeedModifier
   - type: Unremoveable
+
+#Samurai Hardsuit
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseContrabandTier4]
+  id: ClothingOuterHardsuitSamurai
+  name: red samurai hardsuit
+  description: A long passed down relic of the Carp Tooth Clan.
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/samurai-red.rsi
+    - type: Clothing
+      sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/samurai-red.rsi
+    - type: PressureProtection
+      highPressureMultiplier: 0.525
+      lowPressureMultiplier: 10000
+    - type: ClothingSpeedModifier
+      walkModifier: 0.9
+      sprintModifier: 0.9
+    - type: Pierceable
+      level: Metal
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.4
+          Slash: 0.3
+          Piercing: 0.3
+          Caustic: 0.75
+          Heat: 0.5
+          Radiation: 0.75
+      staminaModifier: 0.9
+    - type: ExplosionResistance
+      damageCoefficient: 0.75
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitSamurai
+
+- type: entity
+  parent: ClothingOuterHardsuitSamurai
+  id: ClothingOuterHardsuitBlueSamurai
+  name: blue samurai hardsuit
+  description: A long passed down relic of the Carp Tooth Clan.
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/samurai-blue.rsi
+    - type: Clothing
+      sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/samurai-blue.rsi
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitBlueSamurai
+
+- type: entity
+  parent: ClothingOuterHardsuitSamurai
+  id: ClothingOuterHardsuitGreenSamurai
+  name: green samurai hardsuit
+  description: A long passed down relic of the Carp Tooth Clan.
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/samurai-green.rsi
+    - type: Clothing
+      sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/samurai-green.rsi
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitGreenSamurai
+
+- type: entity
+  parent: ClothingOuterHardsuitSamurai
+  id: ClothingOuterHardsuitPurpleSamurai
+  name: purple samurai hardsuit
+  description: A long passed down relic of the Carp Tooth Clan.
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/samurai-purple.rsi
+    - type: Clothing
+      sprite: _Blimpuf/Clothing/OuterClothing/Hardsuits/samurai-purple.rsi
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitPurpleSamurai

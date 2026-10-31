@@ -13,7 +13,7 @@
 
 - type: entity
   abstract: true
-  parent: BaseAmmoProvider
+  parent: [BaseAmmoProvider, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   id: AmmoProviderShotgunShell
   components:
     - type: Sprite
@@ -32,7 +32,7 @@
 
 # Shotgun Shells
 - type: entity
-  parent: AmmoProviderShotgunShell
+  parent: [BaseContrabandTier2, BaseBartenderContraband, AmmoProviderShotgunShell] # Blimpuf Less-Lethal is Tier 2
   id: BoxBeanbag
   name: box of 12 gauge beanbag slugs # Starlight change: .50 -> 12 gauge
   description: A cardboard box of 12 gauge shotgun shells. Intended to hold less-than-lethal beanbag ammunition. # Starlight change: .50 -> 12 gauge
@@ -52,7 +52,7 @@
       - state: beanbag
 
 - type: entity
-  parent: AmmoProviderShotgunShell
+  parent: [AmmoProviderShotgunShell, BaseSalvageContraband] # Blimpuf
   id: BoxLethalshot
   name: box of 12 gauge buckshot # Starlight change: .50 -> 12 gauge
   description: A cardboard box of 12 gauge shotgun shells. Intended to hold general-purpose kinetic ammunition. # Starlight change: .50 -> 12 gauge
@@ -88,24 +88,31 @@
       - state: slug
 
 - type: entity
-  parent: AmmoProviderShotgunShell
+  parent: BaseAmmoProvider # Blimpuf - Changed Parent to avoid the Contraband Tag
   id: BoxShotgunFlare
   name: box of 12 gauge flares # Starlight change: .50 -> 12 gauge
   description: A cardboard box of 12 gauge shotgun shells. Intended to hold illuminating flare ammunition. # Starlight change: .50 -> 12 gauge
   components:
     - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+        - ShellShotgun
+      capacity: 16
       proto: ShellShotgunFlare
     - type: MagazineVisuals
       magState: mag-flare
       steps: 5
       zeroVisible: false
     - type: Sprite
+      sprite: Objects/Weapons/Guns/Ammunition/Boxes/shotgun.rsi
       layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]
       - state: mag-flare-1
         map: ["enum.GunVisualLayers.Mag"]
       - state: flare
+    - type: Appearance
 
 - type: entity
   parent: AmmoProviderShotgunShell
@@ -148,7 +155,7 @@
       - state: uranium
 
 - type: entity
-  parent: AmmoProviderShotgunShell
+  parent: [BaseContrabandTier1,AmmoProviderShotgunShell] # Blimpuf Practice is Tier 1
   id: BoxShotgunPractice
   name: box of 12 gauge blanks # Starlight change: .50 -> 12 gauge
   description: A cardboard box of 12 gauge shotgun shells. Intended to hold harmless practice ammunition. # Starlight change: .50 -> 12 gauge
@@ -168,7 +175,7 @@
       - state: practice
 
 - type: entity
-  parent: AmmoProviderShotgunShell
+  parent: [BaseContrabandTier2, AmmoProviderShotgunShell, BaseZookeeperContraband] # Blimpuf Less-Lethal is Tier 2
   id: BoxShellTranquilizer
   name: box of 12 gauge tranquilizer slugs # Starlight change: .50 -> 12 gauge
   description: A cardboard box of 12 gauge shotgun shells. Intended to hold nonlethal tranquilizer ammunition. # Starlight change: .50 -> 12 gauge

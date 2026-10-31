@@ -6,7 +6,7 @@
   requirements:
   - !type:RoleTimeRequirement
     role: JobServiceWorker
-    time: 5h # Anti shitter/raider protection. Working on CentComm should require having a basic understanding of game mechanics.
+    time: 1h
   icon: "JobIconCCServiceWorker"
   supervisors: job-supervisors-centcom
   bypassEorPacification: false
@@ -26,7 +26,7 @@
   requirements:
   - !type:RoleTimeRequirement
     role: JobChef
-    time: 5h # Anti shitter/raider protection. Working on CentComm should require having a basic understanding of game mechanics.
+    time: 1h
   setPreference: false
   icon: "JobIconCCChef"
   supervisors: job-supervisors-centcom
@@ -44,7 +44,7 @@
   requirements:
   - !type:RoleTimeRequirement
     role: JobBartender
-    time: 5h # Anti shitter/raider protection. Working on CentComm should require having a basic understanding of game mechanics.
+    time: 1h
   setPreference: false
   icon: "JobIconCCBartender"
   supervisors: job-supervisors-centcom
@@ -62,7 +62,7 @@
   requirements:
   - !type:RoleTimeRequirement
     role: JobJanitor
-    time: 5h # Anti shitter/raider protection. Working on CentComm should require having a basic understanding of game mechanics.
+    time: 1h
   setPreference: false
   icon: "JobIconCCJanitor"
   supervisors: job-supervisors-centcom

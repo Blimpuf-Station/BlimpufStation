@@ -122,7 +122,7 @@
   - type: MindRole
     antag: true
     antagPrototype: RatKing
-    roleType: SoloAntagonist
+    roleType: FreeAgent # Blimpuf Edit - Free Agent
     subtype: role-subtype-ratking
     sortWeight: 50
 

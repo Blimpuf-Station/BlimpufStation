@@ -552,6 +552,21 @@ namespace Content.Server.GameTicking
             if (!_userDb.IsLoadComplete(player))
                 return;
 
+            // Blimpuf start - validate explicitly selected jobs before spawning this character.
+            var jobBans = _banManager.GetJobBans(player.UserId);
+            if (jobBans == null || jobId != null && jobBans.Contains(jobId))
+                return;
+
+            if (jobId != null)
+            {
+                var jobs = new List<ProtoId<JobPrototype>> { jobId };
+                var ev = new IsRoleAllowedEvent(player, jobs, null, profile: profile);
+                RaiseLocalEvent(ref ev);
+                if (ev.Cancelled)
+                    return;
+            }
+            // Blimpuf end
+
             SpawnPlayer(player, profile, station, jobId, silent: silent);
         }
 
@@ -642,7 +657,7 @@ namespace Content.Server.GameTicking
                 var spawn = _robustRandom.Pick(_possiblePositions);
                 var toMap = _transform.ToMapCoordinates(spawn);
 
-                if (_mapManager.TryFindGridAt(toMap, out var gridUid, out _))
+                if (_map.TryFindGridAt(toMap, out var gridUid, out _))
                 {
                     var gridXform = Transform(gridUid);
 

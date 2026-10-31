@@ -5,10 +5,10 @@
   playTimeTracker: JobConsortiumBlueShield
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 72000 # 20h
+    time: 20h
   - !type:RoleTimeRequirement
     role: JobSecurityOfficer
-    time: 18000 # 5h
+    time: 2h
   setPreference: false
   startingGear: NTNCHardsuitGear
   icon: JobIconNTNCBlueShield

@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 09:30:23
-  entityCount: 42417
+  entityCount: 42411
 maps:
 - 1
 grids:
@@ -133749,11 +133749,6 @@ entities:
     - type: Transform
       pos: 7.5,-3.5
       parent: 2
-  - uid: 19495
-    components:
-    - type: Transform
-      pos: 16.5,-33.5
-      parent: 2
   - uid: 19496
     components:
     - type: Transform
@@ -133823,6 +133818,11 @@ entities:
     components:
     - type: Transform
       pos: -16.5,-53.5
+      parent: 2
+  - uid: 42593
+    components:
+    - type: Transform
+      pos: 18.5,-32.5
       parent: 2
 - proto: DonkpocketBoxSpawner
   entities:
@@ -197643,13 +197643,6 @@ entities:
     - type: Transform
       pos: -5.5,43.5
       parent: 2
-- proto: IanPlushie
-  entities:
-  - uid: 28094
-    components:
-    - type: Transform
-      pos: 17.473324,-33.20557
-      parent: 2
 - proto: IceCreamMaker
   entities:
   - uid: 13734
@@ -239514,13 +239507,6 @@ entities:
     - type: Transform
       pos: -47.5,-50.5
       parent: 2
-- proto: SpawnMobCorgi
-  entities:
-  - uid: 34458
-    components:
-    - type: Transform
-      pos: 16.5,-33.5
-      parent: 2
 - proto: SpawnMobCow
   entities:
   - uid: 34459
@@ -247373,11 +247359,6 @@ entities:
     components:
     - type: Transform
       pos: 3.5,-55.5
-      parent: 2
-  - uid: 35623
-    components:
-    - type: Transform
-      pos: 17.5,-33.5
       parent: 2
   - uid: 42343
     components:
@@ -287552,5 +287533,27 @@ entities:
     components:
     - type: Transform
       pos: -29.5,18.5
+      parent: 2
+- proto: IanPlushie
+  entities:
+  - uid: 42590
+    components:
+    - type: Transform
+      pos: 16.473324,-31.20557
+      parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 42591
+    components:
+    - type: Transform
+      pos: 17.5,-33.5
+      parent: 2
+      rot: 1.5707963267948966 rad
+- proto: SpawnMobCorgi
+  entities:
+  - uid: 42594
+    components:
+    - type: Transform
+      pos: 18.5,-32.5
       parent: 2
 ...

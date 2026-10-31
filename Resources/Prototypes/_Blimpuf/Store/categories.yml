@@ -1,10 +1,10 @@
 #uplink categoires
 - type: storeCategory
   id: UplinkResearch
-  name: Research
+  name: store-category-research
   priority: 10
 
 # Blimpuf brand huggables
 - type: storeCategory
   id: BlimpufCrew
-  name: Crew
+  name: store-category-plushie-crew

@@ -14,7 +14,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'SDC'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/_Blimpuf/Shuttles/emergency_sushi.yml
+          emergencyShuttlePath: /Maps/_Blimpuf/Shuttles/Evac/emergency_sushi.yml
         - type: StationJobs
           availableJobs:
             #Command
@@ -34,7 +34,6 @@
             Librarian: [ 1, 1 ]
             Reporter: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
-            Performer: [ 2, 2 ]
             #Engineering
             AtmosphericTechnician: [ 3, 3 ]
             StationEngineer: [ 4, 5 ]

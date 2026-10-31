@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ EncryptionKey, BaseLawContraband ]
+  parent: [ EncryptionKey, BaseRepresentativesContraband ]
   id: EncryptionKeyCorporate
   name: Corporate encryption key
   description: An encryption key used by the most meticulous person.
@@ -17,7 +17,7 @@
       - EncryptionCorporate
 
 - type: entity
-  parent: [ EncryptionKey, BaseNanoTrasenContraband ]
+  parent: [ EncryptionKey, BaseRepresentativesContraband ]
   id: EncryptionKeyNanoTrasen
   name: nanotrasen encryption key
   description: An encryption key used by captain's bosses' bosses.
@@ -46,6 +46,8 @@
   name: soviet encryption key
   description: Priyom. Priyom.
   components:
+  - type: Contraband # Blimpuf
+    tier: Tier3
   - type: EncryptionKey
     channels:
     - Soviet
@@ -74,7 +76,7 @@
       state: expedition_label
 
 - type: entity
-  parent: [ EncryptionKey, BaseSalvageMiningContraband ]
+  parent: [ EncryptionKey, BaseSalvageContraband, BaseMiningContraband ]
   id: EncryptionKeySalvage
   name: salvage encryption key
   description: A dual encryption key used by box-loving explorers.
@@ -115,7 +117,7 @@
     stealGroup: EncryptionKeyHybrid
 
 - type: entity
-  parent: [ EncryptionKey, BaseNanoTrasenContraband ]
+  parent: [ EncryptionKey, BaseRepresentativesContraband ]
   id: EncryptionKeyNCTrainer
   name: nanotrasen career trainer encryption key
   description: An encryption key used by your well-taught corporate training team.

@@ -2,6 +2,7 @@ using System.IO;
 using System.Linq;
 using System.Numerics;
 using System.Text.RegularExpressions;
+using Content.Shared._Blimpuf.IdentityManagement; // Blimpuf
 using Content.Shared.CCVar;
 using Content.Shared.Decals;
 using Content.Shared.Examine;
@@ -19,8 +20,11 @@ using Robust.Shared.GameObjects.Components.Localization;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Random; // Blimpuf
 using Robust.Shared.Serialization.Manager;
 using Robust.Shared.Serialization.Markdown;
+using Robust.Shared.Serialization.Markdown.Mapping; // Blimpuf
+using Robust.Shared.Serialization.Markdown.Sequence; // Blimpuf
 using Robust.Shared.Utility;
 using YamlDotNet.RepresentationModel;
 namespace Content.Shared.Humanoid;
@@ -45,6 +49,7 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
     [Dependency] private MarkingManager _markingManager = default!;
     [Dependency] private GrammarSystem _grammarSystem = default!;
     [Dependency] private IdentitySystem _identity = default!;
+    [Dependency] private IRobustRandom _random = default!; // Blimpuf
 
     public static readonly ProtoId<SpeciesPrototype> DefaultSpecies = "Human";
 
@@ -75,7 +80,55 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
         yamlStream.Load(reader);
 
         var root = yamlStream.Documents[0].RootNode;
-        var export = _serManager.Read<HumanoidProfileExport>(root.ToDataNode(), notNullableOverride: true);
+
+        // Blimpuf start - If markings are nested by body part, extract them.
+        var data = (MappingDataNode) root.ToDataNode();
+        var appearance = data.Get<MappingDataNode>("profile").Get<MappingDataNode>("appearance");
+        // If "markings" is a MappingDataNode instead of a SequenceDataNode, it has nested data instead of a list of markings.
+        if (appearance.TryGet<MappingDataNode>("markings", out var markings))
+        {
+            if (markings.TryGet<MappingDataNode>("Head", out var head))
+            {
+                if (head.TryGet<SequenceDataNode>("Hair", out var hair) &&
+                    hair.Count > 0 && hair[0] is MappingDataNode hairMarking)
+                {
+                    appearance["hair"] = hairMarking["markingId"];
+                    if (hairMarking.TryGet<SequenceDataNode>("markingColor", out var hairColors) &&
+                        hairColors.Count > 0)
+                    {
+                        appearance["hairColor"] = hairColors[0];
+                    }
+                    head.Remove("Hair");
+                }
+                if (head.TryGet<SequenceDataNode>("FacialHair", out var facialHair) &&
+                    facialHair.Count > 0 && facialHair[0] is MappingDataNode facialHairMarking)
+                {
+                    appearance["facialHair"] = facialHairMarking["markingId"];
+                    if (facialHairMarking.TryGet<SequenceDataNode>("markingColor", out var facialHairColors) &&
+                        facialHairColors.Count > 0)
+                    {
+                        appearance["facialHairColor"] = facialHairColors[0];
+                    }
+                    head.Remove("FacialHair");
+                }
+            }
+
+            var flattenedMarkings = new SequenceDataNode();
+            foreach (var bodyRegion in markings.Values)
+            {
+                foreach (var markingRegion in ((MappingDataNode)bodyRegion).Children)
+                {
+                    foreach (var marking in (SequenceDataNode)markingRegion.Value)
+                    {
+                        flattenedMarkings.Add(marking);
+                    }
+                }
+            }
+            appearance["markings"] = flattenedMarkings;
+        }
+
+        var export = _serManager.Read<HumanoidProfileExport>(data, notNullableOverride: true);
+        // Blimpuf end
 
         switch (export.Version)
         {
@@ -108,128 +161,12 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
          * Add custom handling here for forks / version numbers if you care.
          */
 
-        export.Profile = MigrateImportedNeocyteProfile(export.Profile);
         export.Profile.ForcedPrototype = string.Empty;
 
         var profile = export.Profile;
         var collection = IoCManager.Instance;
         profile.EnsureValid(session, collection!);
         return profile;
-    }
-
-    /// <summary>
-    /// Allows legacy Protogen, Cyclorite, and Dwarf characters from other servers to be imported as current species.
-    /// This is only for manual import compatibility.
-    /// </summary>
-    private static HumanoidCharacterProfile MigrateImportedNeocyteProfile(HumanoidCharacterProfile profile)
-    {
-        var changed = false;
-        var result = new HumanoidCharacterProfile(profile)
-        {
-            Species = MigrateImportedSpeciesIdentifier(profile.Species, ref changed),
-            ForcedPrototype = MigrateNeocyteIdentifier(profile.ForcedPrototype, ref changed),
-        };
-
-        var cybernetics = new List<string>(profile.Cybernetics.Count);
-        foreach (var cybernetic in profile.Cybernetics)
-            cybernetics.Add(MigrateNeocyteIdentifier(cybernetic, ref changed));
-        result.Cybernetics = cybernetics;
-
-        var appearance = profile.Appearance.Clone();
-        appearance.HairStyleId = MigrateNeocyteIdentifier(appearance.HairStyleId, ref changed);
-        appearance.FacialHairStyleId = MigrateNeocyteIdentifier(appearance.FacialHairStyleId, ref changed);
-        var markings = new List<Marking>(appearance.Markings.Count);
-        foreach (var marking in appearance.Markings)
-        {
-            var id = MigrateNeocyteIdentifier(marking.MarkingId, ref changed);
-            markings.Add(id == marking.MarkingId
-                ? marking
-                : new Marking(id, marking.MarkingColors, marking.IsGlowing)
-                {
-                    Visible = marking.Visible,
-                    Forced = marking.Forced,
-                });
-        }
-        appearance.Markings = markings;
-        result.Appearance = appearance;
-
-        foreach (var loadout in profile.Loadouts.Values)
-            result = result.WithLoadout(MigrateNeocyteLoadout(loadout, ref changed)!);
-
-        result.SpeciesLoadout = MigrateNeocyteLoadout(profile.SpeciesLoadout, ref changed);
-        return result;
-    }
-
-    private static string MigrateImportedSpeciesIdentifier(string identifier, ref bool changed)
-    {
-        var migrated = identifier switch
-        {
-            "Dwarf" => "Human",
-            "ProtoDwarf" => "NeoHuman",
-            "Cyclorite" => "TNebri",
-            _ => MigrateNeocyteIdentifier(identifier, ref changed),
-        };
-
-        changed |= migrated != identifier;
-        return migrated;
-    }
-
-    private static RoleLoadout? MigrateNeocyteLoadout(RoleLoadout? loadout, ref bool changed)
-    {
-        if (loadout == null)
-            return null;
-
-        var migrated = new RoleLoadout(MigrateNeocyteIdentifier(loadout.Role, ref changed))
-        {
-            EntityName = loadout.EntityName,
-        };
-
-        foreach (var (group, selected) in loadout.SelectedLoadouts)
-        {
-            var migratedGroup = MigrateNeocyteIdentifier(group, ref changed);
-            var migratedSelected = new List<Loadout>(selected.Count);
-            foreach (var selectedLoadout in selected)
-            {
-                migratedSelected.Add(new Loadout
-                {
-                    Prototype = MigrateNeocyteIdentifier(selectedLoadout.Prototype, ref changed),
-                });
-            }
-
-            migrated.SelectedLoadouts[migratedGroup] = migratedSelected;
-        }
-
-        return migrated;
-    }
-
-    private static string MigrateNeocyteIdentifier(string identifier, ref bool changed)
-    {
-        var migrated = identifier
-            .Replace("ProtoSlimePerson", "NeoSlimePerson", StringComparison.Ordinal)
-            .Replace("TrueProtogen", "TrueNeocyte", StringComparison.Ordinal)
-            .Replace("ProtogenCybernetics", "NeocyteCybernetics", StringComparison.Ordinal)
-            .Replace("Protogen", "Neocyte", StringComparison.Ordinal)
-            .Replace("ProtoArachnid", "NeoArachnid", StringComparison.Ordinal)
-            .Replace("ProtoAvali", "NeoAvali", StringComparison.Ordinal)
-            .Replace("ProtoCyclorite", "NeoTNebri", StringComparison.Ordinal)
-            .Replace("ProtoDiona", "NeoDiona", StringComparison.Ordinal)
-            .Replace("ProtoElf", "NeoElf", StringComparison.Ordinal)
-            .Replace("ProtoFelionoid", "NeoFelionoid", StringComparison.Ordinal)
-            .Replace("ProtoHuman", "NeoHuman", StringComparison.Ordinal)
-            .Replace("ProtoLagomorph", "NeoLagomorph", StringComparison.Ordinal)
-            .Replace("ProtoMoth", "NeoMoth", StringComparison.Ordinal)
-            .Replace("ProtoReptilian", "NeoReptilian", StringComparison.Ordinal)
-            .Replace("ProtoResomi", "NeoResomi", StringComparison.Ordinal)
-            .Replace("ProtoSlime", "NeoSlime", StringComparison.Ordinal)
-            .Replace("ProtoThaven", "NeoThaven", StringComparison.Ordinal)
-            .Replace("ProtoVox", "NeoVox", StringComparison.Ordinal)
-            .Replace("ProtoVulp", "NeoVulp", StringComparison.Ordinal)
-            .Replace("Cyclorite", "TNebri", StringComparison.Ordinal);
-
-        migrated = ProtoKinIdentifier.Replace(migrated, "NeoShadekin");
-
-        changed |= migrated != identifier;
-        return migrated;
     }
 
     private void OnInit(EntityUid uid, HumanoidAppearanceComponent humanoid, ComponentInit args)
@@ -260,6 +197,22 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
         var identity = Identity.Entity(uid, EntityManager);
         var species = GetSpeciesRepresentation(component.Species, component.CustomSpecieName).ToLower(); // Starlight edit
         var age = GetAgeRepresentation(component.Species, component.Age);
+
+        // Blimpuf start - use the examine pronoun choice without changing identity grammar.
+        if (TryComp<BlimpufIdentityPronounsComponent>(identity, out var pronouns))
+        {
+            // The server replaces the initial client tooltip; let it choose once to avoid a pronoun flicker.
+            if (_netManager.IsClient && !IsClientSide(uid))
+                return;
+
+            if (args.UseSecondaryPronouns ??= _random.Prob(0.5f))
+            {
+                args.PushText(Loc.GetString("blimpuf-humanoid-appearance-component-examine",
+                    ("gender", pronouns.SecondaryGender.ToString().ToLowerInvariant()), ("age", age), ("species", species)));
+                return;
+            }
+        }
+        // Blimpuf end
 
         args.PushText(Loc.GetString("humanoid-appearance-component-examine", ("user", identity), ("age", age), ("species", species)));
     }
@@ -309,6 +262,7 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
         targetHumanoid.MarkingSet = new(sourceHumanoid.MarkingSet);
 
         SetSex(target, sourceHumanoid.Sex, false, targetHumanoid);
+        targetHumanoid.SecondaryGender = sourceHumanoid.SecondaryGender; // Blimpuf
         SetGender((target, targetHumanoid), sourceHumanoid.Gender);
 
         Dirty(target, targetHumanoid);
@@ -650,6 +604,8 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
         EnsureDefaultMarkings(uid, humanoid);
 
         humanoid.Gender = profile.Gender;
+        humanoid.SecondaryGender = profile.SecondaryGender; // Blimpuf
+        _identity.QueueIdentityUpdate(uid); // Blimpuf
         if (TryComp<GrammarComponent>(uid, out var grammar))
         {
             _grammarSystem.SetGender((uid, grammar), profile.Gender);

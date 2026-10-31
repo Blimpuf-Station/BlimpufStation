@@ -2,26 +2,55 @@ name: "Labels: Review"
 
 # Cancel older jobs on PRs when new changes are pushed
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  group: "${{ github.workflow }}-${{ github.event.workflow_run.display_title || format('Review labels for PR #{0}', github.event.pull_request.number) }}"
   cancel-in-progress: true
 
 on:
   pull_request_target:
     types: [opened, reopened, synchronize, ready_for_review, edited, review_requested, review_request_removed]
+  workflow_run:
+    workflows: ["Labels: Review Event"]
+    types: [completed]
 
 jobs:
   collect_reviews:
+    if: >-
+      github.event_name == 'pull_request_target' ||
+      (github.event.workflow_run.event == 'pull_request_review' &&
+      github.event.workflow_run.conclusion == 'success')
     runs-on: ubuntu-latest
     outputs:
+      number: ${{ steps.pr.outputs.result }}
       approved: ${{ steps.reviews_parsed.outputs.approved }}
       changes_requested: ${{ steps.reviews_parsed.outputs.changes_requested }}
       commented: ${{ steps.reviews_parsed.outputs.commented }}
     steps:
+      - name: Get pull request number
+        id: pr
+        uses: actions/github-script@v7
+        with:
+          result-encoding: string
+          script: |
+            let number = context.payload.pull_request?.number;
+            if (context.eventName === 'workflow_run') {
+              // Fork runs may omit pull_requests. The run name supplies only a number;
+              // reviews and membership are still fetched independently from GitHub.
+              const match = /^Review labels for PR #([1-9][0-9]*)$/.exec(
+                context.payload.workflow_run.display_title
+              );
+              if (!match) throw new Error('Unexpected review event run name.');
+              number = Number(match[1]);
+            }
+            if (!Number.isSafeInteger(number) || number < 1) {
+              throw new Error('Invalid pull request number.');
+            }
+            return number;
+
       - name: Get latest reviews
         id: reviews
         run: |
           reviews=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-            https://api.github.com/repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }}/reviews \
+            https://api.github.com/repos/${{ github.repository }}/pulls/${{ steps.pr.outputs.result }}/reviews \
             | jq -c '
               sort_by(.submitted_at)
               | group_by(.user.login)
@@ -31,13 +60,15 @@ jobs:
 
       - name: Parse reviewers by state
         id: reviews_parsed
+        env:
+          REVIEWS: ${{ steps.reviews.outputs.reviews }}
         run: |
-          approved=$(echo '${{ steps.reviews.outputs.reviews }}' \
-            | jq -c '[ map(select(.state=="APPROVED")) | map(.user.login) ]')
-          changes_requested=$(echo '${{ steps.reviews.outputs.reviews }}' \
-            | jq -c '[ map(select(.state=="CHANGES_REQUESTED")) | map(.user.login) ]')
-          commented=$(echo '${{ steps.reviews.outputs.reviews }}' \
-            | jq -c '[ map(select(.state=="COMMENTED")) | map(.user.login) ]')
+          approved=$(echo "$REVIEWS" \
+            | jq -c 'map(select(.state=="APPROVED")) | map(.user.login)')
+          changes_requested=$(echo "$REVIEWS" \
+            | jq -c 'map(select(.state=="CHANGES_REQUESTED")) | map(.user.login)')
+          commented=$(echo "$REVIEWS" \
+            | jq -c 'map(select(.state=="COMMENTED")) | map(.user.login)')
 
           echo "approved=$approved" >> $GITHUB_OUTPUT
           echo "changes_requested=$changes_requested" >> $GITHUB_OUTPUT
@@ -47,6 +78,8 @@ jobs:
     needs: collect_reviews
     if: needs.collect_reviews.outputs.approved != '[]'
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     strategy:
       matrix:
         user: ${{ fromJSON(needs.collect_reviews.outputs.approved) }}
@@ -55,28 +88,22 @@ jobs:
         id: membership
         with:
           username: ${{ matrix.user }}
-          team: "maintainer,dev"
+          team: "maintainers"
           GITHUB_TOKEN: ${{ secrets.LABELER_PAT }}
 
-      - name: Mark if approved by team
+      - name: Label if approved by team
         if: steps.membership.outputs.isTeamMember == 'true'
-        run: echo "approved_by_team=true" >> $GITHUB_ENV
-
-  add_label_approved:
-    needs: check_approved
-    if: env.approved_by_team == 'true'
-    runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
-    steps:
-      - uses: actions-ecosystem/action-add-labels@v1
+        uses: actions-ecosystem/action-add-labels@v1
         with:
+          number: ${{ needs.collect_reviews.outputs.number }}
           labels: "S: Approved"
 
   check_changes_requested:
     needs: collect_reviews
     if: needs.collect_reviews.outputs.changes_requested != '[]'
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     strategy:
       matrix:
         user: ${{ fromJSON(needs.collect_reviews.outputs.changes_requested) }}
@@ -85,20 +112,12 @@ jobs:
         id: membership
         with:
           username: ${{ matrix.user }}
-          team: "maintainer,dev"
+          team: "maintainers"
           GITHUB_TOKEN: ${{ secrets.LABELER_PAT }}
 
-      - name: Mark if changes requested by team
+      - name: Label if changes requested by team
         if: steps.membership.outputs.isTeamMember == 'true'
-        run: echo "changes_by_team=true" >> $GITHUB_ENV
-
-  add_label_changes:
-    needs: check_changes_requested
-    if: env.changes_by_team == 'true'
-    runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
-    steps:
-      - uses: actions-ecosystem/action-add-labels@v1
+        uses: actions-ecosystem/action-add-labels@v1
         with:
+          number: ${{ needs.collect_reviews.outputs.number }}
           labels: "S: Awaiting Changes"

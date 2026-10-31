@@ -12,7 +12,6 @@
   - NukeopsCommander
   - NukeopsMedic
   - SELFAgent
-  - Changeling
   - InitialInfected
 
 - type: antagCategory
@@ -23,7 +22,9 @@
   accentColor: "#753c2f"
   antags:
   - SpaceNinja
+  - SamuraiAntag
   - Thief
+  - Changeling
 
 - type: antagCategory
   id: USSP
@@ -62,7 +63,6 @@
   accentColor: "#69bbbb"
   antags:
   - CosmicAntagCultist
-  - Devil
   - Vampire
 
 - type: antagCategory

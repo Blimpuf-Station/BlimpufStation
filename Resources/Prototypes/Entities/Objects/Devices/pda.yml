@@ -974,7 +974,7 @@
     state: pda-security
 
 - type: entity
-  parent: BaseSecurityPDA
+  parent: [ BaseCentcommContraband, BaseSecurityPDA ] # Blimpuf
   id: CentcomPDA
   name: CentComm PDA
   description: Light green sign of walking bureaucracy.
@@ -1233,11 +1233,11 @@
     state: pda-syndi-commander
 
 - type: entity
-  parent: BaseSecurityPDA
+  parent: [ BaseCentcommContraband, BaseSecurityPDA ] # Blimpuf
   id: ERTLeaderPDA
   name: ERT leader PDA # Starlight: capitalization
   suffix: Leader
-  description: Red for firepower.
+  description: The iron hand of Central Command shall strike again.
   components:
   - type: Pda
     id: ERTLeaderIDCard
@@ -1247,9 +1247,9 @@
        !type:String
        pda-ert
   - type: PdaBorderColor
-    borderColor: "#A32D26"
-    accentHColor: "#447987"
-    accentVColor: "#447987"
+    borderColor: "#1e1f1e"
+    accentHColor: "#279334"
+    accentVColor: "#279334"
   - type: Icon
     state: pda-ert
   - type: CartridgeLoader
@@ -1271,7 +1271,7 @@
   id: ERTChaplainPDA
   name: ERT chaplain PDA # Starlight: capitalization
   suffix: Chaplain
-  description: Red for the blood of sinners. # Starlight
+  description: May the gods help anyone who gets in their way. # Starlight
   components:
   - type: Pda
     id: ERTChaplainIDCard
@@ -1281,7 +1281,7 @@
   id: ERTEngineerPDA
   name: ERT engineer PDA # Starlight: capitalization
   suffix: Engineer
-  description: Red for firepower. It's well-worn. # Starlight
+  description: It's well-worn, and is covered in a light film of oil. # Starlight
   components:
   - type: Pda
     id: ERTEngineerIDCard
@@ -1291,7 +1291,7 @@
   id: ERTJanitorPDA
   name: ERT janitor PDA # Starlight: capitalization
   suffix: Janitor
-  description: Red for firepower. It's squeaky clean. # Starlight
+  description: It's squeaky clean and smells like space cleaner. # Starlight
   components:
   - type: Pda
     id: ERTJanitorIDCard
@@ -1301,7 +1301,7 @@
   id: ERTMedicPDA
   name: ERT medic PDA # Starlight: capitalization
   suffix: Medic
-  description: Red for firepower. It's shiny and sterile. # Starlight
+  description: It's shiny and sterile - you can make out your reflection on the screen. # Starlight
   components:
   - type: Pda
     id: ERTMedicIDCard
@@ -1311,7 +1311,7 @@
   id: ERTSecurityPDA
   name: ERT security PDA # Starlight: capitalization
   suffix: Security
-  description: Red for firepower. It has tally marks etched on the side. # Starlight
+  description: It has tally marks etched on the side. # Starlight
   components:
   - type: Pda
     id: ERTSecurityIDCard
@@ -1320,7 +1320,7 @@
   parent: ERTLeaderPDA
   id: CBURNPDA
   name: CBURN PDA
-  description: Smells like rotten flesh.
+  description: It smells like rotten flesh.
   components:
   - type: Pda
     id: CBURNIDcard
@@ -1610,7 +1610,7 @@
     state: pda-seniorcourier
 
 - type: entity
-  parent: [ BaseHighlyIllegalContraband, BasePDA ]
+  parent: [ BaseContrabandTier4, BasePDA ]
   id: NinjaPDA
   name: ninja PDA
   description: You stealthy bastard, you!

@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 09:26:53
-  entityCount: 42508
+  entityCount: 42509
 maps:
 - 1
 grids:
@@ -268114,4 +268114,12 @@ entities:
     - type: Transform
       pos: 46.5,-2.5
       parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 42722
+    components:
+    - type: Transform
+      pos: 12.5,-49.5
+      parent: 2
+      rot: 1.5707963267948966 rad
 ...

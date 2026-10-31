@@ -212,7 +212,7 @@
     - state: refill_donuts
 
 - type: entity
-  parent: BaseVendingMachineRestock
+  parent: [BaseVendingMachineRestock, BaseEngineeringContraband] # Blimpuf
   id: VendingMachineRestockEngineering
   name: EngiVend restock box
   description: Only to be used by certified professionals.
@@ -325,7 +325,7 @@
     - state: refill_plant
 
 - type: entity
-  parent: BaseVendingMachineRestock
+  parent: [BaseVendingMachineRestock, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   id: VendingMachineRestockPTech
   name: PTech restock box
   description: All the bureaucracy you can handle, and more! Load into the PTech vending machine to get started.
@@ -365,7 +365,7 @@
     - state: refill_cola
 
 - type: entity
-  parent: BaseVendingMachineRestock
+  parent: [BaseVendingMachineRestock, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   id: VendingMachineRestockSecTech
   name: SecTech restock box
   description: "Communists beware: the reinforcements have arrived! A label reads SECURITY PERSONNEL ONLY."
@@ -463,7 +463,7 @@
     - state: refill_parts
 
 - type: entity
-  parent: BaseVendingMachineRestock
+  parent: [BaseVendingMachineRestock, BaseScienceContraband] # Blimpuf
   id: VendingMachineRestockRobotics
   name: Robotech Deluxe restock box
   description: A box full of tools for creating borgs. Load it into a Robotech Deluxe to begin.
@@ -495,7 +495,7 @@
     - state: refill_honk
 
 - type: entity
-  parent: BaseVendingMachineRestock
+  parent: [BaseVendingMachineRestock, BaseMedicalContraband, BaseContrabandTier2] # Blimpuf
   id: VendingMachineRestockChemVend
   name: ChemVend restock box
   description: A box filled with chemicals and covered in dangerous-looking NFPA diamonds. Load it into a ChemVend to begin.

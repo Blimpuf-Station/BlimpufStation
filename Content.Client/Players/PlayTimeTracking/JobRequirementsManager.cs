@@ -1,5 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using Content.Client.Administration.Managers; // Blimpuf
+using Content.Shared._Blimpuf.CCVar; // Blimpuf
 using Content.Shared.CCVar;
 using Content.Shared.Players;
 using Content.Shared.Players.JobWhitelist;
@@ -29,6 +31,7 @@ public sealed partial class JobRequirementsManager : ISharedPlaytimeManager
     [Dependency] private IEntityManager _entManager = default!;
     [Dependency] private IPlayerManager _playerManager = default!;
     [Dependency] private IPrototypeManager _prototypes = default!;
+    [Dependency] private INullLinkPlayerRolesManager _discordRoles = default!; // Blimpuf
 
     private readonly List<string> _jobBans = new();
     private readonly List<string> _antagBans = new();
@@ -63,7 +66,25 @@ public sealed partial class JobRequirementsManager : ISharedPlaytimeManager
         // NullLink end
 
         _client.RunLevelChanged += ClientOnRunLevelChanged;
+
+        // Blimpuf start
+        _discordRoles.PlayerRolesChanged += NotifyRequirementsUpdated;
+        _cfg.OnValueChanged(BlimpufCCVars.DiscordJobTimeOverrides, _ => NotifyRequirementsUpdated());
+        _cfg.OnValueChanged(CCVars.GameRoleTimers, _ => NotifyRequirementsUpdated());
+
+        // Refresh again once the client's game systems have started.
+        _client.PlayerJoinedServer += (_, _) => NotifyRequirementsUpdated();
     }
+
+    private void NotifyRequirementsUpdated()
+    {
+        // Do not refresh the UI before the role system is available.
+        if (!_entManager.TrySystem<SharedRoleSystem>(out _))
+            return;
+
+        Updated?.Invoke();
+    }
+    // Blimpuf end
 
     // Nulllink start
     private void Update(MsgUpdatePlayerPlayTime message)
@@ -233,7 +254,7 @@ public sealed partial class JobRequirementsManager : ISharedPlaytimeManager
             return true;
 
         // Check other role requirements
-        var reqs = _entManager.System<SharedRoleSystem>().GetRoleRequirements(job);
+        var reqs = _entManager.System<SharedRoleSystem>().GetRoleRequirements(job, player); // Blimpuf
         if (!CheckRoleRequirements(reqs, player, profile, out reason))
             return false;
 
@@ -264,7 +285,7 @@ public sealed partial class JobRequirementsManager : ISharedPlaytimeManager
             return true;
 
         // Check other role requirements
-        var reqs = _entManager.System<SharedRoleSystem>().GetRoleRequirements(antag);
+        var reqs = _entManager.System<SharedRoleSystem>().GetRoleRequirements(antag, player); // Blimpuf
         if (!CheckRoleRequirements(reqs, player, profile, out reason))
             return false;
 
@@ -284,13 +305,14 @@ public sealed partial class JobRequirementsManager : ISharedPlaytimeManager
     {
         reason = new FormattedMessage(); // Starlight
 
-        if (requirements == null || !_cfg.GetCVar(CCVars.GameRoleTimers))
+        if (requirements == null)
             return true;
 
+        var playTimes = _cfg.GetCVar(CCVars.GameRoleTimers) ? _mergedRoles : null; // Blimpuf
         var success = true; // Starlight
         foreach (var requirement in requirements)
         {
-            if (!requirement.Check(_entManager, player, _prototypes, profile, _mergedRoles, out var checkDetails))
+            if (!requirement.Check(_entManager, player, _prototypes, profile, playTimes, out var checkDetails))
                 success = false; // Starlight
 
             if (!reason.IsEmpty) // Starlight BEGIN

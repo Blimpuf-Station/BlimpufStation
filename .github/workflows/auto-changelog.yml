@@ -3,8 +3,8 @@ name: Update Changelog
 on:
   push:
     branches:
-      - Starlight
-      - starlight-dev
+      - blimpuf-live
+      - blimpuf-dev
 
 
 permissions:
@@ -53,6 +53,7 @@ jobs:
         uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          result-encoding: string
           script: |
             const pr = await github.rest.repos.listPullRequestsAssociatedWithCommit({
               owner: context.repo.owner,
@@ -87,7 +88,7 @@ jobs:
       - name: Parse PR and Update Changelog
         if: steps.get_pr.outputs.result != ''
         env:
-          CHANGELOG_FILE_PATH: 'Resources/Changelog/ChangelogStarlight.yml'
+          CHANGELOG_FILE_PATH: 'Resources/Changelog/ChangelogBlimpuf.yml'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ steps.get_pr.outputs.result }}
           GITHUB_REPOSITORY: ${{ github.repository }}
@@ -98,7 +99,7 @@ jobs:
       - name: Display changelog after update
         if: steps.get_pr.outputs.result != ''
         run: |
-          cat "Resources/Changelog/ChangelogStarlight.yml"
+          cat "Resources/Changelog/ChangelogBlimpuf.yml"
 
       - name: Git status before commit
         if: steps.get_pr.outputs.result != ''
@@ -110,7 +111,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "Resources/Changelog/ChangelogStarlight.yml"
+          git add "Resources/Changelog/ChangelogBlimpuf.yml"
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else

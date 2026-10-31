@@ -20,7 +20,7 @@
 
 - type: storeCategory
   id: SLEnginery
-  name: store-category-enginery-main
+  name: store-category-engineering-main
 
 - type: storeCategory
   id: SLClown
@@ -36,23 +36,23 @@
 
 - type: storeCategory
   id: SLBrigmedic
-  name: Medical
+  name: store-category-security-medical
 
 - type: storeCategory
   id: SLFashionSkirt
-  name: Luxury dresses
+  name: store-category-fashion-skirt
 
 - type: storeCategory
   id: SLFashionSuit
-  name: Elegant suits
+  name: store-category-fashion-suit
 
 - type: storeCategory
   id: SLFashionHead
-  name: Hats & Helmets
+  name: store-category-fashion-head
 
 - type: storeCategory
   id: SLFashionOther
-  name: Other
+  name: store-category-fashion-other
 
 # shuttle build uplink
 - type: storeCategory
@@ -105,32 +105,32 @@
 
 - type: storeCategory
   id: SalvageEquipment
-  name: Equipment
+  name: store-category-salvage-equipment
 
 - type: storeCategory
   id: SalvageWeapons
-  name: Weapons
+  name: store-category-salvage-weapons
 
 - type: storeCategory
   id: SalvageConsumeables
-  name: Consumeables
+  name: store-category-salvage-consumables
 
 - type: storeCategory
   id: SalvageMercenaryEquipment
-  name: Scrapper
+  name: store-category-salvage-scrapper
 
 - type: storeCategory
   id: SalvageCybernetics
-  name: Cybernetics
+  name: store-category-salvage-cybernetics
 
 # mining
 - type: storeCategory
   id: MiningEquipment
-  name: Equipment
+  name: store-category-mining-equipment
 
 - type: storeCategory
   id: MiningConsumeables
-  name: Consumeables
+  name: store-category-mining-consumables
 
 # USSP
 

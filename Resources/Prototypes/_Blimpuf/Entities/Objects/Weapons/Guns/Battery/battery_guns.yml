@@ -247,6 +247,8 @@
         - proto: BulletSyndieEnergyShotgunBuckshotUraniumSpread
           fireCost: 90
           color: lightgreen
+    - type: BatterySelfRecharger
+      autoRechargeRate: 3
     - type: Item
       size: Large
       sprite:  _Starlight/Objects/Weapons/Guns/Battery/Energy_Shotgun_inhands-x64.rsi # Starlight, sprite changed (Objects\Weapons\Guns\Battery\inhands_64x.rsi)

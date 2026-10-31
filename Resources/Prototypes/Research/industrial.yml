@@ -208,6 +208,7 @@
   cost: 15000
   recipeUnlocks:
   - OreBagOfHolding # SL - Moved to BluespaceStorage.
+  - ScrapBagOfHolding # Blimpuf
   - ClothingBackpackHolding
   - ClothingBackpackSatchelHolding
   - ClothingBackpackDuffelHolding

@@ -1,6 +1,6 @@
 - type: body
   id: NeoMoth
-  name: neo-moth # Starlight, quotation marks removed
+  name: neo-moth
   root: torso
   slots:
     head:

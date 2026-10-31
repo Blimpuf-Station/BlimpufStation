@@ -1,0 +1,38 @@
+﻿# start
+
+- type: guideEntry
+  id: RoleplaySettingIntro
+  name: guide-entry-setting-intro
+  text: "/ServerInfo/_Starlight/Guidebook/RoleplaySetting/SettingIntro.xml"
+  priority: 12
+  children:
+    - RoleplayCongrats
+    - RoleplayNanoTrasen
+    - RoleplayCentralCommand
+    - RoleplaySector
+
+# chapters
+
+- type: guideEntry
+  id: RoleplayCongrats
+  name: guide-entry-congrats
+  text: "/ServerInfo/_Starlight/Guidebook/RoleplaySetting/Congrats.xml"
+  priority: 1
+
+- type: guideEntry
+  id: RoleplayNanoTrasen
+  name: guide-entry-nanotrasen
+  text: "/ServerInfo/_Starlight/Guidebook/RoleplaySetting/NanoTrasen.xml"
+  priority: 2
+
+- type: guideEntry
+  id: RoleplayCentralCommand
+  name: guide-entry-centralcommand
+  text: "/ServerInfo/_Starlight/Guidebook/RoleplaySetting/CentralCommand.xml"
+  priority: 3
+
+- type: guideEntry
+  id: RoleplaySector
+  name: guide-entry-sector
+  text: "/ServerInfo/_Starlight/Guidebook/RoleplaySetting/TheSector.xml"
+  priority: 4

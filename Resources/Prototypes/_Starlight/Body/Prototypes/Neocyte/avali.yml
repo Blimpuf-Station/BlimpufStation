@@ -1,6 +1,6 @@
 - type: body
   id: NeoAvali
-  name: neo-avali # Starlight, quotation marks removed
+  name: neo-avali
   root: torso
   slots:
     head:

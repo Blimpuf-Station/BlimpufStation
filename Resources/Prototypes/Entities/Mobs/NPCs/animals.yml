@@ -1481,7 +1481,6 @@
       - !type:WashCreamPie
   - type: Crawler
   - type: StatusIcon
-  - type: CosmicCenserTarget # Stellar - Cosmic Cult
 
 - type: entity
   name: monkey
@@ -1503,7 +1502,9 @@
     makeSentient: true
     name: ghost-role-information-monkey-name
     description: ghost-role-information-monkey-description
-    rules: ghost-role-information-nonantagonist-rules
+    rules: ghost-role-information-freeagent-rules
+    mindRoles:
+    - MindRoleGhostRoleFreeAgent
   - type: GhostTakeoverAvailable
   - type: Clumsy
     gunShootFailDamage:
@@ -1737,7 +1738,9 @@
     makeSentient: true
     name: ghost-role-information-kobold-name
     description: ghost-role-information-kobold-description
-    rules: ghost-role-information-nonantagonist-rules
+    rules: ghost-role-information-freeagent-rules
+    mindRoles:
+    - MindRoleGhostRoleFreeAgent
   # Starlight Start
   - type: Inventory
     displacements:

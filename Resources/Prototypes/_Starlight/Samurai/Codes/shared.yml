@@ -1,0 +1,14 @@
+# Shared honor codes
+
+# keep this dataset clear unless you want to dramatically change samurai gameplay
+- type: dataset
+  id: SamuraiCodesShared
+  values:
+    - Equipment
+
+
+# Honor codes are YOU, dont break them
+- type: samuraiCode
+  id: Equipment
+  codeName: samurai-code-equipment-shared-name
+  codeDesc: samurai-code-equipment-shared-desc

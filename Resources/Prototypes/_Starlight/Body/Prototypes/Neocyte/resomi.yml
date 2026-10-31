@@ -1,6 +1,6 @@
 - type: body
   id: NeoResomi
-  name: neo-resomi # Starlight, quotation marks removed
+  name: neo-resomi
   root: torso
   slots:
     head:

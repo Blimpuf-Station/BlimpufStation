@@ -14,7 +14,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/_Starlight/Shuttles/emergency_lox.yml
+          emergencyShuttlePath: /Maps/_Blimpuf/Shuttles/Evac/emergency_lox.yml # Blimpuf
         - type: StationJobs
           availableJobs:
             #command
@@ -67,7 +67,6 @@
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 1, 1 ]
-            Performer: [ 2, 2 ]
             Boxer: [ 2, 2 ]
             #silicon
             StationAi: [ 1, 1 ]

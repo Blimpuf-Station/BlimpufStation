@@ -14,6 +14,7 @@
   table: !type:AllSelector
     children:
     - id: ClothingBeltUtilityFilled
+    - id: ScrapBag
     - id: SurvivalKnife
     - id: HandheldGPSBasic
 #    - id: RadioHandheld # Starlight - radio replaced with expedition radio

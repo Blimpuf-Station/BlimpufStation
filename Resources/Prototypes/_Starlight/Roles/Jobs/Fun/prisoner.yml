@@ -16,9 +16,9 @@
   description: job-description-stirstir
   playTimeTracker: JobStirStir
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 0.25h
+  - !type:DepartmentTimeRequirement
+    department: Security
+    time: 0.25h
   startingGear: PrisonerGear
   setPreference: false
   icon: "JobIconPrisoner"

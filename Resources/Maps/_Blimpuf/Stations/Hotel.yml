@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/05/2026 22:45:24
-  entityCount: 22147
+  entityCount: 22148
 maps:
 - 1
 grids:
@@ -63443,10 +63443,10 @@ entities:
     - type: Transform
       pos: -18.25,-19.5
       parent: 2
-  - uid: 22151
+  - uid: 22246
     components:
     - type: Transform
-      pos: 0.5,24.5
+      pos: -0.5,24.5
       parent: 2
 - proto: FireAlarm
   entities:
@@ -139645,4 +139645,12 @@ entities:
     - type: Transform
       pos: -41.491108,-19.452692
       parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 22247
+    components:
+    - type: Transform
+      pos: 0.5,24.5
+      parent: 2
+      rot: 3.141592653589793 rad
 ...

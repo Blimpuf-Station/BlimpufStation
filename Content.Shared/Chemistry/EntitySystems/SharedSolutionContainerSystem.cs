@@ -3,6 +3,7 @@ using System.Linq;
 using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Text;
+using Content.Shared._Blimpuf.Contraband; // Blimpuf
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Components.SolutionManager;
 using Content.Shared.Chemistry.Reaction;
@@ -73,6 +74,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
     [Dependency] protected SharedContainerSystem ContainerSystem = default!;
     [Dependency] protected MetaDataSystem MetaDataSys = default!;
     [Dependency] protected INetManager NetManager = default!;
+    [Dependency] private ContrabandSystem _contraband = default!; // Blimpuf
 
     public override void Initialize()
     {
@@ -993,6 +995,7 @@ public abstract partial class SharedSolutionContainerSystem : EntitySystem
                 , ("type", proto.LocalizedName)
                 , ("color", proto.SubstanceColor.ToHexNoAlpha())
                 , ("amount", quantity)));
+            _contraband.AppendReagentDescription(msg, proto); // Blimpuf
         }
 
         msg.PushNewline();

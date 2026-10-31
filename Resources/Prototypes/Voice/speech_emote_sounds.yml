@@ -215,9 +215,8 @@
 
 - type: emoteSounds
   id: MaleSlime
+  parent: SlimeCoreSounds
   sounds:
-    Squish:
-      collection: Squishes
     Scream:
       collection: MaleScreams
     Laugh:
@@ -268,20 +267,13 @@
     Whine:
       collection: Whine
     #endregion Afterlight
-    #region Starlight
-    Bubble:
-      collection: Bubbles
-    Pop:
-      collection: Pops
-    #endregion Starlight
   params:
     variation: 0.125
 
 - type: emoteSounds
   id: FemaleSlime
+  parent: SlimeCoreSounds
   sounds:
-    Squish:
-      collection: Squishes
     Scream:
       collection: FemaleScreams
     Laugh:
@@ -332,12 +324,6 @@
     Whine:
       collection: Whine
     #endregion Afterlight
-    #region Starlight
-    Bubble:
-      collection: Bubbles
-    Pop:
-      collection: Pops
-    #endregion Starlight
   params:
     variation: 0.125
 

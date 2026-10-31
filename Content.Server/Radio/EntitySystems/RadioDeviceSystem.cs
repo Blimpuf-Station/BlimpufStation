@@ -174,7 +174,7 @@ public sealed partial class RadioDeviceSystem : SharedRadioDeviceSystem
         //Starlight begin
         if (_protoMan.TryIndex<RadioChannelPrototype>(component.BroadcastChannel, out var channel) &&
             _recentlySent.Add((args.Message, args.Source, channel.ID)))
-            _radio.SendRadioMessage(args.Source, args.Message, channel, uid);
+            _radio.SendRadioMessage(args.Source, args.Message, channel, uid, args.Language);
         else if (_chat.TryGetCustomChannel(uid, component.BroadcastChannel, out var customChannel) &&
                  _recentlySent.Add((args.Message, args.Source, customChannel.Id)))
             _radio.SendCustomRadioMessage(args.Source, args.Message, customChannel, uid);
@@ -205,7 +205,7 @@ public sealed partial class RadioDeviceSystem : SharedRadioDeviceSystem
         // log to chat so people can identity the speaker/source, but avoid clogging ghost chat if there are many radios
         var message = args.OriginalChatMsg.Message; // Starlight-edit: The chat system will handle the rest and re-obfuscate if needed.
         _chat.TrySendInGameICMessage(uid, message, InGameICChatType.Whisper, ChatTransmitRange.GhostRangeLimit,
-            nameOverride: name, checkRadioPrefix: false, languageOverride: args.Language); // Starlight
+            nameOverride: name, checkRadioPrefix: false, languageOverride: args.Language, shouldRemoveDisallowedCharacters: false); // Starlight + Blimpuf
     }
 
     private void OnIntercomEncryptionChannelsChanged(Entity<IntercomComponent> ent, ref EncryptionChannelsChangedEvent args)

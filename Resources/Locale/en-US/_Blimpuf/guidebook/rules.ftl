@@ -1,0 +1,13 @@
+guide-entry-blimpuf-rules = Blimpuf Server Rules
+guide-entry-blimpuf-rule-1 = 1. Treat other players with compassion and respect.
+guide-entry-blimpuf-rule-2 = 2. Players must speak English and be at least 18 years old.
+guide-entry-blimpuf-rule-3 = 3. No sexual content or erotic roleplay (ERP).
+guide-entry-blimpuf-rule-4 = 4. Play a character, and make the character believable and developed.
+guide-entry-blimpuf-rule-5 = 5. Roleplay Guidelines
+guide-entry-blimpuf-rule-6 = 6. Make sure to follow realistic, believable escalation.
+guide-entry-blimpuf-rule-7 = 7. Ahelp interactions should be positive and respectful.
+guide-entry-blimpuf-rule-8 = 8. Properly use LOOC during the round.
+guide-entry-blimpuf-rule-9 = 9. No Metagaming
+guide-entry-blimpuf-rule-10 = 10. SSD/AFK Rules
+guide-entry-blimpuf-rule-11 = 11. No Griefing, Bug Abuse or Exploits
+guide-entry-blimpuf-metashield = Metashield

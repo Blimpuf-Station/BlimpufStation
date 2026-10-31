@@ -14,7 +14,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'LS'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/emergency_hotel.yml
+          emergencyShuttlePath: /Maps/_Blimpuf/Shuttles/Evac/emergency_hotel.yml
         - type: StationJobs
           availableJobs:
             #service
@@ -68,7 +68,6 @@
             Clown: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 2, 2 ]
-            Performer: [ 2, 3 ]
             #silicon
             StationAi: [ 1, 1 ]
             Borg: [ 3, 5 ]

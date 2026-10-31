@@ -1,9 +1,10 @@
-# Standard Access Configurator
+# Standard Access Configurator (Abstract)
 - type: entity
   parent: BaseItem
-  id: AccessConfigurator
+  id: BaseAccessConfigurator
   name: access configurator
   description: Used to modify the access level requirements for airlocks and other lockable devices.
+  abstract: true
   components:
     - type: EmitSoundOnLand
       sound:
@@ -59,9 +60,16 @@
     - type: StealTarget # Starlight
       stealGroup: AccessConfigurator # Starlight
 
+# Regular Command Access Configurator - Added to avoid Contraband inheritence
+- type: entity
+  parent: [BaseAccessConfigurator, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
+  id: AccessConfigurator
+  suffix: Command
+
+
 # Universal/Admin Access Configurator
 - type: entity
-  parent: AccessConfigurator
+  parent: [BaseAccessConfigurator, BaseCentcommContraband] # Blimpuf
   id: AccessConfiguratorUniversal
   name: universal access configurator
   suffix: Admin
@@ -119,7 +127,7 @@
     # Starlight-edit: End
 
 - type: entity
-  parent: AccessConfigurator
+  parent: [BaseAccessConfigurator, BaseXenoborgContraband] # Blimpuf
   id: AccessConfiguratorXenoborg
   name: xenoborg access configurator
   description: A modified access configurator used by the xenoborgs.

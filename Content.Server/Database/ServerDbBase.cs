@@ -57,6 +57,8 @@ namespace Content.Server.Database
                 .Include(p => p.Profiles).ThenInclude(h => h.Traits)
                 .Include(p => p.Profiles) // Starlight
                     .ThenInclude(h => h.StarLightProfile) // Starlight
+                .Include(p => p.Profiles) // Blimpuf
+                    .ThenInclude(h => h.BlimpufProfile) // Blimpuf
                 .Include(p => p.Profiles).ThenInclude(h => h.CharacterInfo)// Starlight
                 .Include(p => p.Profiles)
                     .ThenInclude(h => h.Loadouts)
@@ -116,6 +118,7 @@ namespace Content.Server.Database
 
             var oldProfile = db.DbContext.Profile
                 .Include(p => p.StarLightProfile) // Starlight
+                .Include(p => p.BlimpufProfile)
                 .Include(p => p.Preference)
                 .Where(p => p.Preference.UserId == userId.UserId)
                 .Include(p => p.Jobs)
@@ -261,6 +264,14 @@ namespace Content.Server.Database
             if (Enum.TryParse<Gender>(profile.Gender, true, out var genderVal))
                 gender = genderVal;
 
+            Gender? secondaryGender = null;
+            if (Enum.TryParse<Gender>(profile.BlimpufProfile?.SecondaryGender, true, out var secondaryGenderVal)
+                && Enum.IsDefined(secondaryGenderVal)
+                && secondaryGenderVal != gender)
+            {
+                secondaryGender = secondaryGenderVal;
+            }
+
             // ReSharper disable once ConditionalAccessQualifierIsNonNullableAccordingToAPIContract
             var markingsRaw = profile.Markings?.Deserialize<List<string>>();
 
@@ -389,7 +400,7 @@ namespace Content.Server.Database
                 humanoid = humanoid.WithCDCharacterRecords(PlayerProvidedCharacterRecords.DefaultRecords()); // Seed with empty records when nothing has been saved yet
             }
 
-            return humanoid;
+            return humanoid.WithSecondaryGender(secondaryGender);
             // Cosmatic Drift Record System-end
         }
 
@@ -425,6 +436,8 @@ namespace Content.Server.Database
             profile.StarLightProfile.Height = appearance.Height; //starlight
             profile.Sex = humanoid.Sex.ToString();
             profile.Gender = humanoid.Gender.ToString();
+            profile.BlimpufProfile ??= new();
+            profile.BlimpufProfile.SecondaryGender = humanoid.SecondaryGender?.ToString();
             profile.HairName = appearance.HairStyleId;
             profile.HairColor = appearance.HairColor.ToHex();
             profile.HairGlowing = appearance.HairGlowing; //starlight

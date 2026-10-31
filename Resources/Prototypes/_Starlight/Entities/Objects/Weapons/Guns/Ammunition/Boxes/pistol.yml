@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseMagazineBoxPistol
+  parent: [BaseContrabandTier2, BaseMagazineBoxPistol] # Blimpuf Less-Lethal is Tier 2
   id: MagazineBoxPistolRubber
   name: ammunition box (.35 auto rubber)
   components:
@@ -14,7 +14,7 @@
     - state: rubber
 
 - type: entity
-  parent: BaseItem
+  parent: [BaseItem, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   id: BaseMagazineBoxPistol40
   name: ammunition box (.40)
   abstract: true

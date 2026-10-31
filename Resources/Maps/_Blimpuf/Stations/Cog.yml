@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 07/13/2026 05:45:33
-  entityCount: 33066
+  entityCount: 33067
 maps:
 - 1
 grids:
@@ -97775,11 +97775,6 @@ entities:
       parent: 2
 - proto: DogBed
   entities:
-  - uid: 15462
-    components:
-    - type: Transform
-      pos: -40.5,23.5
-      parent: 2
   - uid: 15463
     components:
     - type: Transform
@@ -97804,6 +97799,11 @@ entities:
     components:
     - type: Transform
       pos: 50.5,-11.5
+      parent: 2
+  - uid: 33219
+    components:
+    - type: Transform
+      pos: -34.5,21.5
       parent: 2
 - proto: DonkpocketBoxSpawner
   entities:
@@ -177385,13 +177385,6 @@ entities:
     - type: Transform
       pos: 4.5,56.5
       parent: 2
-- proto: SpawnMobCorgi
-  entities:
-  - uid: 27115
-    components:
-    - type: Transform
-      pos: -40.5,23.5
-      parent: 2
 - proto: SpawnMobCow
   entities:
   - uid: 27116
@@ -212793,5 +212786,19 @@ entities:
     components:
     - type: Transform
       pos: -44.5,-30.5
+      parent: 2
+- proto: SpawnMobCorgi
+  entities:
+  - uid: 33220
+    components:
+    - type: Transform
+      pos: -34.5,21.5
+      parent: 2
+- proto: ComputerServiceJobBoard
+  entities:
+  - uid: 33221
+    components:
+    - type: Transform
+      pos: -40.5,23.5
       parent: 2
 ...

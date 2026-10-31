@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ClothingHeadBase, BaseCommandContraband]
+  parent: [ClothingHeadBase, BaseRepresentativesContraband]
   id: ClothingHeadHatCapNtrep
   name: cc representative cap
   description: The cap of justice over command!
@@ -10,7 +10,7 @@
       sprite: _Starlight/Clothing/Head/Hats/ntrep.rsi
 
 - type: entity
-  parent: [ClothingHeadBase, BaseBlueShieldContraband]
+  parent: [ClothingHeadBase, BaseRepresentativesContraband]
   id: ClothingHeadHatBeretBlueShield
   name: enforcer beret
   description: This beret completes the outfit of any true Central Command Enforcement Officer.
@@ -21,7 +21,7 @@
       sprite: _Starlight/Clothing/Head/Hats/blueshield.rsi
 
 - type: entity
-  parent: [ClothingHeadBase, BaseBlueShieldContraband]
+  parent: [ClothingHeadBase, BaseRepresentativesContraband]
   id: ClothingHeadHatBlueShieldSheriff
   name: enforcer bounty hunter's hat
   description: For when your charges do not wish to be tracked down.
@@ -224,6 +224,8 @@
   name: SNKVD ushanka
   description: Disappearances are entirely voluntary, tovarisch.
   components:
+    - type: Contraband # Blimpuf
+      tier: Tier3
     - type: Sprite
       sprite: _Starlight/Clothing/Head/Hats/Ushanka.rsi
     - type: Clothing
@@ -244,6 +246,8 @@
   name: soviet admiral hat
   description: This hat clearly belongs to someone very important.
   components:
+    - type: Contraband # Blimpuf
+      tier: Tier3
     - type: Sprite
       sprite: _Starlight/Clothing/Head/Hats/sovietadmiralhat.rsi
     - type: Clothing
@@ -422,8 +426,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatNTRTophat
-  name: nt rep tophat
-  description: A fancy black tophat, handmade for the NanoTrasen Rep. It looks expensive.
+  name: cc rep tophat
+  description: A fancy black tophat, handmade for the CentComm Rep. It looks expensive.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Head/Hats/ntr_tophat.rsi
@@ -442,8 +446,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatNTREliteTophat
-  name: nt rep elite tophat
-  description: An expensive looking black tophat. the gold embossing on the front shows the NanoTrasen logo, fitting for an NT rep.
+  name: cc rep elite tophat
+  description: An expensive looking black tophat. the gold embossing on the front shows the CentComm logo, fitting for an CC rep.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Head/Hats/ntr_elite_tophat.rsi

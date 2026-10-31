@@ -71,6 +71,8 @@
   id: SalvageSecurityWeapons
   recipes:
   - WeaponProtoKineticAccelerator
+  - WeaponProtoKineticBlaster
+  - WeaponProtoKineticRailgun
   - PKAUpgradeDamage
   - PKAUpgradeRange
   - PKAUpgradeFireRate

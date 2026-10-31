@@ -1,0 +1,16 @@
+﻿- type: discordJobTimeOverride
+  id: ContributorLaunchOverride
+  roles:
+  - 1535902129695490159 # Leadership
+  - 1500725068937040013 # Game Admin
+  - 1526335907219640490 # Trial Admin
+  - 1502820711335727247 # Discord Moderator
+  - 1526356067137749062 # Mentor
+  - 1527405763830611988 # Developer
+  - 1503505780349993172 # Contributor
+  - 1503521016914120795 # Spriter
+  - 1503520283342934097 # Mapper
+  - 1505430785014894632 # Writer
+  - 1508315670402695170 # Server Booster
+  allJobs: true
+  allAntags: true

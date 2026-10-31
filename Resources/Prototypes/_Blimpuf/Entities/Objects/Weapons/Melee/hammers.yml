@@ -1,6 +1,6 @@
 - type: entity
   name: Chief Engineer's Breaching Hammer
-  parent: [BaseItem, BaseCommandContraband]
+  parent: [BaseItem, BaseCommandContraband, BaseContrabandTier3] # Blimpuf
   id: HammerBreachingCE
   description: An orange colored, weighty hammer made for breaching through walls and doors. Its reinforced head and sturdy handle make it ideal for demolition tasks.
   components:

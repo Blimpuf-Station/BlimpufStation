@@ -1,4 +1,4 @@
-using Content.Server.SyndicateResearch;
+using Content.Server._Blimpuf.Traitor.Systems;
 using Content.Shared.Store;
 
 namespace Content.Server._Blimpuf.Store.Conditions;

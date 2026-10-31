@@ -3,9 +3,13 @@
 
 <GuideEntityEmbed Entity="ToyFigurineMedicalDoctor" Caption="Medical Doctor"/>
 
-1. Medical Doctors report directly to the Chief Medical Officer.
+1. Your direct superior is the Chief Medical Officer.
 
-2. Medical Doctors should wear sterile gloves when dealing with patients and either scrubs or a doctor's coat to differentiate them from other crew members.
+2. Medical Doctors should wear sterile gloves when dealing with patients to maintain sterility.
 
-3. Medical Doctors are permitted to observe Surgeons and Chemists in their official duties, as long as no patients require treatment.
+3. Patients should only be treated by a singular Medical Doctor at a time.
+
+4. Medical Doctors are expected to ensure the patient’s wellbeing by providing good bedside manner, through conversation and inquiries about their accident.
+
+5. Medical Doctors should work alongside new Medical Interns to show them the roles and responsibilities of the position.
 </Document>

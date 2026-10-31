@@ -4,19 +4,22 @@
   description: job-description-qm
   playTimeTracker: JobQuartermaster
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobCargoTechnician
-      time: 5h
-    - !type:RoleTimeRequirement
-      role: JobSalvageSpecialist
-      time: 5h # Starlight
-    - !type:DepartmentTimeRequirement
-      department: Cargo
-      time: 30h # Starlight
-    - !type:TraitsRequirement # Starlight
-      traits:
-        - Iterator
-      inverted: true
+  - !type:RoleTimeRequirement
+    role: JobCargoTechnician
+    time: 5h
+  - !type:RoleTimeRequirement
+    role: JobSalvageSpecialist
+    time: 3h
+  - !type:RoleTimeRequirement
+    role: JobMiningSpecialist
+    time: 1h
+  - !type:DepartmentTimeRequirement
+    department: Cargo
+    time: 20h
+  - !type:TraitsRequirement
+    traits:
+      - Iterator
+    inverted: true
   weight: 10
   startingGear: QuartermasterGear
   icon: "JobIconQuartermaster" #Starlight

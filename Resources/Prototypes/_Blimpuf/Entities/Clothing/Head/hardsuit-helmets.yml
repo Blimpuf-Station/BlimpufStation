@@ -1,9 +1,11 @@
 - type: entity
-  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate, BaseSyndicateContraband ] # Blimpuf
   id: ClothingHeadHelmetHardsuitUltima
   name: cybersun ultima hardsuit helmet
   description: An experimental hardsuit helmet for the Syndicate.
   components:
+    - type: Contraband # Blimpuf
+      tier: Tier4
     - type: Sprite
       sprite: _Blimpuf/Clothing/Head/Hardsuits/syndicate-experimental-hardsuit.rsi
       layers:

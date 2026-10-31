@@ -16,7 +16,7 @@
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/Shuttles/emergency_plasma.yml
         - type: StationCargoShuttle
-          path: /Maps/_Starlight/Shuttles/cargo_plasma.yml
+          path: /Maps/_Starlight/Shuttles/Cargo/cargo_plasma.yml
         - type: StationJobs
           availableJobs:
             #command
@@ -35,7 +35,6 @@
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 2, 2 ]
-            Performer: [ 2, 2 ]
             Reporter: [ 2, 3 ]
             Lawyer: [ 1, 1 ]
             #engineering

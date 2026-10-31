@@ -17,11 +17,14 @@
       sprite: DeltaV/Clothing/Uniforms/Scrubs/cyan.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: UnsensoredClothingUniformBase
   id: UniformScrubsColorCybersun
   name: cybersun scrubs
   description: The official uniform of Cybersun's biotechnology division
   components:
+    - type: Contraband # Blimpuf
+      tier: Tier2
+      contrabandType: Syndicate
     - type: Sprite
       sprite: DeltaV/Clothing/Uniforms/Scrubs/cybersun.rsi
 
