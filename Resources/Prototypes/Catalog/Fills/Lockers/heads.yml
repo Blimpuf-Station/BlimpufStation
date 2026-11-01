@@ -402,7 +402,6 @@
     - id: SecurityShuttleConsoleCircuitboard # Starlight start
     - id: ClothingOuterWinterHoS
 #    - id: ClothingHandsGlovesCombat # Starlight, they spawn with them now.
-    - id: SecureBriefings
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
