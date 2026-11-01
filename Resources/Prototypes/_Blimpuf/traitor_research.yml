@@ -737,7 +737,7 @@
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierSheetPlasteel
-  displayName: uranium
+  displayName: plasteel
   validPrototypes:
     - SheetPlasteel
     - SheetPlasteel1
