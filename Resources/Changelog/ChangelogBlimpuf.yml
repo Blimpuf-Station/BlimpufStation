@@ -1283,5 +1283,12 @@ Entries:
   id: 24501
   time: '2026-11-01T19:19:29.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/245
+- author: LadyLiliana
+  changes:
+  - message: Fixed broken revenant collisions.
+    type: Fix
+  id: 24301
+  time: '2026-11-01T19:24:09.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/243
 Order: -1
 
