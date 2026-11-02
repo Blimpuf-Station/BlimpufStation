@@ -34,7 +34,7 @@
     state: icon
   content:
   - ClothingNeckChameleonPhaseCloak
-  - EMPImplanter
+  - EmpImplanter
   - ChemistryBottleTazinide
   - Hypopen
   - ScramImplanter
@@ -93,7 +93,7 @@
     sprite: Structures/Shuttles/thruster.rsi
     state: base
   content:
-  - CrateThiefShuttle
+  - CrateNameSyndicateShuttleBundle
   - Multitool
   - ClothingOuterEVASuitSyndicate
   - ClothingHeadHelmetSyndicate
