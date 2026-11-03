@@ -489,6 +489,7 @@
   displayName: handheld mass scanner
   validPrototypes:
     - HandHeldMassScanner
+    - HandHeldMassScannerEmpty
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierHydroponicsToolScythe
