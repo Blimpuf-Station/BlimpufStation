@@ -53,7 +53,7 @@
       prob: 0.1
     - id: RubberStampCaptain
     - id: SpaceCash1000
-    - id: WeaponDisabler
+     #Captain doesn't deserve a disabler, isn't their sabre enough? Blimpuf
     - id: ClothingEyesGlassesCommand
     - id: ClothingEyesHudCommand
     - id: EncryptionKeyExpedition #starlight
@@ -156,7 +156,7 @@
     - id: ClothingNeckGoldmedal
     - id: DoorRemoteService
     - id: HoPIDCard
-    - id: WeaponDisabler
+   #HoP doesn't deserve a disabler, Blimpuf
     - id: ClothingEyesHudCommand
     - id: BoxFolderHoPClipboard #Starlight start
     - id: ServiceTechFabFlatpack
