@@ -363,7 +363,7 @@
           conditions:
           - !type:HasBudgetCondition
           - !type:PlayerCountCondition
-            min: 30
+            min: 25
           - !type:RoundDurationCondition
             min: 1200 # 20 minutes
         - id: ColossusSpawn
@@ -737,7 +737,7 @@
           conditions:
           - !type:HasBudgetCondition
           - !type:PlayerCountCondition
-            min: 30
+            min: 25
           - !type:RoundDurationCondition
             min: 1200 # 20 minutes
         - id: ColossusSpawn
