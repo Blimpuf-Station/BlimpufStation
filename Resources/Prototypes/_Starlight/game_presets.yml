@@ -85,7 +85,6 @@
   minPlayers: 20 # Blimpuf
   rules:
     - SLChangeling
-    - SLChangelingLess
     - SubGamemodesRuleNoChangelings
     - BasicStationEventScheduler
     - BasicRoundstartVariation
