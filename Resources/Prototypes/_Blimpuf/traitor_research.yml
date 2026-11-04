@@ -410,6 +410,7 @@
   displayName: dropper
   validPrototypes:
     - Dropper
+    - CyberToolDropper
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierFireAxe
