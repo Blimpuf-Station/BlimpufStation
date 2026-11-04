@@ -334,6 +334,7 @@
   displayName: portable cooling unit
   validPrototypes:
     - CoolingUnit
+    - EmergencyCoolingUnit
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierDefibrillator
