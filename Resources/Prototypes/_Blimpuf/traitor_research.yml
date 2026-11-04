@@ -872,6 +872,8 @@
   validPrototypes:
     - WeaponDisabler
     - WeaponDisablerSMG
+    - WeaponDominator 
+    - WeaponAdvancedTaser
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierWeaponLaserSvalinn
