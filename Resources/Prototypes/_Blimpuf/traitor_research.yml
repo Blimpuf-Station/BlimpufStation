@@ -513,7 +513,7 @@
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierIngotGold
-  displayName: gold
+  displayName: gold bar
   validPrototypes:
     - IngotGold
     - IngotGold1
