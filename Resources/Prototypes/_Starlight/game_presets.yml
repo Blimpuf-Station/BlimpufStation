@@ -65,7 +65,7 @@
   name: vampire-gamemode-title
   description: vampire-gamemode-description
   showInVote: True
-  minPlayers: 50
+  minPlayers: 25 # Blimpuf
   rules:
   - Vampire
   - SubGamemodesRuleNoVampires
@@ -82,7 +82,7 @@
   name: changeling-gamemode-title
   description: changeling-gamemode-description
   showInVote: false
-  minPlayers: 25
+  minPlayers: 20 # Blimpuf
   rules:
     - SLChangeling
     - SLChangelingLess
@@ -204,7 +204,7 @@
   name: terrorspiders-gamemode-title
   description: terrorspiders-gamemode-description
   showInVote: True
-  minPlayers: 50
+  minPlayers: 30 # Blimpuf
   rules:
   - TerrorSpidersSpawn
   - SubGamemodesRuleNoChangelings

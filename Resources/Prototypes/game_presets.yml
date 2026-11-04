@@ -284,7 +284,7 @@
   - zomber
   name: zombie-title
   description: zombie-description
-  minPlayers: 50 # 🌟Starlight🌟
+  minPlayers: 25 # Blimpuf
   showInVote: true # 🌟Starlight🌟
   rules:
   - Zombie
