@@ -109,6 +109,7 @@
   showInVote: true # 🌟Starlight🌟
   description: extended-description
   minPlayers: 0 # Starlight
+  voteCooldown: 0 # Blimpuf - allow ordinary low-pop rounds to repeat instead of forcing ShitStation
   rules:
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
@@ -178,6 +179,7 @@
   name: traitor-title
   description: traitor-description
   minPlayers: 5 # 🌟Starlight🌟
+  voteCooldown: 0 # Blimpuf - allow ordinary low-pop rounds to repeat instead of forcing ShitStation
   showInVote: true # 🌟Starlight🌟
   rules:
   # - DummyNonAntagChance 🌟Starlight🌟
