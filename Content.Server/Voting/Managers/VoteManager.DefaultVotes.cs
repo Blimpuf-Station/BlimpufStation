@@ -325,7 +325,7 @@ namespace Content.Server.Voting.Managers
                 #endregion
                 //add the key we picked to the cooldown list
                 //if its secret, never add it
-                if (!(secretPreset != null && pickedPreset.ID == secretPreset.ID))
+                if (pickedPreset.VoteCooldown > 0 && !(secretPreset != null && pickedPreset.ID == secretPreset.ID))
                 {
                     _presetCooldown.Add(pickedPreset.ID, pickedPreset.VoteCooldown);
                     _adminLogger.Add(LogType.Vote, LogImpact.Medium, $"Preset {pickedPreset.ID} added to cooldown for {pickedPreset.VoteCooldown} votes.");
