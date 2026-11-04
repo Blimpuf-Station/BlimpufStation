@@ -617,6 +617,7 @@
   displayName: exosuit air tank
   validPrototypes:
     - MechAirTank
+    - MechAirTankFilled
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierMechEquipmentGrabber
