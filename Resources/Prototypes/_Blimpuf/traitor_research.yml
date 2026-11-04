@@ -348,6 +348,7 @@
     - DefibrillatorSyndicateOneHandedUnpowered
     - DefibrillatorBrigmedical
     - DefibrillatorParamed
+    - DefibrillatorCyber
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierDoorElectronics
