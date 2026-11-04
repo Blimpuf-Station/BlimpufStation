@@ -1,6 +1,7 @@
 - type: entity
   id: CartridgePistolRubber
   name: cartridge (.35 auto rubber)
+  description: A medium-power pistol and submachine gun cartridge, widely-considered the standard in most parts of the sector. Less-lethal projectile, designed for riot control with minimal casualties. Broken bones will result in pay deduction. #Blimpuf
   parent: [BaseContrabandTier2, BaseCartridgePistol] # Blimpuf Less-Lethal is Tier 2
   components:
   - type: CartridgeAmmo
@@ -17,6 +18,7 @@
   id: CartridgePistol40SP
   name: cartridge (.40 SP)
   parent: BaseCartridgePistol
+  description: A powerful pistol cartridge, preferred by those for whom .35 auto is not enough. Soft-point, standard kinetic projectile, the soft lead tip expands slightly on impact to increase damage, at a slight cost to armor penetration. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletPistolTrace40SP
@@ -36,6 +38,7 @@
   id: CartridgePistol40HP
   name: cartridge (.40 HP)
   parent: CartridgePistol40SP
+  description: A powerful pistol cartridge, preferred by those for whom .35 auto is not enough. The cavity at it's tip allows the hollow-point projectile to expand on impact with a soft target for maximum damage. Ineffective against armoured opponents. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletPistolTrace40HP
@@ -51,6 +54,7 @@
   id: CartridgePistol40FMJ
   name: cartridge (.40 FMJ)
   parent: CartridgePistol40SP
+  description: A powerful pistol cartridge, preferred by those for whom .35 auto is not enough. Full metal jacket projectiles have a full copper casing. A good in-between soft-point and armor-piercing projectiles, for lightly armored threats. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletPistolTrace40FMJ
@@ -66,6 +70,7 @@
   id: CartridgePistol40AP
   name: cartridge (.40 AP)
   parent: CartridgePistol40SP
+  description: A powerful pistol cartridge, preferred by those for whom .35 auto is not enough. Armor-piercing ammunition is renowned for its ability to cut straight through body armor. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletPistolTrace40AP
@@ -105,6 +110,7 @@
   id: CartridgePistolHP
   name: cartridge (.35 auto HP)
   parent: BaseCartridgePistol
+  description: A medium-power pistol and submachine gun cartridge, widely-considered the standard in most parts of the sector. The cavity at it's tip allows the hollow-point projectile to expand on impact with a soft target for maximum damage. Ineffective against armoured opponents. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletPistolTraceHP
@@ -120,6 +126,7 @@
   id: CartridgePistolFMJ
   name: cartridge (.35 auto FMJ)
   parent: BaseCartridgePistol
+  description: A medium-power pistol and submachine gun cartridge, widely-considered the standard in most parts of the sector. Full metal jacket projectiles have a full copper casing. A good in-between soft-point and armor-piercing projectiles, for lightly armored threats. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletPistolTraceFMJ
@@ -135,6 +142,7 @@
   id: CartridgePistolAP
   name: cartridge (.35 auto AP)
   parent: BaseCartridgePistol
+  description: A medium-power pistol and submachine gun cartridge, widely-considered the standard in most parts of the sector. Armor-piercing ammunition is renowned for its ability to cut straight through body armor. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletPistolTraceAP
