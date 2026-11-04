@@ -1290,5 +1290,15 @@ Entries:
   id: 24301
   time: '2026-11-01T19:24:09.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/243
+- author: LunaNova
+  changes:
+  - message: Descriptions to cartridges .20, caseless .25 rubber, .30, .35, .40, and
+      .45, as well as HP, FMJ, SP and rubber.
+    type: Add
+  - message: Fixed HP and FMJ descriptions on the .45 cartridge.
+    type: Fix
+  id: 23201
+  time: '2026-11-04T17:05:06.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/232
 Order: -1
 
