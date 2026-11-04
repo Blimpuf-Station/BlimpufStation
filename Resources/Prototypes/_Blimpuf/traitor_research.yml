@@ -624,6 +624,7 @@
   validPrototypes:
     - MechEquipmentGrabber
     - MechEquipmentGrabberSmall
+    - MechEquipmentSecGrabber
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierMechThruster
