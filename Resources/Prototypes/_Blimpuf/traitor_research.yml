@@ -520,7 +520,7 @@
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierIngotSilver
-  displayName: silver
+  displayName: silver bar
   validPrototypes:
     - IngotSilver
     - IngotSilver1
