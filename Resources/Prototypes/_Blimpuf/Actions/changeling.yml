@@ -35,3 +35,29 @@
       event: !type:ActionContortBodyEvent {}
     - type: ChangelingAction
       chemicalCost: 15
+
+- type: entity
+  parent: BaseAction
+  id: ActionRetractableItemTentacle
+  name: Tentacle
+  description: Shed your flesh and reform it into a fleshy tentacle. Costs 20 chemicals to summon, and 20 chemicals to retract. # Starlight
+  components:
+    - type: Action
+      useDelay: 2
+      raiseOnAction: true
+      itemIconStyle: BigAction
+      icon:
+        sprite: Changeling/changeling_abilities.rsi
+        state: tentacle
+    - type: InstantAction
+      event: !type:OnRetractableItemActionEvent
+    - type: RetractableItemAction
+      spawnedPrototype: WeaponChangelingTentacle
+      summonSounds:
+        collection: gib # Placeholder
+      retractSounds:
+        collection: gib # Placeholder
+    #Starlight edit: changeling action costs
+    - type: ChangelingAction
+      chemicalCost: 20 # Starlight, it takes energy to recall too... come on.
+      requireAbsorbed: 1

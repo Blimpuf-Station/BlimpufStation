@@ -25,3 +25,17 @@
   conditions:
     - !type:ListingLimitedStockCondition
       stock: 1
+
+- type: listing
+  id: EvolutionMenuCombatTentacle
+  name: evolutionmenu-combat-tentacle-name
+  description: evolutionmenu-combat-tentacle-desc
+  icon: { sprite: Changeling/changeling_abilities.rsi, state: tentacle }
+  productAction: ActionRetractableItemTentacle
+  cost:
+    EvolutionPoint: 4
+  categories:
+    - ChangelingAbilityCombat
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1
