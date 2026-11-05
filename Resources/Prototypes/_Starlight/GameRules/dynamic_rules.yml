@@ -3,7 +3,7 @@
   id: SLDynamicRule
   components:
   - type: GameRule
-    minPlayers: 40
+    minPlayers: 30
   - type: DynamicRule
     startingBudgetMin: 250 # 200's a bit too low, can't even roll most minor antags alongside anything but traitor.
     startingBudgetMax: 525
@@ -363,7 +363,7 @@
           conditions:
           - !type:HasBudgetCondition
           - !type:PlayerCountCondition
-            min: 30
+            min: 25
           - !type:RoundDurationCondition
             min: 1200 # 20 minutes
         - id: ColossusSpawn
@@ -381,7 +381,7 @@
   id: SLDynamicRuleLP
   components:
   - type: GameRule
-    minPlayers: 40
+    minPlayers: 30
   - type: DynamicRule
     startingBudgetMin: 200 # Beta can have a lower threshold.
     startingBudgetMax: 400
@@ -737,7 +737,7 @@
           conditions:
           - !type:HasBudgetCondition
           - !type:PlayerCountCondition
-            min: 30
+            min: 25
           - !type:RoundDurationCondition
             min: 1200 # 20 minutes
         - id: ColossusSpawn
