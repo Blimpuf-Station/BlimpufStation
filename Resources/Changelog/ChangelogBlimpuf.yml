@@ -1311,5 +1311,12 @@ Entries:
   id: 25201
   time: '2026-11-05T15:28:55.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/252
+- author: LunaNova
+  changes:
+  - message: Removed the disabler from HoP's and Captain's lockers.
+    type: Remove
+  id: 25001
+  time: '2026-11-05T15:36:42.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/250
 Order: -1
 
