@@ -1,0 +1,22 @@
+- type: trait
+  id: Ruminant
+  name: trait-language-ruminant-name
+  description: trait-language-ruminant-desc
+  category: LanguageTraits
+  cost: 2
+  effects:
+  - !type:LanguageEffect
+    languagesSpoken:
+    - Ruminant
+    languagesUnderstood:
+    - Ruminant
+    - OldRuminant
+  requirements:
+  - !type:SpeciesRequirement
+    species:
+    - Ovinia
+    inverted: true
+  - !type:TraitsRequirement
+    traits:
+    - Iterator
+    inverted: true

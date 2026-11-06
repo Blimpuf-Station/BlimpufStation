@@ -1,0 +1,4 @@
+# Sort all tags in alphabetical order and document their purpose here
+
+- type: Tag
+  id: OviniaEmotes # Used for Ovinia specific emotes

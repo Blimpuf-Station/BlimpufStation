@@ -39,6 +39,7 @@
     - Lagomorph # Starlight
     - NeoLagomorph # Starlight
     - Neocyte # Far Horizons
+    - Ovinia # macro
 
 
 
@@ -111,6 +112,7 @@
     - Human
     - Reptilian
     - Vulpkanin
+    - Ovinia # macro
 
 - type: loadoutEffectGroup
   id: OxygenBreatherMimeMoth
