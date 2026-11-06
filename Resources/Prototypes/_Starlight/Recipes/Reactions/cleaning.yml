@@ -21,13 +21,13 @@
   products:
     Ammonia: 1
 
-- type: reaction
-  id: AmmoniaFromAvaliBlood
-  requiredMixerCategories:
-    - Stir
-  minTemp: 370
-  reactants:
-    AvaliBlood:
-      amount: 2
-  products:
-    Ammonia: 1
+#- type: reaction # Blimpuf- no Avali
+#  id: AmmoniaFromAvaliBlood
+#  requiredMixerCategories:
+#    - Stir
+#  minTemp: 370
+#  reactants:
+#    AvaliBlood:
+#      amount: 2
+#  products:
+#    Ammonia: 1
