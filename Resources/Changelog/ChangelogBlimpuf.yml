@@ -1326,5 +1326,13 @@ Entries:
   id: 25401
   time: '2026-11-06T17:12:17.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/254
+- author: ALooseGoose
+  changes:
+  - message: Fixed broken behaviour with the Syndicate Research handheld mass scanner
+      task.
+    type: Fix
+  id: 25101
+  time: '2026-11-06T17:50:36.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/251
 Order: -1
 
