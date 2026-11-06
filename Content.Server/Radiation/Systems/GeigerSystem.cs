@@ -6,9 +6,6 @@ using Content.Shared.Inventory.Events;
 using Content.Shared.Radiation.Components;
 using Content.Shared.Radiation.Systems;
 using Robust.Server.Audio;
-using Robust.Server.GameObjects;
-using Robust.Server.Player;
-using Robust.Shared.Player;
 
 namespace Content.Server.Radiation.Systems;
 
@@ -17,7 +14,6 @@ public sealed partial class GeigerSystem : SharedGeigerSystem
     [Dependency] private SharedAppearanceSystem _appearance = default!;
     [Dependency] private RadiationSystem _radiation = default!;
     [Dependency] private AudioSystem _audio = default!;
-    [Dependency] private IPlayerManager _player = default!;
 
     private static readonly float ApproxEqual = 0.01f;
 
@@ -156,17 +152,14 @@ public sealed partial class GeigerSystem : SharedGeigerSystem
         if (!component.Sounds.TryGetValue(component.DangerLevel, out var sounds))
             return;
 
-        var sound = _audio.ResolveSound(sounds);
         var param = sounds.Params.WithLoop(true).WithVolume(component.Volume);
 
         if (component.BroadcastAudio)
         {
             // For some reason PlayPvs sounds quieter even at distance 0, so we need to boost the volume a bit for consistency
             param = sounds.Params.WithLoop(true).WithVolume(component.Volume + 1.5f).WithMaxDistance(component.BroadcastRange);
-            component.Stream = _audio.PlayPvs(sound, uid, param)?.Entity;
+            component.Stream = _audio.PlayPvs(sounds, uid, param)?.Entity; // Blimpuf Edit
         }
-        else if (component.User is not null && _player.TryGetSessionByEntity(component.User.Value, out var session))
-            component.Stream = _audio.PlayGlobal(sound, session, param)?.Entity;
     }
 
     public static GeigerDangerLevel RadsToLevel(float rads)
