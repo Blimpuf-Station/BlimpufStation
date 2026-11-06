@@ -341,3 +341,18 @@
       blacklist:
         components:
           - SurplusBundle
+
+# Reinforcements
+- type: listing
+  id: UplinkReinforcementRadioSyndicateSmirk
+  name: uplink-reinforcement-radio-smirk-name
+  description: uplink-reinforcement-radio-smirk-desc
+  productEntity: ReinforcementRadioSyndicateSmirk
+  icon: { sprite: /Textures/_Blimpuf/Objects/Devices/smirk-radio.rsi, state: icon }
+  discountCategory: usualDiscounts
+  discountDownTo:
+    Telecrystal: 15
+  cost:
+    Telecrystal: 30
+  categories:
+  - UplinkAllies

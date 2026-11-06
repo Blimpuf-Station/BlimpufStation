@@ -47,3 +47,6 @@ uplink-syndie-energy-shotgun-desc = This energy shotgun is capable of firing all
 
 uplink-gloves-knuckle-dusters-stimulant-name = Syndicate Stimulant Knuckle Dusters
 uplink-gloves-knuckle-dusters-stimulant-desc = This pair of knuckle dusters injects the user with a mix of Desoxyephedrine and Ethylredoxrazine to provide a constant speed boost while worn. Not recommended for prolonged wear.
+
+uplink-reinforcement-radio-smirk-name = Smirk Reinforcement Radio
+uplink-reinforcement-radio-smirk-desc = Call in Smirk, a Syndicate's chemist best friend. Squeeze him for some Vestine and supply him with deadly chemicals so he can spit them at your foes.
