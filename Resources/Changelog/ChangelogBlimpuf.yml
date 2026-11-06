@@ -1318,5 +1318,13 @@ Entries:
   id: 25001
   time: '2026-11-05T15:36:42.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/250
+- author: Limerent-Sun
+  changes:
+  - message: Reduced the frequency of PsychicScreach, SecurityDrill, and Abductor
+      events.
+    type: Tweak
+  id: 25401
+  time: '2026-11-06T17:12:17.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/254
 Order: -1
 
