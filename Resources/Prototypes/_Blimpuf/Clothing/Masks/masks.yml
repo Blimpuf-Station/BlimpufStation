@@ -1,0 +1,24 @@
+- type: entity
+  parent: ClothingMaskGasChameleon
+  id: ClothingMaskGasAntiCamera
+  suffix: Camera Shy, Chameleon
+  components:
+    - type: ItemToggle
+      onUse: false
+      onActivate: false
+    - type: ToggleClothing
+      action: ActionTogglePhaseCloak
+      disableOnUnequip: true
+    - type: ComponentToggler
+      parent: true
+      components:
+        - type: Stealth
+          minVisibility: -1
+          maxVisibility: -1
+          lastVisibility: -1
+          affectedEntities:
+            components:
+              - SiliconLawBound
+          unaffectedEntities:
+            components:
+              - Xenoborg
