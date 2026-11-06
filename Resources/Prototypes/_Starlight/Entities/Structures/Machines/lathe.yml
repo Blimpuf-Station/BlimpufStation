@@ -426,7 +426,7 @@
     - Equipment
     - StarlightScienceWeapons
     - WirelessCameraHandheld
-    - SecurityScienceBlueSpace
+#    - SecurityScienceBlueSpace # Blimpuf- no nullspace
     - SalvageSecurityBoards
     - SalvageSecurityWeapons
     - SecurityDisablers
@@ -563,7 +563,7 @@
     - Equipment
     - StarlightScienceWeapons
     - WirelessCameraHandheld
-    - SecurityScienceBlueSpace
+#    - SecurityScienceBlueSpace
     - SalvageSecurityBoards
     - SalvageSecurityWeapons
     - SecurityDisablers

@@ -52,7 +52,7 @@
   cost: 10000
   recipeUnlocks:
     - ArtificialBluespaceCrystal
-    - NullspaceAnchorMachineCircuitboard
+#    - NullspaceAnchorMachineCircuitboard # Blimpuf- no nullspace
 
 - type: technology
   id: ScienceCyberLimbsTech
