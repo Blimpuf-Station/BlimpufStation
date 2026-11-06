@@ -32241,20 +32241,6 @@ entities:
     - type: Transform
       pos: -13.5,-22.5
       parent: 2
-    - type: Lathe
-      dynamicPacks:
-      - SecurityScienceBlueSpace
-      - EngineeringBoards
-      - CargoBoards
-      - MedicalBoards
-      - ServiceBoards
-      - ScienceBoards
-      - CameraBoards
-      - MechBoards
-      - ShuttleBoards
-      - StarlightMechBoards
-      - StarlightLawboards
-      - StarlightCircuitImprinterLootable
 - proto: CleanerDispenser
   entities:
   - uid: 5125
