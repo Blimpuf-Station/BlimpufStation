@@ -1,0 +1,36 @@
+- type: entity
+  parent: ClothingNeckChameleon
+  id: ClothingNeckChameleonPhaseCloak
+  suffix: Chameleon, Phase Cloak
+  components:
+  - type: ToggleClothing
+    action: ActionTogglePhaseCloak
+    disableOnUnequip: true
+  - type: ComponentToggler
+    parent: true
+    components:
+    - type: Stealth
+      minVisibility: -0.99
+      maxVisibility: 0.15
+      lastVisibility: 0.15
+  - type: PowerCellDraw
+    drawRate: 14 # roughly 200 seconds on the default cell
+  - type: ToggleCellDraw
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+    fitsInCharger: false
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot
+      storagebase: !type:Container
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
+        whitelist:
+          tags:
+          - PowerCell
+        blacklist:
+          tags:
+          - MechReactor

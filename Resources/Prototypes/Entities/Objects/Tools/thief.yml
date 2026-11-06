@@ -58,6 +58,17 @@
     - SleeperSet
     - CommunicatorSet
     - SmugglerSet
+    - ExtrovertSet
+    - GetawaySet
+    - NinjaSet
+    - DemolitionistSet
+    - InfiltratorSet
+    - SaboteurSet
+    - PilotSet
+    - BluespaceSet
+    - SelfDefenceSet
+    - PranksterSet
+    - BlindingSet
   - type: ActivatableUI
     key: enum.ThiefBackpackUIKey.Key
   - type: UserInterface
