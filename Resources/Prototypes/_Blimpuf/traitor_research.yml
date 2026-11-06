@@ -709,6 +709,7 @@
     - RCD
     - RCDEmpty
     - RCDChiefEngineer
+    - RCDCyber
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierRifleStock
