@@ -1290,5 +1290,49 @@ Entries:
   id: 24301
   time: '2026-11-01T19:24:09.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/243
+- author: LunaNova
+  changes:
+  - message: Descriptions to cartridges .20, caseless .25 rubber, .30, .35, .40, and
+      .45, as well as HP, FMJ, SP and rubber.
+    type: Add
+  - message: Fixed HP and FMJ descriptions on the .45 cartridge.
+    type: Fix
+  id: 23201
+  time: '2026-11-04T17:05:06.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/232
+- author: Limerent-Sun
+  changes:
+  - message: Compys no longer spawn in maints.
+    type: Remove
+  - message: Most medium-impact antagonists can now spawn at lower playercounts.
+    type: Tweak
+  - message: Reduced several job playtime requirements during Launch Window period.
+    type: Tweak
+  id: 25201
+  time: '2026-11-05T15:28:55.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/252
+- author: LunaNova
+  changes:
+  - message: Removed the disabler from HoP's and Captain's lockers.
+    type: Remove
+  id: 25001
+  time: '2026-11-05T15:36:42.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/250
+- author: Limerent-Sun
+  changes:
+  - message: Reduced the frequency of PsychicScreach, SecurityDrill, and Abductor
+      events.
+    type: Tweak
+  id: 25401
+  time: '2026-11-06T17:12:17.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/254
+- author: ALooseGoose
+  changes:
+  - message: Fixed broken behaviour with the Syndicate Research handheld mass scanner
+      task.
+    type: Fix
+  id: 25101
+  time: '2026-11-06T17:50:36.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/251
 Order: -1
 

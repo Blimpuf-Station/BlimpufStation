@@ -5,7 +5,7 @@
     Captain:
     - !type:DepartmentTimeRequirement
       department: Command
-      time: 5h
+      time: 4h
     - !type:TraitsRequirement
       traits:
       - Iterator
@@ -13,9 +13,9 @@
     HeadOfPersonnel:
     - !type:DepartmentTimeRequirement
       department: Civilian
-      time: 5h
+      time: 2h
     - !type:OverallPlaytimeRequirement
-      time: 8h
+      time: 4h
     - !type:TraitsRequirement
       traits:
       - Iterator
@@ -23,10 +23,10 @@
     ChiefEngineer:
     - !type:RoleTimeRequirement
       role: JobAtmosphericTechnician
-      time: 5h
+      time: 3h
     - !type:RoleTimeRequirement
       role: JobStationEngineer
-      time: 5h
+      time: 3h
     - !type:TraitsRequirement
       traits:
       - Iterator
@@ -34,10 +34,7 @@
     ChiefMedicalOfficer:
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 5h
-    - !type:RoleTimeRequirement
-      role: JobMedicalDoctor
-      time: 1h
+      time: 4h
     - !type:RoleTimeRequirement
       role: JobChemist
       time: 1h
@@ -48,7 +45,7 @@
     HeadOfSecurity:
     - !type:RoleTimeRequirement
       role: JobWarden
-      time: 5h
+      time: 2h
     - !type:RoleTimeRequirement
       role: JobDetective
       time: 1h
@@ -65,17 +62,14 @@
       - Iterator
       inverted: true
     - !type:RoleTimeRequirement
-      role: JobCargoTechnician
-      time: 2h
-    - !type:RoleTimeRequirement
       role: JobSalvageSpecialist
-      time: 2h
+      time: 1h
     ResearchDirector:
     - !type:DepartmentTimeRequirement
       department: Science
       time: 3h
     - !type:OverallPlaytimeRequirement
-      time: 8h
+      time: 4h
     - !type:TraitsRequirement
       traits:
       - Iterator
@@ -84,7 +78,7 @@
     NanoTrasenRepresentative:
     - !type:DepartmentTimeRequirement
       department: Command
-      time: 5h
+      time: 3h
     - !type:RoleTimeRequirement
       role: JobIAA
       time: 1h
@@ -118,9 +112,9 @@
       inverted: true
     # Security
     Warden:
-    - !type:RoleTimeRequirement
-      role: JobSecurityOfficer
-      time: 2h
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 3h
     - !type:RoleTimeRequirement
       role: JobDetective
       time: 1h
@@ -134,7 +128,7 @@
       time: 1h
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 2h
+      time: 1h
     Detective:
     - !type:RoleTimeRequirement
       role: JobSecurityOfficer
@@ -146,26 +140,19 @@
     SecurityOfficer:
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 2h
-    SecurityCadet:
-    - !type:OverallPlaytimeRequirement
       time: 1h
+    SecurityCadet:
     - !type:DepartmentTimeRequirement
       department: Security
       time: 30h
       inverted: true
     # Cargo
-    SalvageSpecialist:
-    - !type:RoleTimeRequirement
-      role: JobCargoTechnician
-      time: 1h
-    MiningSpecialist:
-    - !type:OverallPlaytimeRequirement
-      time: 1h
+    SalvageSpecialist: []
+    MiningSpecialist: []
     SalvageLead:
     - !type:RoleTimeRequirement
       role: JobSalvageSpecialist
-      time: 5h
+      time: 3h
     # Engineering
     StationEngineer:
     - !type:RoleTimeRequirement
@@ -212,13 +199,12 @@
     # Service
     Lawyer:
     - !type:OverallPlaytimeRequirement
-      time: 3h
+      time: 1h
     - !type:TraitsRequirement
       traits:
       - Iterator
       inverted: true
-    Reporter:
-      []
+    Reporter: []
 
 - type: jobRequirementOverride
   id: PlaytestDiscordOverride

@@ -7,7 +7,7 @@
     weight: 2 #Starlight 3.5 -> 2, showing up almost every round gets tiring
     earliestStart: 25
     reoccurrenceDelay: 40
-    minimumPlayers: 30
+    minimumPlayers: 25
     duration: null
   - type: BriefingRule
     briefing: eeep-role-briefing
