@@ -692,7 +692,7 @@
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierPowerDrill
-  displayName: power cell
+  displayName: power drill
   validPrototypes:
     - PowerDrill
 
@@ -875,7 +875,7 @@
   validPrototypes:
     - WeaponDisabler
     - WeaponDisablerSMG
-    - WeaponDominator 
+    - WeaponDominator
     - WeaponAdvancedTaser
 
 - type: SyndicateResearchSpecifier
