@@ -4,8 +4,8 @@ meta:
   engineVersion: 283.1.5
   forkId: ""
   forkVersion: ""
-  time: 11/10/2026 03:01:36
-  entityCount: 25302
+  time: 11/10/2026 03:29:02
+  entityCount: 25299
 maps:
 - 1
 grids:
@@ -8799,23 +8799,6 @@ entities:
       - 11717
     - type: Fixtures
       fixtures: {}
-  - uid: 15
-    components:
-    - type: MetaData
-      name: Air Alarm Comms
-    - type: Transform
-      parent: 2
-      pos: 41.5,44.5
-    - type: DeviceList
-      devices:
-      - 15174
-      - 14997
-      - 11531
-      - 15175
-      - 569
-      - 14995
-    - type: Fixtures
-      fixtures: {}
   - uid: 16
     components:
     - type: MetaData
@@ -11157,6 +11140,23 @@ entities:
       - 15506
       - 14581
       - 15305
+  - uid: 1230
+    components:
+    - type: MetaData
+      name: Air Alarm Comms
+    - type: Transform
+      parent: 2
+      pos: 38.5,44.5
+    - type: DeviceList
+      devices:
+      - 569
+      - 15175
+      - 14995
+      - 15174
+      - 14997
+      - 11531
+    - type: Fixtures
+      fixtures: {}
   - uid: 9148
     components:
     - type: MetaData
@@ -14107,7 +14107,7 @@ entities:
       pos: 35.5,41.5
     - type: DeviceNetwork
       deviceLists:
-      - 15
+      - 1230
       - 11438
   - uid: 570
     components:
@@ -15590,16 +15590,6 @@ entities:
       pos: 127.369,75.844246
 - proto: APCBasic
   entities:
-  - uid: 745
-    components:
-    - type: MetaData
-      name: APC Comms
-    - type: Transform
-      parent: 2
-      rot: -1.5707963267948966 rad
-      pos: 43.5,43.5
-    - type: Fixtures
-      fixtures: {}
   - uid: 746
     components:
     - type: MetaData
@@ -16485,6 +16475,15 @@ entities:
     - type: AccessReader
       accessListsOriginal:
       - - Engineering
+    - type: Fixtures
+      fixtures: {}
+  - uid: 1229
+    components:
+    - type: MetaData
+      name: APC Comms
+    - type: Transform
+      parent: 2
+      pos: 41.5,44.5
     - type: Fixtures
       fixtures: {}
   - uid: 17242
@@ -18937,36 +18936,21 @@ entities:
     - type: Transform
       parent: 2
       pos: 58.5,24.5
-  - uid: 1229
-    components:
-    - type: Transform
-      parent: 2
-      pos: 43.5,43.5
-  - uid: 1230
-    components:
-    - type: Transform
-      parent: 2
-      pos: 42.5,43.5
   - uid: 1231
     components:
     - type: Transform
       parent: 2
-      pos: 42.5,41.5
+      pos: 41.5,42.5
   - uid: 1232
     components:
     - type: Transform
       parent: 2
-      pos: 42.5,42.5
+      pos: 41.5,43.5
   - uid: 1233
     components:
     - type: Transform
       parent: 2
-      pos: 42.5,43.5
-  - uid: 1234
-    components:
-    - type: Transform
-      parent: 2
-      pos: 42.5,41.5
+      pos: 41.5,44.5
   - uid: 1235
     components:
     - type: Transform
@@ -40635,6 +40619,11 @@ entities:
       pos: 20.54134,70.29931
 - proto: CableMV
   entities:
+  - uid: 15
+    components:
+    - type: Transform
+      parent: 2
+      pos: 41.5,44.5
   - uid: 357
     components:
     - type: Transform
@@ -41185,16 +41174,6 @@ entities:
     - type: Transform
       parent: 2
       pos: 41.5,43.5
-  - uid: 5607
-    components:
-    - type: Transform
-      parent: 2
-      pos: 42.5,43.5
-  - uid: 5608
-    components:
-    - type: Transform
-      parent: 2
-      pos: 43.5,43.5
   - uid: 5609
     components:
     - type: Transform
@@ -76236,7 +76215,7 @@ entities:
       pos: 43.5,42.5
     - type: DeviceNetwork
       deviceLists:
-      - 15
+      - 1230
       - 11438
   - uid: 11532
     components:
@@ -103721,7 +103700,7 @@ entities:
       pos: 45.5,42.5
     - type: DeviceNetwork
       deviceLists:
-      - 15
+      - 1230
       - 11438
     - type: AtmosPipeColor
       color: '#0335FCFF'
@@ -105333,7 +105312,7 @@ entities:
       color: '#FF1212FF'
     - type: DeviceNetwork
       deviceLists:
-      - 15
+      - 1230
       - 11438
   - uid: 15175
     components:
@@ -105342,7 +105321,7 @@ entities:
       pos: 37.5,41.5
     - type: DeviceNetwork
       deviceLists:
-      - 15
+      - 1230
       - 11438
     - type: AtmosPipeColor
       color: '#FF1212FF'
@@ -143753,6 +143732,13 @@ entities:
     - type: Transform
       parent: 2
       pos: 39.5,39.5
+- proto: TelecomServerFilledLaw
+  entities:
+  - uid: 745
+    components:
+    - type: Transform
+      parent: 2
+      pos: 42.5,43.5
 - proto: TelecomServerFilledMedical
   entities:
   - uid: 21159
