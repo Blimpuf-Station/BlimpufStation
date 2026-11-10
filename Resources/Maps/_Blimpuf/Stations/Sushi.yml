@@ -4,7 +4,7 @@ meta:
   engineVersion: 283.1.5
   forkId: ""
   forkVersion: ""
-  time: 11/10/2026 03:29:02
+  time: 11/10/2026 03:45:45
   entityCount: 25299
 maps:
 - 1
@@ -11724,13 +11724,6 @@ entities:
       pos: 85.5,73.5
     - type: AccessReader
       accessListsOriginal: []
-  - uid: 19768
-    components:
-    - type: Transform
-      parent: 2
-      pos: 147.5,95.5
-    - type: AccessReader
-      accessListsOriginal: []
   - uid: 21723
     components:
     - type: Transform
@@ -13133,11 +13126,6 @@ entities:
     - type: Transform
       parent: 2
       pos: 31.5,70.5
-  - uid: 24922
-    components:
-    - type: Transform
-      parent: 2
-      pos: 147.5,99.5
 - proto: AirlockMaintDetectiveLocked
   entities:
   - uid: 418
@@ -13513,6 +13501,13 @@ entities:
     - type: Transform
       parent: 2
       pos: 119.5,64.5
+- proto: AirlockMaintNtrepLocked
+  entities:
+  - uid: 5607
+    components:
+    - type: Transform
+      parent: 2
+      pos: 147.5,99.5
 - proto: AirlockMaintRnDLocked
   entities:
   - uid: 490
@@ -13722,6 +13717,13 @@ entities:
         268:
         - - DoorStatus
           - DoorBolt
+- proto: AirlockNtrepGlassLocked
+  entities:
+  - uid: 1234
+    components:
+    - type: Transform
+      parent: 2
+      pos: 147.5,95.5
 - proto: AirlockQuartermasterGlassLocked
   entities:
   - uid: 521
