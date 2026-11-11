@@ -170,8 +170,8 @@
             Poison: 0.1
       - !type:HealthChange
         conditions:
-        - !type:MetabolizerTypeCondition # Starlight
-          type: [ Avali, Resomi ]
+        - !type:MetabolizerTypeCondition # Starlight, Blimpuf
+          type: [ Resomi ]
         damage:
           types:
             Poison: 2

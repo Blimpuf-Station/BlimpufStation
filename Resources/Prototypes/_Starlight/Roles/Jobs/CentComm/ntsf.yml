@@ -183,7 +183,7 @@
     - HoloprojectorField
     - MedkitCombatFilled
     - MedkitCombatFilled
-    - ClothingEyesGlassesNullSpace
+#    - ClothingEyesGlassesNullSpace # Blimpuf- no nullspace
     - PowerCellMicroreactor
     - WeaponTetherGun
     - WeaponGauntletGorilla

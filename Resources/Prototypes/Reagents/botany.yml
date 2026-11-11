@@ -231,19 +231,19 @@
     Poison:
       effects:
       - !type:HealthChange
-        conditions: #Starlight
+        conditions: #Starlight, Blimpuf
         - !type:MetabolizerTypeCondition
-          type: [ Avali, Resomi, Vox ] # The birds, including Vox
+          type: [ Resomi, Vox ] # The birds, including Vox
           inverted: true
         damage:
           types:
             Caustic: 1
-    Medicine: #Starlight
+    Medicine: #Starlight, Blimpuf
       effects:
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Avali, Resomi ]  # The birds, excluding Vox (they exhale ammonia, they don't want a ton of ammonia build up)
+          type: [ Resomi ]  # The birds, excluding Vox (they exhale ammonia, they don't want a ton of ammonia build up)
         damage:
           types:
             Asphyxiation: -1
@@ -252,7 +252,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Rat, Avali, Resomi ] #Starlight
+          type: [ Rat, Resomi ] #Starlight, Blimpuf
           inverted: true
         - !type:ReagentCondition
           reagent: Ammonia
@@ -271,7 +271,7 @@
         probability: 0.12
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Rat, Vox, Avali, Resomi ] #Starlight
+          type: [ Rat, Vox, Resomi ] #Starlight, Blimpuf
           inverted: true
         - !type:ReagentCondition
           reagent: Ammonia
