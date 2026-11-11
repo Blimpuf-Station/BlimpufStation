@@ -1334,5 +1334,13 @@ Entries:
   id: 25101
   time: '2026-11-06T17:50:36.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/251
+- author: Limerent-Sun
+  changes:
+  - message: Rounds no longer fail to start due to lack of eligible players for optional
+      subgamemodes.
+    type: Fix
+  id: 26101
+  time: '2026-11-11T15:09:21.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/261
 Order: -1
 
