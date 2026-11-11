@@ -113,6 +113,6 @@ public sealed partial class HayFeverSystem : EntitySystem
             return;
         if (TryComp<SpeechComponent>(uid,out _) && !TryComp<MutedComponent>(uid, out _))
             _chatSystem.TryEmoteWithChat(uid,"Sneeze");
-            allergy.SneezesQueued -= 1;
+        allergy.SneezesQueued -= 1;
     }
 }
