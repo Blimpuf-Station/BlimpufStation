@@ -145,8 +145,8 @@
     - [Captain, Ntrep]
     - [Captain, Ntrep]
   authGroupLabels:
-    - "Captain / NTR (1)"
-    - "Captain / NTR (2)"
+    - "Captain / CCR (1)"
+    - "Captain / CCR (2)"
   cooldownSecs: 3600
   authTimer: 30
 
@@ -199,8 +199,8 @@
     - [Captain, HeadOfSecurity, Ntrep]
     - [Captain, HeadOfSecurity, Ntrep]
   authGroupLabels:
-    - "Captain / HoS / NTR (1)"
-    - "Captain / HoS / NTR (2)"
+    - "Captain / HoS / CCR (1)"
+    - "Captain / HoS / CCR (2)"
   cooldownSecs: 900
   authTimer: 30
 
@@ -268,8 +268,8 @@
     - [Captain, HeadOfSecurity, Ntrep]
     - [Captain, HeadOfSecurity, Ntrep]
   authGroupLabels:
-    - "Captain / HoS / NTR (1)"
-    - "Captain / HoS / NTR (2)"
+    - "Captain / HoS / CCR (1)"
+    - "Captain / HoS / CCR (2)"
   cooldownSecs: 0
 
 # ── End Violet ─────────────────────────────────────────────────────────────────
@@ -341,8 +341,8 @@
     - [Captain, HeadOfSecurity, Ntrep]
     - [Captain, HeadOfSecurity, Ntrep]
   authGroupLabels:
-    - "Captain / HoS / NTR (1)"
-    - "Captain / HoS / NTR (2)"
+    - "Captain / HoS / CCR (1)"
+    - "Captain / HoS / CCR (2)"
   cooldownSecs: 3600
   authTimer: 30
 
@@ -510,8 +510,8 @@
     - [Command]
     - [Command]
   authGroupLabels:
-    - "Captain / NTR (1)"
-    - "Captain / NTR (2)"
+    - "Captain / CCR (1)"
+    - "Captain / CCR (2)"
     - "Command Member (3)"
     - "Command Member (4)"
     - "Command Member (5)"
