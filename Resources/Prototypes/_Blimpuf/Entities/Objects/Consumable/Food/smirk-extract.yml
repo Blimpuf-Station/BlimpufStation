@@ -1,0 +1,10 @@
+- type: entity
+  parent: MaterialSmileExtract
+  id: MaterialSmirkExtract
+  name: smirk extract
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Mobs/Smirk/smirk.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: smirk_the_slime_extract
