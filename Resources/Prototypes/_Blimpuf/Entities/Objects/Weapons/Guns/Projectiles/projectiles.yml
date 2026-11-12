@@ -306,34 +306,3 @@
       proto: BulletSyndieEnergyShotgunBuckshotUranium
       count: 12
       spread: 15
-
-- type: entity
-  name: scrambler bolt
-  id: BulletScrambler
-  categories: [ HideSpawnMenu ]
-  parent: BaseBullet
-  components:
-  - type: Reflective
-    reflective:
-    - NonEnergy
-  - type: Sprite
-    noRot: false
-    sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
-    layers:
-    - state: chronobolt
-      shader: unshaded
-      color: red
-  - type: Projectile
-    impactEffect: BulletImpactEffectKinetic
-    damage:
-      types:
-        Radiation: 5
-        Blunt: 10
-  - type: CyberneticDisruptionOnCollide
-    disableChance: 1
-  # Short lifespan
-  - type: TimedDespawn
-    lifetime: 0.5 # roughly 10 tiles
-  - type: GatheringProjectile
-  - type: IonStormOnCollide
-  - type: AddThavenMoodOnCollide
