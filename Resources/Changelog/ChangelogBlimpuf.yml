@@ -1354,5 +1354,12 @@ Entries:
   id: 26301
   time: '2026-11-12T14:05:33.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/263
+- author: battlecruiser12
+  changes:
+  - message: Added a hay fever trait.
+    type: Add
+  id: 26401
+  time: '2026-11-12T14:19:13.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/264
 Order: -1
 
