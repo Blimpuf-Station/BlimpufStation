@@ -1,0 +1,4 @@
+- type: shader
+  id: Contortion
+  kind: source
+  path: "/Textures/_Blimpuf/Shaders/contortion.swsl"

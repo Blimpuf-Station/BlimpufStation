@@ -10,6 +10,17 @@
   categories:
     - UplinkAmmo
 
+# Wearables
+- type: listing
+  id: UplinkClothingMaskGasAntiCamera
+  name: uplink-clothing-mask-gas-anticam-name
+  description: uplink-clothing-mask-gas-anticam-desc
+  productEntity: ClothingMaskGasAntiCamera
+  cost:
+    Telecrystal: 32
+  categories:
+    - UplinkWearables
+
 # Research
 - type: listing
   id: UplinkResearchAnalyzer
