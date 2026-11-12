@@ -1,10 +1,10 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 277.0.0
+  engineVersion: 283.1.5
   forkId: ""
   forkVersion: ""
-  time: 10/27/2026 03:56:27
+  time: 11/08/2026 06:20:19
   entityCount: 14185
 maps:
 - 1
@@ -74759,11 +74759,6 @@ entities:
       parent: 2
 - proto: SpawnMobKoboldKiki
   entities:
-  - uid: 8158
-    components:
-    - type: Transform
-      pos: -16.5,10.5
-      parent: 2
   - uid: 14023
     components:
     - type: Transform
@@ -74791,6 +74786,14 @@ entities:
     - type: Transform
       pos: -5.5,-5.5
       parent: 2
+- proto: SpawnMobMonkeyStirStir
+  entities:
+  - uid: 120
+    components:
+    - type: Transform
+      parent: 2
+      rot: -1.5707963267948966 rad
+      pos: -15.5,8.5
 - proto: SpawnMobMouse
   entities:
   - uid: 11336
