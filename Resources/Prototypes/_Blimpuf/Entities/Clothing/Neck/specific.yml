@@ -3,6 +3,11 @@
   id: ClothingNeckChameleonPhaseCloak
   suffix: Chameleon, Phase Cloak
   components:
+  - type: ItemToggle
+    onUse: false # can't activate with hand keybind
+    onActivate: false # can't activate in world
+  - type: Item
+    size: Normal
   - type: ToggleClothing
     action: ActionTogglePhaseCloak
     disableOnUnequip: true
@@ -14,7 +19,7 @@
       maxVisibility: 0.15
       lastVisibility: 0.15
   - type: PowerCellDraw
-    drawRate: 14 # roughly 200 seconds on the default cell
+    drawRate: 14 # roughly 50 seconds on the default cell
   - type: ToggleCellDraw
   - type: PowerCellSlot
     cellSlotId: cell_slot

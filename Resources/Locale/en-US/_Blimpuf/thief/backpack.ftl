@@ -30,7 +30,7 @@ thief-backpack-category-demolitionist-description =
 
 thief-backpack-category-infiltrator-name = Infiltrator Kit
 thief-backpack-category-infiltrator-description =
-    Break into anywhere with ease. Vents may be claustraphobic,
+    Break into anywhere with ease. Vents may be claustrophobic,
     but they're damn well helpful.
     Includes: A contortionist jumpsuit, an EVA suit, an EVA helmet,
     and 3 tear gas grenades for slipping away unseen.
