@@ -1342,5 +1342,17 @@ Entries:
   id: 26101
   time: '2026-11-11T15:09:21.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/261
+- author: Shimmers
+  changes:
+  - message: '[Saltern] Kiki''s double in the brig has been replaced with Stir-stir.'
+    type: Fix
+  - message: '[Sushi] Medbay''s reception desk can now check your medical history
+      instead of your employment history.'
+    type: Fix
+  - message: '[Sushi] Added Corporate telecoms.'
+    type: Fix
+  id: 26301
+  time: '2026-11-12T14:05:33.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/263
 Order: -1
 
