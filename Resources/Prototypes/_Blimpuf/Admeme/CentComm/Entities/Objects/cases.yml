@@ -1,0 +1,297 @@
+# ----- Empty Cases -----
+
+- type: entity
+  id: VialCaseCC
+  parent: [ BaseStorageItem, BaseBagOpenClose, BaseCentcommContraband ]
+  name: CentComm vial case
+  description: A convenient, compact box with 6 empty vials.
+  components:
+  - type: LockVisuals # Still need to add those
+  - type: LockedStorage
+  - type: AccessReader
+    access: [["CentralCommand"]]
+  - type: Lock
+    mindShieldLock: true
+    unlockOnClick: false
+    useAccess: true
+    autoUnlock: true  # For some reason they seem to mean the opposite of what they do
+    autoLock: false
+    showLockVerbs: true
+    breakOnAccessBreaker: false
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Specific/Medical/cc_vial_case.rsi
+    layers:
+    - state: locked #Not added yet
+      map: [ "enum.LockVisualLayers.Lock" ]
+      shader: unshaded
+    - state: unlocked #Not added yet
+      map: [ light ]
+      shader: unshaded
+    - state: closed
+      map: ["closeLayer"]
+    - state: open
+      map: ["openLayer"]
+    - state: vial1
+      map: ["vial1"]
+      visible: false
+    - state: vial2
+      map: ["vial2"]
+      visible: false
+    - state: vial3
+      map: ["vial3"]
+      visible: false
+    - state: vial4
+      map: ["vial4"]
+      visible: false
+    - state: vial5
+      map: ["vial5"]
+      visible: false
+    - state: vial6
+      map: ["vial6"]
+      visible: false
+  - type: Storage
+    grid:
+    - 0,0,2,1
+  - type: Item
+    sprite: _Blimpuf/Objects/Specific/Medical/cc_vial_case.rsi
+    size: Small
+    shape:
+    - 0,0,1,1
+    storedRotation: 90
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ChemistryEmptyVial
+          amount: 6
+  - type: ItemCounter
+    count:
+      tags: [Vial]
+    composite: true
+    layerStates:
+    - vial1
+    - vial2
+    - vial3
+    - vial4
+    - vial5
+    - vial6
+  - type: Appearance
+
+- type: entity
+  id: BottleCaseCC
+  parent: [ BaseBottleCase, BaseCentcommContraband ]
+  name: chemical case
+  suffix: CentComm
+  description: A plastic case with slots for bottles.
+  components:
+  - type: LockVisuals
+  - type: LockedStorage
+  - type: AccessReader
+    access: [["CentralCommand"]]
+  - type: Lock
+    mindShieldLock: true
+    unlockOnClick: false
+    useAccess: true
+    autoUnlock: true
+    autoLock: false
+    showLockVerbs: true
+    breakOnAccessBreaker: false
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
+    layers:
+    - state: bottlecase
+    - state: locked #Not added yet
+      map: [ "enum.LockVisualLayers.Lock" ]
+      shader: unshaded
+    - state: unlocked #Not added yet
+      map: [ light ]
+      shader: unshaded
+    - state: bottle1
+      map: ["bottle1"]
+      visible: false
+    - state: bottle2
+      map: ["bottle2"]
+      visible: false
+    - state: bottle3
+      map: ["bottle3"]
+      visible: false
+    - state: bottle4
+      map: ["bottle4"]
+      visible: false
+    - state: bottle5
+      map: ["bottle5"]
+      visible: false
+    - state: bottle6
+      map: ["bottle6"]
+      visible: false
+    - state: bottle7
+      map: ["bottle7"]
+      visible: false
+    - state: bottle8
+      map: ["bottle8"]
+      visible: false
+  - type: GenericVisualizer
+    visuals:
+      enum.StorageVisuals.Open:
+        base:
+          True: { state: bottlecase-open }
+          False: { state: bottlecase-closed }
+        light:
+          True: { visible: true }
+          False: { visible: false }
+  - type: Item
+    sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
+    size: Large
+    shape:
+    - 0,0,3,1
+
+- type: entity
+  id: PenPackCC
+  parent: [ BasePenPack, BaseCentcommContraband ]
+  name: autoinjector pack
+  suffix: CentComm
+  description: A pouch filled with some autoinjectors.
+  components:
+  - type: LockVisuals # Still need to add those
+  - type: LockedStorage
+  - type: AccessReader
+    access: [["CentralCommand"]]
+  - type: Lock
+    mindShieldLock: true
+    unlockOnClick: false
+    useAccess: true
+    autoUnlock: true
+    autoLock: false
+    showLockVerbs: true
+    breakOnAccessBreaker: false
+  - type: Storage
+    maxItemSize: Tiny
+    grid:
+    - 0,0,1,1
+    whitelist:
+       tags:
+        - Medipen
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
+    layers:
+    - state: injectorpack
+    - state: locked #Not added yet
+      map: [ "enum.LockVisualLayers.Lock" ]
+      shader: unshaded
+    - state: unlocked #Not added yet
+      map: [ light ]
+      shader: unshaded
+  - type: Item
+    sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
+    size: Small
+    shape:
+    - 0,0,1,1
+
+- type: entity
+  id: SurgicalKitCC
+  parent: [ BaseSurgicalKit, BaseCentcommContraband ]
+  name: advanced surgical kit
+  suffix: CentComm
+  description: A compact kit of surgical tools.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
+    state: surgerykit
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,2,1
+    sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
+
+# ----- Filled Cases -----
+
+- type: entity
+  name: advanced surgical kit
+  suffix: CentComm, Filled
+  parent: [SurgicalKitCC]
+  id: SurgicalKitCCFilled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: MedicatedSuture
+        - id: BoneGel
+        - id: BoneSetterAdvanced
+        - id: HemostatAdvanced
+        - id: RetractorAdvanced
+        - id: Drill
+        - id: ScalpelLaser
+        - id: SawAdvanced
+
+- type: entity
+  id: BottleCaseCCFilledMedical
+  suffix: CentComm, Medical
+  parent: BottleCaseCC
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ChemistryBottleOmnizine
+        - id: ChemistryBottleOmnizine
+        - id: ChemistryBottleAmbuzolPlus
+        - id: ChemistryBottleTranexamicAcid
+        - id: ChemistryBottleDexalinPlus
+        - id: ChemistryBottleAmoxla
+        - id: ChemistryBottleSaline
+        - id: ChemistryBottleSaline
+
+- type: entity
+  id: BottleCaseCCFilledCryogenics
+  suffix: CentComm, Cryogenics
+  parent: BottleCaseCC
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ChemistryBottleNecrosol
+        - id: ChemistryBottleNecrosol
+        - id: ChemistryBottleCryoxadone
+        - id: ChemistryBottleCryoxadone
+        - id: ChemistryBottleOpporozidone
+        - id: ChemistryBottleOpporozidone
+        - id: ChemistryBottleDoxarubixadone
+        - id: ChemistryBottleChronexaline
+
+- type: entity
+  id: BottleCaseCCFilledBotanical
+  suffix: CentComm, Botanical
+  parent: BottleCaseCC
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ChemistryBottleEZNutrient
+        - id: ChemistryBottleLeft4Zed
+        - id: ChemistryBottleUnstableMutagen
+        - id: ChemistryBottleRobustHarvest
+        - id: ChemistryBottlePhalanximine
+        - id: ChemistryBottleCryoxadone
+        - id: ChemistryBottleDiethylamine
+        - id: ChemistryBottleDiethylamine
+
+- type: entity
+  id: BottleCaseCCFilledNarcotics
+  suffix: CentComm, Narcotics
+  parent: BottleCaseCC
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ChemistryBottleHaloperidol
+        - id: ChemistryBottleHaloperidol
+        - id: ChemistryBottlePsicodine
+        - id: ChemistryBottlePhenylpiperidine
+        - id: ChemistryBottleDiphenylmethylamine
+        - id: ChemistryBottleSpaceMirage
+        - id: ChemistryBottleHappiness
+        - id: ChemistryBottleTHC
