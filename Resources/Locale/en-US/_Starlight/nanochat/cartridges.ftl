@@ -2,8 +2,8 @@ nano-chat-new-message-title-recipient = {$sender} ({$jobTitle})
 
 # Emojis
 nano-chat-emoji-picker = Emoji's
-nano-chat-emoji-search = Search...
-nano-chat-emoji-close = Close
+nano-chat-emote-search = Search...
+nano-chat-emote-close = Close
 nano-chat-emote-selector = Emote Selector
 nano-chat-emote-clear-search = Clear
 nano-chat-all-categories = All
