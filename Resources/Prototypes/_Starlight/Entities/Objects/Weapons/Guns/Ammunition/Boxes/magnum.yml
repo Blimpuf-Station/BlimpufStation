@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseMagazineBoxMagnum
+  parent: [BaseContrabandTier2, BaseMagazineBoxMagnum] # Blimpuf Less-Lethal is Tier 2
   id: MagazineBoxMagnumRubber
   name: ammunition box (.45 magnum rubber)
   components:

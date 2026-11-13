@@ -14,6 +14,7 @@ namespace Content.Shared.Humanoid.Markings
         Eyes, // Starlight
         Snout,
         SnoutCover,
+        NeckFluff, // Aurora's Song
         Chest,
         UndergarmentTop,
         UndergarmentBottom,
@@ -59,6 +60,7 @@ namespace Content.Shared.Humanoid.Markings
                 HumanoidVisualLayers.BodyCover => MarkingCategories.BodyCover, // Far Horizons
                 HumanoidVisualLayers.BodyCoverCover => MarkingCategories.BodyCoverCover, // Far Horizons
                 HumanoidVisualLayers.Tail => MarkingCategories.Tail,
+                HumanoidVisualLayers.NeckFluff => MarkingCategories.NeckFluff, // Aurora's Song
                 _ => MarkingCategories.Overlay
             };
         }

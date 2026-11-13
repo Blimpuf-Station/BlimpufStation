@@ -342,7 +342,7 @@
   parent: BaseSign
   id: SignMagistrate
   name: magistrate sign
-  description: A sign indicating the presence of the ultimate authority of Corporate Law.
+  description: A sign indicating the presence of the ultimate authority of Space Law.
   components:
   - type: Sprite
     sprite: _Starlight/Structures/Wallmounts/signs.rsi

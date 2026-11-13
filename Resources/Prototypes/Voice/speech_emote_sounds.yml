@@ -215,21 +215,8 @@
 
 - type: emoteSounds
   id: MaleSlime
+  parent: SlimeCoreSounds
   sounds:
-    Squish:
-      collection: Squishes
-    # Funky start
-    Bubble:
-      collection: Bubbles
-    Pop:
-      collection: Pops
-    Slosh:
-      collection: Sloshes
-    Fizz:
-      collection: Fizzes
-    Wobble:
-      collection: Wobbles
-    # Funky end
     Scream:
       collection: MaleScreams
     Laugh:
@@ -285,21 +272,8 @@
 
 - type: emoteSounds
   id: FemaleSlime
+  parent: SlimeCoreSounds
   sounds:
-    Squish:
-      collection: Squishes
-# Funky start
-    Bubble:
-      collection: Bubbles
-    Pop:
-      collection: Pops
-    Slosh:
-      collection: Sloshes
-    Fizz:
-      collection: Fizzes
-    Wobble:
-      collection: Wobbles
-# Funky end
     Scream:
       collection: FemaleScreams
     Laugh:

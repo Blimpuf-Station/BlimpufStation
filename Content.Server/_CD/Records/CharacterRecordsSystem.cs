@@ -134,7 +134,10 @@ public sealed partial class CharacterRecordsSystem : EntitySystem
             sex: profile.Sex,
             fingerprint: fingerprintComponent?.Fingerprint,
             dna: dnaComponent?.DNA,
-            owner: player);
+            owner: player)
+        {
+            SecondaryGender = profile.SecondaryGender // Blimpuf
+        };
 
         AddRecord(args.Station, player, records);
     }

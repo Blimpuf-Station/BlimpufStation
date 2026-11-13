@@ -26,7 +26,6 @@
     Hair: MobHumanoidAnyMarking
     Eyes: MobNeocyteEyes
     Head: MobMothHead
-    Snout: MobHumanoidAnyMarking
     UndergarmentTop: MobHumanoidAnyMarking
     UndergarmentBottom: MobHumanoidAnyMarking
     Chest: MobMothTorso
@@ -45,6 +44,7 @@
     FaceCoverCover: MobHumanoidAnyMarking
     BodyCover: MobHumanoidAnyMarking
     BodyCoverCover: MobHumanoidAnyMarking
+    NeckFluff: MobHumanoidAnyMarking
 
 - type: markingPoints
   id: MobNeoMothMarkingLimits
@@ -69,11 +69,12 @@
     Hair:
       points: 1
       required: false
+    NeckFluff:
+      points: 1
+      required: true
+      defaultMarkings: [ MothFloofDefault ]
     FacialHair:
       points: 0
-      required: false
-    Snout:
-      points: 1
       required: false
     Tail:
       points: 1
@@ -83,6 +84,9 @@
       points: 1
       required: true
       defaultMarkings: [ MothAntennasDefault ]
+    HeadSide:
+      points: 1
+      required: false
     Head:
       points: 1
       required: false

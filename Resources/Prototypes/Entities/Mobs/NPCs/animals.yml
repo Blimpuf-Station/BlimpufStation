@@ -1481,7 +1481,6 @@
       - !type:WashCreamPie
   - type: Crawler
   - type: StatusIcon
-  - type: CosmicCenserTarget # Stellar - Cosmic Cult
 
 - type: entity
   name: monkey

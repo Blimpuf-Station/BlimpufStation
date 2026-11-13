@@ -4,6 +4,7 @@
   priority: 0
   maxTraits: 2
   accentColor: "#ffffff"
+  hidden: true # Blimpuf - temporarily hide backgrounds
 
 - type: traitCategory
   id: EthnicityTraits

@@ -1,4 +1,22 @@
 - type: weightedRandom
-  id: TraitorObjectiveGroupResearch
+  id: TraitorObjectiveGroupResearchTotal
   weights:
     ResearchObjective: 1
+
+- type: weightedRandom
+  id: TraitorObjectiveGroupResearchSpecific
+  weights:
+    TraitorResearchCMOHyposprayObjective: 1
+    TraitorResearchRDHardsuitObjective: 0.75
+    TraitorResearchHandTeleporterObjective: 1
+    TraitorResearchWT550bObjective: 0.5
+    TraitorResearchProto5xObjective: 0.5
+    TraitorResearchEnergyShotgunObjective: 0.65
+    TraitorResearchEnergyMagnumObjective: 0.65
+    TraitorResearchAdvancedMagbootsObjective: 1
+    TraitorResearchQMClipboardObjective: 1
+    TraitorResearchGoldenKnuckleDustersObjective: 1
+    TraitorResearchHOPClipboardObjective: 0.75
+    TraitorResearchCaptainGunObjective: 0.75
+    TraitorResearchCaptainIDObjective: 1
+    TraitorResearchJetpackCaptainObjective: 1

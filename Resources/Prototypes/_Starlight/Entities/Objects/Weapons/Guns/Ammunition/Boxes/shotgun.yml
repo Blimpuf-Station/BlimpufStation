@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseAmmoProvider
+  parent: [BaseAmmoProvider, BaseSovietContraband, BaseContrabandTier3] # Blimpuf
   id: AmmoProviderShotgunShellToz
   abstract: true
   components:

@@ -11,6 +11,7 @@ using Content.Shared.Whitelist;
 using Robust.Shared.Containers;
 using Robust.Shared.Input.Binding;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Random; // Blimpuf
 using Robust.Shared.Utility;
 
 namespace Content.Shared.Hands.EntitySystems;
@@ -26,6 +27,7 @@ public abstract partial class SharedHandsSystem
     [Dependency] protected SharedTransformSystem TransformSystem = default!;
     [Dependency] private SharedVirtualItemSystem _virtualSystem = default!;
     [Dependency] private EntityWhitelistSystem _entityWhitelist = default!;
+    [Dependency] private IRobustRandom _random = default!; // Blimpuf
 
     public event Action<Entity<HandsComponent>, string, HandLocation>? OnPlayerAddHand;
     public event Action<Entity<HandsComponent>, string>? OnPlayerRemoveHand;

@@ -78,7 +78,7 @@
         color: "#ba7710"
 
 - type: entity
-  parent: BaseMagazineShotgun
+  parent: [BaseContrabandTier2, BaseMagazineShotgun] # Blimpuf Less-Lethal is Tier 2
   id: MagazineShotgunBeanbag
   name: 12 gauge beanbag drum # Starlight change: .50 -> 12 gauge
   description: A large drum magazine used by some military-grade automatic shotguns. Intended to hold less-than-lethal beanbag ammunition.

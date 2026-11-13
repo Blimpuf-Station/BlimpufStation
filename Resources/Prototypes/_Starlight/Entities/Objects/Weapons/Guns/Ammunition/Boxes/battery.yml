@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: BaseItem
+  parent: [BaseItem, BaseContrabandTier3, BaseSecurityContraband, BaseSalvageContraband] # Blimpuf
   id: BaseMagazineBoxBattery
   components:
   - type: BallisticAmmoProvider

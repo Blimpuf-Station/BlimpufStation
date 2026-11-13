@@ -73,10 +73,10 @@
   id: MedicalScannerMachineCircuitboard
   result: MedicalScannerMachineCircuitboard
 
-- type: latheRecipe
-  parent: BaseSilverCircuitboardRecipe
-  id: NullspaceAnchorMachineCircuitboard
-  result: NullspaceAnchorMachineCircuitboard
+#- type: latheRecipe # Blimpuf- no nullspace
+#  parent: BaseSilverCircuitboardRecipe
+#  id: NullspaceAnchorMachineCircuitboard
+#  result: NullspaceAnchorMachineCircuitboard
 
 - type: latheRecipe
   parent: BaseCircuitboardRecipe

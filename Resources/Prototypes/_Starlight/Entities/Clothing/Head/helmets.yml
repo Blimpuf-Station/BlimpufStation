@@ -1,6 +1,6 @@
 #Basic Helmet (Abductor Helmet)
 - type: entity
-  parent: [ ClothingHeadHelmetBase, BaseMajorContraband ]
+  parent: [ClothingHeadHelmetBase, BaseContrabandTier4] # Blimpuf
   id: ClothingHeadHelmetAbductor
   name: helmet
   components:

@@ -157,7 +157,7 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
             BreakOnDamage = true,
             NeedHand = true,
             BreakOnWeightlessMove = true,
-            BlockDuplicate = false,
+            BlockDuplicate = true,
             CancelDuplicate = false
         };
 
@@ -198,7 +198,7 @@ public sealed partial class SyndicateResearchTargetSystem : EntitySystem
         {
             component.ResearchComplete = true;
 
-            _completedResearch.Research(component.ResearchUnlockId);
+            _completedResearch.Research(component.ResearchUnlockId, args.Args.User);
             var researchAnnouncementSound = new SoundPathSpecifier("/Audio/_Starlight/Announcements/attention.ogg");
 
             var delay = TimeSpan.FromSeconds(_random.Next(60, 301));

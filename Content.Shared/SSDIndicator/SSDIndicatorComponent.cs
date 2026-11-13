@@ -20,11 +20,28 @@ public sealed partial class SSDIndicatorComponent : Component
     [DataField, ViewVariables(VVAccess.ReadOnly)]
     public bool IsSSD = true;
 
+    // Blimpuf start
+    /// <summary>
+    /// Start of the icon's color timer, including any voluntary SSD extension.
+    /// </summary>
+    [DataField(customTypeSerializer: typeof(TimeOffsetSerializer))]
+    [AutoNetworkedField, AutoPausedField]
+    public TimeSpan? SsdStartTime;
+    // Blimpuf end
+
     /// <summary>
     /// The icon displayed next to the associated entity when it is SSD.
     /// </summary>
     [DataField]
     public ProtoId<SsdIconPrototype> Icon = "SSDIcon";
+
+    // Blimpuf start
+    [DataField]
+    public ProtoId<SsdIconPrototype> YellowIcon = "BlimpufSSDIconYellow";
+
+    [DataField]
+    public ProtoId<SsdIconPrototype> RedIcon = "BlimpufSSDIconRed";
+    // Blimpuf end
 
     /// <summary>
     /// The time at which the entity will fall asleep, if <see cref="CCVars.ICSSDSleep"/> is true.

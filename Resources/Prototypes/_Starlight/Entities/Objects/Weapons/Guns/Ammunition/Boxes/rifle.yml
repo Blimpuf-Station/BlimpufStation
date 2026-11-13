@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseMagazineBoxRifle
+  parent: [BaseContrabandTier2, BaseMagazineBoxRifle] # Blimpuf Less-Lethal is Tier 2
   id: MagazineBoxRifleBigRubber
   name: ammunition box (.20 rifle rubber)
   components:
@@ -20,7 +20,7 @@
   - type: Appearance
 
 - type: entity
-  parent: BaseMagazineBoxRifle
+  parent: [BaseContrabandTier2, BaseMagazineBoxRifle] # Blimpuf Less-Lethal is Tier 2
   id: MagazineBoxRifleRubber
   name: ammunition box (.20 rifle rubber)
   components:

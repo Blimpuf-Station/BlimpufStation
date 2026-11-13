@@ -6,7 +6,7 @@ uplink-mini-energy-crossbow-name = mini energy crossbow
 uplink-mini-energy-crossbow-desc = Fires low-damage kinetic bolts at a short range.
 uplink-minotaur-name = Minotaur bundle
 uplink-minotaur-desc = Lean and mean: Contains smooth, powerful, highly illegal Shotgun, a 5 12g buckshot drums.
-uplink-deagle-name = Desert Eagle
+uplink-deagle-name = Jungle Hawk
 uplink-deagle-desc = A robust magnum handgun.
 uplink-stechkin-name = Stechkin pistol
 uplink-stechkin-desc = A small, easily concealable 10mm handgun. Has a threaded barrel for suppressors.
@@ -24,7 +24,7 @@ uplink-pistol-fmj-magazine-name = Pistol Magazine (.35 auto FMJ)
 uplink-pistol-fmj-magazine-desc = Pistol magazine with 10 cartridges. Compatible with the Viper.
 
 uplink-pistol-magnum-magazine-name = Pistol Magazine (.45 magnum)
-uplink-pistol-magnum-magazine-desc = Pistol magazine with 10 cartridges. Compatible with the Desert Eagle.
+uplink-pistol-magnum-magazine-desc = Pistol magazine with 10 cartridges. Compatible with the Jungle Hawk.
 
 uplink-magillitis-serum-implanter-name = Magillitis Serum Implanter
 uplink-magillitis-serum-implanter-desc = An experimental biochip which causes irreversable rapid muscular growth in Hominidae. Side-affects may include hypertrichosis, violent outbursts, and an unending affinity for bananas.

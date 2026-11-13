@@ -90,7 +90,7 @@
       collection: ShellEject
 
 - type: entity
-  parent: [ BaseShellShotgun, BaseSecurityContraband, BaseContrabandTier3 ] # Blimpuf
+  parent: [ BaseShellShotgun, BaseSecurityContraband, BaseSalvageContraband, BaseContrabandTier3 ] # Blimpuf
   id: ShellShotgun
   name: 12 gauge buckshot # Starlight change: .50 -> 12 gauge
   description: The standard cartridge used by most modern shotguns. Standard kinetic ammunition is common and useful in most situations.

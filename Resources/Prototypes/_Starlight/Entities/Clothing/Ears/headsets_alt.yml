@@ -99,7 +99,7 @@
       path: /Audio/_Starlight/Effects/Radio/captain.ogg
 
 - type: entity
-  parent: ClothingHeadsetAlt
+  parent: [ClothingHeadsetAlt, BaseContrabandTier4] # Blimpuf
   id: ClothingHeadsetAltAbductor
   name: abductor over-ear headset
   components:

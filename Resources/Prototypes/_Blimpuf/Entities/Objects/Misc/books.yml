@@ -1,0 +1,36 @@
+- type: entity
+  id: BookCommandTrainingManual
+  parent: [ BaseGuidebook ]
+  name: command training manual
+  description: An official NanoTrasen briefing for station command personnel.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Chapel/codexnanotrasimus.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Specific/Chapel/codexnanotrasimus.rsi
+  - type: StealTarget
+    stealGroup: CommandTrainingManual
+  - type: GuideHelp
+    includeChildren: false
+    guides:
+    - BlimpufCommandTrainingManual
+    - Traitors
+    - NuclearOperatives
+    - Zombies
+    - SELFAgent
+    - Changelings
+    - CosmicCult
+    - Revolutionaries
+    - SpaceNinja
+    - Abductors
+    - Vampires
+    - Xenoborgs
+    - Wizard
+    - BlimpufMetashield
+  - type: Contraband
+    tier: Tier4
+    allowedJobs:
+    - Captain
+    - NanoTrasenRepresentative
+    - Magistrate

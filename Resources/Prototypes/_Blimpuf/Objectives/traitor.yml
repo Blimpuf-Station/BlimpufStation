@@ -1,16 +1,223 @@
+# Research
 - type: entity
   parent: BaseTraitorObjective
   id: ResearchObjective
-  description: We need you to research some of Nanotrasens high tech equipment. This will likely be found on members of Command.
+  description: We need you to research some of Nanotrasens high tech equipment. This will likely be found on members of Command or higher ups in Security.
   components:
   - type: Objective
     icon:
       sprite: Objects/Misc/module.rsi
       state: cargodisk
     difficulty: 1
-  - type: ResearchObjectiveCondition
+  - type: ResearchTotalCondition
   - type: NumberObjective
-    min: 4
-    max: 6
+    min: 1
+    max: 3
     title: objective-condition-research-title
     description: objective-condition-research-description
+
+# Research Specific
+- type: entity
+  abstract: true
+  parent: BaseTraitorObjective
+  id: BaseTraitorResearchSpecificObjective
+  components:
+  - type: ResearchSpecificCondition
+    objectiveText: objective-condition-research-specific-title
+    objectiveNoOwnerText: objective-condition-research-specific-title-no-owner
+    descriptionText: objective-condition-research-specific-description
+  - type: Objective
+    difficulty: 1.5
+  - type: ObjectiveLimit
+    limit: 1 # Everyone should focus on one item individually
+
+# cmo
+- type: entity
+  parent: BaseTraitorResearchSpecificObjective
+  id: TraitorResearchCMOHyposprayObjective
+  components:
+  - type: ResearchSpecificCondition
+    researchRequired: UplinkAdvancedGorlexHypospray
+    itemName: steal-target-groups-hypospray
+    owner: job-name-cmo
+    sprite:
+      sprite: Objects/Specific/Medical/hypospray.rsi
+      state: hypo
+
+# rd
+- type: entity
+  parent: BaseTraitorResearchSpecificObjective
+  id: TraitorResearchRDHardsuitObjective
+  components:
+  - type: ResearchSpecificCondition
+    researchRequired: UplinkClothingOuterHardsuitUltima
+    itemName: steal-target-groups-clothing-outer-hardsuit-rd
+    owner: job-name-rd
+    sprite:
+      sprite: Clothing/OuterClothing/Hardsuits/rd.rsi
+      state: icon
+  - type: Objective
+    difficulty: 2.5
+
+- type: entity
+  parent: BaseTraitorResearchSpecificObjective
+  id: TraitorResearchHandTeleporterObjective
+  components:
+  - type: ResearchSpecificCondition
+    researchRequired: UplinkTeleportationRelay
+    itemName: steal-target-groups-hand-teleporter
+    owner: job-name-rd
+    sprite:
+      sprite: Objects/Devices/hand_teleporter.rsi
+      state: icon
+
+# hos
+- type: entity
+  parent: BaseTraitorResearchSpecificObjective
+  id: TraitorResearchWT550bObjective
+  components:
+  - type: ResearchSpecificCondition
+    researchRequired: UplinkWt551Compact
+    itemName: steal-target-groups-wt550b
+    owner: job-name-hos
+    sprite:
+      sprite: _Starlight/Objects/Weapons/Guns/SMGs/wt550b.rsi
+      state: base
+  - type: Objective
+    difficulty: 3
+
+- type: entity
+  parent: BaseTraitorResearchSpecificObjective
+  id: TraitorResearchProto5xObjective
+  components:
+  - type: ResearchSpecificCondition
+    researchRequired: UplinkWeaponLaserIncinerator
+    itemName: steal-target-groups-proto-5x
+    owner: job-name-hos
+    sprite:
+      sprite: _Starlight/Objects/Weapons/Guns/Battery/energy_smg.rsi
+      state: base
+  - type: Objective
+    difficulty: 3
+
+# warden
+- type: entity
+  parent: BaseTraitorResearchSpecificObjective
+  id: TraitorResearchEnergyShotgunObjective
+  components:
+  - type: ResearchSpecificCondition
+    researchRequired: UplinkSyndieEnergyShotgun
+    itemName: steal-target-groups-warden-energy-shotgun
+    owner: job-name-warden
+    sprite:
+      sprite: Objects/Weapons/Guns/Battery/energy_shotgun.rsi
+      state: base
+  - type: Objective
+    difficulty: 3
+
+# det
+- type: entity
+  parent: BaseTraitorResearchSpecificObjective
+  id: TraitorResearchEnergyMagnumObjective
+  components:
+  - type: ResearchSpecificCondition
+    researchRequired: UplinkWeaponLaserTaipanRevolver
+    itemName: steal-target-groups-weapon-energy-magnum
+    owner: job-name-detective
+    sprite:
+      sprite: Objects/Weapons/Guns/Battery/energy_magnum.rsi
+      state: base
+  - type: Objective
+    difficulty: 2.25
+
+# ce
+- type: entity
+  parent: BaseTraitorResearchSpecificObjective
+  id: TraitorResearchAdvancedMagbootsObjective
+  components:
+  - type: ResearchSpecificCondition
+    researchRequired: UplinkClothingShoesBootsMagSyndieAdvanced
+    itemName: steal-target-groups-clothing-shoes-boots-mag-adv
+    owner: job-name-ce
+    sprite:
+      sprite: Clothing/Shoes/Boots/magboots-advanced.rsi
+      state: icon
+
+# qm
+- type: entity
+  parent: BaseTraitorResearchSpecificObjective
+  id: TraitorResearchQMClipboardObjective
+  components:
+  - type: ResearchSpecificCondition
+    researchRequired: UplinkSyndieClipboard
+    itemName: steal-target-groups-box-folder-qm-clipboard
+    owner: job-name-qm
+    sprite:
+      sprite: Objects/Misc/qm_clipboard.rsi
+      state: qm_clipboard
+
+- type: entity
+  parent: BaseTraitorResearchSpecificObjective
+  id: TraitorResearchGoldenKnuckleDustersObjective
+  components:
+  - type: ResearchSpecificCondition
+    researchRequired: UplinkGlovesKnuckleDustersStimulant
+    itemName: steal-target-groups-clothing-hands-knuckledusters-qm
+    owner: job-name-qm
+    sprite:
+      sprite: Clothing/Hands/Gloves/KnuckleDusters/goldenknuckleduster.rsi
+      state: goldenknuckleduster
+
+# hop
+- type: entity
+  parent: BaseTraitorResearchSpecificObjective
+  id: TraitorResearchHOPClipboardObjective
+  components:
+  - type: Objective
+    difficulty: 2.25
+  - type: ResearchSpecificCondition
+    researchRequired: UplinkPersonaHologramGenerator
+    itemName: steal-target-groups-hopboard
+    owner: job-name-hop
+    sprite:
+      sprite: _Starlight/Objects/Misc/hop_clipboard.rsi
+      state: hop_clipboard
+
+# cap
+- type: entity
+  parent: BaseTraitorResearchSpecificObjective
+  id: TraitorResearchCaptainGunObjective
+  components:
+  - type: Objective
+    difficulty: 3
+  - type: ResearchSpecificCondition
+    researchRequired: UplinkSyndicateTacticalLaser
+    itemName: steal-target-groups-weapon-antique-laser
+    owner: job-name-captain
+    sprite:
+      sprite: Objects/Weapons/Guns/Battery/antiquelasergun.rsi
+      state: base
+
+- type: entity
+  parent: BaseTraitorResearchSpecificObjective
+  id: TraitorResearchCaptainIDObjective
+  components:
+  - type: ResearchSpecificCondition
+    researchRequired: UplinkAccessHijacker
+    itemName: steal-target-groups-captain-id-card
+    sprite:
+      sprite: Objects/Misc/id_cards.rsi
+      state: icon-captain
+
+- type: entity
+  parent: BaseTraitorResearchSpecificObjective
+  id: TraitorResearchJetpackCaptainObjective
+  components:
+  - type: ResearchSpecificCondition
+    researchRequired: UplinkJetpackSpeedster
+    itemName: steal-target-groups-jetpack-captain-filled
+    sprite:
+      sprite: Objects/Tanks/Jetpacks/captain.rsi
+      state: icon
+
+

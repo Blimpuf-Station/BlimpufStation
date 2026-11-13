@@ -155,7 +155,7 @@
 - type: entity
   id: CosmicLambdaBeam
   parent: BasicHitscan
-  name: Nullspace Stabilizer Beam
+  name: Lambda Stabilizer Beam
   categories: [ HideSpawnMenu ]
   components:
   - type: HitscanBasicDamage

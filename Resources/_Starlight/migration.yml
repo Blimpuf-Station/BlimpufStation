@@ -153,7 +153,7 @@ WeaponFlareGunSecurity: null
 CargoGasPallet: CargoGasPalletSell
 
 #2026-07-30
-nullspaceanchor: NullspaceAnchor
+nullspaceanchor: null # Blimpuf- no nullspace
 
 #2026-07-31 - Renamed subfloor gas tank proto to be more logical left-to-right since more tanks are being added
 GasPipeSubfloorTank: GasPipeTankSubfloor

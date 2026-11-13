@@ -60,21 +60,3 @@
   storage:
     back:
     - BoxSurvivalSecurityDipsomania
-
-- type: loadout
-  id: EmergencyDipsomaniaSyndicate
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: DipsomaniaSurvival
-  storage:
-    back:
-    - BoxSurvivalSyndicate # no Dipsomania version; doesn't include a drink
-
-- type: loadout
-  id: EmergencyDipsomaniaMilitaryDouble
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: DipsomaniaSurvival
-  storage:
-    back:
-    - BoxSurvivalMilitaryDouble # no dipsomania version; doesn't include a drink

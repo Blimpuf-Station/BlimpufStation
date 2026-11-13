@@ -1,0 +1,13 @@
+- type: ssdIcon
+  id: BlimpufSSDIconYellow
+  parent: SSDIcon
+  icon:
+    sprite: /Textures/Effects/ssd.rsi
+    state: yellow
+
+- type: ssdIcon
+  id: BlimpufSSDIconRed
+  parent: SSDIcon
+  icon:
+    sprite: /Textures/Effects/ssd.rsi
+    state: red

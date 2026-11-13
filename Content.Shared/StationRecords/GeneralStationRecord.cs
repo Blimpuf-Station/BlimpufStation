@@ -6,8 +6,9 @@ namespace Content.Shared.StationRecords;
 /// <summary>
 ///     General station record. Indicates the crewmember's name and job.
 /// </summary>
+[DataDefinition]
 [Serializable, NetSerializable]
-public sealed record GeneralStationRecord
+public sealed partial record GeneralStationRecord
 {
     /// <summary>
     ///     Name tied to this station record.
@@ -48,6 +49,13 @@ public sealed record GeneralStationRecord
     /// <remarks>Sex should be placed in a medical record, not a general record.</remarks>
     [DataField]
     public Gender Gender = Gender.Epicene;
+
+    // Blimpuf
+    /// <summary>
+    ///     Secondary gender identity tied to this station record.
+    /// </summary>
+    [DataField]
+    public Gender? SecondaryGender;
 
     /// <summary>
     ///     The priority to display this record at.

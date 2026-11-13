@@ -1,4 +1,3 @@
-using Content.Server.Bible.Components;
 using Content.Server.Popups;
 using Content.Shared._Starlight.CosmicCult.Components;
 using Content.Shared._Starlight.CosmicCult;
@@ -65,11 +64,6 @@ public sealed partial class CosmicConversionSystem : EntitySystem
             if (_mobState.IsDead(target))
             {
                 _popup.PopupEntity(Loc.GetString("cult-glyph-target-dead"), uid, args.User);
-                args.Cancel();
-            }
-            else if (uid.Comp.NegateProtection == false && HasComp<BibleUserComponent>(target))
-            {
-                _popup.PopupEntity(Loc.GetString("cult-glyph-target-chaplain"), uid, args.User);
                 args.Cancel();
             }
             else if (uid.Comp.NegateProtection == false && HasComp<ChangelingComponent>(target))

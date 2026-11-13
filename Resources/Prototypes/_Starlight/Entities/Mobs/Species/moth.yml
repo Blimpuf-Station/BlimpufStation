@@ -98,7 +98,6 @@
     layers:
       - map: [ "enum.HumanoidVisualLayers.Chest" ]
       - map: [ "enum.HumanoidVisualLayers.Head" ]
-      - map: [ "enum.HumanoidVisualLayers.Snout" ]
       - map: [ "enum.HumanoidVisualLayers.Eyes" ]
       - map: [ "enum.HumanoidVisualLayers.RArm" ]
       - map: [ "enum.HumanoidVisualLayers.LArm" ]
@@ -124,9 +123,12 @@
       - map: [ "belt" ]
       - map: [ "id" ]
       - map: [ "enum.HumanoidVisualLayers.Tail" ] #in the utopian future we should probably have a wings enum inserted here so everyhting doesn't break
+      - map: [ "enum.HumanoidVisualLayers.TailExtras" ] # Starlight
+      - map: [ "enum.HumanoidVisualLayers.NeckFluff" ]
       - map: [ "back" ]
       - map: [ "neck" ]
       - map: [ "misc" ] # Starlight
+      - map: [ "enum.HumanoidVisualLayers.Snout" ]
       - map: [ "enum.HumanoidVisualLayers.SnoutCover" ]
       - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
       - map: [ "enum.HumanoidVisualLayers.Hair" ]

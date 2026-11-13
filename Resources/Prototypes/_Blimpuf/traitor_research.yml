@@ -334,6 +334,7 @@
   displayName: portable cooling unit
   validPrototypes:
     - CoolingUnit
+    - EmergencyCoolingUnit
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierDefibrillator
@@ -348,6 +349,7 @@
     - DefibrillatorSyndicateOneHandedUnpowered
     - DefibrillatorBrigmedical
     - DefibrillatorParamed
+    - DefibrillatorCyber
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierDoorElectronics
@@ -409,6 +411,7 @@
   displayName: dropper
   validPrototypes:
     - Dropper
+    - CyberToolDropper
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierFireAxe
@@ -489,6 +492,7 @@
   displayName: handheld mass scanner
   validPrototypes:
     - HandHeldMassScanner
+    - HandHeldMassScannerEmpty
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierHydroponicsToolScythe
@@ -510,14 +514,14 @@
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierIngotGold
-  displayName: gold
+  displayName: gold bar
   validPrototypes:
     - IngotGold
     - IngotGold1
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierIngotSilver
-  displayName: silver
+  displayName: silver bar
   validPrototypes:
     - IngotSilver
     - IngotSilver1
@@ -614,6 +618,7 @@
   displayName: exosuit air tank
   validPrototypes:
     - MechAirTank
+    - MechAirTankFilled
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierMechEquipmentGrabber
@@ -621,6 +626,7 @@
   validPrototypes:
     - MechEquipmentGrabber
     - MechEquipmentGrabberSmall
+    - MechEquipmentSecGrabber
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierMechThruster
@@ -651,6 +657,7 @@
   displayName: node scanner
   validPrototypes:
     - NodeScanner
+    - NodeScannerCyber
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierPickaxe
@@ -685,7 +692,7 @@
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierPowerDrill
-  displayName: power cell
+  displayName: power drill
   validPrototypes:
     - PowerDrill
 
@@ -702,6 +709,7 @@
     - RCD
     - RCDEmpty
     - RCDChiefEngineer
+    - RCDCyber
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierRifleStock
@@ -737,7 +745,7 @@
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierSheetPlasteel
-  displayName: uranium
+  displayName: plasteel
   validPrototypes:
     - SheetPlasteel
     - SheetPlasteel1
@@ -868,6 +876,8 @@
   validPrototypes:
     - WeaponDisabler
     - WeaponDisablerSMG
+    - WeaponDominator
+    - WeaponAdvancedTaser
 
 - type: SyndicateResearchSpecifier
   id: SyndicateResearchSpecifierWeaponLaserSvalinn

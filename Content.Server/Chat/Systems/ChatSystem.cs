@@ -170,7 +170,8 @@ public sealed partial class ChatSystem : SharedChatSystem
         string? nameOverride = null,
         bool checkRadioPrefix = true,
         bool ignoreActionBlocker = false,
-        LanguagePrototype? languageOverride = null // Starlight
+        LanguagePrototype? languageOverride = null, // Starlight
+        bool shouldRemoveDisallowedCharacters = true // Blimpuf
         )
     {
         if (TryComp<GhostComponent>(source, out var ghost) && !ghost.BypassGhostChat) // Starlight-edit: ghost admemes
@@ -232,7 +233,7 @@ public sealed partial class ChatSystem : SharedChatSystem
         bool shouldCapitalizeTheWordI = (!CultureInfo.CurrentCulture.IsNeutralCulture && CultureInfo.CurrentCulture.Parent.Name == "en")
             || (CultureInfo.CurrentCulture.IsNeutralCulture && CultureInfo.CurrentCulture.Name == "en");
 
-        message.Text = SanitizeInGameICMessage(source, message.Text, out var emoteStr, shouldCapitalize, shouldPunctuate, shouldCapitalizeTheWordI); //Starlight
+        message.Text = SanitizeInGameICMessage(source, message.Text, out var emoteStr, shouldCapitalize, shouldPunctuate, shouldCapitalizeTheWordI, shouldRemoveDisallowedCharacters); //Starlight + Blimpuf
         message.OriginalText = message.Text; // starlight
 
         // Was there an emote in the message? If so, send it.

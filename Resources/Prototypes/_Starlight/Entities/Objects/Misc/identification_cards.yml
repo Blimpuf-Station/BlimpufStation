@@ -459,7 +459,7 @@
     tags:
     - Maintenance
     - External
-    - Research
+    - Robotics
     - Engineering
     - Atmospherics
   - type: NanoChatCard
@@ -741,7 +741,7 @@
 
 - type: entity
   id: nctdatachip
-  parent: [Clothing, BaseCommandContraband]
+  parent: [Clothing, BaseContrabandTier2]
   name: NCT Trainee Access Chip
   description: A small electronic access token that allows its user to copy the access of their Trainee. Only accessible by NT Career Trainers!
   components:
@@ -766,6 +766,8 @@
     tags:
     - DoorBumpOpener
   - type: NCTDataChip
+  - type: Contraband
+    allowedJobs: [ NanotrasenCareerTrainer ]
 
 - type: entity
   parent: [ Clothing, BaseMinorContraband ]

@@ -1,1 +1,1 @@
-anomaly-particles-nullspace-stabilization = [color=#42a4ae]Nullspace Stabilization[/color]
+anomaly-particles-nullspace-stabilization = [color=#42a4ae]Lambda Stabilization[/color]

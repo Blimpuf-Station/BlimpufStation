@@ -1,0 +1,299 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprites by Thlrds",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "athamas_primary",
+      "directions": 4
+    },
+    {
+      "name": "athamas_secondary",
+      "directions": 4
+    },
+    {
+      "name": "bee_primary",
+      "directions": 4
+    },
+    {
+      "name": "bee_secondary",
+      "directions": 4
+    },
+    {
+      "name": "bee_tertiary",
+      "directions": 4
+    },
+    {
+      "name": "beetle_primary",
+      "directions": 4
+    },
+    {
+      "name": "beetle_secondary",
+      "directions": 4
+    },
+    {
+      "name": "charred_primary",
+      "directions": 4
+    },
+    {
+      "name": "dbushy_primary",
+      "directions": 4
+    },
+    {
+      "name": "dbushy_secondary",
+      "directions": 4
+    },
+    {
+      "name": "deathhead_primary",
+      "directions": 4
+    },
+    {
+      "name": "deathhead_secondary",
+      "directions": 4
+    },
+    {
+      "name": "deathhead_tertiary",
+      "directions": 4
+    },
+    {
+      "name": "default_primary",
+      "directions": 4
+    },
+    {
+      "name": "default",
+      "directions": 4
+    },
+    {
+      "name": "epipyropidae_primary",
+      "directions": 4
+    },
+    {
+      "name": "epipyropidae_secondary",
+      "directions": 4
+    },
+    {
+      "name": "epipyropidae_tertiary",
+      "directions": 4
+    },
+    {
+      "name": "fan_primary",
+      "directions": 4
+    },
+    {
+      "name": "feathery_primary",
+      "directions": 4
+    },
+    {
+      "name": "firewatch_primary",
+      "directions": 4
+    },
+    {
+      "name": "firewatch_secondary",
+      "directions": 4
+    },
+    {
+      "name": "flannel_primary",
+      "directions": 4
+    },
+    {
+      "name": "flannel_quaternary",
+      "directions": 4
+    },
+    {
+      "name": "flannel_secondary",
+      "directions": 4
+    },
+    {
+      "name": "flannel_tertiary",
+      "directions": 4
+    },
+    {
+      "name": "glasswing_primary",
+      "directions": 4
+    },
+    {
+      "name": "glasswing_secondary",
+      "directions": 4
+    },
+    {
+      "name": "gothic_primary",
+      "directions": 4
+    },
+    {
+      "name": "gothic_secondary",
+      "directions": 4
+    },
+    {
+      "name": "jungle_primary",
+      "directions": 4
+    },
+    {
+      "name": "jungle_secondary",
+      "directions": 4
+    },
+    {
+      "name": "ladybug_primary",
+      "directions": 4
+    },
+    {
+      "name": "ladybug_secondary",
+      "directions": 4
+    },
+    {
+      "name": "maple_primary",
+      "directions": 4
+    },
+    {
+      "name": "maple_secondary",
+      "directions": 4
+    },
+    {
+      "name": "moffra_primary",
+      "directions": 4
+    },
+    {
+      "name": "moffra_secondary",
+      "directions": 4
+    },
+    {
+      "name": "moffra_tertiary",
+      "directions": 4
+    },
+    {
+      "name": "mothfirefly_primary",
+      "directions": 4
+    },
+    {
+      "name": "mothfirefly_secondary",
+      "directions": 4
+    },
+    {
+      "name": "mothtruebutterfly_primary",
+      "directions": 4
+    },
+    {
+      "name": "mothtruebutterfly_secondary",
+      "directions": 4
+    },
+    {
+      "name": "oaktree_hopper_primary",
+      "directions": 4
+    },
+    {
+      "name": "oakworm_primary",
+      "directions": 4
+    },
+    {
+      "name": "oakworm_secondary",
+      "directions": 4
+    },
+    {
+      "name": "origins_primary",
+      "directions": 4
+    },
+    {
+      "name": "origins_secondary",
+      "directions": 4
+    },
+    {
+      "name": "plasmafire_primary",
+      "directions": 4
+    },
+    {
+      "name": "plasmafire_secondary",
+      "directions": 4
+    },
+    {
+      "name": "pointy_primary",
+      "directions": 4
+    },
+    {
+      "name": "pointy_secondary",
+      "directions": 4
+    },
+    {
+      "name": "rhinobeetle_primary",
+      "directions": 4
+    },
+    {
+      "name": "royal_primary",
+      "directions": 4
+    },
+    {
+      "name": "royal_secondary",
+      "directions": 4
+    },
+    {
+      "name": "snoth_primary",
+      "directions": 4
+    },
+    {
+      "name": "stellar_primary",
+      "directions": 4
+    },
+    {
+      "name": "stellar_secondary",
+      "directions": 4
+    },
+    {
+      "name": "tattered_primary",
+      "directions": 4
+    },
+    {
+      "name": "tattered_secondary",
+      "directions": 4
+    },
+    {
+      "name": "swirly_primary",
+      "directions": 4
+    },
+    {
+      "name": "swirly_secondary",
+      "directions": 4
+    },
+    {
+      "name": "underwing_primary",
+      "directions": 4
+    },
+    {
+      "name": "underwing_secondary",
+      "directions": 4
+    },
+    {
+      "name": "wartorn_primary",
+      "directions": 4
+    },
+    {
+      "name": "wartorn_secondary",
+      "directions": 4
+    },
+    {
+      "name": "wartorn_tertiary",
+      "directions": 4
+    },
+    {
+      "name": "whitefly_primary",
+      "directions": 4
+    },
+    {
+      "name": "whitefly_secondary",
+      "directions": 4
+    },
+    {
+      "name": "wings_backstabbed_primary",
+      "directions": 4
+    },
+    {
+      "name": "witchwing_primary",
+      "directions": 4
+    },
+    {
+      "name": "witchwing_secondary",
+      "directions": 4
+    }
+  ]
+}

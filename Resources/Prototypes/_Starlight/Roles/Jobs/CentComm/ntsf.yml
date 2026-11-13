@@ -183,7 +183,7 @@
     - HoloprojectorField
     - MedkitCombatFilled
     - MedkitCombatFilled
-    - ClothingEyesGlassesNullSpace
+#    - ClothingEyesGlassesNullSpace # Blimpuf- no nullspace
     - PowerCellMicroreactor
     - WeaponTetherGun
     - WeaponGauntletGorilla
@@ -259,7 +259,6 @@
     - BluespaceCrystal1
     - AirlossAutoInjector
     - PunctAutoInjector
-    - CosmicCenser
     - JugHolywater
     - BibleNanoTrasen
     - MagazineMagnum

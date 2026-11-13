@@ -21,6 +21,11 @@ steal-target-groups-clothing-shoes-boots-mag-bso = central command enforcement o
 steal-target-groups-encryption-key-hybrid = salvage, med-sec, med-sci, or station master encryption key
 steal-target-groups-hopboard = bureaucratic digi-board
 steal-target-groups-hos-weapon = head of security's Proto-5x or WT550b
+# Blimpuf Start
+steal-target-groups-wt550b = WT550b
+steal-target-groups-proto-5x = proto-5x
+steal-target-groups-warden-energy-shotgun = energy shotgun
+# Blimpuf End
 steal-target-groups-security-rare-guns = warden's energy shotgun or the detective's energy magnum
 steal-target-groups-bso-weapon = central command enforcement officer's X-01 multiphase energy gun or CCE service pistol
 

@@ -27,7 +27,7 @@
       - WhitelistChameleon
 
 - type: entity
-  parent: [BaseMajorContraband, ClothingOuterArmorBasic]
+  parent: [BaseContrabandTier4, ClothingOuterArmorBase] # Blimpuf
   id: ClothingOuterArmorAbductor
   name: agent vest
   components:
@@ -381,13 +381,11 @@
   suffix: Random Core
 
 - type: entity
-  parent: [ClothingOuterBaseMedium, BaseSovietContraband, AllowSuitStorageClothing ] #"ClothingOuterArmorBase" is stupid and overrides any contraband level.
+  parent: [ClothingOuterBaseMedium, BaseSovietContraband, BaseContrabandTier3, AllowSuitStorageClothing ] #"ClothingOuterArmorBase" is stupid and overrides any contraband level.
   id: ClothingOuterArmorSovietPlate
   name: soviet armor vest
   description: An old Soviet-era flak vest designed to mitigate damage from explosives, with minor penetration resistance. However, it's just a cheap reproduction model. quality may vary.
   components:
-  - type: Contraband # Blimpuf
-    tier: Tier3
   - type: Pierceable
     level: Metal
   - type: Sprite

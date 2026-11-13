@@ -606,7 +606,7 @@ doc-text-printer-request-documents =
     Date and Time: [datetime]
     Document Compiler: [signature]
 
-    I, [signature], request a copy of the following document(s), in order to verify compliance with Standard Operating Procedures and/or Corporate Law.
+    I, [signature], request a copy of the following document(s), in order to verify compliance with Standard Operating Procedures and/or Space Law.
 
     Documents sought:
 
@@ -756,7 +756,7 @@ doc-text-printer-complaint-violation-labor-rules =
     Date and Time: [datetime]
     Document Compiler: [signature]
 
-    I, [signature], believe that major misconduct, constituting either breach of SOP or Corporate Law, has occurred, or is ongoing, as described below.
+    I, [signature], believe that major misconduct, constituting either breach of SOP or Space Law, has occurred, or is ongoing, as described below.
 
     Department(s) involved: [form]
 
@@ -783,7 +783,7 @@ doc-text-printer-offense-complaint =
     Date and Time: [datetime]
     Document Compiler: [signature]
 
-    I, [signature], believe that the following person has violated Corporate Law.
+    I, [signature], believe that the following person has violated Space Law.
 
     Name of violator: [form]
 
@@ -1135,7 +1135,7 @@ doc-text-printer-medical-intervention-order =
     Date and Time: [datetime]
     Document Compiler: [signature]
 
-    Pursuant to Corporate Law, the Qualified Medical Officer named herein orders that the following medical intervention be carried out promptly and without delay.
+    Pursuant to Space Law, the Qualified Medical Officer named herein orders that the following medical intervention be carried out promptly and without delay.
 
     Patient: [form]
 
@@ -1270,7 +1270,7 @@ doc-text-printer-enemy-of-corporation-designation =
    ⠀ [italic]When completed, form must be faxed to CentComm with all haste.[/italic]
    ⠀ [italic]If CentComm, or any of the above mentioned officials,[/italic]
    ⠀ [italic]deny this motion, the prisoner must be reinstated as crew[/italic]
-   ⠀ [italic]and tried normally as per Corporate Law.[/italic]
+   ⠀ [italic]and tried normally as per Space Law.[/italic]
     ────────────────────────────────────────
    ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
 

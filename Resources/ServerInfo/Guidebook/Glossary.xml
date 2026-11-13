@@ -38,6 +38,10 @@ Short for Captain.
 ## Cargonia
 Reference to cargo declaring independence. Against the rules.
 
+## CCE/CCE Officer
+<!-- Blimpuf-edit: abbrev -->
+Abbreviation for Central Command Enforcer / Central Command Enforcement Officer.
+
 ## CE
 <!-- Starlight-edit: abbrev -->
 Abbreviation for Chief Engineer, the head of the Engineering Department.
@@ -45,11 +49,6 @@ Abbreviation for Chief Engineer, the head of the Engineering Department.
 ## CentComm/Central Command
 <!-- Starlight-edit: fix capitalization of NanoTrasen -->
 An administrative agency which oversees the NanoTrasen space station you inhabit.
-
-<!-- Starlight-start -->
-## CL
-Abbreviation for Corporate Law. The legal code in force on the station.
-<!-- Starlight-end -->
 
 ## CMO
 <!-- Starlight-edit: abbrev -->
@@ -147,10 +146,12 @@ A shortening of the Singularity Engine. A Singulo can create infinite power for 
 ## Singuloose
 A Singularity that has grown too much and breached its containment. It will rip through the station causing massive damage.
 
-<!-- Starlight-start -->
+## SL
+<!-- Blimpuf-edit: abbrev -->
+Abbreviation for Space Law. The legal code in force on the station.
+
 ## SOP
 Abbreviation for Standard Operating Procedures. The policies and guidelines everyone on the station is expected to follow.
-<!-- Starlight-end -->
 
 ## Spacing
 An event which causes an area to lose air pressure, i.e. a hull breach.

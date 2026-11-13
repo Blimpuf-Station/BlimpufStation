@@ -1,0 +1,12 @@
+﻿- type: trait
+  id: HayFever
+  name: trait-hayfever-name
+  description: trait-hayfever-description
+  category: Quirks
+  cost: 0
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: HayFever
+          ReactionInterval: 45
+

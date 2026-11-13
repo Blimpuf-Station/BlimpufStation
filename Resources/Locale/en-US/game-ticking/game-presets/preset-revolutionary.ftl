@@ -89,7 +89,7 @@ rev-deconverted-text =
 
     Any further wrongdoings are logged and punishable. So be nice.
 
-rev-deconverted-rule = Reminder: As per Rule 3 of server rules, [bold][color=#a4885c]De-converted Revolutionaries forget what happened while they were brainwashed.[/color][/bold]
+rev-deconverted-rule = Reminder: As per our Continuity rule within Rule 5 of our Server Rules, [bold][color=#a4885c]De-converted Revolutionaries forget what happened while they were brainwashed.[/color][/bold]
 
 rev-deconverted-ruletext = Your character may learn what happened through further investigation and roleplay, but should not be able to remember being a revolutionary nor any actions they commited on behalf of the revolution.
 

@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Sprites by Thlrds",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "athamas_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "athamas_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "charred_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "charred_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "deathhead_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "deathhead_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "fan_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "fan_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "firewatch_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "firewatch_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "foot_l_chimera_moth",
+      "directions": 4
+    },
+    {
+      "name": "foot_l_prosthetic_moth",
+      "directions": 4
+    },
+    {
+      "name": "foot_r_prosthetic_moth",
+      "directions": 4
+    },
+    {
+      "name": "gothic_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "gothic_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "jungle_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "jungle_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "leg_l_chimera_moth",
+      "directions": 4
+    },
+    {
+      "name": "leg_l_prosthetic_moth",
+      "directions": 4
+    },
+    {
+      "name": "leg_l_twisting_moth",
+      "directions": 4
+    },
+    {
+      "name": "leg_r_prosthetic_moth",
+      "directions": 4
+    },
+    {
+      "name": "leg_r_twisting_moth",
+      "directions": 4
+    },
+    {
+      "name": "moonfly_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "moonfly_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "oakworm_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "oakworm_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "pointy_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "pointy_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "ragged_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "ragged_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "royal_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "royal_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "slashed_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "slashed_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "whitefly_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "whitefly_r_leg",
+      "directions": 4
+    },
+    {
+      "name": "witchwing_l_leg",
+      "directions": 4
+    },
+    {
+      "name": "witchwing_r_leg",
+      "directions": 4
+    }
+  ]
+}

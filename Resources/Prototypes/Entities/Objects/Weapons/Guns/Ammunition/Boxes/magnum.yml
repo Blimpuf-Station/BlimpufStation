@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: BaseItem
+  parent: [BaseItem, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   id: BaseMagazineBoxMagnum
   components:
   - type: BallisticAmmoProvider
@@ -25,7 +25,7 @@
 
 # Boxes
 - type: entity
-  parent: BaseMagazineBoxMagnum
+  parent: [BaseMagazineBoxMagnum, BaseSalvageContraband] # Blimpuf
   id: MagazineBoxMagnumSP
   name: ammunition box (.45 magnum SP)
   components:
@@ -54,7 +54,7 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  parent: BaseMagazineBoxMagnum
+  parent: [BaseContrabandTier1, BaseMagazineBoxMagnum] # Blimpuf Practice is Tier 1
   id: MagazineBoxMagnumPractice
   name: ammunition box (.45 magnum practice)
   description: A cardboard box of .45 magnum rounds. Intended to hold harmless practice ammunition.

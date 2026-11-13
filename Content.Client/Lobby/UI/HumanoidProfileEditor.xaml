@@ -136,7 +136,7 @@
                             <BoxContainer HorizontalExpand="True">
                                 <Label Text="{Loc 'humanoid-profile-editor-pronouns-label'}" />
                                 <Control HorizontalExpand="True" />
-                                <OptionButton Name="PronounsButton" HorizontalAlignment="Right" />
+                                <BoxContainer Name="PronounsContainer" HorizontalAlignment="Right" /> <!-- Blimpuf -->
                             </BoxContainer>
                             <!--  Show clothing  -->
                             <BoxContainer HorizontalExpand="True">

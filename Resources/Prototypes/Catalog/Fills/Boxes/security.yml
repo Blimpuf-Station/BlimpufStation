@@ -1,6 +1,6 @@
 - type: entity
   name: handcuff box
-  parent: BoxCardboard
+  parent: [BaseContrabandTier2, BaseSecurityContraband, BoxCardboard] # Blimpuf
   id: BoxHandcuff
   description: A box full of handcuffs.
   components:
@@ -16,7 +16,7 @@
 
 - type: entity
   name: ziptie box
-  parent: BoxCardboard
+  parent: [BaseContrabandTier2, BaseSecurityContraband, BoxCardboard] # Blimpuf
   id: BoxZiptie
   description: A box full of zipties.
   components:
@@ -32,7 +32,7 @@
 
 - type: entity
   name: flashbang box
-  parent: BoxCardboard
+  parent: [BaseContrabandTier2, BaseSecurityContraband, BoxCardboard] # Blimpuf Less-Lethal is Tier 2
   id: BoxFlashbang
   description: 'WARNING: These devices are extremely dangerous and can cause blindness or deafness in repeated use.'
   components:
@@ -48,7 +48,7 @@
 
 - type: entity
   name: stinger grenade box
-  parent: BoxCardboard
+  parent: [BaseContrabandTier3, BaseSecurityContraband, BoxCardboard] # Blimpuf
   id: BoxStinger
   description: A box full of stinger grenades. Disperse!
   components:
@@ -64,7 +64,7 @@
 
 - type: entity
   name: tear gas grenade box
-  parent: BoxCardboard
+  parent: [BaseContrabandTier2, BaseSecurityContraband, BoxCardboard] # Blimpuf Less-Lethal is Tier 2
   id: BoxTearGas
   description: A box full of tear gas grenades. Hold your breath.
   components:
@@ -80,7 +80,7 @@
 
 - type: entity
   name: sechud box
-  parent: BoxCardboard
+  parent: [BaseSecurityContraband, BoxCardboard] # Blimpuf
   id: BoxSechud
   description: A box of sechuds.
   components:
@@ -96,7 +96,7 @@
 
 - type: entity
   name: secglasses box
-  parent: BoxCardboard
+  parent: [BaseSecurityContraband, BoxCardboard] # Blimpuf
   id: BoxSecglasses
   description: A box of security glasses.
   components:
@@ -146,7 +146,7 @@
     - state: forensic
 
 - type: entity
-  parent: BoxCardboard
+  parent: [BaseContrabandTier3, BaseSecurityContraband, BoxCardboard] # Blimpuf
   id: BoxDetonator
   name: detonator box
   description: A box of explosive detonators and triggers.

@@ -256,6 +256,7 @@
   id: SlimeMorphGeras
   configuration:
     entity: MobSlimesGeras
+    revertAction: ActionRevertPolymorphGeras
     transferName: true
     transferHumanoidAppearance: false
     inventory: Drop

@@ -17,18 +17,20 @@ People may not be able to make out all of what you're saying if you're standing 
 
 ## Radio
 
-Your radio allows you to communicate across the entire station and to your specific [color=#a4885c]department[/color].
+Your radio allows you to communicate with your [color=#a4885c]department[/color], as well as to hear the [color=#dfc8fa]Common[/color] channel.
 
 <Box>
   <GuideEntityEmbed Entity="ClothingHeadsetAssistant"/>
+  <GuideEntityEmbed Entity="Intercom"/>
 </Box>
 
-To send a [color=#a4885c]station-wide[/color] message over the radio preface, use the [color=#32cd32]Common[/color] channel by beginning your text with [color=#32cd32]semi-colon (;)[/color].
-People standing right next to you might catch bits of your radio message, even if they don't have the access to the relevant radio channel. Watch for eavesdroppers.
+To send a [color=#a4885c]station-wide[/color] message over the radio preface, use an intercom! Click it, select the [color=#dfc8fa]Common[/color] channel, and enable the microphone.
+    It will transmit anything you say within a small range, with whispers needing to be closer to be transmitted fully. You can also enable the speaker to listen to whichever channel the intercom is set to.
+
+Intercoms near specific departments usually have access to their departmental channels, which you can use to communicate on.
 
 ## Departmental Radio
-
-You are able to send messages over your departmental radio channels using [color=#32cd32]colon (:)[/color] followed by the department letter as long as you're wearing a headset with your department's encryption key.
+You can send messages over your headset's default channel by using a [color=#32cd32]semi-colon (;)[/color], as well as to other channels your headset has encryption keys for by using a [color=#32cd32]colon (:)[/color] followed by the channel's prefix.
 
 Examine your headset to see the department channels available to you.
 
@@ -36,7 +38,7 @@ Examine your headset to see the department channels available to you.
   <GuideEntityEmbed Entity="ClothingHeadsetEngineering"/>
 </Box>
 
-Examining an unmodified engineering headset would show you the prefixes for the [color=#32cd32]Common[/color] and [color=#f37746]Engineering[/color] channels.
+Examining an unmodified engineering headset would show you the prefixes for the [color=#dfc8fa]Common[/color] and [color=#f37746]Engineering[/color] channels.
 
 It is also possible to use [color=#a4885c]:h[/color]. This hotkey will automatically default to your department radio channel.
 For example, if you're a Station Engineer then [color=#a4885c]:h[/color] will default to [color=#f37746]:e[/color].
@@ -44,7 +46,7 @@ For example, if you're a Station Engineer then [color=#a4885c]:h[/color] will de
 ## Encryption Keys
 [color=#a4885c]Encryption keys[/color] give you access to their respective channel.
 
-Examining our engineering headset from earlier shows us [color=#32cd32]Common[/color] and [color=#f37746]Engineering[/color] because an engineer's headset starts with those [color=#a4885c]encryption keys[/color].
+Examining our engineering headset from earlier shows us [color=#dfc8fa]Common[/color] and [color=#f37746]Engineering[/color] because an engineer's headset starts with those [color=#a4885c]encryption keys[/color].
 
 <Box>
   <GuideEntityEmbed Entity="EncryptionKeyCommon"/>
