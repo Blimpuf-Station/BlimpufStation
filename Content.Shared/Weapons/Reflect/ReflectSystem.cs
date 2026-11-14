@@ -114,7 +114,7 @@ public sealed partial class ReflectSystem : EntitySystem
     {
         if (!TryComp<ReflectiveComponent>(projectile, out var reflective) ||
             (reflector.Comp.Reflects & reflective.Reflective) == 0x0 ||
-            !_toggle.IsActivated(reflector.Owner) ||
+            (reflector.Comp.RequiresActivation && !_toggle.IsActivated(reflector.Owner)) ||
             !TryComp<PhysicsComponent>(projectile, out var physics))
         {
             return false;
@@ -212,7 +212,7 @@ public sealed partial class ReflectSystem : EntitySystem
     {
         newDirection = null; //Starlight
         if ((reflector.Comp.Reflects & hitscanReflectType) == 0x0 ||
-            !_toggle.IsActivated(reflector.Owner))
+            (reflector.Comp.RequiresActivation && !_toggle.IsActivated(reflector.Owner)))
             return false;
 
         // Get reflection probability - check for enhanced reflection against specific bullet types
@@ -300,7 +300,7 @@ public sealed partial class ReflectSystem : EntitySystem
         // Trust me, universal verb for the potential weapons, armor and walls looks awful.
         var value = MathF.Round(ent.Comp.ReflectProb * 100, 1);
 
-        if (!_toggle.IsActivated(ent.Owner) || value == 0 || ent.Comp.Reflects == ReflectType.None)
+        if ((ent.Comp.RequiresActivation && !_toggle.IsActivated(ent.Owner)) || value == 0 || ent.Comp.Reflects == ReflectType.None)
             return;
 
         var compTypes = ent.Comp.Reflects.ToString().Split(", ");
