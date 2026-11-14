@@ -1,0 +1,23 @@
+- type: language
+  id: Ruminant
+  icon: LanguageIconRuminant
+  chatPrefix: rum
+  speech:
+    color: "#bda96f"
+    fontId: Lymphatic
+  obfuscation:
+    !type:SyllableObfuscation
+    minSyllables: 1
+    maxSyllables: 2
+    replacement:
+    - bah
+    - baah
+    - bahh
+    - beh
+    - behh
+    - meh
+    - mehh
+    - moo
+    - mooh
+    - ru
+    - ruu
