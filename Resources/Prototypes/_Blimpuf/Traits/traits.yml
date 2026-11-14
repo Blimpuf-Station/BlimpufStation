@@ -12,3 +12,14 @@
     - !type:SpeciesRequirement
       species:
         - Human
+
+- type: trait
+  id: NeuroAversion
+  name: blimpuf-trait-neuroaversion-name
+  description: blimpuf-trait-neuroaversion-desc
+  category: Disabilities
+  cost: 0
+  effects:
+  - !type:AddCompsEffect
+    components:
+    - type: NeuroAversion
