@@ -26,6 +26,7 @@ using Content.Shared.UserInterface;
 using Content.Shared.Wires;
 using Content.Shared.Whitelist;
 using Robust.Shared.Audio.Systems;
+using Robust.Shared.Audio;
 using Robust.Shared.Configuration;
 using Robust.Shared.Containers;
 using Robust.Shared.Network;
@@ -307,6 +308,8 @@ public abstract partial class SharedBorgSystem : EntitySystem
         if (key != null)
         {
             AddRadioChannels(chassis, used);
+            _popup.PopupPredicted(Loc.GetString("borg-encryption-key-added", ("borg", chassis.Owner)), chassis, args.User);
+            _audio.PlayPredicted(new SoundPathSpecifier("/Audio/Weapons/Guns/MagIn/revolver_magin.ogg"), chassis, args.User);
             _adminLog.Add(LogType.Action, LogImpact.Low,
                 $"{ToPrettyString(args.User):player} added encryption key {ToPrettyString(used)} to borg {ToPrettyString(chassis)}");
             args.Handled = true;
