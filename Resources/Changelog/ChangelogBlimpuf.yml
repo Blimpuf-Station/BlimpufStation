@@ -1373,5 +1373,12 @@ Entries:
   id: 26901
   time: '2026-11-14T13:12:54.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/269
+- author: ALooseGoose
+  changes:
+  - message: Added 11 new thief kits for thieves to play around with!
+    type: Add
+  id: 24101
+  time: '2026-11-14T18:46:57.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/241
 Order: -1
 
