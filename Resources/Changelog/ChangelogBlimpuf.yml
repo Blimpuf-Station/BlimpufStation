@@ -1387,5 +1387,12 @@ Entries:
   id: 27001
   time: '2026-11-14T20:51:28.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/270
+- author: Limerence, TrixxedHeart
+  changes:
+  - message: Added Chronic Migraines and Neuroaversion traits.
+    type: Add
+  id: 26601
+  time: '2026-11-14T21:23:16.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/266
 Order: -1
 
