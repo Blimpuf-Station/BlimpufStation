@@ -1,0 +1,34 @@
+# Standard Silicon Law Configurator
+- type: entity
+  parent: [BaseItem, BaseGrandTheftContraband]
+  id: SiliconLawConfigurator
+  name: silicon law configurator
+  description: After thousands of complaints from Research Directors alike, Nanotrasen decided to finally allow them to change the laws of their own Cyborgs! Revolutionary, truly.
+  components:
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/multitool_drop.ogg
+  - type: Sprite
+    sprite: _Blimpuf/Objects/Tools/silicon_law_configurator.rsi
+    state: icon
+  - type: Item
+    size: Small
+  - type: Clothing
+    sprite: _Blimpuf/Objects/Tools/silicon_law_configurator.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: SiliconLawConfigurator
+  - type: ItemSlots
+    slots:
+      circuit_holder:
+        name: Circuit Holder
+        whitelist:
+          requireAll: true
+          components:
+          - SiliconLawProvider
+          - Item
+  - type: ContainerContainer
+    containers:
+      circuit_holder: !type:ContainerSlot
+      board: !type:Container
