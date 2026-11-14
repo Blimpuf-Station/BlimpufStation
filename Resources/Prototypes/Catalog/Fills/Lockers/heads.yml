@@ -20,6 +20,7 @@
     - id: EncryptionKeySalvage
     - id: CargoTechFabFlatpack
     - id: PrintedDocumentCargoShuttleDeparture #Blimpuf
+    - id: BookSecureTerminalManual # Starlight
 
 - type: entity
   id: LockerQuarterMasterFilled
@@ -60,6 +61,7 @@
     - id: SpyglassCaptain #Starlight
     - id: CommunicationTablet #Starlight
     - id: CommandTechFabFlatpack # Starlight
+    - id: BookSecureTerminalManual # Starlight
     - id: HeadSkeleton # A skull to accompany your skeleton crew # Starlight Edit: OrganSkeletonPersonHead -> HeadSkeleton
       conditions:
       - !type:PlayerCountCondition
@@ -159,6 +161,7 @@
    #HoP doesn't deserve a disabler, Blimpuf
     - id: ClothingEyesHudCommand
     - id: BoxFolderHoPClipboard #Starlight start
+    - id: BookSecureTerminalManual # Starlight
     - id: ServiceTechFabFlatpack
     - id: FloraTreeChristmas02Flatpack
       conditions:
@@ -206,6 +209,7 @@
     - id: MetalFoamGrenade
     - id: EngineeringTechFabFlatpack # Starlight
     - id: HammerBreachingCE # Blimpuf
+    - id: BookSecureTerminalManual # Starlight
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -264,6 +268,7 @@
     - id: BoxEncryptionKeyMedical
     - id: BoxCMOCircuitboards
     - id: AutoMenderBurnFilled # Starlight start
+    - id: BookSecureTerminalManual # Starlight
     - id: AutoMenderBruteFilled
     - id: ClothingBackpackDuffelSurgeryFilled
     - id: ClothingMaskSterile
@@ -333,6 +338,7 @@
     - id: ScienceTechFabFlatpack
     - id: RDDiploma
     - id: XenobiologyConsoleCameraTagger
+    - id: BookSecureTerminalManual # Starlight
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -400,6 +406,7 @@
     - id: WantedListCartridge
     - id: DrinkHosFlask
     - id: SecurityShuttleConsoleCircuitboard # Starlight start
+    - id: BookSecureTerminalManual # Starlight
     - id: ClothingOuterWinterHoS
 #    - id: ClothingHandsGlovesCombat # Starlight, they spawn with them now.
 

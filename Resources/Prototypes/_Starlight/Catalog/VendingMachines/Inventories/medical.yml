@@ -232,25 +232,25 @@
   conditions:
   - !type:BuyerAccessCondition
 
-- type: listing
-  id: VendorMobOrganAvaliHeart
-  productEntity: OrganAvaliHeart
-  cost:
-    NTCredit: 331
-  categories:
-  - SLSurgery
-  conditions:
-  - !type:BuyerAccessCondition
+#- type: listing - Blimpuf- no Avali
+#  id: VendorMobOrganAvaliHeart
+#  productEntity: OrganAvaliHeart
+#  cost:
+#    NTCredit: 331
+#  categories:
+#  - SLSurgery
+#  conditions:
+#  - !type:BuyerAccessCondition
 
-- type: listing
-  id: VendorMobOrganAvaliLungs
-  productEntity: OrganAvaliLungs
-  cost:
-    NTCredit: 297
-  categories:
-  - SLSurgery
-  conditions:
-  - !type:BuyerAccessCondition
+#- type: listing - Blimpuf- no Avali
+#  id: VendorMobOrganAvaliLungs
+#  productEntity: OrganAvaliLungs
+#  cost:
+#    NTCredit: 297
+#  categories:
+#  - SLSurgery
+#  conditions:
+#  - !type:BuyerAccessCondition
 
 - type: listing
   id: VendorMobOrganVoxLungs

@@ -7,11 +7,17 @@ namespace Content.Shared.Weapons.Reflect;
 
 /// <summary>
 /// Entities with this component have a chance to reflect projectiles and hitscan shots
-/// Uses <c>ItemToggleComponent</c> to control reflection.
+/// Uses <c>ItemToggleComponent</c> to control reflection when RequiresActivation is enabled.
 /// </summary>
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class ReflectComponent : Component
 {
+    /// <summary>
+    /// Whether reflection requires the item to be activated.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool RequiresActivation = true;
+
     /// <summary>
     /// What we reflect.
     /// </summary>

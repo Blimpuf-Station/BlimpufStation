@@ -8,10 +8,10 @@
   recipes:
   - ArtificialBluespaceCrystal
 
-- type: latheRecipePack
-  id: SecurityScienceBlueSpace
-  recipes:
-  - NullspaceAnchorMachineCircuitboard
+#- type: latheRecipePack
+#  id: SecurityScienceBlueSpace
+#  recipes:
+#  - NullspaceAnchorMachineCircuitboard
 
 - type: latheRecipe
   parent: BaseToolRecipe
