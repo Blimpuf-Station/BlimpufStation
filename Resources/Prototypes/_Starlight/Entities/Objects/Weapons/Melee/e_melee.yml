@@ -101,7 +101,7 @@
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:
-        Heat: 0.3
+        Heat: 0
   - type: SlipOnHit
     staminaDamage: 15
     slipData:
