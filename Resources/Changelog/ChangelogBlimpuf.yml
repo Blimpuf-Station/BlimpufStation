@@ -1380,5 +1380,12 @@ Entries:
   id: 24101
   time: '2026-11-14T18:46:57.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/241
+- author: Limerent-Sun
+  changes:
+  - message: Custom objective summary length increased by 4x.
+    type: Tweak
+  id: 27001
+  time: '2026-11-14T20:51:28.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/270
 Order: -1
 
