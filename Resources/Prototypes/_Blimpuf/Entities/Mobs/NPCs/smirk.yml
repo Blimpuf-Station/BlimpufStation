@@ -8,12 +8,14 @@
     sprayLiquid: ActionSuperLiquidSpray
   - type: SolutionContainerManager
     solutions:
-      vestineSupply:
+      tank:
         maxVol: 500
+      vestineSupply:
+        maxVol: 30
         canReact: false
         reagents:
         - ReagentId: Vestine
-          Quantity: 500
+          Quantity: 30
   - type: MultiSolutionRegeneration
     solutions:
     - solution: bloodstream
@@ -28,7 +30,7 @@
       generated:
         reagents:
         - ReagentId: Vestine
-          Quantity: 1
+          Quantity: 0.1
       duration: 1
   - type: Squeezable
     solution: vestineSupply

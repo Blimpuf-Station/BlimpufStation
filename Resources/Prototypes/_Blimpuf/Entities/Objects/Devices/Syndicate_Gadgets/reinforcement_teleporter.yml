@@ -1,8 +1,8 @@
 - type: entity
   parent: ReinforcementRadio
   id: ReinforcementRadioSyndicateSmirk
-  name: smirk reinforcement radio
-  description: Calls in smirk, the Syndicate's best supply of Vestine!
+  name: Smirk reinforcement radio
+  description: Calls in Smirk, Smile's evil doppelganger???
   components:
   - type: GhostRole
     name: ghost-role-information-smirk-name
