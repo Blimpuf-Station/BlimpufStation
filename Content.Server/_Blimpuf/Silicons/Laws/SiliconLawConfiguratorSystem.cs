@@ -7,11 +7,12 @@ using Content.Shared.IdentityManagement;
 using Content.Shared.Popups;
 using Content.Shared.Silicons.Laws;
 using Content.Shared.Silicons.Laws.Components;
+using Content.Shared.Wires;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server._Blimpuf.Silicons.Laws;
 
-public sealed class SiliconLawConfiguratorServerSystem : EntitySystem
+public sealed class SiliconLawConfiguratorSystem : EntitySystem
 {
     [Dependency] private SiliconLawSystem _siliconLaw = default!;
     [Dependency] private SharedPopupSystem _popup = default!;
@@ -26,6 +27,9 @@ public sealed class SiliconLawConfiguratorServerSystem : EntitySystem
 
     private void OnDoAfter(Entity<SiliconLawConfiguratorComponent> ent, ref LawConfiguratorDoAfterEvent args)
     {
+        ent.Comp.ActiveDoAfter = null;
+        ent.Comp.ActiveTarget = null;
+
         if (args.Cancelled || args.Handled || args.Args.Target is not { } target)
             return;
 
@@ -34,10 +38,12 @@ public sealed class SiliconLawConfiguratorServerSystem : EntitySystem
 
         var laws = BuildLaws(provider);
 
-        _siliconLaw.SetLaws(laws, target, provider.LawUploadSound);
-
-        _popup.PopupEntity(Loc.GetString("laws-configurator-success", ("user", Identity.Entity(args.User, EntityManager)), ("target", Identity.Entity(target, EntityManager))), target, PopupType.Medium);
-        args.Handled = true;
+        if (TryComp<WiresPanelComponent>(target, out var panel) && panel.Open)
+        {
+            _siliconLaw.SetLaws(laws, target, provider.LawUploadSound);
+            _popup.PopupEntity(Loc.GetString("laws-configurator-success", ("user", Identity.Entity(args.User, EntityManager)), ("target", Identity.Entity(target, EntityManager))), target, PopupType.Medium);
+            args.Handled = true;
+        }
     }
 
     private List<SiliconLaw> BuildLaws(SiliconLawProviderComponent provider)

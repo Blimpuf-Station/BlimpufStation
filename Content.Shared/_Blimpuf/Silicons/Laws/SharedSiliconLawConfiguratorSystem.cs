@@ -7,11 +7,12 @@ using Content.Shared.Popups;
 using Content.Shared.Silicons.Borgs.Components;
 using Content.Shared.Silicons.Laws.Components;
 using Content.Shared.Wires;
+using Robust.Shared.Containers;
 using Robust.Shared.Serialization;
 
 namespace Content.Shared._Blimpuf.Silicons.Laws;
 
-public sealed partial class SiliconLawConfiguratorSystem : EntitySystem
+public sealed partial class SharedSiliconLawConfiguratorSystem : EntitySystem
 {
     [Dependency] private SharedPopupSystem _popup = default!;
     [Dependency] private readonly ItemSlotsSystem _itemSlots = default!;
@@ -21,6 +22,8 @@ public sealed partial class SiliconLawConfiguratorSystem : EntitySystem
     {
         base.Initialize();
         SubscribeLocalEvent<SiliconLawConfiguratorComponent, AfterInteractEvent>(OnAfterInteract);
+        SubscribeLocalEvent<SiliconLawConfiguratorComponent, EntRemovedFromContainerMessage>(OnEntRemoved);
+        SubscribeLocalEvent<BorgChassisComponent, PanelChangedEvent>(OnPanelChanged);
     }
 
     private void OnAfterInteract(EntityUid uid, SiliconLawConfiguratorComponent component, AfterInteractEvent args)
@@ -69,8 +72,42 @@ public sealed partial class SiliconLawConfiguratorSystem : EntitySystem
         };
 
         _popup.PopupPredicted(Loc.GetString("laws-configurator-begin", ("user", Identity.Entity(args.User, EntityManager)), ("target", Identity.Entity(target, EntityManager))), target, args.User, PopupType.Medium);
-        _doAfter.TryStartDoAfter(doAfterArgs);
+        if (_doAfter.TryStartDoAfter(doAfterArgs, out var id))
+        {
+            component.ActiveDoAfter = id;
+            component.ActiveTarget = target;
+        }
         args.Handled = true;
+    }
+
+    private void OnEntRemoved(Entity<SiliconLawConfiguratorComponent> component, ref EntRemovedFromContainerMessage args)
+    {
+        if (args.Container.ID != "circuit_holder")
+            return;
+
+        CancelActive(component);
+    }
+
+    private void OnPanelChanged(Entity<BorgChassisComponent> component, ref PanelChangedEvent args)
+    {
+        if (args.Open)
+            return;
+
+        var query = EntityQueryEnumerator<SiliconLawConfiguratorComponent>();
+        while (query.MoveNext(out var uid, out var config))
+        {
+            if (config.ActiveTarget == component.Owner)
+                CancelActive((uid, config));
+        }
+    }
+
+    private void CancelActive(Entity<SiliconLawConfiguratorComponent> component)
+    {
+        if (component.Comp.ActiveDoAfter is { } id)
+            _doAfter.Cancel(id);
+
+        component.Comp.ActiveDoAfter = null;
+        component.Comp.ActiveTarget = null;
     }
 }
 
