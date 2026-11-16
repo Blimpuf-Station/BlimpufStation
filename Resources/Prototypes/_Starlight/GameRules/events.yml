@@ -242,7 +242,7 @@
   - type: StationEvent
     earliestStart: 50
     weight: 2
-    minimumPlayers: 30
+    minimumPlayers: 10
     duration: null
   - type: RuleGrids
   - type: LoadMapRule

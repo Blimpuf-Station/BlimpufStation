@@ -18,3 +18,4 @@ station-beacon-clown = Clown
 station-beacon-mime = Mime
 station-beacon-musician = Musician
 station-beacon-lawyer = Lawyer
+station-beacon-brigmedic = Brigmedic

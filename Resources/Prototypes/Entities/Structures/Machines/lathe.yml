@@ -293,7 +293,6 @@
     - StarlightVendorBoards # Starlight
     - ElectronicsStatic # Starlight
     dynamicPacks:
-    - SecurityScienceBlueSpace # Starlight
     - StarlightShuttleBoards # Starlight
     - EngineeringBoards
     - CargoBoards
@@ -450,7 +449,6 @@
     - SecurityWeaponsStatic
     - TapeRecorder # Starlight end
     dynamicPacks:
-    - SecurityScienceBlueSpace # Stalright
     - SalvageSecurityBoards
     - SalvageSecurityWeapons
     - SecurityDisablers

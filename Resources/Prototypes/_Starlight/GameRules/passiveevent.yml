@@ -3,7 +3,7 @@
   id: PsychicScreach
   components:
     - type: StationEvent
-      weight: 1
+      weight: 0.2
       endAnnouncement: station-event-psychicscreach-announcement
       endAudio:
         path: /Audio/_Starlight/Announcements/announce_broken.ogg
@@ -29,7 +29,7 @@
   components:
     - type: StationEvent
       globalAnnouncement: false
-      weight: 8
+      weight: 4
       startAudio:
         path: /Audio/Announcements/announce.ogg
     - type: SecurityDrillRule

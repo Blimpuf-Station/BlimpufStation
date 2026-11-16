@@ -89,6 +89,7 @@
   table: !type:AllSelector
     children:
     - id: OxygenTankFilled
+    - id: NitrogenTankFilled
     - id: ClothingShoesBootsMag
     - id: ClothingOuterHardsuitSpaceHazard
     - id: ClothingMaskGasExplorer

@@ -7927,3 +7927,130 @@
   id: 407406
   time: '2026-08-10T13:58:51.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/5454
+- author: Swonki
+  changes:
+  - message: Increased Eep on-station speed.
+    type: Tweak
+  id: 407409
+  time: '2026-08-10T14:38:19.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5564
+- author: Swonki
+  changes:
+  - message: Increased Eep melee damage.
+    type: Tweak
+  id: 407410
+  time: '2026-08-10T14:38:19.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5564
+- author: Mack
+  changes:
+  - message: The plumbing filter can now take up to 10 reagents.
+    type: Tweak
+  id: 407411
+  time: '2026-08-10T14:38:21.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5460
+- author: Mack
+  changes:
+  - message: Inline plumbing filter.
+    type: Add
+  id: 407412
+  time: '2026-08-10T14:38:21.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5460
+- author: Swonki
+  changes:
+  - message: Exosuit drills blunt damage values reduced.
+    type: Tweak
+  id: 407414
+  time: '2026-08-10T15:07:30.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5562
+- author: Caws
+  changes:
+  - message: Increased the maximum linking range of the artifact analysis console from 9 tiles to 12.
+    type: Tweak
+  id: 407418
+  time: '2026-08-10T17:26:31.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5597
+- author: Caws
+  changes:
+  - message: '"Brig Med" map beacon has been renamed to "Brigmedic".'
+    type: Tweak
+  id: 407432
+  time: '2026-08-10T20:15:56.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5590
+- author: Conflee
+  changes:
+  - message: Added 7 new 'Retro' Counters. Constructable by players and usable by mappers. Diner, Kitchen, Steel and Wood, Wood, Steel, Orange and White, and Teal and White.
+    type: Add
+  id: 407433
+  time: '2026-08-10T20:43:43.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5577
+- author: Sparlight
+  changes:
+  - message: Partial smellers can now faintly perceive the scent emissions of corpses inside closed containers.
+    type: Add
+  id: 407434
+  time: '2026-08-10T21:04:48.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5570
+- author: Sparlight
+  changes:
+  - message: Individuals that can smell can now smell anything with a scent directly now, in addition to the scent traces left behind on them.
+    type: Add
+  id: 407482
+  time: '2026-08-10T22:37:48.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5544
+- author: Sparlight
+  changes:
+  - message: Fixed reinstalled surgical implants disappearing when attempting installation.
+    type: Fix
+  id: 407489
+  time: '2026-08-11T03:09:01.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5569
+- author: Sparlight
+  changes:
+  - message: Partial smellers (vulpkanins) can no longer detect scent emissions from cloaked entities.
+    type: Tweak
+  id: 407490
+  time: '2026-08-11T03:09:03.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5557
+- author: VBlankFF
+  changes:
+  - message: Added effects that give artifacts certain accesses.
+    type: Add
+  id: 407491
+  time: '2026-08-11T06:27:07.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5383
+- author: Tjmaxmillion
+  changes:
+  - message: Secure Terminal now gives 30 seconds for co-authorization.
+    type: Tweak
+  id: 407492
+  time: '2026-08-11T08:00:04.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5002
+- author: Tjmaxmillion
+  changes:
+  - message: Secure Terminal Manual in command guidebook.
+    type: Add
+  id: 407493
+  time: '2026-08-11T08:00:04.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5002
+- author: Tjmaxmillion
+  changes:
+  - message: Secure Terminal Manual Item, Spawns inside command lockers and the Keycard Authentication Device, can be ejected.
+    type: Add
+  id: 407494
+  time: '2026-08-11T08:00:04.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5002
+- author: Tjmaxmillion
+  changes:
+  - message: Secure Terminal SOP in command SOP.
+    type: Add
+  id: 407495
+  time: '2026-08-11T08:00:04.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5002
+- author: Tjmaxmillion
+  changes:
+  - message: Secure Terminal shuttle based recalls now work.
+    type: Fix
+  id: 407496
+  time: '2026-08-11T08:00:04.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5002
+Order: -1

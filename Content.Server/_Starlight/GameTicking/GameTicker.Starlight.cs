@@ -33,7 +33,7 @@ public sealed partial class GameTicker
                         Footer = new WebhookEmbedFooter
                         {
                             Text = "",
-                            IconUrl = "https://ss14-starlight.online/favicon.png"
+                            IconUrl = "https://blimpuf.space/favicon.png"
                         },
                         Fields = [
                             new(){
@@ -64,7 +64,7 @@ public sealed partial class GameTicker
                         ],
                         Thumbnail = new WebhookEmbedImage
                         {
-                            Url = "https://ss14-starlight.online/favicon.png"
+                            Url = "https://blimpuf.space/favicon.png"
                         }
                     },
                 },
@@ -79,7 +79,7 @@ public sealed partial class GameTicker
                         Footer = new WebhookEmbedFooter
                         {
                             Text = "",
-                            IconUrl = "https://ss14-starlight.online/favicon.png"
+                            IconUrl = "https://blimpuf.space/favicon.png"
                         },
                         Fields = [
                             new(){
@@ -120,7 +120,7 @@ public sealed partial class GameTicker
                         ],
                         Thumbnail = new WebhookEmbedImage
                         {
-                            Url = "https://ss14-starlight.online/favicon.png"
+                            Url = "https://blimpuf.space/favicon.png"
                         }
                     },
                 },
@@ -159,7 +159,7 @@ public sealed partial class GameTicker
         embed.Footer = new WebhookEmbedFooter
         {
             Text = $"{_serverName} ({RoundId})",
-            IconUrl = "https://ss14-starlight.online/favicon.png"
+            IconUrl = "https://blimpuf.space/favicon.png"
         };
 
         embed.Fields[0] = embed.Fields[0] with { Value = $"{_playerManager.PlayerCount}/{_playerManager.MaxPlayers}" };
@@ -189,7 +189,7 @@ public sealed partial class GameTicker
         embed.Footer = new WebhookEmbedFooter
         {
             Text = $"{_serverName} ({RoundId})",
-            IconUrl = "https://ss14-starlight.online/favicon.png"
+            IconUrl = "https://blimpuf.space/favicon.png"
         };
         embed.Fields[0] = embed.Fields[0] with { Value = $"{_playerManager.PlayerCount}/{_playerManager.MaxPlayers}" };
         embed.Fields[1] = embed.Fields[1] with { Value = $"{_adminManager.ActiveAdmins.Count()}/{_adminManager.AllAdmins.Count()}" };

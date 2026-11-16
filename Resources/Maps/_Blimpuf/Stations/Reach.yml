@@ -15903,7 +15903,7 @@ entities:
     - type: Transform
       pos: 12.5,-2.5
       parent: 2
-- proto: LockerMiningSpecialistFilled
+- proto: LockerMiningSpecialistFilledHardsuit
   entities:
   - uid: 2253
     components:

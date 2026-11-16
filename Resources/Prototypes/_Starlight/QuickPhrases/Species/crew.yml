@@ -1,17 +1,17 @@
-- type: quickPhrase
-  id: SpeciesLagomorphPhrase
-  parent: BaseCrewSpeciesPhrase
-  text: species-name-lagomorph
+#- type: quickPhrase # Blimpuf- no Lagomorph
+#  id: SpeciesLagomorphPhrase
+#  parent: BaseCrewSpeciesPhrase
+#  text: species-name-lagomorph
 
-- type: quickPhrase
-  id: SpeciesFelionoidPhrase
-  parent: BaseCrewSpeciesPhrase
-  text: species-name-felionoid
+#- type: quickPhrase # Blimpuf- no Felionoid
+#  id: SpeciesFelionoidPhrase
+#  parent: BaseCrewSpeciesPhrase
+#  text: species-name-felionoid
 
-- type: quickPhrase
-  id: SpeciesShadekinPhrase
-  parent: BaseCrewSpeciesPhrase
-  text: species-name-shadekin
+#- type: quickPhrase # Blimpuf- no Shadekin
+#  id: SpeciesShadekinPhrase
+#  parent: BaseCrewSpeciesPhrase
+#  text: species-name-shadekin
 
 - type: quickPhrase
   id: SpeciesThavenPhrase
@@ -28,10 +28,10 @@
   parent: BaseCrewSpeciesPhrase
   text: species-name-elf
 
-- type: quickPhrase
-  id: SpeciesIPCPhrase
-  parent: BaseCrewSpeciesPhrase
-  text: species-name-ipc
+#- type: quickPhrase # Blimpuf- no IPC
+#  id: SpeciesIPCPhrase
+#  parent: BaseCrewSpeciesPhrase
+#  text: species-name-ipc
 
 # Neocytes and neocyte subspecies
 
@@ -85,30 +85,30 @@
   parent: SpeciesNeocytePhrase
   text: subspecies-name-neoresomi
 
-- type: quickPhrase
-  id: SpeciesNeoavaliPhrase
-  parent: SpeciesNeocytePhrase
-  text: subspecies-name-neoavali
+#- type: quickPhrase # Blimpuf- no NeoAvali
+#  id: SpeciesNeoavaliPhrase
+#  parent: SpeciesNeocytePhrase
+#  text: subspecies-name-neoavali
 
 - type: quickPhrase
   id: SpeciesNeovoxPhrase
   parent: SpeciesNeocytePhrase
   text: subspecies-name-neovox
 
-- type: quickPhrase
-  id: SpeciesNeolagomorphPhrase
-  parent: SpeciesNeocytePhrase
-  text: subspecies-name-neolagomorph
+#- type: quickPhrase # Blimpuf- no NeoLagomorph
+#  id: SpeciesNeolagomorphPhrase
+#  parent: SpeciesNeocytePhrase
+#  text: subspecies-name-neolagomorph
 
-- type: quickPhrase
-  id: SpeciesNeofelionoidPhrase
-  parent: SpeciesNeocytePhrase
-  text: subspecies-name-neofelionoid
+#- type: quickPhrase # Blimpuf- no NeoFelionoid
+#  id: SpeciesNeofelionoidPhrase
+#  parent: SpeciesNeocytePhrase
+#  text: subspecies-name-neofelionoid
 
-- type: quickPhrase
-  id: SpeciesNeoShadekinPhrase
-  parent: SpeciesNeocytePhrase
-  text: subspecies-name-neoshadekin
+#- type: quickPhrase # Blimpuf- no NeoShadekin
+#  id: SpeciesNeoShadekinPhrase
+#  parent: SpeciesNeocytePhrase
+#  text: subspecies-name-neoshadekin
 
 - type: quickPhrase
   id: SpeciesNeothavenPhrase
