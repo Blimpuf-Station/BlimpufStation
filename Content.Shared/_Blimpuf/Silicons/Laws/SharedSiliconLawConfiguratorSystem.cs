@@ -59,8 +59,7 @@ public sealed partial class SharedSiliconLawConfiguratorSystem : EntitySystem
             return;
         }
 
-        var doAfterArgs = new DoAfterArgs(EntityManager, args.User, component.UploadTime,
-            new LawConfiguratorDoAfterEvent(), eventTarget: uid, target: target, used: uid)
+        var doAfterArgs = new DoAfterArgs(EntityManager, args.User, component.UploadTime, new LawConfiguratorDoAfterEvent(), eventTarget: uid, target: target, used: uid)
         {
             BreakOnMove = true,
             BreakOnDamage = true,
@@ -71,11 +70,11 @@ public sealed partial class SharedSiliconLawConfiguratorSystem : EntitySystem
             DuplicateCondition = DuplicateConditions.SameTarget | DuplicateConditions.SameEvent,
         };
 
-        _popup.PopupPredicted(Loc.GetString("laws-configurator-begin", ("user", Identity.Entity(args.User, EntityManager)), ("target", Identity.Entity(target, EntityManager))), target, args.User, PopupType.Medium);
         if (_doAfter.TryStartDoAfter(doAfterArgs, out var id))
         {
             component.ActiveDoAfter = id;
             component.ActiveTarget = target;
+            _popup.PopupPredicted(Loc.GetString("laws-configurator-begin", ("user", Identity.Entity(args.User, EntityManager)), ("target", Identity.Entity(target, EntityManager))), target, args.User, PopupType.Medium);
         }
         args.Handled = true;
     }
