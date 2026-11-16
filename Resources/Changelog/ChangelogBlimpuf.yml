@@ -1075,5 +1075,291 @@ Entries:
   id: 18601
   time: '2026-10-11T08:58:26.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/186
+- author: Limerent-Sun
+  changes:
+  - message: Reworked Space Law. Yes, all of it.
+    type: Tweak
+  id: 19001
+  time: '2026-10-14T17:10:48.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/190
+- author: Shimmers
+  changes:
+  - message: Corrected various minor Guidebook discrepancies.
+    type: Fix
+  id: 19101
+  time: '2026-10-15T13:57:18.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/191
+- author: Limerent-Sun
+  changes:
+  - message: SSD ZZ icon now shows how long you have been disconnected.
+    type: Tweak
+  id: 19201
+  time: '2026-10-15T18:25:44.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/192
+- author: ItsMaitake
+  changes:
+  - message: Departmental clothing vendor drobes now have Syndicate specific clothing
+      types when emagged, instead of just being Operative Jumpsuits/Jumpskirts.
+    type: Tweak
+  id: 18801
+  time: '2026-10-15T18:51:24.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/188
+- author: OmgDev
+  changes:
+  - message: Smile and other slime-kin can also Squish, Pop, and Bubble!
+    type: Add
+  - message: Added an option to SpeechComponent that allows entities to opt-in to
+      vocal emotes rather then having to blacklist global ones!
+    type: Tweak
+  id: 19701
+  time: '2026-10-16T08:42:52.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/197
+- author: Shimmers
+  changes:
+  - message: Intercoms now output R&D unlocks correctly.
+    type: Fix
+  id: 20201
+  time: '2026-10-23T11:13:32.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/202
+- author: Limerent-Sun
+  changes:
+  - message: Replaced secure, criminal, and corporate documents with the Command Training
+      Manual.
+    type: Tweak
+  - message: Updated Command & CentComm Representatives SOP.
+    type: Tweak
+  id: 21401
+  time: '2026-10-24T08:04:08.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/214
+- author: ALooseGoose
+  changes:
+  - message: Rebased all remaining Traitor/Nukie uplink items to a 100TC base.
+    type: Fix
+  - message: Fixed a bug where Traitors can do the same research task multiple times
+      at once.
+    type: Fix
+  - message: The person who completes the last Syndicate Research task for any of
+      the items gets the resulting item for free.
+    type: Tweak
+  - message: The shared Syndicate Research task is no 1-3 research completed as opposed
+      to 4-6.
+    type: Tweak
+  - message: Traitors can now roll Specific Research objectives where they have to
+      research a specific item akin to steal objectives.
+    type: Add
+  - message: A guidebook entry for Syndicate Research has been added to the Traitor
+      guide.
+    type: Add
+  id: 20301
+  time: '2026-10-24T08:12:46.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/203
+- author: Limerent-Sun
+  changes:
+  - message: Ghost role antagonists can now roll random species.
+    type: Fix
+  id: 20501
+  time: '2026-10-24T08:24:34.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/205
+- author: Limerent-Sun
+  changes:
+  - message: Round now ends upon evac arrival at CC, not departure.
+    type: Tweak
+  id: 21101
+  time: '2026-10-24T09:08:07.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/211
+- author: Swonki, Caws, Shimmers
+  changes:
+  - message: Ninjas can use escape pods to extract after completing their objectives.
+    type: Add
+  - message: Escape pods have been updated with diagonal lattice.
+    type: Tweak
+  id: 20801
+  time: '2026-10-24T12:28:15.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/208
+- author: Limerent-Sun
+  changes:
+  - message: CCE and Magistrate no longer require an additional whitelist to play.
+    type: Remove
+  id: 21301
+  time: '2026-10-24T18:27:09.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/213
+- author: DrWhoFan13, BlueMoon59, TGRCDev
+  changes:
+  - message: Pronouns now show up on crew manifest.
+    type: Add
+  id: 20901
+  time: '2026-10-24T21:13:35.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/209
+- author: Limerent-Sun
+  changes:
+  - message: Characters may now be assigned multiple pronouns.
+    type: Add
+  id: 21001
+  time: '2026-10-24T22:01:07.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/210
+- author: ItsMaitake
+  changes:
+  - message: Goat seeds now properly mutate from oat seeds.
+    type: Fix
+  id: 22401
+  time: '2026-10-27T19:39:30.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/224
+- author: Limerent-Sun
+  changes:
+  - message: Eeeps now recover from death as intended.
+    type: Fix
+  id: 22201
+  time: '2026-10-27T19:40:21.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/222
+- author: Limerent-Sun
+  changes:
+  - message: Station AI now starts on NT-Default.
+    type: Tweak
+  id: 22801
+  time: '2026-10-28T14:35:36.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/228
+- author: Lady Liliana
+  changes:
+  - message: Added medical and criminal record circuit boards to their respective
+      circuit totes.
+    type: Add
+  - message: Added contraband tags to various circuit boards.
+    type: Add
+  - message: Added contraband tags to various items missing them completely (abductor
+      for example).
+    type: Fix
+  - message: Changed ammo contraband tags to differentiate between ammo types.
+    type: Tweak
+  - message: Changed various contraband tags to better reflect their security level.
+    type: Tweak
+  id: 20701
+  time: '2026-10-29T20:05:47.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/207
+- author: Shimmers
+  changes:
+  - message: Xenoborgs now use Starlight's mothership.
+    type: Fix
+  id: 20601
+  time: '2026-10-30T11:34:00.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/206
+- author: Limerent-Sun
+  changes:
+  - message: Removed chaplain interactions with cosmic cultists and malign rifts.
+    type: Remove
+  - message: Removed chaplain immunity to cosmic cult abilities and conversion.
+    type: Remove
+  - message: Chaplain can now roll cosmic cultist.
+    type: Tweak
+  id: 21701
+  time: '2026-10-30T12:13:01.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/217
+- author: RedSpeeds
+  changes:
+  - message: Fixed asteroids lacking collision.
+    type: Fix
+  id: 23501
+  time: '2026-10-30T20:00:29.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/235
+- author: Shimmers
+  changes:
+  - message: The Bridge on Sushi has been rearranged.
+    type: Tweak
+  - message: The IAA's fax machine on Saltern is now functional.
+    type: Fix
+  id: 22601
+  time: '2026-10-30T20:01:09.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/226
+- author: ALooseGoose
+  changes:
+  - message: Fixed Plasteel task showing as requiring Uranium in Syndicate Research.
+    type: Fix
+  id: 24201
+  time: '2026-11-01T12:42:11.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/242
+- author: LadyLiliana
+  changes:
+  - message: Fixed issues with borgs spawning without an MMI.
+    type: Fix
+  id: 24501
+  time: '2026-11-01T19:19:29.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/245
+- author: LadyLiliana
+  changes:
+  - message: Fixed broken revenant collisions.
+    type: Fix
+  id: 24301
+  time: '2026-11-01T19:24:09.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/243
+- author: LunaNova
+  changes:
+  - message: Descriptions to cartridges .20, caseless .25 rubber, .30, .35, .40, and
+      .45, as well as HP, FMJ, SP and rubber.
+    type: Add
+  - message: Fixed HP and FMJ descriptions on the .45 cartridge.
+    type: Fix
+  id: 23201
+  time: '2026-11-04T17:05:06.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/232
+- author: Limerent-Sun
+  changes:
+  - message: Compys no longer spawn in maints.
+    type: Remove
+  - message: Most medium-impact antagonists can now spawn at lower playercounts.
+    type: Tweak
+  - message: Reduced several job playtime requirements during Launch Window period.
+    type: Tweak
+  id: 25201
+  time: '2026-11-05T15:28:55.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/252
+- author: LunaNova
+  changes:
+  - message: Removed the disabler from HoP's and Captain's lockers.
+    type: Remove
+  id: 25001
+  time: '2026-11-05T15:36:42.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/250
+- author: Limerent-Sun
+  changes:
+  - message: Reduced the frequency of PsychicScreach, SecurityDrill, and Abductor
+      events.
+    type: Tweak
+  id: 25401
+  time: '2026-11-06T17:12:17.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/254
+- author: ALooseGoose
+  changes:
+  - message: Fixed broken behaviour with the Syndicate Research handheld mass scanner
+      task.
+    type: Fix
+  id: 25101
+  time: '2026-11-06T17:50:36.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/251
+- author: Limerent-Sun
+  changes:
+  - message: Rounds no longer fail to start due to lack of eligible players for optional
+      subgamemodes.
+    type: Fix
+  id: 26101
+  time: '2026-11-11T15:09:21.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/261
+- author: Shimmers
+  changes:
+  - message: '[Saltern] Kiki''s double in the brig has been replaced with Stir-stir.'
+    type: Fix
+  - message: '[Sushi] Medbay''s reception desk can now check your medical history
+      instead of your employment history.'
+    type: Fix
+  - message: '[Sushi] Added Corporate telecoms.'
+    type: Fix
+  id: 26301
+  time: '2026-11-12T14:05:33.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/263
+- author: battlecruiser12
+  changes:
+  - message: Added a hay fever trait.
+    type: Add
+  id: 26401
+  time: '2026-11-12T14:19:13.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/264
 Order: -1
 

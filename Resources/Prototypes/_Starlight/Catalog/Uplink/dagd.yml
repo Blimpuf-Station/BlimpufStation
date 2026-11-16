@@ -5,9 +5,9 @@
   productEntity: ClothingBeltMilitaryWebbingGrenadeFilled
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 6
+    Telecrystal: 30
   cost:
-    Telecrystal: 12
+    Telecrystal: 60
   categories:
   - UplinkDAGD
   conditions:
@@ -27,7 +27,7 @@
   description: uplink-ammo-bundle-desc
   productEntity: ClothingBackpackDuffelSyndicateAmmoFilled
   cost:
-    Telecrystal: 15
+    Telecrystal: 75
   categories:
   - UplinkDAGD
   conditions:
@@ -47,9 +47,9 @@
   productEntity: ClothingBackpackDuffelSyndicateMedicalBundleFilled
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 16
+    Telecrystal: 80
   cost:
-    Telecrystal: 24
+    Telecrystal: 120
   categories:
   - UplinkDAGD
   conditions:
@@ -69,9 +69,9 @@
   productEntity: AntimovCircuitBoard
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 20
+    Telecrystal: 100
   cost:
-    Telecrystal: 24
+    Telecrystal: 120
   categories:
   - UplinkDAGD
   conditions:
@@ -90,7 +90,7 @@
   description: uplink-starter-kit-desc
   productEntity: ClothingBackpackDuffelSyndicateFilledStarterKit
   cost:
-    Telecrystal: 40
+    Telecrystal: 200
   categories:
   - UplinkDAGD
   conditions:
@@ -192,51 +192,49 @@
         components:
           - SurplusBundle
 
-# Blimpuf edit - Temporary removal until research tab is done.
-#- type: listing
-#  id: UplinkSyndicateBorgiKittedBundleDAGD
-#  name: uplink-syndicate-borgi-kitted-bundle-name
-#  description: uplink-syndicate-borgi-kitted-bundle-desc
-#  icon: { sprite: Objects/Fun/Balloons/corgi.rsi, state: icon }
-#  productEntity: SyndiBorgiKit1Bundle
-#  cost:
-#    Telecrystal: 40
-#  categories:
-#    - UplinkDAGD
-#  conditions:
-#    - !type:ListingLimitedStockCondition
-#      stock: 1
-#    - !type:BuyerObjectiveWhitelistCondition
-#      whitelist:
-#        components:
-#          - DieCondition
-#    - !type:BuyerWhitelistCondition
-#      blacklist:
-#        components:
-#          - SurplusBundle
+- type: listing
+  id: UplinkSyndicateBorgiKittedBundleDAGD
+  name: uplink-syndicate-borgi-kitted-bundle-name
+  description: uplink-syndicate-borgi-kitted-bundle-desc
+  icon: { sprite: Objects/Fun/Balloons/corgi.rsi, state: icon }
+  productEntity: SyndiBorgiKit1Bundle
+  cost:
+    Telecrystal: 200
+  categories:
+    - UplinkDAGD
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1
+    - !type:BuyerObjectiveWhitelistCondition
+      whitelist:
+        components:
+          - DieCondition
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
 
-# Blimpuf edit - Temporary removal until research tab is done.
-#- type: listing
-#  id: UplinkSyndicateBorgiSpeedBundleDAGD
-#  name: uplink-syndicate-borgi-speed-bundle-name
-#  description: uplink-syndicate-borgi-speed-bundle-desc
-#  icon: { sprite: Objects/Fun/Balloons/corgi.rsi, state: icon }
-#  productEntity: SyndiBorgiKit2Bundle
-#  cost:
-#    Telecrystal: 30
-#  categories:
-#    - UplinkDAGD
-#  conditions:
-#    - !type:ListingLimitedStockCondition
-#      stock: 1
-#    - !type:BuyerObjectiveWhitelistCondition
-#      whitelist:
-#        components:
-#          - DieCondition
-#    - !type:BuyerWhitelistCondition
-#      blacklist:
-#        components:
-#          - SurplusBundle
+- type: listing
+  id: UplinkSyndicateBorgiSpeedBundleDAGD
+  name: uplink-syndicate-borgi-speed-bundle-name
+  description: uplink-syndicate-borgi-speed-bundle-desc
+  icon: { sprite: Objects/Fun/Balloons/corgi.rsi, state: icon }
+  productEntity: SyndiBorgiKit2Bundle
+  cost:
+    Telecrystal: 150
+  categories:
+    - UplinkDAGD
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1
+    - !type:BuyerObjectiveWhitelistCondition
+      whitelist:
+        components:
+          - DieCondition
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle
 
 - type: listing
   id: UplinkMicroBombImplanterDAGD
@@ -245,7 +243,7 @@
   icon: { sprite: /Textures/Actions/Implants/implants.rsi, state: explosive }
   productEntity: MicroBombImplanter
   cost:
-    Telecrystal: 2
+    Telecrystal: 10
   categories:
   - UplinkDAGD
   conditions:
@@ -265,7 +263,7 @@
   icon: { sprite: /Textures/Actions/Implants/implants.rsi, state: explosive }
   productEntity: MacroBombImplanter
   cost:
-    Telecrystal: 13
+    Telecrystal: 45
   categories:
     - UplinkDAGD
   conditions:
@@ -285,7 +283,7 @@
   icon: { sprite: /Textures/Objects/Magic/magicactions.rsi, state: gib }
   productEntity: DeathAcidifierImplanter
   cost:
-    Telecrystal: 4
+    Telecrystal: 5
   categories:
     - UplinkDAGD
   conditions:
@@ -304,7 +302,7 @@
   description: uplink-deathrattle-implant-desc
   productEntity: BoxDeathRattleImplants
   cost:
-    Telecrystal: 4
+    Telecrystal: 20
   categories:
   - UplinkDAGD
   conditions:
@@ -324,7 +322,7 @@
   icon: { sprite: /Textures/Clothing/OuterClothing/Armor/syndie-raid.rsi, state: icon }
   productEntity: ClothingBackpackSyndicateRaidBundle
   cost:
-    Telecrystal: 8
+    Telecrystal: 40
   categories:
   - UplinkDAGD
   conditions:
@@ -344,7 +342,7 @@
   icon: { sprite: /Textures/Structures/Storage/Crates/syndicate.rsi, state: icon }
   productEntity: CrateCybersunJuggernautBundle
   cost:
-    Telecrystal: 12
+    Telecrystal: 60
   categories:
   - UplinkDAGD
   conditions:
@@ -363,7 +361,7 @@
   description: uplink-clothing-eyes-hud-syndicate-desc
   productEntity: ClothingEyesHudSyndicate
   cost:
-    Telecrystal: 2
+    Telecrystal: 10
   categories:
     - UplinkDAGD
   conditions:
@@ -388,9 +386,9 @@
     }
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 15
+    Telecrystal: 75
   cost:
-    Telecrystal: 20
+    Telecrystal: 100
   categories:
     - UplinkDAGD
   conditions:
@@ -415,9 +413,9 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledBullpup
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 13
+    Telecrystal: 65
   cost:
-    Telecrystal: 17
+    Telecrystal: 85
   categories:
     - UplinkDAGD
   conditions:
@@ -441,7 +439,7 @@
     }
   productEntity: MagazineMagnumRifleSP
   cost:
-    Telecrystal: 2
+    Telecrystal: 10
   categories:
     - UplinkDAGD
   conditions:
@@ -465,7 +463,7 @@
     }
   productEntity: MagazineShotgunBreach
   cost:
-    Telecrystal: 2
+    Telecrystal: 10
   categories:
     - UplinkDAGD
   conditions:
@@ -523,7 +521,7 @@
   description: uplink-toxic-grenade-desc
   productEntity: ToxicGasGrenade
   cost:
-    Telecrystal: 2
+    Telecrystal: 10
   categories:
   - UplinkDAGD
   conditions:
@@ -542,7 +540,7 @@
   description: uplink-x4-desc
   productEntity: X4
   cost:
-    Telecrystal: 3
+    Telecrystal: 15
   categories:
   - UplinkDAGD
   conditions:
@@ -562,9 +560,9 @@
   productEntity: ClothingBackpackDuffelSyndicateX4tBundle
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 12
+    Telecrystal: 60
   cost:
-    Telecrystal: 18 #you're buying bulk so its a 25% discount, so no additional random discount over it
+    Telecrystal: 90 #you're buying bulk so its a 25% discount, so no additional random discount over it
   categories:
   - UplinkDAGD
   conditions:
@@ -584,7 +582,7 @@
   icon: { sprite: /Textures/_Starlight/Objects/Specific/Mechs/Mechs/darkgygax.rsi, state: base }
   productEntity: CrateCybersunDarkGygaxBundle
   cost:
-    Telecrystal: 30
+    Telecrystal: 150
   categories:
     - UplinkDAGD
   conditions:
@@ -604,7 +602,7 @@
   icon: { sprite: /Textures/_Starlight/Objects/Specific/Mechs/Mechs/mauler.rsi, state: base }
   productEntity: CrateCybersunMaulerBundle
   cost:
-    Telecrystal: 45
+    Telecrystal: 175
   categories:
     - UplinkDAGD
   conditions:

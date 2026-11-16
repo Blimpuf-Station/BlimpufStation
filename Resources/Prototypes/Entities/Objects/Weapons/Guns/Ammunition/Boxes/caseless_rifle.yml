@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: BaseItem
+  parent: [BaseItem, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   id: BaseMagazineBoxCaselessRifle
   name: ammunition box (.25 caseless)
   components:
@@ -41,7 +41,7 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  parent: BaseMagazineBoxCaselessRifle
+  parent: [BaseContrabandTier1, BaseMagazineBoxCaselessRifle] # Blimpuf Practice is Tier 1
   id: MagazineBoxCaselessRiflePractice
   name: ammunition box (.25 caseless practice)
   description: A cardboard box of .25 caseless rounds. Intended to hold harmless practice ammunition.

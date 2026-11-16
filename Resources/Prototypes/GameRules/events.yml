@@ -273,7 +273,7 @@
     duration: null
     earliestStart: 45 # 🌟Starlight🌟 Casualization
     reoccurrenceDelay: 45 # 🌟Starlight🌟 Casualization
-    minimumPlayers: 30
+    minimumPlayers: 25
   - type: SpaceSpawnRule
   - type: AntagLoadProfileRule
   - type: AntagObjectives
@@ -283,7 +283,8 @@
     - SpiderChargeObjective
     - TerrorObjective
     - MassArrestObjective
-    - NinjaSurviveObjective
+#    - NinjaSurviveObjective
+    - ExtractObjective # 🌟Starlight🌟
   - type: AntagSelection
     agentName: ninja-round-end-agent-name
     antags:
@@ -547,7 +548,7 @@
   - type: StationEvent
     earliestStart: 55 # 🌟Starlight🌟 Casualization
     weight: 3 # 🌟Starlight🌟 Casualization
-    minimumPlayers: 35 # 🌟Starlight🌟 Casualization
+    minimumPlayers: 25
     duration: null # LoneOpsSpawn needs an infinite duration so that it inherits the NukeOpsRule things of an actually appropriate end scrreen (not always "Neutral outcome!") and... ending the game if the station is nuked.
   - type: RuleGrids
   - type: LoadMapRule
@@ -569,7 +570,7 @@
     globalAnnouncement: false # Starlight
     earliestStart: 40 # 🌟Starlight🌟 Casualization
     weight: 6 # 🌟Starlight🌟 Casualization
-    minimumPlayers: 15
+    minimumPlayers: 10
     maxOccurrences: 1 # can only happen once per round
     startAnnouncement: station-event-communication-interception
     startAudio:

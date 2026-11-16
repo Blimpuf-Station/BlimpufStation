@@ -110,7 +110,7 @@
   name: CentComm pen
   parent: [BaseAdvancedPen, BaseCentcommContraband]
   id: PenCentcom
-  description: In an attempt to keep up with the "power" of the cybersun bureaucracy, NT made a replica of cyber pen, in their corporate style.
+  description: In an attempt to keep up with the "power" of the Cybersun bureaucracy, CC made a replica of Cybersun's pen, in their corporate style.
   components:
   - type: Sprite
     state: pen_centcom

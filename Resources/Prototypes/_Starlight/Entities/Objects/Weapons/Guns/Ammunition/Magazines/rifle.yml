@@ -177,7 +177,7 @@
 - type: entity
   id: MagazineRiflePractice
   name: "magazine (.20 rifle practice)"
-  parent: BaseMagazineRifle
+  parent: [BaseContrabandTier1, BaseMagazineRifle] # Blimpuf Practice is Tier 1
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRiflePractice
@@ -225,7 +225,7 @@
 - type: entity
   id: MagazineRifleRubber
   name: "magazine (.20 rifle rubber)"
-  parent: BaseMagazineRifle
+  parent: [BaseContrabandTier2, BaseMagazineRifle] # Blimpuf Less-Lethal is Tier 2
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleRubber
@@ -405,7 +405,7 @@
 - type: entity
   id: MagazineRifleM52Practice
   name: "magazine (.20 rifle practice)"
-  parent: BaseMagazineRifleM52
+  parent: [BaseContrabandTier1, BaseMagazineRifleM52] # Blimpuf Practice is Tier 1
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRiflePractice

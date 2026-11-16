@@ -31,6 +31,9 @@ public sealed partial class HumanoidAppearanceComponent : Component
     [DataField, AutoNetworkedField]
     public Gender Gender;
 
+    [DataField, AutoNetworkedField] // Blimpuf
+    public Gender? SecondaryGender;
+
     [DataField, AutoNetworkedField]
     public int Age = 18;
 

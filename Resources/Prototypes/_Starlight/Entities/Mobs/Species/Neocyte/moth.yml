@@ -260,52 +260,45 @@
     femaleDisplacements:
       jumpsuit:
         sizeMaps:
-          32:
-            sprite: Mobs/Species/Moth/displacement.rsi
-            state: jumpsuit-female
-      back:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Moth/displacement.rsi
-            state: back
+          32: { sprite: _Starfall/Mobs/Species/Lumari/displacement.rsi, state: jumpsuit_female }
       outerClothing:
         sizeMaps:
-          32:
-            sprite: Mobs/Species/Moth/displacement.rsi
-            state: outerclothing
+          32: { sprite: _Starfall/Mobs/Species/Lumari/displacement.rsi, state: outerlayer }
       gloves:
         sizeMaps:
-          32:
-            sprite: Mobs/Species/Moth/displacement.rsi
-            state: hand
+          32: { sprite: _Starfall/Mobs/Species/Lumari/displacement.rsi, state: gloves }
       shoes:
         sizeMaps:
-          32:
-            sprite: Mobs/Species/Moth/displacement.rsi
-            state: shoes
+          32: { sprite: _Starfall/Mobs/Species/Lumari/displacement.rsi, state: shoes }
+      ears:
+        sizeMaps:
+          32: { sprite: _Starfall/Mobs/Species/Lumari/displacement.rsi, state: ears }
+      neck:
+        sizeMaps:
+          32: { sprite: _Starfall/Mobs/Species/Lumari/displacement.rsi, state: neck }
     displacements:
       jumpsuit:
         sizeMaps:
-          32:
-            sprite: Mobs/Species/Moth/displacement.rsi
-            state: jumpsuit-male
-      back:
-        sizeMaps:
-          32:
-            sprite: Mobs/Species/Moth/displacement.rsi
-            state: back
+          32: { sprite: _Starfall/Mobs/Species/Lumari/displacement.rsi, state: jumpsuit_male }
       outerClothing:
         sizeMaps:
-          32:
-            sprite: Mobs/Species/Moth/displacement.rsi
-            state: outerclothing
+          32: { sprite: _Starfall/Mobs/Species/Lumari/displacement.rsi, state: outerlayer }
       gloves:
         sizeMaps:
-          32:
-            sprite: Mobs/Species/Moth/displacement.rsi
-            state: hand
+          32: { sprite: _Starfall/Mobs/Species/Lumari/displacement.rsi, state: gloves }
       shoes:
         sizeMaps:
-          32:
-            sprite: Mobs/Species/Moth/displacement.rsi
-            state: shoes
+          32: { sprite: _Starfall/Mobs/Species/Lumari/displacement.rsi, state: shoes }
+      ears:
+        sizeMaps:
+          32: { sprite: _Starfall/Mobs/Species/Lumari/displacement.rsi, state: ears }
+      neck:
+        sizeMaps:
+          32: { sprite: _Starfall/Mobs/Species/Lumari/displacement.rsi, state: neck }
+  - type: Hands
+    leftHandDisplacement:
+      sizeMaps:
+        32: { sprite: _Starfall/Mobs/Species/Lumari/displacement.rsi, state: inhand_left }
+    rightHandDisplacement:
+      sizeMaps:
+        32: { sprite: _Starfall/Mobs/Species/Lumari/displacement.rsi, state: inhand_right }

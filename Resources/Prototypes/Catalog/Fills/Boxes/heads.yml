@@ -1,5 +1,5 @@
 - type: entity
-  parent: ToteBase
+  parent: [ToteBase, BaseContrabandTier3, BaseCommandContraband] # Blimpuf
   id: BoxCaptainCircuitboards
   name: bridge circuit tote
   components:
@@ -13,7 +13,7 @@
         - id: ShipyardComputerCircuitboard # Starlight
 
 - type: entity
-  parent: ToteBase
+  parent: [ToteBase, BaseContrabandTier3, BaseCommandContraband] # Blimpuf
   id: BoxCECircuitboards
   name: engineering circuit tote
   components:
@@ -31,7 +31,7 @@
         - id: EngineeringCommsComputerCircuitboard # Starlight
 
 - type: entity
-  parent: ToteBase
+  parent: [ToteBase, BaseContrabandTier3, BaseCommandContraband] # Blimpuf
   id: BoxCMOCircuitboards
   name: medical circuit tote
   components:
@@ -42,9 +42,10 @@
         - id: MedicalTechFabCircuitboard
         - id: CargoRequestMedicalComputerCircuitboard
         - id: MedicalCommsComputerCircuitboard # Starlight
+        - id: MedicalRecordsComputerCircuitboard # Blimpuf
 
 - type: entity
-  parent: ToteBase
+  parent: [ToteBase, BaseContrabandTier3, BaseCommandContraband] # Blimpuf
   id: BoxHoPCircuitboards
   name: head of personnel circuit tote
   components:
@@ -59,7 +60,7 @@
         - id: ServiceCommsComputerCircuitboard # Starlight
 
 - type: entity
-  parent: BoxStamps
+  parent: [BoxStamps, BaseContrabandTier2, BaseCommandContraband] # Blimpuf
   id: BoxHoPStamps
   name: head of personnel's stamp box
   components:
@@ -72,7 +73,7 @@
         - id: RubberStampHop
 
 - type: entity
-  parent: ToteBase
+  parent: [ToteBase, BaseContrabandTier3, BaseCommandContraband] # Blimpuf
   id: BoxHoSCircuitboards
   name: security circuit tote
   components:
@@ -83,9 +84,10 @@
         - id: SecurityTechFabCircuitboard
         - id: CargoRequestSecurityComputerCircuitboard
         - id: SecurityCommsComputerCircuitboard # Starlight
+        - id: CriminalRecordsComputerCircuitboard # Blimpuf
 
 - type: entity
-  parent: ToteBase
+  parent: [ToteBase, BaseContrabandTier3, BaseCommandContraband] # Blimpuf
   id: BoxQMCircuitboards
   name: cargo circuit tote
   components:
@@ -104,7 +106,7 @@
         - id: CargoCommsComputerCircuitboard # Starlight
 
 - type: entity
-  parent: BoxStamps
+  parent: [BoxStamps, BaseContrabandTier2, BaseCommandContraband] # Blimpuf
   id: BoxQMStamps
   name: quartermaster's stamp box
   components:
@@ -117,7 +119,7 @@
         - id: RubberStampQm
 
 - type: entity
-  parent: ToteBase
+  parent: [ToteBase, BaseContrabandTier3, BaseCommandContraband] # Blimpuf
   id: BoxRDCircuitboards
   name: science circuit tote
   components:

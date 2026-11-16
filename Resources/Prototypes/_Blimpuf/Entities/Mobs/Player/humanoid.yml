@@ -1,0 +1,22 @@
+- type: randomHumanoidSettings
+  id: EventHumanoidAntag
+  parent: EventHumanoid
+  speciesBlacklist:
+  - NeoArachnid
+  - NeoAvali
+  - NeoTNebri
+  - NeoDiona
+  - NeoFelionoid
+  - NeoHuman
+  - NeoMoth
+  - NeoReptilian
+  - NeoResomi
+  - NeoSlimePerson
+  - NeoThaven
+  - NeoVox
+  - NeoVulpkanin
+  - NeoShadekin
+  - NeoElf
+  - NeoLagomorph
+  - Vox
+  - Thaven

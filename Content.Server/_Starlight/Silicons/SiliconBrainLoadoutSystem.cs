@@ -70,9 +70,10 @@ public sealed partial class SiliconBrainLoadoutSystem : EntitySystem
             bodyComp.Prototype != null &&
             _proto.TryIndex(bodyComp.Prototype.Value, out var body))
         {
+            string? organProto;
             foreach (var (_, slot) in body.Slots)
             {
-                if (slot.Organs.TryGetValue("brain", out var organProto))
+                if (slot.Organs.TryGetValue("brain", out organProto) || slot.Organs.TryGetValue("core", out organProto))
                 {
                     brainProto = organProto;
                     // Check if brain has BorgBrain component

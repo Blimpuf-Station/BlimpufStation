@@ -548,7 +548,8 @@ public abstract partial class SharedChatSystem : EntitySystem
         string? nameOverride = null,
         bool checkRadioPrefix = true,
         bool ignoreActionBlocker = false,
-        LanguagePrototype? languageOverride = null // Starlight
+        LanguagePrototype? languageOverride = null, // Starlight
+        bool shouldRemoveDisallowedCharacters = true // Blimpuf
         )
     { }
 

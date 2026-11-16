@@ -56,6 +56,12 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: OxygenBreather
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Dipsomania
   storage:
     back:
     - BoxSurvival
@@ -75,6 +81,12 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: OxygenBreather
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Dipsomania
   storage:
     back:
     - BoxHug
@@ -112,6 +124,12 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: OxygenBreatherMime
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Dipsomania
   storage:
     back:
     - BoxMime
@@ -140,6 +158,12 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: OxygenBreather
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Dipsomania
   storage:
     back:
     - BoxSurvivalEngineering
@@ -159,6 +183,12 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: OxygenBreather
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Dipsomania
   storage:
     back:
     - BoxSurvivalMedical
@@ -178,6 +208,12 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: OxygenBreather
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Dipsomania
   storage:
     back:
     - BoxSurvivalSecurity

@@ -1,6 +1,5 @@
 <Document>
 # Metashields
-A full version of this may be viewed on the Starlight Wiki.
 
 ## What is the 'Metashield'?
 The [bold]Metashield[/bold] is the system that determines what your character can know at the start of every round, and is used in conjunction with the Continuity Guideline rule. Something that is "shielded" can not be known by your character unless they meet certain criteria. This also means your character can not do things based on "shielded" information.
@@ -8,7 +7,7 @@ The [bold]Metashield[/bold] is the system that determines what your character ca
 This system is broken up into four core pillars: [bold]Unknown Information, Corporate Secrets, Secure Knowledge, and Background.[/bold]
 
 - [bold][color=#ff6200]Unknown Information[/color][/bold] is not known by anyone, or is only known by a very small group of people which is defined specifically.
-- [bold][color=#9819ff]Corporate Secrets[/color][/bold] are only known by high value members of the corporation. These are; All of Command, the Station AI, NanoTrasen Representative, Blue Shield Officer, Magistrate, NanoTrasen Career Trainer and all Central Command roles such as ERT, OPs, CBURN, etc. Corporate Secrets should be kept secret until it is necessary to reveal them, revealing them frivolously is frowned upon by Central Command.
+- [bold][color=#9819ff]Corporate Secrets[/color][/bold] are only known by high value members of the corporation. These are; All of Command, the Station AI, NanoTrasen Representative, CCE Officer, Magistrate, NanoTrasen Career Trainer and all Central Command roles such as ERT, OPs, CBURN, etc. Corporate Secrets should be kept secret until it is necessary to reveal them, revealing them frivolously is frowned upon by Central Command.
 - [bold][color=#f00000]Secure Knowledge[/color][/bold] is only known by members of Security, Internal Affairs Agents, and everyone who knows Corporate Secrets. This includes the Brig Medic, Warden, Security Cadets- all Security jobs. Secure Knowledge should be kept secret until necessary, but may be revealed in order to preserve Crew lives.
 - [bold][color=#0af024]Background[/color][/bold] is a system that allows any characters to know specific pieces of ordinarily Metashielded knowledge. Every character may only have one Background, which is picked during Character Creation as a Trait and can not be changed mid-round or frequently at all. Your Background should reflect the life your character has lived, and act in complement to their characterization and backstory.
 
@@ -58,7 +57,7 @@ Examples:
 
 
 ## Corporate Secrets
-[color=#9819ff]Corporate Secrets[/color] are only known by high value members of the corporation. These are; All of Command, the Station AI, NanoTrasen Representative, Blue Shield Officer, Magistrate, NanoTrasen Career Trainer and all Central Command roles such as ERT, OPs, CBURN, etc. Corporate Secrets should be kept secret until it is necessary to reveal them, revealing them frivolously is frowned upon by Central Command. This information is considered sensitive and libel to cause mass panic if learned by the Crew.
+[color=#9819ff]Corporate Secrets[/color] are only known by high value members of the corporation. These are; All of Command, the Station AI, NanoTrasen Representative, CCE Officer, Magistrate, NanoTrasen Career Trainer and all Central Command roles such as ERT, OPs, CBURN, etc. Corporate Secrets should be kept secret until it is necessary to reveal them, revealing them frivolously is frowned upon by Central Command. This information is considered sensitive and libel to cause mass panic if learned by the Crew.
 
 Corporate Secrets may be revealed to individuals, departments, or the station as a whole if deemed necessary. You had better have a good reason to do so however, and expect your reasoning to be cross examined and scrutinized heavily by Central Command. Revealing Corporate Secrets to Security is generally deemed more acceptable, better for them to clean up an issue without panicking the rest of the Crew.
 
@@ -115,7 +114,7 @@ Changelings are an parasitic species associated with radical elements of the Syn
 
 
 [bold][color=#f00000]Suspected Syndicate Corporations || [/color][/bold]
-While nobody is able to prove anything, Central Command maintains a small curated list of corporations they believe to be backing the Syndicate. Security is made privy to this list so they may observe and report any connections to Syndicate activity onboard stations. Their products should be viewed with suspicion but may or may not be considered contraband. Consult with Corporate Law for more information.
+While nobody is able to prove anything, Central Command maintains a small curated list of corporations they believe to be backing the Syndicate. Security is made privy to this list so they may observe and report any connections to Syndicate activity onboard stations. Their products should be viewed with suspicion but may or may not be considered contraband. Consult with Space Law for more information.
 
 These suspected corporations are:
 - Cybersun
@@ -196,7 +195,7 @@ Over the years a number of things have slipped through the cracks. While they ar
 
 - [bold]Nukies:[/bold] Based on old rumors from the [color=#f00000]Pod Wars[/color], the image of the [color=#f00000]Blood-Red[/color] has persisted into the century that followed and to the modern day. Some history buffs might know the actual origin, being a simple space suit worn back in that old war. It has become associated with the idea of [color=#f00000]'Nuclear Operatives'[/color] in recent times as rumors of stations and military outposts being nuked have begun to spread. These rumors are fringe, but have been adopted back into pop culture, with plushies and figures based on the myths.
 - [bold]Supernatural Entities:[/bold] The concept of Shapechangers, Wizards, Vampires, and even Abductors have existing in Human culture for many centuries. Of course, in the age of enlightenment that is the space age, belief in such things is very fringe. Some conspirators may associate them now with 'aliens' given extraterrestrial life is confirmed, but they are considered crazy people.
-- [bold]Parallel Realities:[/bold] A staple of sci-fi and bad superhero franchises for centuries now, the idea of a multiverse is known to the public. The idea of interlopers coming from a parallel world is common enough in movies, usually used to spark [color=#f00000]Red Scare[/color] fears of [color=#f00000]Communist[/color] infiltration in the public following the formation of the [color=#f00000]USSP[/color]- although this use is outdated and considered hooky in the modern day. More recently, those in the Starlight Sector began hearing many rumors related to 'clones' from another world, rumors that were fanned by leaked documents about an ocean world found in the Null Scar. Still, it's all movie nonsense at the end of the day, right?
+- [bold]Parallel Realities:[/bold] A staple of sci-fi and bad superhero franchises for centuries now, the idea of a multiverse is known to the public. The idea of interlopers coming from a parallel world is common enough in movies, usually used to spark [color=#f00000]Red Scare[/color] fears of [color=#f00000]Communist[/color] infiltration in the public following the formation of the [color=#f00000]USSP[/color]- although this use is outdated and considered hooky in the modern day. More recently, those in the Blimpuf Sector began hearing many rumors related to 'clones' from another world, rumors that were fanned by leaked documents about an ocean world found in the Null Scar. Still, it's all movie nonsense at the end of the day, right?
 
 
 ### Metafriending and Metagrudging

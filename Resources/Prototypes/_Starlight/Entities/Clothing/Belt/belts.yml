@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ ClothingBeltStorageBase, BaseMajorContraband ]
+  parent: [ClothingBeltStorageBase, BaseContrabandTier4] # Blimpuf
   id: ClothingAbductorBelt
   name: abductor belt
   description: Can hold various OUR things.

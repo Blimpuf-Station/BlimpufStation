@@ -14,9 +14,9 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'SR'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/_Starlight/Shuttles/emergency_prism.yml
+          emergencyShuttlePath: /Maps/_Blimpuf/Shuttles/Evac/emergency_prism.yml # Blimpuf
         - type: StationCargoShuttle
-          path: /Maps/_Starlight/Shuttles/cargo_prism.yml
+          path: /Maps/_Starlight/Shuttles/Cargo/cargo_prism.yml
         - type: StationJobs
           availableJobs:
             #command
