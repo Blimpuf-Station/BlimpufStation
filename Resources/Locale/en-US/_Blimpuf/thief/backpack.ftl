@@ -16,8 +16,8 @@ thief-backpack-category-getaway-description =
 
 thief-backpack-category-ninja-name = Ninja Kit
 thief-backpack-category-ninja-description =
-    A master of the ways of the Ninja...Well, more
-    like a Spider Clan wannabe.
+    Saw this in a movie once. Fell in love with the ways
+    of the ninja since!
     Includes: A battery powered chameleon stealth scarf, an
     EMP Implant, a bottle of Tanzinide, a Hypopen and a
     Scram Implant.
