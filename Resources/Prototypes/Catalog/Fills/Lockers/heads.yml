@@ -338,6 +338,7 @@
     - id: ScienceTechFabFlatpack
     - id: RDDiploma
     - id: XenobiologyConsoleCameraTagger
+    - id: SiliconLawConfigurator
     - id: BookSecureTerminalManual # Starlight
 
 # Hardsuit table, used for suit storage as well
