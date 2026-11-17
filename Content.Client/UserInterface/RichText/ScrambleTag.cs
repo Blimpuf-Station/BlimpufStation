@@ -28,14 +28,16 @@ public sealed partial class ScrambleTag : IMarkupTagHandler
             !charsParam.TryGetString(out var chars))
             return string.Empty;
 
-        var seed = (int) (_timing.CurTime.TotalMilliseconds / rate);
-        var rand = new Random(seed + node.GetHashCode());
+        var nodeSeed = System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(node);
+        var phase = (uint) nodeSeed % rate.Value;
+        var step = (long) ((_timing.CurTime.TotalMilliseconds + phase) / rate.Value);
+        var rand = new Random(HashCode.Combine(step, nodeSeed));
         var charOptions = chars.ToCharArray();
         var realLength = MathF.Min(length.Value, MaxScrambleLength);
         var sb = new StringBuilder();
         for (var i = 0; i < realLength; i++)
         {
-            var index = rand.Next() % charOptions.Length;
+            var index = rand.Next(charOptions.Length);
             sb.Append(charOptions[index]);
         }
 

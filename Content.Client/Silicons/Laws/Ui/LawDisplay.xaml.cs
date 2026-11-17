@@ -1,5 +1,7 @@
 using Content.Client.Chat.Managers;
 using Content.Client.Message;
+using Content.Client.RichText;
+using Content.Client.UserInterface.RichText;
 using Content.Shared.Chat;
 using Content.Shared.Radio;
 using Content.Shared.Silicons.Laws;
@@ -39,7 +41,8 @@ public sealed partial class LawDisplay : Control
         var lawDescriptionPlaintext = FormattedMessage.RemoveMarkupPermissive(lawDescription);
 
         LawNumberLabel.SetMarkup(lawIdentifier);
-        LawLabel.SetMessage(lawDescription);
+        LawLabel.SetMessage(FormattedMessage.FromMarkupPermissive(lawDescription),
+            [..UserFormattableTags.BaseAllowedTags, typeof(ScrambleTag)]);
 
         // If you can't talk, you can't state your laws...
         if (!_entityManager.TryGetComponent<SpeechComponent>(uid, out var speech) || speech.SpeechSounds is null || !law.Sayable)
