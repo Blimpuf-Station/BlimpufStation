@@ -1,0 +1,4 @@
+- type: quickPhrase
+  parent: BaseSpeciesLanguagePhrase
+  id: OviniaPhrase
+  text: language-Ruminant-name
