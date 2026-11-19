@@ -306,3 +306,20 @@
       proto: BulletSyndieEnergyShotgunBuckshotUranium
       count: 12
       spread: 15
+
+- type: entity
+  parent: ChainSickle
+  id: TentacleHook
+  name: tentacle snare
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      sprite: _Blimpuf/Objects/Weapons/Guns/Launchers/changeling_tentacle.rsi
+      layers:
+        - state: hook
+    - type: Projectile
+      damage:
+        types:
+          Piercing: 15
+      soundHit:
+        path: "/Audio/Effects/bite.ogg" # Starlight, we don't have the Moffstation sound

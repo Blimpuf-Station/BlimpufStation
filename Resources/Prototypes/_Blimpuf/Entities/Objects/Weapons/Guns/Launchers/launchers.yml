@@ -1,0 +1,26 @@
+- type: entity
+  parent: WeaponNinjaChainSickle
+  id: WeaponChangelingTentacle
+  name: tentacle
+  description: A grotesque tentacle that can reach out and ensnare prey to reel them in.
+  components:
+    - type: GrapplingGun
+      cycleSound: /Audio/Effects/gib3.ogg
+      ropeSprite:
+        sprite: _Blimpuf/Objects/Weapons/Guns/Launchers/changeling_tentacle.rsi
+        state: rope
+    - type: Gun
+      soundGunshot: /Audio/Effects/gib1.ogg
+      soundEmpty: /Audio/Effects/bodyfall3.ogg
+    - type: BasicEntityAmmoProvider
+      proto: TentacleHook
+    - type: Sprite
+      sprite: _Blimpuf/Objects/Weapons/Guns/Launchers/changeling_tentacle.rsi
+      layers:
+        - state: icon
+    - type: GenericVisualizer
+      visuals:
+        enum.TetherVisualsStatus.Key:
+          unshaded:
+            True: { state: icon }
+            False: { state: icon }
