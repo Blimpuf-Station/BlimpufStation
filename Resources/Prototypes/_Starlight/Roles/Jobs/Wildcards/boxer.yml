@@ -19,7 +19,6 @@
   equipment:
     id: BoxerPDA
     ears: ClothingHeadsetService
-    shoes: ClothingShoesColorRed
     belt: ClothingBeltChampion
   #storage:
     #back:

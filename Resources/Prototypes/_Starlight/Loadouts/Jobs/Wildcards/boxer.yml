@@ -9,6 +9,36 @@
   equipment:
     jumpsuit: UniformShortsRedWithTop
 
+- type: loadout
+  id: BoxerShortsBlue
+  equipment:
+    jumpsuit: UniformShortsBlue
+
+- type: loadout
+  id: BoxerShortsWithTopBlue
+  equipment:
+    jumpsuit: UniformShortsBlueWithTop
+
+- type: loadout
+  id: BoxerShortsGreen
+  equipment:
+    jumpsuit: UniformShortsGreen
+
+- type: loadout
+  id: BoxerShortsWithTopGreen
+  equipment:
+    jumpsuit: UniformShortsGreenWithTop
+
+- type: loadout
+  id: BoxerShortsYellow
+  equipment:
+    jumpsuit: UniformShortsYellow
+
+- type: loadout
+  id: BoxerShortsWithTopYellow
+  equipment:
+    jumpsuit: UniformShortsYellowWithTop
+
 # Gloves
 - type: loadout
   id: RedBoxingGloves

@@ -7,4 +7,4 @@
       requirement:
         !type:RoleTimeRequirement
         role: JobNanoTrasenRepresentative
-        time: 144000 # 40hr
+        time: 72000 # 20hr
