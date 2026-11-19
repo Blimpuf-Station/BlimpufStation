@@ -166,6 +166,7 @@
     - type: ShowMindShieldIcons
     - type: ShowCriminalRecordIcons
     - type: ShowAccessReaderSettings
+    - type: SolutionScanner
     - type: ShowAccess
       seeIdHolder: true
       itemsOnly: false
