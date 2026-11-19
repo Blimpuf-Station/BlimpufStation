@@ -79,6 +79,12 @@ public sealed partial class SiliconLawsetPrototype : IPrototype
     public List<ProtoId<SiliconLawPrototype>> Laws = new();
 
     /// <summary>
+    /// Blimpuf Edit - Cyborg laws to be added from this board, used in the event there's a lawset with a law not fitting for an AI.
+    /// </summary>
+    [DataField]
+    public List<ProtoId<SiliconLawPrototype>> CyborgOnlyLaws = new();
+
+    /// <summary>
     /// What entity the lawset considers as a figure of authority.
     /// </summary>
     [DataField(required: true), ViewVariables(VVAccess.ReadWrite)]

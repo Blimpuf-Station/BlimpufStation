@@ -1872,7 +1872,7 @@
   - type: ItemSlots
     slots:
       circuit_holder:
-        name: circuit-holder
+        name: Circuit Holder
         insertSuccessPopup: silicon-laws-updated
         whitelist:
           requireAll: true
