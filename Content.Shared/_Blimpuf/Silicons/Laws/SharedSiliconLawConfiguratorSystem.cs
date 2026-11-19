@@ -59,6 +59,13 @@ public sealed partial class SharedSiliconLawConfiguratorSystem : EntitySystem
             return;
         }
 
+        if (component.ActiveDoAfter != null)
+        {
+            _doAfter.Cancel(component.ActiveDoAfter);
+            component.ActiveDoAfter = null;
+            component.ActiveTarget = null;
+        }
+
         var doAfterArgs = new DoAfterArgs(EntityManager, args.User, component.UploadTime, new LawConfiguratorDoAfterEvent(), eventTarget: uid, target: target, used: uid)
         {
             BreakOnMove = true,
@@ -67,7 +74,8 @@ public sealed partial class SharedSiliconLawConfiguratorSystem : EntitySystem
             NeedHand = true,
             BreakOnHandChange = true,
             BreakOnWeightlessMove = true,
-            DuplicateCondition = DuplicateConditions.SameTarget | DuplicateConditions.SameEvent,
+            CancelDuplicate = true,
+            BlockDuplicate = true
         };
 
         if (_doAfter.TryStartDoAfter(doAfterArgs, out var id))
