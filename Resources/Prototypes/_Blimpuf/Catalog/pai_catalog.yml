@@ -1,0 +1,15 @@
+- type: listing
+  id: Ruminant
+  name: language-Ruminant-name
+  description: language-Ruminant-description
+  productLanguage: Ruminant
+  icon:
+    sprite: /Textures/_Blimpuf/Interface/language_icon.rsi
+    state: ruminant
+  cost:
+    SiliconMemory: 5
+  categories:
+  - Languages
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1

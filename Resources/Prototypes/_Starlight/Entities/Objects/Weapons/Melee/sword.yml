@@ -99,6 +99,7 @@
     enabled: false
     radius: 3
   - type: Reflect
+    requiresActivation: false
     reflectProb: .1
     spread: 90
   - type: ItemToggle
