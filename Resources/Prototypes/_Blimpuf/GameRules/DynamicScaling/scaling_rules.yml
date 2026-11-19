@@ -1,0 +1,246 @@
+# Game rules that spawn one of an antag in exchange for having much lower cost. This allows the game mode to spawn several variants of antag instead of getting one that then scales.
+
+# Thief
+- type: entity
+  parent: Thief
+  id: ThiefScaling
+  components:
+  - type: AntagSelection
+    agentName: thief-round-end-agent-name
+    selectionTime: PrePlayerSpawn
+    lateJoinAdditional: true # this should essentially just allow unfilled roundstart slots due to job/antag selection to be filled by late joiners.
+    antags:
+    - !type:FixedAntagCount
+      proto: Thief
+  - type: DynamicRuleCost
+    cost: 50 # per antag, every rule must have a nonzero cost
+  - type: GameRule
+    minPlayers: 0 # we want to override parent minPlayers just in case; min players is determined in DynamicScaling
+    delay:
+      min: 10
+      max: 15
+
+# Traitor
+- type: entity
+  parent: Traitor
+  id: TraitorScaling
+  components:
+  - type: AntagSelection
+    lateJoinAdditional: true
+    antags:
+    - !type:FixedAntagCount
+      proto: Traitor
+  - type: DynamicRuleCost
+    cost: 75
+  - type: GameRule
+    minPlayers: 0
+    delay:
+      min: 10
+      max: 15
+
+#vampire
+- type: entity
+  parent: [BaseVampireRule, BaseRoundstartAntagRule]
+  id: VampireScaling
+  components:
+  - type: AntagSelection
+    agentName: vampire-roundend-name
+    lateJoinAdditional: true
+    antags:
+    - !type:FixedAntagCount
+      proto: Vampire
+  - type: DynamicRuleCost
+    cost: 100
+  - type: GameRule
+    minPlayers: 0
+    delay:
+      min: 10
+      max: 15
+
+# nukies
+- type: entity
+  parent: [ BaseRoundstartAntagRule, BaseNukeopsRule]
+  id: NukeopsScaling
+  components:
+  - type: GameRule
+    minPlayers: 0
+    # Starlight Start
+    denyGameRules:
+    - AbductorsSpawn
+  - type: SubRule
+    table: !type:GroupSelector
+      children:
+      - id: NukiePlanetSpawn
+  #    - id: NukiePlanetSpawnWestern Blimpuf disabled
+  #    - id: NukiePlanetSpawnGeiger Blimpuf disabled
+  # Starlight end
+  # Starlight - removing the LoadMapRule from here to instead handle it in the dynamic rules above
+  #- type: LoadMapRule
+  #  mapPath: /Maps/_Starlight/nukieplanet.yml
+  - type: AntagSelection
+    antags:
+    - !type:FixedAntagCount
+      proto: NukeopsCommander
+    - !type:FixedAntagCount
+      proto: NukeopsMedic
+    - !type:LinearAntagCount
+      proto: NukeopsOperative
+      range:
+        min: 1
+        max: 1 # Blimpuf - only spawn additional via seperate rule
+  - type: DynamicRuleCost
+    cost: 200
+    cooldown: 1 # Starlight
+
+- type: entity
+  parent: [ BaseRoundstartAntagRule ]
+  id: NukeopsScalingExtraOp
+  components:
+  - type: AntagSelection
+    lateJoinAdditional: true
+    antags:
+    - !type:FixedAntagCount
+      proto: NukeopsOperative
+  - type: DynamicRuleCost
+    cost: 75
+
+# revs
+- type: entity
+  id: RevolutionaryScaling
+  parent: [BaseGameRule, BaseRoundstartAntagRule]
+  components:
+  - type: GameRule
+    minPlayers: 0
+    #delay: # Starlight start
+    #  min: 240 # Delay it so people can have some calm at the start.
+    #  max: 420 # Starlight end
+  - type: RevolutionaryRule
+  - type: SpecialLobbyContent
+    music: "/Audio/_Starlight/Lobby/Liberation.ogg"
+    background: RevClown
+  - type: AntagSelection
+    selectionTime: PrePlayerSpawn
+    lateJoinAdditional: true # Starlight
+    antags:
+    - !type:FixedAntagCount
+      proto: HeadRev
+      Count: 2
+  - type: DynamicRuleCost
+    cost: 200 #same as nukies
+    cooldown: 1 # Starlight
+
+- type: entity
+  parent: [ BaseRoundstartAntagRule ]
+  id: RevolutionaryScalingExtraHeadRev
+  components:
+  - type: AntagSelection
+    lateJoinAdditional: true
+    antags:
+    - !type:FixedAntagCount
+      proto: HeadRev
+  - type: DynamicRuleCost
+    cost: 75
+
+# CosCult
+- type: entity
+  parent: BaseRoundstartAntagRule
+  id: CosmicCultScaling
+  components:
+  - type: CosmicCultRule
+  - type: GameRule
+    minPlayers: 0
+    #delay:
+    #  min: 240
+    #  max: 420
+  - type: AntagObjectives
+    objectives:
+    - CosmicFinalityObjective
+    - CosmicMonumentObjective
+    - CosmicConversionObjective
+    - CosmicEntropyObjective
+  - type: AntagSelection
+    lateJoinAdditional: true
+    antags:
+    - !type:FixedAntagCount
+      proto: CosmicAntagCultist
+      playerRatio: 10
+      Count: 3 #higher than base rule since you need more to not be completely useless
+  - type: DynamicRuleCost
+    cost: 200
+    cooldown: 1
+
+- type: entity
+  parent: [ BaseRoundstartAntagRule ]
+  id: CosmicCultScalingExtraCultist
+  components:
+  - type: AntagSelection
+    lateJoinAdditional: true
+    antags:
+    - !type:FixedAntagCount
+      proto: CosmicCultAntagCultist
+  - type: DynamicRuleCost
+    cost: 50 # lower since 1 cultist roundstart << 1 headrev / nukie
+
+# Zombies
+- type: entity
+  id: ZombieScaling
+  parent: [ BaseGameRule, BaseRoundstartAntagRule]
+  components:
+  - type: GameRule
+    minPlayers: 0
+    #delay:
+    #  min: 600
+    #  max: 900
+  - type: ZombieRule
+  - type: AntagSelection
+    lateJoinAdditional: true # Starlight
+    antags:
+    - !type:FixedAntagCount
+      proto: InitialInfected
+      playerRatio: 18 # Starlight
+      count: 2 #
+  - type: DynamicRuleCost
+    cost: 150 # more interesting with other antags than most 'gamemode' antags
+    cooldown: 1 # Starlight
+
+- type: entity
+  parent: [ BaseRoundstartAntagRule ]
+  id: ZombieScalingExtraInitial
+  components:
+  - type: AntagSelection
+    lateJoinAdditional: true
+    antags:
+    - !type:FixedAntagCount
+      proto: InitialInfected
+  - type: DynamicRuleCost
+    cost: 75
+
+
+
+
+
+
+
+
+# midrounds
+
+#Sleeper agent
+- type: entity
+  parent: BaseTraitorRule
+  id: SleeperAgentsScaling
+  components:
+  - type: StationEvent
+    globalAnnouncement: false # Starlight
+    startAnnouncement: station-event-communication-interception
+    startAudio:
+      path: /Audio/_Starlight/Announcements/attention.ogg
+    duration: null # the rule has to last the whole round not 1 second
+    occursDuringRoundEnd: false
+  - type: AlertLevelInterceptionRule
+  - type: AntagSelection
+    antags:
+    - !type:FixedAntagCount
+      proto: TraitorSleeper
+      count: 2 # midround should be more than 1
+  - type: DynamicRuleCost
+    cost: 100

@@ -13,6 +13,8 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using System.Linq;
 using Content.Server.Chat.Managers;
+using Content.Server.Database;
+using Content.Server.Antag;
 
 namespace Content.Server.GameTicking.Rules;
 
@@ -27,6 +29,7 @@ public sealed partial class DynamicRuleSystem : GameRuleSystem<DynamicRuleCompon
     [Dependency] private GameTicker _ticker = default!;
     [Dependency] private IChatManager _chat = default!;
     [Dependency] private readonly ILogManager _logManager = default!;
+    [Dependency] private AntagSelectionSystem _antagSelection = default!; //blimpuf
 
     private ISawmill _sawmill = default!;
 
@@ -48,6 +51,19 @@ public sealed partial class DynamicRuleSystem : GameRuleSystem<DynamicRuleCompon
         base.Added(uid, component, gameRule, args);
 
         component.Budget = _random.Next(component.StartingBudgetMin, component.StartingBudgetMax);
+
+        if(component.UsePlayerScaling) //blimpuf start - player scaling
+        {
+            var playerCount = _ticker.ReadyPlayerCount();
+
+            component.Budget *= playerCount * component.BudgetScalingPerPlayer;
+
+            if (component.Budget < component.HardMinBudget)
+                component.Budget = component.HardMinBudget;
+
+            component.HighestPlayers = playerCount;
+        } //blimpuf end
+
         component.NextRuleTime = Timing.CurTime + _random.Next(component.MinRuleInterval, component.MaxRuleInterval);
         // Starlight begin - If in lobby, add them now so we can metagame!
         if (_ticker.RunLevel != GameRunLevel.PreRoundLobby) return;
@@ -161,13 +177,21 @@ public sealed partial class DynamicRuleSystem : GameRuleSystem<DynamicRuleCompon
     {
         var duration = (float)(Timing.CurTime - entity.Comp.LastBudgetUpdate).TotalSeconds;
 
+        var activePlayers = _antagSelection.GetActivePlayerCount();
         #region Starlight
         // If the budget has reached or exceeded the variant threshold, we use the variant budget per second, otherwise we use the normal budget per second.
         if (entity.Comp.Budget >= entity.Comp.VariantBudgetThreshold)
-            entity.Comp.Budget += duration * entity.Comp.VariantBudgetPerSecond;
+            entity.Comp.Budget += duration * entity.Comp.VariantBudgetPerSecond * (entity.Comp.UsePlayerScaling ? activePlayers * entity.Comp.BudgetScalingPerPlayer : 1); //blimpuf player scaling
         else
-            entity.Comp.Budget += duration * entity.Comp.BudgetPerSecond;
+            entity.Comp.Budget += duration * entity.Comp.BudgetPerSecond * (entity.Comp.UsePlayerScaling ? activePlayers * entity.Comp.BudgetScalingPerPlayer : 1); //blimpuf player scaling
         #endregion
+
+        if (activePlayers > entity.Comp.HighestPlayers) //blimpuf start
+        {
+            entity.Comp.Budget += activePlayers - entity.Comp.HighestPlayers;
+            entity.Comp.HighestPlayers = activePlayers;
+        } //blimpuf end
+
         entity.Comp.LastBudgetUpdate = Timing.CurTime;
     }
 
@@ -184,40 +208,66 @@ public sealed partial class DynamicRuleSystem : GameRuleSystem<DynamicRuleCompon
 
         var executedRules = new List<EntityUid>();
 
-        foreach (var rule in GetRuleSpawns(entity))
-        {
-            // Starlight start
-            // We add the rule passing along the list of child rules, so that
-            // if the rule is added, it's added to our child list before the
-            // events calling its Added method are fired. This makes the rule
-            // hierarchy available for the Added method.
-            var ruleUid = GameTicker.AddGameRule(rule, entity.Comp.Rules);
-            var res = GameTicker.StartGameRule(ruleUid);
-            // Starlight end
-            // var res = GameTicker.StartGameRule(rule, out var ruleUid); Starlight - commented out in favor of the above
-            Debug.Assert(res);
-
-            executedRules.Add(ruleUid);
-
-            if (TryComp<DynamicRuleCostComponent>(ruleUid, out var cost))
+        void ProcessRules(List<EntityUid> executedRules, Entity<DynamicRuleComponent> entity) //blimpuf make this a function
             {
-                entity.Comp.Budget -= cost.Cost;
-
-                #region Starlight
-                if (cost.Cooldown > 0)
+                foreach (var rule in GetRuleSpawns(entity))
                 {
-                    _ruleCooldowns[rule] = cost.Cooldown;
-                    _sawmill.Info($"Rule {rule} added to the Dynamic cooldown for {cost.Cooldown} rounds.");
-                }
-                #endregion
+                    // Starlight start
+                    // We add the rule passing along the list of child rules, so that
+                    // if the rule is added, it's added to our child list before the
+                    // events calling its Added method are fired. This makes the rule
+                    // hierarchy available for the Added method.
+                    var ruleUid = GameTicker.AddGameRule(rule, entity.Comp.Rules);
+                    var res = GameTicker.StartGameRule(ruleUid);
+                    // Starlight end
+                    // var res = GameTicker.StartGameRule(rule, out var ruleUid); Starlight - commented out in favor of the above
+                    Debug.Assert(res);
 
-                _adminLog.Add(LogType.EventRan, LogImpact.High, $"{ToPrettyString(entity)} ran rule {ToPrettyString(ruleUid)} with cost {cost.Cost} on budget {entity.Comp.Budget}.");
+                    executedRules.Add(ruleUid);
+
+                    if (TryComp<DynamicRuleCostComponent>(ruleUid, out var cost))
+                    {
+                        entity.Comp.Budget -= cost.Cost;
+
+                        #region Starlight
+                        if (cost.Cooldown > 0)
+                        {
+                            _ruleCooldowns[rule] = cost.Cooldown;
+                            _sawmill.Info($"Rule {rule} added to the Dynamic cooldown for {cost.Cooldown} rounds.");
+                        }
+                        #endregion
+
+                        _adminLog.Add(LogType.EventRan, LogImpact.High, $"{ToPrettyString(entity)} ran rule {ToPrettyString(ruleUid)} with cost {cost.Cost} on budget {entity.Comp.Budget}.");
+                    }
+                    else
+                    {
+                        _adminLog.Add(LogType.EventRan, LogImpact.High, $"{ToPrettyString(entity)} ran rule {ToPrettyString(ruleUid)} which had no cost.");
+                    }
+                }
             }
-            else
+
+        #region Blimpuf
+        if (entity.Comp.UsePercentageBudgetStart)
+        {
+            var budgetToSpend = entity.Comp.Budget * entity.Comp.PercentageBudget;
+
+            while (entity.Comp.Budget > 0 && budgetToSpend > 0) //check budget incase something goes horribly wrong
             {
-                _adminLog.Add(LogType.EventRan, LogImpact.High, $"{ToPrettyString(entity)} ran rule {ToPrettyString(ruleUid)} which had no cost.");
+                var preBudget = entity.Comp.Budget;
+
+                ProcessRules(executedRules, entity);
+
+                if (preBudget == entity.Comp.Budget) //no more affordable rules
+                    break;
+
+                budgetToSpend -= preBudget - entity.Comp.Budget;
             }
         }
+        else
+        {
+            ProcessRules(executedRules, entity);
+        }
+        #endregion
 
         //entity.Comp.Rules.AddRange(executedRules); // Starlight - comment
 
