@@ -109,6 +109,7 @@
   showInVote: true # 🌟Starlight🌟
   description: extended-description
   minPlayers: 0 # Starlight
+  voteCooldown: 0 # Blimpuf - allow ordinary low-pop rounds to repeat instead of forcing ShitStation
   rules:
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
@@ -136,7 +137,7 @@
   name: dynamic-title
   showInVote: false # admin-only for now until we fix some bugs
   description: dynamic-description
-  minPlayers: 40 # 🌟Starlight🌟
+  minPlayers: 30
   voteCooldown: 0 # Starlight, this one actually can roll back to back.
   rules:
   - SLDynamicRule # Starlight, we have a modified scheduler.
@@ -178,6 +179,7 @@
   name: traitor-title
   description: traitor-description
   minPlayers: 5 # 🌟Starlight🌟
+  voteCooldown: 0 # Blimpuf - allow ordinary low-pop rounds to repeat instead of forcing ShitStation
   showInVote: true # 🌟Starlight🌟
   rules:
   # - DummyNonAntagChance 🌟Starlight🌟
@@ -284,7 +286,7 @@
   - zomber
   name: zombie-title
   description: zombie-description
-  minPlayers: 50 # 🌟Starlight🌟
+  minPlayers: 25 # Blimpuf
   showInVote: true # 🌟Starlight🌟
   rules:
   - Zombie

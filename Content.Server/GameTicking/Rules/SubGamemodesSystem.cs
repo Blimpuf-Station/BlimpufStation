@@ -19,7 +19,10 @@ public sealed partial class SubGamemodesSystem : GameRuleSystem<SubGamemodesComp
                 continue;
 
             Log.Info($"Starting gamerule {id} as a subgamemode of {ToPrettyString(uid):rule}");
-            GameTicker.AddGameRule(id);
+            var addedRule = GameTicker.AddGameRule(id);
+            // Blimpuf - Optional secondary antagonists should not prevent the preset from starting
+            if (TryComp<GameRuleComponent>(addedRule, out var addedGameRule))
+                addedGameRule.CancelPresetOnTooFewPlayers = false;
             // Starlight begin
             if (_ticker is { RunLevel: GameRunLevel.PreRoundLobby, CurrentPreset: not null })
                 _chat.SendAdminAnnouncement($"Preset {_ticker.CurrentPreset.ID}/{MetaData(uid).EntityPrototype!.ID} added {id} as a subgamemode.");

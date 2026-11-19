@@ -47,6 +47,8 @@ public sealed partial class SecretRuleSystem : GameRuleSystem<SecretRuleComponen
             return;
         }
 
+        gameRule.MinPlayers = Math.Max(gameRule.MinPlayers, preset.MinPlayers ?? 0); // Starlight
+
         Log.Info($"Selected {preset.ID} as the secret preset.");
         if (_ticker.RunLevel == GameRunLevel.PreRoundLobby) _chatManager.SendAdminAnnouncement($"Round preset selected: Secret ({preset.ID})."); // Starlight
         _adminLogger.Add(LogType.EventStarted, $"Selected {preset.ID} as the secret preset.");

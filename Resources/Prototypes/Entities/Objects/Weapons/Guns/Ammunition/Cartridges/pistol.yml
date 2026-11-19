@@ -21,7 +21,7 @@
   parent: [BaseCartridgePistol, BaseSalvageContraband] # Blimpuf
   id: CartridgePistolSP
   name: cartridge (.35 auto SP)
-  description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Standard kinetic ammunition is common and useful in most situations.
+  description: A medium-power pistol and submachine gun cartridge, widely-considered the standard in most parts of the sector. Soft-point, standard kinetic projectile, the soft lead tip expands slightly on impact to increase damage, at a slight cost to armor penetration. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletPistolTraceSP
@@ -37,7 +37,7 @@
   parent: [BaseContrabandTier1, BaseCartridgePistol] # Blimpuf Practice is Tier 1
   id: CartridgePistolPractice
   name: cartridge (.35 auto practice)
-  description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
+  description: A medium-power pistol and submachine gun cartridge, widely-considered the standard in most parts of the sector. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletPistolTracePractice
@@ -53,7 +53,7 @@
   parent: BaseCartridgePistol
   id: CartridgePistolIncendiary
   name: cartridge (.35 auto incendiary)
-  description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Incendiary ammunition contains a self-igniting compound that sets targets ablaze.
+  description: A medium-power pistol and submachine gun cartridge, widely-considered the standard in most parts of the sector. Incendiary ammunition contains a self-igniting compound that sets targets ablaze. #Blimpuf
   components:
   - type: CartridgeAmmo
     proto: BulletPistolTraceIncendiary
@@ -68,7 +68,7 @@
 - type: entity
   id: CartridgePistolUranium
   name: cartridge (.35 auto uranium)
-  description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside.
+  description: A medium-power pistol and submachine gun cartridge, widely-considered the standard in most parts of the sector. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside. #Blimpuf
   parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo

@@ -1208,22 +1208,22 @@
         Steel: 5
         Manipulator: 1
 
-- type: entity
-  id: NullspaceAnchorMachineCircuitboard
-  parent: BaseMachineCircuitboard
-  name: nullspace anchor circuitboard
-  description: A machine printed circuit board for a nullspace anchor
-  components:
-    - type: Sprite
-      state: science
-    - type: MachineBoard
-      prototype: NullspaceAnchor
-      stackRequirements:
-        Steel: 5
-        Manipulator: 1
-        CableHV: 10
-        BluespaceCrystal: 1
-        Glass: 2
+#- type: entity # Blimpuf- no nullspace, Shadekin
+#  id: NullspaceAnchorMachineCircuitboard
+#  parent: BaseMachineCircuitboard
+#  name: nullspace anchor circuitboard
+#  description: A machine printed circuit board for a nullspace anchor
+#  components:
+#    - type: Sprite
+#      state: science
+#    - type: MachineBoard
+#      prototype: NullspaceAnchor
+#      stackRequirements:
+#        Steel: 5
+#        Manipulator: 1
+#        CableHV: 10
+#        BluespaceCrystal: 1
+#        Glass: 2
 
 - type: entity
   parent: BaseMachineCircuitboard

@@ -14620,7 +14620,7 @@ entities:
     - type: Transform
       pos: 6.5,22.5
       parent: 1
-- proto: LockerMiningSpecialistFilled
+- proto: LockerMiningSpecialistFilledHardsuit
   entities:
   - uid: 2098
     components:

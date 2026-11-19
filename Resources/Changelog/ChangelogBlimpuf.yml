@@ -1269,5 +1269,130 @@ Entries:
   id: 22601
   time: '2026-10-30T20:01:09.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/226
+- author: ALooseGoose
+  changes:
+  - message: Fixed Plasteel task showing as requiring Uranium in Syndicate Research.
+    type: Fix
+  id: 24201
+  time: '2026-11-01T12:42:11.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/242
+- author: LadyLiliana
+  changes:
+  - message: Fixed issues with borgs spawning without an MMI.
+    type: Fix
+  id: 24501
+  time: '2026-11-01T19:19:29.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/245
+- author: LadyLiliana
+  changes:
+  - message: Fixed broken revenant collisions.
+    type: Fix
+  id: 24301
+  time: '2026-11-01T19:24:09.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/243
+- author: LunaNova
+  changes:
+  - message: Descriptions to cartridges .20, caseless .25 rubber, .30, .35, .40, and
+      .45, as well as HP, FMJ, SP and rubber.
+    type: Add
+  - message: Fixed HP and FMJ descriptions on the .45 cartridge.
+    type: Fix
+  id: 23201
+  time: '2026-11-04T17:05:06.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/232
+- author: Limerent-Sun
+  changes:
+  - message: Compys no longer spawn in maints.
+    type: Remove
+  - message: Most medium-impact antagonists can now spawn at lower playercounts.
+    type: Tweak
+  - message: Reduced several job playtime requirements during Launch Window period.
+    type: Tweak
+  id: 25201
+  time: '2026-11-05T15:28:55.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/252
+- author: LunaNova
+  changes:
+  - message: Removed the disabler from HoP's and Captain's lockers.
+    type: Remove
+  id: 25001
+  time: '2026-11-05T15:36:42.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/250
+- author: Limerent-Sun
+  changes:
+  - message: Reduced the frequency of PsychicScreach, SecurityDrill, and Abductor
+      events.
+    type: Tweak
+  id: 25401
+  time: '2026-11-06T17:12:17.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/254
+- author: ALooseGoose
+  changes:
+  - message: Fixed broken behaviour with the Syndicate Research handheld mass scanner
+      task.
+    type: Fix
+  id: 25101
+  time: '2026-11-06T17:50:36.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/251
+- author: Limerent-Sun
+  changes:
+  - message: Rounds no longer fail to start due to lack of eligible players for optional
+      subgamemodes.
+    type: Fix
+  id: 26101
+  time: '2026-11-11T15:09:21.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/261
+- author: Shimmers
+  changes:
+  - message: '[Saltern] Kiki''s double in the brig has been replaced with Stir-stir.'
+    type: Fix
+  - message: '[Sushi] Medbay''s reception desk can now check your medical history
+      instead of your employment history.'
+    type: Fix
+  - message: '[Sushi] Added Corporate telecoms.'
+    type: Fix
+  id: 26301
+  time: '2026-11-12T14:05:33.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/263
+- author: battlecruiser12
+  changes:
+  - message: Added a hay fever trait.
+    type: Add
+  id: 26401
+  time: '2026-11-12T14:19:13.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/264
+- author: Limerent-Sun
+  changes:
+  - message: Installing a comms encryption key now has a confirmation message.
+    type: Add
+  - message: Dawnbreaker no longer loses the plasteel sword's innate reflect ability
+      when toggled off.
+    type: Fix
+  - message: Mining specialist lockers now always have space hazard suits and N2 tanks.
+    type: Fix
+  id: 26901
+  time: '2026-11-14T13:12:54.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/269
+- author: ALooseGoose
+  changes:
+  - message: Added 11 new thief kits for thieves to play around with!
+    type: Add
+  id: 24101
+  time: '2026-11-14T18:46:57.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/241
+- author: Limerent-Sun
+  changes:
+  - message: Custom objective summary length increased by 4x.
+    type: Tweak
+  id: 27001
+  time: '2026-11-14T20:51:28.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/270
+- author: Limerence, TrixxedHeart
+  changes:
+  - message: Added Chronic Migraines and Neuroaversion traits.
+    type: Add
+  id: 26601
+  time: '2026-11-14T21:23:16.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/266
 Order: -1
 
