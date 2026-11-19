@@ -5,7 +5,7 @@
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:OverallPlaytimeRequirement
-      time: 360000 # Originally 50 hours for SuperSynth but changed to Harmonica
+      time: 36000 # 10hr
   storage:
     back:
     - HarmonicaInstrument
@@ -31,7 +31,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobMusician
-      time: 54000 # 15hr
+      time: 36000 # 10 hr
   storage:
     back:
     - AcousticGuitarInstrument
@@ -44,7 +44,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobMusician
-      time: 72000 # 20hr
+      time: 36000 # 10 hr
   storage:
     back:
     - TrumpetInstrument
@@ -56,7 +56,7 @@
     - !type:JobRequirementLoadoutEffect
       requirement:
         !type:OverallPlaytimeRequirement
-        time: 144000 # 40hr
+        time: 36000 # 10 hr
   equipment:
     shoes: ClothingUnderSocksCoder
 
@@ -66,7 +66,7 @@
     - !type:JobRequirementLoadoutEffect
       requirement:
         !type:OverallPlaytimeRequirement
-        time: 144000 # 40hr
+        time: 72000 # 20hr
   equipment:
     head: ClothingHeadHatWhiteCatEars
   groupBy: "cat ears"
@@ -77,7 +77,7 @@
     - !type:JobRequirementLoadoutEffect
       requirement:
         !type:OverallPlaytimeRequirement
-        time: 144000 # 40hr
+        time: 72000 # 20hr
   equipment:
     head: ClothingHeadHatBunny
   groupBy: "cat ears"
@@ -88,7 +88,7 @@
     - !type:JobRequirementLoadoutEffect
       requirement:
         !type:OverallPlaytimeRequirement
-        time: 144000 # 40hr
+        time: 72000 # 20hr
   equipment:
     head: ClothingHeadHatDogEars
   groupBy: "cat ears"
@@ -140,21 +140,11 @@
 
 - type: loadout
   id: GoldRing
-  effects:
-    - !type:JobRequirementLoadoutEffect
-      requirement:
-        !type:OverallPlaytimeRequirement
-        time: 36000 # 10hr
   equipment:
     gloves: GoldRing
 
 - type: loadout
   id: SilverRing
-  effects:
-    - !type:JobRequirementLoadoutEffect
-      requirement:
-        !type:OverallPlaytimeRequirement
-        time: 36000 # 10hr
   equipment:
     gloves: SilverRing
 
@@ -172,7 +162,7 @@
       requirement:
         !type:RoleTimeRequirement
         role: JobClown
-        time: 72000 # 20 hours of honk
+        time: 36000 # 10 hours of honk
   storage:
     back:
       - BikeHornImplanter
@@ -185,7 +175,7 @@
       requirement:
         !type:RoleTimeRequirement
         role: JobClown
-        time: 72000 # 20 hours of honk
+        time: 36000 # 10 hours of honk
   storage:
     back:
       - SadTromboneImplanter
@@ -244,7 +234,7 @@
     - !type:JobRequirementLoadoutEffect
       requirement:
         !type:OverallPlaytimeRequirement
-        time: 144000 # 40hr
+        time: 36000 # 10 hr
   storage:
     back:
       - FlippoLighter
@@ -294,11 +284,6 @@
 
 - type: loadout
   id: PaperFolder1
-  effects:
-    - !type:JobRequirementLoadoutEffect
-      requirement:
-        !type:OverallPlaytimeRequirement
-        time: 36000 # 10hr
   storage:
     back:
       - BoxFolderRed
@@ -306,11 +291,6 @@
 
 - type: loadout
   id: PaperFolder2
-  effects:
-    - !type:JobRequirementLoadoutEffect
-      requirement:
-        !type:OverallPlaytimeRequirement
-        time: 36000 # 10hr
   storage:
     back:
       - BoxFolderBlue
@@ -318,11 +298,6 @@
 
 - type: loadout
   id: PaperFolder3
-  effects:
-    - !type:JobRequirementLoadoutEffect
-      requirement:
-        !type:OverallPlaytimeRequirement
-        time: 36000 # 10hr
   storage:
     back:
       - BoxFolderYellow
@@ -330,11 +305,6 @@
 
 - type: loadout
   id: PaperFolder4
-  effects:
-    - !type:JobRequirementLoadoutEffect
-      requirement:
-        !type:OverallPlaytimeRequirement
-        time: 36000 # 10hr
   storage:
     back:
       - BoxFolderWhite
@@ -342,11 +312,6 @@
 
 - type: loadout
   id: PaperFolder5
-  effects:
-    - !type:JobRequirementLoadoutEffect
-      requirement:
-        !type:OverallPlaytimeRequirement
-        time: 36000 # 10hr
   storage:
     back:
       - BoxFolderGrey
@@ -354,11 +319,6 @@
 
 - type: loadout
   id: PaperFolder6
-  effects:
-    - !type:JobRequirementLoadoutEffect
-      requirement:
-        !type:OverallPlaytimeRequirement
-        time: 36000 # 10hr
   storage:
     back:
       - BoxFolderBlack
@@ -366,11 +326,6 @@
 
 - type: loadout
   id: PaperFolder7
-  effects:
-    - !type:JobRequirementLoadoutEffect
-      requirement:
-        !type:OverallPlaytimeRequirement
-        time: 36000 # 10hr
   storage:
     back:
       - BoxFolderGreen
@@ -378,11 +333,6 @@
 
 - type: loadout
   id: PaperClipboard
-  effects:
-    - !type:JobRequirementLoadoutEffect
-      requirement:
-        !type:OverallPlaytimeRequirement
-        time: 36000 # 10hr
   storage:
     back:
       - BoxFolderClipboard
@@ -605,7 +555,7 @@
       requirement:
         !type:DepartmentTimeRequirement
         department: Engineering
-        time: 144000 # 40 hours of being a STMS
+        time: 36000 # 10 hr
   equipment:
     head: ClothingHeadHatCone
 
@@ -628,7 +578,7 @@
     - !type:JobRequirementLoadoutEffect
       requirement:
         !type:OverallPlaytimeRequirement
-        time: 144000 # 40hr
+        time: 72000 # 20hr
   equipment:
     jumpsuit: ClothingUniformJumpskirtElegantMaid
   groupBy: "maid outfit"
@@ -639,7 +589,7 @@
     - !type:JobRequirementLoadoutEffect
       requirement:
         !type:OverallPlaytimeRequirement
-        time: 144000 # 40 hr
+        time: 72000 # 20 hr
   equipment:
     gloves: ClothingHandsMaidGlovesElegant
   groupBy: "maid outfit"
@@ -651,7 +601,7 @@
       requirement:
         !type:DepartmentTimeRequirement
         department: Security
-        time: 216000 # 60 hours of charging batong
+        time: 72000 # 20 hr of charging batong
   equipment:
     gloves: ClothingHandsTacticalMaidGlovesDelicate
   groupBy: "maid outfit"
@@ -663,7 +613,7 @@
       requirement:
         !type:DepartmentTimeRequirement
         department: Security
-        time: 216000 # 60 hours of charging batong
+        time: 72000 # 20 hr of charging batong
   equipment:
     jumpsuit: ClothingUniformJumpskirtTacticalMaid
   groupBy: "maid outfit"
@@ -675,7 +625,7 @@
       requirement:
         !type:DepartmentTimeRequirement
         department: Security
-        time: 216000 # 60 hours of charging batong
+        time: 72000 # 20 hr of charging batong
   equipment:
     head: ClothingHeadHatTacticalMaidHeadband
   groupBy: "maid outfit"

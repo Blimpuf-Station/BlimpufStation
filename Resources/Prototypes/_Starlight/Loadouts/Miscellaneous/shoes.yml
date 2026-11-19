@@ -44,6 +44,11 @@
     shoes: ClothingShoesColorGreen
 
 - type: loadout
+  id: RedShoes
+  equipment:
+    shoes: ClothingShoesColorRed
+
+- type: loadout
   id: HighHeelBootsFilled
   equipment:
     shoes: ClothingShoesHighheelBootsFilled

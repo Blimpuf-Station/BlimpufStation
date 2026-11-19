@@ -198,7 +198,7 @@
 
 - type: entity
   parent: Bible
-  name: satanic bible
+  name: infernal bible
   description: "What could possibly go wrong?"
   id: BibleSatanic
   components:

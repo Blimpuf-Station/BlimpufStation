@@ -7,7 +7,7 @@
       requirement:
         !type:RoleTimeRequirement
         role: JobHeadOfSecurity
-        time: 108000 # 30hr
+        time: 72000 # 20hr
 
 - type: loadout
   id: HeadofSecurityRobe
@@ -18,4 +18,4 @@
       requirement:
         !type:RoleTimeRequirement
         role: JobHeadOfSecurity
-        time: 360000 # 100hr
+        time: 144000 # 40hr

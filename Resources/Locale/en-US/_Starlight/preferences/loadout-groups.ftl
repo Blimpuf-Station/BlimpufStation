@@ -14,6 +14,7 @@ loadout-group-assistant-backpack = Assistant backpack
 
 loadout-group-boxer-jumpsuit = Boxer jumpsuit
 loadout-group-boxer-gloves = Boxer gloves
+loadout-group-boxer-shoes = Boxer shoes
 
 loadout-group-reporter-head = Reporter head
 

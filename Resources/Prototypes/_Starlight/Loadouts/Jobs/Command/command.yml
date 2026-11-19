@@ -6,4 +6,4 @@
     requirement:
       !type:DepartmentTimeRequirement
       department: Command
-      time: 216000 # 60 hrs
+      time: 72000 # 20 hrs

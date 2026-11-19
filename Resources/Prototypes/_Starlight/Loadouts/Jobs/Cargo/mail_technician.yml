@@ -6,7 +6,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobMailTech
-      time: 216000 # 60 hrs
+      time: 72000 # 20 hrs
 
 # Star Time
 - type: loadoutEffectGroup
@@ -16,7 +16,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobMailTech
-      time: 360000 # 100 hrs
+      time: 180000 # 50 hrs
 
 # Neck
 - type: loadout

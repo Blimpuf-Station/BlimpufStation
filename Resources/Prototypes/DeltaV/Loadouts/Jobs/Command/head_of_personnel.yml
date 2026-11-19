@@ -8,7 +8,7 @@
       requirement:
         !type:RoleTimeRequirement
         role: JobHeadOfPersonnel
-        time: 72000 # 20hr
+        time: 36000 # 10hr
 
 #Neck
 - type: loadout
@@ -20,7 +20,7 @@
       requirement:
         !type:RoleTimeRequirement
         role: JobHeadOfPersonnel
-        time: 72000 # 20hr
+        time: 36000 # 10hr
 
 #Jumpsuit
 - type: loadout
@@ -32,7 +32,7 @@
       requirement:
         !type:RoleTimeRequirement
         role: JobHeadOfPersonnel
-        time: 72000 # 20hr
+        time: 36000 # 10hr
 
 - type: loadout
   id: HopFormalSkirt
@@ -43,4 +43,4 @@
       requirement:
         !type:RoleTimeRequirement
         role: JobHeadOfPersonnel
-        time: 72000 # 20hr
+        time: 36000 # 10hr

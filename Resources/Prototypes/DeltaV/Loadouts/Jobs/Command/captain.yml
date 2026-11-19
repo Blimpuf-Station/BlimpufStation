@@ -7,4 +7,4 @@
       requirement:
         !type:RoleTimeRequirement
         role: JobCaptain
-        time: 108000 # 30hr
+        time: 72000 # 20hr

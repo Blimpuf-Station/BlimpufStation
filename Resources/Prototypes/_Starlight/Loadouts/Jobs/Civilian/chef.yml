@@ -6,7 +6,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobChef
-      time: 216000 # 60 hrs
+      time: 72000 # 20 hrs
 
 # Senior Outer Clothing
 - type: loadout

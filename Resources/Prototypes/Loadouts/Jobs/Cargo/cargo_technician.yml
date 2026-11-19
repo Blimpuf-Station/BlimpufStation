@@ -6,17 +6,17 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobCargoTechnician
-      time: 21600 #6 hrs
+      time: 14400 #4 hrs
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:RoleTimeRequirement
       role: JobSalvageSpecialist
-      time: 21600 #6 hrs
+      time: 14400 #4 hrs
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement
       department: Cargo
-      time: 216000 # 60 hrs
+      time: 72000 # 20 hrs
 
 # Head
 - type: loadout

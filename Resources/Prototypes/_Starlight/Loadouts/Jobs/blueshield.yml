@@ -6,7 +6,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobBlueShield
-      time: 60h
+      time: 20h
 
 - type: loadout
   id: BlueShieldBeret
