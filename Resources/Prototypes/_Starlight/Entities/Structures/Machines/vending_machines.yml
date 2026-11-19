@@ -63,6 +63,9 @@
     interfaces:
         enum.StoreUiKey.Key:
           type: StoreBoundUserInterface
+        enum.WiresUiKey.Key: # Blimpuf- why does it have a wire panel if there's no interface for it...
+          type: WiresBoundUserInterface
+  - type: ActivatableUIRequiresPower # Blimpuf
   - type: ActivatableUI
     key: enum.StoreUiKey.Key
   - type: WiresPanel
