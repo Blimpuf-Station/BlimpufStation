@@ -610,6 +610,9 @@
   id: RollerBed
 
 - type: Tag
+  id: SalvageTicket
+
+- type: Tag
   id: Sausage # MetamorphRecipe: FoodSausageBun
 
 - type: Tag
