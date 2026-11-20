@@ -3,21 +3,21 @@
   id: DynamicScaling20Pop
   components:
   - type: GameRule
-    minPlayers: 5 # under this, theres to few people for antag
+    minPlayers: 5 # under this, theres too few people for antag
   - type: DynamicRule
-    startingBudgetMin: 1 # per player, at 20 pop it will be 200
-    startingBudgetMax: 2 # per player, at 20 pop it will be 400
+    startingBudgetMin: 15 # per player, at 20 pop it will be 300
+    startingBudgetMax: 27 # per player, at 20 pop it will be 540
     usePlayerScaling: true
     usePercentageBudgetStart: true
-    budgetScalingPerPlayer: 10
-    budgetPerSecond: 0.000375 # balanced around 20 people, at 10x per that's .075
+    percentageBudget: .50 # avg 210, min 150 (2 traitor), max 270 (one conversion/nukies); this is the percentage used round-start
+    budgetScalingPerPlayer: 1
+    budgetPerSecond: 0.00375 # balanced around 20 people, at 10x per that's .075
     variantBudgetThreshold: 300
-    variantBudgetPerSecond: 0.0001875 # same as above but half
+    variantBudgetPerSecond: 0.001875 # same as above but half
     maxRuleInterval: 1800
-    minRuleInterval: 1200 # 20-30 mins as opposed to alpha's 15-25.
+    minRuleInterval: 1200 # 20-30 mins
     table: !type:AllSelector
       children:
-      # Event Schedulers, Beta.
       - !type:GroupSelector
         conditions:
         - !type:RoundDurationCondition
@@ -82,7 +82,7 @@
           #- !type:PlayerCountCondition
           #  min: 5
         - id: ThiefScaling
-          weight: 30 # less interesting than tot
+          weight: 25 # less interesting than tot, and low cost
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
@@ -93,15 +93,36 @@
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
             max: 10
+        - id: SLChangelingScaling
+          weight: 20 # more impactful than vamp
+          conditions:
+          - !type:HasBudgetCondition
+          - !type:MaxRuleOccurenceCondition
+            max: 10
+        - id: SiliconLiberationScaling
+          weight: 15 # needs borgs
+          conditions:
+          - !type:HasBudgetCondition
+          - !type:MaxRuleOccurenceCondition
+            max: 10
+        - id: WizardScaling
+          weight: 5 # its wiz
+          conditions:
+          - !type:HasBudgetCondition
+          - !type:MaxRuleOccurenceCondition
+            max: 3
+        - id: WizardDuelScaling
+          weight: 3 # its MORE wiz
+          conditions:
+          - !type:HasBudgetCondition
+          - !type:MaxRuleOccurenceCondition
         - id: NukeopsScaling
           weight: 30 # this might seem high but it can only be selected while there's enough budget while other rules can roll later
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition # only want one of this
-          - !type:PlayerCountCondition
-            min: 20
         - id: NukeopsScalingExtraOp
-          weight: 100 # if it's nukies we want more ops to be super common
+          weight: 400 # if it's nukies we want more ops to be super common
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
@@ -114,14 +135,12 @@
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
-          - !type:PlayerCountCondition
-            min: 15
         - id: RevolutionaryScalingExtraHeadRev
-          weight: 100
+          weight: 100 #want moer non-headrev antag
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
-            max: 10
+            max: 4 # 5 headrev max
           - !type:RequiresOtherRuleCondition
             rules:
             - RevolutionaryScaling
@@ -130,10 +149,8 @@
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
-          - !type:PlayerCountCondition
-            min: 20
         - id: CosmicCultScalingExtraCultist
-          weight: 100
+          weight: 300
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
@@ -146,10 +163,8 @@
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
-          - !type:PlayerCountCondition
-            min: 20
         - id: ZombieScalingExtraInitial
-          weight: 80 # want other antags + zeds more than other gamerules
+          weight: 150 # want other antags + zeds more than other gamerules
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
@@ -254,12 +269,12 @@
   - type: GameRule
     minPlayers: 0 # under this, theres to few people for antag
   - type: DynamicRule
-    startingBudgetMin: 10 # per player, at 20 pop it will be 200
-    startingBudgetMax: 20 # per player, at 20 pop it will be 400
+    startingBudgetMin: 15 # per player, at 20 pop it will be 300
+    startingBudgetMax: 27 # per player, at 20 pop it will be 540
     usePlayerScaling: true
     usePercentageBudgetStart: true
-    percentageBudget: .50
-    budgetScalingPerPlayer: 30
+    percentageBudget: .50 # avg 210, min 150 (2 traitor), max 270 (one major/conversion + 1 traitor)
+    budgetScalingPerPlayer: 20
     budgetPerSecond: 0.00375 # balanced around 20 people, at 10x per that's .075
     variantBudgetThreshold: 300
     variantBudgetPerSecond: 0.001875 # same as above but half
@@ -308,7 +323,7 @@
           #- !type:PlayerCountCondition
           #  min: 5
         - id: ThiefScaling
-          weight: 30 # less interesting than tot
+          weight: 25 # less interesting than tot, and low cost
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
@@ -319,13 +334,36 @@
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
             max: 10
+        - id: SLChangelingScaling
+          weight: 20 # more impactful than vamp
+          conditions:
+          - !type:HasBudgetCondition
+          - !type:MaxRuleOccurenceCondition
+            max: 10
+        - id: SiliconLiberationScaling
+          weight: 15 # needs borgs
+          conditions:
+          - !type:HasBudgetCondition
+          - !type:MaxRuleOccurenceCondition
+            max: 10
+        - id: WizardScaling
+          weight: 5 # its wiz
+          conditions:
+          - !type:HasBudgetCondition
+          - !type:MaxRuleOccurenceCondition
+            max: 3
+        - id: WizardDuelScaling
+          weight: 3 # its MORE wiz
+          conditions:
+          - !type:HasBudgetCondition
+          - !type:MaxRuleOccurenceCondition
         - id: NukeopsScaling
           weight: 30 # this might seem high but it can only be selected while there's enough budget while other rules can roll later
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition # only want one of this
         - id: NukeopsScalingExtraOp
-          weight: 100 # if it's nukies we want more ops to be super common
+          weight: 400 # if it's nukies we want more ops to be super common
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
@@ -339,11 +377,11 @@
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
         - id: RevolutionaryScalingExtraHeadRev
-          weight: 100
+          weight: 100 #want moer non-headrev antag
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
-            max: 10
+            max: 4 # 5 headrev max
           - !type:RequiresOtherRuleCondition
             rules:
             - RevolutionaryScaling
@@ -353,7 +391,7 @@
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
         - id: CosmicCultScalingExtraCultist
-          weight: 100
+          weight: 300
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
@@ -367,7 +405,7 @@
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition
         - id: ZombieScalingExtraInitial
-          weight: 80 # want other antags + zeds more than other gamerules
+          weight: 150 # want other antags + zeds more than other gamerules
           conditions:
           - !type:HasBudgetCondition
           - !type:MaxRuleOccurenceCondition

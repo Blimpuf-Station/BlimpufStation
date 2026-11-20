@@ -5,13 +5,13 @@
   - multiantag20scaling
   - directorscaling20
   name: dynamic-title
-  showInVote: false # admin-only for now until we fix some bugs
+  showInVote: false
   description: dynamic-description
-  minPlayers: 0
-  voteCooldown: 0 # This one actually can roll back to back.
+  minPlayers: 5
+  voteCooldown: 0
   rules:
   - DynamicScaling20Pop
-  - SpaceTrafficControlEventScheduler # No event/meteor schedulers, since we handle that in dynamic too.
+  - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset

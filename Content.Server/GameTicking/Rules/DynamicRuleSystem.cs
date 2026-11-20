@@ -54,7 +54,7 @@ public sealed partial class DynamicRuleSystem : GameRuleSystem<DynamicRuleCompon
 
         if(component.UsePlayerScaling) //blimpuf start - player scaling
         {
-            var playerCount = _ticker.ReadyPlayerCount();
+            var playerCount = _ticker.GetEffectivePlayerCountGamerule(_ticker.ReadyPlayerCount());
 
             component.Budget *= playerCount * component.BudgetScalingPerPlayer;
 
@@ -249,9 +249,11 @@ public sealed partial class DynamicRuleSystem : GameRuleSystem<DynamicRuleCompon
         #region Blimpuf
         if (entity.Comp.UsePercentageBudgetStart)
         {
-            var budgetToSpend = entity.Comp.Budget * entity.Comp.PercentageBudget;
+            var leftoverBudget = entity.Comp.Budget - (entity.Comp.Budget * entity.Comp.PercentageBudget);
 
-            while (entity.Comp.Budget > 0 && budgetToSpend > 0) //check budget incase something goes horribly wrong
+            entity.Comp.Budget *= entity.Comp.PercentageBudget; // for gamerule decision
+
+            while (entity.Comp.Budget > 0)
             {
                 var preBudget = entity.Comp.Budget;
 
@@ -259,9 +261,9 @@ public sealed partial class DynamicRuleSystem : GameRuleSystem<DynamicRuleCompon
 
                 if (preBudget == entity.Comp.Budget) //no more affordable rules
                     break;
-
-                budgetToSpend -= preBudget - entity.Comp.Budget;
             }
+
+            entity.Comp.Budget += leftoverBudget; //re-add the budget we set aside
         }
         else
         {

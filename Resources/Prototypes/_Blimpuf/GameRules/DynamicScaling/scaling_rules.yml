@@ -13,7 +13,7 @@
     - !type:FixedAntagCount
       proto: Thief
   - type: DynamicRuleCost
-    cost: 50 # per antag, every rule must have a nonzero cost
+    cost: 60 # per antag, every rule must have a nonzero cost
   - type: GameRule
     minPlayers: 0 # we want to override parent minPlayers just in case; min players is determined in DynamicScaling
     delay:
@@ -31,7 +31,7 @@
     - !type:FixedAntagCount
       proto: Traitor
   - type: DynamicRuleCost
-    cost: 75
+    cost: 70
   - type: GameRule
     minPlayers: 0
     delay:
@@ -89,7 +89,7 @@
         min: 1
         max: 1 # Blimpuf - only spawn additional via seperate rule
   - type: DynamicRuleCost
-    cost: 200
+    cost: 250
     cooldown: 1 # Starlight
 
 - type: entity
@@ -102,7 +102,7 @@
     - !type:FixedAntagCount
       proto: NukeopsOperative
   - type: DynamicRuleCost
-    cost: 75
+    cost: 150
 
 # revs
 - type: entity
@@ -126,7 +126,7 @@
       proto: HeadRev
       Count: 2
   - type: DynamicRuleCost
-    cost: 200 #same as nukies
+    cost: 250 #same as nukies
     cooldown: 1 # Starlight
 
 - type: entity
@@ -139,7 +139,7 @@
     - !type:FixedAntagCount
       proto: HeadRev
   - type: DynamicRuleCost
-    cost: 75
+    cost: 100
 
 # CosCult
 - type: entity
@@ -166,7 +166,7 @@
       playerRatio: 10
       Count: 3 #higher than base rule since you need more to not be completely useless
   - type: DynamicRuleCost
-    cost: 200
+    cost: 250
     cooldown: 1
 
 - type: entity
@@ -179,7 +179,7 @@
     - !type:FixedAntagCount
       proto: CosmicCultAntagCultist
   - type: DynamicRuleCost
-    cost: 50 # lower since 1 cultist roundstart << 1 headrev / nukie
+    cost: 75 # lower since 1 cultist roundstart << 1 headrev / nukie
 
 # Zombies
 - type: entity
@@ -200,7 +200,7 @@
       playerRatio: 18 # Starlight
       count: 2 #
   - type: DynamicRuleCost
-    cost: 150 # more interesting with other antags than most 'gamemode' antags
+    cost: 200 # more interesting with other antags than most 'gamemode' antags
     cooldown: 1 # Starlight
 
 - type: entity
@@ -213,12 +213,64 @@
     - !type:FixedAntagCount
       proto: InitialInfected
   - type: DynamicRuleCost
-    cost: 75
+    cost: 100
 
+# Ling
+- type: entity
+  parent: [Changeling, BaseRoundstartAntagRule]
+  id: SLChangelingScaling
+  components:
+  - type: GameRule
+    minPlayers: 0
+  - type: SLChangelingRule
+  - type: AntagSelection
+    agentName: changeling-round-end-agent-name
+    lateJoinAdditional: true
+    antags:
+    - !type:FixedAntagCount
+      proto: SLChangeling
+  - type: DynamicRuleCost
+    cost: 100 # same as vamp
 
+#SELF
+- type: entity
+  parent: [ BaseRoundstartAntagRule, SiliconLiberation ]
+  id: SiliconLiberationScaling
+  components:
+  - type: GameRule
+    minPlayers: 0
+  - type: AntagSelection
+    agentName: self-round-end-agent-name
+    lateJoinAdditional: true
+    antags:
+    - !type:FixedAntagCount
+      proto: SELFAgent
+  - type: DynamicRuleCost
+    cost: 70 # same as traitor
 
+# Wiz
+- type: entity
+  parent: BaseWizardRule
+  id: WizardScaling
+  components:
+  - type: GameRule
+    minPlayers: 0
+  - type: AntagSelection # Starlight start
+    agentName: wizard-round-end-name
+    antags:
+    - !type:FixedAntagCount
+      proto: Wizard
+  - type: DynamicRuleCost
+    cost: 175 # not quite conversion/nukies
 
-
+- type: entity
+  parent: WizardDuel
+  id: WizardDuelScaling # this one doesn't really work super well since each wiz is a different proto but it's fine
+  components:
+    - type: GameRule
+      minPlayers: 0
+    - type: DynamicRuleCost
+      cost: 300
 
 
 

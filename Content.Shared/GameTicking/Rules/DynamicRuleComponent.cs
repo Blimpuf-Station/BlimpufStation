@@ -69,8 +69,7 @@ public sealed partial class DynamicRuleComponent : Component
     public bool UsePercentageBudgetStart = false;
 
     /// <summary>
-    /// The percentage of the budget to be spent roundstart before stopping.
-    /// More budget than this can be spent, but once greater than this percentage it will stop trying to spawn things.
+    /// The percentage of the budget to be spent roundstart.
     /// </summary>
     [DataField]
     public float PercentageBudget = 0.5f;
