@@ -16,8 +16,8 @@ thief-backpack-category-getaway-description =
 
 thief-backpack-category-ninja-name = Ninja Kit
 thief-backpack-category-ninja-description =
-    A master of the ways of the Ninja...Well, more
-    like a Spider Clan wannabe.
+    Saw this in a movie once. Fell in love with the ways
+    of the ninja since!
     Includes: A battery powered chameleon stealth scarf, an
     EMP Implant, a bottle of Tanzinide, a Hypopen and a
     Scram Implant.
@@ -59,16 +59,15 @@ thief-backpack-category-bluespace-description =
 
 thief-backpack-category-self-defence-name = Self Defence Kit
 thief-backpack-category-self-defence-description =
-    I WILL NOT BE HARASSED! BITCH!
+    I WILL NOT BE HARASSED!
     Includes: A disabler, a telescopic shield, a force
     field projector, an armor vest, and a combat medkit.
 
 thief-backpack-category-prankster-name = Prankster Kit
 thief-backpack-category-prankster-description =
-    Honk.
+    Honk!
     Includes: A pie cannon, 3 pies, no-slip clown shoes,
     a banana energy sword and a holopeel projector.
-    Bottom Text.
 
 thief-backpack-category-blinding-name = Blinding Kit
 thief-backpack-category-blinding-description =

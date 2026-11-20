@@ -1394,5 +1394,12 @@ Entries:
   id: 26601
   time: '2026-11-14T21:23:16.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/266
+- author: OmgDev
+  changes:
+  - message: Smirk the Slime has finally come out of hiding...
+    type: Add
+  id: 23401
+  time: '2026-11-19T19:36:32.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/234
 Order: -1
 
