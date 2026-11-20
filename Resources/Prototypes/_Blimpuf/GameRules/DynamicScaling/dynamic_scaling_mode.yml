@@ -9,6 +9,7 @@
     startingBudgetMax: 27 # per player, at 20 pop it will be 540
     usePlayerScaling: true
     usePercentageBudgetStart: true
+    budgetGainOnLateJoin: 10
     percentageBudget: .50 # avg 210, min 150 (2 traitor), max 270 (one conversion/nukies); this is the percentage used round-start
     budgetScalingPerPlayer: 1
     budgetPerSecond: 0.00375 # balanced around 20 people, at 10x per that's .075
@@ -275,6 +276,7 @@
     usePercentageBudgetStart: true
     percentageBudget: .50 # avg 210, min 150 (2 traitor), max 270 (one major/conversion + 1 traitor)
     budgetScalingPerPlayer: 20
+    budgetGainOnLateJoin: 10
     budgetPerSecond: 0.00375 # balanced around 20 people, at 10x per that's .075
     variantBudgetThreshold: 300
     variantBudgetPerSecond: 0.001875 # same as above but half
