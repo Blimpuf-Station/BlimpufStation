@@ -232,7 +232,7 @@
           - !type:HasBudgetCondition
           - !type:MutuallyExclusiveRuleCondition
             rules:
-            - Zombie # Wizards don't lose their abilities in Zombie games, so they can't be allowed together
+            - ZombieScaling # Wizards don't lose their abilities in Zombie games, so they can't be allowed together
           - !type:PlayerCountCondition
             min: 25
           - !type:RoundDurationCondition

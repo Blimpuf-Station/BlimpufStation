@@ -186,7 +186,7 @@ public sealed partial class DynamicRuleSystem : GameRuleSystem<DynamicRuleCompon
             entity.Comp.Budget += duration * entity.Comp.BudgetPerSecond * (entity.Comp.UsePlayerScaling ? activePlayers * entity.Comp.BudgetScalingPerPlayer : 1); //blimpuf player scaling
         #endregion
 
-        if (activePlayers > entity.Comp.HighestPlayers) //blimpuf start
+        if (activePlayers > entity.Comp.HighestPlayers && entity.Comp.UsePlayerScaling) //blimpuf start
         {
             entity.Comp.Budget += activePlayers - entity.Comp.HighestPlayers;
             entity.Comp.HighestPlayers = activePlayers;
@@ -247,7 +247,7 @@ public sealed partial class DynamicRuleSystem : GameRuleSystem<DynamicRuleCompon
             }
 
         #region Blimpuf
-        if (entity.Comp.UsePercentageBudgetStart)
+        if (entity.Comp.UsePercentageBudgetStart && GameTicker.RoundDuration() > 5)
         {
             var leftoverBudget = entity.Comp.Budget - (entity.Comp.Budget * entity.Comp.PercentageBudget);
 

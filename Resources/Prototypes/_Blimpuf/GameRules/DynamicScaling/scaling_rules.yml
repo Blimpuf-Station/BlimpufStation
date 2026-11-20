@@ -124,7 +124,7 @@
     antags:
     - !type:FixedAntagCount
       proto: HeadRev
-      Count: 2
+      count: 2
   - type: DynamicRuleCost
     cost: 250 #same as nukies
     cooldown: 1 # Starlight
@@ -164,7 +164,7 @@
     - !type:FixedAntagCount
       proto: CosmicAntagCultist
       playerRatio: 10
-      Count: 3 #higher than base rule since you need more to not be completely useless
+      count: 3 #higher than base rule since you need more to not be completely useless
   - type: DynamicRuleCost
     cost: 250
     cooldown: 1
@@ -177,7 +177,7 @@
     lateJoinAdditional: true
     antags:
     - !type:FixedAntagCount
-      proto: CosmicCultAntagCultist
+      proto: CosmicAntagCultist
   - type: DynamicRuleCost
     cost: 75 # lower since 1 cultist roundstart << 1 headrev / nukie
 
