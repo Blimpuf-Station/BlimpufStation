@@ -107,6 +107,7 @@
   parent: [BaseClone, Antag]
   components:
   - Forensics # This is so hugging data is copied to the clone, so you can't hug metagame them
+  - Traitor # Blimpuf: lets the clone work on inherited Syndicate Research objectives.
 
 # changeling identity copying
 - type: cloningSettings
