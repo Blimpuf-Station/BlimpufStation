@@ -100,6 +100,8 @@
   copyEquipment: null
   copyInternalStorage: false
   copyImplants: false
+  components:
+  - Traitor # Blimpuf: preserve Traitor component across cloning
 
 # for paradox clones
 - type: cloningSettings
