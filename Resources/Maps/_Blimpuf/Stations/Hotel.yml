@@ -119806,7 +119806,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 9.5,-40.5
     - type: SurveillanceCamera
-      id: blueshield officer
+      id: cc enforcer's room
 - proto: SurveillanceCameraConstructed
   entities:
   - uid: 18329
