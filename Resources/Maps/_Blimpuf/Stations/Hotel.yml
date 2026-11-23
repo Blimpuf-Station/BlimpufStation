@@ -4,7 +4,7 @@ meta:
   engineVersion: 283.1.7
   forkId: ""
   forkVersion: ""
-  time: 11/17/2026 11:23:16
+  time: 11/23/2026 17:47:08
   entityCount: 22148
 maps:
 - 1
@@ -18799,7 +18799,7 @@ entities:
     components:
     - type: Transform
       parent: 2
-      pos: 0.5,24.5
+      pos: 0.5,23.5
   - uid: 1990
     components:
     - type: Transform
@@ -23484,12 +23484,7 @@ entities:
     components:
     - type: Transform
       parent: 2
-      pos: -3.5,28.5
-  - uid: 2927
-    components:
-    - type: Transform
-      parent: 2
-      pos: -3.5,27.5
+      pos: 0.5,22.5
   - uid: 2928
     components:
     - type: Transform
@@ -23504,7 +23499,7 @@ entities:
     components:
     - type: Transform
       parent: 2
-      pos: -3.5,26.5
+      pos: -4.5,22.5
   - uid: 2931
     components:
     - type: Transform
@@ -111704,6 +111699,15 @@ entities:
     - type: Transform
       parent: 2
       pos: -2.5,-17.5
+- proto: RandomCableMVSpawner
+  entities:
+  - uid: 2927
+    components:
+    - type: Transform
+      parent: 2
+      pos: -2.5,21.5
+    - type: RandomSpawner
+      chance: 0.6
 - proto: RandomDrinkBottle
   entities:
   - uid: 17624
