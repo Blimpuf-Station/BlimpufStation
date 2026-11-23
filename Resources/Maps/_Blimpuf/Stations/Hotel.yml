@@ -4,7 +4,7 @@ meta:
   engineVersion: 283.1.7
   forkId: ""
   forkVersion: ""
-  time: 11/23/2026 17:47:08
+  time: 11/23/2026 17:59:44
   entityCount: 22148
 maps:
 - 1
@@ -51413,6 +51413,15 @@ entities:
     - type: Transform
       parent: 2
       pos: -26.5,-11.5
+- proto: CentCommFlag
+  entities:
+  - uid: 14259
+    components:
+    - type: Transform
+      parent: 2
+      pos: 10.5,-42.5
+    - type: Fixtures
+      fixtures: {}
 - proto: Chair
   entities:
   - uid: 1102
@@ -116235,21 +116244,6 @@ entities:
       pos: -27.5,-46.5
     - type: Fixtures
       fixtures: {}
-  - uid: 17782
-    components:
-    - type: Transform
-      parent: 2
-      pos: 12.5,-43.5
-    - type: Fixtures
-      fixtures: {}
-  - uid: 17783
-    components:
-    - type: Transform
-      parent: 2
-      rot: -1.5707963267948966 rad
-      pos: 10.5,-42.5
-    - type: Fixtures
-      fixtures: {}
   - uid: 17784
     components:
     - type: Transform
@@ -116454,6 +116448,15 @@ entities:
     - type: Transform
       parent: 2
       pos: 9.5,15.5
+    - type: Fixtures
+      fixtures: {}
+- proto: SignNTR
+  entities:
+  - uid: 8956
+    components:
+    - type: Transform
+      parent: 2
+      pos: 12.5,-43.5
     - type: Fixtures
       fixtures: {}
 - proto: SignPrison
