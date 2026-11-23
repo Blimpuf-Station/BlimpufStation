@@ -6,8 +6,13 @@ using Content.Server.Cloning;
 using Content.Server.GameTicking.Rules.Components;
 using Content.Server.Medical.SuitSensors;
 using Content.Server.Objectives.Components;
+using Content.Server.PDA.Ringer;
+using Content.Server.Traitor.Uplink;
+using Content.Shared._Starlight.Antags.Traitor;
+using Content.Shared._Starlight.Implants.Components;
 using Content.Shared.GameTicking.Components;
 using Content.Shared.Gibbing.Components;
+using Content.Shared.Implants.Components;
 using Content.Shared.Medical.SuitSensor;
 using Content.Shared.Mind;
 using NetCord;
@@ -30,6 +35,8 @@ public sealed partial class ParadoxCloneRuleSystem : GameRuleSystem<ParadoxClone
     [Dependency] private IRobustRandom _random = default!;
     [Dependency] private CloningSystem _cloning = default!;
     [Dependency] private SharedMindSystem _mind = default!;
+    [Dependency] private AntagSelectionSystem _antag = default!;
+    [Dependency] private UplinkSystem _uplink = default!;
     [Dependency] private SuitSensorSystem _sensor = default!;
     [Dependency] private IChatManager _chatManager = default!; // SL add
     [Dependency] private IPrototypeManager _proto = default!; // SL add
@@ -140,6 +147,45 @@ public sealed partial class ParadoxCloneRuleSystem : GameRuleSystem<ParadoxClone
             return;
 
         _mind.CopyObjectives(ent.Comp.OriginalMind.Value, (cloneMindId, cloneMindComp), ent.Comp.ObjectiveWhitelist, ent.Comp.ObjectiveBlacklist);
+
+        // Blimpuf - give paradox clones of traitors a 0TC uplink
+        if (HasComp<TraitorComponent>(args.EntityUid))
+            GiveTraitorUplink(args.EntityUid);
+    }
+
+    private void GiveTraitorUplink(EntityUid clone)
+    {
+        if (TryComp<ImplantedComponent>(clone, out var implanted))
+        {
+            foreach (var implant in implanted.ImplantContainer.ContainedEntities)
+            {
+                if (!HasComp<UplinkImplantComponent>(implant))
+                    continue;
+
+                _uplink.SetUplink(clone, implant, 0, giveDiscounts: false);
+                _antag.SendBriefing(clone, Loc.GetString("traitor-role-uplink-implant-short"), null, null);
+                return;
+            }
+        }
+
+        var pda = _uplink.FindUplinkTarget(clone);
+        if (!_uplink.AddUplink(clone, 0, pda))
+            return;
+
+        if (pda == null)
+        {
+            _antag.SendBriefing(clone, Loc.GetString("traitor-role-uplink-implant-short"), null, null);
+            return;
+        }
+
+        var ev = new GenerateUplinkCodeEvent();
+        RaiseLocalEvent(pda.Value, ref ev);
+        if (ev.Code is { } code)
+        {
+            var briefing = Loc.GetString("traitor-role-uplink-code-short", ("code", string.Join("-", code).Replace("sharp", "#")));
+            _antag.SendBriefing(clone, briefing, null, null);
+        }
+        // Blimpuf end
     }
 
     // SL start
