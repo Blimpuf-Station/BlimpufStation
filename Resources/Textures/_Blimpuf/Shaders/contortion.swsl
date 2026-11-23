@@ -1,0 +1,25 @@
+// Mostly just the stealth shader but doesnt make the user invisible
+light_mode unshaded;
+
+uniform mediump vec2 reference;
+
+const mediump float time_scale = 0.25;
+const mediump float distance_scale = 0.125;
+const mediump float warp_strength = 0.015; // tune this — UV space, so small!
+
+void fragment() {
+
+    // get distortion magnitude. hand crafted from a random jumble of trig functions
+    highp vec2 coords = (FRAGCOORD.xy + reference) * distance_scale;
+    highp float w = sin(TIME + (coords.x + coords.y + 2.0*sin(TIME*time_scale) * sin(TIME*time_scale + coords.x - coords.y)) );
+
+    // visualize distortion via:
+    // COLOR = vec4(w,w,w,1.0);
+
+    // offset the UV itself, in a second axis too so it doesn't just shear sideways
+    highp vec2 offset = vec2(w, w * 0.6) * warp_strength;
+
+    highp vec4 sprite = zTexture(UV + offset);
+
+    COLOR = sprite;
+}

@@ -2,6 +2,10 @@
 uplink-pistol-magazine-wt550-name = WT550 Magazine (.35 Auto top-mounted)
 uplink-pistol-magazine-wt550-desc = An exotic SMG Magazine that contains 30 rounds of .35 Auto. Compatible with the WT550. Unfortunately, the Syndicate does not produce anything compatible with it, at least at time of writing. It may still come in handy later, though.
 
+# Wearables
+uplink-clothing-mask-gas-anticam-name = Camera-Shy Gas Mask
+uplink-clothing-mask-gas-anticam-desc = An improved chameleon gas mask with toggleable Infrared lights built in which make you completely invisible to the eyes of most Silicons.
+
 # Research
 uplink-research-analyzer-name = Research Analyzer
 uplink-research-analyzer-desc = A simple device that scans high value objects to determine what is required to research them.
