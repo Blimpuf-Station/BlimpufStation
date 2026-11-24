@@ -60,18 +60,20 @@ public sealed partial class TraitSystem : EntitySystem
     }
 
     /// <summary>
-    /// Applies a traits to an entity.
+    /// Applies a profile's traits. Admin spawns can skip trait eligibility checks.
     /// </summary>
-    public void ApplyTraits(EntityUid Mob, HumanoidCharacterProfile profile, ICommonSession session)
+    public void ApplyTraits(EntityUid Mob, HumanoidCharacterProfile profile, ICommonSession session, bool ignoreRestrictions = false)
     {
-        var validTraits = ValidateTraits(Mob, profile.TraitPreferences, session, profile);
+        var traits = ignoreRestrictions
+            ? profile.TraitPreferences
+            : ValidateTraits(Mob, profile.TraitPreferences, session, profile);
 
-        foreach (var traitId in validTraits)
+        foreach (var traitId in traits)
         {
             if (!_prototype.TryIndex(traitId, out var trait))
                 continue;
 
-            ApplyTrait(Mob, trait);
+            ApplyTrait(Mob, trait, ignoreRestrictions);
         }
     }
 
@@ -201,10 +203,10 @@ public sealed partial class TraitSystem : EntitySystem
     /// <summary>
     /// Applies a trait's effects to an entity.
     /// </summary>
-    private void ApplyTrait(EntityUid player, TraitPrototype trait)
+    private void ApplyTrait(EntityUid player, TraitPrototype trait, bool ignoreRestrictions = false)
     {
-        if (_whitelistSystem.IsWhitelistFail(trait.Whitelist, player) ||
-            _whitelistSystem.IsWhitelistPass(trait.Blacklist, player))
+        if (!ignoreRestrictions && (_whitelistSystem.IsWhitelistFail(trait.Whitelist, player) ||
+            _whitelistSystem.IsWhitelistPass(trait.Blacklist, player)))
             return;
 
         var transform = Transform(player);

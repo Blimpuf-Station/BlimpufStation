@@ -587,12 +587,17 @@ namespace Content.Shared.Preferences
         #endregion
         public void EnsureValid(ICommonSession session, IDependencyCollection collection)
         {
+            EnsureValid(session, collection, ignoreSpawnRestrictions: false);
+        }
+
+        public void EnsureValid(ICommonSession session, IDependencyCollection collection, bool ignoreSpawnRestrictions)
+        {
             var configManager = collection.Resolve<IConfigurationManager>();
             var prototypeManager = collection.Resolve<IPrototypeManager>();
 
             var speciesPrototype = ResolveSpecies(prototypeManager); // Starlight, species migrations
 
-            if (speciesPrototype is null || !speciesPrototype.RoundStart) // Starlight, species migrations
+            if (speciesPrototype is null || (!ignoreSpawnRestrictions && !speciesPrototype.RoundStart)) // Starlight, species migrations
             {
                 Species = SharedHumanoidAppearanceSystem.DefaultSpecies;
                 speciesPrototype = prototypeManager.Index(Species);
@@ -751,8 +756,9 @@ namespace Content.Shared.Preferences
             _antagPreferences.UnionWith(antags);
 
             _traitPreferences.Clear();
-            _traitPreferences.UnionWith(GetValidTraits(traits, prototypeManager));
-            NormalizeSpeciesVariantTraits(prototypeManager); // Blimpuf
+            _traitPreferences.UnionWith(ignoreSpawnRestrictions ? traits : GetValidTraits(traits, prototypeManager));
+            if (!ignoreSpawnRestrictions)
+                NormalizeSpeciesVariantTraits(prototypeManager); // Blimpuf
 
             // Checks prototypes exist for all loadouts and dump / set to default if not.
             var toRemove = new ValueList<string>();
