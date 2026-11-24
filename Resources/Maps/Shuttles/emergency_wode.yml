@@ -4,7 +4,7 @@ meta:
   engineVersion: 283.1.7
   forkId: ""
   forkVersion: ""
-  time: 11/24/2026 05:18:32
+  time: 11/24/2026 05:18:08
   entityCount: 606
 maps: []
 grids:
@@ -2500,22 +2500,12 @@ entities:
       parent: 2
       rot: 1.5707963267948966 rad
       pos: -4.5,9.5
-  - uid: 207
-    components:
-    - type: Transform
-      parent: 2
-      pos: -3.5,19.5
   - uid: 287
     components:
     - type: Transform
       parent: 2
       rot: 1.5707963267948966 rad
       pos: 1.5,2.5
-  - uid: 307
-    components:
-    - type: Transform
-      parent: 2
-      pos: 1.5,18.5
   - uid: 323
     components:
     - type: Transform
@@ -3050,6 +3040,18 @@ entities:
       pos: -4.5,16.5
     - type: Fixtures
       fixtures: {}
+- proto: SecureGasVentPump
+  entities:
+  - uid: 207
+    components:
+    - type: Transform
+      parent: 2
+      pos: -3.5,19.5
+  - uid: 307
+    components:
+    - type: Transform
+      parent: 2
+      pos: 1.5,18.5
 - proto: ShotGunCabinetFilled
   entities:
   - uid: 327
