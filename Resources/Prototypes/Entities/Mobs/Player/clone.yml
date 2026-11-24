@@ -16,6 +16,7 @@
   # traits
   - BlackAndWhiteOverlay
   - Clumsy
+  - HayFever
   - ImpairedMobility
   - NightVisionBlocker # Starlight
   # - LegsParalyzed (you get healed)
@@ -107,6 +108,11 @@
   parent: [BaseClone, Antag]
   components:
   - Forensics # This is so hugging data is copied to the clone, so you can't hug metagame them
+  # Extended Character Descriptions - Blimpuf
+  - CharacterDescription
+  - CharacterSecrets
+  - ExploitableInfo
+  # Blimpuf end
 
 # changeling identity copying
 - type: cloningSettings
