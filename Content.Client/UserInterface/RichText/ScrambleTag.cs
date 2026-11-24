@@ -29,6 +29,8 @@ public sealed partial class ScrambleTag : IMarkupTagHandler
             return string.Empty;
 
         var nodeSeed = System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(node);
+        if (rate.Value <= 0)
+            return string.Empty;
         var phase = (uint) nodeSeed % rate.Value;
         var step = (long) ((_timing.CurTime.TotalMilliseconds + phase) / rate.Value);
         var rand = new Random(HashCode.Combine(step, nodeSeed));
