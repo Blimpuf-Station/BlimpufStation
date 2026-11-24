@@ -4,7 +4,7 @@ meta:
   engineVersion: 283.1.7
   forkId: ""
   forkVersion: ""
-  time: 11/24/2026 03:41:10
+  time: 11/24/2026 03:56:16
   entityCount: 1023
 maps: []
 grids:
@@ -103,34 +103,34 @@ entities:
             5: 3,15
         - node:
             id: BrickTileWhiteCornerNe
+            color: '#37789BFF'
+          decals:
+            146: 5,-6
+        - node:
+            id: BrickTileWhiteCornerNe
             color: '#52B4E996'
           decals:
             44: 5,0
         - node:
-            id: BrickTileWhiteCornerNe
-            color: '#DE3A3A96'
+            id: BrickTileWhiteCornerNw
+            color: '#37789BFF'
           decals:
-            47: 5,-6
+            145: 3,-6
         - node:
             id: BrickTileWhiteCornerNw
             color: '#52B4E996'
           decals:
             43: 3,0
         - node:
-            id: BrickTileWhiteCornerNw
-            color: '#DE3A3A96'
+            id: BrickTileWhiteCornerSe
+            color: '#37789BFF'
           decals:
-            48: 3,-6
+            147: 5,-10
         - node:
             id: BrickTileWhiteCornerSe
             color: '#52B4E996'
           decals:
             45: 5,-4
-        - node:
-            id: BrickTileWhiteCornerSe
-            color: '#DE3A3A96'
-          decals:
-            46: 5,-10
         - node:
             id: BrickTileWhiteCornerSe
             color: '#EFB34196'
@@ -146,14 +146,14 @@ entities:
             28: 3,9
         - node:
             id: BrickTileWhiteCornerSw
+            color: '#37789BFF'
+          decals:
+            148: 3,-10
+        - node:
+            id: BrickTileWhiteCornerSw
             color: '#52B4E996'
           decals:
             42: 3,-4
-        - node:
-            id: BrickTileWhiteCornerSw
-            color: '#DE3A3A96'
-          decals:
-            60: 3,-10
         - node:
             id: BrickTileWhiteEndS
             color: '#334E6DC8'
@@ -169,6 +169,11 @@ entities:
             74: 1,7
         - node:
             id: BrickTileWhiteInnerNe
+            color: '#37789BFF'
+          decals:
+            160: 1,-9
+        - node:
+            id: BrickTileWhiteInnerNe
             color: '#52B4E996'
           decals:
             65: 1,-4
@@ -178,11 +183,6 @@ entities:
           decals:
             77: -3,7
             92: 1,-19
-        - node:
-            id: BrickTileWhiteInnerNe
-            color: '#DE3A3A96'
-          decals:
-            71: 1,-9
         - node:
             id: BrickTileWhiteInnerNe
             color: '#EFB34196'
@@ -212,6 +212,11 @@ entities:
             34: 1,11
         - node:
             id: BrickTileWhiteInnerSe
+            color: '#37789BFF'
+          decals:
+            159: 1,-6
+        - node:
+            id: BrickTileWhiteInnerSe
             color: '#52B4E996'
           decals:
             66: 1,-1
@@ -221,11 +226,6 @@ entities:
           decals:
             90: 1,-17
             91: 1,-23
-        - node:
-            id: BrickTileWhiteInnerSe
-            color: '#DE3A3A96'
-          decals:
-            72: 1,-6
         - node:
             id: BrickTileWhiteInnerSe
             color: '#EFB34196'
@@ -261,6 +261,15 @@ entities:
             26: 1,10
         - node:
             id: BrickTileWhiteLineE
+            color: '#37789BFF'
+          decals:
+            149: 5,-9
+            150: 5,-8
+            151: 5,-7
+            157: 1,-7
+            158: 1,-8
+        - node:
+            id: BrickTileWhiteLineE
             color: '#52B4E996'
           decals:
             38: 5,-3
@@ -274,15 +283,6 @@ entities:
           decals:
             88: 1,-24
             89: 1,-18
-        - node:
-            id: BrickTileWhiteLineE
-            color: '#DE3A3A96'
-          decals:
-            55: 5,-9
-            56: 5,-8
-            57: 5,-7
-            61: 1,-8
-            62: 1,-7
         - node:
             id: BrickTileWhiteLineE
             color: '#EFB34196'
@@ -301,6 +301,11 @@ entities:
             73: 2,7
         - node:
             id: BrickTileWhiteLineN
+            color: '#37789BFF'
+          decals:
+            156: 4,-6
+        - node:
+            id: BrickTileWhiteLineN
             color: '#52B4E996'
           decals:
             41: 4,0
@@ -310,25 +315,20 @@ entities:
           decals:
             78: -2,7
         - node:
-            id: BrickTileWhiteLineN
-            color: '#DE3A3A96'
-          decals:
-            59: 4,-6
-        - node:
             id: BrickTileWhiteLineS
             color: '#334E6DC8'
           decals:
             0: 4,9
         - node:
             id: BrickTileWhiteLineS
+            color: '#37789BFF'
+          decals:
+            155: 4,-10
+        - node:
+            id: BrickTileWhiteLineS
             color: '#52B4E996'
           decals:
             36: 4,-4
-        - node:
-            id: BrickTileWhiteLineS
-            color: '#DE3A3A96'
-          decals:
-            58: 4,-10
         - node:
             id: BrickTileWhiteLineS
             color: '#EFB34196'
@@ -342,6 +342,13 @@ entities:
             10: -2,16
             27: 3,10
             31: 1,11
+        - node:
+            id: BrickTileWhiteLineW
+            color: '#37789BFF'
+          decals:
+            152: 3,-9
+            153: 3,-8
+            154: 3,-7
         - node:
             id: BrickTileWhiteLineW
             color: '#52B4E996'
@@ -372,13 +379,6 @@ entities:
             139: -5,-1
             140: -5,0
             141: -5,-9
-        - node:
-            id: BrickTileWhiteLineW
-            color: '#DE3A3A96'
-          decals:
-            52: 3,-7
-            53: 3,-8
-            54: 3,-9
         - node:
             id: BrickTileWhiteLineW
             color: '#EFB34196'
@@ -851,6 +851,8 @@ entities:
       parent: 1
       rot: 1.5707963267948966 rad
       pos: -1.5,8.5
+    - type: AccessReader
+      accessListsOriginal: []
 - proto: AirlockGlassShuttle
   entities:
   - uid: 2
@@ -903,6 +905,8 @@ entities:
       parent: 1
       rot: 1.5707963267948966 rad
       pos: 0.5,-15.5
+    - type: AccessReader
+      accessListsOriginal: []
 - proto: AirlockMedicalGlassLocked
   entities:
   - uid: 287
@@ -4404,28 +4408,6 @@ entities:
       - 960
     - type: AtmosPipeColor
       color: '#0335FCFF'
-  - uid: 476
-    components:
-    - type: Transform
-      parent: 1
-      rot: -1.5707963267948966 rad
-      pos: 4.5,11.5
-    - type: DeviceNetwork
-      deviceLists:
-      - 959
-    - type: AtmosPipeColor
-      color: '#0335FCFF'
-  - uid: 483
-    components:
-    - type: Transform
-      parent: 1
-      rot: 1.5707963267948966 rad
-      pos: 1.5,14.5
-    - type: DeviceNetwork
-      deviceLists:
-      - 959
-    - type: AtmosPipeColor
-      color: '#0335FCFF'
   - uid: 519
     components:
     - type: Transform
@@ -5813,6 +5795,34 @@ entities:
       pos: 5.5,13.5
     - type: Fixtures
       fixtures: {}
+- proto: SecureGasVentPump
+  entities:
+  - uid: 476
+    components:
+    - type: Transform
+      parent: 1
+      rot: -1.5707963267948966 rad
+      pos: 4.5,11.5
+    - type: AccessReader
+      accessListsOriginal:
+      - - Command
+      - - Armory
+    - type: DeviceNetwork
+      deviceLists:
+      - 959
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 483
+    components:
+    - type: Transform
+      parent: 1
+      rot: 1.5707963267948966 rad
+      pos: 1.5,14.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 959
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
 - proto: ShotGunCabinetFilled
   entities:
   - uid: 605
