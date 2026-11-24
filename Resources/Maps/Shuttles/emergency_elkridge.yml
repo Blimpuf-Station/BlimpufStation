@@ -4,7 +4,7 @@ meta:
   engineVersion: 283.1.7
   forkId: ""
   forkVersion: ""
-  time: 11/24/2026 04:37:47
+  time: 11/24/2026 04:46:40
   entityCount: 652
 maps: []
 grids:
@@ -77,6 +77,11 @@ entities:
             62: 4,10
         - node:
             id: BrickTileSteelCornerNe
+            color: '#97DBFFFF'
+          decals:
+            346: -1,10
+        - node:
+            id: BrickTileSteelCornerNe
             color: '#9FED5896'
           decals:
             110: 1,2
@@ -95,6 +100,11 @@ entities:
             color: '#334E6DC8'
           decals:
             63: 1,12
+        - node:
+            id: BrickTileSteelCornerNw
+            color: '#97DBFFFF'
+          decals:
+            345: -4,10
         - node:
             id: BrickTileSteelCornerNw
             color: '#9FED5896'
@@ -117,6 +127,11 @@ entities:
             71: 4,8
         - node:
             id: BrickTileSteelCornerSe
+            color: '#97DBFFFF'
+          decals:
+            347: -1,8
+        - node:
+            id: BrickTileSteelCornerSe
             color: '#9FED5896'
           decals:
             113: 1,-2
@@ -130,6 +145,11 @@ entities:
             color: '#334E6DC8'
           decals:
             70: 1,8
+        - node:
+            id: BrickTileSteelCornerSw
+            color: '#97DBFFFF'
+          decals:
+            348: -4,8
         - node:
             id: BrickTileSteelCornerSw
             color: '#9FED5896'
@@ -153,6 +173,11 @@ entities:
             66: 4,9
         - node:
             id: BrickTileSteelLineE
+            color: '#97DBFFFF'
+          decals:
+            344: -1,9
+        - node:
+            id: BrickTileSteelLineE
             color: '#9FED5896'
           decals:
             117: 1,1
@@ -173,6 +198,12 @@ entities:
             color: '#334E6DC8'
           decals:
             64: 2,12
+        - node:
+            id: BrickTileSteelLineN
+            color: '#97DBFFFF'
+          decals:
+            341: -2,10
+            342: -3,10
         - node:
             id: BrickTileSteelLineN
             color: '#9FED5896'
@@ -198,15 +229,15 @@ entities:
             73: 3,8
         - node:
             id: BrickTileSteelLineS
+            color: '#97DBFFFF'
+          decals:
+            349: -3,8
+            350: -2,8
+        - node:
+            id: BrickTileSteelLineS
             color: '#9FED5896'
           decals:
             115: 0,-2
-        - node:
-            id: BrickTileSteelLineS
-            color: '#DE3A3A96'
-          decals:
-            83: -3,8
-            84: -2,8
         - node:
             id: BrickTileSteelLineW
             color: '#334E6DC8'
@@ -214,6 +245,11 @@ entities:
             67: 1,11
             68: 1,10
             69: 1,9
+        - node:
+            id: BrickTileSteelLineW
+            color: '#97DBFFFF'
+          decals:
+            343: -4,9
         - node:
             id: BrickTileSteelLineW
             color: '#9FED5896'
@@ -316,10 +352,7 @@ entities:
             189: 3,3
             190: 3,6
             192: 0,4
-            193: -4,5
-            194: -2,6
             195: -2,4
-            196: -3,8
             197: -4,9
             198: -3,11
             199: -1,12
@@ -348,8 +381,6 @@ entities:
           decals:
             249: -3,10
             250: -2,12
-            251: -2,8
-            252: -3,6
             253: 0,5
             254: 2,5
             255: 4,-2
@@ -413,7 +444,6 @@ entities:
             226: -3,-1
             227: -4,2
             228: -3,3
-            229: -4,6
             230: -2,5
             231: -1,6
             232: 1,6
@@ -490,9 +520,9 @@ entities:
             147: 2,6
         - node:
             id: MiniTileInnerOverlayNE
-            color: '#79150096'
+            color: '#37789BFF'
           decals:
-            148: -4,6
+            338: -4,6
         - node:
             id: MiniTileInnerOverlayNW
             color: '#334E6DC8'
@@ -500,9 +530,9 @@ entities:
             146: 4,6
         - node:
             id: MiniTileInnerOverlayNW
-            color: '#79150096'
+            color: '#37789BFF'
           decals:
-            149: -2,6
+            339: -2,6
         - node:
             id: MiniTileInnerOverlaySE
             color: '#52B4E996'
@@ -525,9 +555,9 @@ entities:
             136: 3,6
         - node:
             id: MiniTileLineOverlayN
-            color: '#79150096'
+            color: '#37789BFF'
           decals:
-            139: -3,6
+            340: -3,6
         - node:
             id: MiniTileLineOverlayN
             color: '#D4D4D428'
@@ -557,7 +587,7 @@ entities:
             id: MiniTileSteelCornerNw
             color: '#FFFFFFFF'
           decals:
-            7: -4,6
+            334: -4,6
         - node:
             id: MiniTileSteelCornerSe
             color: '#FFFFFFFF'
@@ -610,7 +640,6 @@ entities:
             id: MiniTileSteelLineN
             color: '#FFFFFFFF'
           decals:
-            8: -2,6
             9: -1,6
             10: 0,6
             11: 1,6
@@ -621,7 +650,8 @@ entities:
             16: 1,-4
             17: 2,-4
             131: 3,6
-            138: -3,6
+            336: -2,6
+            337: -3,6
         - node:
             id: MiniTileSteelLineS
             color: '#FFFFFFFF'
@@ -655,6 +685,7 @@ entities:
             127: 3,-1
             128: 3,-2
             129: 3,-3
+            335: -4,5
         - node:
             id: MiniTileWhiteInnerSw
             color: '#EFB34196'
@@ -685,7 +716,6 @@ entities:
             52: -4,-5
             53: -4,-3
             54: -4,3
-            55: -4,5
             308: -3,7
             309: 3,7
             310: -3,-7
@@ -941,7 +971,7 @@ entities:
       devices:
       - 570
       - 451
-      - 433
+      - 248
     - type: Fixtures
       fixtures: {}
   - uid: 586
@@ -3630,16 +3660,6 @@ entities:
       - 584
     - type: AtmosPipeColor
       color: '#0055CCFF'
-  - uid: 433
-    components:
-    - type: Transform
-      parent: 1
-      pos: 3.5,9.5
-    - type: DeviceNetwork
-      deviceLists:
-      - 585
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
   - uid: 440
     components:
     - type: Transform
@@ -4161,6 +4181,18 @@ entities:
       pos: -4.5,-8.5
     - type: Fixtures
       fixtures: {}
+- proto: SecureGasVentPump
+  entities:
+  - uid: 248
+    components:
+    - type: Transform
+      parent: 1
+      pos: 3.5,9.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 585
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
 - proto: ShuttleWindow
   entities:
   - uid: 10
