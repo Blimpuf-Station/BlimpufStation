@@ -4,7 +4,7 @@ meta:
   engineVersion: 283.1.7
   forkId: ""
   forkVersion: ""
-  time: 11/24/2026 05:41:39
+  time: 11/24/2026 06:16:43
   entityCount: 1181
 maps: []
 grids:
@@ -570,6 +570,7 @@ entities:
       - 1031
       - 1039
       - 1040
+      - 1048
     - type: Fixtures
       fixtures: {}
   - uid: 647
@@ -938,6 +939,9 @@ entities:
     - type: Transform
       parent: 2
       pos: 8.5,9.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 606
   - uid: 1049
     components:
     - type: Transform
