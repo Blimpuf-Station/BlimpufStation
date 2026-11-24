@@ -57,7 +57,8 @@ public sealed class LoadCharacterCommand : IConsoleCommand
             return CompletionResult.Empty;
 
         var userData = IoCManager.Resolve<IResourceManager>().UserData;
-        var options = CompletionHelper.UserFilePath(args[0], userData)
+        var prefix = args[0].Length == 0 ? args[0] : new ResPath(args[0]).ToRootedPath().ToString();
+        var options = CompletionHelper.UserFilePath(prefix, userData)
             .Where(option => option.Flags.HasFlag(CompletionOptionFlags.PartialCompletion)
                 || option.Value.EndsWith(".yml", StringComparison.OrdinalIgnoreCase));
         return CompletionResult.FromHintOptions(options, "Character profile (.yml)");
