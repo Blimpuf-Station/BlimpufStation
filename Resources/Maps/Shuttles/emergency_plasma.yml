@@ -4,7 +4,7 @@ meta:
   engineVersion: 283.1.7
   forkId: ""
   forkVersion: ""
-  time: 11/24/2026 04:49:41
+  time: 11/24/2026 05:41:39
   entityCount: 1181
 maps: []
 grids:
@@ -39,7 +39,7 @@ entities:
       chunks:
         0,0:
           ind: 0,0
-          tiles: WgAAAAABAFgAAAAAAABYAAAAAAMAWAAAAAAAAFgAAAAAAABYAAAAAAMAggAAAAAAAAEAAAAAAQBaAAAAAAEAAQAAAAACAIIAAAAAAAB+AAAAAAMAfgAAAAABAH4AAAAAAAB+AAAAAAAAfgAAAAACAIIAAAAAAABYAAAAAAMAWAAAAAABAFgAAAAAAABYAAAAAAAAWAAAAAAAAFoAAAAAAABaAAAAAAAAWgAAAAADAFoAAAAAAgCCAAAAAAAAfgAAAAABAH4AAAAAAQB+AAAAAAIAfgAAAAAAAH4AAAAAAQCCAAAAAAAAXQAAAAADAF0AAAAAAwBYAAAAAAMAXQAAAAAAAF0AAAAAAACCAAAAAAAAWgAAAAAAAFoAAAAAAwBaAAAAAAMAggAAAAAAAH4AAAAAAwB+AAAAAAIAfgAAAAADAH4AAAAAAgB+AAAAAAIAggAAAAAAAIIAAAAAAACCAAAAAAAAWgAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAABYAAAAAAMAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAABdAAAAAAEAXQAAAAAAACAAAAAAAABdAAAAAAEAXQAAAAABAIIAAAAAAABYAAAAAAAAWAAAAAADAFgAAAAAAABYAAAAAAEAWAAAAAABAFgAAAAAAQBYAAAAAAIAggAAAAAAAFgAAAAAAQCCAAAAAAAAIAAAAAABACAAAAAAAAAgAAAAAAEAIAAAAAABACAAAAAAAgCCAAAAAAAAWAAAAAADAFgAAAAAAgBYAAAAAAAAWAAAAAADAFgAAAAAAgBYAAAAAAMAWAAAAAAAAFgAAAAAAQBYAAAAAAEAggAAAAAAAF0AAAAAAgBdAAAAAAEAXQAAAAABAF0AAAAAAABdAAAAAAAAggAAAAAAAFgAAAAAAABYAAAAAAEAWAAAAAABAFgAAAAAAABYAAAAAAIAWAAAAAADAFgAAAAAAQCCAAAAAAAAWAAAAAADAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAWAAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACBAAAAAAAAggAAAAAAAIIAAAAAAABYAAAAAAMAWAAAAAACAFgAAAAAAQBYAAAAAAEAWAAAAAABAFgAAAAAAwBYAAAAAAMAWAAAAAADAFgAAAAAAwBYAAAAAAMAWAAAAAADAIIAAAAAAACCAAAAAAAAgQAAAAAAAIIAAAAAAACCAAAAAAAAWAAAAAAAAFgAAAAAAgBYAAAAAAIAWAAAAAAAAFgAAAAAAABYAAAAAAEAWAAAAAAAAFgAAAAAAABYAAAAAAEAWAAAAAACAFgAAAAAAQCCAAAAAAAAggAAAAAAAAAAAAAAAACBAAAAAAAAggAAAAAAAFgAAAAAAwBYAAAAAAAAWAAAAAADAFgAAAAAAABYAAAAAAAAWAAAAAABAFgAAAAAAgBYAAAAAAMAWAAAAAABAFgAAAAAAwBYAAAAAAAAggAAAAAAAIEAAAAAAAAAAAAAAAAAAAAAAAAAAIIAAAAAAACCAAAAAAAAWAAAAAAAAFgAAAAAAQBYAAAAAAAAWAAAAAADAFgAAAAAAwBYAAAAAAMAWAAAAAACAFgAAAAAAABYAAAAAAEAggAAAAAAAIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+          tiles: WgAAAAABAFgAAAAAAABYAAAAAAMAWAAAAAAAAFgAAAAAAABYAAAAAAMAggAAAAAAAAEAAAAAAQBaAAAAAAEAAQAAAAACAIIAAAAAAAB+AAAAAAMAfgAAAAABAH4AAAAAAAB+AAAAAAAAfgAAAAACAIIAAAAAAABYAAAAAAMAWAAAAAABAFgAAAAAAABYAAAAAAAAWAAAAAAAAFoAAAAAAABaAAAAAAAAWgAAAAADAFoAAAAAAgCCAAAAAAAAfgAAAAABAH4AAAAAAQB+AAAAAAIAfgAAAAAAAH4AAAAAAQCCAAAAAAAAWgAAAAAAAFoAAAAAAABYAAAAAAMAWgAAAAAAAFoAAAAAAACCAAAAAAAAWgAAAAAAAFoAAAAAAwBaAAAAAAMAggAAAAAAAH4AAAAAAwB+AAAAAAIAfgAAAAADAH4AAAAAAgB+AAAAAAIAggAAAAAAAIIAAAAAAACCAAAAAAAAWgAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAABYAAAAAAMAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAABaAAAAAAAAWgAAAAAAACAAAAAAAABaAAAAAAAAWgAAAAAAAIIAAAAAAABYAAAAAAAAWAAAAAADAFgAAAAAAABYAAAAAAEAWAAAAAABAFgAAAAAAQBYAAAAAAIAggAAAAAAAFgAAAAAAQCCAAAAAAAAIAAAAAABACAAAAAAAAAgAAAAAAEAIAAAAAABACAAAAAAAgCCAAAAAAAAWAAAAAADAFgAAAAAAgBYAAAAAAAAWAAAAAADAFgAAAAAAgBYAAAAAAMAWAAAAAAAAFgAAAAAAQBYAAAAAAEAggAAAAAAAFoAAAAAAABaAAAAAAAAIAAAAAACAFoAAAAAAABaAAAAAAAAggAAAAAAAFgAAAAAAABYAAAAAAEAWAAAAAABAFgAAAAAAABYAAAAAAIAWAAAAAADAFgAAAAAAQCCAAAAAAAAWAAAAAADAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAWAAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACBAAAAAAAAggAAAAAAAIIAAAAAAABYAAAAAAMAWAAAAAACAFgAAAAAAQBYAAAAAAEAWAAAAAABAFgAAAAAAwBYAAAAAAMAWAAAAAADAFgAAAAAAwBYAAAAAAMAWAAAAAADAIIAAAAAAACCAAAAAAAAgQAAAAAAAIIAAAAAAACCAAAAAAAAWAAAAAAAAFgAAAAAAgBYAAAAAAIAWAAAAAAAAFgAAAAAAABYAAAAAAEAWAAAAAAAAFgAAAAAAABYAAAAAAEAWAAAAAACAFgAAAAAAQCCAAAAAAAAggAAAAAAAAAAAAAAAACBAAAAAAAAggAAAAAAAFgAAAAAAwBYAAAAAAAAWAAAAAADAFgAAAAAAABYAAAAAAAAWAAAAAABAFgAAAAAAgBYAAAAAAMAWAAAAAABAFgAAAAAAwBYAAAAAAAAggAAAAAAAIEAAAAAAAAAAAAAAAAAAAAAAAAAAIIAAAAAAACCAAAAAAAAWAAAAAAAAFgAAAAAAQBYAAAAAAAAWAAAAAADAFgAAAAAAwBYAAAAAAMAWAAAAAACAFgAAAAAAABYAAAAAAEAggAAAAAAAIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
           version: 7
         0,-1:
           ind: 0,-1
@@ -153,6 +153,11 @@ entities:
             23: 7,-12
         - node:
             id: MiniTileInnerOverlayNE
+            color: '#4795BEFF'
+          decals:
+            183: 1,-2
+        - node:
+            id: MiniTileInnerOverlayNE
             color: '#9FED5896'
           decals:
             76: 11,-2
@@ -162,10 +167,10 @@ entities:
           decals:
             20: 1,-10
         - node:
-            id: MiniTileInnerOverlayNE
-            color: '#DE3A3A96'
+            id: MiniTileInnerOverlayNW
+            color: '#4795BEFF'
           decals:
-            70: 1,-2
+            182: 5,-2
         - node:
             id: MiniTileInnerOverlayNW
             color: '#9FED5896'
@@ -177,10 +182,10 @@ entities:
           decals:
             17: 5,-10
         - node:
-            id: MiniTileInnerOverlayNW
-            color: '#DE3A3A96'
+            id: MiniTileInnerOverlaySE
+            color: '#37789BFF'
           decals:
-            69: 5,-2
+            188: 1,0
         - node:
             id: MiniTileInnerOverlaySE
             color: '#52B4E996'
@@ -193,14 +198,14 @@ entities:
             19: 1,-8
         - node:
             id: MiniTileInnerOverlaySE
-            color: '#DE3A3A96'
-          decals:
-            71: 1,0
-        - node:
-            id: MiniTileInnerOverlaySE
             color: '#EFB34196'
           decals:
             24: 9,-11
+        - node:
+            id: MiniTileInnerOverlaySW
+            color: '#37789BFF'
+          decals:
+            189: 5,0
         - node:
             id: MiniTileInnerOverlaySW
             color: '#52B4E996'
@@ -211,11 +216,6 @@ entities:
             color: '#A4610696'
           decals:
             18: 5,-8
-        - node:
-            id: MiniTileInnerOverlaySW
-            color: '#DE3A3A96'
-          decals:
-            72: 5,0
         - node:
             id: MiniTileInnerOverlaySW
             color: '#EFB34196'
@@ -243,6 +243,13 @@ entities:
             134: 12,6
         - node:
             id: MiniTileLineOverlayN
+            color: '#4795BEFF'
+          decals:
+            180: 3,-2
+            181: 4,-2
+            184: 2,-2
+        - node:
+            id: MiniTileLineOverlayN
             color: '#52B4E996'
           decals:
             81: 12,-10
@@ -263,13 +270,6 @@ entities:
             12: 3,-10
             13: 4,-10
         - node:
-            id: MiniTileLineOverlayN
-            color: '#DE3A3A96'
-          decals:
-            63: 2,-2
-            64: 3,-2
-            65: 4,-2
-        - node:
             id: MiniTileLineOverlayS
             color: '#334E6DC8'
           decals:
@@ -288,6 +288,13 @@ entities:
             131: 12,4
         - node:
             id: MiniTileLineOverlayS
+            color: '#37789BFF'
+          decals:
+            185: 2,0
+            186: 3,0
+            190: 4,0
+        - node:
+            id: MiniTileLineOverlayS
             color: '#52B4E996'
           decals:
             78: 12,-8
@@ -304,13 +311,6 @@ entities:
             15: 3,-8
             16: 4,-8
         - node:
-            id: MiniTileLineOverlayS
-            color: '#DE3A3A96'
-          decals:
-            66: 2,0
-            67: 3,0
-            68: 4,0
-        - node:
             id: MiniTileLineOverlayW
             color: '#334E6DC8'
           decals:
@@ -322,11 +322,44 @@ entities:
             100: 11,-11
         - node:
             id: MiniTileOverlay
+            color: '#37789BFF'
+          decals:
+            151: 3,8
+            152: 3,9
+            153: 3,10
+            167: 2,4
+            168: 1,4
+            169: 1,2
+            170: 2,2
+            171: 4,2
+            172: 5,2
+            173: 5,4
+            174: 4,4
+            175: 5,6
+            176: 4,6
+            177: 2,6
+            178: 1,6
+        - node:
+            id: MiniTileOverlay
+            color: '#4795BEFF'
+          decals:
+            148: 3,8
+            149: 3,9
+            150: 3,10
+        - node:
+            id: MiniTileOverlay
             color: '#52B4E996'
           decals:
             112: 10,11
             113: 11,11
             114: 12,11
+        - node:
+            id: MiniTileOverlay
+            color: '#97DBFFFF'
+          decals:
+            145: 3,8
+            146: 3,9
+            147: 3,10
         - node:
             id: MiniTileOverlay
             color: '#D381C996'
@@ -340,7 +373,6 @@ entities:
           decals:
             115: 3,10
             116: 3,9
-            117: 3,8
         - node:
             id: MiniTileOverlay
             color: '#EFB34196'
@@ -519,7 +551,7 @@ entities:
       pos: 6.5,5.5
     - type: DeviceList
       devices:
-      - 1010
+      - 1023
       - 1011
       - 1049
     - type: Fixtures
@@ -532,6 +564,12 @@ entities:
       parent: 2
       rot: 3.141592653589793 rad
       pos: 5.5,7.5
+    - type: DeviceList
+      devices:
+      - 820
+      - 1031
+      - 1039
+      - 1040
     - type: Fixtures
       fixtures: {}
   - uid: 647
@@ -884,6 +922,8 @@ entities:
       parent: 2
       rot: -1.5707963267948966 rad
       pos: 3.5,3.5
+    - type: AccessReader
+      accessListsOriginal: []
 - proto: AirlockServiceLocked
   entities:
   - uid: 250
@@ -2851,11 +2891,6 @@ entities:
     - type: Transform
       parent: 2
       pos: 4.5,6.5
-  - uid: 820
-    components:
-    - type: Transform
-      parent: 2
-      pos: 2.5,6.5
   - uid: 821
     components:
     - type: Transform
@@ -2885,6 +2920,14 @@ entities:
       parent: 2
       rot: 3.141592653589793 rad
       pos: 5.5,4.5
+  - uid: 1032
+    components:
+    - type: Transform
+      parent: 2
+      pos: 2.5,6.5
+      anchored: False
+    - type: Physics
+      bodyType: Dynamic
   - uid: 1152
     components:
     - type: Transform
@@ -5357,51 +5400,6 @@ entities:
       - 652
     - type: AtmosPipeColor
       color: '#0055CCFF'
-  - uid: 1010
-    components:
-    - type: Transform
-      parent: 2
-      rot: -1.5707963267948966 rad
-      pos: 8.5,5.5
-    - type: DeviceNetwork
-      deviceLists:
-      - 218
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 1023
-    components:
-    - type: Transform
-      parent: 2
-      rot: -1.5707963267948966 rad
-      pos: 15.5,5.5
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 1031
-    components:
-    - type: Transform
-      parent: 2
-      pos: 7.5,11.5
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 1032
-    components:
-    - type: Transform
-      parent: 2
-      rot: -1.5707963267948966 rad
-      pos: 12.5,10.5
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
-  - uid: 1053
-    components:
-    - type: Transform
-      parent: 2
-      rot: -1.5707963267948966 rad
-      pos: 5.5,5.5
-    - type: DeviceNetwork
-      deviceLists:
-      - 652
-    - type: AtmosPipeColor
-      color: '#0055CCFF'
 - proto: GasVentScrubber
   entities:
   - uid: 146
@@ -5540,6 +5538,9 @@ entities:
     - type: Transform
       parent: 2
       pos: 9.5,11.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 606
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 1040
@@ -5547,6 +5548,9 @@ entities:
     - type: Transform
       parent: 2
       pos: 4.5,10.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 606
     - type: AtmosPipeColor
       color: '#990000FF'
   - uid: 1052
@@ -6310,6 +6314,67 @@ entities:
       pos: 6.5,-12.5
     - type: Fixtures
       fixtures: {}
+- proto: SecureGasVentPump
+  entities:
+  - uid: 820
+    components:
+    - type: Transform
+      parent: 2
+      pos: 7.5,11.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 606
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 1010
+    components:
+    - type: Transform
+      parent: 2
+      rot: -1.5707963267948966 rad
+      pos: 15.5,5.5
+    - type: AccessReader
+      accessListsOriginal:
+      - - Command
+      - - Armory
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 1023
+    components:
+    - type: Transform
+      parent: 2
+      rot: -1.5707963267948966 rad
+      pos: 8.5,5.5
+    - type: AccessReader
+      accessListsOriginal:
+      - - Command
+      - - Armory
+    - type: DeviceNetwork
+      deviceLists:
+      - 218
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 1031
+    components:
+    - type: Transform
+      parent: 2
+      rot: -1.5707963267948966 rad
+      pos: 12.5,10.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 606
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
+  - uid: 1053
+    components:
+    - type: Transform
+      parent: 2
+      rot: -1.5707963267948966 rad
+      pos: 5.5,5.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 652
+    - type: AtmosPipeColor
+      color: '#0055CCFF'
 - proto: ShuttleWindow
   entities:
   - uid: 30
