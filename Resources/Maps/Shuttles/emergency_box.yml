@@ -4,7 +4,7 @@ meta:
   engineVersion: 283.1.7
   forkId: ""
   forkVersion: ""
-  time: 11/24/2026 04:17:30
+  time: 11/24/2026 04:18:21
   entityCount: 732
 maps: []
 grids:
@@ -158,6 +158,22 @@ entities:
             80: 3,3
         - node:
             id: CheckerNWSE
+            color: '#37789BFF'
+          decals:
+            224: 1,9
+            226: 2,9
+            227: 3,9
+            228: 3,10
+            229: 2,10
+            230: 1,10
+            231: 1,11
+            232: 2,11
+            233: 3,11
+            234: 1,12
+            235: 2,12
+            236: 3,12
+        - node:
+            id: CheckerNWSE
             color: '#52B4E996'
           decals:
             55: 7,-3
@@ -177,18 +193,6 @@ entities:
             id: CheckerNWSE
             color: '#DE3A3A96'
           decals:
-            208: 3,9
-            209: 2,9
-            210: 1,9
-            211: 1,10
-            212: 2,10
-            213: 3,10
-            214: 3,11
-            215: 2,11
-            216: 1,11
-            217: 1,12
-            218: 2,12
-            219: 3,12
             220: 2,8
         - node:
             id: Delivery
@@ -270,17 +274,17 @@ entities:
             147: 16,9
         - node:
             id: HalfTileOverlayGreyscale
+            color: '#37789BFF'
+          decals:
+            222: 1,7
+            223: 3,7
+        - node:
+            id: HalfTileOverlayGreyscale
             color: '#D4D4D428'
           decals:
             69: 7,7
             71: 14,7
             192: 2,7
-        - node:
-            id: HalfTileOverlayGreyscale
-            color: '#DE3A3A96'
-          decals:
-            189: 1,7
-            190: 3,7
         - node:
             id: HalfTileOverlayGreyscale180
             color: '#52B4E996'
@@ -2606,6 +2610,10 @@ entities:
     - type: Transform
       parent: 1
       pos: 16.5,5.5
+    - type: AccessReader
+      accessListsOriginal:
+      - - Engineering
+      - - Command
   - uid: 640
     components:
     - type: Transform
@@ -3037,12 +3045,6 @@ entities:
       parent: 1
       rot: 3.141592653589793 rad
       pos: 14.5,4.5
-  - uid: 501
-    components:
-    - type: Transform
-      parent: 1
-      rot: 3.141592653589793 rad
-      pos: 18.5,4.5
   - uid: 502
     components:
     - type: Transform
@@ -3623,6 +3625,14 @@ entities:
       pos: 9.5,12.5
     - type: Fixtures
       fixtures: {}
+- proto: SecureGasVentPump
+  entities:
+  - uid: 501
+    components:
+    - type: Transform
+      parent: 1
+      rot: 3.141592653589793 rad
+      pos: 18.5,4.5
 - proto: ShotGunCabinetFilled
   entities:
   - uid: 614
