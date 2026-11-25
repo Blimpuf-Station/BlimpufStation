@@ -1,0 +1,27 @@
+- type: entity
+  name: DEFER TO SOP rubber stamp
+  parent: [ BaseCentcommContraband, RubberStampBase ] # Blimpuf
+  id: RubberStampDeferToSOP
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-defersop
+    stampedColor: "#750851"
+    stampState: "paper_stamp-ntrep"
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/stamps.rsi
+    state: stamp-ntrep
+
+- type: entity
+  name: DEFER TO SPACE LAW rubber stamp
+  parent: [ BaseCentcommContraband, RubberStampBase ] # Blimpuf
+  id: RubberStampDeferToSpaceLaw
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-deferspacelaw
+    stampedColor: "#36454F"
+    stampState: "paper_stamp-ntrep"
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/stamps.rsi
+    state: stamp-ntrep
