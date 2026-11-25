@@ -6,7 +6,7 @@
   components:
   - type: AccessReader
     access: [["CentralCommand"]]
-  - type: Lock
+  - type: Lock  # Does nothing since Injection does not care about Locks
     mindShieldLock: true
     unlockOnClick: false
     useAccess: true
@@ -92,6 +92,12 @@
     sprite: _Blimpuf/Objects/Weapons/Guns/Cannons/syringe_gun.rsi
     layers:
     - state: syringe_gun
+  - type: Clothing
+    sprite: _Blimpuf/Objects/Weapons/Guns/Cannons/syringe_gun.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
   - type: Storage
     maxItemSize: Normal
     grid:

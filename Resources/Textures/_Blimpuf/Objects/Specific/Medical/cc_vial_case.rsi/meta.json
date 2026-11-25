@@ -26,6 +26,12 @@
       "name": "vial6"
     },
     {
+      "name": "unlocked"
+    },
+    {
+      "name": "locked"
+    },
+    {
       "name": "open"
     },
     {

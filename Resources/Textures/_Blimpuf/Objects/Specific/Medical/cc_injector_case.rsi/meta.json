@@ -1,0 +1,38 @@
+﻿{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "State based copyright",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "injectorpack",
+      "copyright": "Sprited by SevenShades, recolored into medical by wonderfulnewworld (GitHub), CC recolored by ItsMaitake (Blimpuf Station)",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "name": "locked",
+      "copyright": "By ItsMaitake (Blimpuf Station)",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "name": "unlocked",
+      "copyright": "By ItsMaitake (Blimpuf Station)",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4,
+      "copyright": "By ItsMaitake (Blimpuf Station)",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4,
+      "copyright": "By ItsMaitake (Blimpuf Station)",
+      "license": "CC-BY-SA-4.0"
+    }
+  ]
+}

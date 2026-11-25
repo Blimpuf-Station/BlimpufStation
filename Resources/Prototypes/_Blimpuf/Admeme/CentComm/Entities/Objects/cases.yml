@@ -21,12 +21,13 @@
   - type: Sprite
     sprite: _Blimpuf/Objects/Specific/Medical/cc_vial_case.rsi
     layers:
-    - state: locked #Not added yet
+    - state: locked
       map: [ "enum.LockVisualLayers.Lock" ]
       shader: unshaded
-    - state: unlocked #Not added yet
+    - state: unlocked
       map: [ light ]
       shader: unshaded
+      visible: false
     - state: closed
       map: ["closeLayer"]
     - state: open
@@ -100,10 +101,10 @@
     sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
     layers:
     - state: bottlecase
-    - state: locked #Not added yet
+    - state: locked
       map: [ "enum.LockVisualLayers.Lock" ]
       shader: unshaded
-    - state: unlocked #Not added yet
+    - state: unlocked
       map: [ light ]
       shader: unshaded
     - state: bottle1
@@ -137,7 +138,7 @@
           True: { state: bottlecase-open }
           False: { state: bottlecase-closed }
         light:
-          True: { visible: true }
+          True: { visible: false }
           False: { visible: false }
   - type: Item
     sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
@@ -152,7 +153,7 @@
   suffix: CentComm
   description: A pouch filled with some autoinjectors.
   components:
-  - type: LockVisuals # Still need to add those
+  - type: LockVisuals
   - type: LockedStorage
   - type: AccessReader
     access: [["CentralCommand"]]
@@ -172,20 +173,28 @@
        tags:
         - Medipen
   - type: Sprite
-    sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
+    sprite: _Blimpuf/Objects/Specific/Medical/cc_injector_case.rsi
     layers:
     - state: injectorpack
-    - state: locked #Not added yet
+    - state: locked
       map: [ "enum.LockVisualLayers.Lock" ]
       shader: unshaded
-    - state: unlocked #Not added yet
+    - state: unlocked
       map: [ light ]
       shader: unshaded
+      visible: false
+  - type: GenericVisualizer
+    visuals:
+      enum.StorageVisuals.Open:
+        light:
+          True: { visible: true }
+          False: { visible: false }
   - type: Item
-    sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
+    sprite: _Blimpuf/Objects/Specific/Medical/cc_injector_case.rsi
     size: Small
     shape:
     - 0,0,1,1
+  - type: Appearance
 
 - type: entity
   id: SurgicalKitCC
@@ -235,11 +244,11 @@
         children:
         - id: ChemistryBottleOmnizine
         - id: ChemistryBottleOmnizine
-        - id: ChemistryBottleAmbuzolPlus
-        - id: ChemistryBottleTranexamicAcid
-        - id: ChemistryBottleDexalinPlus
+        - id: ChemistryBottleOmnizine
+        - id: ChemistryBottleOmnizine
+        - id: ChemistryBottleAmbuzolPlus  # For Genetic
         - id: ChemistryBottleAmoxla
-        - id: ChemistryBottleSaline
+        - id: ChemistryBottleDexalinPlus
         - id: ChemistryBottleSaline
 
 - type: entity

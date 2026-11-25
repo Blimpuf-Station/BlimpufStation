@@ -17,6 +17,14 @@
     {
       "name": "inhand-left",
       "directions": 4
+    },
+    {
+      "name": "equipped-SUITSTORAGE",
+      "directions": 4
+    },
+    {
+      "name": "equipped-BACKPACK",
+      "directions": 4
     }
   ]
 }
