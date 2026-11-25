@@ -63,6 +63,15 @@ public sealed class GridPowerTests : GameTest
         new("/Maps/_Starlight/Shuttles/Cargo/cargo_syndicate.yml"),
 
         // Evac
+        // Blimpuf- Readd Wizden shuttles to tests (after SL removed them) as we've modified them
+        new("/Maps/_Blimpuf/Shuttles/Evac/emergency_accordia.yml"),
+        new("/Maps/_Blimpuf/Shuttles/Evac/emergency.yml"),
+        new("/Maps/_Blimpuf/Shuttles/Evac/emergency_box.yml"),
+        new("/Maps/_Blimpuf/Shuttles/Evac/emergency_crimson.yml"),
+        new("/Maps/_Blimpuf/Shuttles/Evac/emergency_elkridge.yml"),
+        new("/Maps/_Blimpuf/Shuttles/Evac/emergency_plasma.yml"),
+        new("/Maps/_Blimpuf/Shuttles/Evac/emergency_wode.yml"),
+
         new("/Maps/_Blimpuf/Shuttles/Evac/emergency_cluster.yml"),
         new("/Maps/_Blimpuf/Shuttles/Evac/emergency_delta.yml"),
         new("/Maps/_Blimpuf/Shuttles/Evac/emergency_hotel.yml"),

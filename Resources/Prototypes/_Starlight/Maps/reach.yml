@@ -14,7 +14,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'RT'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/emergency.yml
+          emergencyShuttlePath: /Maps/_Blimpuf/Shuttles/Evac/emergency.yml
         - type: StationJobs
           availableJobs:
             #service

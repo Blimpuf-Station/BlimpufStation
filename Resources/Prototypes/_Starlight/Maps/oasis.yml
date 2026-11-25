@@ -14,7 +14,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'B'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/emergency_accordia.yml
+          emergencyShuttlePath: /Maps/_Blimpuf/Shuttles/Evac/emergency_accordia.yml
         - type: StationJobs
           availableJobs:
             #service

@@ -14,7 +14,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'DS'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/emergency_elkridge.yml
+          emergencyShuttlePath: /Maps/_Blimpuf/Shuttles/Evac/emergency_elkridge.yml
         - type: StationCargoShuttle
           path: /Maps/Shuttles/cargo_elkridge.yml
         - type: StationJobs
