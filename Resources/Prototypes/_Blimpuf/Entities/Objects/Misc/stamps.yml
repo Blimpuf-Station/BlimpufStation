@@ -7,10 +7,10 @@
   - type: Stamp
     stampedName: stamp-component-stamped-name-defersop
     stampedColor: "#750851"
-    stampState: "paper_stamp-ntrep"
+    stampState: "paper_stamp-csop"
   - type: Sprite
-    sprite: _Starlight/Objects/Misc/stamps.rsi
-    state: stamp-ntrep
+    sprite: _Blimpuf/Objects/Misc/stamps.rsi
+    state: stamp-sop
 
 - type: entity
   name: DEFER TO SPACE LAW rubber stamp
@@ -21,7 +21,7 @@
   - type: Stamp
     stampedName: stamp-component-stamped-name-deferspacelaw
     stampedColor: "#36454F"
-    stampState: "paper_stamp-ntrep"
+    stampState: "paper_stamp-greytide"
   - type: Sprite
-    sprite: _Starlight/Objects/Misc/stamps.rsi
-    state: stamp-ntrep
+    sprite: _Blimpuf/Objects/Misc/stamps.rsi
+    state: stamp-spacelaw

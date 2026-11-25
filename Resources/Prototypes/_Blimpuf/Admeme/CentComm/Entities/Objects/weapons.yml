@@ -89,11 +89,11 @@
     showLockVerbs: true
     breakOnAccessBreaker: false
   - type: Sprite
-    sprite: _Blimpuf/Objects/Weapons/Guns/Cannons/syringe_gun.rsi
+    sprite: _Blimpuf/Admeme/CentComm/syringe_gun.rsi
     layers:
     - state: syringe_gun
   - type: Clothing
-    sprite: _Blimpuf/Objects/Weapons/Guns/Cannons/syringe_gun.rsi
+    sprite: _Blimpuf/Admeme/CentComm/syringe_gun.rsi
     quickEquip: false
     slots:
     - Back

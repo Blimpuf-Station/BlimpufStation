@@ -19,7 +19,7 @@
     showLockVerbs: true
     breakOnAccessBreaker: false
   - type: Sprite
-    sprite: _Blimpuf/Objects/Specific/Medical/cc_vial_case.rsi
+    sprite: _Blimpuf/Admeme/CentComm/cc_vial_case.rsi
     layers:
     - state: locked
       map: [ "enum.LockVisualLayers.Lock" ]
@@ -54,7 +54,7 @@
     grid:
     - 0,0,2,1
   - type: Item
-    sprite: _Blimpuf/Objects/Specific/Medical/cc_vial_case.rsi
+    sprite: _Blimpuf/Admeme/CentComm/cc_vial_case.rsi
     size: Small
     shape:
     - 0,0,1,1
@@ -98,7 +98,7 @@
     showLockVerbs: true
     breakOnAccessBreaker: false
   - type: Sprite
-    sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
+    sprite: _Blimpuf/Admeme/CentComm/cc_cases.rsi
     layers:
     - state: bottlecase
     - state: locked
@@ -141,7 +141,7 @@
           True: { visible: false }
           False: { visible: false }
   - type: Item
-    sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
+    sprite: _Blimpuf/Admeme/CentComm/cc_cases.rsi
     size: Large
     shape:
     - 0,0,3,1
@@ -173,7 +173,7 @@
        tags:
         - Medipen
   - type: Sprite
-    sprite: _Blimpuf/Objects/Specific/Medical/cc_injector_case.rsi
+    sprite: _Blimpuf/Admeme/CentComm/cc_injector_case.rsi
     layers:
     - state: injectorpack
     - state: locked
@@ -190,7 +190,7 @@
           True: { visible: true }
           False: { visible: false }
   - type: Item
-    sprite: _Blimpuf/Objects/Specific/Medical/cc_injector_case.rsi
+    sprite: _Blimpuf/Admeme/CentComm/cc_injector_case.rsi
     size: Small
     shape:
     - 0,0,1,1
@@ -204,13 +204,13 @@
   description: A compact kit of surgical tools.
   components:
   - type: Sprite
-    sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
+    sprite: _Blimpuf/Admeme/CentComm/cc_cases.rsi
     state: surgerykit
   - type: Item
     size: Large
     shape:
     - 0,0,2,1
-    sprite: _Blimpuf/Objects/Specific/Medical/cc_cases.rsi
+    sprite: _Blimpuf/Admeme/CentComm/cc_cases.rsi
 
 # ----- Filled Cases -----
 
