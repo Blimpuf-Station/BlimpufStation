@@ -6,16 +6,17 @@
   playTimeTracker: JobBlueShield
   requirements:
   - !type:DepartmentTimeRequirement
+    department: Command
+    time: 3h
+  - !type:DepartmentTimeRequirement
     department: Security
     time: 10h
   - !type:DepartmentTimeRequirement
     department: Representatives
-    time: 5h
+    time: 8h
   - !type:RoleTimeRequirement
     role: JobBrigmedic
     time: 3h
-  - !type:RolesRequirement
-    proto: CCEReq
   - !type:TraitsRequirement
     traits:
       - Iterator

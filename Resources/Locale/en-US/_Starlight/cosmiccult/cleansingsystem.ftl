@@ -1,10 +1,3 @@
-cleanse-deconvert-attempt-begin = {CAPITALIZE(THE($target))} holds a rosary out towards you!
-cleanse-deconvert-attempt-begin-user = You attempt to cleanse {CAPITALIZE(THE($target))} of otherworldly influences!
-cleanse-deconvert-attempt-success = You cleanse {CAPITALIZE(THE($target))} in a cascade of holy light!
-cleanse-deconvert-attempt-success-empowered = You cleanse {CAPITALIZE(THE($target))}, but a pulse of malign energy bursts forth!
-cleanse-deconvert-attempt-notcorrupted = {CAPITALIZE(THE($target))} wasn't under the influence of anything.
-cleanse-deconvert-attempt-rebound = Noospheric energies lash out!
-
 cosmic-oubliette-random-horror = {$COUNT ->
     [1] You feel as if your head is being torn apart.
     [2] You feel as if your eyes are being stretched too far.

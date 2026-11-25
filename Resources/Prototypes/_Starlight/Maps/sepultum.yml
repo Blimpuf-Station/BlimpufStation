@@ -14,7 +14,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'MD'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/_Starlight/Shuttles/emergency_starboard.yml
+          emergencyShuttlePath: /Maps/_Blimpuf/Shuttles/Evac/emergency_starboard.yml # Blimpuf
         - type: StationJobs
           availableJobs:
             #service

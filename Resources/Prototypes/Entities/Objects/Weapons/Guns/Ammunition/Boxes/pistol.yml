@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: BaseItem
+  parent: [BaseItem, BaseSecurityContraband, BaseContrabandTier3] # Blimpuf
   id: BaseMagazineBoxPistol
   name: ammunition box (.35 auto)
   components:
@@ -26,7 +26,7 @@
 
 # Boxes
 - type: entity
-  parent: BaseMagazineBoxPistol
+  parent: [BaseMagazineBoxPistol, BaseSalvageContraband] # Blimpuf
   id: MagazineBoxPistolSP
   name: ammunition box (.35 auto SP)
   components:
@@ -55,7 +55,7 @@
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
-  parent: BaseMagazineBoxPistol
+  parent: [BaseContrabandTier1, BaseMagazineBoxPistol] # Blimpuf Practice is Tier 1
   id: MagazineBoxPistolPractice
   name: ammunition box (.35 auto practice)
   description: A cardboard box of .35 auto rounds. Intended to hold harmless practice ammunition.

@@ -330,6 +330,9 @@ namespace Content.Shared.Examine
         /// </summary>
         public EntityUid Examined { get; }
 
+        // Blimpuf - share one pronoun choice between the species and hands descriptions.
+        public bool? UseSecondaryPronouns;
+
         // Starlight begin
         private readonly List<(LocId LocId, int Priority, (string, object)[] ExtraArgs)> _nameModifiers = [];
         public readonly string BaseName;

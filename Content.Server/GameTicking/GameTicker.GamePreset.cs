@@ -62,16 +62,27 @@ public sealed partial class GameTicker
 
         if (_cfg.GetCVar(CCVars.GameLobbyFallbackEnabled))
         {
-            var fallbackPresets = _cfg.GetCVar(CCVars.GameLobbyFallbackPreset).Split(",");
+            // Starlight - start
+            var fallbackPresets = _cfg.GetCVar(CCVars.GameLobbyFallbackPreset)
+                .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+            // Starlight - end
             var startFailed = true;
 
             _sawmill.Info($"Fallback - Failed to start round, attempting to start fallback presets.");
             foreach (var preset in fallbackPresets)
             {
+                // Starlight - start
+                if (!TryFindGamePreset(preset, out var fallbackPreset))
+                {
+                    _sawmill.Warning($"Fallback - Unknown preset '{preset}', skipping.");
+                    continue;
+                }
+                // Starlight - end
+
                 _sawmill.Info($"Fallback - Clearing up gamerules");
                 ClearGameRules();
                 _sawmill.Info($"Fallback - Attempting to start '{preset}'");
-                SetGamePreset(preset, resetDelay: 1);
+                SetGamePreset(fallbackPreset, resetDelay: 1); // Starlight
                 AddGamePresetRules();
                 StartGamePresetRules();
 
@@ -83,7 +94,7 @@ public sealed partial class GameTicker
                     _chatManager.SendAdminAnnouncement(
                         Loc.GetString("game-ticker-start-round-cannot-start-game-mode-fallback",
                             ("failedGameMode", presetTitle),
-                            ("fallbackMode", Loc.GetString(preset))));
+                            ("fallbackMode", Loc.GetString(fallbackPreset.ModeTitle)))); // Starlight
                     RefreshLateJoinAllowed();
                     startFailed = false;
                     break;

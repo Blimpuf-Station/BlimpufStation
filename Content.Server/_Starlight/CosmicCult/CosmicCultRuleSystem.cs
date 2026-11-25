@@ -4,7 +4,6 @@ using Content.Server.Administration.Logs;
 using Content.Server.Antag;
 using Content.Server.Atmos.Components;
 using Content.Server.Audio;
-using Content.Server.Bible.Components;
 using Content.Server.Chat.Systems;
 using Content.Server.EUI;
 using Content.Server.GameTicking.Rules;
@@ -245,7 +244,7 @@ public sealed partial class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRule
             if (TryComp<VisibilityComponent>(component.MonumentInGame, out var visComp))
                 _visibility.SetLayer((component.MonumentInGame, visComp), 1);
 
-            component.MonumentSlowZone = Spawn("MonumentSlowZone", Transform(component.MonumentInGame).Coordinates); // spawn The Monument's slowing fixture entity that supresses non-cult / non-mindshielded / non-chaplain crew.
+            component.MonumentSlowZone = Spawn("MonumentSlowZone", Transform(component.MonumentInGame).Coordinates); // spawn The Monument's slowing fixture entity that supresses non-cult / non-mindshielded crew.
             MonumentSystem.SetCanTierUp(component.MonumentInGame, true);
             UpdateCultData(component.MonumentInGame); //instantly go up a tier if they manage it.
             _ui.SetUiState(component.MonumentInGame.Owner, MonumentKey.Key, new MonumentBuiState(component.MonumentInGame.Comp)); //not sure if this is needed but I'll be safe
@@ -825,8 +824,6 @@ public sealed partial class CosmicCultRuleSystem : GameRuleSystem<CosmicCultRule
         _mind.TryAddObjective(mindId, mind, "CosmicEntropyObjective");
 
         _euiMan.OpenEui(new CosmicConvertedEui(), session);
-
-        RemComp<BibleUserComponent>(uid);
 
         cult.Comp.TotalCult++;
         cult.Comp.Cultists.Add(uid);

@@ -105,10 +105,15 @@ public sealed partial class SSDIndicatorSystem : EntitySystem
 
     #region Starlight
 
-    // Starlight-start
+    // Blimpuf start
     // /ssd uses a doAfter. After completion, apply SSD with immediate sleep timing.
-    private void OnSSDTry(EntityUid uid, SSDIndicatorComponent component, SSDTryDoAfterEvent args) => SSD(uid, component, sleepDelayOverride: TimeSpan.Zero);
-    // Starlight-end
+    private void OnSSDTry(EntityUid uid, SSDIndicatorComponent component, SSDTryDoAfterEvent args) // Starlight
+    {
+        SSD(uid, component, sleepDelayOverride: TimeSpan.Zero);
+        component.SsdStartTime += TimeSpan.FromMinutes(10);
+        Dirty(uid, component);
+    }
+    // Blimpuf end
 
     /// <summary>
     /// Attempts to set the entity as SSD.
@@ -140,6 +145,7 @@ public sealed partial class SSDIndicatorSystem : EntitySystem
     private void SSD(EntityUid uid, SSDIndicatorComponent component, TimeSpan? sleepDelayOverride = null)
     {
         component.IsSSD = true;
+        component.SsdStartTime = _timing.CurTime; // Blimpuf
 
         if (_icSsdSleep)
         {
@@ -165,6 +171,7 @@ public sealed partial class SSDIndicatorSystem : EntitySystem
             return false;
 
         comp.IsSSD = false;
+        comp.SsdStartTime = null; // Blimpuf
 
         if (_icSsdSleep)
         {

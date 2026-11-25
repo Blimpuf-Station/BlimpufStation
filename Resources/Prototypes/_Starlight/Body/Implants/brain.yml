@@ -72,7 +72,7 @@
 - type: entity
   id: BrainImplantNexus
   name: Nexus uplink
-  description: A weird piece of Avali tech... Gives you access to the Nexus!
+  description: A weird piece of Resomi tech... Gives you access to the Nexus! # Blimpuf- no Avali
   parent: BaseEntityBrainImplant
   components:
   - type: Sprite

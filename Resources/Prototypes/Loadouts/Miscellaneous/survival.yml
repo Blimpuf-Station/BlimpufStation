@@ -39,6 +39,7 @@
     - Lagomorph # Starlight
     - NeoLagomorph # Starlight
     - Neocyte # Far Horizons
+    - Ovinia # macro
 
 
 
@@ -56,6 +57,12 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: OxygenBreather
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Dipsomania
   storage:
     back:
     - BoxSurvival
@@ -75,6 +82,12 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: OxygenBreather
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Dipsomania
   storage:
     back:
     - BoxHug
@@ -99,6 +112,7 @@
     - Human
     - Reptilian
     - Vulpkanin
+    - Ovinia # macro
 
 - type: loadoutEffectGroup
   id: OxygenBreatherMimeMoth
@@ -112,6 +126,12 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: OxygenBreatherMime
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Dipsomania
   storage:
     back:
     - BoxMime
@@ -140,6 +160,12 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: OxygenBreather
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Dipsomania
   storage:
     back:
     - BoxSurvivalEngineering
@@ -159,6 +185,12 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: OxygenBreather
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Dipsomania
   storage:
     back:
     - BoxSurvivalMedical
@@ -178,6 +210,12 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: OxygenBreather
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:TraitsRequirement
+      inverted: true
+      traits:
+      - Dipsomania
   storage:
     back:
     - BoxSurvivalSecurity

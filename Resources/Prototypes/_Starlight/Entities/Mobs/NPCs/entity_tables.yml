@@ -49,12 +49,6 @@
     # minor aggressive mobs
     - !type:GroupSelector
       children:
-      - !type:AllSelector
-        children:
-        - id: MobDinosaurCompy
-        - id: MobDinosaurCompy
-        - id: MobDinosaurCompy
-        - id: MobDinosaurCompy
       - id: MobGorilla
       # Hostile vent critters
       - id: MobAdultSlimesBlueAngry

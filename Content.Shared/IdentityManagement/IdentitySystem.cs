@@ -1,4 +1,5 @@
 using Content.Shared.Access.Systems;
+using Content.Shared._Blimpuf.IdentityManagement; // Blimpuf
 using Content.Shared.Administration.Logs;
 using Content.Shared.Clothing;
 using Content.Shared.CriminalRecords.Systems;
@@ -163,6 +164,20 @@ public sealed partial class IdentitySystem : EntitySystem
 
             Dirty(ident, identityGrammar);
         }
+
+        // Blimpuf start
+        if (TryComp<HumanoidAppearanceComponent>(ent, out var humanoid)
+            && humanoid.SecondaryGender is { } secondaryGender)
+        {
+            var pronouns = EnsureComp<BlimpufIdentityPronounsComponent>(ident);
+            pronouns.SecondaryGender = secondaryGender;
+            Dirty(ident, pronouns);
+        }
+        else
+        {
+            RemComp<BlimpufIdentityPronounsComponent>(ident);
+        }
+        // Blimpuf end
 
         if (name == Name(ident))
             return;

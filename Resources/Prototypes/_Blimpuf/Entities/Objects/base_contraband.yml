@@ -3,14 +3,6 @@
 
 # General classification bases for items that do not use departmental authorization.
 - type: entity
-  id: BaseContrabandTier4
-  abstract: true
-  components:
-  - type: ScanDetectable
-  - type: Contraband
-    tier: Tier4
-
-- type: entity
   id: BaseXenoborgContraband
   abstract: true
   components:
@@ -38,6 +30,13 @@
     contrabandType: Syndicate
 
 - type: entity
+  id: BaseRestrictedContraband
+  abstract: true
+  components:
+  - type: Contraband
+    # Use the component's Tier1 default so authorization bases do not override an inherited tier.
+
+- type: entity
   id: BaseMinorContraband
   abstract: true
   components:
@@ -55,6 +54,13 @@
 # Tier-only mixins for authorized items. Put these before any parent that supplies a different tier.
 # Tier 3 contraband is also detectable by security scanners.
 - type: entity
+  id: BaseContrabandTier1
+  abstract: true
+  components:
+  - type: Contraband
+    tier: Tier1
+
+- type: entity
   id: BaseContrabandTier2
   abstract: true
   components:
@@ -70,11 +76,12 @@
     tier: Tier3
 
 - type: entity
-  id: BaseRestrictedContraband
+  id: BaseContrabandTier4
   abstract: true
   components:
+  - type: ScanDetectable
   - type: Contraband
-    # Use the component's Tier1 default so authorization bases do not override an inherited tier.
+    tier: Tier4
 
 # Authorization lists combine across parents. For tier and type, the first parent specifying a value wins.
 # Single-department authorization bases.

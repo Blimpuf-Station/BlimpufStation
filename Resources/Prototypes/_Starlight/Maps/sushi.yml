@@ -14,7 +14,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'SDC'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/_Blimpuf/Shuttles/emergency_sushi.yml
+          emergencyShuttlePath: /Maps/_Blimpuf/Shuttles/Evac/emergency_sushi.yml
         - type: StationJobs
           availableJobs:
             #Command
