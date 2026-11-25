@@ -1,6 +1,7 @@
 using Content.Server.GameTicking.Rules;
 using Content.Shared.Whitelist;
 using Robust.Shared.Map;
+using Robust.Shared.Prototypes;
 
 /// <summary>
 /// Stores grids created by another gamerule component.
@@ -27,4 +28,13 @@ public sealed partial class RuleGridsComponent : Component
     /// </summary>
     [DataField]
     public EntityWhitelist? SpawnerWhitelist;
+
+    //blimpuf start
+
+    /// <summary>
+    /// Use another rule's grid instead
+    /// </summary>
+    [DataField]
+    public EntProtoId? SourceRule;
+    //blimpuf end
 }

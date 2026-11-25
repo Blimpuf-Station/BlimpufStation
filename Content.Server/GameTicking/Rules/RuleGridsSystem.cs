@@ -53,13 +53,21 @@ public sealed partial class RuleGridsSystem : GameRuleSystem<RuleGridsComponent>
 
     private void OnSelectLocation(Entity<RuleGridsComponent> ent, ref AntagSelectLocationEvent args)
     {
+        //blimpuf start
+        var map = ent.Comp.Map;
+        var grids = ent.Comp.MapGrids;
+
+        if (ent.Comp.SourceRule != null && !TryGetSourceGrid(ent, out map, out grids))
+            return;
+        //blimpuf end
+
         var query = EntityQueryEnumerator<SpawnPointComponent, TransformComponent>();
         while (query.MoveNext(out var uid, out _, out var xform))
         {
-            if (xform.MapID != ent.Comp.Map)
+            if (xform.MapID != map) //blimpuf - use map
                 continue;
 
-            if (xform.GridUid is not {} grid || !ent.Comp.MapGrids.Contains(grid))
+            if (xform.GridUid is not {} grid || !grids.Contains(grid)) //blimpuf - use grids
                 continue;
 
             if (_whitelist.IsWhitelistFail(ent.Comp.SpawnerWhitelist, uid))
@@ -74,6 +82,34 @@ public sealed partial class RuleGridsSystem : GameRuleSystem<RuleGridsComponent>
             args.Coordinates.Add(_transform.GetMapCoordinates(xform));
         }
     }
+    //blimpuf start
+    private bool TryGetSourceGrid(Entity<RuleGridsComponent> ent, out MapId? map, out List<EntityUid> grids)
+    {
+        var rules = QueryActiveRules();
+
+        map = ent.Comp.Map;
+        grids = ent.Comp.MapGrids;
+
+        if (ent.Comp.SourceRule is not { } SourceRule)
+            return true;
+
+        while (rules.MoveNext(out var ruleUid, out _, out var sourceGrid, out _))
+        {
+            if (MetaData(ruleUid).EntityPrototype?.ID != SourceRule.Id) //make sure rule proto is the correct one to source from
+                continue;
+
+            if (sourceGrid.Map != null) //there is a map
+            {
+                map = sourceGrid.Map;
+                grids = sourceGrid.MapGrids;
+                return true;
+            }
+
+            return false; // no map
+        }
+        return false; // not active
+    }
+    //blimpuf end
 }
 
 /// <summary>
