@@ -247,7 +247,7 @@ public sealed partial class DynamicRuleSystem : GameRuleSystem<DynamicRuleCompon
             }
 
         #region Blimpuf
-        if (entity.Comp.UsePercentageBudgetStart && GameTicker.RoundDuration() > TimeSpan.FromSeconds(5))
+        if (entity.Comp.UsePercentageBudgetStart && GameTicker.RoundDuration() < TimeSpan.FromSeconds(5))
         {
             var leftoverBudget = entity.Comp.Budget - (entity.Comp.Budget * entity.Comp.PercentageBudget);
 
