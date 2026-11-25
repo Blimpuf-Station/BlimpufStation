@@ -4,7 +4,7 @@ meta:
   engineVersion: 283.1.7
   forkId: ""
   forkVersion: ""
-  time: 11/25/2026 05:22:27
+  time: 11/25/2026 05:21:11
   entityCount: 426
 maps: []
 grids:
@@ -1606,11 +1606,6 @@ entities:
     - type: Transform
       parent: 410
       pos: -5.5,6.5
-  - uid: 246
-    components:
-    - type: Transform
-      parent: 410
-      pos: -2.5,12.5
   - uid: 247
     components:
     - type: Transform
@@ -1994,6 +1989,17 @@ entities:
       pos: -3.5,8.5
     - type: Fixtures
       fixtures: {}
+- proto: SecureGasVentPump
+  entities:
+  - uid: 246
+    components:
+    - type: Transform
+      parent: 410
+      pos: -2.5,12.5
+    - type: AccessReader
+      accessListsOriginal:
+      - - Command
+      - - Armory
 - proto: ShuttleWindow
   entities:
   - uid: 21
