@@ -8271,4 +8271,137 @@
   id: 407496
   time: '2026-08-11T08:00:04.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/5002
+- author: Spaghetti-Bit
+  changes:
+  - message: Added loud mode to command headsets, as well as some other commanding role headsets.
+    type: Add
+  id: 407498
+  time: '2026-08-11T08:33:28.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5395
+- author: Spaghetti-Bit
+  changes:
+  - message: Yelling will now make your message more noticeable on the radio.
+    type: Add
+  id: 407499
+  time: '2026-08-11T08:33:28.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5395
+- author: Hot Mic
+  changes:
+  - message: Fixed the Spritework for the Robotist's Labcoat while in open state. Lex Newbell rejoice!
+    type: Fix
+  id: 407497
+  time: '2026-08-11T08:33:26.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5540
+- author: wonderfulnewworld
+  changes:
+  - message: Avali, Reptillians, and Noctiliae can now eat Phenylpiperidine crystals.
+    type: Fix
+  id: 407504
+  time: '2026-08-11T09:13:54.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5547
+- author: OMEGA
+  changes:
+  - message: Access configurators and multitools can now configure access spanning multiple departments.
+    type: Fix
+  id: 407505
+  time: '2026-08-11T09:38:54.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5555
+- author: EWanderer
+  changes:
+  - message: Mining Borgs can now hold tickets in their hands.
+    type: Tweak
+  id: 407508
+  time: '2026-08-11T10:25:03.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5559
+- author: Limbesstar
+  changes:
+  - message: Tweaked the roboticist gas mask sprite.
+    type: Tweak
+  id: 407509
+  time: '2026-08-11T10:55:25.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5572
+- author: Forrestgod
+  changes:
+  - message: ERT Engineers now spawn with a T-ray Scanner.
+    type: Tweak
+  id: 407510
+  time: '2026-08-11T10:55:27.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5579
+- author: TaserTheFox
+  changes:
+  - message: More phrases to the AAC tablet.
+    type: Add
+  id: 407511
+  time: '2026-08-11T11:24:38.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5600
+- author: Swonki
+  changes:
+  - message: Dark Gygax Structural Armour.
+    type: Fix
+  id: 407512
+  time: '2026-08-11T11:24:40.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5583
+- author: Romero/Littlemen
+  changes:
+  - message: the cold case; a mauser C96 inspired pistol.
+    type: Add
+  id: 407515
+  time: '2026-08-11T19:42:48.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5586
+- author: Romero/Littlemen
+  changes:
+  - message: det has now loadout options for his lethal sidearm.
+    type: Add
+  id: 407516
+  time: '2026-08-11T19:42:48.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5586
+- author: wonderfulnewworld
+  changes:
+  - message: Added 6 Wizard Duelist medallions, corresponding to each respective school.
+    type: Add
+  id: 407518
+  time: '2026-08-11T21:44:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5601
+- author: wonderfulnewworld
+  changes:
+  - message: Wizard Duelists now have many more rules to follow with regard to their duels; all duels must involve magic, they cannot change their clothing, they must always wear their medallions, victors are only decided when only one duelist has at least 3 or more medallions, outsiders who steal medallions must be dealt with harshly, and the victor must return alive to tell the tale.
+    type: Tweak
+  id: 407519
+  time: '2026-08-11T21:44:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5601
+- author: wonderfulnewworld
+  changes:
+  - message: (Wizard's Court) Added a beacon, so wizards can actually teleport back.
+    type: Tweak
+  id: 407520
+  time: '2026-08-11T21:44:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5601
+- author: wonderfulnewworld
+  changes:
+  - message: Fixed some inconsistencies in the way Space Wizards Federation is written.
+    type: Fix
+  id: 407521
+  time: '2026-08-11T21:44:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5601
+- author: Mack
+  changes:
+  - message: You can now deconstruct bar windows.
+    type: Fix
+  id: 407559
+  time: '2026-08-13T14:07:04.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5647
+- author: SirLutz
+  changes:
+  - message: Supermatter guidebook entry.
+    type: Add
+  id: 407560
+  time: '2026-08-13T14:28:17.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5429
+- author: SirLutz
+  changes:
+  - message: Supermatter guidebook hints for valid setups.
+    type: Add
+  id: 407561
+  time: '2026-08-13T14:28:17.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/5429
 Order: -1

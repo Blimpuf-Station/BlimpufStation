@@ -95,6 +95,7 @@
   - type: RadioChime
     sound:
       path: /Audio/_Starlight/Effects/Radio/qm.ogg
+  - type: HeadsetLoudMode #Starlight
 
 - type: entity
   parent: [ ClothingHeadset, BaseCentcommContraband ]
@@ -115,6 +116,7 @@
   - type: RadioChime #Starlight
     sound:
       path: /Audio/_Starlight/Effects/Radio/marauder.ogg
+  - type: HeadsetLoudMode #Starlight
 
 - type: entity
   parent: [ClothingHeadset, BaseCommandContraband]
@@ -134,6 +136,7 @@
   - type: RadioChime
     sound:
       path: /Audio/_Starlight/Effects/Radio/captain.ogg
+  - type: HeadsetLoudMode #Starlight
 
 - type: entity
   parent: ClothingHeadset
@@ -166,6 +169,7 @@
   - type: RadioChime
     sound:
       path: /Audio/_Starlight/Effects/Radio/ce.ogg
+  - type: HeadsetLoudMode #Starlight
 
 - type: entity
   parent: ClothingHeadset
@@ -198,6 +202,7 @@
   - type: RadioChime
     sound:
       path: /Audio/_Starlight/Effects/Radio/cmo.ogg
+  - type: HeadsetLoudMode #Starlight
 
 - type: entity
   parent: ClothingHeadset
@@ -262,6 +267,7 @@
   - type: RadioChime
     sound:
       path: /Audio/_Starlight/Effects/Radio/rd.ogg
+  - type: HeadsetLoudMode #Starlight
 
 - type: entity
   parent: [ClothingHeadset, BaseSecurityContraband, BaseInternalAffairsContraband] # Starlight

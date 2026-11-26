@@ -68,3 +68,6 @@ steal-target-groups-medical-belts = filled medical belt, EMT belt, corpsman duty
 steal-target-groups-corporate-documents = classified corporate secrets documents
 steal-target-groups-criminal-documents = classified criminal reports documents
 steal-target-groups-secure-documents = classified secure documents
+
+# Wizard Duelist
+steal-target-groups-wizard-medallions = Space Wizards Federation medallion

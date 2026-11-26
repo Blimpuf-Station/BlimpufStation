@@ -233,6 +233,7 @@
   storage:
     back:
     - RPD # Starlight: RPD
+    - trayScanner #Starlight: T-ray Scanner
     - WelderIndustrialAdvanced
     - CableApcStack
     - CableMVStack
