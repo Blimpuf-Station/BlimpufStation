@@ -1,0 +1,37 @@
+- type: entity
+  parent: [ClothingBeltStorageBase, AllowSuitStorageClothing, BaseCentcommContraband]
+  id: ClothingCCBandolier
+  name: CDHM bandolier
+  description: A bandolier for specialized medical professionals.
+  components:
+  - type: Sprite  #TODO: Proper Sprite in medical blue or CC green/gold
+    sprite: _Blimpuf/Admeme/CentComm/cc_belt.rsi
+  - type: Clothing
+    sprite: _Blimpuf/Admeme/CentComm/cc_belt.rsi
+    slots:
+    - belt
+    - outerClothing
+  - type: Item
+    size: Normal
+  - type: Storage
+    whitelist:  # Identical to Medical Belt
+      tags:
+        - Wrench
+        - Bottle
+        - Vial
+        - Spray
+        - Brutepack
+        - Bloodpack
+        - Gauze
+        - Ointment
+        - Tourniquet
+        - CigPack
+        - PillCanister
+        - Radio
+        - DiscreteHealthAnalyzer
+        - SurgeryTool
+        - Dropper
+      components:
+        - Injector
+        - Pill
+        - HandLabeler
