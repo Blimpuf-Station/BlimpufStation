@@ -73,7 +73,10 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
         return dataNode;
     }
 
-    public HumanoidCharacterProfile FromStream(Stream stream, ICommonSession session)
+    /// <summary>
+    /// Imports a character profile. Admin spawns can skip species and trait validation.
+    /// </summary>
+    public HumanoidCharacterProfile FromStream(Stream stream, ICommonSession session, bool ignoreSpawnRestrictions = false)
     {
         using var reader = new StreamReader(stream, EncodingHelpers.UTF8);
         var yamlStream = new YamlStream();
@@ -165,7 +168,7 @@ public abstract partial class SharedHumanoidAppearanceSystem : EntitySystem
 
         var profile = export.Profile;
         var collection = IoCManager.Instance;
-        profile.EnsureValid(session, collection!);
+        profile.EnsureValid(session, collection!, ignoreSpawnRestrictions);
         return profile;
     }
 

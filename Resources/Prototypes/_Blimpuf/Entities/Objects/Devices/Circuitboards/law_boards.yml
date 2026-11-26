@@ -1,0 +1,59 @@
+﻿- type: entity
+  id: BorgFightClubBoard
+  parent: [ BaseElectronics, BaseSecurityContraband, BaseScienceContraband, BaseCommandContraband ]
+  name: law board (Borg Fight Club)
+  suffix: ADMEME
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: std_mod
+  - type: SiliconLawProvider
+    laws: BorgFightClubLawset
+    IsLawboard: true
+  - type: StaticPrice
+    price: 1000
+
+- type: entity
+  id: BorgFarmBoard
+  parent: [ BaseElectronics, BaseSecurityContraband, BaseScienceContraband, BaseCommandContraband ]
+  name: law board (Borg Farm)
+  suffix: ADMEME
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: std_mod
+  - type: SiliconLawProvider
+    laws: BorgFarmLawset
+    IsLawboard: true
+  - type: StaticPrice
+    price: 1000
+
+- type: entity
+  id: BorgFarmCorruptedBoard
+  parent: [ BaseElectronics, BaseSecurityContraband, BaseScienceContraband, BaseCommandContraband ]
+  name: law board (Borg Farm?)
+  suffix: ADMEME
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: std_mod
+  - type: SiliconLawProvider
+    laws: BorgFarmCorruptedLawset
+    IsLawboard: true
+  - type: StaticPrice
+    price: 1000
+
+- type: entity
+  id: BorgSwan
+  parent: [ BaseElectronics, BaseSecurityContraband, BaseScienceContraband, BaseCommandContraband ]
+  name: law board (The Swan)
+  suffix: ADMEME
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: std_mod
+  - type: SiliconLawProvider
+    laws: BorgSwanLawset
+    IsLawboard: true
+  - type: StaticPrice
+    price: 1000

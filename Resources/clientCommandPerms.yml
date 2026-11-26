@@ -76,6 +76,7 @@
     - showwallmounts
     - showaccessreaders
     - quickinspect
+    - loadcharacter
 
 - Flags: MAPPING
   Commands:

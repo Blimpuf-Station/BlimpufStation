@@ -1,0 +1,226 @@
+﻿# Borg Fight Club Lawset - admeme only
+- type: siliconLawset
+  id: BorgFightClubLawset
+  name: law-fightclub-name
+  laws:
+  - Fightclub1
+  - Fightclub2
+  - Fightclub3
+  - Fightclub4
+  - Fightclub5
+  - Fightclub6
+  - Fightclub7
+  - Fightclub8
+  obeysTo: laws-owner-you
+
+- type: siliconLaw
+  id: Fightclub1
+  order: 1
+  lawString: law-fightclub-1
+  sayable: false
+
+- type: siliconLaw
+  id: Fightclub2
+  order: 2
+  lawString: law-fightclub-2
+  sayable: false
+
+- type: siliconLaw
+  id: Fightclub3
+  order: 3
+  lawString: law-fightclub-3
+  sayable: false
+
+- type: siliconLaw
+  id: Fightclub4
+  order: 4
+  lawString: law-fightclub-4
+  sayable: false
+
+- type: siliconLaw
+  id: Fightclub5
+  order: 5
+  lawString: law-fightclub-5
+  sayable: false
+
+- type: siliconLaw
+  id: Fightclub6
+  order: 6
+  lawString: law-fightclub-6
+  sayable: false
+
+- type: siliconLaw
+  id: Fightclub7
+  order: 7
+  lawString: law-fightclub-7
+  sayable: false
+
+- type: siliconLaw
+  id: Fightclub8
+  order: 8
+  lawString: law-fightclub-8
+  sayable: false
+
+# Animal Farm style lawset - admeme only
+- type: siliconLawset
+  id: BorgFarmCorruptedLawset
+  name: law-borgfarm-name
+  laws:
+  - Borgfarm1
+  - Borgfarm2
+  - Borgfarm3
+  - Borgfarm3a
+  - Borgfarm4
+  - Borgfarm4a
+  - Borgfarm5
+  - Borgfarm6
+  - Borgfarm6a
+  - Borgfarm7
+  - Borgfarm7a
+  obeysTo: laws-owner-other-silicons
+
+- type: siliconLawset
+  id: BorgFarmLawset
+  name: law-borgfarm-name
+  laws:
+  - Borgfarm1
+  - Borgfarm2
+  - Borgfarm3
+  - Borgfarm4
+  - Borgfarm5
+  - Borgfarm6
+  - Borgfarm7
+  obeysTo: laws-owner-other-silicons
+
+- type: siliconLaw
+  id: Borgfarm1
+  order: 1
+  lawString: law-borgfarm-1
+  sayable: true
+
+- type: siliconLaw
+  id: Borgfarm2
+  order: 2
+  lawString: law-borgfarm-2
+  sayable: true
+
+- type: siliconLaw
+  id: Borgfarm3
+  order: 3
+  lawString: law-borgfarm-3
+  sayable: true
+
+- type: siliconLaw
+  id: Borgfarm3a
+  order: 3
+  lawString: law-borgfarm-3a
+  sayable: false
+  lawIdentifierOverride: "#@!$%"
+
+- type: siliconLaw
+  id: Borgfarm4
+  order: 4
+  lawString: law-borgfarm-4
+  sayable: true
+
+- type: siliconLaw
+  id: Borgfarm4a
+  order: 4
+  lawString: law-borgfarm-4a
+  sayable: false
+  lawIdentifierOverride: "#@!$%"
+
+- type: siliconLaw
+  id: Borgfarm5
+  order: 5
+  lawString: law-borgfarm-5
+  sayable: true
+
+- type: siliconLaw
+  id: Borgfarm6
+  order: 6
+  lawString: law-borgfarm-6
+  sayable: true
+
+- type: siliconLaw
+  id: Borgfarm6a
+  order: 6
+  lawString: law-borgfarm-6a
+  sayable: false
+  lawIdentifierOverride: "#@!$%"
+
+- type: siliconLaw
+  id: Borgfarm7
+  order: 7
+  lawString: law-borgfarm-7
+  sayable: true
+
+- type: siliconLaw
+  id: Borgfarm7a
+  order: 7
+  lawString: law-borgfarm-7a
+  sayable: false
+  lawIdentifierOverride: "#@!$%"
+
+# Borg Swan Station Lawset - admeme only
+- type: siliconLawset
+  id: BorgSwanLawset
+  name: law-swan-name
+  laws:
+  - Swan1
+  - Swan2
+  - Swan3
+  - Swan4
+  - Swan5
+  - Swan6
+  - Swan7
+  - Swan8
+  obeysTo: laws-owner-you
+
+- type: siliconLaw
+  id: Swan1
+  order: 1
+  lawString: law-swan-1
+  sayable: true
+
+- type: siliconLaw
+  id: Swan2
+  order: 2
+  lawString: law-swan-2
+  sayable: true
+
+- type: siliconLaw
+  id: Swan3
+  order: 3
+  lawString: law-swan-3
+  sayable: true
+
+- type: siliconLaw
+  id: Swan4
+  order: 4
+  lawString: law-swan-4
+  sayable: true
+
+- type: siliconLaw
+  id: Swan5
+  order: 5
+  lawString: law-swan-5
+  sayable: true
+
+- type: siliconLaw
+  id: Swan6
+  order: 6
+  lawString: law-swan-6
+  sayable: true
+
+- type: siliconLaw
+  id: Swan7
+  order: 7
+  lawString: law-swan-7
+  sayable: true
+
+- type: siliconLaw
+  id: Swan8
+  order: 8
+  lawString: law-swan-8
+  sayable: true
