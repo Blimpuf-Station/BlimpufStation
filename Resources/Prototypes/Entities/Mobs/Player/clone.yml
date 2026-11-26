@@ -101,6 +101,8 @@
   copyEquipment: null
   copyInternalStorage: false
   copyImplants: false
+  components:
+  - Traitor # Blimpuf: preserve Traitor component across cloning
 
 # for paradox clones
 - type: cloningSettings
@@ -108,10 +110,11 @@
   parent: [BaseClone, Antag]
   components:
   - Forensics # This is so hugging data is copied to the clone, so you can't hug metagame them
-  # Extended Character Descriptions - Blimpuf
+  # Blimpuf start
   - CharacterDescription
   - CharacterSecrets
   - ExploitableInfo
+  - Traitor # Lets the clone work on inherited Syndicate Research objectives.
   # Blimpuf end
 
 # changeling identity copying
