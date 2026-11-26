@@ -1408,5 +1408,15 @@ Entries:
   id: 28101
   time: '2026-11-26T22:04:50.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/281
+- author: Shimmers
+  changes:
+  - message: '[Hotel] The HoPline is now wired correctly 2/3rds of the time, instead
+      of 0/3rds of the time.'
+    type: Fix
+  - message: '[Hotel] The rooms for the CCE and CCR no longer display loyalty to NT.'
+    type: Fix
+  id: 28201
+  time: '2026-11-26T23:40:43.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/282
 Order: -1
 
