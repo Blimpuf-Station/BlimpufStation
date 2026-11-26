@@ -1401,5 +1401,12 @@ Entries:
   id: 23401
   time: '2026-11-19T19:36:32.000000+00:00'
   url: https://github.com/Blimpuf-Station/BlimpufStation/pull/234
+- author: Limerent-Sun
+  changes:
+  - message: Paradox clones of traitors can now perform syndicate research.
+    type: Fix
+  id: 28101
+  time: '2026-11-26T22:04:50.000000+00:00'
+  url: https://github.com/Blimpuf-Station/BlimpufStation/pull/281
 Order: -1
 
