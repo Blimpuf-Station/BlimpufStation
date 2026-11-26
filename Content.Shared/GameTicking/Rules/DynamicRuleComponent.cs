@@ -55,6 +55,52 @@ public sealed partial class DynamicRuleComponent : Component
     public int VariantBudgetThreshold = 300;
     #endregion
 
+    #region Blimpuf
+    /// <summary>
+    /// Do we want the budget to scale with the number of players?
+    /// </summary>
+    [DataField]
+    public bool UsePlayerScaling = false;
+
+    /// <summary>
+    /// Do we want to roll rules until we have a certain amount of the budget used?
+    /// </summary>
+    [DataField]
+    public bool UsePercentageBudgetStart = false;
+
+    /// <summary>
+    /// The percentage of the budget to be spent roundstart.
+    /// </summary>
+    [DataField]
+    public float PercentageBudget = 0.5f;
+
+    /// <summary>
+    /// How much to multiply the budget by per player.
+    /// </summary>
+    [DataField]
+    public int BudgetScalingPerPlayer = 10;
+
+    /// <summary>
+    /// The minimum amount of budget regardless of player count.
+    /// </summary>
+    [DataField]
+    public int HardMinBudget = 100;
+
+    /// <summary>
+    /// The percentage of the per-player budget that should be added whenever the budget is updated.
+    /// This amount is multiplied by the change in players (if it's positive) and then added to the budget.
+    /// Requires UsePlayerScaling.
+    /// </summary>
+    [DataField]
+    public float BudgetGainOnLateJoin = 0.0f;
+
+    /// <summary>
+    /// The highest amount of in-round players this gamerule has seen. Used for BudgetGainOnLateJoin.
+    /// </summary>
+    [DataField]
+    public int HighestPlayers = 0;
+    #endregion
+
     /// <summary>
     /// The time at which the next rule will start
     /// </summary>
