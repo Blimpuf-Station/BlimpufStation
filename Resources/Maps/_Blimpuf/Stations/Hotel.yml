@@ -4,7 +4,7 @@ meta:
   engineVersion: 283.1.7
   forkId: ""
   forkVersion: ""
-  time: 11/17/2026 11:23:16
+  time: 11/26/2026 22:51:18
   entityCount: 22148
 maps:
 - 1
@@ -3752,12 +3752,12 @@ entities:
             3210: 6,7
             3211: 5,7
             3212: 4,7
-            3863: 18,-49
-            3864: 17,-49
-            3865: 16,-49
-            3866: 15,-49
-            3867: 14,-49
-            3868: 13,-49
+            3939: 18,-49
+            3940: 17,-49
+            3941: 16,-49
+            3942: 15,-49
+            3943: 14,-49
+            3944: 13,-49
         - node:
             zIndex: 1
             id: WoodTrimThinLineN
@@ -3790,12 +3790,12 @@ entities:
             3215: 6,5
             3216: 5,5
             3217: 4,5
-            3875: 13,-43
-            3876: 14,-43
-            3877: 15,-43
-            3878: 16,-43
-            3879: 17,-43
-            3880: 18,-43
+            3933: 13,-43
+            3934: 14,-43
+            3935: 15,-43
+            3936: 16,-43
+            3937: 17,-43
+            3938: 18,-43
         - node:
             id: WoodTrimThinLineW
             color: '#FFFFFFFF'
@@ -4042,14 +4042,14 @@ entities:
             2510: -24,-36
         - node:
             id: halfnwhite
-            color: '#334E6DC8'
+            color: '#00B95C96'
           decals:
-            3881: 13,-43
-            3882: 14,-43
-            3883: 15,-43
-            3884: 16,-43
-            3885: 17,-43
-            3886: 18,-43
+            3927: 18,-43
+            3928: 17,-43
+            3929: 16,-43
+            3930: 15,-43
+            3931: 14,-43
+            3932: 13,-43
         - node:
             id: halfnwhite
             color: '#52B4E996'
@@ -4087,19 +4087,19 @@ entities:
             3338: 44,1
         - node:
             id: halfswhite
+            color: '#00B95C96'
+          decals:
+            3921: 18,-49
+            3922: 17,-49
+            3923: 16,-49
+            3924: 15,-49
+            3925: 14,-49
+            3926: 13,-49
+        - node:
+            id: halfswhite
             color: '#00B95CCD'
           decals:
             3322: 48,-1
-        - node:
-            id: halfswhite
-            color: '#334E6DC8'
-          decals:
-            3887: 13,-49
-            3888: 14,-49
-            3889: 15,-49
-            3890: 16,-49
-            3891: 17,-49
-            3892: 18,-49
         - node:
             id: halfswhite
             color: '#37789BA5'
@@ -18799,7 +18799,7 @@ entities:
     components:
     - type: Transform
       parent: 2
-      pos: 0.5,24.5
+      pos: 0.5,23.5
   - uid: 1990
     components:
     - type: Transform
@@ -23484,12 +23484,7 @@ entities:
     components:
     - type: Transform
       parent: 2
-      pos: -3.5,28.5
-  - uid: 2927
-    components:
-    - type: Transform
-      parent: 2
-      pos: -3.5,27.5
+      pos: 0.5,22.5
   - uid: 2928
     components:
     - type: Transform
@@ -23504,7 +23499,7 @@ entities:
     components:
     - type: Transform
       parent: 2
-      pos: -3.5,26.5
+      pos: -4.5,22.5
   - uid: 2931
     components:
     - type: Transform
@@ -51418,6 +51413,15 @@ entities:
     - type: Transform
       parent: 2
       pos: -26.5,-11.5
+- proto: CentCommFlag
+  entities:
+  - uid: 14259
+    components:
+    - type: Transform
+      parent: 2
+      pos: 10.5,-42.5
+    - type: Fixtures
+      fixtures: {}
 - proto: Chair
   entities:
   - uid: 1102
@@ -63271,11 +63275,15 @@ entities:
     - type: Transform
       parent: 2
       pos: -24.5,9.5
+    - type: FaxMachine
+      name: Medical Reception
   - uid: 10344
     components:
     - type: Transform
       parent: 2
       pos: -21.5,-6.5
+    - type: FaxMachine
+      name: Medical Breakroom
 - proto: FaxMachineMedicalCMO
   entities:
   - uid: 10343
@@ -63353,11 +63361,15 @@ entities:
     - type: Transform
       parent: 2
       pos: 47.5,-36.5
+    - type: FaxMachine
+      name: Dormatories
   - uid: 10354
     components:
     - type: Transform
       parent: 2
       pos: 47.5,-50.5
+    - type: FaxMachine
+      name: Hair Salon
   - uid: 14173
     components:
     - type: Transform
@@ -111704,6 +111716,15 @@ entities:
     - type: Transform
       parent: 2
       pos: -2.5,-17.5
+- proto: RandomCableMVSpawner
+  entities:
+  - uid: 2927
+    components:
+    - type: Transform
+      parent: 2
+      pos: -2.5,21.5
+    - type: RandomSpawner
+      chance: 0.6
 - proto: RandomDrinkBottle
   entities:
   - uid: 17624
@@ -116231,21 +116252,6 @@ entities:
       pos: -27.5,-46.5
     - type: Fixtures
       fixtures: {}
-  - uid: 17782
-    components:
-    - type: Transform
-      parent: 2
-      pos: 12.5,-43.5
-    - type: Fixtures
-      fixtures: {}
-  - uid: 17783
-    components:
-    - type: Transform
-      parent: 2
-      rot: -1.5707963267948966 rad
-      pos: 10.5,-42.5
-    - type: Fixtures
-      fixtures: {}
   - uid: 17784
     components:
     - type: Transform
@@ -116450,6 +116456,15 @@ entities:
     - type: Transform
       parent: 2
       pos: 9.5,15.5
+    - type: Fixtures
+      fixtures: {}
+- proto: SignNTR
+  entities:
+  - uid: 8956
+    components:
+    - type: Transform
+      parent: 2
+      pos: 12.5,-43.5
     - type: Fixtures
       fixtures: {}
 - proto: SignPrison
@@ -119799,7 +119814,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 9.5,-40.5
     - type: SurveillanceCamera
-      id: blueshield officer
+      id: cc enforcer's room
 - proto: SurveillanceCameraConstructed
   entities:
   - uid: 18329
