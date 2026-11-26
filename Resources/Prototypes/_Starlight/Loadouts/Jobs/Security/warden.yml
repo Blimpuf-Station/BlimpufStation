@@ -5,7 +5,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobWarden
-      time: 54000 # 15 hrs
+      time: 36000 # 10 hrs
 
 # Neck
 

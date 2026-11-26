@@ -6,17 +6,17 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobChemist
-      time: 6h
+      time: 4h
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:RoleTimeRequirement
       role: JobMedicalDoctor
-      time: 6h
+      time: 4h
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:DepartmentTimeRequirement
       department: Medical
-      time: 60h
+      time: 20h
 
 # Mid-level timer for players who have a solid amount of experience
 - type: loadoutEffectGroup
@@ -26,7 +26,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobMedicalDoctor
-      time: 20h
+      time: 10h
 
 # Mid-level timer for CMO
 - type: loadoutEffectGroup
@@ -36,4 +36,4 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobChiefMedicalOfficer
-      time: 20h
+      time: 10h

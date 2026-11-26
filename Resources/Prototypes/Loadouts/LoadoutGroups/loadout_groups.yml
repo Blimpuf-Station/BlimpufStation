@@ -574,27 +574,15 @@
   - BibleNanoTrasen
   - BibleDruid
   - BibleSatanic
-  - BibleTanakh
   - BibleHonk
   - BibleRatvar
   - BibleNarsie
-  - BibleAlHikma # starlight start
   - BibleBookOfAges
   - BibleBookOfAncestors
   - BibleTomeOfDread
   - BibleBookOfGrudges
-  - BibleBookOfMormon
-  - BibleEdda
-  - BibleKoans
   - BibleLiberChaotica
   - BibleMalleus
-  - BibleOrthodox
-  - BiblePrincipiaDiscordia
-  - BibleHadith
-  - BibleTaoTeChing
-  - BibleTorah
-  - BibleTripitaka
-  - BibleRigVeda # starlight end
 
 - type: loadoutGroup
   id: JanitorHead

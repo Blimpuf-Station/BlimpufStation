@@ -20,17 +20,11 @@
   id: JournalistJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitJournalist
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorReporter
 
 - type: loadout
   id: JournalistJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtJournalist
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: SeniorReporter
 
 - type: loadout
   id: ReporterHeadphonesGeneric
@@ -52,24 +46,12 @@
 
 - type: loadout
   id: DigiboardMassMedia
-  effects:
-  - !type:JobRequirementLoadoutEffect
-    requirement:
-      !type:RoleTimeRequirement
-      role: JobReporter
-      time: 20h # 20 hours of breaking all of the news in half.
   storage:
     back:
     - DigiboardMassMedia
 
 - type: loadout
   id: HoloReporterPin
-  effects:
-    - !type:JobRequirementLoadoutEffect
-      requirement:
-        !type:RoleTimeRequirement
-        role: JobReporter
-        time: 10h
   storage:
     back:
       - HoloReporterPin

@@ -1,3 +1,4 @@
+# Red
 - type: entity
   parent: ClothingUniformBase
   id: UniformShortsRed
@@ -19,3 +20,60 @@
     sprite: Clothing/Uniforms/Shorts/Color/red_female.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Shorts/Color/red_female.rsi
+
+# Blue
+- type: entity
+  parent: UniformShortsRed
+  id: UniformShortsBlue
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Shorts/Color/blue.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Shorts/Color/blue.rsi
+
+- type: entity
+  parent: UniformShortsRedWithTop
+  id: UniformShortsBlueWithTop
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Shorts/Color/blue_female.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Shorts/Color/blue_female.rsi
+
+# Green
+- type: entity
+  parent: UniformShortsRed
+  id: UniformShortsGreen
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Shorts/Color/green.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Shorts/Color/green.rsi
+
+- type: entity
+  parent: UniformShortsRedWithTop
+  id: UniformShortsGreenWithTop
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Shorts/Color/green_female.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Shorts/Color/green_female.rsi
+
+# Green
+- type: entity
+  parent: UniformShortsRed
+  id: UniformShortsYellow
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Shorts/Color/yellow.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Shorts/Color/yellow.rsi
+
+- type: entity
+  parent: UniformShortsRedWithTop
+  id: UniformShortsYellowWithTop
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Shorts/Color/yellow_female.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Shorts/Color/yellow_female.rsi

@@ -6,7 +6,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobBrigmedic
-      time: 54000 # 15 hrs
+      time: 36000 # 10 hrs
 
 # Senior Time
 - type: loadoutEffectGroup
@@ -16,7 +16,7 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobBrigmedic
-      time: 216000 # 60 hrs
+      time: 72000 # 20 hrs
 
 # Head
 - type: loadout

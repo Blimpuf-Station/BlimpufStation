@@ -784,7 +784,13 @@
   name: loadout-group-boxer-jumpsuit
   loadouts:
   - BoxerShorts
+  - BoxerShortsBlue
+  - BoxerShortsGreen
+  - BoxerShortsYellow
   - BoxerShortsWithTop
+  - BoxerShortsWithTopBlue
+  - BoxerShortsWithTopGreen
+  - BoxerShortsWithTopYellow
 
 - type: loadoutGroup
   id: BoxerGloves
@@ -794,6 +800,19 @@
   - BlueBoxingGloves
   - GreenBoxingGloves
   - YellowBoxingGloves
+
+- type: loadoutGroup
+  id: BoxerShoes
+  name: loadout-group-boxer-shoes
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+  - RedShoes
+  - BlueShoes
+  - GreenShoes
+  - YellowShoes
+  - BlackShoes
+  - WhiteShoes
 
 - type: loadoutGroup
   id: BoxerJobTrinkets

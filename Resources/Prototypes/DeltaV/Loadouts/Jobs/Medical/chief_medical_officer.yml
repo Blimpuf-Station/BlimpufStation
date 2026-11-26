@@ -8,7 +8,7 @@
       requirement:
         !type:RoleTimeRequirement
         role: JobChiefMedicalOfficer
-        time: 144000 # 40hr
+        time: 36000 # 10hr
 
 - type: loadout
   id: ChiefMedicalOfficerOverShoulder
@@ -19,7 +19,7 @@
       requirement:
         !type:RoleTimeRequirement
         role: JobChiefMedicalOfficer
-        time: 288000 # 80hr
+        time: 72000 # 20hr
 
 #Outer Clothing
 - type: loadout
