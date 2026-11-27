@@ -63,3 +63,14 @@
     sprite: _Blimpuf/Clothing/Uniforms/Jumpsuit/scientist_syndie.rsi
   - type: Clothing
     sprite: _Blimpuf/Clothing/Uniforms/Jumpsuit/scientist_syndie.rsi
+
+- type: entity
+  parent: ClothingUniformJumpsuitQMTurtleneck
+  id: ClothingUniformJumpsuitQMCasualTurtleneck
+  name: quartermaster's casual turtleneck
+  description: The cotton that composes this casual garb is extremely soft. It must be expensive...
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Clothing/Uniforms/Jumpsuit/qmcasual.rsi
+  - type: Clothing
+    sprite: _Blimpuf/Clothing/Uniforms/Jumpsuit/qmcasual.rsi

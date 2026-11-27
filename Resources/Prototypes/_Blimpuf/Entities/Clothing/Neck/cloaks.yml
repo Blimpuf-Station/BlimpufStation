@@ -1,0 +1,21 @@
+- type: entity
+  parent: ClothingNeckMantleQM
+  id: ClothingNeckOverShoulderQM
+  name: quartermaster's over the shoulder coat
+  description: A coat for Quartermasters who know how to wear a coat but choose to otherwise as a power move.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Clothing/Neck/Cloaks/qm_over_shoulder.rsi
+  - type: Clothing
+    sprite: _Blimpuf/Clothing/Neck/Cloaks/qm_over_shoulder.rsi
+
+- type: entity
+  parent: ClothingNeckMantleQM
+  id: ClothingNeckShawlQM
+  name: quartermaster's shawl
+  description: A shawl with a shoulder epaulette fitting of a Quartermaster who wants to stay warm yet professional.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Clothing/Neck/Cloaks/qm_shawl.rsi
+  - type: Clothing
+    sprite: _Blimpuf/Clothing/Neck/Cloaks/qm_shawl.rsi
