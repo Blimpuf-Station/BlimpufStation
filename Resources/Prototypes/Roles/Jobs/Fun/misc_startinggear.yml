@@ -153,6 +153,8 @@
     - RubberStampIncompleteForm
     - RubberStampSentToATS
     - RubberStampDeferToCommand
+    - RubberStampDeferToSpaceLaw
+    - RubberStampDeferToSOP
     - RubberStampStandby
     - RubberStampApproved
     - RubberStampDenied #starlight end

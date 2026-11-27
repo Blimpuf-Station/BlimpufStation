@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtCentcomCDGS
+  name: cropped CDGS uniform
+  description: There's a label attached that says "Central Command Department of Guest Services." It looks custom tailored to be cropped.
+  components:
+  - type: Sprite
+    sprite: _Blimpuf/Clothing/Uniforms/Jumpskirt/cdgs.rsi
+  - type: Clothing
+    sprite: _Blimpuf/Clothing/Uniforms/Jumpskirt/cdgs.rsi

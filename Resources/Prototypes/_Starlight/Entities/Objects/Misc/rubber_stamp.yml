@@ -331,6 +331,8 @@
             - id: RubberStampIncompleteForm
             - id: RubberStampSentToATS
             - id: RubberStampDeferToCommand
+            - id: RubberStampDeferToSpaceLaw
+            - id: RubberStampDeferToSOP
             - id: RubberStampStandby
             - id: RubberStampApproved
             - id: RubberStampDenied

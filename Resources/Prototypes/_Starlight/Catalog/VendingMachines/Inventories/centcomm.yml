@@ -23,6 +23,8 @@
     RubberStampIncompleteForm: 5
     RubberStampSentToATS: 5
     RubberStampDeferToCommand: 5
+    RubberStampDeferToSpaceLaw: 5
+    RubberStampDeferToSOP: 5
     RubberStampStandby: 5
     RubberStampApproved: 5
     RubberStampDenied: 5

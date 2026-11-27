@@ -1,0 +1,74 @@
+- type: entity
+  id: ChemistryBottleDiethylamine
+  suffix: diethylamine
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-diethylamine
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Diethylamine
+          Quantity: 30
+
+- type: entity
+  id: ChemistryBottleSpaceMirage
+  suffix: space mirage
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-space-drugs
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: SpaceDrugs
+          Quantity: 30
+
+- type: entity
+  id: ChemistryBottleHappiness
+  suffix: happiness
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-happiness
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Happiness
+          Quantity: 30
+
+- type: entity
+  id: ChemistryBottleTHC
+  suffix: THC
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-thc
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: THC
+          Quantity: 30
+
+- type: entity
+  id: ChemistryBottleChronexaline
+  suffix: chronexaline
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-chronexaline
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Chronexaline
+          Quantity: 30
