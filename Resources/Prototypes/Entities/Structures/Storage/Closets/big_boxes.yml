@@ -7,7 +7,6 @@
     - type: Transform
       noRot: true
     - type: Clickable
-    - type: InteractionOutline
     - type: Physics
       bodyType: KinematicController
     - type: Fixtures
