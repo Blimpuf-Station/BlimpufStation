@@ -166,7 +166,6 @@ public sealed partial class ShadekinSystem : EntitySystem
     /// <returns></returns>
     public float GetLightExposure(EntityUid uid)
     {
-        // TODO STARLIGHT replace this with RobustToolbox's LightLevelSystem
         var illumination = 0f;
 
         var shadeQuery = _lookup.GetEntitiesInRange<ShadegenComponent>(Transform(uid).Coordinates, 10); // Why 10 when theres different ranges? because light check does not go above 20.
@@ -204,10 +203,10 @@ public sealed partial class ShadekinSystem : EntitySystem
             var attenuation = 1 - (denom * denom);
             var calculatedLight = 0f;
 
-            if (light.Comp.LightMask is not null)
+            if (light.Comp.MaskPath is not null)
             {
                 var angleToTarget = GetAngle(light, light.Comp, uid);
-                foreach (var cone in lightMasks[light.Comp.LightMask])
+                foreach (var cone in lightMasks[light.Comp.MaskPath])
                 {
                     var coneLight = 0f;
                     var angleAttenuation = (float)Math.Min((float)Math.Max(cone.OuterWidth - angleToTarget, 0f), cone.InnerWidth) / cone.OuterWidth;
