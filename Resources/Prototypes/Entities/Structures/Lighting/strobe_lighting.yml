@@ -31,7 +31,7 @@
       shader: unshaded
     state: base
   - type: PointLight
-    lightMask: ConeDouble
+    mask: /Textures/Effects/LightMasks/double_cone.png
     color: "#FFE4CE"
     energy: 5
     radius: 10

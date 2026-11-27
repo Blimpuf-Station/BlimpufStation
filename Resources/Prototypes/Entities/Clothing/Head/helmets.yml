@@ -574,7 +574,7 @@
     energy: 6.5
     color: blue
     netsync: false
-    lightMask: ConeDouble
+    mask: /Textures/Effects/LightMasks/double_cone.png
   - type: RotatingLight
     speed: 360
   - type: PowerCellSlot

@@ -14,7 +14,7 @@
     equippedPrefix: off
   - type: PointLight
     enabled: false
-    lightMask: ConeSingle
+    mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
     radius: 7
     netsync: false

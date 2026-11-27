@@ -45,7 +45,7 @@
     enabled: false
     radius: 2.5
     softness: 5
-    lightMask: ConeSingle
+    mask: /Textures/Effects/LightMasks/cone.png
     autoRot: true
   - type: Tag
     tags:
