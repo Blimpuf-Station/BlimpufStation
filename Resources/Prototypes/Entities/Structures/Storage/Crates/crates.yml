@@ -942,7 +942,7 @@
   suffix: Stealth
   components:
   - type: Stealth
-    shimmerFrequency: 0.05
+    hadOutline: true
   - type: StealthOnMove
     passiveVisibilityRate: -0.10
     movementVisibilityRate: 0.10

@@ -7,7 +7,6 @@
     - type: Transform
       noRot: true
     - type: Clickable
-    - type: InteractionOutline
     - type: Physics
       bodyType: KinematicController
     - type: Fixtures
@@ -70,7 +69,6 @@
       quiet: true
     - type: Stealth
       hadOutline: true
-      shimmerFrequency: 0.05
     - type: StealthOnMove
       passiveVisibilityRate: -1 # very useful for going around the station concealed, if you start jitterstrafing you get seen
       movementVisibilityRate: 0.20

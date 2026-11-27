@@ -1,4 +1,3 @@
-using Content.Client.Graphics;
 using Content.Shared._FarHorizons.Power.Generation.FissionGenerator;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
@@ -36,21 +35,7 @@ public sealed partial class ReactorPartSystem : EntitySystem
         _sprite.LayerSetColor((uid, args.Sprite), 0, _proto.Index(component.Material).Color);
 
         if (args.AppearanceData.TryGetValue(ReactorPartVisuals.HeatDistort, out var value) && value is bool enabled)
-        {
-            if (enabled)
-            {
-                _sprite.SetPostShader(args.Sprite, new SpriteComponent.PostShaderArgs(ContentPostShaderIds.ReactorPart, _heatShader)
-                {
-                    GetScreenTexture = true,
-                    RaiseShaderEvent = true,
-                    Before = ContentPostShaderIds.BeforeOutlines,
-                });
-            }
-            else
-            {
-                _sprite.RemovePostShader(args.Sprite, ContentPostShaderIds.ReactorPart);
-            }
-        }
+            args.Sprite.PostShader = enabled ? _heatShader : null;
     }
 
     private void OnComponentInit(Entity<ReactorPartComponent> ent, ref ComponentInit args)

@@ -18,9 +18,9 @@ public sealed class PrototypeTests : GameTest
     [Test]
     public async Task TestAllServerPrototypesAreSerializable()
     {
-        var ser = Pair.Server.ResolveDependency<ISerializationManager>();
-        var context = new PrototypeSaveTest.TestEntityUidContext(ser);
-        await SaveThenValidatePrototype(Pair.Server, "server", context);
+        var pair = Pair;
+        var context = new PrototypeSaveTest.TestEntityUidContext();
+        await SaveThenValidatePrototype(pair.Server, "server", context);
     }
 
     /// <summary>
@@ -30,9 +30,9 @@ public sealed class PrototypeTests : GameTest
     [Test]
     public async Task TestAllClientPrototypesAreSerializable()
     {
-        var ser = Pair.Server.ResolveDependency<ISerializationManager>();
-        var context = new PrototypeSaveTest.TestEntityUidContext(ser);
-        await SaveThenValidatePrototype(Pair.Client, "client", context);
+        var pair = Pair;
+        var context = new PrototypeSaveTest.TestEntityUidContext();
+        await SaveThenValidatePrototype(pair.Client, "client", context);
     }
 
     public async Task SaveThenValidatePrototype(RobustIntegrationTest.IntegrationInstance instance, string instanceId,
@@ -68,9 +68,9 @@ public sealed class PrototypeTests : GameTest
     [Test]
     public async Task ServerPrototypeSaveLoadSaveTest()
     {
-        var ser = Pair.Server.ResolveDependency<ISerializationManager>();
-        var context = new PrototypeSaveTest.TestEntityUidContext(ser);
-        await SaveLoadSavePrototype(Pair.Server, context);
+        var pair = Pair;
+        var context = new PrototypeSaveTest.TestEntityUidContext();
+        await SaveLoadSavePrototype(pair.Server, context);
     }
 
     /// <summary>
@@ -79,9 +79,9 @@ public sealed class PrototypeTests : GameTest
     [Test]
     public async Task ClientPrototypeSaveLoadSaveTest()
     {
-        var ser = Pair.Server.ResolveDependency<ISerializationManager>();
-        var context = new PrototypeSaveTest.TestEntityUidContext(ser);
-        await SaveLoadSavePrototype(Pair.Client, context);
+        var pair = Pair;
+        var context = new PrototypeSaveTest.TestEntityUidContext();
+        await SaveLoadSavePrototype(pair.Client, context);
     }
 
     private async Task SaveLoadSavePrototype(
