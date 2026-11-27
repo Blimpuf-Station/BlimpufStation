@@ -8,6 +8,24 @@
       role: JobQuartermaster
       time: 20h
 
+- type: loadoutEffectGroup
+  id: SuperMasterQM
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobQuartermaster
+      time: 40h
+
+- type: loadoutEffectGroup
+  id: OmegaQM
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobQuartermaster
+      time: 80h
+
 # Jumpsuit
 - type: loadout
   id: QuartermasterJumpsuit
@@ -25,9 +43,19 @@
     jumpsuit: ClothingUniformJumpsuitQMTurtleneck
 
 - type: loadout
+  id: QuartermasterCasualTurtleneck
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitQMCasualTurtleneck
+
+- type: loadout
   id: QuartermasterTurtleneckSkirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtQMTurtleneck
+
+- type: loadout
+  id: QuartermasterCasualTurtleneckSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtQMCasualTurtleneck
 
 - type: loadout
   id: QuartermasterFormalSuit
@@ -58,6 +86,22 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: MasterQM
+
+- type: loadout
+  id: QuartermasterShoulder
+  equipment:
+    neck: ClothingNeckOverShoulderQM
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: OmegaQM
+
+- type: loadout
+  id: QuartermasterShawl
+  equipment:
+    neck: ClothingNeckShawlQM
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SuperMasterQM
 
 - type: startingGear
   id: QuartermasterMantle
