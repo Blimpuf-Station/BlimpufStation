@@ -4,7 +4,7 @@ meta:
   engineVersion: 283.1.7
   forkId: ""
   forkVersion: ""
-  time: 11/28/2026 11:15:29
+  time: 11/28/2026 11:19:21
   entityCount: 866
 maps: []
 grids:
@@ -3849,17 +3849,6 @@ entities:
       color: '#0335FCFF'
 - proto: GasVentPump
   entities:
-  - uid: 603
-    components:
-    - type: Transform
-      parent: 1
-      rot: -1.5707963267948966 rad
-      pos: 6.5,-8.5
-    - type: DeviceNetwork
-      deviceLists:
-      - 826
-    - type: AtmosPipeColor
-      color: '#0335FCFF'
   - uid: 604
     components:
     - type: Transform
@@ -3945,27 +3934,6 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 823
-    - type: AtmosPipeColor
-      color: '#0335FCFF'
-  - uid: 668
-    components:
-    - type: Transform
-      parent: 1
-      rot: 1.5707963267948966 rad
-      pos: -2.5,12.5
-    - type: DeviceNetwork
-      deviceLists:
-      - 825
-    - type: AtmosPipeColor
-      color: '#0335FCFF'
-  - uid: 675
-    components:
-    - type: Transform
-      parent: 1
-      pos: 2.5,16.5
-    - type: DeviceNetwork
-      deviceLists:
-      - 825
     - type: AtmosPipeColor
       color: '#0335FCFF'
   - uid: 681
@@ -4623,6 +4591,40 @@ entities:
       parent: 1
       rot: 1.5707963267948966 rad
       pos: -2.5,-7.5
+- proto: SecureGasVentPump
+  entities:
+  - uid: 603
+    components:
+    - type: Transform
+      parent: 1
+      rot: -1.5707963267948966 rad
+      pos: 6.5,-8.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 826
+    - type: AtmosPipeColor
+      color: '#0335FCFF'
+  - uid: 668
+    components:
+    - type: Transform
+      parent: 1
+      rot: 1.5707963267948966 rad
+      pos: -2.5,12.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 825
+    - type: AtmosPipeColor
+      color: '#0335FCFF'
+  - uid: 675
+    components:
+    - type: Transform
+      parent: 1
+      pos: 2.5,16.5
+    - type: DeviceNetwork
+      deviceLists:
+      - 825
+    - type: AtmosPipeColor
+      color: '#0335FCFF'
 - proto: ShuttleWindow
   entities:
   - uid: 6
